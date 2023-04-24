@@ -9,9 +9,9 @@
 	Donate link: https://monzillamedia.com/donate.html
 	Contributors: specialk
 	Requires at least: 4.6
-	Tested up to: 6.0
-	Stable tag: 20220517
-	Version:    20220517
+	Tested up to: 6.2
+	Stable tag: 20230306
+	Version:    20230306
 	Requires PHP: 5.6.20
 	Text Domain: ga-google-analytics
 	Domain Path: /languages
@@ -32,7 +32,7 @@
 	You should have received a copy of the GNU General Public License
 	with this program. If not, visit: https://www.gnu.org/licenses/
 	
-	Copyright 2022 Monzilla Media. All rights reserved.
+	Copyright 2023 Monzilla Media. All rights reserved.
 */
 
 if (!defined('ABSPATH')) die();
@@ -51,6 +51,7 @@ if (!class_exists('GA_Google_Analytics')) {
 			add_action('admin_enqueue_scripts', array($this, 'admin_scripts'));
 			add_filter('plugin_action_links',   array($this, 'action_links'), 10, 2);
 			add_filter('plugin_row_meta',       array($this, 'plugin_links'), 10, 2);
+			add_filter('admin_footer_text',     array($this, 'footer_text'),  10, 1);
 			add_action('init',                  array($this, 'load_i18n'));
 			add_action('admin_init',            array($this, 'check_version'));
 			add_action('admin_init',            array($this, 'reset_options'));
@@ -60,7 +61,7 @@ if (!class_exists('GA_Google_Analytics')) {
 		
 		function constants() {
 			
-			if (!defined('GAP_VERSION')) define('GAP_VERSION', '20220517');
+			if (!defined('GAP_VERSION')) define('GAP_VERSION', '20230306');
 			if (!defined('GAP_REQUIRE')) define('GAP_REQUIRE', '4.6');
 			if (!defined('GAP_AUTHOR'))  define('GAP_AUTHOR',  'Jeff Starr');
 			if (!defined('GAP_NAME'))    define('GAP_NAME',    __('GA Google Analytics', 'ga-google-analytics'));
@@ -167,6 +168,38 @@ if (!class_exists('GA_Google_Analytics')) {
 			
 		}
 		
+		function footer_text($text) {
+			
+			$screen_id = $this->screen_id();
+			
+			$ids = array('settings_page_ga-google-analytics');
+			
+			if ($screen_id && apply_filters('ga_google_analytics_admin_footer_text', in_array($screen_id, $ids))) {
+				
+				$text = __('Like this plugin? Give it a', 'ga-google-analytics');
+				
+				$text .= ' <a target="_blank" rel="noopener noreferrer" href="https://wordpress.org/support/plugin/ga-google-analytics/reviews/?rate=5#new-post">';
+				
+				$text .= __('★★★★★ rating&nbsp;&raquo;', 'ga-google-analytics') .'</a>';
+				
+			}
+			
+			return $text;
+			
+		}
+		
+		function screen_id() {
+			
+			if (!function_exists('get_current_screen')) require_once ABSPATH .'/wp-admin/includes/screen.php';
+			
+			$screen = get_current_screen();
+			
+			if ($screen && property_exists($screen, 'id')) return $screen->id;
+			
+			return false;
+			
+		}
+		
 		function check_version() {
 			
 			$wp_version = get_bloginfo('version');
@@ -232,11 +265,9 @@ if (!class_exists('GA_Google_Analytics')) {
 		
 		function admin_notices() {
 			
-			$screen = get_current_screen();
+			$screen_id = $this->screen_id();
 			
-			if (!property_exists($screen, 'id')) return;
-			
-			if ($screen->id === 'settings_page_ga-google-analytics') {
+			if ($screen_id === 'settings_page_ga-google-analytics') {
 				
 				if (isset($_GET['gap-reset-options'])) {
 					
@@ -294,7 +325,7 @@ if (!class_exists('GA_Google_Analytics')) {
 				
 				'gap_id'          => '',
 				'gap_location'    => 'header',
-				'gap_enable'      => 1,
+				'gap_enable'      => 2,
 				'gap_display_ads' => 0,
 				'link_attr'       => 0,
 				'gap_anonymize'   => 0,
@@ -370,15 +401,21 @@ if (!class_exists('GA_Google_Analytics')) {
 		
 		function options_locations() {
 			
+			$label_header  = esc_html__('Include tracking code in page head', 'ga-google-analytics') .' <span class="gap-note">'. esc_html__('(via', 'ga-google-analytics');
+			$label_header .= ' <span class="gap-code">wp_head</span>'. esc_html__(')', 'ga-google-analytics') .'</span>';
+			
+			$label_footer  = esc_html__('Include tracking code in page footer', 'ga-google-analytics') .' <span class="gap-note">'. esc_html__('(via', 'ga-google-analytics');
+			$label_footer .= ' <span class="gap-code">wp_footer</span>'. esc_html__(')', 'ga-google-analytics') .'</span>';
+			
 			return array(
 				
 				'header' => array(
 					'value' => 'header',
-					'label' => esc_html__('Include tracking code in page head (via', 'ga-google-analytics') .' <code>wp_head</code>'. esc_html__(')', 'ga-google-analytics')
+					'label' => $label_header
 				),
 				'footer' => array(
 					'value' => 'footer',
-					'label' => esc_html__('Include tracking code in page footer (via', 'ga-google-analytics') .' <code>wp_footer</code>'. esc_html__(')', 'ga-google-analytics')
+					'label' => $label_footer
 				)
 			);
 			
@@ -391,22 +428,27 @@ if (!class_exists('GA_Google_Analytics')) {
 			$url3 = 'https://developers.google.com/analytics/devguides/collection/gajs/';
 			
 			$link1 = '<a target="_blank" rel="noopener noreferrer" href="'. $url1 .'">'. esc_html__('Universal Analytics', 'ga-google-analytics') .'</a> ';
-			$link2 = '<a target="_blank" rel="noopener noreferrer" href="'. $url2 .'">'. esc_html__('Global Site Tag', 'ga-google-analytics') .'</a> ';
+			$link2 = '<a target="_blank" rel="noopener noreferrer" href="'. $url2 .'">'. esc_html__('Google Tag', 'ga-google-analytics') .'</a> ';
 			$link3 = '<a target="_blank" rel="noopener noreferrer" href="'. $url3 .'">'. esc_html__('Legacy', 'ga-google-analytics') .'</a> ';
 			
+			$urlUA = 'https://wordpress.org/support/topic/note-about-google-changes/';
+			
+			$linkUA = ' <a target="_blank" rel="noopener noreferrer" href="'. $urlUA .'">'. esc_html__('learn more', 'ga-google-analytics') .'</a>';
+			
+			// do not change numeric keys or values (order only)
 			return array(
 				
-				1 => array(
-					'value' => 1,
-					'label' => $link1 .' <span class="gap-note">/</span> <code>analytics.js</code> <span class="gap-note">'. esc_html__('(default)', 'ga-google-analytics') .'</span>'
-				),
 				2 => array(
 					'value' => 2,
-					'label' => $link2 .' <span class="gap-note">/</span> <code>gtag.js</code> <span class="gap-note">'. esc_html__('(new method)', 'ga-google-analytics') .'</span>'
+					'label' => $link2 .' <span class="gap-note"> / <span class="gap-code">gtag.js</span> '. esc_html__('(default)', 'ga-google-analytics') .'</span>',
 				), 
+				1 => array(
+					'value' => 1,
+					'label' => $link1 .' <span class="gap-note"> / <span class="gap-code">analytics.js</span> '. esc_html__('(deprecated,', 'ga-google-analytics') . $linkUA . esc_html__(')', 'ga-google-analytics') .'</span>',
+				),
 				3 => array(
 					'value' => 3,
-					'label' => $link3 .' <span class="gap-note">/</span> <code>ga.js</code> <span class="gap-note">'. esc_html__('(deprecated)', 'ga-google-analytics') .'</span>'
+					'label' => $link3 .' <span class="gap-note"> / <span class="gap-code">ga.js</span> '. esc_html__('(deprecated)', 'ga-google-analytics') .'</span>',
 				)
 			);
 			

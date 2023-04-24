@@ -3,7 +3,7 @@
 Plugin Name: JSON Content Importer
 Plugin URI: https://json-content-importer.com/
 Description: Plugin to import, cache and display a JSON-Feed. Display is done with wordpress-shortcode or gutenberg-block.
-Version: 1.3.16
+Version: 1.3.17
 Author: Bernhard Kux
 Author URI: https://json-content-importer.com/
 Text Domain: json-content-importer

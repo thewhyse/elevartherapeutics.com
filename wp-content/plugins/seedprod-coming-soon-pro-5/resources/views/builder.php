@@ -8,25 +8,24 @@ require_once SEEDPROD_PRO_PLUGIN_PATH . 'resources/data-templates/basic-page.php
 global $wpdb;
 
 // look for mixed content and mis configured WordPress sites.
-$actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-$seedprod_builder_url =  wp_parse_url($actual_link);
-$mixed_content = false;
-if($seedprod_builder_url !== false){
-	if(!empty($seedprod_builder_url['scheme'] && $seedprod_builder_url['scheme'] == 'https' )){
-		$sp_home_url = get_option('home');
-		$sp_home_url_parsed = wp_parse_url($sp_home_url);
-		$sp_site_url = get_option('siteurl');
-		$sp_site_url_parsed = wp_parse_url($sp_site_url);
+$actual_link          = ( isset( $_SERVER['HTTPS'] ) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http' ) . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+$seedprod_builder_url = wp_parse_url( $actual_link );
+$mixed_content        = false;
+if ( false !== $seedprod_builder_url ) {
+	if ( ! empty( $seedprod_builder_url['scheme'] && $seedprod_builder_url['scheme'] == 'https' ) ) {
+		$sp_home_url        = get_option( 'home' );
+		$sp_home_url_parsed = wp_parse_url( $sp_home_url );
+		$sp_site_url        = get_option( 'siteurl' );
+		$sp_site_url_parsed = wp_parse_url( $sp_site_url );
 
-		if(!empty($sp_home_url_parsed['scheme']) && $sp_home_url_parsed['scheme'] == 'http'){
+		if ( ! empty( $sp_home_url_parsed['scheme'] ) && $sp_home_url_parsed['scheme'] == 'http' ) {
 			$mixed_content = true;
 		}
-		
-		if(!empty($site_url_parsed['scheme']) && $site_url_parsed['scheme'] == 'http'){
+
+		if ( ! empty( $site_url_parsed['scheme'] ) && $site_url_parsed['scheme'] == 'http' ) {
 			$mixed_content = true;
 		}
 	}
-
 }
 
 
@@ -110,6 +109,12 @@ if ( ! in_array( $settings['page_type'], $landing_page_types, true ) ) {
 // get post types
 $post_types = get_post_types();
 
+// get seedprod setting tp check special pages states
+$seedprod_settings = get_option( 'seedprod_settings' );
+if ( ! empty( $seedprod_settings ) ) {
+	$seedprod_settings = json_decode( stripslashes( $seedprod_settings ) );
+}
+
 
 // get global css settings
 $global_css_settings = array();
@@ -120,11 +125,11 @@ $tablename = $wpdb->prefix . 'posts';
 $sql       = "SELECT * FROM $tablename WHERE id = %d";
 $safe_sql  = $wpdb->prepare( $sql, absint( $global_css_page_id ) ); // phpcs:ignore WordPress.DB.PreparedSQL.NotPrepared
 $sp_page   = $wpdb->get_row( $safe_sql ); // phpcs:ignore WordPress.DB.PreparedSQL.NotPrepared
-if (!empty($sp_page)) {
-    if ($sp_page->post_content_filtered) {
-        $global_css_settings  = json_decode($sp_page->post_content_filtered, true);
-        $global_css_docuement = $global_css_settings;
-    }
+if ( ! empty( $sp_page ) ) {
+	if ( $sp_page->post_content_filtered ) {
+		$global_css_settings  = json_decode( $sp_page->post_content_filtered, true );
+		$global_css_docuement = $global_css_settings;
+	}
 }
 if ( ! empty( $global_css_settings['document'] ) ) {
 	$global_css_settings = $global_css_settings['document'];
@@ -177,15 +182,39 @@ if ( $dismiss_bottombar_cta ) {
 
 
 // Email integration logic
-$seedprod_api_token    = get_option( 'seedprod_api_token' );
-$seedprod_user_id      = get_option( 'seedprod_user_id' );
-$seedprod_site_token   = get_option( 'seedprod_token' );
-if(empty($seedprod_site_token)){
+$seedprod_api_token  = get_option( 'seedprod_api_token' );
+$seedprod_user_id    = get_option( 'seedprod_user_id' );
+$seedprod_site_token = get_option( 'seedprod_token' );
+if ( empty( $seedprod_site_token ) ) {
 	$seedprod_site_token = wp_generate_uuid4();
 	update_option( 'seedprod_token', $seedprod_site_token );
 }
 $license_key           = get_option( 'seedprod_api_key' );
 $email_integration_url = '';
+
+// stripe connect
+$seedprod_stripe_connect_origin = get_option( 'seedprod_stripe_connect_origin' );
+if ( empty( $seedprod_stripe_connect_origin ) ) {
+	$seedprod_stripe_connect_origin = wp_generate_uuid4();
+	add_option( 'seedprod_stripe_connect_origin', $seedprod_stripe_connect_origin );
+}
+// Set stripe token
+if ( ! empty( $_GET['seedprod_stripe_connect_token'] ) ) {
+	if ( ! empty( $_GET['seedprod_stripe_connect_origin'] ) ) {
+		if ( $seedprod_stripe_connect_origin == $_GET['seedprod_stripe_connect_origin'] ) {
+		}
+		update_option( 'seedprod_stripe_connect_token', $_GET['seedprod_stripe_connect_token'] );
+	}
+}
+// get stripe token
+$seedprod_stripe_connect_token = get_option( 'seedprod_stripe_connect_token' );
+if ( empty( $seedprod_stripe_connect_token ) ) {
+	$seedprod_stripe_connect_token = '';
+}
+
+
+
+$seedprod_web_api = SEEDPROD_PRO_WEB_API_URL;
 
 
 //if (1 === 0 && empty(seedprod_pro_cu()) || empty($seedprod_api_token)) {
@@ -195,6 +224,8 @@ if ( 1 === 0 ) {
 	$token                 = $seedprod_site_token;
 	$email_integration_url = SEEDPROD_PRO_WEB_API_URL . 'email_integrations?api_token=' . $seedprod_api_token . '&token=' . $token . '&license_key=' . $license_key . '&lpage_uuid=' . $lpage_uuid . '&lpage_id=' . $lpage_id;
 }
+
+
 
 
 $seedprod_app_settings = get_option( 'seedprod_app_settings' );
@@ -210,6 +241,27 @@ if ( ! empty( $seedprod_app_settings ) ) {
 
 $template_preview_path = 'https://assets.seedprod.com/preview-';
 
+
+
+// Get user personalization preferences.
+$user_personalization_preferences = get_user_meta( $sp_current_user->ID, 'seedprod_personalization_preferences', true );
+
+if ( empty( $user_personalization_preferences ) ) {
+	// Set default settings.
+	$user_personalization_preferences = array(
+		'show_templatetag_settings'             => true,
+		'show_woocommerce_templatetag_settings' => true,
+		'show_entry_settings'                   => true,
+		'show_entry_settings_2'                 => true,
+		'show_entry_settings_4'                 => true,
+		'show_entry_settings_5'                 => true,
+		'show_entry_settings_3'                 => false,
+		'show_layoutnav'                        => false,
+	);
+	add_user_meta( $sp_current_user->ID, 'seedprod_personalization_preferences', wp_json_encode( $user_personalization_preferences ), true );
+} else {
+	$user_personalization_preferences = json_decode( $user_personalization_preferences );
+}
 
 // Pers
 $per                        = array();
@@ -308,6 +360,7 @@ foreach ( $fontawesome_json as $v ) {
 <?php endif; ?>
 
 <script>
+//var seedprod_copy_paste_enabled = false;
 var seedprod_nonce = <?php echo wp_json_encode( $seedprod_nonce ); ?>;
 var seedprod_page = <?php echo wp_json_encode( sanitize_text_field( wp_unslash( $_GET['page'] ) ) ); ?>; <?php // phpcs:ignore ?>
 var seedprod_remote_api = "<?php echo esc_url( SEEDPROD_PRO_API_URL ); ?>";
@@ -394,6 +447,9 @@ var seedprod_plugin_nonce_url = <?php echo wp_json_encode( esc_url_raw( $ajax_ur
 <?php $ajax_url = html_entity_decode( wp_nonce_url( 'admin-ajax.php?action=seedprod_pro_dismiss_upsell', 'seedprod_pro_dismiss_upsell' ) ); ?>
 var seedprod_dismiss_upsell = <?php echo wp_json_encode( esc_url_raw( $ajax_url ) ); ?>;
 
+<?php $ajax_url = html_entity_decode( wp_nonce_url( 'admin-ajax.php?action=seedprod_pro_import_cross_site_paste', 'seedprod_pro_import_cross_site_paste' ) ); ?>
+var seedprod_import_cross_site_url = <?php echo wp_json_encode( esc_url_raw( $ajax_url ) ); ?>;
+
 <?php
 	// user has to have this capability
 	$unfiltered_html = false;
@@ -444,6 +500,10 @@ if ( count( $seedprod_theme_parts ) > 0 ) {
 var seedprod_data = 
 <?php
 $seedprod_data = array(
+	'seedprod_web_api'                 => $seedprod_web_api,
+	'seedprod_stripe_connect_token'    => $seedprod_stripe_connect_token,
+	'seedprod_stripe_connect_origin'   => $seedprod_stripe_connect_origin,
+	'seedprod_settings'                => $seedprod_settings,
 	'mixed_content'                    => $mixed_content,
 	'is_landing_page'                  => $is_landing_page,
 	'edited_with_seedprod'             => $edited_with_seedprod,
@@ -498,6 +558,7 @@ $seedprod_data = array(
 	'per'                              => $per,
 	'active_license'                   => $active_license,
 	'is_theme_template'                => $seedprod_is_theme_template,
+	'personalization_preferences'      => $user_personalization_preferences,
 );
 
 
@@ -525,12 +586,68 @@ $seedprod_data = array(
 		$seedprod_data['wc_active'] = false;
 	}
 
+	// Get translations
+	$seedprod_data['translations_pro'] = seedprod_pro_get_jed_locale_data( 'seedprod-pro' );
+
+	// Get help documents
+	$seedprod_data['inline_help_articles'] = seedprod_pro_fetch_inline_help_data();
+
 	echo wp_json_encode( $seedprod_data );
 	?>
 	;
 
 	jQuery('link[href*="forms.css"]').remove();
 	jQuery('link[href*="common.css"]').remove();
+
+	
+	xdLocalStorage.init({
+		iframeUrl:'https://assets.seedprod.com/cross-domain-local-storage/cross-domain-local-storage.html',
+		initCallback: function () {
+			
+			xdLocalStorage.getItem('seedprod_section_data', function (data) {
+					if(data.value=='' || data.value==null){
+						seedprod_store.seedprod_copy_paste_enabled= false;
+					}else{
+						seedprod_store.seedprod_copy_paste_enabled= true;
+					}
+
+			});
+
+
+		}
+	});
+
+	function setxdLocalStorageKeyValue (key,value) {
+
+		xdLocalStorage.setItem(key, value);
+		seedprod_store.seedprod_copy_paste_enabled= true;
+
+	}
+
+	function getxdLocalStorageKeyValue(key){
+		
+		xdLocalStorage.getItem(key, function (data) {
+			seedprod_section_data = JSON.parse(data.value);
+		});
+
+	}
+	
+	function getxdLocalStorageValue(){
+		
+		xdLocalStorage.getItem('seedprod_section_data', function (data) {
+			seedprod_section_data = JSON.parse(data.value);
+		});
+
+	}
+
+	function setxdLocalStorageValue (value) {
+
+		xdLocalStorage.setItem('seedprod_section_data', value);
+		seedprod_store.seedprod_copy_paste_enabled= true;
+
+	}
+
+
 
 </script>
 

@@ -2,7 +2,7 @@
 /**
  * @author    ThemePunch <info@themepunch.com>
  * @link      https://www.themepunch.com/
- * @copyright 2019 ThemePunch
+ * @copyright 2022 ThemePunch
  */
 
 if(!defined('ABSPATH')) exit();
@@ -116,9 +116,10 @@ $rs_languages	= $rsaf->get_available_languages();
 				<div id="syscheck_memory_limit" class="system_requirement"><i class="material-icons done_icon">done</i><i class="material-icons warning_icon">warning</i><?php _e('Memory Limit (256M)', 'revslider');?></div>
 				<div id="syscheck_upload_max_filesize" class="system_requirement"><i class="material-icons done_icon">done</i><i class="material-icons warning_icon">warning</i><?php _e('Upload Max. Filesize (256M)', 'revslider');?></div>
 				<div id="syscheck_post_max_size" class="system_requirement"><i class="material-icons done_icon">done</i><i class="material-icons warning_icon">warning</i><?php _e('Max. Post Size (256M)', 'revslider');?></div>
-				<div id="syscheck_server_connect" class="system_requirement"><i class="material-icons done_icon">done</i><i class="material-icons warning_icon">warning</i><?php _e('ThemePunch Server', 'revslider');?><darkiconbox id="check_for_themepunchserver" class="rfloated"><i class="material-icons">refresh</i></darkiconbox></div>
+				<div id="syscheck_max_allowed_packet" class="system_requirement"><i class="material-icons done_icon">done</i><i class="material-icons warning_icon">warning</i><?php _e('Max. Allowed Package (16M)', 'revslider');?></div>
+				<div id="syscheck_zlib_enabled" class="system_requirement"><i class="material-icons done_icon">done</i><i class="material-icons warning_icon">warning</i><?php _e('Zlib Library', 'revslider');?></div>
 				<div id="syscheck_object_library_writable" class="system_requirement"><i class="material-icons done_icon">done</i><i class="material-icons warning_icon">warning</i><?php _e('Object Library', 'revslider');?></div>
-
+				<div id="syscheck_server_connect" class="system_requirement"><i class="material-icons done_icon">done</i><i class="material-icons warning_icon">warning</i><?php _e('ThemePunch Server', 'revslider');?><darkiconbox id="check_for_themepunchserver" class="rfloated"><i class="material-icons">refresh</i></darkiconbox><darkiconbox id="faq_to_systemrequirements" class="rfloated"><a href="https://www.sliderrevolution.com/documentation/system-requirements/" target="_blank" rel="noopener"><i class="material-icons">question_mark</i></a></darkiconbox></div>
 			</div>
 		</div>
 		<!-- PLUGIN HISTORY -->
@@ -185,11 +186,11 @@ $rs_languages	= $rsaf->get_available_languages();
 				</div><!--				
 				--><div class="featurebox">
 					<div class="box_with_icon not_activated activate_to_unlock"><i class="material-icons">do_not_disturb</i><?php _e('Register to Unlock', 'revslider');?></div>
-					<?php require_once(RS_PLUGIN_PATH . 'admin/views/features/object_library.php'); ?>
+					<?php require_once(RS_PLUGIN_PATH . 'admin/views/features/add_ons.php'); ?>					
 				</div><!--				
 				--><div class="featurebox">
 					<div class="box_with_icon not_activated activate_to_unlock"><i class="material-icons">do_not_disturb</i><?php _e('Register to Unlock', 'revslider');?></div>
-					<?php require_once(RS_PLUGIN_PATH . 'admin/views/features/add_ons.php'); ?>
+					<?php require_once(RS_PLUGIN_PATH . 'admin/views/features/object_library.php'); ?>
 				</div><!--							
 				--><div class="featurebox">
 					<div class="box_with_icon not_activated activate_to_unlock"><i class="material-icons">do_not_disturb</i><?php _e('Register to Unlock', 'revslider');?></div>

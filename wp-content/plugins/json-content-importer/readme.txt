@@ -3,9 +3,9 @@ Contributors: berkux
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=APWXWK3DF2E22
 Tags: json,api,gutenberg,block,webservice,twig,livedata,connect,template,content,opendata,parser,application
 Requires at least: 3.0
-Tested up to: 6.1.1
+Tested up to: 6.2
 Requires PHP: 5.3.0
-Stable tag: 1.3.16
+Stable tag: 1.3.17
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -139,6 +139,9 @@ Famous for Oktoberfest, FC Bayern Munich, AllianzArena, DLD, TUM, BMW, Siemens, 
 4. Add a Gutenberg-Block: Right the settings, left the output
 
 == Changelog ==
+= 1.3.17 =
+* Wordpress 6.2 changed the way Blocks are rendered. This Update fixes the crash of the JCI-Block with wordpress 6.2
+
 = 1.3.16 =
 * Fixed security issue: Rio D. discovered and reported a Cross Site Scripting (XSS) vulnerability to Patchstack. Thank you Rio! For utilize you need Wordpress-Backend-Access and the affected Page is in the Wordpress-Adminarea only. Nevertheless: Update your JCI-Plugin, please!
 * PHP 8.1 fixes

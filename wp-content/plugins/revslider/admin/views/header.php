@@ -2,7 +2,7 @@
 /**
  * @author    ThemePunch <info@themepunch.com>
  * @link      https://www.themepunch.com/
- * @copyright 2019 ThemePunch
+ * @copyright 2022 ThemePunch
  */
 
 if(!defined('ABSPATH')) exit();
@@ -12,6 +12,7 @@ $rs_od	= $rsaf->get_slider_overview();
 $rsa	= $rsaf->get_short_library($rs_od);
 $rsupd	= new RevSliderPluginUpdate();
 $rsaddon= new RevSliderAddons();
+if(!isset($rstrack)) $rstrack= new RevSliderTracking();
 
 $rs_addon_update		 = $rsaddon->check_addon_version();
 $rs_addons				 = $rsaddon->get_addon_list();
@@ -34,7 +35,8 @@ $rs_new_addon_counter	 = get_option('rs-addons-counter', false);
 $rs_new_addon_counter	 = ($rs_new_addon_counter === false) ? count($rs_addons) : $rs_new_addon_counter;
 $rs_new_temp_counter	 = get_option('rs-templates-counter', false);
 if($rs_new_temp_counter === false){
-	$_rs_tmplts			 = get_option('rs-templates', array());
+	$_rs_tmplts			 = get_option('rs-templates', false);
+	$_rs_tmplts			 = $this->do_uncompress($_rs_tmplts);
 	$rs_new_temp_counter = (isset($_rs_tmplts['slider'])) ? count($_rs_tmplts['slider']) : $rs_new_temp_counter;
 }
 $rs_global_sizes		 = array(
@@ -64,10 +66,10 @@ $rs_show_deregister_popup = $rsaf->_truefalse(get_option('revslider-deregister-p
 	RVS.ENV.activated		= <?php echo ($rsaf->_truefalse($rs_valid) === true) ? 'true' : 'false'; ?>;
 	RVS.ENV.nonce			= '<?php echo wp_create_nonce('revslider_actions'); ?>';
 	RVS.ENV.plugin_dir		= 'revslider';
-	RVS.ENV.slug_path		= '<?php echo RS_PLUGIN_SLUG_PATH; ?>';
-	RVS.ENV.slug			= '<?php echo RS_PLUGIN_SLUG; ?>';
-	RVS.ENV.plugin_url		= '<?php echo RS_PLUGIN_URL; ?>';
-	RVS.ENV.wp_plugin_url 	= '<?php echo WP_PLUGIN_URL . "/"; ?>';
+	RVS.ENV.slug_path		= '<?php echo str_replace(array("\n", "\r"), '', RS_PLUGIN_SLUG_PATH); ?>';
+	RVS.ENV.slug			= '<?php echo str_replace(array("\n", "\r"), '', RS_PLUGIN_SLUG); ?>';
+	RVS.ENV.plugin_url		= '<?php echo str_replace(array("\n", "\r"), '', RS_PLUGIN_URL); ?>';
+	RVS.ENV.wp_plugin_url 	= '<?php echo str_replace(array("\n", "\r"), '', WP_PLUGIN_URL) . "/"; ?>';
 	RVS.ENV.admin_url		= '<?php echo admin_url('admin.php?page=revslider'); ?>';
 	RVS.ENV.revision		= '<?php echo RS_REVISION; ?>';
 	RVS.ENV.updated			= <?php echo (version_compare(RS_REVISION, $rs_show_updated, '>')) ? 'true' : 'false'; ?>;
@@ -85,8 +87,9 @@ $rs_show_deregister_popup = $rsaf->_truefalse(get_option('revslider-deregister-p
 		<?php
 		if(RevSliderWooCommerce::woo_exists()){
 			$wc = new WC_Product(0);
-		?>wc_full_price:		'<?php echo wc_price('99') . $wc->get_price_suffix(); ?>',
-		wc_price:			'<?php echo strip_tags(wc_price('99') . $wc->get_price_suffix()); ?>',
+			$wc_price_suffix = str_replace(array("\n", "\r", "'"), '', $wc->get_price_suffix());
+		?>wc_full_price:		'<?php echo wc_price('99') . $wc_price_suffix; ?>',
+		wc_price:			'<?php echo strip_tags(wc_price('99') . $wc_price_suffix); ?>',
 		wc_price_no_cur:	'<?php echo strip_tags(wc_price('99')); ?>',
 		wc_categories:		'shoes, socks',
 		wc_tags:			'comfort, health',
@@ -110,6 +113,7 @@ $rs_show_deregister_popup = $rsaf->_truefalse(get_option('revslider-deregister-p
 	RVS.ENV.newAddonsAmount = '<?php echo $rs_new_addon_counter; ?>';
 	RVS.ENV.newTemplatesAmount = '<?php echo $rs_new_temp_counter; ?>';
 	RVS.ENV.deregisterPopup	= <?php echo ($rs_show_deregister_popup) ? 'true' : 'false'; ?>;
+	RVS.ENV.tracking		= '<?php echo $rstrack->get_status(); ?>';
 	
 	<?php
 	if($rs_slider_update_needed == true){

@@ -1,8 +1,8 @@
 === Vimeo ===
 Contributors: vimeodev, moderntribe, nickpelton, chrismkindred, antoniosejas, aykanburcak, joshliston, andrewadam, maxgarceau, bdavisdesigns
 Tags: video, vimeo, blocks, video library, upload, create, automatic video, product video,  woocommerce video
-Tested up to: 5.8.1
-Stable tag: 1.2.0
+Tested up to: 6.1
+Stable tag: 1.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -70,6 +70,9 @@ To set up automatic updates for your plugin, see [this article](https://www.wpbe
 4. WooCommerce Video Gallery
 
 == Changelog ==
+
+= 1.2.1 - 2022-11-14 =
+* Tested up to WordPress 6.1
 
 = 1.2.0 - 2022-08-04 =
 * Fix edit video button to always be visible

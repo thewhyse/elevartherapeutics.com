@@ -6,7 +6,8 @@
 	var TextControl = wp.components.TextControl;
 	var TextareaControl = wp.components.TextareaControl;
 	var RangeControl = wp.components.RangeControl;
-	var ServerSideRender = wp.components.ServerSideRender;
+	//var ServerSideRender = wp.components.ServerSideRender;
+	var ServerSideRender = wp.serverSideRender;
 	var RadioControl = wp.components.RadioControl;
 	var MenuItemsChoice  = wp.components.MenuItemsChoice;
 	var ToggleControl = wp.components.ToggleControl;

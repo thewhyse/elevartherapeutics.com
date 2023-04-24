@@ -2,7 +2,7 @@
 /**
  * @author    ThemePunch <info@themepunch.com>
  * @link      https://www.themepunch.com/
- * @copyright 2019 ThemePunch
+ * @copyright 2022 ThemePunch
  */
 
 if(!defined('ABSPATH')) exit();
@@ -633,7 +633,8 @@ class RevSliderSlide extends RevSliderFunctions {
 	 */
 	private function set_layers_by_post($post, $slider_id){
 		$post = apply_filters('revslider_slide_setLayersByPostData_pre', $post, $slider_id, $this);
-		
+		$ignore_taxonomies = apply_filters('revslider_slide_ignore_taxonomies', array('post_tag', 'translation_priority', 'language', 'post_translations'), $this);
+
 		//check if we are woocommerce or not
 		$post_id		= $this->get_val($post, 'ID');
 		$slider_source	= $this->get_slider_param($slider_id, 'source', array());
@@ -665,10 +666,10 @@ class RevSliderSlide extends RevSliderFunctions {
 			$cats = array();
 			$post_type =  $this->get_val($post, 'post_type');
 			$taxonomies = get_object_taxonomies($post_type);
-
+			
 			if(!empty($taxonomies)){
 				foreach($taxonomies as $ptt){
-					if($ptt === 'post_tag' || $ptt === 'translation_priority') continue;
+					if(in_array($ptt, $ignore_taxonomies, true)) continue;
 					$temp_cats = get_the_terms($post_id, $ptt);
 					if(!empty($temp_cats)){
 						$cats = array_merge($cats, $temp_cats);
@@ -961,7 +962,7 @@ class RevSliderSlide extends RevSliderFunctions {
 			$product = ($is_30) ? wc_get_product($post_id) : get_product($post_id);
 			
 			if($product !== false){
-				$wc_stock		= ($is_30) ? $product->get_stock_quantity() : $product->get_total_stock();
+				$wc_stock		= ($is_30) ? RevSliderWooCommerce::get_total_stock($product) : $product->get_total_stock();
 				$wc_rating		= ($is_30) ? wc_get_rating_html($product->get_average_rating()) : $product->get_rating_html();
 				$wc_categories	= ($is_30) ? wc_get_product_category_list($product->get_id(), ',') : $product->get_categories(',');
 				$wc_tags		= ($is_30) ? wc_get_product_tag_list($product->get_id()) : $product->get_tags();
@@ -2804,7 +2805,7 @@ class RevSliderSlide extends RevSliderFunctions {
 		if(empty($ids)) array();
 		
 		$string_ids = (is_string($ids)) ? $ids : implode(',', $ids);
-		$args		= array('include' => $string_ids);
+		$args		= array('include' => $string_ids, 'number' => 10000);
 		if(!empty($tax)){
 			$args['taxonomy'] = (is_string($tax)) ? explode(',', $tax) : $tax;
 		}
