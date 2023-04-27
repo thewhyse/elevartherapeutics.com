@@ -24,6 +24,13 @@
 @import 'font';
 @import "colors";
 
+/*    GLOBAL NAV LOGO     */
+@media all and (max-width: 1024px) {
+  .edgtf-mobile-header .edgtf-mobile-logo-wrapper a {
+    height: 4rem !important;
+  }
+}
+
 /** {
   margin: 0;
   padding: 0;
