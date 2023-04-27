@@ -2,7 +2,7 @@
 
 /*** Child Theme Function  ***/
 
-if ( ! function_exists( 'conall_edge_child_theme_enqueue_scripts' ) ) {
+/*if ( ! function_exists( 'conall_edge_child_theme_enqueue_scripts' ) ) {*/
 	function conall_edge_child_theme_enqueue_scripts() {
 		$parent_style = 'conall-edge-default-style';
 		
@@ -10,4 +10,4 @@ if ( ! function_exists( 'conall_edge_child_theme_enqueue_scripts' ) ) {
 	}
 	
 	add_action( 'wp_enqueue_scripts', 'conall_edge_child_theme_enqueue_scripts' );
-}
+/*}*/
