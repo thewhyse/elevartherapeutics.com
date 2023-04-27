@@ -1,6 +1,7 @@
 <?php
 
-require(dirname(__FILE__) . '/wp-load.php');
+/*https://stackoverflow.com/questions/3947979/fatal-error-call-to-undefined-function-add-action*/
+/*require(dirname(__FILE__) . '/wp-load.php');*/
 
 /*** Child Theme Function  ***/
 
