@@ -1,5 +1,7 @@
 <?php
 
+require(dirname(__FILE__) . '/wp-load.php');
+
 /*** Child Theme Function  ***/
 
 /*if ( ! function_exists( 'conall_edge_child_theme_enqueue_scripts' ) ) {*/
