@@ -1,0 +1,25 @@
+@import "colors";
+
+@mixin demi-bold($fontf, $size) {
+  font-family: $fontf;
+  font-size: $size + rem !important;
+  font-weight: 600 !important;
+}
+
+@mixin bold($fontf, $size) {
+  font-family: $fontf;
+  font-size: $size + rem !important;
+  font-weight: 900 !important;
+}
+
+@mixin italic($fontf, $size) {
+  font-family: $fontf;
+  font-size: $size + rem !important;
+  font-weight: 300 !important;
+}
+
+@mixin regular($fontf, $size) {
+  font-family: $fontf;
+  font-size: $size + rem !important;
+  font-weight: 400 !important;
+}
