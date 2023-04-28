@@ -88,16 +88,16 @@
 
 #future-events-row {
   height: 350px;
-  background-image:
-    url(/wp-content/themes/conall-child/dist/images/Footer_DT.png),
-    url(/wp-content/uploads/2021/11/Elevar_Blue_Wave_Footer_5000px_wide_rev2.png);
   background-position:
     center center,
     bottom 0 left 0 !important;
   background-size:
     cover,
-    100%;
-  background-repeat: no-repeat;
+    100% !important;
+  background-repeat: no-repeat !important;
+  background-image:
+    url(/wp-content/themes/conall-child/dist/images/Footer_DT.png),
+    url(/wp-content/uploads/2021/11/Elevar_Blue_Wave_Footer_5000px_wide_rev2.png);
 
   #future-events-row-title {
     h4 {
@@ -121,6 +121,11 @@
   footer {
     .edgtf-footer-bottom-holder {
       background-color: $lt_blue;
+      .textwidget {
+        p span {
+          color: #fff !important;
+        }
+      }
     }
   }
 }
