@@ -1,3 +1,4 @@
+
 @import "../base/colors";
 
 /*  HOME PAGE   */
@@ -9,6 +10,9 @@
 #asco_23_hero_row {
   h1, h3 {
     color: #fff;
+  }
+  #visit-us-subtitle {
+    margin: -20px 0 0 !important;
   }
   #address-line {
     a {
@@ -32,10 +36,15 @@
 #spacer-row {
   .edgtf-full-section-inner {
     height: 90px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     p {
-      font-size: 24px;
+      font-size: 20px;
+      font-weight: 600;
       color: $drk_blue;
     }
   }
@@ -118,6 +127,3 @@
 @media all and (max-width: 479px) {
 
 }
-
-
-
