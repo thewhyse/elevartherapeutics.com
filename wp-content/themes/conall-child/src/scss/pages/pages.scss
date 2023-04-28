@@ -10,6 +10,7 @@
 #asco_23_hero_row {
   h1, h3 {
     color: #fff;
+    font-weight: 600;
   }
   #visit-us-subtitle {
     margin: -20px 0 0 !important;
@@ -22,7 +23,7 @@
       .sm_logo_icon {
         display: inline-block;
         height: 100%;
-        width: 28px;
+        width: 40px;
         background: url(/wp-content/themes/conall-child/dist/images/elevar_logo_sm.png) no-repeat center center;
       }
     }
@@ -64,14 +65,35 @@
 
   #imgs-block .wpb_text_column {
     color: #fff !important;
-
     h4 {
       color: #fff !important;
       font-size: 26px;
     }
-
     p {
       font-size: 20px;
+    }
+  }
+}
+
+#form-container-row {
+  padding: 40px 0;
+  h4 {
+    font-size: 20px;
+    color: $drk_blue;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+
+#future-events-row {
+  height: 350px;
+}
+
+.page-id-16965 {
+  footer {
+    .edgtf-footer-bottom-holder {
+      background-color: $lt_blue;
     }
   }
 }
