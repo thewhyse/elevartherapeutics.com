@@ -6,6 +6,27 @@
 
 
 /*    ASCO 2023 PAGE    */
+#asco_23_hero_row {
+  h1, h3 {
+    color: #fff;
+  }
+  #address-line {
+    a {
+      color: #fff;
+      border-bottom: 1px solid #fff;
+      .sm_logo_icon {
+        display: inline-block;
+        height: 100%;
+        width: 28px;
+        background: url(/wp-content/themes/conall-child/dist/images/elevar_logo_sm.png) no-repeat center center;
+      }
+    }
+  }
+  .edgtf-btn {
+    border-radius: 2px;
+    margin: 20px 0 0;
+  }
+}
 
 #elevar-ppl-row {
   .wpb_text_column:first-child {
