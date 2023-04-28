@@ -24,8 +24,20 @@
     }
   }
   .edgtf-btn {
-    border-radius: 2px;
+    border-radius: 6px;
     margin: 20px 0 0;
+  }
+}
+
+#spacer-row {
+  .edgtf-full-section-inner {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    p {
+      font-size: 24px;
+      color: $drk_blue;
+    }
   }
 }
 
@@ -62,7 +74,6 @@
 
   #elevar-ppl-row {
     height: 565px;
-    /*background-image: url(../images/blue-bg-w-wings.png);*/
     background-image: url(/wp-content/themes/conall-child/dist/images/blue-bg-w-wings.png);
     background-repeat: no-repeat;
     background-size: 133%;
@@ -75,7 +86,7 @@
   #elevar-ppl-row {
     height: auto;
     background-image: none;
-    background-color: #2B71B7;
+    background-color: $drk_blue;
   }
 }
 
