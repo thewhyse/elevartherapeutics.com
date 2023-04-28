@@ -4,16 +4,60 @@
 
 /*  HOME PAGE   */
 
+
 /*    ASCO 2023 PAGE    */
+
+#elevar-ppl-row {
+  .wpb_text_column:first-child {
+    margin: 40px 0 !important;
+
+    h3 {
+      font-size: 2rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #fff;
+    }
+  }
+
+  #imgs-block .wpb_text_column {
+    color: #fff !important;
+
+    h4 {
+      color: #fff !important;
+      font-size: 26px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+}
 
 @media all and (min-width: 768px) {
   #asco_23_hero_row {
     height: 326px;
   }
+
+  #elevar-ppl-row {
+    height: 565px;
+    background-image: url(images/blue-bg-w-wings.png);
+    background-repeat: no-repeat;
+    background-size: 133%;
+    background-position: top right;
+  }
 }
 
+/*** Responsive Styles Tablet And Below ***/
+@media all and (max-width: 980px) {
+  #elevar-ppl-row {
+    height: auto;
+    background-image: none;
+    background-color: #2B71B7;
+  }
+}
 
 /*   END ASCO 2023 PAGE    */
+
 
 
 /*** Responsive Styles Standard Desktop Only ***/
