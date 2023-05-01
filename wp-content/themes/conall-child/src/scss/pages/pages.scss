@@ -112,18 +112,21 @@
   form {
     fieldset {
       max-width: 100%;
-      .input {
+      display: flex;
+      justify-content: space-between;
+/*      .input {
         input::placeholder,
         select::placeholder {
           color: red;
         }
-      }
+      }*/
       .hs_firstname,
       .hs_lastname {
+        width: 49%;
         .input {
           margin-right: 0;
           input {
-            width: 99%;
+            width: 100%;
           }
         }
       }
