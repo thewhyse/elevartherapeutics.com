@@ -109,6 +109,29 @@
   p {
     font-size: 18px;
   }
+  form {
+    fieldset {
+      max-width: 100%;
+      .hs_firstname,
+      .hs_lastname {
+        .input {
+          input {
+            width: 100%;
+          }
+        }
+      }
+      .hs_phone,
+      .hs_location,
+      .hs_i_would_like_to_request_ {
+        .input {
+          input,
+          select {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 }
 
 #future-events-row {
@@ -130,6 +153,7 @@
       color: #fff;
       font-size: 24px;
       font-weight: 500;
+      margin: 20px 0 30px;
     }
   }
 
