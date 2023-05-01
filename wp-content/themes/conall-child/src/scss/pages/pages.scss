@@ -115,15 +115,26 @@
       .hs_firstname,
       .hs_lastname {
         .input {
+          margin-right: 0;
           input {
             width: 100%;
           }
         }
       }
+      .hs_email {
+        .input {
+          margin-right: 0;
+          input {
+            width: 99%;
+          }
+        }
+      }
+      .hs_profession,
       .hs_phone,
       .hs_location,
       .hs_i_would_like_to_request_ {
         .input {
+          margin-right: 0;
           input,
           select {
             width: 100%;
