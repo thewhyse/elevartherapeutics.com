@@ -112,12 +112,18 @@
   form {
     fieldset {
       max-width: 100%;
+      .input {
+        input::placeholder,
+        select::placeholder {
+          color: red;
+        }
+      }
       .hs_firstname,
       .hs_lastname {
         .input {
           margin-right: 0;
           input {
-            width: 100%;
+            width: 99%;
           }
         }
       }
