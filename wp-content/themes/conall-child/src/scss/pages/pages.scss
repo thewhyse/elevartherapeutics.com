@@ -136,11 +136,17 @@
       }
       .hs_profession,
       .hs_email {
-        width: 100%;
+        width: 49%;
         .input {
           margin-right: 0;
           input {
             width: 99%;
+            box-shadow: none;
+            border: 1px solid #707070;
+            padding: 20px 10px;
+            font-size: 20px;
+          }
+          select {
             box-shadow: none;
             border: 1px solid #707070;
             padding: 20px 10px;
