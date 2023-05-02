@@ -29,6 +29,9 @@
       .input {
         margin-right: 0;
 
+        input::placeholder {
+          font-size:16px;
+        }
         input,
         select {
           width: 100%;
@@ -62,8 +65,8 @@
           width: 100%;
           border: 1px solid #707070;
           border-radius: .25em;
-          padding: .25em .5em;
-          font-size: 1.25rem;
+          padding: 11px 10px;
+          font-size: 16px;
           cursor: pointer;
           line-height: 1.1;
           background-color: #fff;
@@ -82,20 +85,20 @@
     .hs_lastname {
       width: 45%;
     }
-/*    fieldset:nth-child(2),
-    fieldset:nth-child(3) {
-      width: 45%;
-    }
+    fieldset:nth-child(1),
     fieldset:nth-child(2) {
-      float: left;
+      width: 97.5%;
+    }
+    fieldset:nth-child(3) {
+
     }
 
-    fieldset:nth-child(3) {
-      float: right;
-    }
     fieldset:nth-child(4) {
-      clear: both;
-    }*/
+
+    }
+    fieldset:nth-child(5) {
+
+    }
 
     .hs-dependent-field {
 
@@ -106,20 +109,34 @@
     }
 
     .hs_phone {
-      width: 35%;
+      width: 30%;
     }
 
     .hs_location {
       width: 10%;
+      margin: 0 0 0 20px;
     }
     .hs_i_would_like_to_request_ {
       width: 50%;
     }
     .hs_schedule_a_meeting_with_us_at_asco {
+      ul {
+        list-style: none;
 
+        li {
+          display: flex;
+          flex-direction: column;
+        }
+      }
     }
     .hs_by_subscribing__you_agree_to_our_terms_and_conditions_and_privacy_policy_and_understand_that_you_ar {
+      ul {
+        list-style: none;
 
+        li {
+          display: flex;
+        }
+      }
     }
     .hs_recaptcha {
 
