@@ -7,6 +7,7 @@
     font-size: 20px;
     color: $drk_blue;
   }
+
   p {
     font-size: 18px;
   }
@@ -29,9 +30,26 @@
       .input {
         margin-right: 0;
 
-        input::placeholder {
-          font-size:16px;
+        input::-webkit-input-placeholder {
+          font-size: 16px;
         }
+
+        input::-moz-placeholder {
+          font-size: 16px;
+        }
+
+        input:-ms-input-placeholder {
+          font-size: 16px;
+        }
+
+        input::-ms-input-placeholder {
+          font-size: 16px;
+        }
+
+        input::placeholder {
+          font-size: 16px;
+        }
+
         input,
         select {
           width: 100%;
@@ -44,9 +62,9 @@
       }
 
       select {
-        // A reset of styles, including removing the default dropdown arrow
+        -webkit-appearance: none;
+        -moz-appearance: none;
         appearance: none;
-        // Additional resets for further consistency
         background-color: transparent;
         border: none;
         padding: 0 1em 0 0;
@@ -79,16 +97,16 @@
 
     }
 
-    .hs_firstname {
-      width: 45%;
-    }
+    .hs_firstname,
     .hs_lastname {
-      width: 45%;
+      width: 48%;
     }
+
     fieldset:nth-child(1),
     fieldset:nth-child(2) {
       width: 97.5%;
     }
+
     fieldset:nth-child(3) {
 
     }
@@ -96,6 +114,7 @@
     fieldset:nth-child(4) {
 
     }
+
     fieldset:nth-child(5) {
 
     }
@@ -113,34 +132,66 @@
     }
 
     .hs_location {
-      width: 10%;
-      margin: 0 0 0 20px;
+      width: 12%;
     }
+
     .hs_i_would_like_to_request_ {
       width: 50%;
     }
+
     .hs_schedule_a_meeting_with_us_at_asco {
       ul {
         list-style: none;
 
         li {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
-          flex-direction: column;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+
+          input {
+            width: 34px;
+            height: 34px;
+            background: $lt_blue;
+            color: #fff;
+            border: 1px solid $lt_blue;
+            border-radius: 2px;
+          }
         }
       }
     }
+
     .hs_by_subscribing__you_agree_to_our_terms_and_conditions_and_privacy_policy_and_understand_that_you_ar {
       ul {
         list-style: none;
 
         li {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
+
+          label {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+
+            input {
+              width: 34px;
+              height: 34px;
+              border: 1px solid #707070;
+              border-radius: 2px;
+            }
+          }
         }
       }
     }
+
     .hs_recaptcha {
 
     }
+
     .hs_submit {
 
     }
