@@ -169,11 +169,10 @@
               appearance: none;
               width: 34px;
               height: 34px;
-              background: $lt_blue;
+              /*background: $lt_blue;*/
+              background: #fff;
               color: #fff;
-              border: 1px solid $lt_blue;
-              /*              background: #fff;
-                            border: 1px solid #0c0c0c;*/
+              border: 2px solid $lt_blue;
               border-radius: 2px;
             }
           }
@@ -241,6 +240,7 @@
           color: #fff;
           border: 2px solid $lt_blue;
           border-radius: 6px;
+          font-size: 20px;
         }
       }
     }
