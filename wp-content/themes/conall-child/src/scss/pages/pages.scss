@@ -51,6 +51,8 @@
   .edgtf-btn {
     border-radius: 6px;
     margin: 20px 0 0;
+    font-size: 16px;
+    font-weight: 500;
   }
 }
 
@@ -96,94 +98,6 @@
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-    }
-  }
-}
-
-#form-container-row {
-  padding: 40px 0;
-  h4 {
-    font-size: 20px;
-    color: $drk_blue;
-  }
-  p {
-    font-size: 18px;
-  }
-  form {
-    fieldset {
-      max-width: 100%;
-      display: flex;
-      justify-content: space-between;
-      margin: 20px 0 0;
-/*      .input {
-        input::placeholder,
-        select::placeholder {
-          color: red;
-        }
-      }*/
-      .hs_firstname,
-      .hs_lastname {
-        width: 49%;
-        .input {
-          margin-right: 0;
-          input {
-            width: 98%;
-            box-shadow: none;
-            border: 1px solid #707070;
-            padding: 20px 10px;
-            font-size: 20px;
-          }
-        }
-      }
-      .hs_profession,
-      .hs_email {
-        width: 49%;
-        .input {
-          margin-right: 0;
-          input {
-            width: 99%;
-            box-shadow: none;
-            border: 1px solid #707070;
-            padding: 20px 10px;
-            font-size: 20px;
-          }
-          select {
-            box-shadow: none;
-            border: 1px solid #707070;
-            padding: 20px 10px;
-            font-size: 20px;
-          }
-        }
-      }
-      .hs-dependent-field {
-        width: 100%;
-      }
-      .hs_profession,
-      .hs_phone,
-      .hs_location,
-      .hs_i_would_like_to_request_ {
-        .input {
-          margin-right: 0;
-          input,
-          select {
-            width: 100%;
-          }
-        }
-      }
-      .hs_phone, {
-        width: 35%;
-      }
-      .hs_location {
-        width: 10%;
-      }
-      .hs_i_would_like_to_request_ {
-        width: 49%;
-      }
-
-      .hs-error-msgs {
-        list-style: none;
-        color: red;
-      }
     }
   }
 }
