@@ -140,13 +140,14 @@
     }
 
     .hs_schedule_a_meeting_with_us_at_asco {
-      background-color: #54C1EA;
+      background-color: hsla(196,64%,92%,0.3);
       margin: 0;
-      padding: 10px;
+      padding: 0;
       border-radius: 6px;
       ul {
         list-style: none;
-
+        margin: 0;
+        padding: 10px;
         li {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -156,29 +157,39 @@
           justify-content: center;
 
           label {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
             input[type="checkbox"] {
+              -webkit-appearance: none;
+              -moz-appearance: none;
               appearance: none;
               width: 34px;
               height: 34px;
               background: $lt_blue;
               color: #fff;
               border: 1px solid $lt_blue;
+              /*              background: #fff;
+                            border: 1px solid #0c0c0c;*/
               border-radius: 2px;
             }
           }
 
           span {
             color: #000;
+            font-weight: 700;
           }
         }
       }
     }
-
     .hs_by_subscribing__you_agree_to_our_terms_and_conditions_and_privacy_policy_and_understand_that_you_ar {
       ul {
         list-style: none;
+        margin: 0;
+        height: 0;
 
         li {
           display: -webkit-box;
@@ -191,6 +202,8 @@
             display: flex;
 
             input[type="checkbox"] {
+              -webkit-appearance: none;
+              -moz-appearance: none;
               appearance: none;
               width: 34px;
               height: 34px;
