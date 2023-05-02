@@ -140,6 +140,10 @@
     }
 
     .hs_schedule_a_meeting_with_us_at_asco {
+      background-color: #54C1EA;
+      margin: 0;
+      padding: 10px;
+      border-radius: 6px;
       ul {
         list-style: none;
 
@@ -151,13 +155,22 @@
           -ms-flex-pack: center;
           justify-content: center;
 
-          input {
-            width: 34px;
-            height: 34px;
-            background: $lt_blue;
-            color: #fff;
-            border: 1px solid $lt_blue;
-            border-radius: 2px;
+          label {
+            display: flex;
+            align-items: center;
+            input[type="checkbox"] {
+              appearance: none;
+              width: 34px;
+              height: 34px;
+              background: $lt_blue;
+              color: #fff;
+              border: 1px solid $lt_blue;
+              border-radius: 2px;
+            }
+          }
+
+          span {
+            color: #000;
           }
         }
       }
@@ -177,7 +190,8 @@
             display: -ms-flexbox;
             display: flex;
 
-            input {
+            input[type="checkbox"] {
+              appearance: none;
               width: 34px;
               height: 34px;
               border: 1px solid #707070;
