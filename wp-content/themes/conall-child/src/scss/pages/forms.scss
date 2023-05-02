@@ -36,6 +36,7 @@
           box-shadow: none;
           padding: 12px 10px;
           border: 1px solid #707070;
+          border-radius: 4px;
         }
       }
 
@@ -60,15 +61,16 @@
         .hs-input {
           width: 100%;
           border: 1px solid #707070;
-          border-radius: 0.25em;
-          padding: 0.25em 0.5em;
+          border-radius: .25em;
+          padding: .25em .5em;
           font-size: 1.25rem;
           cursor: pointer;
           line-height: 1.1;
           background-color: #fff;
           background-image: url(/wp-content/themes/conall-child/dist/images/down_arrow.png);
           background-repeat: no-repeat;
-          background-position: top 5px right 10px;
+          background-position: top 13px right 10px;
+          background-size: 18px 9px;
         }
       }
 
@@ -80,7 +82,7 @@
     .hs_lastname {
       width: 45%;
     }
-    fieldset:nth-child(2),
+/*    fieldset:nth-child(2),
     fieldset:nth-child(3) {
       width: 45%;
     }
@@ -93,7 +95,7 @@
     }
     fieldset:nth-child(4) {
       clear: both;
-    }
+    }*/
 
     .hs-dependent-field {
 
