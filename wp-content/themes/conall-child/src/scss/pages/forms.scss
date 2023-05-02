@@ -2,10 +2,12 @@
 /*    ASCO 2023   */
 #form-container-row {
   padding: 40px 0;
+
   h4 {
     font-size: 20px;
     color: $drk_blue;
   }
+
   p {
     font-size: 18px;
   }
@@ -13,17 +15,69 @@
   form {
     fieldset {
       max-width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
       justify-content: space-between;
       margin: 20px 0 0;
+
       .input {
         margin-right: 0;
+
         input,
         select {
           width: 100%;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+          padding: 12px 10px;
         }
       }
     }
+
+    .hs_firstname {
+      width: 49%;
+    }
+
+    .hs_lastname {
+      width: 49%;
+    }
+    fieldset:nth-child(2),
+    fieldset:nth-child(3) {
+      width: 49%;
+    }
+    .hs-dependent-field {
+
+    }
+
+    .hs_email {
+
+    }
+
+    .hs_phone {
+
+    }
+
+    .hs_location {
+
+    }
+    .hs_i_would_like_to_request_ {
+
+    }
+    .hs_schedule_a_meeting_with_us_at_asco {
+
+    }
+    .hs_by_subscribing__you_agree_to_our_terms_and_conditions_and_privacy_policy_and_understand_that_you_ar {
+
+    }
+    .hs_recaptcha {
+
+    }
+    .hs_submit {
+
+    }
+
   }
 }
 
