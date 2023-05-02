@@ -22,6 +22,10 @@
       justify-content: space-between;
       margin: 20px 0 0;
 
+      > div {
+        width: 100%;
+      }
+
       .input {
         margin-right: 0;
 
@@ -64,7 +68,9 @@
           cursor: pointer;
           line-height: 1.1;
           background-color: #fff;
-          background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+          background-image: url(/wp-content/themes/conall-child/dist/images/down_arrow.png);
+          background-repeat: no-repeat;
+          background-position: top 5px right 10px;
         }
       }
 
