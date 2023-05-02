@@ -31,6 +31,7 @@
           -webkit-box-shadow: none;
           box-shadow: none;
           padding: 12px 10px;
+          border: 1px solid #707070;
         }
       }
     }
@@ -45,12 +46,23 @@
     fieldset:nth-child(3) {
       width: 45%;
     }
+    fieldset:nth-child(2) {
+      float: left;
+    }
+
+    fieldset:nth-child(3) {
+      float: right;
+    }
+    fieldset:nth-child(4) {
+      clear: both;
+    }
+    
     .hs-dependent-field {
 
     }
 
     .hs_email {
-
+      width: 100%;
     }
 
     .hs_phone {
