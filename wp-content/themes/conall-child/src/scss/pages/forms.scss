@@ -169,14 +169,14 @@
             -ms-flex-align: center;
             align-items: center;
             input[type="checkbox"] {
-              -webkit-appearance: none;
+/*              -webkit-appearance: none;
               -moz-appearance: none;
-              appearance: none;
+              appearance: none;*/
               width: 34px;
               height: 34px;
               margin: 0 20px 0 0;
-              /*background: $lt_blue;*/
-              background: #fff;
+              background: $lt_blue;
+              /*background: #fff;*/
               color: #fff;
               border: 2px solid $lt_blue;
               border-radius: 2px;
@@ -210,9 +210,9 @@
             align-items: center;
 
             input[type="checkbox"] {
-              -webkit-appearance: none;
+/*              -webkit-appearance: none;
               -moz-appearance: none;
-              appearance: none;
+              appearance: none;*/
               width: 34px;
               height: 32px;
               margin: 0 20px 0 0;
