@@ -83,6 +83,11 @@
   #dates-cols-row {
     .edgtf-full-section-inner {
       position: relative;
+      .wpb_column:first-child {
+        .vc_column-inner {
+          padding: 0 40px 0 0;
+        }
+      }
       .wpb_column:first-child:after {
         content: '';
         width: 1px;
@@ -187,6 +192,13 @@
   .vc_col-sm-8 {
     .vc_column-inner {
       padding: 0;
+    }
+  }
+  .edgtf-full-section-inner {
+    .wpb_column:first-child {
+      .wpb_wrapper {
+        padding: 0 40px 0 0;
+      }
     }
   }
 
