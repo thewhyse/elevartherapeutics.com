@@ -58,8 +58,11 @@
 }
 
 #spacer-row {
+  > .wpb_wrapper {
+    width: 70%;
+    margin: 0 auto;
+  }
   .edgtf-full-section-inner {
-    height: 90px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
