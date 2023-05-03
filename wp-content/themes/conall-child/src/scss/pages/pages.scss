@@ -6,6 +6,18 @@
 
 
 /*    ASCO 2023 PAGE    */
+.page-id-16965 {
+  footer {
+    .edgtf-footer-bottom-holder {
+      background-color: $lt_blue;
+      .textwidget {
+        p span {
+          color: #fff !important;
+        }
+      }
+    }
+  }
+}
 #asco_23_hero_row {
 
   h1, h3 {
@@ -78,7 +90,7 @@
         background: $drk_gray;
         position: absolute;
         top: 10%;
-        right: -10px;
+        right: 10px;
       }
     }
 
@@ -168,16 +180,19 @@
 
 }
 
-.page-id-16965 {
-  footer {
-    .edgtf-footer-bottom-holder {
-      background-color: $lt_blue;
-      .textwidget {
-        p span {
-          color: #fff !important;
-        }
-      }
-    }
+#mosaic-row {
+  padding: 40px;
+  background: $lt_gray;
+
+  h4 {
+    font-size: 20px;
+    color: $drk_blue;
+    font-weight: 500;
+    margin: 20px 0 30px;
+  }
+
+  p {
+    font-size: 18px;
   }
 }
 
