@@ -69,6 +69,26 @@
   }
 }
 
+#spotlight-row {
+  padding: 40px 0 60px;
+
+  h4 {
+    font-size: 28px;
+    color: $drk_blue;
+    font-weight: 600;
+  }
+
+  #spotlight-body {
+    .edgtf-btn {
+      border-radius: 6px;
+      margin: 20px 0 0;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+
+}
+
 #spacer-row {
 /*  width: 70%;
   margin: 0 auto;*/
@@ -106,7 +126,7 @@
     }
 
     h5 {
-      font-size: 24px;
+      font-size: 22px;
       color: $drk_blue;
       font-weight: 600;
     }
