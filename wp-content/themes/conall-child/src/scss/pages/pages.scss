@@ -1,3 +1,4 @@
+
 @import "../base/colors";
 
 /*  HOME PAGE   */
@@ -77,8 +78,13 @@
     color: $drk_blue;
     font-weight: 600;
   }
-
+  p {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 2rem;
+  }
   #spotlight-body {
+    margin: 20px 0 0 -15px;
     .edgtf-btn {
       border-radius: 6px;
       margin: 20px 0 0;
@@ -90,8 +96,8 @@
 }
 
 #spacer-row {
-/*  width: 70%;
-  margin: 0 auto;*/
+  /*  width: 70%;
+    margin: 0 auto;*/
   padding: 40px 0 60px;
   background: $lt_gray;
 
