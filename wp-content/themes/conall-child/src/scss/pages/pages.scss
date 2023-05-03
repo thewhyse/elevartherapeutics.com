@@ -58,21 +58,23 @@
 }
 
 #spacer-row {
-  > .wpb_wrapper {
+  h4 {
+    font-size: 28px;
+    color: $drk_blue;
+  }
+  .vc_column_container {
     width: 70%;
     margin: 0 auto;
   }
-  .edgtf-full-section-inner {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    p {
-      font-size: 20px;
-      font-weight: 600;
+
+  #dates-cols-row {
+    h5 {
+      font-size: 24px;
       color: $drk_blue;
+    }
+    p {
+      font-size: 22px;
+      font-weight: 400;
     }
   }
 }
