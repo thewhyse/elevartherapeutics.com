@@ -71,6 +71,8 @@
 }
 
 #spotlight-row {
+  /*till better days*/
+  display: none;
   padding: 40px 0 60px;
 
   h4 {
@@ -96,10 +98,8 @@
 }
 
 #spacer-row {
-  /*  width: 70%;
-    margin: 0 auto;*/
   padding: 40px 0 60px;
-  background: $lt_gray;
+  background: #fff;
 
   h4 {
     font-size: 28px;
