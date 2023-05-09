@@ -9,16 +9,22 @@
 /*    ASCO 2023 PAGE    */
 .page-id-16965 {
   footer {
-    .edgtf-footer-bottom-holder {
+    display: none;
+/*    .edgtf-footer-bottom-holder {
       background-color: $lt_blue;
       .textwidget {
         p span {
           color: #fff !important;
         }
       }
-    }
+    }*/
   }
 }
+
+#temp-footer-row {
+  background: $lt_blue;
+}
+
 #asco_23_hero_row {
 h1 {
   text-transform: uppercase;
@@ -198,7 +204,7 @@ h1 {
   }
 
   #dates-cols-row .edgtf-full-section-inner .wpb_column:first-child .vc_column-inner {
-    padding: 0;
+    padding: 0 40px !important;
   }
   #dates-cols-row .edgtf-full-section-inner .wpb_column:first-child:after {
     display: none;
