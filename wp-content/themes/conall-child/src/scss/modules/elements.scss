@@ -3,7 +3,13 @@
 @import "../base/colors";
 
 
-
+/* MAIN NAV */
+.edgtf-sticky-header .edgtf-main-menu > ul > li > a {
+  color: #202020 !important;
+}
+.edgtf-page-header .edgtf-sticky-header .edgtf-sticky-holder {
+  background-color: #fff !important;
+}
 
 /*** Responsive Styles Standard Desktop Only ***/
 @media all and (min-width: 1100px) {
