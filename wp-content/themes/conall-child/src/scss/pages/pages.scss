@@ -180,6 +180,20 @@ h1 {
   }
 }
 
+@media all and (max-width: 1024px) {
+  #spacer-row h4 {
+    text-align: center;
+  }
+
+  #dates-cols-row .edgtf-full-section-inner .wpb_column:first-child .vc_column-inner {
+    padding: 0;
+  }
+  #dates-cols-row .edgtf-full-section-inner .wpb_column:first-child:after {
+    display: none;
+  }
+
+}
+
 #elevar-ppl-row {
   .wpb_text_column:first-child {
     margin: 40px 0 !important;
