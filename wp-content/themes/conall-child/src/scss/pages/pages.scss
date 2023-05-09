@@ -181,8 +181,20 @@ h1 {
 }
 
 @media all and (max-width: 1024px) {
-  #spacer-row h4 {
-    text-align: center;
+  #spacer-row {
+    h4 {
+      text-align: center;
+
+    }
+    .#dates-cols-row {
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    #map-popup_section {
+      margin: 0;
+    }
+
   }
 
   #dates-cols-row .edgtf-full-section-inner .wpb_column:first-child .vc_column-inner {
