@@ -305,6 +305,23 @@
 
 }
 
+@media all and (max-width: 1024px) {
+  #future-events-row {
+    #future-events-row-info-blocks {
+      .edgtf-full-section-inner {
+        .wpb_column:nth-child(1),
+        .wpb_column:nth-child(4) {
+          display: none;
+        }
+        .wpb_column:nth-child(2),
+        .wpb_column:nth-child(3) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
 #mosaic-row {
   padding: 40px;
   background: $lt_gray;
