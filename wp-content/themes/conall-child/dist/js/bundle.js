@@ -1,1 +1,1 @@
-jQuery(document).ready((function(){}));
+(()=>{var n;(n=jQuery)(document).ready((function(){n("#map-ping").on("clikc",(function(){console.log("HOWDY")}))}))})();
