@@ -98,6 +98,11 @@ h1 {
   }
 }
 
+@media all and (max-width: 1024px) {
+  background-image: url(/wp-content/uploads/2023/04/map_mobi.png);
+  height: 100vh;
+}
+
 #spotlight-row {
   /*till better days*/
   display: none;
