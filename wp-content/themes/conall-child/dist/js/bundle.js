@@ -1,1 +1,1 @@
-(()=>{var o;(o=jQuery)(document).ready((function(){o(".map-ping").on("click",(function(){o("#map-popup_section").toggle()})),o("#close-map-icon").on("click",(function(){o("#map-popup_section").toggle()}))}))})();
+(()=>{var n;(n=jQuery)(document).ready((function(){n(".map-ping, #close-map-icon").on("click",(function(){n("#map-popup_section").toggle()}))}))})();
