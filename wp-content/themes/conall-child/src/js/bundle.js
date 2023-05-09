@@ -2,7 +2,7 @@
   $(document).ready(function () {
 
 $(".map-ping").on('click', function() {
-  console.log("HOWDY");
+  $("#map-popup_section").toggle();
 });
 
 console.log("HEEEEEYYYYYY");
