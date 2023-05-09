@@ -15,6 +15,7 @@
 
 #temp-footer-row {
   background: $lt_blue;
+  padding: 0 0 40px;
   #temp-footer-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -26,6 +27,15 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+
+    .footer-social {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+    .copy-right-line {
+      color: #fff;
+    }
   }
 }
 
