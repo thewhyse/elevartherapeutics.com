@@ -1,1 +1,1 @@
-(()=>{var o;(o=jQuery)(document).ready((function(){o("#map-ping").on("click",(function(){console.log("HOWDY")})),console.log("HEEEEEYYYYYY")}))})();
+(()=>{var o;(o=jQuery)(document).ready((function(){o(".map-ping").on("click",(function(){console.log("HOWDY")})),console.log("HEEEEEYYYYYY")}))})();
