@@ -286,6 +286,14 @@ h1 {
   }
 }
 
+@media all and (max-width: 767px) {
+  #asco_23_hero_row {
+  height: 100vh;
+  background-repeat: no-repeat !important;
+  background-image: url(/wp-content/uploads/2023/04/hero_mobi.png);
+  }
+}
+
 /*** Responsive Styles Tablet And Below ***/
 @media all and (max-width: 980px) {
   #elevar-ppl-row {
