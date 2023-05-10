@@ -257,5 +257,13 @@
     }
 
   }
+
+  .submitted-message {
+    a {
+      color: $drk_blue !important;
+      font-weight: 600 !important;
+      text-decoration: underline;
+    }
+  }
 }
 /*   END  ASCO 2023   */
