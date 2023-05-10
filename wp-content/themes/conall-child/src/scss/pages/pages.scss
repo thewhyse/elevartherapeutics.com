@@ -215,19 +215,19 @@
     #dates-cols-row {
       margin-right: 0;
       margin-left: 0;
+      padding: 0 20px !important;
     }
-
-    #map-popup_section {
-      margin: 0;
-    }
-
   }
 
-  #dates-cols-row .edgtf-full-section-inner .wpb_column:first-child .vc_column-inner {
+/*  #dates-cols-row .edgtf-full-section-inner .wpb_column:first-child .vc_column-inner {
     padding: 0 40px !important;
-  }
+  }*/
   #dates-cols-row .edgtf-full-section-inner .wpb_column:first-child:after {
     display: none;
+  }
+
+  #map-popup_section {
+    margin: 0;
   }
 
 }
@@ -343,6 +343,12 @@
           text-align: center;
         }
       }
+    }
+  }
+
+  #spacer-row {
+    #dates-cols-row {
+
     }
   }
 }
