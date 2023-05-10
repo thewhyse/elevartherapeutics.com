@@ -219,9 +219,6 @@
     }
   }
 
-  /*  #dates-cols-row .edgtf-full-section-inner .wpb_column:first-child .vc_column-inner {
-      padding: 0 40px !important;
-    }*/
   #dates-cols-row .edgtf-full-section-inner .wpb_column:first-child:after {
     display: none;
   }
@@ -477,6 +474,7 @@
   }
 
   #mosaic-row {
+    padding: 40px 40px 0;
     .edgtf-full-section-inner {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -493,6 +491,19 @@
         -ms-flex-order: -2;
         order: -2;
       }
+    }
+  }
+
+  #form-container-row {
+    padding: 40px;
+  }
+
+  #asco_23_hero_row {
+    #visit-us-subtitle h3 {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
     }
   }
 
