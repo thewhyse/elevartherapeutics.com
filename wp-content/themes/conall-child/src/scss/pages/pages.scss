@@ -346,6 +346,7 @@
   a {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 282px;
     height: 54px;
     border-radius: 0 0 6px 6px;
@@ -400,6 +401,16 @@
 
     }
   }
+
+  #book-meeting-cta {
+    position: relative;
+    width: 282px;
+    margin: 0 auto;
+    top: inherit;
+    right: inherit;
+
+  }
+
 }
 
 
