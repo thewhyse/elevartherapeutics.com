@@ -357,7 +357,8 @@
     color: #fff !important;
     &:hover {
       background: #fff;
-      color: $lt_blue;
+      color: $lt_blue !important;
+      border: 1px solid $lt_blue;
     }
   }
 }
