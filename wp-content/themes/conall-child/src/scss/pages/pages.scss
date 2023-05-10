@@ -440,10 +440,29 @@
 
 @media all and (max-width: 767px) {
   #asco_23_hero_row {
-    height: 100vh;
+    height: 60vh;
     background-repeat: no-repeat !important;
     background-image: url(/wp-content/uploads/2023/04/hero_mobi.png);
   }
+
+  #elevar-ppl-row {
+    #imgs-block {
+      .edgtf-full-section-inner {
+        .wpb_column:nth-child(2),
+        .wpb_column:nth-child(3) {
+          .wpb_wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .wpb_text_column {
+              padding: 0 40px 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+
 }
 
 /*** Responsive Styles Tablet And Below ***/
