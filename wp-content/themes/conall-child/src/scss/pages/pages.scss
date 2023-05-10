@@ -444,6 +444,7 @@
 @media all and (max-width: 767px) {
 
   #elevar-ppl-row {
+    
     #imgs-block {
       .edgtf-full-section-inner {
         .wpb_column:nth-child(2),
@@ -460,7 +461,10 @@
             -ms-flex-align: center;
             align-items: center;
             .wpb_text_column {
-              padding: 0 40px 40px;
+              padding: 0 20px 40px;
+              h4 {
+                width: 100%;
+              }
             }
           }
         }
@@ -488,7 +492,7 @@
       }
     }
   }
-  
+
   #asco_23_hero_row {
     height: 80vh;
     background-repeat: no-repeat !important;
