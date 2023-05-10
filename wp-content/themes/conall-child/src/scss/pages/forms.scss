@@ -265,12 +265,12 @@
     p:first-child {
      > span {
         font-size: 30px !important;
-        color: $drk_blue !important;
+        color: darkblue !important;
       }
     }
     a {
-      color: $drk_blue !important;
-      font-weight: 600 !important;
+      color: darkblue !important;
+      font-weight: 800 !important;
       text-decoration: underline;
     }
   }
