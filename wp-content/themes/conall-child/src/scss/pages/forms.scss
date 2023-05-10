@@ -260,10 +260,11 @@
 
   .submitted-message {
     padding: 40px;
-    background: $lt_blue;
+    background: #c6f0ff;
     border-radius: 10px;
     > p {
       font-size: 30px;
+      color: $drk_blue;
     }
     a {
       color: $drk_blue !important;
