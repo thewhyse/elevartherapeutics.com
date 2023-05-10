@@ -355,6 +355,10 @@
     border-radius: 0 0 6px 6px;
     background: $lt_blue;
     color: #fff !important;
+    &:hover {
+      background: #fff;
+      color: $lt_blue;
+    }
   }
 }
 
