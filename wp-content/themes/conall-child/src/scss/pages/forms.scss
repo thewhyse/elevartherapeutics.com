@@ -262,7 +262,7 @@
     padding: 40px;
     background: #caeefa;
     border-radius: 10px;
-    > p {
+    p:first-child {
      > span {
         font-size: 30px !important;
         color: $drk_blue !important;
