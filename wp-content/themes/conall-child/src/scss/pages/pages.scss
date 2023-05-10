@@ -305,6 +305,53 @@
 
 }
 
+#mosaic-row {
+  padding: 40px;
+  background: $lt_gray;
+
+  .vc_col-sm-8 {
+    .vc_column-inner {
+      padding: 0;
+    }
+  }
+  .edgtf-full-section-inner {
+    .wpb_column:first-child {
+      .wpb_wrapper {
+        padding: 0 40px 0 0;
+      }
+    }
+  }
+
+  h4 {
+    font-size: 24px;
+    color: $drk_blue;
+    font-weight: 600;
+    margin: 20px 0 30px;
+  }
+
+  p {
+    font-size: 18px;
+    color: $drk_gray;
+  }
+}
+
+#book-meeting-cta {
+  width: 282px;
+  position: absolute;
+  top: 0;
+  right: 5vw;
+  p {
+    margin: 0;
+  }
+  a {
+    display: flex;
+    justify-content: center;
+    width: 282px;
+    height: 54px;
+    border-radius: 0 0 6px 6px;
+  }
+}
+
 @media all and (max-width: 1024px) {
   #future-events-row {
 
@@ -353,35 +400,6 @@
   }
 }
 
-#mosaic-row {
-  padding: 40px;
-  background: $lt_gray;
-
-  .vc_col-sm-8 {
-    .vc_column-inner {
-      padding: 0;
-    }
-  }
-  .edgtf-full-section-inner {
-    .wpb_column:first-child {
-      .wpb_wrapper {
-        padding: 0 40px 0 0;
-      }
-    }
-  }
-
-  h4 {
-    font-size: 24px;
-    color: $drk_blue;
-    font-weight: 600;
-    margin: 20px 0 30px;
-  }
-
-  p {
-    font-size: 18px;
-    color: $drk_gray;
-  }
-}
 
 @media all and (min-width: 768px) {
   #asco_23_hero_row {
