@@ -307,6 +307,19 @@
 
 @media all and (max-width: 1024px) {
   #future-events-row {
+
+    #future-events-row-title {
+      .edgtf-full-section-inner {
+        .wpb_column:first-child {
+          display: none;
+        }
+        .wpb_column:nth-child(2) {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+
     #future-events-row-info-blocks {
       .edgtf-full-section-inner {
 
