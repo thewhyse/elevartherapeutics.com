@@ -463,6 +463,18 @@
     }
   }
 
+  #mosaic-row {
+    .edgtf-full-section-inner {
+      display: flex;
+      .wpb_single_image {
+        text-align: center;
+      }
+      .wpb_column:nth-child(2) {
+        order: -2;
+      }
+    }
+  }
+
 }
 
 /*** Responsive Styles Tablet And Below ***/
