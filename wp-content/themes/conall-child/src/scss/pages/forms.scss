@@ -259,6 +259,11 @@
   }
 
   .submitted-message {
+    padding: 40px;
+    background: $lt_blue;
+    > p {
+      font-size: 30px;
+    }
     a {
       color: $drk_blue !important;
       font-weight: 600 !important;
