@@ -279,12 +279,12 @@
 @media all and (max-width: 767px) {
   .hs_firstname,
   .hs_lastname {
-    width: 100%;
+    width: 100% !important;
   }
 
   fieldset:nth-child(1),
   fieldset:nth-child(2) {
-    width: 100%;
+  width: 100% !important;
   }
 
   fieldset:nth-child(1) {
@@ -305,6 +305,7 @@
     flex-direction: column;
   }
 
+  /* 
   fieldset:nth-child(5) {
 
   }
@@ -313,7 +314,7 @@
 
   }
 
-  .hs_email {
+ .hs_email {
     width: 100%;
   }
 
@@ -327,7 +328,7 @@
 
   .hs_i_would_like_to_request_ {
     width: 100%;
-  }
+  }*/
 
 }
 
