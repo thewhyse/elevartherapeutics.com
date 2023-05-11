@@ -529,8 +529,15 @@
 
   #spacer-row {
     #dates-cols-row {
-      .edgtf-full-section-inner .wpb_column:first-child .vc_column-inner {
-        padding: 0;
+      .edgtf-full-section-inner {
+        .wpb_column:first-child .vc_column-inner {
+          padding: 0;
+        }
+        .wpb_column:nth-child(2) {
+          .vc_column-inner {
+            padding: 0;
+          }
+        }
       }
     }
   }
