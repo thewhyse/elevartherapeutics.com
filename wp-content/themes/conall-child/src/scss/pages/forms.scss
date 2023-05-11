@@ -291,6 +291,10 @@
     width: 100% !important;
   }
 
+  .hs_lastname {
+    margin: 20px 0 0;
+  }
+
   fieldset:nth-child(1),
   fieldset:nth-child(2) {
   width: 100% !important;
@@ -340,7 +344,7 @@
   }
 
   .hs_i_would_like_to_request_ {
-    width: 100%;
+    width: 100% !important;
     margin: 20px 0 0;
   }
 
