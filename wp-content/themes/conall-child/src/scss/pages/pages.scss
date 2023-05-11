@@ -257,11 +257,12 @@
     p {
       font-size: 20px;
     }
-    .edgtf-full-section-inner {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-    }
+  }
+
+  #imgs-block .edgtf-full-section-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
