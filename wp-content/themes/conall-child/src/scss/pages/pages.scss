@@ -217,6 +217,12 @@
       margin-right: 0;
       margin-left: 0;
       padding: 0 20px !important;
+
+
+      .edgtf-full-section-inner .wpb_column:first-child .vc_column-inner {
+
+      }
+
     }
   }
 
@@ -519,6 +525,14 @@
 
   #form-container-row {
     padding: 40px 20px !important;
+  }
+
+  #spacer-row {
+    #dates-cols-row {
+      .edgtf-full-section-inner .wpb_column:first-child .vc_column-inner {
+        padding: 0;
+      }
+    }
   }
 
 }
