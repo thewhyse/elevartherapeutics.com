@@ -170,9 +170,9 @@
             -ms-flex-align: center;
             align-items: center;
             input[type="checkbox"] {
-/*              -webkit-appearance: none;
-              -moz-appearance: none;
-              appearance: none;*/
+              /*              -webkit-appearance: none;
+                            -moz-appearance: none;
+                            appearance: none;*/
               width: 34px;
               height: 34px;
               margin: 0 20px 0 0;
@@ -211,9 +211,9 @@
             align-items: center;
 
             input[type="checkbox"] {
-/*              -webkit-appearance: none;
-              -moz-appearance: none;
-              appearance: none;*/
+              /*              -webkit-appearance: none;
+                            -moz-appearance: none;
+                            appearance: none;*/
               width: 34px;
               height: 32px;
               margin: 0 20px 0 0;
@@ -263,7 +263,7 @@
     background: #caeefa;
     border-radius: 10px;
     p:first-child {
-     > span {
+      > span {
         font-size: 30px !important;
         color: darkblue !important;
       }
@@ -275,4 +275,60 @@
     }
   }
 }
+
+@media all and (max-width: 767px) {
+  .hs_firstname,
+  .hs_lastname {
+    width: 100%;
+  }
+
+  fieldset:nth-child(1),
+  fieldset:nth-child(2) {
+    width: 100%;
+  }
+
+  fieldset:nth-child(1) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  fieldset:nth-child(3) {
+
+  }
+
+  fieldset:nth-child(4) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  fieldset:nth-child(5) {
+
+  }
+
+  .hs-dependent-field {
+
+  }
+
+  .hs_email {
+    width: 100%;
+  }
+
+  .hs_phone {
+    width: 100%;
+  }
+
+  .hs_location {
+    width: 100%;
+  }
+
+  .hs_i_would_like_to_request_ {
+    width: 100%;
+  }
+
+}
+
 /*   END  ASCO 2023   */
