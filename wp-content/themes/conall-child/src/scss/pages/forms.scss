@@ -280,7 +280,7 @@
 
   #form-container-row {
     form {
-      
+
 /*      fieldset {
         max-width: 95% !important;
       }*/
@@ -304,10 +304,12 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    width: 95% !important;
   }
 
   fieldset:nth-child(2) {
     margin: 20px 0 0;
+    width: 95% !important;
   }
 
   fieldset:nth-child(3) {
