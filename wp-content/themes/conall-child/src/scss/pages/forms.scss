@@ -277,6 +277,15 @@
 }
 
 @media all and (max-width: 767px) {
+
+  #form-container-row {
+    form {
+      fieldset {
+        max-width: 95% !important;
+      }
+    }
+  }
+
   .hs_firstname,
   .hs_lastname {
     width: 100% !important;
@@ -294,6 +303,10 @@
     flex-direction: column;
   }
 
+  fieldset:nth-child(2) {
+    margin: 20px 0 0;
+  }
+
   fieldset:nth-child(3) {
 
   }
@@ -305,7 +318,6 @@
     flex-direction: column;
   }
 
-  /* 
   fieldset:nth-child(5) {
 
   }
@@ -315,20 +327,22 @@
   }
 
  .hs_email {
-    width: 100%;
+    width: 100% !important;
   }
 
   .hs_phone {
-    width: 100%;
+    width: 100% !important;
   }
 
   .hs_location {
-    width: 100%;
+    width: 100% !important;
+    margin: 20px 0 0;
   }
 
   .hs_i_would_like_to_request_ {
     width: 100%;
-  }*/
+    margin: 20px 0 0;
+  }
 
 }
 
