@@ -252,6 +252,11 @@
           border: 2px solid $lt_blue;
           border-radius: 6px;
           font-size: 20px;
+          &:hover {
+            border: 2px solid $lt_blue;
+            background: #fff;
+            color: $lt_blue;
+          }
         }
       }
     }
