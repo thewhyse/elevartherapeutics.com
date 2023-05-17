@@ -577,9 +577,7 @@
         text-align: center;
       }
       .policies-links {
-        p span:first-child {
-          display: block;
-          width: 100vw;
+        > div {
           text-align: center;
         }
       }
