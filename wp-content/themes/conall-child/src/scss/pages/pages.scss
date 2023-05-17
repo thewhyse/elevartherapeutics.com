@@ -360,6 +360,7 @@
     align-items: center;
     width: 282px;
     height: 54px;
+    padding: 0 12px;
     border-radius: 0 0 6px 6px;
     background: $lt_blue;
     color: #fff !important;
@@ -497,6 +498,11 @@
       flex-direction: column;
       .wpb_single_image {
         text-align: center;
+      }
+      .wpb_column:first-child {
+        .wpb_wrapper {
+          padding: 0;
+        }
       }
       .wpb_column:nth-child(2) {
         -webkit-box-ordinal-group: -1;
