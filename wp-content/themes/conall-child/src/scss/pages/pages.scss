@@ -546,6 +546,10 @@
         .wpb_column:nth-child(2) {
           .vc_column-inner {
             padding: 0;
+            h4 {
+              text-align: left;
+              padding: 0 0 0 30px;
+            }
           }
         }
       }
