@@ -484,7 +484,10 @@
 @media all and (max-width: 767px) {
 
   #spotlight-row {
-    padding: 40px 0 60px 15px !important;
+    padding: 0 0 20px 15px !important;
+    .play-btn {
+      margin: 20px auto 0;
+    }
   }
 
   #elevar-ppl-row {
