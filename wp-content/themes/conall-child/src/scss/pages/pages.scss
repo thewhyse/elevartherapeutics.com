@@ -156,6 +156,27 @@
     }
   }
 
+  #play-btn {
+    width: 200px;
+    background: $lt_blue;
+    padding: 12px;
+    text-align: center;
+    border: 2px solid $lt_blue;
+    border-radius: 6px;
+    background: $lt_blue;
+    &:hover {
+      background: #fff;
+    }
+    a {
+      color: #fff;
+      font-weight: 600;
+      font-size: 20px;
+      &:hover {
+        color: $lt_blue;
+      }
+    }
+  }
+
 }
 
 #spacer-row {
