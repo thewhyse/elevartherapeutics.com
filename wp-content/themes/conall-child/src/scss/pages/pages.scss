@@ -133,9 +133,7 @@
 }
 
 #spotlight-row {
-  /*till better days*/
-  display: none;
-  /*till better days*/
+  background: #fff;
   padding: 40px 0 60px;
 
   h4 {
@@ -162,7 +160,7 @@
 
 #spacer-row {
   padding: 40px 0 60px;
-  background: #fff;
+  background: $lt_gray;
 
   h4 {
     font-size: 28px;
