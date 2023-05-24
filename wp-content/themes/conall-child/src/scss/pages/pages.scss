@@ -473,18 +473,26 @@
   }
 
   #elevar-ppl-row {
-    height: 565px;
+/*    height: 565px;
     background-image: url(/wp-content/uploads/2023/05/blue-bg-w-wings.png);
     background-repeat: no-repeat;
     background-size: 133%;
-    background-position: top right;
+    background-position: top right;*/
   }
 }
 
 @media all and (max-width: 767px) {
 
-  #elevar-ppl-row {
+  #spotlight-row {
+    padding: 40px 0 60px 15px;
+  }
 
+  #elevar-ppl-row {
+    height: 565px;
+    background-image: url(/wp-content/uploads/2023/05/blue-bg-w-wings.png);
+    background-repeat: no-repeat;
+    background-size: 133%;
+    background-position: top right;
     #imgs-block {
       .edgtf-full-section-inner {
         .wpb_column:nth-child(2),
