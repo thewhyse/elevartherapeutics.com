@@ -166,6 +166,9 @@
     background: $lt_blue;
     &:hover {
       background: #fff;
+      a {
+          color: $lt_blue;
+      }
     }
     a {
       color: #fff;
