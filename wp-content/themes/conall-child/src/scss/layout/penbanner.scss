@@ -1,0 +1,66 @@
+@import "../base/colors";
+
+/*      Top pencil banner - Desktop        */
+.edgtf-dark-header .edgtf-top-bar .widget span {
+        color: $white !important;
+}
+.edgtf-top-bar {
+    .edgtf-position-left {
+        display: none !important;
+    }
+    .edgtf-position-right {
+        display: none !important;
+    }
+    .edgtf-position-center {
+        width: 100% !important;
+    }
+    .edgtf-position-center {
+        div.textwidget.custom-html-widget {
+                padding-left: 5%;
+                padding-right: 5%;
+        }
+        h2.widgettitle {
+            display: none !important;
+        }
+        div.penbanner-text {
+            color: $white !important;
+            font-family: 'Raleway', sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 20px;
+            a.yellow {
+                color: $penbanner-orange !important;
+                text-transform: uppercase;
+                text-decoration: underline;
+            }
+            a.yellow:hover {
+                color: $orange !important;
+            }
+        }
+    }
+
+}
+
+@media all and (max-width: 1024px) {
+    .edgtf-top-bar {
+        height: 85px !important;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .edgtf-top-bar {
+        .edgtf-position-center {
+            div.textwidget.custom-html-widget {
+                padding-left: 3%;
+                padding-right: 3%;
+                div.penbanner-text {
+                    color: $white !important;
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 14px;
+                    font-weight: bold;
+                    line-height: 16px;
+                }
+            }
+        }
+    }
+}
