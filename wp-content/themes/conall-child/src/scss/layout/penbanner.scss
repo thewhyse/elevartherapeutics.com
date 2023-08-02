@@ -1,10 +1,15 @@
 @import "../base/colors";
 
 /*      Top pencil banner - Desktop        */
+
+
+
 .edgtf-dark-header .edgtf-top-bar .widget span {
         color: $white !important;
 }
 .edgtf-top-bar {
+    background-color: $elevar_purple !important;
+    height: 50px !important;
     .edgtf-position-left {
         display: none !important;
     }
