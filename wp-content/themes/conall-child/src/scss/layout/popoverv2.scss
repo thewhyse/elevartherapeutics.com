@@ -1,0 +1,467 @@
+@import "../base/colors";
+
+/* ********** Pop-Over v2 - Desktop ********** */
+
+#dh_popup_17331,
+#dh_popup_17357,
+#dh_popup_17363 {
+    border: 0 solid #fff;
+        border-radius: 15px;
+        background-position-x: 2px;
+        .dh-popup__inner {
+            min-height: 100%;
+        }
+}
+
+i.fancybox-close__line-top,
+i.fancybox-close__line-bottom {
+    width: 60%;
+    left: calc(50% - 18px);
+    top: calc(50% - 2px);
+}
+
+div.fancybox-wrap.dh-popup__wrap--17331 a.fancybox-item.fancybox-close,
+div.fancybox-wrap.dh-popup__wrap--17357 a.fancybox-item.fancybox-close,
+div.fancybox-wrap.dh-popup__wrap--17363 a.fancybox-item.fancybox-close {
+    background-color: #999;
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+}
+div.fancybox-wrap.dh-popup__wrap--17331 div.fancybox-skin:before,
+div.fancybox-wrap.dh-popup__wrap--17357 div.fancybox-skin:before,
+div.fancybox-wrap.dh-popup__wrap--17363 div.fancybox-skin:before {
+    content: url('/wp-content/uploads/2023/08/icon-cam-popover-185x185-1.png');
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -28%);
+    max-width: 185px;
+    max-height: 185px;
+}
+#dh_popup_17331 div#popover2-container div.clearfix.edgtf-section-inner,
+#dh_popup_17357 div#popover2-container div.clearfix.edgtf-section-inner,
+#dh_popup_17363 div#popover2-container div.clearfix.edgtf-section-inner {
+    width: 100% !important;
+
+    #pop2-col {
+        #pop2-icon {
+            margin-top: 50px;
+            width: 185px;
+            height: 185px;
+            margin: 0 auto !important;
+            margin-top: -54px !important;
+        }
+
+        h2.pop2-heading.h2 {
+            font-family: 'Ralway', sans-serif;
+            text-transform: uppercase;
+            color: #2B71B7;
+            font-size: 32px;
+            line-height: 34px;
+            font-weight: 700;
+            text-align: center;
+            letter-spacing: 1.5px;
+            margin: 0 auto !important;
+            margin-top: 13% !important;
+            .pop2-lc {
+                text-transform: lowercase;
+                font-weight: 500;
+            }
+        }
+        h3.pop2-heading.h3 {
+            font-family: 'Ralway', sans-serif;
+            text-transform: uppercase;
+            color: #2B71B7;
+            font-size: 36px;
+            line-height: 54px;
+            font-weight: 700;
+            text-align: center;
+            letter-spacing: 1.5px;
+            margin: 0 auto !important;
+            margin-top: 15px !important;
+        }
+        h3.pop2-heading.h3:after {
+            content: "";
+            display: block;
+            max-width: 100px;
+            border-top: 4px solid #F4C55C;
+            width: 100px;
+            margin: 0 auto !important;
+            margin-top: 3% !important;
+        }
+        p.pop2-copy {
+            font-family: 'Ralway', sans-serif;
+            font-size: 28px;
+            line-height: 42px;
+            max-width: 984px;
+            color: #333333;
+            text-align: center;
+            margin: 0 auto !important;
+            margin-top: 3% !important;
+        }
+        p.pop2-testamonial {
+            font-family: 'Ralway', sans-serif;
+            font-size: 28px;
+            line-height: 42px;
+            max-width: 984px;
+            text-transform: capitalize;
+            text-align: center;
+            margin: 0 auto !important;
+            margin-top: 3% !important;
+        }
+
+        a.pop2-button {
+
+            background-color: #524487;
+            border-color: #524487;
+            max-width: 417px;
+            height: 87px;
+            display: flex;
+            border-radius: 15px;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto !important;
+            margin-top: 3% !important;
+            .edgtf-btn-text {
+                font-family: 'Ralway', sans-serif;
+                font-size: 32px;
+                line-height: 1;
+                text-transform: uppercase;
+                color: #ffffff;
+                font-weight: bold;
+                letter-spacing: 0px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+/* ********** Pop-Over - Mobile  ********** */
+
+@media (max-width: 767px) {
+
+    div.fancybox-wrap.dh-popup__wrap--17331 div.fancybox-skin:before,
+    div.fancybox-wrap.dh-popup__wrap--17357 div.fancybox-skin:before,
+    div.fancybox-wrap.dh-popup__wrap--17363 div.fancybox-skin:before {
+        content: url('/wp-content/uploads/2023/08/icon-cam-popover-150x150-1.png');
+        position: absolute;
+        z-index: 100;
+        top: 0;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -35%);
+        max-width: 150px;
+        max-height: 150px;
+    }
+    .dh-popup__wrap.dh-popup__wrap--use-css-responsive {
+        width: calc(100% - 50px) !important;
+        width: -moz-calc(100% - 50px) !important;
+        width: -webkit-calc(100% - 50px) !important;
+        padding: 25px !important;
+        padding-top: 20% !important;
+    }
+    .dh-popup__wrap--17331 .fancybox-close__line-bottom,
+    .dh-popup__wrap--17331 .fancybox-close__line-top,
+    .dh-popup__wrap--17357 .fancybox-close__line-bottom,
+    .dh-popup__wrap--17357 .fancybox-close__line-top,
+    .dh-popup__wrap--17363 .fancybox-close__line-bottom,
+    .dh-popup__wrap--17363 .fancybox-close__line-top {
+        background: #75c9ff;
+    }
+
+    #dh_popup_17331,
+    #dh_popup_17357,
+    #dh_popup_17363 {
+        background: url(/wp-content/uploads/2023/08/popover-backgnd-v1-screened-1192x682-1.png);
+        background-color: #fff;
+        border-radius: 25px;
+        background-position-y: top;
+        background-position-x: right;
+    }
+
+    #dh_popup_17331,
+    #dh_popup_17357,
+    #dh_popup_17363 {
+        #popover-container {
+            background-color: rgba(255, 255, 255, 0.55);
+            padding: 2em;
+        }
+    }
+    #dh_popup_17331 div#popover2-container div.clearfix.edgtf-section-inner,
+    #dh_popup_17357 div#popover2-container div.clearfix.edgtf-section-inner,
+    #dh_popup_17363 div#popover2-container div.clearfix.edgtf-section-inner {
+        width: 100% !important;
+        padding-left: 10%;
+        padding-right: 10%;
+        #pop2-col {
+            #pop2-icon {
+                margin-top: 50px;
+                width: 185px;
+                height: 185px;
+                margin: 0 auto !important;
+                margin-top: -54px !important;
+            }
+
+            h2.pop2-heading.h2 {
+                font-family: 'Ralway', sans-serif;
+                text-transform: uppercase;
+                color: #2B71B7;
+                font-size: 30px;
+                line-height: 34px;
+                font-weight: 700;
+                text-align: center;
+                letter-spacing: 1.5px;
+                margin: 0 auto !important;
+                margin-top: 25% !important;
+
+                .pop2-lc {
+                    text-transform: lowercase;
+                    font-weight: 500;
+                }
+            }
+
+            h3.pop2-heading.h3 {
+                font-family: 'Ralway', sans-serif;
+                text-transform: uppercase;
+                color: #2B71B7;
+                font-size: 32px;
+                line-height: 36px;
+                font-weight: 700;
+                text-align: center;
+                letter-spacing: 1.5px;
+                margin: 0 auto !important;
+                margin-top: 15px !important;
+            }
+
+            h3.pop2-heading.h3:after {
+                content: "";
+                display: block;
+                max-width: 100px;
+                border-top: 4px solid #F4C55C;
+                width: 100px;
+                margin: 0 auto !important;
+                margin-top: 3% !important;
+            }
+
+            p.pop2-copy {
+                font-family: 'Ralway', sans-serif;
+                font-size: 26px;
+                line-height: 36px;
+                max-width: 984px;
+                color: #333333;
+                text-align: center;
+                margin: 0 auto !important;
+                margin-top: 3% !important;
+            }
+
+            p.pop2-testamonial {
+                font-family: 'Ralway', sans-serif;
+                font-size: 26px;
+                line-height: 36px;
+                max-width: 984px;
+                text-transform: capitalize;
+                text-align: center;
+                margin: 0 auto !important;
+                margin-top: 3% !important;
+            }
+
+            a.pop2-button {
+                background-color: #524487;
+                border-color: #524487;
+                max-width: 350px;
+                height: 75px;
+                display: flex;
+                border-radius: 15px;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto !important;
+                margin-top: 5% !important;
+                margin-bottom: 10% !important;
+
+                .edgtf-btn-text {
+                    font-family: 'Ralway', sans-serif;
+                    font-size: 28px;
+                    line-height: 1;
+                    text-transform: uppercase;
+                    color: #ffffff;
+                    font-weight: bold;
+                    letter-spacing: 0px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 576px) {
+    i.fancybox-close__line-top,
+        i.fancybox-close__line-bottom {
+            width: 60%;
+            left: calc(50% - 12px);
+            top: calc(50% - 2px);
+        }
+
+    div.fancybox-wrap.dh-popup__wrap--17331 a.fancybox-item.fancybox-close,
+    div.fancybox-wrap.dh-popup__wrap--17357 a.fancybox-item.fancybox-close,
+    div.fancybox-wrap.dh-popup__wrap--17363 a.fancybox-item.fancybox-close {
+        background-color: #999;
+        border-radius: 100%;
+        height: 40px;
+        width: 40px;
+    }
+    div.fancybox-wrap.dh-popup__wrap--17331 div.fancybox-skin:before,
+    div.fancybox-wrap.dh-popup__wrap--17357 div.fancybox-skin:before,
+    div.fancybox-wrap.dh-popup__wrap--17363 div.fancybox-skin:before {
+        content: url('/wp-content/uploads/2023/08/icon-cam-popover-120x120-1.png');
+        position: absolute;
+        z-index: 100;
+        top: 0;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 120px;
+        max-height: 120px;
+    }
+    .dh-popup__wrap--17331 .fancybox-close__line-bottom,
+    .dh-popup__wrap--17331 .fancybox-close__line-top,
+    .dh-popup__wrap--17357 .fancybox-close__line-bottom,
+    .dh-popup__wrap--17357 .fancybox-close__line-top,
+    .dh-popup__wrap--17363 .fancybox-close__line-bottom,
+    .dh-popup__wrap--17363 .fancybox-close__line-top {
+        background: #75c9ff;
+    }
+
+    .fancybox-skin {
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -o-border-radius: 15px;
+    }
+
+    #dh_popup_17331,
+    #dh_popup_17357,
+    #dh_popup_17363 {
+        background: url(/wp-content/uploads/2023/08/popover-backgnd-v1-screened-1192x682-1.png);
+        background-color: #fff;
+        border-radius: 25px;
+        background-position-y: top;
+        background-position-x: right;
+    }
+
+    #dh_popup_17331,
+    #dh_popup_17357,
+    #dh_popup_17363 {
+        #popover-container {
+            background-color: rgba(255, 255, 255, 0.55);
+            padding: 2em;
+        }
+    }
+
+    #dh_popup_17331 div#popover2-container div.clearfix.edgtf-section-inner,
+    #dh_popup_17357 div#popover2-container div.clearfix.edgtf-section-inner,
+    #dh_popup_17363 div#popover2-container div.clearfix.edgtf-section-inner {
+        width: 100% !important;
+        padding-left: 6%;
+        padding-right: 6%;
+        #pop2-col {
+            #pop2-icon {
+                margin-top: 50px;
+                width: 185px;
+                height: 185px;
+                margin: 0 auto !important;
+                margin-top: -54px !important;
+            }
+
+            h2.pop2-heading.h2 {
+                font-family: 'Ralway', sans-serif;
+                text-transform: uppercase;
+                color: #2B71B7;
+                font-size: 25px;
+                line-height: 30px;
+                font-weight: 700;
+                text-align: center;
+                letter-spacing: 0.5px;
+                margin: 0 auto !important;
+                margin-top: 25% !important;
+
+                .pop2-lc {
+                    text-transform: lowercase;
+                    font-weight: 500;
+                }
+            }
+
+            h3.pop2-heading.h3 {
+                font-family: 'Ralway', sans-serif;
+                text-transform: uppercase;
+                color: #2B71B7;
+                font-size: 25px;
+                line-height: 30px;
+                font-weight: 700;
+                text-align: center;
+                letter-spacing: 0.5px;
+                margin: 0 auto !important;
+                margin-top: 15px !important;
+            }
+
+            h3.pop2-heading.h3:after {
+                content: "";
+                display: block;
+                max-width: 100px;
+                border-top: 4px solid #F4C55C;
+                width: 100px;
+                margin: 0 auto !important;
+                margin-top: 6% !important;
+            }
+
+            p.pop2-copy {
+                font-family: 'Ralway', sans-serif;
+                font-size: 20px;
+                line-height: 28px;
+                max-width: 984px;
+                color: #333333;
+                text-align: center;
+                margin: 0 auto !important;
+                margin-top: 6% !important;
+            }
+
+            p.pop2-testamonial {
+                font-family: 'Ralway', sans-serif;
+                font-size: 20px;
+                line-height: 28px;
+                max-width: 984px;
+                text-transform: capitalize;
+                text-align: center;
+                margin: 0 auto !important;
+                margin-top: 3% !important;
+            }
+
+            a.pop2-button {
+
+                background-color: #524487;
+                border-color: #524487;
+                max-width: 280px;
+                height: 70px;
+                display: flex;
+                border-radius: 15px;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto !important;
+                margin-top: 5% !important;
+                margin-bottom: 10% !important;
+                .edgtf-btn-text {
+                    font-family: 'Ralway', sans-serif;
+                    font-size: 20px;
+                    line-height: 1;
+                    text-transform: uppercase;
+                    color: #ffffff;
+                    font-weight: bold;
+                    letter-spacing: 0px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
