@@ -1,8 +1,6 @@
 @import "../base/colors";
 
-/*      Top pencil banner - Desktop        */
-
-
+/* ********** Top Pencil Banner - Desktop ********** */
 
 .edgtf-dark-header .edgtf-top-bar .widget span {
         color: $white !important;
@@ -45,6 +43,8 @@
     }
 
 }
+
+/* ********** Top Pencil Banner - Mobile ********** */
 
 @media all and (max-width: 1024px) {
     .edgtf-top-bar {
