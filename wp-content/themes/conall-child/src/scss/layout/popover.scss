@@ -5,6 +5,8 @@
     background: rgb(82, 68, 135) !important;
     background: linear-gradient(0deg, rgba(82, 68, 135, 0.75) 0%, rgba(43, 113, 183, 0.75) 35%, rgba(0, 153, 169, 0.75) 66%, rgba(84, 193, 234, 0.75) 100%) !important;
 }
+#dh_popup_17354,
+#dh_popup_17327,
 #dh_popup_17359 {
     border: 0 solid #fff;
     border-radius: 15px;
@@ -19,6 +21,8 @@
     -moz-border-radius: 15px;
     -o-border-radius: 15px;
 }
+#dh_popup_17327 div#popover-container div.clearfix.edgtf-section-inner,
+#dh_popup_17354 div#popover-container div.clearfix.edgtf-section-inner,
 #dh_popup_17359 div#popover-container div.clearfix.edgtf-section-inner {
     width: 100% !important;
     #pop-col-left {
@@ -78,10 +82,16 @@
 }
 
 @media all and (max-width: 767px) {
+    .dh-popup__wrap--17354 .fancybox-close__line-bottom,
+    .dh-popup__wrap--17354 .fancybox-close__line-top,
+    .dh-popup__wrap--17327 .fancybox-close__line-bottom,
+    .dh-popup__wrap--17327 .fancybox-close__line-top,
     .dh-popup__wrap--17359 .fancybox-close__line-bottom,
-        .dh-popup__wrap--17359 .fancybox-close__line-top {
-            background: #75c9ff;
-        }
+    .dh-popup__wrap--17359 .fancybox-close__line-top {
+        background: #75c9ff;
+    }
+    #dh_popup_17354,
+    #dh_popup_17327,
     #dh_popup_17359 {
         background: url(/wp-content/uploads/2023/08/popover-backgnd-v1-screened-1192x682-1.png);
         background-color: #fff;
@@ -90,12 +100,16 @@
         background-position-x: right;
     }
 
-    #dh_popup_17359{
+    #dh_popup_17354,
+    #dh_popup_17327,
+    #dh_popup_17359 {
        #popover-container {
             background-color: rgba(255, 255, 255, 0.55);
             padding: 2em;
         }
     }
+    #dh_popup_17354 div#popover-container div.clearfix.edgtf-section-inner,
+    #dh_popup_17327 div#popover-container div.clearfix.edgtf-section-inner,
     #dh_popup_17359 div#popover-container div.clearfix.edgtf-section-inner {
         #pop-col-left {
             width: 100%;
@@ -160,6 +174,10 @@
 
 @media all and (max-width: 576px) {
 
+    .dh-popup__wrap--17354 .fancybox-close__line-bottom,
+    .dh-popup__wrap--17354 .fancybox-close__line-top,
+    .dh-popup__wrap--17327 .fancybox-close__line-bottom,
+    .dh-popup__wrap--17327 .fancybox-close__line-top,
     .dh-popup__wrap--17359 .fancybox-close__line-bottom,
     .dh-popup__wrap--17359 .fancybox-close__line-top {
         background: #75c9ff;
@@ -171,7 +189,8 @@
         -moz-border-radius: 15px;
         -o-border-radius: 15px;
     }
-
+    #dh_popup_17354,
+    #dh_popup_17327,
     #dh_popup_17359 {
         background: url(/wp-content/uploads/2023/08/popover-backgnd-v1-screened-1192x682-1.png);
         background-color: #fff;
@@ -179,14 +198,16 @@
         background-position-y: top;
         background-position-x: right;
     }
-
+    #dh_popup_17354,
+    #dh_popup_17327,
     #dh_popup_17359 {
         #popover-container {
             background-color: rgba(255, 255, 255, 0.55);
             padding: 2em;
         }
     }
-
+    #dh_popup_17354 div#popover-container div.clearfix.edgtf-section-inner,
+    #dh_popup_17327 div#popover-container div.clearfix.edgtf-section-inner,
     #dh_popup_17359 div#popover-container div.clearfix.edgtf-section-inner {
         #pop-col-left {
             width: 100%;
