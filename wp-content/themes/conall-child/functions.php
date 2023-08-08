@@ -29,8 +29,29 @@ function elevar_javascript_footer()
 ?>
     <script>
         function set_check() {
-            console.log('checked')
-            Cookies.set('dh_popup_1_17354', 'show');
+            var popid = document.querySelector('div.dh-popup.vc_non_responsive').id;
+            console.log(popid);
+            if (popid = 'dh_popup_17354') {
+                console.log('checked');
+                Cookies.set('dh_popup_1_17354', 'show');
+            } else if (popid = 'dh_popup_17327') {
+                console.log('checked');
+                Cookies.set('dh_popup_1_17327', 'show');
+            } else if (popid = 'dh_popup_17359') {
+                console.log('checked');
+                Cookies.set('dh_popup_1_17359', 'show');
+            } else if (popid = 'dh_popup_17331') {
+                console.log('checked');
+                Cookies.set('dh_popup_1_17331', 'show');
+            } else if (popid = 'dh_popup_17357') {
+                console.log('checked');
+                Cookies.set('dh_popup_1_17357', 'show');
+            } else if (popid = 'dh_popup_17363') {
+                console.log('checked');
+                Cookies.set('dh_popup_1_17363', 'show');
+            } else {
+                console.log('no popups found');
+            }
         }
     </script>
 <?php
