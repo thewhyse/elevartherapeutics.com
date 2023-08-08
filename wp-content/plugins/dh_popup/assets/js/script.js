@@ -25,14 +25,14 @@ var DHPopup = window.DHPopup || {};
 	DHPopup.tracking = function(category, action, label, value){
 		if(!parseInt(dhvcPopupSetting.ga_tracking))
 			return;
-			
+
 		value = value || 1;
 		try {
 			if (typeof _gaq == 'object') {
 				_gaq.push(['_trackEvent', category, action, label, value, false]);
-			} else if (typeof _trackEvent == 'function') { 
+			} else if (typeof _trackEvent == 'function') {
 				_trackEvent(category, action, label, value, false);
-			} else if (typeof __gaTracker == 'function') { 
+			} else if (typeof __gaTracker == 'function') {
 				__gaTracker('send', 'event', category, action, label, value);
 			} else if (typeof ga == 'function') {
 				ga('send', 'event', category, action, label, value);
@@ -40,7 +40,7 @@ var DHPopup = window.DHPopup || {};
 		} catch(error) {
 		}
 	}
-	
+
 	DHPopup.updateStats = function(id,campaign_id,type){
 		if(DHPopup.currentUpdateStats)
 			return;
@@ -55,7 +55,7 @@ var DHPopup = window.DHPopup || {};
         	DHPopup.currentUpdateStats =false;
         });
 	}
-	
+
 	DHPopup.initEvents = function(){
 		var self = this;
 		if($('.dh-popup[data-open_type="load"]').length){
@@ -65,7 +65,7 @@ var DHPopup = window.DHPopup || {};
 					DHPopup.openPopUp($popup);
 			});
 		}
-		
+
 		if($('.dh-popup[data-open_type="scroll"]').length){
 			$(window).on('scroll', function() {
 				 if(DHPopup.scrollPopupDisplayed)
@@ -84,7 +84,7 @@ var DHPopup = window.DHPopup || {};
          		});
 	        });
 		}
-		
+
 		if($('.dh-popup[data-open_type="inactivity"]').length){
 			function inactivityTimerInterval()
             {
@@ -111,10 +111,10 @@ var DHPopup = window.DHPopup || {};
             	DHPopup.timerInactivity=0;
             });
 		}
-		
+
 		$('body').find('[href^="#popup_open_"],[data-popup-open]').each(function(){
 			var $this = $(this);
-			
+
 		    $this.on('click',function(event){
 		    	event.stopPropagation();
 				event.preventDefault();
@@ -130,7 +130,7 @@ var DHPopup = window.DHPopup || {};
 		});
 		$('body').find('.dh_popup_close,[href="#popup_close"]').each(function(){
 			var $this = $(this);
-			
+
 		    $this.on('click',function(event){
 		    	event.stopPropagation();
 				event.preventDefault();
@@ -138,10 +138,10 @@ var DHPopup = window.DHPopup || {};
 					$.fancybox.close();
 		    });
 		});
-		
+
 		$('body').find('[href^="#not_show_popup_again_"],[data-not_show_popup_again]').each(function(){
 			var $this = $(this);
-			
+
 		    $this.on('click',function(event){
 		    	event.stopPropagation();
 				event.preventDefault();
@@ -157,19 +157,18 @@ var DHPopup = window.DHPopup || {};
 		    });
 		});
 	}
-	
+
 	DHPopup.setCookies=function(name,expires){
 		expires = expires ? expires : '';
 		return Cookies.set( dhvcPopupSetting.cookie_prefix + name,'show', { expires: expires, path: '/' } );
 	}
-	
+
 	DHPopup.getCookies=function(name){
 		if(window.dh_popup_preview && true===window.dh_popup_preview)
 			return false;
 		return Cookies.get(dhvcPopupSetting.cookie_prefix + name);
 	}
-	
-	
+
 	DHPopup.afterShowPopup = function(popup){
 		var $popup = $(popup),
 			open_mode = $popup.data('open_mode');
@@ -181,12 +180,12 @@ var DHPopup = window.DHPopup || {};
 			case 'once-session':
 				var open_interval = $popup.attr('data-open_interval');
 				if(open_interval){
-					DHPopup.setCookies($popup.data('id'),parseInt(openinterval));
+					DHPopup.setCookies($popup.data('id'),parseInt(open_interval));
 				}
-			break;
+            break;
 		}
 	}
-	
+
 	DHPopup.getViewport = function() {
 		var e = window,
 	    	a = 'inner';
@@ -199,21 +198,21 @@ var DHPopup = window.DHPopup || {};
 		    height: e[a + 'Height']
 		};
 	}
-	
+
 	DHPopup.updatePopup = function(popup){
-		
+
 		var $popup = $(popup),
 			viewport = DHPopup.getViewport();
-		
+
 		if(parseInt($popup.data('hide_mobile')) && viewport.width<= 767){
 			$.fancybox.close();
 		}
 		var width = $popup.data("width");
 		var height = $popup.data("height");
 		var scale = Math.min(viewport.width/width, viewport.height/height);
-		
-		scale = scale - 0.03;	
-		if (scale > 1) 
+
+		scale = scale - 0.03;
+		if (scale > 1)
 			scale = 1;
 		if(parseInt($popup.data('disable_responsive')) || ( 'yes' ===  $popup.data('use_css_responsive')  && viewport.width<= 767 )){
 			scale = 1;
@@ -242,7 +241,7 @@ var DHPopup = window.DHPopup || {};
 		    "-webkit-transform-origin": transform_origin
 		});
 	}
-	
+
 	DHPopup.openPopUp = function(popup,withoutDelay){
 		withoutDelay = withoutDelay || false;
 		var viewport = DHPopup.getViewport();
@@ -257,9 +256,9 @@ var DHPopup = window.DHPopup || {};
 		if($.fancybox.isOpen)
 			return;//$.fancybox.close();
 		var overlayBg = {}
-		
+
 		var $use_css_responsive = 'yes' ===  $popup.data('use_css_responsive') ? true : false;
-		
+
 		if($popup.data('overlay_type') === 'image')
 			overlayBg.background = 'url(' + $popup.data('overlay_image') + ')';
 		var $fancyboxOptons = {
@@ -276,7 +275,7 @@ var DHPopup = window.DHPopup || {};
 				closeBtn : '<a title="Close" class="fancybox-item fancybox-close" href="javascript:;"><i class="fancybox-close__line-top"></i><i class="fancybox-close__line-bottom"></i></a>'
 			},
             width:'auto',
-            openEffect  : 'none', // 'elastic', 'fade' or 'none'
+            openEffect  : 'fade', // 'elastic', 'fade' or 'none'
             autoHeight: true,
 	        padding: 0,
             titleShow: false,
@@ -290,7 +289,7 @@ var DHPopup = window.DHPopup || {};
             afterClose: function(){
             	$this.timeoutClose && clearTimeout($this.timeoutClose);
             	DHPopup.triggerEvent( $popup, 'afterClosePopup', $popup);
-            	
+
             	if($use_css_responsive)
             		$(document.body).removeClass('dh-popup-open');
             },
@@ -301,10 +300,10 @@ var DHPopup = window.DHPopup || {};
 				$popup.find( '.dh_popup_field__text' ).each(function(){
 					$(this).val('');
 				});
-            	
+
             	if($use_css_responsive)
             		$(document.body).addClass('dh-popup-open');
-            	
+
             	DHPopup.triggerEvent( $popup, 'beforeOpenPopup', $popup );
             },
             afterShow: function(){
@@ -319,11 +318,11 @@ var DHPopup = window.DHPopup || {};
             	DHPopup.triggerEvent( $popup, 'afterOpenPopup', $popup );
             }
 		};
-		
+
 		$fancyboxOptons.onUpdate = function(){
 			DHPopup.updatePopup($popup );
 		};
-		
+
 		if(!parseInt($popup.data('disable_responsive'))){
 			$fancyboxOptons.fitToView = false;
 			$fancyboxOptons.autoCenter = false;
@@ -342,7 +341,7 @@ var DHPopup = window.DHPopup || {};
 			$.fancybox.open($popup,$fancyboxOptons);
 		}
 	}
-	
+
 	DHPopup.clearResponse = function(form){
 		var $form = $( form );
 		$( '.dh_popup_not_valid_tip', $form ).remove();
@@ -351,7 +350,7 @@ var DHPopup = window.DHPopup || {};
 		$( '.dh_popup__form-control', $form ).removeClass( 'dh_popup--not-valid' );
 
 	}
-	
+
 	DHPopup.triggerEvent = function( target, name, detail ) {
 		var $target = $( target );
 
@@ -366,7 +365,7 @@ var DHPopup = window.DHPopup || {};
 		/* jQuery event */
 		$target.trigger( 'dhpopup:' + name, detail );
 	}
-	
+
 	DHPopup.initSubmit = function(form){
 		var $form = $( form );
 		$form.on('submit',function(event){
@@ -378,29 +377,28 @@ var DHPopup = window.DHPopup || {};
 			return false;
 		});
 	}
-	
+
 	DHPopup.notValidTip = function( target, message ) {
 		var $target = $( target );
 		$( '.dh_popup_not_valid_tip', $target.parent() ).remove();
 		$( '<span role="alert" class="dh_popup_not_valid_tip"></span>' ).text( message ).appendTo($target.parent()).show();
 	}
 
-	
 	DHPopup.submitForm = function(form){
 		var $this = this;
-		
+
 		if($this.submitting){
 			return false;
 		}
-		
+
 		$this.submitting = true;
-		
+
 		var $form = $( form );
-		
+
 		DHPopup.clearResponse($form);
-		
+
 		$form.find('.dh-popup-form-response').empty().hide();
-		
+
 		var formData = $form.serialize();
 		var ajaxSuccess = function( data, status, xhr, $form ) {
 			var detail = {
@@ -413,7 +411,7 @@ var DHPopup = window.DHPopup || {};
 						$( '.dh_popup_field__group--' + n.field, $form ).each( function() {
 							DHPopup.notValidTip(this, n.message);
 							$( '.dh_popup__form-control', this ).addClass( 'dh_popup--not-valid' );
-							$( '[aria-invalid]', this ).attr( 'aria-invalid', 'true' ); 
+							$( '[aria-invalid]', this ).attr( 'aria-invalid', 'true' );
 						} );
 					} );
 					$form.addClass( 'invalid' );
@@ -460,18 +458,18 @@ var DHPopup = window.DHPopup || {};
 			DHPopup.triggerEvent( $form, 'submitFail', $form );
 		} );
 	}
-	
+
 	$( 'div.dh-popup__inner > form' ).each( function() {
 		var $form = $( this );
 		DHPopup.initSubmit( $form );
 	} );
-	
+
 	$('button',$('.dhvc-popup-submit')).on('click',function(event){
 		event.stopPropagation();
 		event.preventDefault();
 		$(this).closest('form').submit();
 	});
-	
+
 	$(document).ready(function() {
 		DHPopup.initEvents();
 	});
