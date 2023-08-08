@@ -1,6 +1,21 @@
 @import "../base/colors";
 
 /* ********** Pop-Over - Desktop ********** */
+
+#dh_popup_17354 label.dns-label,
+#dh_popup_17327 label.dns-label,
+#dh_popup_17359 label.dns-label {
+    font-size: 16px;
+    font-weight: bold;
+}
+#dh_popup_17354 div.edit-link,
+#dh_popup_17327 div.edit-link,
+#dh_popup_17359 div.edit-link {
+    display: none;
+}
+.fancybox-close__line-bottom, .fancybox-close__line-top {
+    background-color: #fff;
+}
 .fancybox-overlay {
     background: rgb(82, 68, 135) !important;
     background: linear-gradient(0deg, rgba(82, 68, 135, 0.75) 0%, rgba(43, 113, 183, 0.75) 35%, rgba(0, 153, 169, 0.75) 66%, rgba(84, 193, 234, 0.75) 100%) !important;

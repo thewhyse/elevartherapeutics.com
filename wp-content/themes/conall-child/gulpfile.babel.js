@@ -11,6 +11,7 @@ import autoprefixer from 'autoprefixer';
 import del from 'del';
 import named from 'vinyl-named';
 import imagemin from 'gulp-imagemin';
+import browserSync from "browser-sync";
 
 const PRODUCTION = yargs.argv.prod;
 
@@ -73,8 +74,26 @@ export const scripts = () => {
     .pipe(dest('dist/js'));
 }
 
-export const dev = series(clean, parallel(styles, images, copy, scripts), watchForChanges)
+const server = browserSync.create();
+var siteName = 'elevartherapeutics'; // set your siteName here
+// var userName = 'agencymjh'; // set your SSL cert userName here
 
+export const serve = done => {
+    server.init({
+        // proxy: "http://localhost/yourFolderName" // put your local website link here
+        proxy: 'https://' + siteName + '.test',
+        host: siteName + '.test',
+        notify: false,
+        open: false
+    });
+    done();
+};
+export const reload = done => {
+    server.reload();
+    done();
+};
+
+// export const dev = series(clean, parallel(styles, images, copy, scripts), watchForChanges)
+export const dev = series(clean, parallel(styles, images, copy, scripts), serve, watchForChanges);
 export const build = series(clean, parallel(styles, images, copy, scripts))
 export default dev;
-
