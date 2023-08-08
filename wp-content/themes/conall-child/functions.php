@@ -31,24 +31,24 @@ function elevar_javascript_footer()
         function set_check() {
             var popid = document.querySelector('div.dh-popup.vc_non_responsive').id;
             console.log(popid);
-            if (popid = 'dh_popup_17354') {
-                console.log('checked');
+            if (popid == 'dh_popup_17354') {
+                console.log('checked 17354');
                 Cookies.set('dh_popup_1_17354', 'show');
-            } else if (popid = 'dh_popup_17327') {
-                console.log('checked');
+            } else if (popid == 'dh_popup_17327') {
+                console.log('checked 17327');
                 Cookies.set('dh_popup_1_17327', 'show');
-            } else if (popid = 'dh_popup_17359') {
-                console.log('checked');
+            } else if (popid == 'dh_popup_17359') {
+                console.log('checked 17359');
                 Cookies.set('dh_popup_1_17359', 'show');
-            } else if (popid = 'dh_popup_17331') {
-                console.log('checked');
-                Cookies.set('dh_popup_1_17331', 'show');
-            } else if (popid = 'dh_popup_17357') {
-                console.log('checked');
-                Cookies.set('dh_popup_1_17357', 'show');
-            } else if (popid = 'dh_popup_17363') {
-                console.log('checked');
-                Cookies.set('dh_popup_1_17363', 'show');
+            } else if (popid == 'dh_popup_17331') {
+                console.log('checked 17331');
+                Cookies.set('dh_popup_2_17331', 'show');
+            } else if (popid == 'dh_popup_17357') {
+                console.log('checked 17357');
+                Cookies.set('dh_popup_2_17357', 'show');
+            } else if (popid == 'dh_popup_17363') {
+                console.log('checked 17363');
+                Cookies.set('dh_popup_2_17363', 'show');
             } else {
                 console.log('no popups found');
             }
