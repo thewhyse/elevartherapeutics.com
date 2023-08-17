@@ -70,6 +70,96 @@
 
 /* END HOME PAGE   */
 
+/*  INVESTORS PAGE AUG2023   */
+h1.investors {
+    font-family: "Raleway", sans-serif;
+    font-size: 40px;
+    line-height: 36px;
+    font-style: normal;
+    font-weight: 700;
+    color: #707070;
+    text-transform: uppercase;
+}
+p.invest-copy {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2em;
+    color:$med_gray;
+}
+div#kol-1 {
+    h2.ko-event {
+        margin-top: 68px !important;
+    }
+    h2.kol-2 {
+
+    }
+}
+div#ko-line {
+    border-bottom: 1px solid #ccc;
+}
+h2.ko-event {
+    font-family: "Raleway", sans-serif;
+    font-size: 28px;
+    line-height: 32px;
+    font-style: normal;
+    font-weight: 800;
+    color: $elevar_purple;
+    text-transform: uppercase;
+    letter-spacing: 0;
+}
+h3.ko-event {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-style: normal;
+    font-weight: 700;
+    color: $med_gray;
+    text-transform: capitalize;
+    margin: 0 !important;
+    margin-top: 10px !important;
+    letter-spacing: 0;
+    margin-bottom: 10px !important;
+}
+/* VIDEO WRAPPER */
+div.ko-event {
+    a.inevnt-watch-video {
+
+    }
+    img.ko-event-img {
+        width: 340px;
+        height: 186px;
+    }
+
+
+}
+a.inevnt-watch-btn {
+    background-color: #54C1EA;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2em;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 6px 16px 6px 16px;
+    letter-spacing: 0;
+}
+div > a.inevnt-watch-btn:after {
+    padding-top: 35px;
+    border-bottom: 1px solid $med_gray;
+    width: 100%;
+}
+a.inevnt-download-btn {
+    background-color: #54C1EA;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2em;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 6px 16px 6px 16px;
+    letter-spacing: 0;
+}
 /*  CAREERS 2023 BillieMead   */
 
 .page-id-17194 div.edgtf-title {
@@ -650,7 +740,7 @@ iframe.paylocity-iframe {
 #elevar-ppl-row {
   /*hide row*/
   display: none;
-  
+
   height: 565px;
   background-image: url(/wp-content/uploads/2023/05/blue-bg-w-wings.png);
   background-repeat: no-repeat;
@@ -873,7 +963,7 @@ iframe.paylocity-iframe {
   .page-id-17194 .edgtf-grid-section .edgtf-section-inner {
     width: 1197px;
   }
-  .icon-topbox { 
+  .icon-topbox {
     p {
       width: 90%;
     }
@@ -1369,7 +1459,7 @@ iframe.paylocity-iframe {
   #our-purpose {
     .space-95 {
       height: 60px !important;
-    }     
+    }
   }
   #careers-paylocity-row {
     h4.eoe-headline {
@@ -1477,7 +1567,7 @@ iframe.paylocity-iframe {
     margin-top: 20px;
     padding: 0 24px;
     p {
-    height: unset; 
+    height: unset;
       a {
       font-size: 21px;
       text-align: left;
