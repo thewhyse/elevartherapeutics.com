@@ -95,6 +95,11 @@ div#kol-1 {
 
     }
 }
+div#kol-video {
+    img {
+        width: 300px;
+    }
+}
 div#ko-line {
     border-bottom: 1px solid #ccc;
 }
@@ -133,6 +138,9 @@ div.ko-event {
 
 
 }
+div#kol-vimeo-btn p {
+    margin: 0 !important;
+}
 a.inevnt-watch-btn {
     background-color: #54C1EA;
     font-family: "Raleway", sans-serif;
@@ -143,6 +151,7 @@ a.inevnt-watch-btn {
     text-transform: uppercase;
     padding: 6px 16px 6px 16px;
     letter-spacing: 0;
+    margin: 0 !important;
 }
 div > a.inevnt-watch-btn:after {
     padding-top: 35px;
