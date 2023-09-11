@@ -261,14 +261,15 @@ function wpcode_wp_timezone_string() {
  *
  * @param string $slug The username to load snippets for from the WPCode Library.
  * @param string $label The label to display for the username in the library.
+ * @param string $version The version of the plugin/theme. Used to filter snippets that should not be loaded for newer versions.
  *
  * @return void
  */
-function wpcode_register_library_username( $slug, $label = '' ) {
+function wpcode_register_library_username( $slug, $label = '', $version = '' ) {
 	if ( ! is_admin() || ! isset( wpcode()->library ) ) {
 		return;
 	}
-	wpcode()->library->register_library_username( $slug, $label );
+	wpcode()->library->register_library_username( $slug, $label, $version );
 }
 
 

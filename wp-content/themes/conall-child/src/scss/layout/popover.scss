@@ -1,6 +1,7 @@
 @import "../base/colors";
+@import "../base/font";
 
-/* ********** Pop-Over - Desktop ********** */
+/* ******* POP-OVER DESKTOP ******* */
 
 #dh_popup_17354 label.dns-label,
 #dh_popup_17327 label.dns-label,
@@ -93,14 +94,13 @@
         }
     }
 }
-
 .fancybox-close__line-bottom,
 .fancybox-close__line-top {
     border-radius: 10px !important;
     height: 5px !important;
 }
 
-/* ********** Pop-Over - Mobile  ********** */
+/* ******* POP-OVER MOBILE ******* */
 
 @media all and (max-width: 767px) {
     .dh-popup__wrap--17354 .fancybox-close__line-bottom,
@@ -296,3 +296,5 @@
         }
     }
 }
+
+/* ******* END POP-OVER ******* */

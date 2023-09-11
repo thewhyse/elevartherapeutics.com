@@ -1,0 +1,657 @@
+@import "../base/colors";
+@import "../base/font";
+
+/*** Responsive Styles Standard Desktop Only - bmead I merged media queries where I could ***/
+
+@media all and (min-width: 767px) {
+  #asco_23_hero_row {
+    height: 336px;
+    background-position:
+      bottom 0 left 0,
+      center center !important;
+    background-size:
+      100%,
+      cover !important;
+    background-repeat: no-repeat !important;
+    background-image:
+      url(/wp-content/uploads/2023/05/Hero_white_wave.png),
+      url(/wp-content/uploads/2023/04/Hero_DT.png);
+  }
+  #careers_hero_row {
+    height: 457px;
+    background-position: bottom 0 left 0 !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-image: url(/wp-content/uploads/2023/05/career-page-header-1921x458-1.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media all and (min-width: 1100px) {
+
+}
+@media all and (min-width: 1200px) {
+    #icon-row3 {
+      margin-left: 5%;
+      margin-right: 5%;
+  }
+}
+/**** Billie Careers page ****/
+@media all and (max-width: 1475px) {
+  .page-id-17194 .edgtf-grid-section .edgtf-section-inner {
+    width: 1197px;
+  }
+  .icon-topbox {
+    p {
+      width: 90%;
+    }
+  }
+}
+@media all and (max-width: 1200px) {
+  .page-id-17194 .edgtf-grid-section .edgtf-section-inner {
+    width: 950px;
+  }
+  .edgtf-iwt:not(.edgtf-iwt-left-from-title):not(.edgtf-iwt-icon-top-with-separator) .edgtf-iwt-title-holder {
+    margin-bottom: 10px !important;
+  }
+  .icon-topbox {
+    .edgtf-iwt-icon-holder {
+      img {
+        max-width: 80%;
+      }
+    }
+    h5 {
+      font-size: 25px;
+      line-height: 28px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+  .icon-bottombox {
+    div.vc_column-inner {
+      margin: 2%;
+    }
+    h5 {
+      font-size: 25px;
+      line-height: 28px;
+      letter-spacing: 0;
+    }
+    .edgtf-iwt-icon-holder {
+      img {
+        max-width: 80%;
+      }
+    }
+  }
+}
+@media all and (max-width: 1170px) {
+  .page-id-17194 .edgtf-grid-section .edgtf-section-inner {
+    width: 900px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .page-id-17194 .edgtf-grid-section .edgtf-section-inner {
+    width: 768px;
+  }
+  .edgtf-iwt:not(.edgtf-iwt-left-from-title):not(.edgtf-iwt-icon-top-with-separator) .edgtf-iwt-title-holder {
+    margin-bottom: 2px !important;
+  }
+  .icon-topbox {
+    .edgtf-iwt-icon-holder {
+      img {
+        max-width: 75%;
+      }
+    }
+    h5 {
+      font-size: 25px;
+      line-height: 28px;
+      letter-spacing: 0;
+    }
+    p {
+      font-size: 16px;
+      line-height: 22px;
+      padding: 0;
+      margin: 0;
+      width: 88%;
+    }
+    .edgtf-iwt-content-holder {
+      width: 75%;
+    }
+  }
+  .icon-bottombox {
+    div.vc_column-inner {
+      margin: 3%;
+      min-height: 240px;
+      padding: 8px;
+      padding-top: 0;
+    }
+    h5 {
+      font-size: 25px;
+      line-height: 28px;
+      letter-spacing: 0;
+    }
+    .edgtf-iwt-icon-holder,
+    .edgtf-iwt-content-holder {
+      height: 50%;
+      padding: 7%;
+    }
+    .edgtf-iwt-content-holder {
+      width: 98%;
+    }
+    .edgtf-iwt-icon-holder {
+      width: 88%;
+      img {
+        max-width: 50%;
+      }
+    }
+  }
+  #colored-healthcare-button a {
+    font-size: 18px;
+}
+  #future-events-row {
+
+    #future-events-row-title {
+      .edgtf-full-section-inner {
+        .wpb_column:first-child {
+          display: none;
+        }
+        .wpb_column:nth-child(2) {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+
+    #future-events-row-info-blocks {
+      .edgtf-full-section-inner {
+
+        display: -webkit-box;
+
+        display: -ms-flexbox;
+
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+
+        .wpb_column:nth-child(1),
+        .wpb_column:nth-child(4) {
+          display: none;
+        }
+        .wpb_column:nth-child(2),
+        .wpb_column:nth-child(3) {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+  #book-meeting-cta {
+    position: relative;
+    width: 282px;
+    margin: 0 auto;
+    top: inherit;
+    right: inherit;
+
+  }
+  #open-positions-cta {
+    position: relative;
+    width: 329px;
+    margin: 0 auto;
+    top: 0;
+    right: inherit;
+
+  }
+  #careers_hero_row {
+    top: -54px;
+  }
+}
+/*** Responsive Styles Tablet And Below ***/
+@media all and (max-width: 980px) {
+  #elevar-ppl-row {
+    height: auto;
+    background-image: none;
+    background-color: $drk_blue;
+  }
+  .icon-topbox {
+    div.vc_column-inner {
+      min-height: 133px;
+    }
+    p {
+      width: 90%;
+      font-size: 15px;
+      line-height: 22px;
+      margin-top: 6px;
+    }
+  }
+  .icon-bottombox {
+    div.vc_column-inner {
+      min-height: 250px;
+    }
+  }
+  .edgtf-iwt.edgtf-iwt-icon-left {
+    text-align: center;
+  }
+  .edgtf-iwt.edgtf-iwt-icon-top {
+    text-align: center;
+  }
+  .icon-topbox.vc_column_container:nth-child(odd) {
+    justify-content: center;
+  }
+  .icon-topbox.vc_column_container:nth-child(even) {
+    justify-content: center;
+  }
+  .icon-bottombox.vc_column_container {
+    justify-content: center;
+  }
+  #colored-healthcare-button {
+    margin-top: 8px;
+    padding:10px 20px;
+    a {
+      text-align: left;
+      padding-left: 10px;
+    }
+  }
+  #bottombox3 .vc_column_container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+/*** Responsive Styles Tablet Only ***/
+@media all and (min-width: 768px) and (max-width: 980px) {
+
+}
+/*** Responsive Styles Smartphone Only ***/
+@media all and (max-width: 768px) {
+  .page-id-17194 .edgtf-grid-section .edgtf-section-inner {
+    width: 600px;
+  }
+  #colored-healthcare-button {
+    border-radius: 10px!important;
+    min-height: 55px;
+    max-width: 600px;
+    margin-left: 0;
+/*     padding: 0 20px;
+  }
+  p {
+    height: 66px; */
+  }
+  .icon-topbox {
+    p {
+      width: 93%;
+    }
+    .edgtf-iwt-icon-holder img {
+      max-width: 62.5%;
+    }
+    .edgtf-iwt-title-holder {
+      margin-bottom: 3px;
+    }
+  }
+}
+/**** Billie Careers page ****/
+@media all and (max-width: 767px) {
+  #spotlight-row {
+    padding: 0 0 20px 15px !important;
+    #play-btn {
+      margin: 20px auto 0 !important;
+    }
+  }
+  #mosaic-row {
+    padding: 40px 40px 0;
+    .edgtf-full-section-inner {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      .wpb_single_image {
+        text-align: center;
+      }
+      .wpb_column:first-child {
+        .wpb_wrapper {
+          padding: 0;
+        }
+      }
+      .wpb_column:nth-child(2) {
+        -webkit-box-ordinal-group: -1;
+        -ms-flex-order: -2;
+        order: -2;
+        .vc_column-inner {
+          padding: 0;
+        }
+      }
+    }
+  }
+  #careers_hero_row {
+    height: 457px;
+    background-repeat: no-repeat !important;
+    background-image: url(/wp-content/themes/conall-child/dist/images/elevar-careers-header-MOB-414x475-1.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    #careers-subtitle h3 {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+  }
+  .icon-topbox {
+    .edgtf-iwt.edgtf-iwt-icon-left {
+      flex-direction: column;
+      justify-content: center;
+    }
+    .edgtf-iwt-icon-holder {
+      width: 100%;
+      display: inline-flex;
+/*       aspect-ratio: 2/1; */
+      align-items: center;
+    }
+    .edgtf-iwt-content-holder {
+      display: flex;
+      align-items: center;
+      width: 88%;
+      margin: 0 auto;
+    }
+    div.vc_column-inner {
+      max-width: 600px;
+      max-height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background-size: 100% 100%!important;
+      background-repeat: no-repeat;
+      padding: 0;
+      aspect-ratio: 1/1;
+      background-image: url(/wp-content/themes/conall-child/dist/images/Elevar_Gradient_MOB.png) !important;
+    }
+    h5 {
+      font-size: 28px;
+      line-height: 45px;
+      margin-top: 15px !important;
+    }
+    p {
+      padding: 0;
+      margin: 0 auto;
+      text-align: center;
+      width: 90%;
+    }
+  }
+  .icon-topbox.vc_column_container {
+    display: flex;
+    padding: 3% 0;
+  }
+  #bottombox1,
+  #bottombox2,
+  #bottombox3 {
+    justify-content: center;
+  }
+  .icon-bottombox {
+      .edgtf-iwt.edgtf-iwt-icon-top {
+        flex-direction: column;
+        justify-content: center;
+      }
+      .edgtf-iwt-icon-holder {
+        width: 100%;
+        display: inline-flex;
+        aspect-ratio: 2/1;
+        align-items: center;
+        padding: 0;
+        height: 60%;
+      }
+      .edgtf-iwt-content-holder {
+        display: flex;
+        align-items: center;
+        width: 88%;
+        margin: 0 auto;
+        height: 10%;
+      }
+      div.vc_column-inner {
+        max-width: 600px;
+        max-height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-size: 100% 100%!important;
+        background-repeat: no-repeat;
+        padding: 0;
+        margin: 0;
+        aspect-ratio: 1/1;
+        background-image: url(/wp-content/themes/conall-child/dist/images/Elevar_Gradient_MOB.png) !important;
+      }
+      h5 {
+        font-size: 28px;
+        line-height: 45px;
+      }
+  }
+  .icon-bottombox.vc_column_container {
+    display: flex;
+    padding: 3% 0;
+  }
+  #asco_23_hero_row {
+    height: 80vh;
+    background-repeat: no-repeat !important;
+    background-image: url(/wp-content/uploads/2023/04/hero_mobi.png);
+    #visit-us-subtitle,
+    #address-line {
+      h3 {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        .map-ping {
+          margin: 20px 0 0;
+        }
+      }
+    }
+  }
+  #form-container-row {
+    padding: 40px 20px !important;
+  }
+  #spacer-row {
+    #dates-cols-row {
+      .edgtf-full-section-inner {
+        .wpb_column:first-child .vc_column-inner {
+          padding: 0;
+        }
+        .wpb_column:nth-child(2) {
+          .vc_column-inner {
+            padding: 0;
+          }
+        }
+      }
+    }
+    .spacer-title {
+      h4 {
+        text-align: left;
+        padding: 0 0 0 30px;
+      }
+    }
+  }
+  #temp-footer-row {
+
+    #temp-footer-container {
+      .footer-social {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        p {
+          margin: 0;
+        }
+      }
+      .copy-right-line {
+        color: $white;
+      }
+      #bottom-links {
+        span {
+          display: block;
+          width: 100vw;
+          text-align: center;
+        }
+      }
+      .copy-right-line {
+        text-align: center;
+      }
+      .policies-links {
+        > div {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 600px) {
+  .page-id-17194 .edgtf-grid-section .edgtf-section-inner {
+    width: 420px;
+  }
+  .icon-topbox div.vc_column-inner {
+    padding: 12%;
+  }
+  .icon-bottombox {
+    div.vc_column-inner {
+    padding: 12%;
+    }
+    .edgtf-iwt-icon-holder {
+      height: 50%;
+    }
+    .edgtf-iwt-content-holder {
+      height: 30%;
+    }
+  }
+  .career-icon6 {
+    h5 {
+      margin-top: 30px !important;
+    }
+  }
+  #our-purpose {
+    .space-95 {
+      height: 60px !important;
+    }
+  }
+  #careers-paylocity-row {
+    h4.eoe-headline {
+      font-size: 20px;
+      margin-top: 35px;
+    }
+    p.eoe-copy {
+      font-size: 18px;
+      margin-top: 25px;
+    }
+    .space-70 {
+      display: none;
+    }
+    .space-50 {
+      display: none;
+    }
+  }
+  #colored-healthcare-button {
+    p {
+      height: initial;
+      a {
+        font-size: 18px;
+      }
+    }
+    min-height: 100px;
+  }
+
+  div.container-iframe {
+    margin-top: 25px;
+  }
+}
+/*** Responsive Styles Smartphone Portrait ***/
+@media all and (max-width: 480px) {
+  .page-id-17194 .edgtf-grid-section .edgtf-section-inner {
+    width: 350px;
+  }
+   #mission-statement {
+    padding-top: 30px !important;
+    padding-bottom: 0px !important;
+  }
+  .edgtf-iwt:not(.edgtf-iwt-left-from-title):not(.edgtf-iwt-icon-top-with-separator) .edgtf-iwt-title-holder {
+    margin-bottom: 0px!important;
+  }
+  .icon-topbox.vc_column_container {
+    display: flex;
+    padding: 4%;
+  }
+  .icon-bottombox.vc_column_container {
+    display: flex;
+    padding: 4%;
+  }
+  .icon-topbox {
+    .edgtf-iwt-content-holder {
+      width: 88%;
+      margin: 0 auto;
+    }
+    .edgtf-iwt-icon-holder {
+      aspect-ratio: initial;
+    }
+    .edgtf-iwt-icon-holder img {
+      max-width: 150px;
+    }
+    div.vc_column-inner {
+      padding: 0;
+    }
+    h5 {
+      font-size: 28px;
+      line-height: 32px;
+      margin-top: 10px !important;
+    }
+    p {
+      font-size: 18px;
+      line-height: 24px;
+      padding: 0;
+      margin: 0 auto;
+      text-align: center;
+    }
+    p:nth-child(2) {
+      width: 70%;
+    }
+    p:nth-child(4) {
+      width: 65%;
+    }
+  }
+  .icon-bottombox {
+    .edgtf-iwt-content-holder {
+      width: 88%;
+      margin: 0 auto;
+    }
+    .edgtf-iwt-icon-holder img {
+      max-width: 150px;
+    }
+    div.vc_column-inner {
+      padding: 0;
+    }
+    h5 {
+      font-size: 28px;
+      line-height: 32px;
+    }
+  }
+  #colored-healthcare-button {
+    min-height: 153px;
+    margin: 0%;
+    margin-top: 20px;
+    padding: 0 24px;
+    p {
+    height: unset;
+      a {
+      font-size: 21px;
+      text-align: left;
+      padding-left: 0;
+      line-height: 1.75rem;
+        img {
+        margin-right: 20px;
+        }
+      }
+    }
+  }
+}

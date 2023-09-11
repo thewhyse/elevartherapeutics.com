@@ -1,0 +1,421 @@
+@import "../base/colors";
+@import "../base/font";
+
+/* ******* ASCO 2023 PAGE ******* */
+
+.page-id-16965 {
+  footer {
+    display: none;
+  }
+}
+
+#temp-footer-row {
+  background: $lt_blue;
+  padding: 0 0 40px;
+  #temp-footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    .footer-social {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      p {
+        margin: 0;
+      }
+    }
+    .copy-right-line {
+      color: $white;
+    }
+    #bottom-links {
+      color: $white;
+    }
+  }
+}
+
+#asco_23_hero_row {
+  h1 {
+    text-transform: uppercase;
+  }
+  h1, h3 {
+    color: $white;
+    font-weight: 600;
+  }
+  #visit-us-subtitle {
+    margin: -20px 0 0 !important;
+  }
+  #address-line {
+    a {
+      font-size: 20px;
+      color: $white;
+      border-bottom: 1px solid $white;
+      padding: 0 0 2px;
+      .sm_logo_icon {
+        display: inline-block;
+        height: 100%;
+        width: 40px;
+        background: url(/wp-content/themes/conall-child/dist/images/Map-Icon.svg) no-repeat center center;
+      }
+    }
+  }
+  #visit-us-subtitle {
+    h3 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      .map-ping {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin: 0 0 0 15px;
+        background: url(/wp-content/uploads/2023/05/place_Icon.png) no-repeat center center;
+      }
+    }
+  }
+  .edgtf-btn {
+    border-radius: 6px;
+    margin: 20px 0 0;
+    font-size: 16px;
+    font-weight: 500 !important;
+  }
+}
+
+/* #map-popup_section {
+  display: none;
+  background-image: url(/wp-content/uploads/2023/04/Map-Popup.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  width: 100vw;
+  height: 90vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  #close-map-icon {
+    width: 50px;
+    height: 50px;
+    background: url(/wp-content/themes/conall-child/dist/images/Close-Icon.png);
+    background-size: cover;
+    position: absolute;
+    top: 10vh;
+    right: 5vw;
+  }
+} */
+
+#spotlight-row {
+  display: block !important;
+  background: $white;
+  padding: 40px 0 60px;
+}
+
+#spotlight-row {
+
+  background: $white;
+  padding: 40px 0 60px;
+
+  h4 {
+    font-size: 28px;
+    color: $drk_blue;
+    font-weight: 600;
+  }
+  p {
+    font-size: 18px;
+    font-weight: 500;
+    color: $drk_gray;
+  }
+  #spotlight-body {
+    margin: 20px 0 0 -15px;
+    .edgtf-btn {
+      border-radius: 6px;
+      margin: 20px 0 0;
+      font-size: 16px;
+      font-weight: 600 !important;
+    }
+  }
+
+  #play-btn {
+    width: 200px;
+    background: $lt_blue;
+    margin: 20px 0 0;
+    text-align: center;
+    border: 2px solid $lt_blue;
+    border-radius: 6px;
+    background: $lt_blue;
+    &:hover {
+      background: $white;
+      a {
+          color: $lt_blue;
+      }
+    }
+    a {
+      display: block;
+      color: $white;
+      font-weight: 600;
+      font-size: 20px;
+      height: 100%;
+      padding: 10px;
+      text-align: center;
+      &:hover {
+        color: $lt_blue;
+      }
+    }
+  }
+
+}
+
+#spacer-row {
+
+  padding: 40px 0 60px;
+  background: $white;
+
+  h4 {
+    font-size: 28px;
+    color: $drk_blue;
+    font-weight: 600;
+  }
+
+  .spacer-title {
+    margin: 0 0 0 -15px;
+  }
+
+  #dates-cols-row {
+    margin-top: 20px;
+    .edgtf-full-section-inner {
+      position: relative;
+      .wpb_column:first-child {
+        .vc_column-inner {
+          padding: 0 40px 0 0;
+        }
+      }
+      .wpb_column:first-child:after {
+        content: '';
+        width: 1px;
+        height: 90%;
+        background: $drk_gray;
+        position: absolute;
+        top: 10%;
+        right: 20px;
+      }
+    }
+
+    h5 {
+      font-size: 22px;
+      color: $drk_blue;
+      font-weight: 600;
+    }
+    p {
+      font-size: 18px;
+      font-weight: 500;
+      color: $drk_gray;
+    }
+  }
+}
+
+#elevar-ppl-row {
+  display: none;
+  height: 565px;
+  background-image: url(/wp-content/uploads/2023/05/blue-bg-w-wings.png);
+  background-repeat: no-repeat;
+  background-size: 133%;
+  background-position: top right;
+  .wpb_text_column:first-child {
+    margin: 40px 0 !important;
+    h3 {
+      font-size: 2rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: $white;
+    }
+  }
+  #imgs-block {
+    .edgtf-full-section-inner {
+      .wpb_column:nth-child(2),
+      .wpb_column:nth-child(3) {
+        .wpb_wrapper {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          .wpb_text_column {
+            color: $white !important;
+            padding: 0 20px 40px;
+            h4 {
+              color: $white !important;
+              font-size: 26px;
+              width: 100%;
+            }
+            p {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#future-events-row {
+  height: 350px;
+  padding: 40px 0 0;
+  background-position:
+    bottom 0 left 0,
+    center center !important;
+  background-size:
+    100%,
+    cover !important;
+  background-repeat: no-repeat !important;
+  background-image:
+    url(/wp-content/uploads/2021/11/Elevar_Blue_Wave_Footer_5000px_wide_rev2.png),
+    url(/wp-content/uploads/2023/04/Footer_DT.png);
+
+  #future-events-row-title {
+    h4 {
+      color: $white;
+      font-size: 24px;
+      font-weight: 500;
+      margin: 20px 0 30px;
+    }
+  }
+
+  #future-events-row-info-blocks {
+    p {
+      color: $white;
+      font-size: 17px;
+      .date-in-barca {
+        color: $magenta;
+      }
+    }
+    a {
+      color: $white;
+      text-decoration: underline;
+    }
+    .edgtf-full-section-inner {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+  }
+
+}
+
+#mosaic-row {
+  padding: 40px;
+  background: $lt_gray;
+
+  .vc_col-sm-8 {
+    .vc_column-inner {
+      padding: 0;
+    }
+  }
+  .edgtf-full-section-inner {
+    .wpb_column:first-child {
+      .wpb_wrapper {
+        padding: 0 40px 0 0;
+      }
+    }
+  }
+
+  h4 {
+    font-size: 24px;
+    color: $drk_blue;
+    font-weight: 600;
+    margin: 20px 0 30px;
+  }
+
+  p {
+    font-size: 18px;
+    color: $drk_gray;
+    font-weight: 500;
+  }
+}
+
+#book-meeting-cta {
+  position: absolute;
+  top: 0;
+  right: 5vw;
+  p {
+    margin: 0;
+  }
+  a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 54px;
+    padding: 0 12px;
+    border-radius: 0 0 6px 6px;
+    background: $lt_blue;
+    color: $white !important;
+    &:hover {
+      background: $white;
+      color: $lt_blue !important;
+      border: 1px solid $lt_blue;
+    }
+  }
+}
+
+/*hide date and address*/
+#visit-us-subtitle,
+#address-line {
+  display: none;
+}
+
+@media all and (max-width: 1340px) {
+  #book-meeting-cta {
+    position: relative;
+    width: 390px;
+    margin: 0 auto;
+    top: inherit;
+    right: inherit;
+
+  }
+}
+@media all and (max-width: 1024px) {
+  #spacer-row {
+    h4 {
+      text-align: center;
+
+    }
+    #dates-cols-row {
+      margin-right: 0;
+      margin-left: 0;
+      padding: 0 20px !important;
+    }
+  }
+  #dates-cols-row .edgtf-full-section-inner .wpb_column:first-child:after {
+    display: none;
+  }
+/*   #map-popup_section {
+    background-image: url(/wp-content/uploads/2023/04/map_mobi.png);
+    height: 100vh;
+    margin: 0;
+  } */
+}
+
+/* ******* END ASCO 2023 PAGE ******* */

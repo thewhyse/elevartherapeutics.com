@@ -1,0 +1,320 @@
+@import "../base/colors";
+@import "../base/font";
+
+/* ******* CAREERS PAGE ******* */
+
+.page-id-17194 div.edgtf-title {
+  z-index: 100 !important;
+}
+.page-id-17194 .edgtf-grid-section .edgtf-section-inner {
+  width: 1397px;
+}
+#careers_hero_row {
+  h1 {
+    color: $white;
+    border-bottom: 3px solid $white;
+    width: 260px;
+    padding-bottom: 15px;
+    letter-spacing: 4.5px;
+    margin: 0 auto;
+    line-height: 1.2em;
+    font-size: 45px !important;
+    text-transform: uppercase;
+    filter: drop-shadow(0px 0px 5px #000);
+    top: 0;
+  }
+  #careers-subtitle {
+    h3 {
+        margin-top: 20px;
+        color: $white;
+        font-size: 30px;
+        font-weight: 600;
+        filter: drop-shadow(0px 0px 4px #000);
+    }
+  }
+}
+#icon-row3 {
+  .edgtf-section .edgtf-full-section-inner {
+    max-width: 1100px;
+  }
+}
+#open-positions-cta {
+  width: 329px;
+  position: absolute;
+  top: 0;
+  right: 10vw;
+  z-index: 102;
+  h1 {
+    text-align: center;
+  }
+  h3 {
+    text-align: center;
+  }
+  p {
+    margin: 0;
+  }
+  a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 305px;
+    font-size: 20px;
+    line-height: 32px;
+    height: 54px;
+    padding: 0 12px;
+    border-radius: 0 0 6px 6px;
+    background: $lt_blue;
+    color: $white !important;
+    &:hover {
+      background: $white;
+      color: $lt_blue !important;
+      border: 1px solid $lt_blue;
+    }
+  }
+}
+#mission-statement,
+#core-values,
+#our-purpose,
+#what-we-offer,
+#careers-paylocity-row {
+  h2.careers-blue-headings  {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2em;
+    color: $elevar_blue;
+    text-transform: uppercase;
+  }
+  p.careers-paragraph {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    color: #2f2f2f;
+    font-weight: 500;
+    margin-top: 20px;
+  }
+  p.careers-paragraph.bold {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 2rem;
+    color: #2f2f2f;
+    margin-top: 20px;
+  }
+}
+.edgtf-iwt:not(.edgtf-iwt-left-from-title):not(.edgtf-iwt-icon-top-with-separator) .edgtf-iwt-title-holder {
+  margin-bottom: 0 !important;
+}
+.icon-topbox.vc_column_container {
+  display: flex;
+  padding: 1%;
+
+}
+.icon-topbox.vc_column_container:nth-child(odd) {
+  justify-content: end;
+}
+.icon-topbox.vc_column_container:nth-child(even) {
+  justify-content: flex-start;
+}
+.icon-topbox {
+
+  div.vc_column-inner {
+    max-width: 600px;
+    max-height: 225px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat;
+    padding: 0;
+  }
+  .edgtf-iwt.edgtf-iwt-icon-left {
+    display: flex;
+    height: 100%;
+  }
+  .edgtf-iwt-icon-holder {
+    display: inline-flex;
+    width: 40%;
+    aspect-ratio: 1/1;
+    justify-content: center;
+    align-items: center;
+    float: unset !important;
+  }
+  .edgtf-iwt-content-holder {
+    display: inline-flex;
+    width: 45%;
+    padding: 0 !important;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .wpb_wrapper {
+    height: 100%;
+    width: 100%;
+  }
+  h5 {
+    color: $white;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.5em;
+    letter-spacing: 0;
+  }
+  p {
+    color: $white;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 2rem;
+  }
+  .career-icon2 {
+    p {
+      width: 65%;
+    }
+  }
+}
+#bottombox1 {
+  justify-content: flex-start;
+}
+#bottombox2 {
+  justify-content: center;
+}
+#bottombox3 {
+  justify-content: flex-end;
+}
+#bottombox3 {
+  .edgtf-iwt-content-holder {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+.icon-bottombox {
+  display: flex;
+  div.vc_column-inner {
+    max-width: 350px;
+    min-height: 381px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin-right: 20px;
+  }
+  .wpb_wrapper {
+    height: 100%;
+    width: 100%;
+  }
+  .edgtf-iwt.edgtf-iwt-icon-top {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .edgtf-iwt-icon-holder {
+    display: inline-flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    float: unset !important;
+    margin: 0 auto !important;
+    height: 60%;
+  }
+  .edgtf-iwt-content-holder {
+    display: inline-flex;
+    width: 85%;
+    padding: 0 !important;
+    justify-content: center;
+    height: 40%;
+  }
+  h5 {
+    color: $white;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2em;
+    text-align: center;
+    letter-spacing: 0;
+  }
+}
+#colored-healthcare-button {
+  border-radius: 20px !important;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 25px;
+  margin-left: -15px;
+  margin-right: -15px;
+  min-height: 75px;
+  background-color: #524487;
+  p {
+    margin: 0;
+    padding: 0;
+    height: 48px;
+    text-align: center;
+  a {
+    font-size: 22px;
+    color: $white;
+    display: inline-flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-decoration: underline;
+    font-weight: bold;
+    line-height: 22px;
+      img {
+        display: inline-flex;
+        margin: 0; margin-right: 20px;
+      }
+    }
+  }
+}
+#careers-paylocity-row {
+  h4.eoe-headline {
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+    line-height: 1.5em;
+    color: $lt_blue;
+    letter-spacing: -0.25px;
+    margin: 0;
+  }
+  p.eoe-copy {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 2rem;
+    color: #8D8D8D;
+    font-style: italic;
+    letter-spacing: -0.5px;
+    margin-top: 15px;
+  }
+  a.recruiting-email {
+    color: $elevar_blue;
+  }
+}
+
+div.container-iframe {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 62.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  background-color: $white;
+  margin: 0 auto;
+}
+iframe.paylocity-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: $white;
+}
+
+/* ******* END CAREERS PAGE ******* */
