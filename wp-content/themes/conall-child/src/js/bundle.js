@@ -1,9 +1,7 @@
-(function ($) {
-    $(document).ready(function () {
+jQuery(document).ready(function ($) {
 
-        $('.map-ping, #close-map-icon').on('click', function () {
-            $('#map-popup_section').toggle();
-        });
-
+    $('.map-ping, #close-map-icon').on('click', function () {
+        $('#map-popup_section').toggle();
     });
-});(jQuery)
+
+});

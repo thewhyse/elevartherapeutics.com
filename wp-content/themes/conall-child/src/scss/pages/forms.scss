@@ -1,7 +1,9 @@
 @import "../base/colors";
 @import "../base/font";
 
+#label-profession_specify-38967697-16fc-4ea8-a09a-5d56c0eda12f {
 
+}
 /* ******* ESMO FORM 2023 ******* */
 .form-columns-1 {
     margin-top: 50px !important;
@@ -11,6 +13,21 @@ ul.hs-error-msgs {
     list-style: none;
     padding: 0;
     text-align: center;
+}
+div.hs_profession,
+div.hs_profession_specify {
+    display: flex;
+    width: 100% !important;
+    flex-direction: column;
+}
+div.hs_profession_specify {
+    margin-top: 15px;
+    font-size: 16px;
+    div.input {
+        input {
+        background-image: none !important;
+        }
+    }
 }
 div#hubspot-container-row {
   padding: 110px 0 90px 0;
@@ -138,6 +155,12 @@ div#hubspot-container-row {
             .hs-input {
             width: 100%;
             background-image: none;
+            }
+        }
+        .hs_profession {
+            .hs-input {
+            width: 100%;
+            /* background-image: none; */
             }
         }
         }
@@ -445,6 +468,12 @@ div#hubspot-container-row {
                 background-image: none;
                 }
             }
+            .hs_profession__specify {
+                .hs-input {
+                width: 100%;
+                background-image: none;
+                }
+            }
             }
             .hs_firstname,
             .hs_email {
@@ -736,6 +765,12 @@ div#hubspot-container-row {
                 }
             }
             .hs_profession__specify__ {
+                .hs-input {
+                width: 100%;
+                background-image: none;
+                }
+            }
+            .hs_profession{
                 .hs-input {
                 width: 100%;
                 background-image: none;
@@ -1036,6 +1071,12 @@ div#hubspot-container-row {
                 .hs-input {
                 width: 100%;
                 background-image: none;
+                }
+            }
+            .hs_profession {
+                .hs-input {
+                width: 100%;
+                /* background-image: none; */
                 }
             }
             }

@@ -1,1 +1,1 @@
-jQuery;
+jQuery(document).ready((function(n){n(".map-ping, #close-map-icon").on("click",(function(){n("#map-popup_section").toggle()}))}));

@@ -45,9 +45,9 @@ div#book-meeting-cta {
     font-size: 20px;
     font-weight: 600;
     line-height: 32px;
+    border: 1px solid $elevar_purple;
     border-bottom-left-radius: 11px;
     border-bottom-right-radius: 11px;
-    border-color: $elevar_purple;
     &:hover {
         background: $elevar_purple;
         color: $white !important;
@@ -65,7 +65,7 @@ div#esmo_23_hero_row {
       cover !important;
     background-repeat: no-repeat !important;
     background-image:
-      url(/wp-content/themes/conall-child/images/hero_white_wave.png),
+      url(/wp-content/themes/conall-child/images/hero_white_wave-1920x140.svg),
       url(/wp-content/themes/conall-child/images/esmo-hero-1920x564.png);
       div#esmo-header {
         padding-top: 50px !important;
@@ -445,35 +445,82 @@ div#future-events-row {
 
 }
 div#temp-footer-row {
-  background: $lt_blue;
-  padding: 0 0 40px;
-  #temp-footer-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
+    background: $lt_blue;
+    padding: 0 0 30px 0;
+    min-height: 200px;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-
-    .footer-social {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      p {
-        margin: 0;
-      }
-    }
-    .copy-right-line {
-      color: $white;
-    }
-    #bottom-links {
-      color: $white;
-    }
-  }
+    justify-content: center;
+    align-items: flex-end;
+        div#temp-footer-container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            text-align: center;
+            div.policies-links {
+                min-width: 775px;
+                div.address {
+                    font-size: 24px;
+                    line-height: 19px;
+                    font-weight: 600;
+                    color: $white;
+                    span.vert-divi {
+                        margin-left: 1.5%;
+                        margin-right: 1.5%;
+                    }
+                }
+            }
+            div.footer-social {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            margin: 0;
+            margin-top: 30px;
+                a.edgtf-social-icon-widget-holder {
+                    color: $white;
+                    font-size: 24px;
+                    margin: 0px 10px 0px 0px;
+                }
+                img.footer-social-icon-widget {
+                    display: inline-block;
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+            div#bottom-links {
+            min-width: 775px;
+            margin-top: 40px;
+                .policies {
+                    font-size: 18px;
+                    a.policy-links {
+                        color: $white;
+                        font-size: 18px;
+                        line-height: 30px;
+                        text-decoration: underline;
+                        font-weight: 600;
+                    }
+                    span.vert-divi {
+                        margin-left: 1%;
+                        margin-right: 1%;
+                    }
+                }
+            }
+            div.copy-right-line {
+                color: $white;
+                font-size: 18px;
+                line-height: 30px;
+                font-weight: 600;
+            span.copy-right-line2 {
+                display: inline-block;
+            }
+            }
+        }
 }
 
 @media all and (max-width: 1340px) {
@@ -507,40 +554,40 @@ div#temp-footer-row {
         width: 15% !important;
     }
     div#book-meeting-cta {
-    position: absolute;
-    top: 0;
-    right: 10vw;
-    p {
-        margin: 0;
-    }
-    a {
-        width: 285px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        height: 54px;
-        padding: 0 26px;
-        border-radius: 0 0 6px 6px;
-        background: $elevar_purple;
-        color: $white !important;
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 32px;
-        border-bottom-left-radius: 11px;
-        border-bottom-right-radius: 11px;
-        border-color: $elevar_purple;
-        &:hover {
-        background: $elevar_purple;
-        color: $white !important;
-        border: 1px solid $elevar_purple;
+        position: absolute;
+        top: 0;
+        right: 10vw;
+        p {
+            margin: 0;
         }
-    }
+        a {
+            width: 285px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            height: 54px;
+            padding: 0 26px;
+            border-radius: 0 0 6px 6px;
+            background: $elevar_purple;
+            color: $white !important;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 32px;
+            border-bottom-left-radius: 11px;
+            border-bottom-right-radius: 11px;
+            border-color: $elevar_purple;
+            &:hover {
+            background: $elevar_purple;
+            color: $white !important;
+            border: 1px solid $elevar_purple;
+            }
+        }
     }
     div#esmo_23_hero_row {
         height: 350px;
@@ -552,7 +599,7 @@ div#temp-footer-row {
         cover !important;
         background-repeat: no-repeat !important;
         background-image:
-        url(/wp-content/themes/conall-child/images/hero_white_wave.png),
+        url(/wp-content/themes/conall-child/images/hero_white_wave-1920x140.svg),
         url(/wp-content/themes/conall-child/images/esmo-hero-1024x350.png);
         div#esmo-header {
             padding-top: 40px !important;
@@ -617,53 +664,53 @@ div#temp-footer-row {
             width: 425px;
             margin: 0 auto;
         }
-    h1, h2 {
-        color: $white;
-        font-weight: 600;
-    }
-    a.esmo-button {
-        margin-top: 20px !important;
-        border-radius: 10px;
-        margin: 0;
-        background-color: $elevar_purple;
-        border-color: $white;
-        width: 200px;
-        padding: 10px;
-            span {
+        h1, h2 {
             color: $white;
-            font-size: 20px;
-            line-height: 32px;
-            text-transform: initial;
-            letter-spacing: 0;
-            }
-    }
+            font-weight: 600;
+        }
+        a.esmo-button {
+            margin-top: 20px !important;
+            border-radius: 10px;
+            margin: 0;
+            background-color: $elevar_purple;
+            border-color: $white;
+            width: 200px;
+            padding: 10px;
+                span {
+                color: $white;
+                font-size: 20px;
+                line-height: 32px;
+                text-transform: initial;
+                letter-spacing: 0;
+                }
+        }
     }
     #map-popup_section {
-    display: none;
-    background-image: url("/wp-content/themes/conall-child/images/esmo-map-popover-1024x647.png");
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: 100%;
-    width: 100vw;
-    height: 90vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    margin: 0 !important;
-    animation: fade-in .3s linear 1;
-    -webkit-animation: fade-in .3s linear 1;
-    -moz-animation: fade-in .3s linear 1;
-    -ms-animation: fade-in .3s linear 1;
-    #close-map-icon {
-        width: 50px;
-        height: 50px;
-        background: url(/wp-content/themes/conall-child/dist/images/Close-Icon.png);
-        background-size: cover;
+        display: none;
+        background-image: url("/wp-content/themes/conall-child/images/esmo-map-popover-1024x647.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 100%;
+        width: 100vw;
+        height: 90vh;
         position: absolute;
-        top: 10vh;
-        right: 4vw;
-    }
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        margin: 0 !important;
+        animation: fade-in .3s linear 1;
+        -webkit-animation: fade-in .3s linear 1;
+        -moz-animation: fade-in .3s linear 1;
+        -ms-animation: fade-in .3s linear 1;
+        #close-map-icon {
+            width: 50px;
+            height: 50px;
+            background: url(/wp-content/themes/conall-child/dist/images/Close-Icon.png);
+            background-size: cover;
+            position: absolute;
+            top: 10vh;
+            right: 4vw;
+        }
     }
     div#spotlight-row {
         display: block !important;
@@ -891,55 +938,55 @@ div#temp-footer-row {
         background-size: auto;
     }
     div#future-events-row {
-    height: 450px;
-    padding: 60px 0 0;
-    background-position:
-        bottom -1px left 0,
-        center center !important;
-    background-size:
-        100%,
-        cover !important;
-    background-repeat: no-repeat !important;
-    background-image:
-        url(/wp-content/themes/conall-child/images/footer-blue-wave-1024.svg),
-        url(/wp-content/themes/conall-child/images/esmo-footer-background-1024x504.png);
-        div#col-future-events-title {
-        text-align: left !important;
-        width: 70% !important;
-        margin-bottom: 40px;
-            h4 {
-            color: $white;
-            font-size: 24px;
-            line-height: 24px;
-            font-weight: 700;
-            margin: 0 0 10px 0;
-            letter-spacing: 0;
+        height: 450px;
+        padding: 60px 0 0;
+        background-position:
+            bottom -1px left 0,
+            center center !important;
+        background-size:
+            100%,
+            cover !important;
+        background-repeat: no-repeat !important;
+        background-image:
+            url(/wp-content/themes/conall-child/images/footer-blue-wave-1024.svg),
+            url(/wp-content/themes/conall-child/images/esmo-footer-background-1024x504.png);
+            div#col-future-events-title {
+                text-align: left !important;
+                width: 70% !important;
+                margin-bottom: 40px;
+                    h4 {
+                    color: $white;
+                    font-size: 24px;
+                    line-height: 24px;
+                    font-weight: 700;
+                    margin: 0 0 10px 0;
+                    letter-spacing: 0;
+                    }
+                }
+            div#future-events-row-title {
+            margin-bottom: 0px !important;
             }
-        }
-        div#future-events-row-title {
-        margin-bottom: 0px !important;
-        }
-        div#future-events-row-info-blocks {
-            div#col-infoblock-left {
-                width: 45% !important
+            div#future-events-row-info-blocks {
+                div#col-infoblock-left {
+                    width: 45% !important
+                }
+                div#col-infoblock-right {
+                    width: 25% !important
+                }
+                p {
+                color: $white;
+                font-size: 20px;
+                line-height: 32px;
+                max-width: 280px;
+                }
+                a {
+                color: $white;
+                text-decoration: none;
+                }
             }
-            div#col-infoblock-right {
-                width: 25% !important
+            div#footer-block2{
+                margin-top: 40px;
             }
-            p {
-            color: $white;
-            font-size: 20px;
-            line-height: 32px;
-            max-width: 280px;
-            }
-            a {
-            color: $white;
-            text-decoration: none;
-            }
-        }
-        div#footer-block2{
-            margin-top: 40px;
-        }
     }
     div#future-events-row-info-blocks {
         .edgtf-full-section-inner {
@@ -947,11 +994,16 @@ div#temp-footer-row {
         display: -ms-flexbox;
         display: flex;
         flex-direction: row !important;
+        }
     }
     div#temp-footer-row {
-    background: $lt_blue;
-    padding: 0 0 40px;
-        #temp-footer-container {
+        background: $lt_blue;
+        padding: 0 0 30px 0;
+        min-height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        div#temp-footer-container {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -962,23 +1014,65 @@ div#temp-footer-row {
             -webkit-box-align: center;
             -ms-flex-align: center;
             align-items: center;
-
-            .footer-social {
+            text-align: center;
+            div.policies-links {
+            min-width: 775px;
+                div.address {
+                    font-size: 20px;
+                    line-height: 19px;
+                    font-weight: 600;
+                    color: $white;
+                    span.vert-divi {
+                        margin-left: 1.5%;
+                        margin-right: 1.5%;
+                    }
+                }
+            }
+            div.footer-social {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
-            p {
-                margin: 0;
+            margin: 0;
+            margin-top: 30px;
+                a.edgtf-social-icon-widget-holder {
+                    color: $white;
+                    font-size: 24px;
+                    margin: 0px 10px 0px 0px;
+                }
+                img.footer-social-icon-widget {
+                    display: inline-block;
+                    width: 30px;
+                    height: 30px;
+                }
             }
+            div#bottom-links {
+            min-width: 775px;
+            margin-top: 20px;
+                .policies {
+                    font-size: 18px;
+                    a.policy-links {
+                        color: $white;
+                        font-size: 18px;
+                        line-height: 30px;
+                        text-decoration: underline;
+                        font-weight: 600;
+                    }
+                    span.vert-divi {
+                        margin-left: 1%;
+                        margin-right: 1%;
+                    }
+                }
             }
-            .copy-right-line {
-            color: $white;
-            }
-            #bottom-links {
-            color: $white;
+            div.copy-right-line {
+                color: $white;
+                font-size: 18px;
+                line-height: 30px;
+                font-weight: 600;
+                span.copy-right-line2 {
+                    display: inline-block;
+                }
             }
         }
-    }
     }
 }
 
@@ -1041,7 +1135,7 @@ div#temp-footer-row {
         cover !important;
         background-repeat: no-repeat !important;
         background-image:
-        url(/wp-content/themes/conall-child/images/hero_white_wave.png),
+        url(/wp-content/themes/conall-child/images/hero_white_wave-1920x140.svg),
         url(/wp-content/themes/conall-child/images/esmo-hero-1024x350.png);
         div#esmo-header {
             padding-top: 44px !important;
@@ -1443,37 +1537,7 @@ div#temp-footer-row {
             margin-top: 20px !important;
         }
     }
-    div#temp-footer-row {
-    background: $lt_blue;
-    padding: 0 0 40px;
-        #temp-footer-container {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-            flex-direction: column;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
 
-            .footer-social {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            p {
-                margin: 0;
-            }
-            }
-            .copy-right-line {
-            color: $white;
-            }
-            #bottom-links {
-            color: $white;
-            }
-        }
-    }
     }
 }
 
@@ -1991,12 +2055,17 @@ div#temp-footer-row {
         div#footer-block2,
         div#footer-block3 {
             margin-top: 20px !important;
+            }
         }
     }
-    div#temp-footer-row {
-    background: $lt_blue;
-    padding: 0 0 40px;
-        #temp-footer-container {
+        div#temp-footer-row {
+        background: $lt_blue;
+        padding: 0 0 20px 0;
+        min-height: 235px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        div#temp-footer-container {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -2007,23 +2076,67 @@ div#temp-footer-row {
             -webkit-box-align: center;
             -ms-flex-align: center;
             align-items: center;
-
-            .footer-social {
+            text-align: center;
+            div.policies-links {
+            min-width: unset;
+            max-width: 342px;
+                div.address {
+                    font-size: 20px;
+                    line-height: 28px;
+                    font-weight: 600;
+                    color: $white;
+                    span.vert-divi {
+                        margin-left: 1.5%;
+                        margin-right: 1.5%;
+                    }
+                }
+            }
+            div.footer-social {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
-            p {
-                margin: 0;
+            margin: 0;
+            margin-top: 30px;
+                a.edgtf-social-icon-widget-holder {
+                    color: $white;
+                    font-size: 24px;
+                    margin: 0px 10px 0px 0px;
+                }
+                img.footer-social-icon-widget {
+                    display: inline-block;
+                    width: 30px;
+                    height: 30px;
+                }
             }
+            div#bottom-links {
+            min-width: 474px;
+            margin-top: 20px;
+                .policies {
+                    font-size: 12px;
+                    a.policy-links {
+                        color: $white;
+                        font-size: 12px;
+                        line-height: 18px;
+                        text-decoration: underline;
+                        font-weight: 600;
+                    }
+                    span.vert-divi {
+                        margin-left: 1%;
+                        margin-right: 1%;
+                    }
+                }
             }
-            .copy-right-line {
-            color: $white;
-            }
-            #bottom-links {
-            color: $white;
+            div.copy-right-line {
+                color: $white;
+                font-size: 12px;
+                line-height: 18px;
+                font-weight: 600;
+                span.copy-right-line2 {
+                    display: block;
+                    text-align: center;
+                }
             }
         }
-    }
     }
 }
 
@@ -2518,37 +2631,8 @@ div#temp-footer-row {
             margin-top: 20px !important;
         }
     }
-    div#temp-footer-row {
-    background: $lt_blue;
-    padding: 0 0 40px;
-        #temp-footer-container {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-            flex-direction: column;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
 
-            .footer-social {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            p {
-                margin: 0;
-            }
-            }
-            .copy-right-line {
-            color: $white;
-            }
-            #bottom-links {
-            color: $white;
-            }
-        }
-    }
+
     }
 }
 /* ******* END ESMO 2023 PAGE ******* */
