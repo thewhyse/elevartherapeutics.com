@@ -1,0 +1,451 @@
+@import "../base/colors";
+@import "../base/font";
+
+/* ******* RIVOCERANIB 2023 PAGE ******* */
+
+.page-id-15095 {
+  .edgtf-title {
+    background: #fff !important;
+
+    .edgtf-title-holder {
+      h1 {
+        font-size: 45px !important;
+        font-weight: 700;
+        text-shadow: 3px 3px 12px $drop_shadow;
+        padding: 0 0 20px;
+        border-bottom: 3px solid #fff;
+      }
+
+      .edgtf-subtitle {
+        font-size: 28px;
+        font-weight: 600;
+        text-shadow: 0 3px 8px $drop_shadow;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .page-id-15095 {
+    .edgtf-title {
+      .edgtf-title-holder {
+        h1 {
+          font-size: 40px !important;
+        }
+        .edgtf-subtitle {
+          font-size: 22px;
+        }
+      }
+    }
+    .edgtf-title.edgtf-has-background {
+      background: #fff !important;
+    }
+  }
+}
+
+@media all and (max-width: 414px) {
+  .page-id-15095 {
+    .edgtf-title {
+      .edgtf-title-holder {
+        top: 14% !important;
+        h1 {
+          font-size: 54px !important;
+          padding: 0 0 10px !important;
+        }
+
+        .edgtf-subtitle {
+          font-size: 22px !important;
+          font-weight: 900;
+        }
+      }
+    }
+
+    .edgtf-title-image {
+      height: 399px;
+      width: 100%;
+      background: url(/wp-content/uploads/2023/06/rivo-mobi-bg.png) no-repeat center center;
+      background-size: cover;
+
+      img {
+        display: none !important;
+      }
+    }
+  }
+}
+
+.new-center-row {
+  padding: 0 20px;
+
+  h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 25px 0 !important;
+    color: $elevar_blue;
+  }
+
+  p {
+    color: $drk_gray;
+    font-size: 20px;
+    a {
+      color: $elevar_blue;
+      text-decoration: underline;
+    }
+  }
+}
+
+#about-rivoceranib {
+  #study-numbers {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: rgb(79, 79, 144);
+    background: -o-linear-gradient(left, rgba(79, 79, 144, 1) 0%, rgba(48, 166, 190, 1) 100%);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(79, 79, 144, 1)), to(rgba(48, 166, 190, 1)));
+    background: linear-gradient(90deg, rgba(79, 79, 144, 1) 0%, rgba(48, 166, 190, 1) 100%);
+    border-radius: 10px;
+
+    .wpb_wrapper {
+      width: 100%;
+      height: 48px;
+      color: #fff;
+      background: url(/wp-content/uploads/2023/06/ppl-icon.png),
+      url(/wp-content/uploads/2023/06/ppl-icon.png);
+      background-position: center left 0,
+      center right 0;
+      background-repeat: no-repeat;
+      background-size: 9%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+
+      p {
+        margin: 0;
+        color: #fff;
+        font-size: 2.2vw;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 878px) {
+
+  #about-rivoceranib {
+    #study-numbers {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      padding: 0;
+      background: inherit;
+      border-radius: inherit;
+
+      .wpb_wrapper {
+        width: 320px;
+        height: 320px;
+        color: #fff;
+        background: url("/wp-content/uploads/2023/06/study-numbers-mobi.png") no-repeat center center ;
+        background-position: inherit;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+      }
+      p {
+        display: none;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 390px) {
+
+  #about-rivoceranib {
+    #study-numbers {
+      .wpb_wrapper {
+        width: 280px;
+        height: 280px;
+      }
+    }
+  }
+}
+
+/*clinical-studies-section*/
+#clinical-studies-section.new-center-row {
+  .wpb_single_image {
+    margin: 25px 0 0;
+  }
+}
+@media all and (max-width: 878px) {
+  #clinical-studies-section.new-center-row {
+    .wpb_single_image {
+      margin: 25px 0 0;
+    }
+
+
+    .vc_row {
+      .wpb_column:nth-child(1) {
+        width: 100%;
+      }
+      .wpb_column:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+}
+
+/*    MOA SECTION   */
+#moa-section {
+  background: $gray_section_bg;
+
+  .moa-info-block-pdf {
+    width: 50vw;
+    margin: 0 auto;
+  }
+  .moa-info-block-video {
+    width: 50vw;
+    margin: 0 auto;
+  }
+
+  #moa-pdf-img-link-dskt:hover {
+    opacity: 0.7;
+  }
+
+  #moa-pdf-link-mobi {
+    display: none;
+  }
+
+}
+
+@media all and (max-width: 760px) {
+  #moa-section {
+    .moa-info-block-pdf {
+      width: 90vw;
+      margin: 0 auto;
+    }
+    .moa-info-block-video {
+      width: 90vw;
+      margin: 0 auto;
+    }
+
+    #moa-pdf-img-link-dskt {
+      display: none !important;
+    }
+
+    #moa-pdf-link-mobi {
+      display: block !important;
+    }
+
+  }
+}
+
+/*    PIPELINE SECTION        */
+#pipeline-section {
+
+}
+
+/*    FOR YOUR PATIENTS SECTION    */
+#for-patients-section {
+  background-image: url(/wp-content/uploads/2023/06/inquire-section-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 40px 0;
+
+  #inquire-cta-deskt {
+    #inquire-cta-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      width: 500px;
+      margin: 40px auto 0;
+      border: 1px solid #2b71b7;
+      border-radius: 20px;
+      padding: 20px;
+      background: #fff;
+
+      .icon-block {
+        width: 95px;
+        height: 95px;
+      }
+
+      .txt-block {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+
+        div {
+          text-align: left;
+          font-size: 20px;
+          color: $drk_gray;
+
+          & a {
+            text-align: left;
+            font-size: 20px;
+            font-weight: 500;
+            color: $elevar_blue;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  #inquire-cta-mobi {
+    display: none;
+  }
+  .new-txt-block {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media all and (max-width: 878px) {
+  #for-patients-section {
+    height: auto;
+    padding: 0 20px;
+    background: rgb(248, 248, 248);
+    background: -o-linear-gradient(bottom, rgba(248, 248, 248, 1) 0%, rgba(246, 246, 248, 1) 100%);
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(248, 248, 248, 1)), to(rgba(246, 246, 248, 1)));
+    background: linear-gradient(0deg, rgba(248, 248, 248, 1) 0%, rgba(246, 246, 248, 1) 100%);
+
+    #inquire-cta-mobi {
+      display: block;
+
+      #inquire-cta-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 350px;
+        margin: 40px auto 0;
+        border: 1px solid #2b71b7;
+        border-radius: 20px;
+        padding: 20px;
+        background: #fff;
+        .txt-block {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          margin: 20px 0 0;
+
+          div {
+            text-align: left;
+            font-size: 20px;
+            line-height: 1.8rem;
+            & a {
+              text-align: left;
+              font-size: 20px;
+              font-weight: 500;
+              color: $elevar_blue;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+    #inquire-cta-deskt {
+      display: none;
+    }
+  }
+}
+
+@media all and (max-width: 414px) {
+  #for-patients-section {
+    #inquire-cta-mobi {
+      display: block;
+
+      #inquire-cta-container {
+        width: 75vw;
+      }
+    }
+  }
+}
+
+/*    your-interest-section       */
+#your-interest-section {
+  #new-cta-btn {
+    width: 185px;
+    height: 55px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: $elevar_purple;
+    border-radius: 10px;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    a {
+      font-size: 22px;
+      font-weight: 500;
+      color: #fff;
+    }
+  }
+
+  .new-txt-block {
+    p {
+      font-size: 21px;
+    }
+  }
+}
+
+#references-block {
+  p {
+    font-size: 12px !important;
+    line-height: 1rem;
+  }
+}
+
+/* ******* END RIVOCERANIB 2023 PAGE ******* */

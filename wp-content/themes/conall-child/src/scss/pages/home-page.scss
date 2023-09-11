@@ -1,0 +1,69 @@
+@import "../base/colors";
+@import "../base/font";
+
+/* ******* HOME PAGE ******* */
+.home {
+  .edgtf-title {
+    background: $elevar_blue !important;
+    .edgtf-title-holder {
+      h1 {
+        font-size: 45px !important;
+        font-weight: 700;
+        text-shadow: 3px 3px 12px $drop_shadow;
+        padding: 0 0 20px;
+        border-bottom: 3px solid #fff;
+      }
+      .edgtf-subtitle {
+        font-size: 28px;
+        font-weight: 600;
+        text-shadow: 0 3px 8px $drop_shadow;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .home {
+    .edgtf-title {
+      .edgtf-title-holder {
+        h1 {
+          font-size: 40px !important;
+        }
+        .edgtf-subtitle {
+          font-size: 22px;
+        }
+      }
+    }
+    .edgtf-title.edgtf-has-background {
+      background: $elevar_blue !important;
+    }
+  }
+}
+
+@media all and (max-width: 414px) {
+  .home {
+    .edgtf-title {
+      .edgtf-title-holder {
+        top: 20% !important;
+        h1 {
+          font-size: 38px !important;
+        }
+
+        .edgtf-subtitle {
+          font-size: 22px !important;
+        }
+      }
+    }
+
+    .edgtf-title-image {
+      height: 399px;
+      width: 100%;
+      background: url(/wp-content/uploads/2023/06/hp-hero-bg-1.png) no-repeat center center;
+      background-size: cover;
+
+      img {
+        display: none !important;
+      }
+    }
+  }
+}
+/* ******* END HOME PAGE ******* */

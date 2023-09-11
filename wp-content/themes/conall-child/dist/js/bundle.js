@@ -1,1 +1,1 @@
-(()=>{var n;(n=jQuery)(document).ready((function(){n(".map-ping, #close-map-icon").on("click",(function(){n("#map-popup_section").toggle()}))}))})();
+jQuery;

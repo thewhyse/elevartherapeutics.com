@@ -5,7 +5,6 @@
 
 /*** Child Theme Function  ***/
 
-/*if ( ! function_exists( 'conall_edge_child_theme_enqueue_scripts' ) ) {*/
 function conall_edge_child_theme_enqueue_scripts()
 {
     $parent_style = 'conall-edge-default-style';
@@ -14,7 +13,7 @@ function conall_edge_child_theme_enqueue_scripts()
 }
 
 add_action('wp_enqueue_scripts', 'conall_edge_child_theme_enqueue_scripts');
-/*}*/
+
 
 function elevar_assets()
 {
@@ -57,3 +56,43 @@ function elevar_javascript_footer()
 <?php
 }
 add_action('wp_footer', 'elevar_javascript_footer');
+
+// Prevent WP from adding <p> tags on all post types
+function disable_wp_auto_p($content) {
+    remove_filter('the_content', 'wpautop');
+    remove_filter('the_excerpt', 'wpautop');
+    return $content;
+}
+add_filter('the_content', 'disable_wp_auto_p', 0);
+
+function hotjar_javascript() {
+?>
+    <!-- Hotjar Tracking Code for https://elevartherapeutics.com/ -->
+    <script>
+        (function(h, o, t, j, a, r) {
+            h.hj = h.hj || function() {
+                (h.hj.q = h.hj.q || []).push(arguments)
+            };
+            h._hjSettings = {
+                hjid: 3469432,
+                hjsv: 6
+            };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+<?php
+}
+add_action('wp_head', 'hotjar_javascript');
+
+function hubspot_javascript() {
+?>
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/24308407.js"></script>
+    <!-- End of HubSpot Embed Code -->
+<?php
+}
+add_action('wp_head', 'hubspot_javascript');

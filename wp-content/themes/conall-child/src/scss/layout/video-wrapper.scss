@@ -1,0 +1,47 @@
+@import "../base/colors";
+@import "../base/font";
+
+/* ******* VIDEO WRAPPER ******* */
+
+div.ko-event {
+
+    img.ko-event-img {
+        width: 340px;
+        height: 186px;
+    }
+
+
+}
+div#kol-vimeo-btn p {
+    margin: 0 !important;
+}
+a.inevnt-watch-btn {
+    background-color: #54C1EA;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2em;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 6px 16px 6px 16px;
+    letter-spacing: 0;
+    margin: 0 !important;
+}
+div > a.inevnt-watch-btn:after {
+    padding-top: 35px;
+    border-bottom: 1px solid $med_gray;
+    width: 100%;
+}
+a.inevnt-download-btn {
+    background-color: #54C1EA;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2em;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 6px 16px 6px 16px;
+    letter-spacing: 0;
+}
+
+/* ******* END VIDEO WRAPPER ******* */
