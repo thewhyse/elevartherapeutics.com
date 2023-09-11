@@ -48,10 +48,12 @@ div#book-meeting-cta {
     border: 1px solid $elevar_purple;
     border-bottom-left-radius: 11px;
     border-bottom-right-radius: 11px;
+    transition: all 0.5s;
     &:hover {
-        background: $elevar_purple;
-        color: $white !important;
+        background: $white;
+        color: $elevar_purple !important;
         border: 1px solid $elevar_purple;
+        transition: all 0.5s;
     }
   }
 }
@@ -67,88 +69,106 @@ div#esmo_23_hero_row {
     background-image:
       url(/wp-content/themes/conall-child/images/hero_white_wave-1920x140.svg),
       url(/wp-content/themes/conall-child/images/esmo-hero-1920x564.png);
-      div#esmo-header {
-        padding-top: 50px !important;
-        h1 {
-            text-transform: uppercase;
-            font-size: 56px;
-            line-height: 26px;
-            letter-spacing: 3px;
-        }
-      }
-      div#esmo-subheader {
-        padding-top: 35px !important;
-      div#esmo-icon-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 463px;
-        margin: 0 auto !important;
-            a {
-                display: flex;
-            }
-            h2 {
-                text-transform: initial;
-                font-size: 39px;
+        div#esmo-header {
+            padding-top: 50px !important;
+            h1 {
+                text-transform: uppercase;
+                font-size: 56px;
                 line-height: 26px;
-                letter-spacing: 0px;
-                font-weight: 700;
-                margin: 0;
-            }
-            img#esmo-icon {
-                display: block;
+                letter-spacing: 3px;
             }
         }
-      }
-      div#esmo-date {
-        padding-top: 20px !important;
-        display: flex;
-        width: 470px;
-        flex-direction: column;
-        margin: 0 auto !important;
-        p {
-            color: $white;
-            font-size: 26px;
-            line-height: 40px;
-            margin: 0;
+        div#esmo-subheader {
+            padding-top: 40px !important;
+        div#esmo-icon-container {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-            img#cal-icon {
-                padding-left: 15px;
-                padding-right: 15px;
+            width: 463px;
+            margin: 0 auto !important;
+                a {
+                    display: flex;
+                }
+                h2 {
+                    text-transform: initial;
+                    font-size: 39px;
+                    line-height: 26px;
+                    letter-spacing: 0px;
+                    font-weight: 700;
+                    margin: 0;
+                }
+                img#esmo-icon {
+                    display: block;
+                    height: 50px;
+                    width: 50px;
+                    transition: all 0.75s;
+                }
+                img#esmo-icon:hover {
+                    content: url('/wp-content/themes/conall-child/images/location_icon_50x50-hover.svg');
+                    height: 50px;
+                    width: 50px;
+                    transform: scaleX(-1);
+                    transition: all 0.75s;
+                }
             }
         }
-      }
-      div#esmo-date-mobile {
-        display: none;
-      }
-    div#esmo-date:after {
-        content: "";
-        border-bottom: 2px solid $white;
-        width: 466px;
-        margin: 0 auto;
-    }
-  h1, h2 {
-    color: $white;
-    font-weight: 600;
-  }
-  a.esmo-button {
-    margin-top: 30px !important;
-    font-weight: 700;
-    border-radius: 10px;
-    margin: 0;
-    background-color: $elevar_purple;
-    border-color: $white;
-        span {
-        color: $white;
-        font-size: 20px;
-        line-height: 32px;
-        font-weight: 700 !important;
-        text-transform: initial;
-        letter-spacing: 0;
+        div#esmo-date {
+            padding-top: 30px !important;
+            display: flex;
+            width: 470px;
+            flex-direction: column;
+            margin: 0 auto !important;
+            p {
+                color: $white;
+                font-size: 26px;
+                line-height: 40px;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img#cal-icon {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+            }
         }
-  }
+        div#esmo-date-mobile {
+            display: none;
+        }
+        div#esmo-date:after {
+            content: "";
+            border-bottom: 3px solid $white;
+            width: 466px;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            color: $white;
+            font-weight: 600;
+        }
+        a.esmo-button {
+            margin-top: 40px !important;
+            font-weight: 700;
+            border-radius: 10px;
+            margin: 0;
+            background-color: $elevar_purple;
+            border-color: $white;
+            color: $white;
+            transition: all 0.5s;
+                span {
+                /* color: $white; */
+                font-size: 20px;
+                line-height: 32px;
+                font-weight: 700 !important;
+                text-transform: initial;
+                letter-spacing: 0;
+                }
+        }
+        a.esmo-button:hover {
+            background-color: $white !important;
+            border-color: $elevar_purple !important;
+            color: $elevar_purple !important;
+            transition: all 0.5s;
+        }
 }
 #map-popup_section {
   display: none;
@@ -220,10 +240,14 @@ div#spotlight-row {
                         display: flex;
                         justify-content: center;
                         align-items: center;
+                        transition: all 0.5s;
                         &:hover {
                         background: $white;
+                        color: $elevar_purple;
+                        transition: all 0.5s;
                         a {
                             color: $elevar_purple;
+                            transition: all 0.5s;
                         }
                         }
                         a {
@@ -234,8 +258,10 @@ div#spotlight-row {
                         height: 100%;
                         padding: 0px;
                         text-align: center;
+                        transition: all 0.5s;
                         &:hover {
-                            color: $lt_blue;
+                            color: $elevar_purple !important;
+                            transition: all 0.5s;
                         }
                         }
                     }
@@ -319,12 +345,19 @@ div#review-data-section {
             align-items: center;
             border-radius: 10px;
             padding: 0;
+            transition: all 0.5s;
             span {
                 font-size: 20px;
                 line-height: 32px;
                 text-transform: initial;
                 letter-spacing: 0;
             }
+        }
+        a.review-button:hover {
+            background-color: $white !important;
+            border-color: $elevar_purple !important;
+            color: $elevar_purple !important;
+            transition: all 0.5s;
         }
     }
 }
@@ -445,7 +478,7 @@ div#future-events-row {
 
 }
 div#temp-footer-row {
-    background: $lt_blue;
+    background: $elevar_blue;
     padding: 0 0 30px 0;
     min-height: 200px;
     display: flex;
@@ -485,12 +518,25 @@ div#temp-footer-row {
                 a.edgtf-social-icon-widget-holder {
                     color: $white;
                     font-size: 24px;
-                    margin: 0px 10px 0px 0px;
+                    margin: 0px 20px 0px 0px;
                 }
                 img.footer-social-icon-widget {
                     display: inline-block;
                     width: 30px;
                     height: 30px;
+                    transition: all 0.25s;
+                }
+                img.footer-social-icon-widget.linkedin-logo:hover {
+                    content: url('/wp-content/themes/conall-child/images/linkedin-logo-256x256-hover.svg');
+                    height: 30px;
+                    width: 30px;
+                    transition: all 0.25s;
+                }
+                img.footer-social-icon-widget.x-logo:hover {
+                    content: url('/wp-content/themes/conall-child/images/x-logo-256x256-hover.svg');
+                    height: 30px;
+                    width: 30px;
+                    transition: all 0.25s;
                 }
             }
             div#bottom-links {
@@ -504,10 +550,15 @@ div#temp-footer-row {
                         line-height: 30px;
                         text-decoration: underline;
                         font-weight: 600;
+                        transition: all 0.5s;
                     }
                     span.vert-divi {
                         margin-left: 1%;
                         margin-right: 1%;
+                    }
+                    a.policy-links:hover {
+                        color: $elevar_yellow;
+                        transition: all 0.5s;
                     }
                 }
             }
@@ -582,10 +633,12 @@ div#temp-footer-row {
             border-bottom-left-radius: 11px;
             border-bottom-right-radius: 11px;
             border-color: $elevar_purple;
+            transition: all 0.5s;
             &:hover {
             background: $elevar_purple;
             color: $white !important;
             border: 1px solid $elevar_purple;
+            transition: all 0.5s;
             }
         }
     }
@@ -634,6 +687,11 @@ div#temp-footer-row {
                     width: 40px;
                     height: 40px;
                 }
+                img#esmo-icon:hover {
+                    content: url('/wp-content/themes/conall-child/images/location_icon_50x50-hover.svg');
+                    height: 40px;
+                    width: 40px;
+                }
             }
         }
         div#esmo-date {
@@ -660,7 +718,7 @@ div#temp-footer-row {
         }
         div#esmo-date:after {
             content: "";
-            border-bottom: 2px solid $white;
+            border-bottom: 3px solid $white;
             width: 425px;
             margin: 0 auto;
         }
@@ -1037,7 +1095,7 @@ div#temp-footer-row {
                 a.edgtf-social-icon-widget-holder {
                     color: $white;
                     font-size: 24px;
-                    margin: 0px 10px 0px 0px;
+                    margin: 0px 20px 0px 0px;
                 }
                 img.footer-social-icon-widget {
                     display: inline-block;
@@ -1171,6 +1229,11 @@ div#temp-footer-row {
                     width: 35px;
                     height: 35px;
                 }
+                img#esmo-icon:hover {
+                    content: url('/wp-content/themes/conall-child/images/location_icon_50x50-hover.svg');
+                    height: 35px;
+                    width: 35px;
+                }
             }
         }
         div#esmo-date {
@@ -1196,7 +1259,7 @@ div#temp-footer-row {
         }
         div#esmo-date:after {
             content: "";
-            border-bottom: 2px solid $white;
+            border-bottom: 3px solid $white;
             width: 358px;
             margin: 0 auto;
         }
@@ -1584,10 +1647,12 @@ div#temp-footer-row {
         border-bottom-left-radius: 11px;
         border-bottom-right-radius: 11px;
         border-color: $lt_blue;
+        transition: all 0.5s;
         &:hover {
         background: $elevar_blue;
         color: $white !important;
         border: 1px solid $elevar_blue;
+        transition: all 0.5s;
         }
     }
     }
@@ -1636,6 +1701,12 @@ div#temp-footer-row {
                     height: 32px;
                     margin-top: 22px;
                 }
+                img#esmo-icon:hover {
+                    content: url('/wp-content/themes/conall-child/images/location_icon_50x50-hover.svg');
+                    width: 32px;
+                    height: 32px;
+                    margin-top: 22px;
+                }
             }
         }
         div#esmo-date {
@@ -1678,7 +1749,7 @@ div#temp-footer-row {
             }
             div.container-date-top:after {
                 content: "";
-                border-bottom: 2px solid $white;
+                border-bottom: 3px solid $white;
                 width: 207px;
                 display: block;
                 margin-left: 7px;
@@ -1686,7 +1757,7 @@ div#temp-footer-row {
             }
             div.container-date-bottom:after {
                 content: "";
-                border-bottom: 2px solid $white;
+                border-bottom: 3px solid $white;
                 width: 144px;
                 display: block;
                 margin: 0 auto;
@@ -2100,7 +2171,7 @@ div#temp-footer-row {
                 a.edgtf-social-icon-widget-holder {
                     color: $white;
                     font-size: 24px;
-                    margin: 0px 10px 0px 0px;
+                    margin: 0px 20px 0px 0px;
                 }
                 img.footer-social-icon-widget {
                     display: inline-block;
@@ -2227,6 +2298,12 @@ div#temp-footer-row {
                 }
                 img#esmo-icon  {
                     display: block;
+                    width: 32px;
+                    height: 32px;
+                    margin-top: 22px;
+                }
+                img#esmo-icon:hover {
+                    content: url('/wp-content/themes/conall-child/images/location_icon_50x50-hover.svg');
                     width: 32px;
                     height: 32px;
                     margin-top: 22px;
