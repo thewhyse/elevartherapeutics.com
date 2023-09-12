@@ -241,7 +241,8 @@ function wpb_translateColumnWidthToSpan( $width ) {
 function wpb_js_remove_wpautop( $content, $autop = false ) {
 
 	if ( $autop ) {
-		$content = wpautop( preg_replace( '/<\/?p\>/', "\n", $content ) . "\n" );
+		// $content = wpautop( preg_replace( '/<\/?p\>/', "\n", $content ) . "\n" );
+        $content = str_replace(['<p>', '</p>'], '', $content);
 	}
 
 	return do_shortcode( shortcode_unautop( $content ) );
