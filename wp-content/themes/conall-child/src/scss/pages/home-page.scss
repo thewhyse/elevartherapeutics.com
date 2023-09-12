@@ -3,24 +3,82 @@
 
 /* ******* HOME PAGE ******* */
 .home {
-  .edgtf-title {
-    background: $elevar_blue !important;
-    .edgtf-title-holder {
-      h1 {
-        font-size: 45px !important;
-        font-weight: 700;
-        text-shadow: 3px 3px 12px $drop_shadow;
-        padding: 0 0 20px;
-        border-bottom: 3px solid #fff;
-      }
-      .edgtf-subtitle {
-        font-size: 28px;
-        font-weight: 600;
-        text-shadow: 0 3px 8px $drop_shadow;
-      }
+    div.edgtf-title {
+        background: $elevar_blue !important;
+        div.edgtf-title-holder {
+            h1 {
+                font-size: 45px !important;
+                font-weight: 700;
+                text-shadow: 3px 3px 12px $drop_shadow;
+                padding: 0 0 20px;
+                border-bottom: 3px solid #fff;
+                color: $white;
+            }
+        .edgtf-subtitle {
+            color: $white;
+            font-size: 28px;
+            font-weight: 600;
+            text-shadow: 0 3px 8px $drop_shadow;
+        }
+        }
     }
-  }
+    div#hp-therapeutics-section {
+        padding: 40px 0 20px 0;
+        background-color: $elevar_blue;
+        div.elevar-heading {
+            h1.elevar-h1 {
+                color: $lt_blue_new;
+                font-size: 40px;
+                line-height: 1.65em;
+                font-weight: 700;
+                margin: 25px 0;
+            }
+            p.elevar-para {
+                color: $white;
+                font-size: 20px;
+            }
+        }
+    }
+    div#hp-triple-section {
+        background-color: $elevar_blue;
+        padding: 40px 0 50px 0;
+        div#therapeutics-triple-section {
+            div.triple-img {
+            }
+            h2.elevar-h2 {
+                color: $lt_blue_new;
+                font-size: 28px;
+                line-height: 1.2em;
+                font-weight: 800;
+                letter-spacing: 2px;
+                }
+            span.elevar-hp-span {
+                color: $white;
+                font-size: 14px;
+                line-height: 2em;
+            }
+            div#col-triple-left {
+                div#triple-img-left {
+                }
+                div#triple-textbox-left {
+                }
+            }
+            div#col-triple-center {
+                div#triple-img-center {
+                }
+                div#triple-textbox-center {
+                }
+            }
+            div#col-triple-right {
+                div#triple-img-right {
+                }
+                div#triple-textbox-right {
+                }
+            }
+        }
+    }
 }
+
 @media only screen and (max-width: 1024px) {
   .home {
     .edgtf-title {
@@ -66,4 +124,5 @@
     }
   }
 }
+
 /* ******* END HOME PAGE ******* */
