@@ -43,7 +43,7 @@ div#book-meeting-cta {
     background: $elevar_purple;
     color: $white !important;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 32px;
     border: 1px solid $elevar_purple;
     border-bottom-left-radius: 11px;
@@ -76,6 +76,7 @@ div#esmo_23_hero_row {
                 font-size: 56px;
                 line-height: 26px;
                 letter-spacing: 3px;
+                font-weight: 700;
             }
         }
         div#esmo-subheader {
@@ -115,20 +116,42 @@ div#esmo_23_hero_row {
         div#esmo-date {
             padding-top: 30px !important;
             display: flex;
-            width: 470px;
+            width: 480px;
             flex-direction: column;
             margin: 0 auto !important;
-            p {
+            p.esmodate {
                 color: $white;
                 font-size: 26px;
                 line-height: 40px;
-                margin: 0;
+                font-weight: 700;
+                margin: 0 !important;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                img#cal-icon {
-                    padding-left: 15px;
-                    padding-right: 15px;
+                a {
+                    display: flex;
+                    color: $white;
+                    transition: all 0.25s;
+                    img#cal-icon {
+                        height: 28px;
+                        width: 30px;
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        position: relative;
+                        top: 3px;
+                    }
+                }
+                a:hover {
+                    color: $elevar_yellow;
+                    transition: all 0.45s;
+                    img#cal-icon:hover {
+                        content: url('/wp-content/themes/conall-child/images/cal_icon_28x30-hover.svg');
+                        height: 28px;
+                        width: 30px;
+                        position: relative;
+                        transform: scale(1.25);
+                        transition: all 0.45s;
+                    }
                 }
             }
         }
@@ -137,8 +160,8 @@ div#esmo_23_hero_row {
         }
         div#esmo-date:after {
             content: "";
-            border-bottom: 3px solid $white;
-            width: 466px;
+            border-bottom: 2px solid $white;
+            width: 480px;
             margin: 0 auto;
         }
         h1, h2 {
@@ -150,7 +173,7 @@ div#esmo_23_hero_row {
             font-weight: 700;
             border-radius: 10px;
             margin: 0;
-            background-color: $elevar_purple;
+            background-color: $elevar_purple !important;
             border-color: $white;
             color: $white;
             transition: all 0.5s;
@@ -232,6 +255,7 @@ div#spotlight-row {
                     div#play-btn {
                         width: 158px;
                         height: 54px;
+                        font-weight: 700;
                         margin: 20px 0 0;
                         text-align: center;
                         border: 2px solid $elevar_purple;
@@ -253,7 +277,7 @@ div#spotlight-row {
                         a {
                         display: block;
                         color: $white !important;
-                        font-weight: 600;
+                        font-weight: 700;
                         font-size: 20px;
                         height: 100%;
                         padding: 0px;
@@ -351,6 +375,7 @@ div#review-data-section {
                 line-height: 32px;
                 text-transform: initial;
                 letter-spacing: 0;
+                font-weight: 700;
             }
         }
         a.review-button:hover {
@@ -431,19 +456,20 @@ div#explore-the-past:before {
     background-size: auto;
 }
 div#future-events-row {
-  height: 450px;
-  padding: 60px 0 0;
-  background-position:
-    bottom -1px left 0,
-    center center !important;
-  background-size:
-    100%,
-    cover !important;
-  background-repeat: no-repeat !important;
-  background-image:
-    url(/wp-content/themes/conall-child/images/footer-blue-wave-1920.svg),
-    url(/wp-content/themes/conall-child/images/esmo-footer-background-1920x528.png);
-
+    height: 450px;
+    padding: 60px 0 0;
+    background-position:
+        bottom -1px left 0,
+        center center !important;
+    background-size:
+        100%,
+        cover !important;
+    background-repeat: no-repeat !important;
+    background-image:
+        url(/wp-content/themes/conall-child/images/footer-blue-wave-1920.svg),
+        url(/wp-content/themes/conall-child/images/esmo-footer-background-1920x528.png);
+    max-width: 100%;
+    margin: 0;
   div#future-events-row-title {
     margin-bottom: 20px !important;
     h4 {
@@ -457,7 +483,7 @@ div#future-events-row {
   }
 
   div#future-events-row-info-blocks {
-    p {
+    p.footer-block {
       color: $white;
       font-size: 24px;
       line-height: 32px;
@@ -628,7 +654,6 @@ div#temp-footer-row {
             background: $elevar_purple;
             color: $white !important;
             font-size: 20px;
-            font-weight: 600;
             line-height: 32px;
             border-bottom-left-radius: 11px;
             border-bottom-right-radius: 11px;
@@ -700,7 +725,7 @@ div#temp-footer-row {
             width: 470px;
             flex-direction: column;
             margin: 0 auto !important;
-            p {
+            p.esmodate {
                 color: $white;
                 font-size: 23px;
                 line-height: 37px;
@@ -708,17 +733,20 @@ div#temp-footer-row {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                img#cal-icon {
-                    padding-left: 15px;
-                    padding-right: 15px;
-                    height: 27px;
-                    width: 25px;
+                a {
+                    img#cal-icon {
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        height: 27px;
+                        width: 25px;
+                        top: 4px;
+                    }
                 }
             }
         }
         div#esmo-date:after {
             content: "";
-            border-bottom: 3px solid $white;
+            border-bottom: 2px solid $white;
             width: 425px;
             margin: 0 auto;
         }
@@ -730,12 +758,12 @@ div#temp-footer-row {
             margin-top: 20px !important;
             border-radius: 10px;
             margin: 0;
-            background-color: $elevar_purple;
+            background-color: $elevar_purple !important;
             border-color: $white;
             width: 200px;
             padding: 10px;
                 span {
-                color: $white;
+                /* color: $white; */
                 font-size: 20px;
                 line-height: 32px;
                 text-transform: initial;
@@ -805,6 +833,7 @@ div#temp-footer-row {
                         div#play-btn {
                             width: 158px;
                             height: 54px;
+                            font-weight: 700;
                             margin: 30px 0 0;
                             text-align: center;
                             border: 2px solid $elevar_purple;
@@ -822,7 +851,7 @@ div#temp-footer-row {
                             a {
                             display: block;
                             color: $white;
-                            font-weight: 600;
+                            font-weight: 700;
                             font-size: 20px;
                             height: 100%;
                             padding: 0px;
@@ -920,6 +949,7 @@ div#temp-footer-row {
                     line-height: 32px;
                     text-transform: initial;
                     letter-spacing: 0;
+                    font-weight: 700;
                 }
             }
         }
@@ -1031,7 +1061,7 @@ div#temp-footer-row {
                 div#col-infoblock-right {
                     width: 25% !important
                 }
-                p {
+                p.footer-block {
                 color: $white;
                 font-size: 20px;
                 line-height: 32px;
@@ -1055,7 +1085,7 @@ div#temp-footer-row {
         }
     }
     div#temp-footer-row {
-        background: $lt_blue;
+        background: $elevar_blue;
         padding: 0 0 30px 0;
         min-height: 200px;
         display: flex;
@@ -1155,7 +1185,7 @@ div#temp-footer-row {
         margin: 0;
     }
     a {
-        width: 220px;
+        width: 270px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -1171,7 +1201,6 @@ div#temp-footer-row {
         background: $elevar_purple;
         color: $white !important;
         font-size: 18px;
-        font-weight: 600;
         line-height: 32px;
         border-bottom-left-radius: 11px;
         border-bottom-right-radius: 11px;
@@ -1242,7 +1271,7 @@ div#temp-footer-row {
             width: 360px;
             flex-direction: column;
             margin: 0 auto !important;
-            p {
+            p.esmodate {
                 color: $white;
                 font-size: 20px;
                 line-height: 30px;
@@ -1250,17 +1279,20 @@ div#temp-footer-row {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                img#cal-icon {
-                    padding-left: 10px;
-                    padding-right: 10px;
-                    height: 20px;
+                a {
+                    img#cal-icon {
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        height: 20px;
+                        top: 5px;
+                    }
                 }
             }
         }
         div#esmo-date:after {
             content: "";
-            border-bottom: 3px solid $white;
-            width: 358px;
+            border-bottom: 2px solid $white;
+            width: 380px;
             margin: 0 auto;
         }
     h1, h2 {
@@ -1271,13 +1303,13 @@ div#temp-footer-row {
         margin-top: 35px !important;
         border-radius: 10px;
         margin: 0;
-        background-color: $elevar_purple;
+        background-color: $elevar_purple !important;
         border-color: $white;
         width: 200px;
         padding: 7px;
         height: 48px;
             span {
-            color: $white;
+            /* color: $white; */
             font-size: 20px;
             line-height: 32px;
             text-transform: initial;
@@ -1347,6 +1379,7 @@ div#temp-footer-row {
                         div#play-btn {
                             width: 140px;
                             height: 44px;
+                            font-weight: 700;
                             margin: 40px 0 0 !important;
                             text-align: center;
                             border: 1px solid $elevar_purple;
@@ -1364,7 +1397,7 @@ div#temp-footer-row {
                             a {
                             display: block;
                             color: $white;
-                            font-weight: 600;
+                            font-weight: 700;
                             font-size: 18px;
                             height: 100%;
                             padding: 0px;
@@ -1465,6 +1498,7 @@ div#temp-footer-row {
                     line-height: 32px;
                     text-transform: initial;
                     letter-spacing: 0;
+                    font-weight: 700;
                 }
             }
         }
@@ -1575,7 +1609,7 @@ div#temp-footer-row {
             div#col-infoblock-right {
                 width: 96% !important
             }
-            p {
+            p.footer-block {
             color: $white;
             font-size: 18px;
             line-height: 28px;
@@ -1610,9 +1644,11 @@ div#temp-footer-row {
     }
     .vc_col-sm-2 {
         width: 8% !important;
+        float: left;
     }
     .vc_col-sm-8 {
         width: 84% !important;
+        float: left;
     }
     .vc_col-sm-2-footer {
         display: none !important;
@@ -1642,7 +1678,6 @@ div#temp-footer-row {
         background: $lt_blue;
         color: $white !important;
         font-size: 20px;
-        font-weight: 700;
         line-height: 32px;
         border-bottom-left-radius: 11px;
         border-bottom-right-radius: 11px;
@@ -1662,7 +1697,7 @@ div#temp-footer-row {
         background-size: cover !important;
         background-repeat: no-repeat !important;
         background-image: url(/wp-content/themes/conall-child/images/esmo-hero-414x476.png);
-        aspect-ratio: 414/376;
+        aspect-ratio: 414/400;
         div#esmo-header {
             padding-top: 54px !important;
             h1 {
@@ -1728,13 +1763,29 @@ div#temp-footer-row {
                 }
                 p.date-icon {
                     display: inline-block;
-                    img#cal-icon {
-                        padding-left: 8px;
-                        height: 24px;
-                        width: 22px;
-                        position: relative;
-                        top: 6px;
-                        display: inline-block;
+                    a {
+                        color: $white;
+                        transition: all 0.25s;
+                        img#cal-icon {
+                            padding-left: 8px;
+                            height: 24px;
+                            width: 22px;
+                            position: relative;
+                            top: 6px;
+                            display: inline-block;
+                        }
+                    }
+                    a:hover {
+                        color: $elevar_yellow;
+                        transition: all 0.45s;
+                        img#cal-icon:hover {
+                            content: url('/wp-content/themes/conall-child/images/cal_icon_28x30-hover.svg');
+                            height: 24px;
+                            width: 22px;
+                            position: relative;
+                            transform: scale(1.25);
+                            transition: all 0.45s;
+                        }
                     }
                 }
             }
@@ -1749,7 +1800,7 @@ div#temp-footer-row {
             }
             div.container-date-top:after {
                 content: "";
-                border-bottom: 3px solid $white;
+                border-bottom: 2px solid $white;
                 width: 207px;
                 display: block;
                 margin-left: 7px;
@@ -1757,7 +1808,7 @@ div#temp-footer-row {
             }
             div.container-date-bottom:after {
                 content: "";
-                border-bottom: 3px solid $white;
+                border-bottom: 2px solid $white;
                 width: 144px;
                 display: block;
                 margin: 0 auto;
@@ -1772,13 +1823,13 @@ div#temp-footer-row {
         margin-top: 35px !important;
         border-radius: 10px;
         margin: 0;
-        background-color: $elevar_purple;
+        background-color: $elevar_purple !important;
         border-color: $white;
         width: 200px;
         padding: 7px;
         height: 48px;
             span {
-            color: $white;
+            /* color: $white; */
             font-size: 20px;
             line-height: 32px;
             text-transform: initial;
@@ -1853,6 +1904,7 @@ div#temp-footer-row {
                         div#play-btn {
                             width: 140px;
                             height: 44px;
+                            font-weight: 700;
                             margin: 40px auto 0 !important;
                             text-align: center;
                             border: 1px solid $elevar_purple;
@@ -1870,7 +1922,7 @@ div#temp-footer-row {
                             a {
                             display: block;
                             color: $white;
-                            font-weight: 600;
+                            font-weight: 700;
                             font-size: 18px;
                             height: 100%;
                             padding: 0px;
@@ -1983,6 +2035,7 @@ div#temp-footer-row {
                     line-height: 32px;
                     text-transform: initial;
                     letter-spacing: 0;
+                    font-weight: 700;
                 }
             }
         }
@@ -2081,7 +2134,7 @@ div#temp-footer-row {
         url(/wp-content/themes/conall-child/images/footer-blue-wave-414.svg),
         url(/wp-content/themes/conall-child/images/esmo-footer-background-414x487.png);
         div#col-future-events-title {
-        text-align: left !important;
+        text-align: center !important;
         width: 84% !important;
         margin-bottom: 0px;
             h4 {
@@ -2091,6 +2144,7 @@ div#temp-footer-row {
             font-weight: 700;
             margin: 0 0 10px 0;
             letter-spacing: 0;
+            text-align: center !important;
             }
         }
         div#future-events-row-title {
@@ -2103,7 +2157,7 @@ div#temp-footer-row {
             div#col-infoblock-right {
                 width: 84% !important
             }
-            p {
+            p.footer-block {
             color: $white;
             font-size: 20px;
             line-height: 28px;
@@ -2129,85 +2183,85 @@ div#temp-footer-row {
             }
         }
     }
-        div#temp-footer-row {
-        background: $lt_blue;
-        padding: 0 0 20px 0;
-        min-height: 235px;
+    div#temp-footer-row {
+    background: $elevar_blue;
+    padding: 0 0 20px 0;
+    min-height: 235px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    div#temp-footer-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        div#temp-footer-container {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-            flex-direction: column;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            text-align: center;
-            div.policies-links {
-            min-width: unset;
-            max-width: 342px;
-                div.address {
-                    font-size: 20px;
-                    line-height: 28px;
-                    font-weight: 600;
-                    color: $white;
-                    span.vert-divi {
-                        margin-left: 1.5%;
-                        margin-right: 1.5%;
-                    }
-                }
-            }
-            div.footer-social {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            margin: 0;
-            margin-top: 30px;
-                a.edgtf-social-icon-widget-holder {
-                    color: $white;
-                    font-size: 24px;
-                    margin: 0px 20px 0px 0px;
-                }
-                img.footer-social-icon-widget {
-                    display: inline-block;
-                    width: 30px;
-                    height: 30px;
-                }
-            }
-            div#bottom-links {
-            min-width: 474px;
-            margin-top: 20px;
-                .policies {
-                    font-size: 12px;
-                    a.policy-links {
-                        color: $white;
-                        font-size: 12px;
-                        line-height: 18px;
-                        text-decoration: underline;
-                        font-weight: 600;
-                    }
-                    span.vert-divi {
-                        margin-left: 1%;
-                        margin-right: 1%;
-                    }
-                }
-            }
-            div.copy-right-line {
-                color: $white;
-                font-size: 12px;
-                line-height: 18px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        text-align: center;
+        div.policies-links {
+        min-width: unset;
+        max-width: 342px;
+            div.address {
+                font-size: 20px;
+                line-height: 28px;
                 font-weight: 600;
-                span.copy-right-line2 {
-                    display: block;
-                    text-align: center;
+                color: $white;
+                span.vert-divi {
+                    margin-left: 1.5%;
+                    margin-right: 1.5%;
                 }
             }
         }
+        div.footer-social {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 0;
+        margin-top: 30px;
+            a.edgtf-social-icon-widget-holder {
+                color: $white;
+                font-size: 24px;
+                margin: 0px 20px 0px 0px;
+            }
+            img.footer-social-icon-widget {
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+            }
+        }
+        div#bottom-links {
+        min-width: 100%;
+        margin-top: 20px;
+            .policies {
+                font-size: 12px;
+                a.policy-links {
+                    color: $white;
+                    font-size: 12px;
+                    line-height: 18px;
+                    text-decoration: underline;
+                    font-weight: 600;
+                }
+                span.vert-divi {
+                    margin-left: 1%;
+                    margin-right: 1%;
+                }
+            }
+        }
+        div.copy-right-line {
+            color: $white;
+            font-size: 12px;
+            line-height: 18px;
+            font-weight: 600;
+            span.copy-right-line2 {
+                display: block;
+                text-align: center;
+            }
+        }
+    }
     }
 }
 
@@ -2216,10 +2270,10 @@ div#temp-footer-row {
         display: none !important;
     }
     .vc_col-sm-2 {
-        width: 4% !important;
+        width: 8% !important;
     }
     .vc_col-sm-8 {
-        width: 92% !important;
+        width: 84% !important;
     }
     .vc_col-sm-2-footer {
         display: none !important;
@@ -2249,7 +2303,6 @@ div#temp-footer-row {
         background: $lt_blue;
         color: $white !important;
         font-size: 20px;
-        font-weight: 700;
         line-height: 32px;
         border-bottom-left-radius: 11px;
         border-bottom-right-radius: 11px;
@@ -2329,13 +2382,29 @@ div#temp-footer-row {
                 }
                 p.date-icon {
                     display: inline-block;
-                    img#cal-icon {
-                        padding-left: 8px;
-                        height: 24px;
-                        width: 22px;
-                        position: relative;
-                        top: 6px;
-                        display: inline-block;
+                    a {
+                        color: $white;
+                        transition: all 0.25s;
+                        img#cal-icon {
+                            padding-left: 8px;
+                            height: 24px;
+                            width: 22px;
+                            position: relative;
+                            top: 6px;
+                            display: inline-block;
+                        }
+                    }
+                    a:hover {
+                        color: $elevar_yellow;
+                        transition: all 0.45s;
+                        img#cal-icon:hover {
+                            content: url('/wp-content/themes/conall-child/images/cal_icon_28x30-hover.svg');
+                            height: 24px;
+                            width: 22px;
+                            position: relative;
+                            transform: scale(1.25);
+                            transition: all 0.45s;
+                        }
                     }
                 }
             }
@@ -2373,13 +2442,13 @@ div#temp-footer-row {
         margin-top: 35px !important;
         border-radius: 10px;
         margin: 0;
-        background-color: $elevar_purple;
+        background-color: $elevar_purple !important;
         border-color: $white;
         width: 200px;
         padding: 7px;
         height: 48px;
             span {
-            color: $white;
+            /* color: $white; */
             font-size: 20px;
             line-height: 32px;
             text-transform: initial;
@@ -2444,7 +2513,7 @@ div#temp-footer-row {
                     width: 100%;
                         div#spotlight-movie {
                         margin-top: 20px;
-                        width: 285px;
+                        width: 100%;
                         }
                         div#spotlight-bodycopy-strong {
                             margin-top: 20px;
@@ -2452,6 +2521,7 @@ div#temp-footer-row {
                         div#play-btn {
                             width: 140px;
                             height: 44px;
+                            font-weight: 700;
                             margin: 40px auto 0 !important;
                             text-align: center;
                             border: 1px solid $elevar_purple;
@@ -2469,7 +2539,7 @@ div#temp-footer-row {
                             a {
                             display: block;
                             color: $white;
-                            font-weight: 600;
+                            font-weight: 700;
                             font-size: 18px;
                             height: 100%;
                             padding: 0px;
@@ -2573,6 +2643,7 @@ div#temp-footer-row {
                     line-height: 32px;
                     text-transform: initial;
                     letter-spacing: 0;
+                    font-weight: 700;
                 }
             }
         }
@@ -2652,8 +2723,8 @@ div#temp-footer-row {
         background-size: auto;
     }
     div#future-events-row {
-    height: 360px;
-    padding: 60px 0 0;
+    height: 400px;
+    padding: 30px 0 10px 0;
     background-position:
         bottom -1px left 0,
         center center !important;
@@ -2661,7 +2732,7 @@ div#temp-footer-row {
         100%,
         cover !important;
         div#col-future-events-title {
-        text-align: left !important;
+        text-align: center !important;
         width: 92% !important;
         margin-bottom: 0px;
             h4 {
@@ -2671,6 +2742,7 @@ div#temp-footer-row {
             font-weight: 700;
             margin: 0 0 10px 0;
             letter-spacing: 0;
+            text-align: center !important;
             }
         }
         div#future-events-row-title {
@@ -2683,7 +2755,7 @@ div#temp-footer-row {
             div#col-infoblock-right {
                 width: 96% !important
             }
-            p {
+            p.footer-block {
             color: $white;
             font-size: 18px;
             line-height: 28px;
@@ -2708,8 +2780,86 @@ div#temp-footer-row {
             margin-top: 20px !important;
         }
     }
-
-
+    }
+    div#temp-footer-row {
+    background: $elevar_blue;
+    padding: 0 0 20px 0;
+    min-height: 235px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    div#temp-footer-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        text-align: center;
+        div.policies-links {
+        min-width: unset;
+        max-width: 342px;
+            div.address {
+                font-size: 20px;
+                line-height: 28px;
+                font-weight: 600;
+                color: $white;
+                span.vert-divi {
+                    margin-left: 1.5%;
+                    margin-right: 1.5%;
+                }
+            }
+        }
+        div.footer-social {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 0;
+        margin-top: 30px;
+            a.edgtf-social-icon-widget-holder {
+                color: $white;
+                font-size: 24px;
+                margin: 0px 20px 0px 0px;
+            }
+            img.footer-social-icon-widget {
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+            }
+        }
+        div#bottom-links {
+        min-width: 100%;
+        margin-top: 20px;
+            .policies {
+                font-size: 12px;
+                a.policy-links {
+                    color: $white;
+                    font-size: 10px;
+                    line-height: 15px;
+                    text-decoration: underline;
+                    font-weight: 600;
+                }
+                span.vert-divi {
+                    margin-left: 1%;
+                    margin-right: 1%;
+                }
+            }
+        }
+        div.copy-right-line {
+            color: $white;
+            font-size: 10px;
+            line-height: 15px;
+            font-weight: 600;
+            span.copy-right-line2 {
+                display: block;
+                text-align: center;
+            }
+        }
+    }
     }
 }
 /* ******* END ESMO 2023 PAGE ******* */
