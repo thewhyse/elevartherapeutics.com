@@ -2,7 +2,7 @@
 @import "../base/font";
 
 a, p a {
-    color: #2B71B7;
+    color: $elevar_blue;
 }
 
 p {
@@ -13,12 +13,6 @@ h1, h2, h3, h4, h4, h6 {
 }
 
 /* ******* ESMO 2023 PAGE ******* */
-
-.page-id-16965 {
-  footer {
-    display: none;
-  }
-}
 
 div#book-meeting-cta {
   position: absolute;
@@ -38,7 +32,8 @@ div#book-meeting-cta {
     -ms-flex-align: center;
     align-items: center;
     height: 54px;
-    padding: 0 26px;
+    padding: 0;
+    width: 285px;
     border-radius: 0 0 6px 6px;
     background: $elevar_purple;
     color: $white !important;
@@ -69,10 +64,11 @@ div#esmo_23_hero_row {
     background-image:
       url(/wp-content/themes/conall-child/images/hero_white_wave-1920x140.svg),
       url(/wp-content/themes/conall-child/images/esmo-hero-1920x564.png);
-    top: -1px;
+    bottom: -1px;
         div#esmo-header {
             padding-top: 56px !important;
-            h1 {
+            h1.elevar-h1 {
+                color: $white;
                 text-transform: uppercase;
                 font-size: 56px;
                 line-height: 42px;
@@ -91,7 +87,8 @@ div#esmo_23_hero_row {
                 a {
                     display: flex;
                 }
-                h2 {
+                h2.elevar-h2 {
+                    color: $white;
                     text-transform: initial;
                     font-size: 39px;
                     line-height: 26px;
@@ -117,7 +114,7 @@ div#esmo_23_hero_row {
         div#esmo-date {
             padding-top: 20px !important;
             display: flex;
-            width: 480px;
+            width: 485px;
             flex-direction: column;
             margin: 0 auto !important;
             p.esmodate {
@@ -165,10 +162,6 @@ div#esmo_23_hero_row {
             width: 480px;
             margin: 0 auto;
         }
-        h1, h2 {
-            color: $white;
-            font-weight: 600;
-        }
         a.esmo-button {
             margin-top: 30px !important;
             font-weight: 700;
@@ -179,7 +172,6 @@ div#esmo_23_hero_row {
             color: $white;
             transition: all 0.5s;
                 span {
-                /* color: $white; */
                 font-size: 20px;
                 line-height: 32px;
                 font-weight: 700 !important;
@@ -226,7 +218,7 @@ div#spotlight-row {
     background: $white;
     padding: 60px 0 80px;
     div#col-spotlight {
-        h4 {
+        h4.elevar-h4 {
             font-size: 28px;
             line-height: 32px;
             color: $elevar_blue;
@@ -234,7 +226,7 @@ div#spotlight-row {
             letter-spacing: 0;
             margin-bottom: 30px !important;
         }
-        p {
+        p.elevar-p {
             font-size: 24px;
             line-height: 32px;
             font-weight: 400;
@@ -305,11 +297,13 @@ div#spotlight-row {
 }
 div#review-data-section {
     background-color: rgba(188, 192, 196, 0.25);
-    min-height: 730px;
+    /* min-height: 730px; */
+    min-height: 100%;
+    padding: 70px 0 70px 0;
     div#col-review-data {
-        padding-top: 70px;
+        /* padding-top: 70px; */
         div#review-heading {
-            h2 {
+            h2.elevar-h2 {
                 font-weight: 700;
                 font-size: 36px;
                 line-height: 32px;
@@ -322,10 +316,7 @@ div#review-data-section {
         div#review-top {
             max-width: 1200px;
             margin-top: 40px;
-            h3.review-h3 {
-
-            }
-            h3 {
+            h3.elevar-h3 {
                 font-weight: 700;
                 font-size: 24px;
                 line-height: 44px;
@@ -333,7 +324,7 @@ div#review-data-section {
                 color: $elevar_blue;
                 margin: 0;
             }
-            p {
+            p.elevar-p {
                 font-weight: 400;
                 font-size: 24px;
                 line-height: 32px;
@@ -346,22 +337,27 @@ div#review-data-section {
             max-width: 1200px;
             margin-top: 50px;
             margin-bottom: 50px !important;
-            h3 {
+            h3.elevar-h3 {
                 font-weight: 700;
                 font-size: 24px;
-                line-height: 32px;
+                line-height: 44px;
                 letter-spacing: 0;
                 color: $elevar_blue;
                 margin: 0;
-                margin-bottom: 15px;
             }
-            p {
+            p.elevar-p {
                 font-weight: 400;
                 font-size: 24px;
                 line-height: 32px;
                 letter-spacing: 0;
                 color: $drk_gray;
-                margin: 0;
+                margin-bottom: 15px;
+            }
+            p.elevar-p.bottom {
+                margin-top: 15px !important;
+            }
+            span.italics {
+                font-style: italic;
             }
         }
         a.review-button {
@@ -393,24 +389,25 @@ div#review-data-section {
 }
 div#explore-the-past {
     background-color: $elevar_blue;
-    max-height: 675px;
+    max-height: 100%;
+    padding: 140px 0 140px 0;
     div#explore-heading {
-        padding-top: 140px !important;
-        padding-bottom: 80px !important;
-        h2 {
+        h2.elevar-h2 {
             font-size: 36px;
             line-height: 40px;
             color: $white;
             text-transform: uppercase;
             letter-spacing: 0;
             margin: 0;
+            padding-bottom: 60px;
         }
     }
     div#explore-inner-row {
-        padding-bottom: 15% !important;
+        /* padding-bottom: 15% !important; */
         div.edgtf-full-section-inner {
             display: flex;
             div#col-left {
+                width: 40%;
                 div#explore-image {
                     text-align: right;
                     img {
@@ -419,14 +416,14 @@ div#explore-the-past {
                 }
             }
             div#col-right {
-                max-width: 560px;
+                width: 60%;
                 padding-left: 45px;
                 padding-top: 0;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 div#explore-subheading {
-                    h3 {
+                    h3.elevar-h3 {
                         font-size: 28px;
                         line-height: 32px;
                         color: $white;
@@ -437,7 +434,8 @@ div#explore-the-past {
                     }
                 }
                 div#explore-bodycopy {
-                    p {
+                    max-width: 530px;
+                    p.elevar-p {
                         font-size: 24px;
                         line-height: 32px;
                         color: $white;
@@ -482,7 +480,7 @@ div#future-events-row {
     margin: 0;
   div#future-events-row-title {
     margin-bottom: 20px !important;
-    h4 {
+    h4.elevar-h4 {
       color: $white;
       font-size: 28px;
       line-height: 32px;
@@ -497,6 +495,9 @@ div#future-events-row {
       color: $white;
       font-size: 24px;
       line-height: 32px;
+        > strong {
+            display: block;
+        }
     }
     a {
       color: $white;
@@ -506,9 +507,12 @@ div#future-events-row {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-    }
-    div#footer-block2{
-        margin-top: 40px;
+        div#footer-block3-mobile {
+            display: none;
+        }
+        div#footer-block2{
+            margin-top: 40px;
+        }
     }
   }
 
@@ -580,6 +584,7 @@ div#temp-footer-row {
             margin-top: 40px;
                 .policies {
                     font-size: 18px;
+                    color: $white;
                     a.policy-links {
                         color: $white;
                         font-size: 18px;
@@ -611,16 +616,15 @@ div#temp-footer-row {
 }
 
 @media all and (max-width: 1340px) {
-  #book-meeting-cta {
+  /* #book-meeting-cta {
     position: relative;
     width: 390px;
     margin: 0 auto;
     top: inherit;
     right: inherit;
-
-  }
+  } */
   div#review-data-section {
-    min-height: 800px;
+    /* min-height: 800px; */
     }
 }
 
@@ -643,90 +647,32 @@ div#temp-footer-row {
     .vc_col-sm-2-footer {
         width: 15% !important;
     }
-    div#book-meeting-cta {
-        position: absolute;
-        top: 0;
-        right: 10vw;
-        p {
-            margin: 0;
-        }
-        a {
-            width: 285px;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            height: 54px;
-            padding: 0 26px;
-            border-radius: 0 0 6px 6px;
-            background: $elevar_purple;
-            color: $white !important;
-            font-size: 20px;
-            line-height: 32px;
-            border-bottom-left-radius: 11px;
-            border-bottom-right-radius: 11px;
-            border-color: $elevar_purple;
-            transition: all 0.5s;
-            &:hover {
-            background: $elevar_purple;
-            color: $white !important;
-            border: 1px solid $elevar_purple;
-            transition: all 0.5s;
-            }
-        }
-    }
     div#esmo_23_hero_row {
         height: 350px;
-        background-position:
-        bottom 0 left 0,
-        center center !important;
-        background-size:
-        100%,
-        cover !important;
-        background-repeat: no-repeat !important;
         background-image:
         url(/wp-content/themes/conall-child/images/hero_white_wave-1920x140.svg),
         url(/wp-content/themes/conall-child/images/esmo-hero-1024x350.png);
+        bottom: 1px;
         div#esmo-header {
-            padding-top: 40px !important;
-            h1 {
-                text-transform: uppercase;
+
+            h1.elevar-h1 {
                 font-size: 48px;
                 line-height: 60px;
-                letter-spacing: 3px;
             }
         }
         div#esmo-subheader {
             padding-top: 0 !important;
         div#esmo-icon-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             width: 378px;
-            margin: 0 auto !important;
-                a {
-                display: flex;
-                }
-                h2 {
-                    text-transform: initial;
+                h2.elevar-h2 {
                     font-size: 32px;
                     line-height: 21px;
-                    letter-spacing: 0px;
-                    font-weight: 700;
-                    margin: 0;
                 }
                 img#esmo-icon  {
-                    display: block;
                     width: 40px;
                     height: 40px;
                 }
                 img#esmo-icon:hover {
-                    content: url('/wp-content/themes/conall-child/images/location_icon_50x50-hover.svg');
                     height: 40px;
                     width: 40px;
                 }
@@ -734,10 +680,7 @@ div#temp-footer-row {
         }
         div#esmo-date {
             padding-top: 8px !important;
-            display: flex;
             width: 470px;
-            flex-direction: column;
-            margin: 0 auto !important;
             p.esmodate {
                 color: $white;
                 font-size: 23px;
@@ -763,60 +706,21 @@ div#temp-footer-row {
             width: 425px;
             margin: 0 auto;
         }
-        h1, h2 {
-            color: $white;
-            font-weight: 600;
-        }
         a.esmo-button {
             margin-top: 20px !important;
-            border-radius: 10px;
-            margin: 0;
-            background-color: $elevar_purple !important;
-            border-color: $white;
             width: 200px;
             padding: 10px;
-                span {
-                /* color: $white; */
-                font-size: 20px;
-                line-height: 32px;
-                text-transform: initial;
-                letter-spacing: 0;
-                }
         }
     }
     #map-popup_section {
-        display: none;
         background-image: url("/wp-content/themes/conall-child/images/esmo-map-popover-1024x647.png");
-        background-repeat: no-repeat;
-        background-position: top center;
-        background-size: 100%;
-        width: 100vw;
-        height: 90vh;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1000;
-        margin: 0 !important;
-        animation: fade-in .3s linear 1;
-        -webkit-animation: fade-in .3s linear 1;
-        -moz-animation: fade-in .3s linear 1;
-        -ms-animation: fade-in .3s linear 1;
-        #close-map-icon {
-            width: 50px;
-            height: 50px;
-            background: url(/wp-content/themes/conall-child/dist/images/Close-Icon.png);
-            background-size: cover;
-            position: absolute;
-            top: 10vh;
-            right: 4vw;
-        }
     }
     div#spotlight-row {
         display: block !important;
         background: $white;
         padding: 60px 0 50px;
         div#col-spotlight {
-            h4 {
+            h4.elevar-h4 {
                 font-size: 24px;
                 line-height: 24px;
                 color: $elevar_blue;
@@ -824,9 +728,9 @@ div#temp-footer-row {
                 letter-spacing: 0;
                 margin-bottom: 30px !important;
             }
-            p {
+            p.elevar-p {
                 font-size: 20px;
-                line-height: 24px;
+                line-height: 28px;
                 font-weight: 400;
                 color: $drk_gray;
                 letter-spacing: 0;
@@ -888,63 +792,44 @@ div#temp-footer-row {
         }
     }
     div#review-data-section {
-        background-color: rgba(188, 192, 196, 0.25);
-        min-height: 775px;
+       /*  min-height: 775px; */
+        padding: 70px 0 70px 0;
         div#col-review-data {
-            padding-top: 70px;
+            /* padding-top: 70px; */
             div#review-heading {
-                h2 {
-                    font-weight: 700;
+                h2.elevar-h2 {
                     font-size: 32px;
                     line-height: 28px;
-                    letter-spacing: 0;
-                    color: $elevar_blue;
-                    margin: 0;
                 }
             }
             div#review-top {
                 max-width: 925px;
-                margin-top: 30px;
-                h3.review-h3 {
-                    margin-bottom: 10px;
-                }
-                h3 {
-                    font-weight: 700;
+                margin-top: 40px;
+                h3.elevar-h3 {
                     font-size: 24px;
                     line-height: 36px;
-                    letter-spacing: 0;
-                    color: $elevar_blue;
-                    margin: 0;
-                    margin-bottom: 20px;
+                    margin-bottom: 10px;
                 }
-                p {
-                    font-weight: 400;
+                p.elevar-p {
                     font-size: 20px;
                     line-height: 28px;
-                    letter-spacing: 0;
-                    color: $drk_gray;
-                    margin: 0;
+                }
+                p.elevar-p.bottom {
+                margin-top: 0 !important;
                 }
             }
             div#review-bottom {
                 max-width: 925px;
-                margin-top: 50px;
-                margin-bottom: 50px !important;
-                h3 {
-                    font-weight: 700;
+                margin-top: 40px;
+                margin-bottom: 40px !important;
+                h3.elevar-h3 {
                     font-size: 24px;
                     line-height: 36px;
-                    letter-spacing: 0;
-                    color: $elevar_blue;
-                    margin: 0;
-                    margin-bottom: 20px;
+                    margin-bottom: 10px;
                 }
-                p {
-                    font-weight: 400;
+                p.elevar-p {
                     font-size: 20px;
                     line-height: 28px;
-                    letter-spacing: 0;
-                    color: $drk_gray;
                     margin-bottom: 20px !important;
                 }
             }
@@ -971,12 +856,8 @@ div#temp-footer-row {
         }
     }
     div#explore-the-past {
-        background-color: $elevar_blue;
-        max-height: 610px;
         div#explore-heading {
-            padding-top: 140px !important;
-            padding-bottom: 80px !important;
-            h2 {
+            h2.elevar-h2 {
                 font-size: 32px;
                 line-height: 28px;
                 color: $white;
@@ -985,7 +866,7 @@ div#temp-footer-row {
             }
         }
         div#explore-inner-row {
-            padding-bottom: 15% !important;
+            /* padding-bottom: 15% !important; */
             div.edgtf-full-section-inner {
                 div#col-left {
                     width: 50% !important;
@@ -1003,7 +884,7 @@ div#temp-footer-row {
                     padding-left: 45px;
                     padding-top: 0;
                     div#explore-subheading {
-                        h3 {
+                        h3.elevar-h3 {
                             font-size: 24px;
                             line-height: 24px;
                             color: $white;
@@ -1014,9 +895,9 @@ div#temp-footer-row {
                         }
                     }
                     div#explore-bodycopy {
-                        p {
+                        p.elevar-p {
                             font-size: 20px;
-                            line-height: 24px;
+                            line-height: 28px;
                             color: $white;
                             margin: 0;
                             font-weight: 400;
@@ -1059,7 +940,7 @@ div#temp-footer-row {
                 text-align: left !important;
                 width: 70% !important;
                 margin-bottom: 40px;
-                    h4 {
+                    h4.elevar-h4 {
                     color: $white;
                     font-size: 24px;
                     line-height: 24px;
@@ -1195,56 +1076,22 @@ div#temp-footer-row {
         display: none !important;
     }
     div#book-meeting-cta {
-    position: absolute;
-    top: 0;
-    right: 5vw;
-    p {
-        margin: 0;
-    }
-    a {
-        width: 270px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        height: 54px;
-        padding: 0px;
-        border-radius: 0 0 6px 6px;
-        background: $elevar_purple;
-        color: $white !important;
-        font-size: 18px;
-        line-height: 32px;
-        border-bottom-left-radius: 11px;
-        border-bottom-right-radius: 11px;
-        border-color: $elevar_purple;
-        &:hover {
-        background: $elevar_purple;
-        color: $white !important;
-        border: 1px solid $elevar_purple;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        a {
+            font-size: 20px;
+            margin: 0 auto;
         }
-    }
     }
     div#esmo_23_hero_row {
         height: 385px;
-        background-position:
-        bottom 0 left 0,
-        center center !important;
-        background-size:
-        100%,
-        cover !important;
-        background-repeat: no-repeat !important;
         background-image:
         url(/wp-content/themes/conall-child/images/hero_white_wave-1920x140.svg),
         url(/wp-content/themes/conall-child/images/esmo-hero-1024x350.png);
         div#esmo-header {
             padding-top: 44px !important;
-            h1 {
-                text-transform: uppercase;
+            h1.elevar-h1 {
                 font-size: 42px;
                 line-height: 50px;
                 letter-spacing: 2px;
@@ -1254,29 +1101,16 @@ div#temp-footer-row {
         div#esmo-subheader {
             padding-top: 10px !important;
         div#esmo-icon-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             width: 330px;
-            margin: 0 auto !important;
-                a {
-                display: flex;
-                }
-                h2 {
-                    text-transform: initial;
+                h2.elevar-h2 {
                     font-size: 28px;
                     line-height: 21px;
-                    letter-spacing: 0px;
-                    font-weight: 700;
-                    margin: 0;
                 }
                 img#esmo-icon  {
-                    display: block;
                     width: 35px;
                     height: 35px;
                 }
                 img#esmo-icon:hover {
-                    content: url('/wp-content/themes/conall-child/images/location_icon_50x50-hover.svg');
                     height: 35px;
                     width: 35px;
                 }
@@ -1284,10 +1118,7 @@ div#temp-footer-row {
         }
         div#esmo-date {
             padding-top: 15px !important;
-            display: flex;
             width: 380px;
-            flex-direction: column;
-            margin: 0 auto !important;
             p.esmodate {
                 color: $white;
                 font-size: 20px;
@@ -1312,53 +1143,11 @@ div#temp-footer-row {
             width: 380px;
             margin: 0 auto;
         }
-    h1, h2 {
-        color: $white;
-        font-weight: 600;
-    }
     a.esmo-button {
         margin-top: 35px !important;
-        border-radius: 10px;
-        margin: 0;
-        background-color: $elevar_purple !important;
-        border-color: $white;
         width: 200px;
         padding: 7px;
         height: 48px;
-            span {
-            /* color: $white; */
-            font-size: 20px;
-            line-height: 32px;
-            text-transform: initial;
-            letter-spacing: 0;
-            }
-    }
-    }
-    #map-popup_section {
-    display: none;
-    background-image: url("/wp-content/themes/conall-child/images/esmo-map-popover-1024x647.png");
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: 100%;
-    width: 100vw;
-    height: 90vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    margin: 0 !important;
-    animation: fade-in .3s linear 1;
-    -webkit-animation: fade-in .3s linear 1;
-    -moz-animation: fade-in .3s linear 1;
-    -ms-animation: fade-in .3s linear 1;
-    #close-map-icon {
-        width: 50px;
-        height: 50px;
-        background: url(/wp-content/themes/conall-child/dist/images/Close-Icon.png);
-        background-size: cover;
-        position: absolute;
-        top: 10vh;
-        right: 4vw;
     }
     }
     div#spotlight-row {
@@ -1366,7 +1155,7 @@ div#temp-footer-row {
         background: $white;
         padding: 60px 0 40px;
         div#col-spotlight {
-            h4 {
+            h4.elevar-h4 {
                 font-size: 22px;
                 line-height: 22px;
                 color: $elevar_blue;
@@ -1374,9 +1163,9 @@ div#temp-footer-row {
                 letter-spacing: 0;
                 margin-bottom: 10px !important;
             }
-            p {
-                font-size: 18px;
-                line-height: 20px;
+            p.elevar-p {
+                font-size: 20px;
+                line-height: 28px;
                 font-weight: 400;
                 color: $drk_gray;
                 letter-spacing: 0;
@@ -1441,60 +1230,41 @@ div#temp-footer-row {
         }
     }
     div#review-data-section {
-        background-color: rgba(188, 192, 196, 0.25);
         min-height: 100%;
+        padding: 80px 0 80px 0;
         div#col-review-data {
-            padding-top: 80px;
+            /* padding-top: 80px; */
             div#review-heading {
-                h2 {
-                    font-weight: 700;
+                h2.elevar-h2 {
                     font-size: 28px;
                     line-height: 28px;
-                    letter-spacing: 0;
-                    color: $elevar_blue;
-                    margin: 0;
                 }
             }
             div#review-top {
-                max-width: 630px;
-                margin-top: 30px;
-                h3 {
-                    font-weight: 700;
+                max-width: 700px;
+                margin-top: 40px;
+                h3.elevar-h3 {
                     font-size: 22px;
                     line-height: 32px;
-                    letter-spacing: 0;
-                    color: $elevar_blue;
-                    margin: 0;
-                    margin-bottom: 20px;
+                    margin-bottom: 10px;
                 }
-                p {
-                    font-weight: 400;
-                    font-size: 18px;
-                    line-height: 24px;
-                    letter-spacing: 0;
-                    color: $drk_gray;
-                    margin: 0;
+                p.elevar-p {
+                    font-size: 20px;
+                    line-height: 28px;
                 }
             }
             div#review-bottom {
-                max-width: 630px;
-                margin-top: 30px;
-                margin-bottom: 53px !important;
-                h3 {
-                    font-weight: 700;
+                max-width: 700px;
+                margin-top: 40px;
+                margin-bottom: 40px !important;
+                h3.elevar-h3 {
                     font-size: 22px;
                     line-height: 32px;
-                    letter-spacing: 0;
-                    color: $elevar_blue;
-                    margin: 0;
-                    margin-bottom: 20px;
+                    margin-bottom: 10px;
                 }
-                p {
-                    font-weight: 400;
-                    font-size: 18px;
-                    line-height: 24px;
-                    letter-spacing: 0;
-                    color: $drk_gray;
+                p.elevar-p {
+                    font-size: 20px;
+                    line-height: 28px;
                     margin-bottom: 20px !important;
                 }
             }
@@ -1521,22 +1291,20 @@ div#temp-footer-row {
         }
     }
     div#explore-the-past {
-        background-color: $elevar_blue;
-        max-height: 100%;
-        padding: 50px 0 50px 0;
+        padding: 100px 0 70px 0;
         div#explore-heading {
-            padding-top: 100px !important;
-            padding-bottom: 70px !important;
-            h2 {
+            max-width: 440px;
+            margin: 0 auto !important;
+            h2.elevar-h2 {
                 font-size: 24px;
                 line-height: 28px;
                 color: $white;
                 letter-spacing: 0;
                 margin: 0;
+                padding-bottom: 50px !important;
             }
         }
         div#explore-inner-row {
-            padding-bottom: 0 !important;
             div.edgtf-full-section-inner {
             flex-direction: column;
                 div#col-left {
@@ -1562,11 +1330,13 @@ div#temp-footer-row {
                     padding-right: 8%;
                     padding-left: 8%;
                     padding-top: 0px;
+                    margin-top: 40px;
                     div.vc_column-inner {
+                        max-width: 440px;
                         padding-left: 0;
                         padding-right: 0;
                         div#explore-subheading {
-                            h3 {
+                            h3.elevar-h3 {
                                 font-size: 22px;
                                 line-height: 22px;
                                 color: $white;
@@ -1577,13 +1347,13 @@ div#temp-footer-row {
                             }
                         }
                         div#explore-bodycopy {
-                            p {
-                                font-size: 18px;
-                                line-height: 20px;
+                            p.elevar-p {
+                                font-size: 20px;
+                                line-height: 28px;
                                 color: $white;
                                 margin: 0;
                                 font-weight: 400;
-                                max-width: 275px;
+                                max-width: 100%;
                             }
                         }
                     }
@@ -1608,7 +1378,7 @@ div#temp-footer-row {
         text-align: left !important;
         width: 84% !important;
         margin-bottom: 0px;
-            h4 {
+            h4.elevar-h4 {
             color: $white;
             font-size: 22px;
             line-height: 22px;
@@ -1660,6 +1430,9 @@ div#temp-footer-row {
             }
         }
     }
+    div#future-events-row div#future-events-row-info-blocks .edgtf-full-section-inner div#footer-block3-mobile {
+        display: block;
+    }
 }
 
 @media all and (max-width: 576px) {
@@ -1678,90 +1451,38 @@ div#temp-footer-row {
         display: none !important;
     }
     div#book-meeting-cta {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    p {
-        margin: 0;
-    }
-    a {
-        width: 285px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        height: 54px;
-        padding: 0px;
-        border-radius: 0 0 6px 6px;
-        background: $lt_blue;
-        color: $white !important;
-        font-size: 20px;
-        line-height: 32px;
-        border-bottom-left-radius: 11px;
-        border-bottom-right-radius: 11px;
-        border-color: $lt_blue;
-        transition: all 0.5s;
-        &:hover {
-        background: $elevar_blue;
-        color: $white !important;
-        border: 1px solid $elevar_blue;
-        transition: all 0.5s;
-        }
-    }
+        right: 0;
+        left: 0;
     }
     div#esmo_23_hero_row {
         height: 100%;
-        background-position: center center !important;
-        background-size: cover !important;
-        background-repeat: no-repeat !important;
         background-image: url(/wp-content/themes/conall-child/images/esmo-hero-414x476.png);
         aspect-ratio: 414/400;
         div#esmo-header {
             padding-top: 54px !important;
-            h1 {
+            h1.elevar-h1 {
                 max-width: 385px;
-                text-transform: uppercase;
                 font-size: 38px;
                 line-height: 38px;
                 letter-spacing: 0px;
-                margin: 0 auto !important;
                 margin-top: 45px !important;
+                margin: 0 auto;
             }
         }
         div#esmo-subheader {
             padding-top: 25px !important;
         div#esmo-icon-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             width: 300px;
-            flex-direction: column;
-            margin: 0 auto !important;
-                a {
-                display: flex;
-                }
-                h2 {
-                    text-transform: initial;
+                h2.elevar-h2 {
                     font-size: 25px;
                     line-height: 36px;
-                    letter-spacing: 0px;
-                    font-weight: 700;
-                    margin: 0;
                 }
                 img#esmo-icon  {
-                    display: block;
                     width: 32px;
                     height: 32px;
                     margin-top: 22px;
                 }
                 img#esmo-icon:hover {
-                    content: url('/wp-content/themes/conall-child/images/location_icon_50x50-hover.svg');
                     width: 32px;
                     height: 32px;
                     margin-top: 22px;
@@ -1841,54 +1562,20 @@ div#temp-footer-row {
                 margin-top: 2px;
             }
         }
-    h1, h2 {
-        color: $white;
-        font-weight: 600;
-    }
     a.esmo-button {
         margin-top: 35px !important;
-        border-radius: 10px;
-        margin: 0;
-        background-color: $elevar_purple !important;
-        border-color: $white;
         width: 200px;
         padding: 7px;
         height: 48px;
-            span {
-            /* color: $white; */
-            font-size: 20px;
-            line-height: 32px;
-            text-transform: initial;
-            letter-spacing: 0;
-            }
     }
     }
     #map-popup_section {
-    display: none;
-    background-image: url("/wp-content/themes/conall-child/images/esmo-map-popover-414x583.png");
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: 100%;
-    width: 100vw;
-    height: 90vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    margin: 0 !important;
-    animation: fade-in .3s linear 1;
-    -webkit-animation: fade-in .3s linear 1;
-    -moz-animation: fade-in .3s linear 1;
-    -ms-animation: fade-in .3s linear 1;
-    #close-map-icon {
-        width: 40px;
-        height: 40px;
-        background: url(/wp-content/themes/conall-child/dist/images/Close-Icon.png);
-        background-size: cover;
-        position: absolute;
-        top: 5vh;
-        right: 4vw;
-    }
+        background-image: url("/wp-content/themes/conall-child/images/esmo-map-popover-414x583.png");
+        #close-map-icon {
+            width: 40px;
+            height: 40px;
+            top: 5vh;
+        }
     }
     div#spotlight-row {
         display: block !important;
@@ -1897,7 +1584,7 @@ div#temp-footer-row {
         div#col-spotlight {
             div.vc_column-inner {
                 padding: 0;
-            h4 {
+            h4.elevar-h4 {
                 font-size: 28px;
                 line-height: 28px;
                 color: $elevar_blue;
@@ -1906,7 +1593,7 @@ div#temp-footer-row {
                 margin-bottom: 10px !important;
                 margin-top: 10% !important;
             }
-            p {
+            p.elevar-p {
                 font-size: 20px;
                 line-height: 28px;
                 font-weight: 400;
@@ -1987,60 +1674,40 @@ div#temp-footer-row {
         }
     }
     div#review-data-section {
-        background-color: rgba(188, 192, 196, 0.25);
-        min-height: 100%;
+        padding: 50px 0 50px 0;
         div#col-review-data {
-            padding: 50px 0 50px !important;
+            /* padding: 50px 0 50px 0 !important; */
             div#review-heading {
-                h2 {
-                    font-weight: 700;
+                h2.elevar-h2 {
                     font-size: 28px;
                     line-height: 28px;
-                    letter-spacing: 0;
-                    color: $elevar_blue;
-                    margin: 0;
                 }
             }
             div#review-top {
-                max-width: 630px;
+                max-width: 500px;
                 margin-top: 30px;
-                h3 {
-                    font-weight: 700;
+                h3.elevar-h3 {
                     font-size: 22px;
                     line-height: 32px;
-                    letter-spacing: 0;
-                    color: $elevar_blue;
-                    margin: 0;
-                    margin-bottom: 20px;
+                    margin-bottom: 10px;
                 }
-                p {
-                    font-weight: 400;
-                    font-size: 18px;
-                    line-height: 24px;
-                    letter-spacing: 0;
-                    color: $drk_gray;
-                    margin: 0;
+                p.elevar-p {
+                    font-size: 20px;
+                    line-height: 28px;
                 }
             }
             div#review-bottom {
-                max-width: 630px;
+                max-width: 500px;
                 margin-top: 30px;
-                margin-bottom: 53px !important;
-                h3 {
-                    font-weight: 700;
+                margin-bottom: 30px !important;
+                h3.elevar-h3 {
                     font-size: 22px;
                     line-height: 32px;
-                    letter-spacing: 0;
-                    color: $elevar_blue;
-                    margin: 0;
-                    margin-bottom: 20px;
+                    margin-bottom: 10px;
                 }
-                p {
-                    font-weight: 400;
-                    font-size: 18px;
-                    line-height: 24px;
-                    letter-spacing: 0;
-                    color: $drk_gray;
+                p.elevar-p {
+                    font-size: 20px;
+                    line-height: 28px;
                     margin-bottom: 20px !important;
                 }
             }
@@ -2067,24 +1734,21 @@ div#temp-footer-row {
         }
     }
     div#explore-the-past {
-        background-color: $elevar_blue;
-        max-height: 100%;
-        padding: 50px 0 50px 0;
+        padding: 75px 0 75px 0;
         div#explore-heading {
-            padding-top: 0px !important;
-            padding-bottom: 0px !important;
-            h2 {
+            max-width: 100%;
+            h2.elevar-h2 {
                 font-size: 28px;
                 line-height: 34px;
                 color: $white;
                 text-transform: uppercase;
                 margin: 0 auto;
                 text-align: center;
-                max-width: 382px;
+                max-width: 100%;
+                padding-bottom: 25px !important;
             }
         }
         div#explore-inner-row {
-            padding-bottom: 0% !important;
             div.edgtf-full-section-inner {
                 div#col-left {
                     width: 100% !important;
@@ -2118,10 +1782,12 @@ div#temp-footer-row {
                     padding-left: 0;
                     padding-right: 0;
                     padding-top: 0;
+                    margin-top: 0;
                     div.vc_column-inner {
                         padding: 0 !important;
+                        max-width: 100%;
                         div#explore-subheading {
-                            h3 {
+                            h3.elevar-h3 {
                                 font-size: 24px;
                                 line-height: 28px;
                                 color: #ffffff;
@@ -2132,8 +1798,8 @@ div#temp-footer-row {
                             }
                         }
                         div#explore-bodycopy {
-                            p {
-                                font-size: 21px;
+                            p.elevar-p {
+                                font-size: 20px;
                                 line-height: 28px;
                                 color: $white;
                                 margin: 0;
@@ -2167,7 +1833,7 @@ div#temp-footer-row {
         text-align: left !important;
         width: 84% !important;
         margin-bottom: 0px;
-            h4 {
+            h4.elevar-h4 {
             color: $white;
             font-size: 24px;
             line-height: 28px;
@@ -2268,6 +1934,11 @@ div#temp-footer-row {
         margin-top: 20px;
             .policies {
                 font-size: 12px;
+                line-height: 18px;
+                padding: 0;
+                margin: 0;
+                height: 40px;
+                display: block;
                 a.policy-links {
                     color: $white;
                     font-size: 12px;
@@ -2296,7 +1967,8 @@ div#temp-footer-row {
 }
 
 @media all and (max-width: 480px) {
-    #future-events-row #future-events-row-info-blocks .edgtf-full-section-inner .wpb_column:nth-child(1), #future-events-row #future-events-row-info-blocks .edgtf-full-section-inner .wpb_column:nth-child(4) {
+    #future-events-row #future-events-row-info-blocks .edgtf-full-section-inner .wpb_column:nth-child(1),
+    #future-events-row #future-events-row-info-blocks .edgtf-full-section-inner .wpb_column:nth-child(4) {
         display: none !important;
     }
     .vc_col-sm-2 {
@@ -2308,70 +1980,21 @@ div#temp-footer-row {
     .vc_col-sm-2-footer {
         display: none !important;
     }
-    div#book-meeting-cta {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    p {
-        margin: 0;
-    }
-    a {
-        width: 285px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        height: 54px;
-        padding: 0px;
-        border-radius: 0 0 6px 6px;
-        background: $lt_blue;
-        color: $white !important;
-        font-size: 20px;
-        line-height: 32px;
-        border-bottom-left-radius: 11px;
-        border-bottom-right-radius: 11px;
-        border-color: $lt_blue;
-        &:hover {
-        background: $elevar_blue;
-        color: $white !important;
-        border: 1px solid $elevar_blue;
-        }
-    }
-    }
     div#esmo_23_hero_row {
-        height: 100%;
-        aspect-ratio: 414/476;
+        aspect-ratio: 414/400;
+        background-position: center top !important;
         div#esmo-header {
-            padding-top: 54px !important;
-            h1 {
+            h1.elevar-h1 {
                 max-width: 316px;
-                text-transform: uppercase;
                 font-size: 34px;
                 line-height: 34px;
-                letter-spacing: 0px;
-                margin: 0 auto !important;
                 margin-top: 25px !important;
             }
         }
         div#esmo-subheader {
-            padding-top: 10px !important;
+            padding-top: 20px !important;
         div#esmo-icon-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 300px;
-            flex-direction: column;
-            margin: 0 auto !important;
-                a {
-                display: flex;
-                }
-                h2 {
+                h2.elevar-h2 {
                     text-transform: initial;
                     font-size: 25px;
                     line-height: 36px;
@@ -2383,7 +2006,7 @@ div#temp-footer-row {
                     display: block;
                     width: 32px;
                     height: 32px;
-                    margin-top: 22px;
+                    margin-top: 0;
                 }
                 img#esmo-icon:hover {
                     content: url('/wp-content/themes/conall-child/images/location_icon_50x50-hover.svg');
@@ -2464,73 +2087,24 @@ div#temp-footer-row {
                 margin-top: 3px;
             }
         }
-    h1, h2 {
-        color: $white;
-        font-weight: 600;
-    }
-    a.esmo-button {
-        margin-top: 35px !important;
-        border-radius: 10px;
-        margin: 0;
-        background-color: $elevar_purple !important;
-        border-color: $white;
-        width: 200px;
-        padding: 7px;
-        height: 48px;
-            span {
-            /* color: $white; */
-            font-size: 20px;
-            line-height: 32px;
-            text-transform: initial;
-            letter-spacing: 0;
-            }
-    }
-    }
-    #map-popup_section {
-    display: none;
-    background-image: url("/wp-content/themes/conall-child/images/esmo-map-popover-414x583.png");
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: 100%;
-    width: 100vw;
-    height: 90vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    margin: 0 !important;
-    animation: fade-in .3s linear 1;
-    -webkit-animation: fade-in .3s linear 1;
-    -moz-animation: fade-in .3s linear 1;
-    -ms-animation: fade-in .3s linear 1;
-    #close-map-icon {
-        width: 40px;
-        height: 40px;
-        background: url(/wp-content/themes/conall-child/dist/images/Close-Icon.png);
-        background-size: cover;
-        position: absolute;
-        top: 5vh;
-        right: 4vw;
-    }
     }
     div#spotlight-row {
         display: block !important;
         background: $white;
-        padding: 0 !important;
         div#col-spotlight {
             div.vc_column-inner {
                 padding: 0;
-            h4 {
-                font-size: 22px;
-                line-height: 22px;
+            h4.elevar-h4 {
+                font-size: 24px;
+                line-height: 24px;
                 color: $elevar_blue;
                 font-weight: 700;
                 letter-spacing: 0;
                 margin-bottom: 10px !important;
             }
-            p {
-                font-size: 18px;
-                line-height: 20px;
+            p.elevar-p {
+                font-size: 20px;
+                line-height: 28px;
                 font-weight: 400;
                 color: $drk_gray;
                 letter-spacing: 0;
@@ -2599,60 +2173,40 @@ div#temp-footer-row {
         }
     }
     div#review-data-section {
-        background-color: rgba(188, 192, 196, 0.25);
-        min-height: 100%;
+        padding: 80px 0 80px 0;
         div#col-review-data {
-            padding-top: 80px;
+            /* padding-top: 80px 0 80px 0 !important; */
             div#review-heading {
-                h2 {
-                    font-weight: 700;
+                h2.elevar-h2 {
                     font-size: 28px;
                     line-height: 28px;
-                    letter-spacing: 0;
-                    color: $elevar_blue;
-                    margin: 0;
                 }
             }
             div#review-top {
                 max-width: 630px;
                 margin-top: 30px;
-                h3 {
-                    font-weight: 700;
-                    font-size: 22px;
-                    line-height: 32px;
-                    letter-spacing: 0;
-                    color: $elevar_blue;
-                    margin: 0;
-                    margin-bottom: 20px;
+                h3.elevar-h3 {
+                    font-size: 24px;
+                    line-height: 28px;
+                    margin-bottom: 10px;
                 }
-                p {
-                    font-weight: 400;
-                    font-size: 18px;
-                    line-height: 24px;
-                    letter-spacing: 0;
-                    color: $drk_gray;
-                    margin: 0;
+                p.elevar-p {
+                    font-size: 20px;
+                    line-height: 28px;
                 }
             }
             div#review-bottom {
                 max-width: 630px;
                 margin-top: 30px;
                 margin-bottom: 53px !important;
-                h3 {
-                    font-weight: 700;
-                    font-size: 22px;
-                    line-height: 32px;
-                    letter-spacing: 0;
-                    color: $elevar_blue;
-                    margin: 0;
-                    margin-bottom: 20px;
+                h3.elevar-h3 {
+                    font-size: 24px;
+                    line-height: 28px;
+                    margin-bottom: 10px;
                 }
-                p {
-                    font-weight: 400;
-                    font-size: 18px;
-                    line-height: 24px;
-                    letter-spacing: 0;
-                    color: $drk_gray;
+                p.elevar-p {
+                    font-size: 20px;
+                    line-height: 28px;
                     margin-bottom: 20px !important;
                 }
             }
@@ -2679,21 +2233,16 @@ div#temp-footer-row {
         }
     }
     div#explore-the-past {
-        background-color: $elevar_blue;
-        max-height: 100%;
         div#explore-heading {
-            padding-top: 0px !important;
-            padding-bottom: 0px !important;
-            h2 {
-                font-size: 24px;
-                line-height: 28px;
+            h2.elevar-h2 {
+                font-size: 28px;
+                line-height: 34px;
                 color: $white;
                 letter-spacing: 0;
                 margin: 0;
             }
         }
         div#explore-inner-row {
-            padding-bottom: 0 !important;
             div.edgtf-full-section-inner {
                 div#col-left {
                     width: 100% !important;
@@ -2715,9 +2264,9 @@ div#temp-footer-row {
                     padding-right: 0;
                     padding-top: 0px;
                     div#explore-subheading {
-                        h3 {
-                            font-size: 22px;
-                            line-height: 22px;
+                        h3.elevar-h3 {
+                            font-size: 24px;
+                            line-height: 28px;
                             color: $white;
                             letter-spacing: 0;
                             margin: 0;
@@ -2726,9 +2275,9 @@ div#temp-footer-row {
                         }
                     }
                     div#explore-bodycopy {
-                        p {
-                            font-size: 18px;
-                            line-height: 20px;
+                        p.elevar-p {
+                            font-size: 20px;
+                            line-height: 28px;
                             color: $white;
                             margin: 0;
                             font-weight: 400;
@@ -2754,12 +2303,12 @@ div#temp-footer-row {
         cover !important;
         div#col-future-events-title {
         text-align: left !important;
-        width: 92% !important;
+        width: 84% !important;
         margin-bottom: 0px;
-            h4 {
+            h4.elevar-h4 {
             color: $white;
-            font-size: 22px;
-            line-height: 22px;
+            font-size: 24px;
+            line-height: 28px;
             font-weight: 700;
             margin: 0 0 10px 0;
             letter-spacing: 0;
@@ -2771,10 +2320,10 @@ div#temp-footer-row {
         }
         div#future-events-row-info-blocks {
             div#col-infoblock-left {
-                width: 96% !important
+                width: 84% !important
             }
             div#col-infoblock-right {
-                width: 96% !important
+                width: 84% !important
             }
             p.footer-block {
             color: $white;
@@ -2794,7 +2343,7 @@ div#temp-footer-row {
         display: -ms-flexbox;
         display: flex;
         flex-direction: column !important;
-        margin-left: 4%;
+        margin-left: 8%;
         div#footer-block1,
         div#footer-block2,
         div#footer-block3 {
