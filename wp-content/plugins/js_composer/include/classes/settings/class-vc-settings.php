@@ -117,7 +117,7 @@ class Vc_Settings {
 
 		if ( $this->showConfigurationTabs() ) {
 			$this->tabs['vc-general'] = esc_html__( 'General Settings', 'js_composer' );
-			if ( ! vc_is_as_theme() || apply_filters( 'vc_settings_page_show_design_tabs', false ) ) {
+			if ( vc_is_as_theme() || apply_filters( 'vc_settings_page_show_design_tabs', false ) ) {
 				$this->tabs['vc-color'] = esc_html__( 'Design Options', 'js_composer' );
 				$this->tabs['vc-custom_css'] = esc_html__( 'Custom CSS', 'js_composer' );
 				$this->tabs['vc-custom_js'] = esc_html__( 'Custom JS', 'js_composer' );
