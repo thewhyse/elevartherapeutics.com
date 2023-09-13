@@ -1,5 +1,5 @@
 @import "../base/colors";
-
+@import "../base/font";
 
 div.edgtf-content {
     div.edgtf-content-inner {
@@ -8,6 +8,7 @@ div.edgtf-content {
         }
     }
 }
+
 footer {
     .edgtf-footer-bottom-holder {
         background-color: $elevar_blue !important;
@@ -196,7 +197,6 @@ footer {
 }
 
 @media all and (max-width: 768px) {
-
 }
 
 @media all and (max-width: 576px) {
@@ -291,5 +291,4 @@ footer {
 }
 
 @media all and (max-width: 480px) {
-
 }

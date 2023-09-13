@@ -120,7 +120,7 @@ if (!class_exists('ConallEdgeClassTopNavigationWalker')) {
 
 				$icon = '';
 				if($item->icon !== "" && $item->icon !== 'null') {
-					$icon = $item->icon; 
+					$icon = $item->icon;
 				}
 
 				$icon_pack = 'font_awesome';
@@ -128,7 +128,7 @@ if (!class_exists('ConallEdgeClassTopNavigationWalker')) {
 				if(empty($this->icon_pack)) {
 					$item->icon_pack = $icon_pack;
 				}
-				
+
 				if($icon !== '') {
 					if($item->icon_pack == 'font_awesome') {
 						$icon .= ' fa';
@@ -136,7 +136,7 @@ if (!class_exists('ConallEdgeClassTopNavigationWalker')) {
 
 					$item_output .= '<span class="menu_icon_wrapper"><i class="menu_icon '.$icon.'"></i></span>';
 				}
-				
+
 				$item_output .= '<span class="item_text">';
 				$item_output .= apply_filters('the_title', $item->title, $item->ID);
 
@@ -151,9 +151,9 @@ if (!class_exists('ConallEdgeClassTopNavigationWalker')) {
 
 				//append arrow for dropdown
 
-				if($args->has_children && $depth == 0) {
+				/* if($args->has_children && $depth == 0) {
 					$item_output .= '<i class="edgtf-menu-arrow fa fa-angle-down"></i>';
-				}
+				} */
 
 				$item_output .= '</span></a>';
 			}

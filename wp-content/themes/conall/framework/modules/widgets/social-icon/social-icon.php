@@ -15,8 +15,8 @@ class ConallEdgeClassSocialIconWidget extends ConallEdgeClassWidget {
             esc_html__( 'Conall Social Icon Widget', 'conall' ),
 	        array( 'description' => esc_html__( 'Add social network icons to widget areas', 'conall' ) )
         );
+             $this->setParams();
 
-        $this->setParams();
     }
 
     /**
@@ -64,6 +64,7 @@ class ConallEdgeClassSocialIconWidget extends ConallEdgeClassWidget {
             )
         );
     }
+
 
     /**
      * Generates widget's HTML
@@ -128,9 +129,6 @@ class ConallEdgeClassSocialIconWidget extends ConallEdgeClassWidget {
         }
         ?>
 
-        <a class="edgtf-social-icon-widget-holder" <?php echo conall_edge_get_inline_attr($hover_color, 'data-hover-color'); ?> <?php echo conall_edge_get_inline_attr($original_color, 'data-original-color'); ?> <?php conall_edge_inline_style($social_icon_styles) ?> href="<?php echo esc_url($link); ?>" target="<?php echo esc_attr($target); ?>">
-            <?php echo conall_edge_get_module_part($icon_holder_html); ?>
-        </a>
     <?php
     }
 }
