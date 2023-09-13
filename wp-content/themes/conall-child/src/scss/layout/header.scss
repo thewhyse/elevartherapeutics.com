@@ -90,6 +90,43 @@
     }
 }
 
+
+@media only screen and (max-width: 1200px) {
+    .edgtf-page-header {
+        .edgtf-menu-area {
+            div.edgtf-vertical-align-containers {
+                div.edgtf-position-left {
+                    width: 25%;
+                    flex-basis: 25%;
+                }
+                div.edgtf-position-center {
+                    width: 85%;
+                    flex-basis: 85%;
+                    .edgtf-position-center-inner {
+                        .edgtf-main-menu {
+                            > ul {
+                                > li {
+                                    > a {
+                                    font-size: 17px;
+                                        > span.item_outer {
+                                            .item_text {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                div.edgtf-position-right {
+                    width: 10%;
+                    flex-basis: 10%;
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 1099px) {
     .edgtf-main-menu > ul > li > a > span.item_outer {
         padding: 0 12px;
