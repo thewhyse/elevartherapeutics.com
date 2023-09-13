@@ -4,7 +4,7 @@
 /*** Responsive Styles Standard Desktop Only - bmead I merged media queries where I could ***/
 
 @media all and (min-width: 767px) {
-  #asco_23_hero_row {
+  /* #asco_23_hero_row {
     height: 336px;
     background-position:
       bottom 0 left 0,
@@ -16,7 +16,7 @@
     background-image:
       url(/wp-content/uploads/2023/05/Hero_white_wave.png),
       url(/wp-content/uploads/2023/04/Hero_DT.png);
-  }
+  } */
   #careers_hero_row {
     height: 457px;
     background-position: bottom 0 left 0 !important;
@@ -294,12 +294,12 @@
 }
 /**** Billie Careers page ****/
 @media all and (max-width: 767px) {
-  #spotlight-row {
+  /* #spotlight-row {
     padding: 0 0 20px 15px !important;
     #play-btn {
       margin: 20px auto 0 !important;
     }
-  }
+  } */
   #mosaic-row {
     padding: 40px 40px 0;
     .edgtf-full-section-inner {

@@ -1,0 +1,108 @@
+@import "../base/colors";
+@import "../base/font";
+.edgtf-page-header {
+    max-height: 135px;
+    .edgtf-menu-area {
+        height: 135px;
+        div.edgtf-vertical-align-containers {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            div.edgtf-position-left {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                width: 25%;
+                flex-basis: 25%;
+                float: unset;
+                .edgtf-position-left-inner {
+                display: flex;
+                    .edgtf-logo-wrapper {
+                        a {
+                            max-height: 107px;
+                        }
+                    }
+                }
+            }
+            div.edgtf-position-center {
+                display: flex;
+                width: 80%;
+                flex-basis: 80%;
+                position: relative;
+                justify-content: center;
+                align-items: center;
+                .edgtf-position-center-inner {
+                display: flex;
+                width: 100%;
+                    .edgtf-main-menu {
+                    display: flex;
+                        > ul {
+                            display: flex;
+                            > li {
+                            float: unset;
+                            display: flex;
+                            width: 100%;
+                                > a {
+                                font-size: 18px;
+                                letter-spacing: 0;
+                                font-weight: 600;
+                                display: flex;
+                                justify-content: center;
+                                    > span.item_outer {
+                                        padding: 0;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        -webkit-transform: translateY(0);
+                                        -moz-transform: translateY(0);
+                                        transform: translateY(0);
+                                        top: 0;
+                                        .item_text {
+                                            display: flex;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            div.edgtf-position-right {
+                display: flex;
+                width: 15%;
+                flex-basis: 15%;
+                justify-content: flex-end;
+                align-items: center;
+                div.edgtf-position-right-inner {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    a.edgtf-social-icon-widget-holder {
+                        img.header-social-icon {
+                            height: 23px;
+                            width: 23px;
+                            padding-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1099px) {
+    .edgtf-main-menu > ul > li > a > span.item_outer {
+        padding: 0 12px;
+    }
+    .edgtf-sticky-header .edgtf-main-menu > ul > li > a >span.item_outer {
+        padding: 0 12px;
+    }
+}
+@media only screen and (max-width: 1035px) {
+    .edgtf-main-menu > ul > li > a > span.item_outer {
+        padding: 0 8px;
+    }
+    .edgtf-sticky-header .edgtf-main-menu > ul > li > a >span.item_outer {
+        padding: 0 8px;
+    }
+}
