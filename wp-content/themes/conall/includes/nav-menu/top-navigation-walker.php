@@ -151,9 +151,9 @@ if (!class_exists('ConallEdgeClassTopNavigationWalker')) {
 
 				//append arrow for dropdown
 
-				/* if($args->has_children && $depth == 0) {
+				if($args->has_children && $depth == 0) {
 					$item_output .= '<i class="edgtf-menu-arrow fa fa-angle-down"></i>';
-				} */
+				}
 
 				$item_output .= '</span></a>';
 			}

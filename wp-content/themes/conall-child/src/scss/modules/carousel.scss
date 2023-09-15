@@ -25,7 +25,7 @@ div#col-home-testimonial {
                     align-items: flex-end;
                         .edgtf-testimonial-text {
                             display: flex;
-                            margin: 10px 0 5px;
+                            margin: 10px 0 5px !important;
                             font-size: 17px;
                             letter-spacing: -0.15px;
                             line-height: 28px;
@@ -80,7 +80,7 @@ div#col-home-testimonial {
             line-height: 82px  !important;
             border-radius: 100%;
             background-color: $elevar_blue;
-            left: -125px !important;
+            left: -90px !important;
             text-align: center;
             .edgtf-icon-mark {
                 position: relative;
@@ -99,7 +99,7 @@ div#col-home-testimonial {
             line-height: 82px  !important;
             border-radius: 100%;
             background-color: $elevar_blue;
-            right: -125px !important;
+            right: -90px !important;
             text-align: center;
             .edgtf-icon-mark {
                 position: relative;

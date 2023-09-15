@@ -2,7 +2,11 @@
 @import "../base/font";
 
 /* ******* RIVOCERANIB 2023 PAGE ******* */
-
+div#rivo_hero_row {
+        background-image:
+        url(/wp-content/themes/conall-child/images/hero_white_wave-1920x140.svg),
+        url(/wp-content/themes/conall-child/images/rivo-hero-1920x457.png);
+}
 .page-id-15095 {
   .edgtf-title {
     background: #fff !important;

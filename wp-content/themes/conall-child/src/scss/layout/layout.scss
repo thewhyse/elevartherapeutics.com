@@ -1,12 +1,59 @@
 @import "../base/colors";
+@import "../base/font";
 
+a, p a {
+    font-family: 'Raleway', sans-serif;
+    color: $elevar_blue;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    margin: 0 !important;
+}
+h1, h2, h3, h4, h4, h6 {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+a.edgtf-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $elevar_purple;
+    color: $white;
+    border-color: $elevar_purple;
+    font-size: 24px;
+    line-height: 36px;
+    height: 54px;
+    border-radius: 10px;
+    padding: 0;
+    :hover {
+    background-color: $white;
+    color: $elevar_purple;
+    border-color: $elevar_purple;
+    }
+}
+
+/* *********** BACK TO TOP *********** */
+#edgtf-back-to-top > span {
+    background-color: $elevar_purple;
+    border: 1px solid $white;
+    border-radius: 10px;
+}
+#edgtf-back-to-top {
+    right: 40px;
+    bottom: 40px;
+}
+#edgtf-back-to-top > span:hover {
+    background-color: $elevar_blue;
+    border: 1px solid $white;
+}
+
+/* *********** PROGRESS BAR *********** */
 .edgtf-progress-bar .edgtf-progress-number{
 display: none!important;
 }
 
+/* *********** POST CONTENT  *********** */
 .edgtf-post-content li {
 font-family: 'Raleway', sans-serif !important;
-}
-.edgtf-dark-header .edgtf-page-header>div:not(.edgtf-sticky-header):not(.fixed) .edgtf-search-opener:hover, .edgtf-dark-header .edgtf-top-bar .edgtf-search-opener:hover {
-    color: #202020!important;
 }

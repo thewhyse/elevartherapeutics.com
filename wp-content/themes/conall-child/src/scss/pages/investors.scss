@@ -2,6 +2,12 @@
 @import "../base/font";
 
 /* ******* INVESTORS PAGE ******* */
+div#investors_hero_row {
+        background-image:
+        url(/wp-content/themes/conall-child/images/hero_white_wave-1920x140.svg),
+        url(/wp-content/themes/conall-child/images/investors-hero-1920x457.png);
+}
+
 h1.investors {
     font-family: "Raleway", sans-serif;
     font-size: 40px;

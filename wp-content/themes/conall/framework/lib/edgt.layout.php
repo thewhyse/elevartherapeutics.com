@@ -419,7 +419,7 @@ class ConallEdgeClassField implements iConallEdgeInterfaceRender {
 	public $hidden_values = array();
 
 
-	function __construct($type,$name,$default_value="",$label="",$description="", $options = array(), $args = array(),$hidden_property="", $hidden_values = array()) {		
+	function __construct($type,$name,$default_value="",$label="",$description="", $options = array(), $args = array(),$hidden_property="", $hidden_values = array()) {
 		global $conall_edge_framework;
 		$this->type = $type;
 		$this->name = $name;
@@ -1808,11 +1808,11 @@ class ConallEdgeFieldCheckBoxGroup extends ConallEdgeClassFieldType {
 									<div class="checkbox-inline">
 										<label>
 											<input <?php echo esc_attr($checked_attr); ?> type="checkbox" id="<?php echo esc_attr($option_key).'-'.$i; ?>" value="<?php echo esc_attr($option_key); ?>" name="<?php echo esc_attr($name.'[]'); ?>">
-											<label for="<?php echo esc_attr($option_key).'-'.$i; ?>"><?php echo esc_html($option_label); ?></label>  
+											<label for="<?php echo esc_attr($option_key).'-'.$i; ?>"><?php echo esc_html($option_label); ?></label>
 										</label>
 									</div>
 								<?php $i++; endforeach; ?>
-							</div>	
+							</div>
 						</div>
 					</div>
 				</div>
@@ -2036,7 +2036,7 @@ class ConallEdgeClassFieldFactory {
 			case 'checkboxgroup':
 				$field = new ConallEdgeFieldCheckBoxGroup();
 				$field->render( $name, $label, $description, $options, $args, $hidden );
-				break;	
+				break;
 
 			case 'checkbox':
 				$field = new ConallEdgeClassFieldCheckBox();
@@ -3125,8 +3125,8 @@ class ConallEdgeClassSlideElementsFramework implements iConallEdgeInterfaceRende
 
 		$screen_widths = array(
 			// These values must match those in map.php (for slider), slider.php and shortcodes.js
-			"mobile" => 600,
-			"tabletp" => 800,
+			"mobile" => 576,
+			"tabletp" => 768,
 			"tabletl" => 1024,
 			"laptop" => 1440
 		);
@@ -3297,8 +3297,8 @@ class ConallEdgeClassSlideElementsFramework implements iConallEdgeInterfaceRende
 										<div class="col-lg-3">
 											<em class="edgtf-field-description"><?php esc_html_e( 'Font Family', 'conall' ); ?></em>
 											<select class="form-control edgtf-input edgtf-form-element"
-													id="slideelementfontfamily_x" 
-													name="slideelementfontfamily_x" 
+													id="slideelementfontfamily_x"
+													name="slideelementfontfamily_x"
 													>
 												<option value="-1"><?php esc_html_e( 'Default', 'conall' ); ?></option>
 												<?php foreach($conall_edge_fonts_array as $fontArray) { ?>
@@ -3376,7 +3376,7 @@ class ConallEdgeClassSlideElementsFramework implements iConallEdgeInterfaceRende
 									<div class="col-lg-12">
 										<em class="edgtf-field-description"><?php esc_html_e( 'Image', 'conall' ); ?></em>
 										<div class="edgtf-media-uploader">
-											<div style="display: none" 
+											<div style="display: none"
 												class="edgtf-media-image-holder">
 												<img src="" class="edgtf-media-image img-thumbnail"/>
 											</div>
@@ -3384,7 +3384,7 @@ class ConallEdgeClassSlideElementsFramework implements iConallEdgeInterfaceRende
 												 class="form-control edgtf-input edgtf-form-element edgtf-media-meta-fields">
 												<input type="hidden" class="edgtf-media-upload-url"
 													   id="slideelementimageurl_x"
-													   name="slideelementimageurl_x"		   
+													   name="slideelementimageurl_x"
 													   value=""/>
 												<input type="hidden" class="edgtf-media-upload-height"
 													   name="slideelementimageuploadheight_x"
@@ -3580,14 +3580,14 @@ class ConallEdgeClassSlideElementsFramework implements iConallEdgeInterfaceRende
 									<div class="col-lg-3">
 										<em class="edgtf-field-description"><?php esc_html_e( 'Icon Pack', 'conall' ); ?></em>
 										<select class="form-control edgtf-input edgtf-form-element edgtf-slide-element-button-icon-pack"
-												id="slideelementbuttoniconpack_x" 
-												name="slideelementbuttoniconpack_x" 
+												id="slideelementbuttoniconpack_x"
+												name="slideelementbuttoniconpack_x"
 												>
 										<?php
 										$icon_packs = conall_edge_icon_collections()->getIconCollectionsEmpty("no_icon");
 										foreach ($icon_packs as $key=>$value) { ?>
 											<option value="<?php echo esc_attr($key); ?>"><?php echo esc_attr($value); ?></option>
-										<?php	
+										<?php
 										}
 										?>
 										</select>
@@ -3605,7 +3605,7 @@ class ConallEdgeClassSlideElementsFramework implements iConallEdgeInterfaceRende
 										<?php
 										foreach ($icons_array as $key=>$value) { ?>
 											<option value="<?php echo esc_attr($key); ?>"><?php echo esc_attr($value); ?></option>
-										<?php	
+										<?php
 										}
 										?>
 										</select>
@@ -3933,8 +3933,8 @@ class ConallEdgeClassSlideElementsFramework implements iConallEdgeInterfaceRende
 											<div class="col-lg-3">
 												<em class="edgtf-field-description"><?php esc_html_e( 'Font Family', 'conall' ); ?></em>
 												<select class="form-control edgtf-input edgtf-form-element"
-														id="slideelementfontfamily_<?php echo esc_attr($no); ?>" 
-														name="slideelementfontfamily[]" 
+														id="slideelementfontfamily_<?php echo esc_attr($no); ?>"
+														name="slideelementfontfamily[]"
 														>
 													<option value="-1"><?php esc_html_e( 'Default', 'conall' ); ?></option>
 													<?php foreach($conall_edge_fonts_array as $fontArray) { ?>
@@ -4021,7 +4021,7 @@ class ConallEdgeClassSlideElementsFramework implements iConallEdgeInterfaceRende
 													 class="form-control edgtf-input edgtf-form-element edgtf-media-meta-fields">
 													<input type="hidden" class="edgtf-media-upload-url"
 														   id="slideelementimageurl_<?php esc_attr($no); ?>"
-														   name="slideelementimageurl[]"		   
+														   name="slideelementimageurl[]"
 														   value="<?php echo esc_attr($slide_element['slideelementimageurl']); ?>"/>
 													<input type="hidden" class="edgtf-media-upload-height"
 														   name="slideelementimageuploadheight[]"
@@ -4217,14 +4217,14 @@ class ConallEdgeClassSlideElementsFramework implements iConallEdgeInterfaceRende
 										<div class="col-lg-3">
 											<em class="edgtf-field-description"><?php esc_html_e( 'Icon Pack', 'conall' ); ?></em>
 											<select class="form-control edgtf-input edgtf-form-element edgtf-slide-element-button-icon-pack"
-													id="slideelementbuttoniconpack_<?php echo esc_attr($no); ?>" 
-													name="slideelementbuttoniconpack[]" 
+													id="slideelementbuttoniconpack_<?php echo esc_attr($no); ?>"
+													name="slideelementbuttoniconpack[]"
 													>
 											<?php
 											$icon_packs = conall_edge_icon_collections()->getIconCollectionsEmpty("no_icon");
 											foreach ($icon_packs as $key=>$value) { ?>
 												<option <?php if (isset($slide_element['slideelementbuttoniconpack']) && $slide_element['slideelementbuttoniconpack'] == $key) { echo "selected='selected'"; } ?>  value="<?php echo esc_attr($key); ?>"><?php echo esc_attr($value); ?></option>
-											<?php	
+											<?php
 											}
 											?>
 											</select>
@@ -4242,7 +4242,7 @@ class ConallEdgeClassSlideElementsFramework implements iConallEdgeInterfaceRende
 											<?php
 											foreach ($icons_array as $key=>$value) { ?>
 												<option <?php if (isset($slide_element['slideelementbuttonicon_'.$collection_key]) && $slide_element['slideelementbuttonicon_'.$collection_key] == $key) { echo "selected='selected'"; } ?>  value="<?php echo esc_attr($key); ?>"><?php echo esc_attr($value); ?></option>
-											<?php	
+											<?php
 											}
 											?>
 											</select>

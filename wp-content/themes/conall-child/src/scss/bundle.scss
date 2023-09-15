@@ -9,12 +9,20 @@
 @import "layout/video-wrapper";
 @import "modules/elements";
 @import "modules/carousel";
+@import "pages/page-common";
 @import "pages/forms";
-@import "pages/home-page";
-/* @import "pages/asco2023-page"; */
-@import "pages/esmo2023-page";
-@import "pages/careers-page";
-@import "pages/investors-page";
-@import "pages/rivoceranib-page";
+@import "pages/home";
+@import "pages/esmo2023";
+@import "pages/careers";
+@import "pages/investors";
+@import "pages/rivoceranib";
+@import "pages/apealea";
+@import "pages/board-of-directors";
+@import "pages/contact-us";
+@import "pages/expanded-access";
+@import "pages/leadership";
+@import "pages/mission-values";
+@import "pages/press-releases";
+@import "pages/publications";
 @import "pages/responsive";
 @import "base/hovers";

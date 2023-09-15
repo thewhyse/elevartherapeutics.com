@@ -96,13 +96,15 @@ class ConallEdgeClassSearchOpener extends ConallEdgeClassWidget {
             <?php conall_edge_inline_style($search_opener_styles); ?>
             <?php conall_edge_class_attribute($search_type_class); ?> href="javascript:void(0)">
             <span class="edgtf-search-opener-wrapper">
-                <?php if(isset($conall_edge_options['search_icon_pack'])) {
-	                conall_edge_icon_collections()->getSearchIcon($conall_edge_options['search_icon_pack'], false);
-                } ?>
+                <?php if(isset($conall_edge_options['search_icon_pack'])) { ?>
+                    <span class="search-icon-box">
+	                <?php conall_edge_icon_collections()->getSearchIcon($conall_edge_options['search_icon_pack'], false); ?>
+                    </span>
+                <?php } ?>
                 <?php if($show_search_text) { ?>
                     <span class="edgtf-search-icon-text"><?php esc_html_e('Search', 'conall'); ?></span>
                 <?php } ?>
-            </span>    
+            </span>
         </a>
     <?php }
 }
