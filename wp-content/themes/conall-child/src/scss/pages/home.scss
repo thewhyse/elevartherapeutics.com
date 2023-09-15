@@ -1,0 +1,173 @@
+@import "../base/colors";
+@import "../base/font";
+
+/* ******* HOME PAGE ******* */
+
+.home {
+    div#home_hero_row {
+        background-image: url(/wp-content/themes/conall-child/images/home-hero-1920x457.png);
+        background-color: $elevar_blue !important;
+        div#home-header {
+            h1 {
+                max-width: 720px;
+                padding: 0 0 15px 0;
+                border-bottom: 3px solid #fff;
+            }
+        }
+        div#home-subheader {
+            max-width: 400px;
+            margin: 0 auto !important;
+            h2 {
+            color: $white;
+            }
+        }
+    }
+    div#hp-therapeutics-section {
+        padding: 140px 0 20px 0;
+        background-color: $elevar_blue;
+        bottom: -1px;
+        div.elevar-heading {
+            h1.elevar-h1 {
+                color: $white;
+                font-size: 40px;
+                line-height: 50px;
+                margin: 25px 0;
+            }
+            p.elevar-p {
+                color: $white;
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+    }
+    div#hp-triple-section {
+        background-color: $elevar_blue;
+        padding: 40px 0 80px 0;
+        div#therapeutics-triple-section {
+            div.edgtf-full-section-inner {
+                div#col-triple-left {
+                    div#triple-img-left {
+                    }
+                    div#triple-textbox-left {
+                    }
+                }
+                div#col-triple-center {
+                    div#triple-img-center {
+                    }
+                    div#triple-textbox-center {
+                    }
+                }
+                div#col-triple-right {
+                    div#triple-img-right {
+                    }
+                    div#triple-textbox-right {
+                    }
+                }
+            }
+            div.triple-img {
+            }
+            h3.elevar-h3 {
+                color: $white;
+                font-size: 28px;
+                line-height: 36px;
+                max-width: 275px;
+                margin-bottom: 2% !important;
+                }
+            p.elevar-p {
+                color: $white;
+                font-size: 24px;
+                line-height: 36px;
+                font-weight: 600;
+            }
+            div.elevar-textbox {
+                margin-top: 25px !important;
+            }
+        }
+    }
+    div#hp-testimonial-section {
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .home {
+        div#home_hero_row {
+            background-image: url(/wp-content/themes/conall-child/images/home-hero-1920x457.png);
+            background-color: $elevar_blue !important;
+            div#home-header {
+                h1 {
+                    max-width: 720px;
+                    padding: 0 0 15px 0;
+                    border-bottom: 3px solid #fff;
+                }
+            }
+            div#home-subheader {
+                h2 {
+                color: $white;
+                }
+            }
+        }
+        
+        div#hp-therapeutics-section {
+            padding: 40px 0 20px 0;
+            background-color: $elevar_blue;
+            div.elevar-heading {
+                h1.elevar-h1 {
+                    color: $lt_blue_new;
+                    font-size: 40px;
+                    line-height: 1.65em;
+                    font-weight: 700;
+                    margin: 25px 0;
+                }
+                p.elevar-para {
+                    color: $white;
+                    font-size: 20px;
+                }
+            }
+        }
+        div#hp-triple-section {
+            background-color: $elevar_blue;
+            padding: 40px 0 50px 0;
+            div#therapeutics-triple-section {
+                div.edgtf-full-section-inner {
+                    div#col-triple-left {
+                        div#triple-img-left {
+                        }
+                        div#triple-textbox-left {
+                        }
+                    }
+                    div#col-triple-center {
+                        div#triple-img-center {
+                        }
+                        div#triple-textbox-center {
+                        }
+                    }
+                    div#col-triple-right {
+                        div#triple-img-right {
+                        }
+                        div#triple-textbox-right {
+                        }
+                    }
+                }
+                div.triple-img {
+                }
+                h3.elevar-h3 {
+                    color: $lt_blue_new;
+                    }
+                p.elevar-p {
+                    color: $white;
+                    font-size: 14px;
+                    line-height: 2em;
+                }
+            }
+        }
+        div#hp-testimonial-section {
+
+        }
+    }
+}
+
+@media all and (max-width: 414px) {
+
+}
+
+/* ******* END HOME PAGE ******* */

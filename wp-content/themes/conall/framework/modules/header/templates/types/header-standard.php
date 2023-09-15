@@ -21,15 +21,9 @@
             </div>
             <div class="edgtf-position-right">
                 <div class="edgtf-position-right-inner">
-                    <!-- <?php // if(is_active_sidebar('edgtf-header-standard-widget-area')) : ?>
-                        <?php // dynamic_sidebar('edgtf-header-standard-widget-area'); ?>
-                    <?php // endif; ?> -->
-                        <a class="edgtf-social-icon-widget-holder" href="https://www.linkedin.com/company/elevartherapeutics/" target="_blank">
-                            <img class="header-social-icon" src="/wp-content/themes/conall-child/images/header-icon-linkedin.svg" />
-                        </a>
-                        <a class="edgtf-social-icon-widget-holder" href="https://twitter.com/ElevarThera" target="_blank">
-                            <img class="header-social-icon" src="/wp-content/themes/conall-child/images/header-icon-x.svg" />
-                        </a>
+                    <?php if(is_active_sidebar('edgtf-header-standard-widget-area')) : ?>
+                        <?php dynamic_sidebar('edgtf-header-standard-widget-area'); ?>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>

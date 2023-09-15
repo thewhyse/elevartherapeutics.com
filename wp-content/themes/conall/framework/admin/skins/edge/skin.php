@@ -30,10 +30,10 @@ class EdgeSkin extends ConallEdgeClassSkinAbstract {
      * Method that registers skin scripts
      */
     public function registerScripts() {
-        $this->scripts['bootstrap.min'] = 'assets/js/bootstrap.min.js';
+        $this->scripts['bootstrap.min'] = 'assets/js/bootstrap.js';
         $this->scripts['jquery.nouislider.min'] = 'assets/js/edgtf-ui/jquery.nouislider.min.js';
         $this->scripts['edgtf-ui-admin'] = 'assets/js/edgtf-ui/edgtf-ui.js';
-        $this->scripts['edgtf-bootstrap-select'] = 'assets/js/edgtf-ui/edgtf-bootstrap-select.min.js';
+        $this->scripts['edgtf-bootstrap-select'] = 'assets/js/edgtf-ui/edgtf-bootstrap-select.js';
 
         foreach ($this->scripts as $scriptHandle => $scriptPath) {
             conall_edge_register_skin_script($scriptHandle, $scriptPath);
@@ -51,7 +51,7 @@ class EdgeSkin extends ConallEdgeClassSkinAbstract {
         $this->styles['edgtf-ui-admin'] = 'assets/css/edgtf-ui/edgtf-ui.css';
         $this->styles['edgtf-forms-admin'] = 'assets/css/edgtf-forms.css';
         $this->styles['edgtf-import'] = 'assets/css/edgtf-import.css';
-        $this->styles['font-awesome-admin'] = 'assets/css/font-awesome/css/font-awesome.min.css';
+        $this->styles['font-awesome-admin'] = 'assets/css/font-awesome/css/font-awesome.css';
 
         foreach ($this->styles as $styleHandle => $stylePath) {
             conall_edge_register_skin_style($styleHandle, $stylePath);

@@ -10,6 +10,9 @@
   width: 1397px;
 }
 #careers_hero_row {
+    background-image:
+        url(/wp-content/themes/conall-child/images/hero_white_wave-1920x140.svg),
+        url(/wp-content/themes/conall-child/images/careers-hero-1920x457.png);
   h1 {
     color: $white;
     border-bottom: 3px solid $white;
@@ -296,7 +299,6 @@
     color: $elevar_blue;
   }
 }
-
 div.container-iframe {
   position: relative;
   overflow: hidden;

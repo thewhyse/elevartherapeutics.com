@@ -35,7 +35,7 @@
     $(window).resize(edgtfOnWindowResize);
     $(window).scroll(edgtfOnWindowScroll);
 
-    /* 
+    /*
         All functions to be called on $(document).ready() should be in this function
     */
     function edgtfOnDocumentReady() {
@@ -64,7 +64,7 @@
         edgtfSlider().init();
     }
 
-    /* 
+    /*
         All functions to be called on $(window).on('load', ) should be in this function
     */
     function edgtfOnWindowLoad() {
@@ -74,7 +74,7 @@
         resetParallaxPositions();
     }
 
-    /* 
+    /*
         All functions to be called on $(window).resize() should be in this function
     */
     function edgtfOnWindowResize() {
@@ -84,7 +84,7 @@
         edgtfParallaxSections();
     }
 
-    /* 
+    /*
         All functions to be called on $(window).scroll() should be in this function
     */
     function edgtfOnWindowScroll() {
@@ -528,7 +528,7 @@
                         768:{
                             items:numberOfItemsTablet,
                         },
-                        1000:{
+                        1024:{
                             items:numberOfItems,
                         }
                     },
@@ -1200,7 +1200,7 @@
                         768:{
                             items: responsiveItems1
                         },
-                        600:{
+                        576:{
                             items: responsiveItems2
                         },
                         0:{
@@ -1532,13 +1532,13 @@
                 if (typeof element.data('default-font-size') === 'undefined') { element.data('default-font-size', parseInt(element.css('font-size'),10)); }
                 if (typeof element.data('default-line-height') === 'undefined') { element.data('default-line-height', parseInt(element.css('line-height'),10)); }
                 if (typeof element.data('default-letter-spacing') === 'undefined') { element.data('default-letter-spacing', parseInt(element.css('letter-spacing'),10)); }
-            }); 
+            });
             // Advanced text styles responsiveness
             slider.find('.edgtf-slide-element-responsive-text').each(function() {
                 if (typeof $(this).data('default-font-size') === 'undefined') { $(this).data('default-font-size', parseInt($(this).css('font-size'),10)); }
                 if (typeof $(this).data('default-line-height') === 'undefined') { $(this).data('default-line-height', parseInt($(this).css('line-height'),10)); }
                 if (typeof $(this).data('default-letter-spacing') === 'undefined') { $(this).data('default-letter-spacing', parseInt($(this).css('letter-spacing'),10)); }
-            });  
+            });
             // Button responsiveness
             slider.find('.edgtf-slide-element-responsive-button').each(function() {
                 if (typeof $(this).data('default-font-size') === 'undefined') { $(this).data('default-font-size', parseInt($(this).find('a').css('font-size'),10)); }
@@ -1548,7 +1548,7 @@
                 if (typeof $(this).data('default-padding-bottom') === 'undefined') { $(this).data('default-padding-bottom', parseInt($(this).find('a').css('padding-bottom'),10)); }
                 if (typeof $(this).data('default-padding-left') === 'undefined') { $(this).data('default-padding-left', parseInt($(this).find('a').css('padding-left'),10)); }
                 if (typeof $(this).data('default-padding-right') === 'undefined') { $(this).data('default-padding-right', parseInt($(this).find('a').css('padding-right'),10)); }
-            }); 
+            });
             // Margins for non-custom layouts
             slider.find('.edgtf-slide-element').each(function() {
                 var element = $(this);
@@ -1556,15 +1556,15 @@
                 if (typeof element.data('default-margin-bottom') === 'undefined') { element.data('default-margin-bottom', parseInt(element.css('margin-bottom'),10)); }
                 if (typeof element.data('default-margin-left') === 'undefined') { element.data('default-margin-left', parseInt(element.css('margin-left'),10)); }
                 if (typeof element.data('default-margin-right') === 'undefined') { element.data('default-margin-right', parseInt(element.css('margin-right'),10)); }
-            }); 
+            });
             adjustElementsSizes(slider);
         };
 
         var adjustElementsSizes = function(slider) {
             var boundaries = {
                 // These values must match those in map.php (for slider), slider.php and edgt.layout.inc
-                mobile: 600,
-                tabletp: 800,
+                mobile: 576,
+                tabletp: 768,
                 tabletl: 1024,
                 laptop: 1440
             };
@@ -1627,7 +1627,7 @@
                         'margin-right': Math.round(factor * def_m_r) + 'px'
                     });
                 });
-                
+
                 // Adjusting responsiveness
                 elements
                 .filter('.edgtf-slide-element-responsive-text, .edgtf-slide-element-responsive-button, .edgtf-slide-element-responsive-image')
@@ -1741,11 +1741,11 @@
                                 'top': new_top,
                                 'font-size': Math.round(factor * def_font_size) + 'px',
                                 'line-height': Math.round(factor * def_line_h) + 'px',
-                                'letter-spacing': Math.round(factor * def_let_spac) + 'px' 
+                                'letter-spacing': Math.round(factor * def_let_spac) + 'px'
                             });
                         }
                     }
-                }); 
+                });
             });
             var nav = slider.find('.carousel-indicators');
             slider.find('.edgtf-slide-element-section-link').css('bottom', nav.length ? parseInt(nav.css('bottom'),10) + nav.outerHeight() + 10 + 'px' : '20px');
@@ -1958,7 +1958,7 @@
                 }).on('mouseleave', function() {
                     navArrowHover($(this), false);
                 });
-    
+
                 nav_bullets.on('mouseenter', function() {
                     navBulletHover($(this), true);
                 }).on('mouseleave', function() {
@@ -2307,7 +2307,7 @@
             }
         }
     }
-    
+
     /**
      * Button object that initializes icon list with animation
      * @type {Function}
@@ -2409,8 +2409,8 @@
                     } else {
                         headerHeightOffset = $('.edgtf-page-header').height();
                     }
-
-                    if (edgtf.windowWidth > 1024) {
+                    // if (edgtf.windowWidth > 1024) {
+                    if (edgtf.windowWidth > 768) {
 
                         var widgetBottomMargin = 40;
                         var sidebarPosition = -(thisWidgetTopPosition - headerHeightOffset - 10);
@@ -2501,8 +2501,8 @@
     */
     function edgtfInitGalleryBlocks() {
         var item = $('.edgtf-gb-one-holder');
-
-        if(item.length && edgtf.windowWidth > 1024) {
+        // if(item.length && edgtf.windowWidth > 1024) {
+        if(item.length && edgtf.windowWidth > 768) {
             item.each(function() {
                 var thisItem = $(this);
                 thisItem.css({'opacity': '1'});
@@ -2524,7 +2524,7 @@
     function edgtfInitGalleryBlocksMasonry() {
 
         var container = $('.edgtf-gbm-holder .edgtf-gbm-inner');
-        
+
         if(container.length) {
 
             container.waitForImages(function() {
@@ -2547,7 +2547,7 @@
     function edgtfInitProductListShortcode() {
 
         var container = $('.edgtf-product-list-holder .edgtf-product-list');
-        
+
         if(container.length) {
 
             container.waitForImages(function() {
@@ -2620,7 +2620,7 @@
                                        lastScrollTop = st;
                                        //safari calcs fix
                                        if (edgtf.body.hasClass('edgtf-safari')) {
-                                            lastScrollTop = Math.abs(lastScrollTop); 
+                                            lastScrollTop = Math.abs(lastScrollTop);
                                        }
                                 });
                             }
@@ -2652,9 +2652,10 @@
                             thisSection.css({'visibility':'visible','opacity':'1'});
                         })
                     });
-            }); 
+            });
         }
-        if (edgtf.windowWidth >= 1024 && !$('html').hasClass('touch')) {
+        // if (edgtf.windowWidth >= 1024 && !$('html').hasClass('touch')) {
+        if (edgtf.windowWidth >= 768 && !$('html').hasClass('touch')) {
             var skrollrParallax = skrollr.init({
                 forceHeight: false,
                 smoothScrolling: false,
@@ -2669,14 +2670,14 @@
                 skrollrParallax.refresh(); //reinit due to miscalculations happening off window focus
                 resetParallaxPositions(); //prevent unintentional transform
             });
-        } 
+        }
     }
 
     /*
     * Reset parallax positions
     */
     function resetParallaxPositions() {
-        var st = $(window).scrollTop(),   
+        var st = $(window).scrollTop(),
         thisSection = $('.edgtf-parallax-section-advanced'),
         elements = $('.edgtf-parallax-hero-image-holder, .edgtf-parallax-info-section');
         if (thisSection.length) {

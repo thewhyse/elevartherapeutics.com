@@ -275,11 +275,11 @@ $elements_meta_box = conall_edge_create_meta_box(
         'name' => 'edgtf_holder_frame_responsive',
         'parent' => $holder_frame_responsive_container
     ));
-    
+
     $screen_widths_holder_frame = array(
         // These values must match those in edgt.layout.inc, slider.php and shortcodes.js
-        "mobile" => 600,
-        "tabletp" => 800,
+        "mobile" => 576,
+        "tabletp" => 768,
         "tabletl" => 1024,
         "laptop" => 1440
     );
@@ -393,7 +393,7 @@ $behaviours_meta_box = conall_edge_create_meta_box(
         'title' => esc_html__( 'Slide Behaviours', 'conall' ),
         'name' => 'edgtf_slides_behaviour_settings'
     )
-);  
+);
 
     conall_edge_add_admin_section_title(
         array(
