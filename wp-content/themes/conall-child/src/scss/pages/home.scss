@@ -7,14 +7,14 @@
     div#home_hero_row {
         background-image: url(/wp-content/themes/conall-child/images/home-hero-1920x457.png);
         background-color: $elevar_blue !important;
-        div#home-header {
+        div#home-hero-h1 {
             h1 {
                 max-width: 720px;
                 padding: 0 0 15px 0;
                 border-bottom: 3px solid #fff;
             }
         }
-        div#home-subheader {
+        div#home-hero-h2 {
             max-width: 400px;
             margin: 0 auto !important;
             h2 {
@@ -93,20 +93,20 @@
         div#home_hero_row {
             background-image: url(/wp-content/themes/conall-child/images/home-hero-1920x457.png);
             background-color: $elevar_blue !important;
-            div#home-header {
+            div#home-hero-h1 {
                 h1 {
                     max-width: 720px;
                     padding: 0 0 15px 0;
                     border-bottom: 3px solid #fff;
                 }
             }
-            div#home-subheader {
+            div#home-hero-h2 {
                 h2 {
                 color: $white;
                 }
             }
         }
-        
+
         div#hp-therapeutics-section {
             padding: 40px 0 20px 0;
             background-color: $elevar_blue;

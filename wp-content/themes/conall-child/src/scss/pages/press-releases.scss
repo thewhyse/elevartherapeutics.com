@@ -10,130 +10,130 @@
                 section.wpb-content-wrapper {
                     div#press_release_hero_row {
                         background-image: url("/wp-content/themes/conall-child/images/press-release-hero-1920x457.png");
-                    }
-                }
-                > div.edgtf-container-inner {
-                        width: 1485px;
-                        display: flex;
-                        flex-direction: column;
-                        padding: 0px;
-                        div.elevar-blog-toprow {
-                            display: flex;
-                            justify-content: flex-end;
-                            margin-top: -60px;
-                                div.widget.widget_archive {
-                                    width: 250px;
-                                    margin-bottom: 68px;
-                                }
                         }
-                        div.edgtf-blog-holder {
-                            display: flex;
-                            width: 100%;
-                            flex: 1;
+                    }
+                > div.edgtf-container-inner {
+                    width: 1485px;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0px;
+                    div.elevar-blog-toprow {
+                        display: flex;
+                        justify-content: flex-end;
+                        margin-top: -60px;
+                            div.widget.widget_archive {
+                                width: 250px;
+                                margin-bottom: 68px;
+                            }
+                    }
+                    div.edgtf-blog-holder {
+                        display: flex;
+                        width: 100%;
+                        flex: 1;
+                        flex-wrap: wrap;
+                        flex-direction: row;
+                        box-sizing: border-box;
+                        article.post {
+                            padding: 0;
+                            margin: 0 0 50px 25px;
+                            border: none;
+                            width: 48%;
+                            flex-basis: 48%;
                             flex-wrap: wrap;
-                            flex-direction: row;
+                            display: flex;
                             box-sizing: border-box;
-                            article.post {
-                                padding: 0;
-                                margin: 0 0 50px 25px;
-                                border: none;
-                                width: 48%;
-                                flex-basis: 48%;
-                                flex-wrap: wrap;
-                                display: flex;
-                                box-sizing: border-box;
-                                min-height: 525px;
-                                div.edgtf-post-content {
-                                    padding: 45px;
-                                    border: 1px solid $drk_gray3;
-                                    border-radius: 18px;
-                                    h2.entry-title.edgtf-post-title {
-                                        margin: 0 0 25px;
+                            min-height: 525px;
+                            div.edgtf-post-content {
+                                padding: 45px;
+                                border: 1px solid $drk_gray3;
+                                border-radius: 18px;
+                                h2.entry-title.edgtf-post-title {
+                                    margin: 0 0 25px;
+                                    a {
+                                        font-size: 28px;
+                                        line-height: 38px;
+                                        color: $elevar_blue;
+                                        font-weight: 700;
+                                        padding: 0;
+                                        letter-spacing: 2px;
+                                        text-transform: initial;
+                                    }
+                                }
+                                div.edgtf-post-info {
+                                    margin: 0;
+                                    div.edgtf-post-info-author {
+                                        display: none !important;
+                                    }
+                                    div.edgtf-post-info-date.entry-date {
+                                    position: relative;
+                                    display: flex;
+                                    padding: 0 25px 0 0;
+                                    line-height: 32px;
+                                    font-size: 18px;
                                         a {
-                                            font-size: 28px;
-                                            line-height: 38px;
-                                            color: $elevar_blue;
+                                            font-size: 21px;
+                                            line-height: 32px;
+                                            color: $drk_gray3;
                                             font-weight: 700;
                                             padding: 0;
-                                            letter-spacing: 2px;
-                                            text-transform: initial;
                                         }
                                     }
-                                    div.edgtf-post-info {
-                                        margin: 0;
-                                        div.edgtf-post-info-author {
-                                            display: none !important;
-                                        }
-                                        div.edgtf-post-info-date.entry-date {
+                                    div.edgtf-blog-like {
                                         position: relative;
                                         display: flex;
                                         padding: 0 25px 0 0;
+                                        font-size: inherit;
                                         line-height: 32px;
+                                        top: 0;
+                                        height: 32px;
                                         font-size: 18px;
                                             a {
-                                                font-size: 21px;
-                                                line-height: 32px;
-                                                color: $drk_gray3;
-                                                font-weight: 700;
-                                                padding: 0;
-                                            }
-                                        }
-                                        div.edgtf-blog-like {
-                                            position: relative;
-                                            display: flex;
-                                            padding: 0 25px 0 0;
-                                            font-size: inherit;
-                                            line-height: 32px;
-                                            top: 0;
-                                            height: 32px;
-                                            font-size: 18px;
-                                                a {
-                                                font-size: 21px;
-                                                line-height: 32px;
-                                                color: $drk_gray3;
-                                                font-weight: 700;
-                                                padding: 0;
-                                                i.icon_heart_alt {
-                                                    color: red;
-                                                }
-                                                }
-                                        }
-                                        div.edgtf-post-info-date.entry-date:after {
-                                            color: $drk_gray3;
-                                            right: 10px;
-                                        }
-                                    }
-                                    p.edgtf-post-excerpt {
-                                        padding: 0;
-                                        font-size: 21px;
-                                        line-height: 32px;
-                                        color: $drk_gray3;
-                                        font-weight: 400;
-                                    }
-                                    div.edgtf-post-read-more-holder {
-                                        a.edgtf-btn {
                                             font-size: 21px;
                                             line-height: 32px;
-                                            color: $elevar_blue;
-                                            justify-content: flex-start;
-                                            text-decoration: underline;
-                                            span.edgtf-btn-text {
-                                                letter-spacing: 0;
-                                                font-size: 21px;
-                                                line-height: 32px;
-                                                font-weight: 700;
+                                            color: $drk_gray3;
+                                            font-weight: 700;
+                                            padding: 0;
+                                            i.icon_heart_alt {
+                                                color: red;
                                             }
-                                            }
-                                            i {
-                                                display: none;
                                             }
                                     }
+                                    div.edgtf-post-info-date.entry-date:after {
+                                        color: $drk_gray3;
+                                        right: 10px;
+                                    }
+                                }
+                                p.edgtf-post-excerpt {
+                                    padding: 0;
+                                    font-size: 21px;
+                                    line-height: 32px;
+                                    color: $drk_gray3;
+                                    font-weight: 400;
+                                }
+                                div.edgtf-post-read-more-holder {
+                                    a.edgtf-btn {
+                                        font-size: 21px;
+                                        line-height: 32px;
+                                        color: $elevar_blue;
+                                        justify-content: flex-start;
+                                        text-decoration: underline;
+                                        span.edgtf-btn-text {
+                                            letter-spacing: 0;
+                                            font-size: 21px;
+                                            line-height: 32px;
+                                            font-weight: 700;
+                                        }
+                                        }
+                                        i {
+                                            display: none;
+                                        }
                                 }
                             }
-                            article.post:nth-child(odd) {
-                                margin: 0 25px 50px 0;
-                            }
                         }
+                        article.post:nth-child(odd) {
+                            margin: 0 25px 50px 0;
+                        }
+                    }
                 }
             }
         }

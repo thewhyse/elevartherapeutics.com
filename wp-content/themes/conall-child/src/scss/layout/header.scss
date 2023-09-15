@@ -10,6 +10,9 @@
 .edgtf-dark-header .edgtf-page-header > div:not(.edgtf-sticky-header):not(.fixed) .edgtf-main-menu > ul > li > a:hover {
   color: $elevar_blue !important;
 }
+.edgtf-drop-down .narrow .second .inner ul {
+    top: 2px;
+}
 
 .edgtf-page-header {
     max-height: 135px;
