@@ -51,7 +51,7 @@ div#esmo_23_hero_row {
         min-height: 457px; */
         background-color: $white;
         div.clearfix.edgtf-full-section-inner {
-            div#esmo-header {
+            div#esmo-hero-h1 {
                 /* padding-top: 56px !important; */
                 h1.elevar-h1 {
                     color: $white;
@@ -62,7 +62,7 @@ div#esmo_23_hero_row {
                     font-weight: 700;
                 }
             }
-            div#esmo-subheader {
+            div#esmo-hero-h2 {
                     padding-top: 30px !important;
                     div#esmo-icon-container {
                         display: flex;
@@ -486,6 +486,9 @@ div#future-events-row {
         > strong {
             display: block;
         }
+        > br {
+            display: none;
+        }
     }
     a {
       color: $white;
@@ -643,13 +646,13 @@ div#temp-footer-row {
         background-image: url(/wp-content/themes/conall-child/images/esmo-hero-1024x306.png);
         bottom: 1px;
         div.clearfix.edgtf-full-section-inner {
-            div#esmo-header {
+            div#esmo-hero-h1 {
                 h1.elevar-h1 {
                     font-size: 48px;
                     line-height: 60px;
                 }
             }
-            div#esmo-subheader {
+            div#esmo-hero-h2 {
                 padding-top: 0 !important;
             div#esmo-icon-container {
                 width: 378px;
@@ -1079,7 +1082,7 @@ div#temp-footer-row {
     div#esmo_23_hero_row {
         height: 385px;
         div.clearfix.edgtf-full-section-inner {
-            div#esmo-header {
+            div#esmo-hero-h1 {
                 /* padding-top: 44px !important; */
                 h1.elevar-h1 {
                     font-size: 42px;
@@ -1088,7 +1091,7 @@ div#temp-footer-row {
                     margin-top: 0;
                 }
             }
-            div#esmo-subheader {
+            div#esmo-hero-h2 {
                 padding-top: 10px !important;
             div#esmo-icon-container {
                 width: 330px;
@@ -1453,7 +1456,7 @@ div#temp-footer-row {
         background-image: url(/wp-content/themes/conall-child/images/esmo-hero-414x405.png);
         aspect-ratio: 414/400;
         div.clearfix.edgtf-full-section-inner {
-            div#esmo-header {
+            div#esmo-hero-h1 {
                 /* padding-top: 54px !important; */
                 h1.elevar-h1 {
                     max-width: 385px;
@@ -1464,7 +1467,7 @@ div#temp-footer-row {
                     margin: 0 auto;
                 }
             }
-            div#esmo-subheader {
+            div#esmo-hero-h2 {
                 padding-top: 25px !important;
             div#esmo-icon-container {
                 width: 300px;
@@ -1979,7 +1982,7 @@ div#temp-footer-row {
         aspect-ratio: 414/400;
         background-position: center top !important;
         div.clearfix.edgtf-full-section-inner {
-            div#esmo-header {
+            div#esmo-hero-h1 {
                 h1.elevar-h1 {
                     max-width: 316px;
                     font-size: 34px;
@@ -1987,7 +1990,7 @@ div#temp-footer-row {
                     margin-top: 0 !important;
                 }
             }
-            div#esmo-subheader {
+            div#esmo-hero-h2 {
                 padding-top: 20px !important;
             div#esmo-icon-container {
                     h2.elevar-h2 {
