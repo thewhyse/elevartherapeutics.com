@@ -27,12 +27,12 @@
                 flex-basis: 15%;
                 float: unset;
                 .edgtf-position-left-inner {
-                display: flex;
+                    display: flex;
                     .edgtf-logo-wrapper {
                         a {
                             max-height: 107px;
                             img.elevar-logo {
-                                aspect-ratio: 193/107;
+                                aspect-ratio: 199/107;
                                 min-width: 199px;
                             }
                         }
@@ -58,7 +58,7 @@
                             float: unset;
                             display: flex;
                                 > a {
-                                font-size: 18px;
+                                font-size: 14px;
                                 letter-spacing: 0;
                                 font-weight: 600;
                                 display: flex;
@@ -75,6 +75,20 @@
                                         top: 0;
                                         .item_text {
                                             display: flex;
+                                        }
+                                    }
+                                }
+                                .second {
+                                    .inner {
+                                        > ul {
+                                            > li {
+                                                > a {
+                                                    font-size: 14px;
+                                                }
+                                                :hover {
+                                                    color: $elevar_yellow;
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -122,7 +136,7 @@
                                 }
                             span.edgtf-search-icon-text {
                                 color: $black !important;
-                                font-size: 18px;
+                                font-size: 14px;
                                 font-weight: 500;
                             }
                         }
@@ -168,7 +182,7 @@
                             float: unset;
                             display: flex;
                                 > a {
-                                font-size: 18px;
+                                font-size: 14px;
                                 letter-spacing: 0;
                                 font-weight: 600;
                                 display: flex;
@@ -185,6 +199,17 @@
                                         top: 0;
                                         .item_text {
                                             display: flex;
+                                        }
+                                    }
+                                }
+                                .second {
+                                    .inner {
+                                        > ul {
+                                            > li {
+                                                > a {
+                                                    font-size: 14px;
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -209,6 +234,34 @@
                     justify-content: center;
                     align-items: center;
                     padding-right: 25%;
+                    a.edgtf-search-opener{
+                        span.edgtf-search-opener-wrapper {
+                            display: flex;
+                            line-height: 22px;
+                                span.search-icon-box {
+                                    background-color: $black;
+                                    border-radius: 5px;
+                                    display: flex;
+                                    width: 22px;
+                                    height: 22px;
+                                    justify-content: center;
+                                    align-items: center;
+                                    margin-right: 8px;
+                                    i.edgtf-icon-font-awesome.fa.fa-search {
+                                        color: #fff !important;
+                                        font-size: 14px;
+                                    }
+                                    :before {
+
+                                    }
+                                }
+                            span.edgtf-search-icon-text {
+                                color: $black !important;
+                                font-size: 14px;
+                                font-weight: 500;
+                            }
+                        }
+                    }
                  }
             }
         }
@@ -232,7 +285,7 @@
                             > ul {
                                 > li {
                                     > a {
-                                    font-size: 17px;
+                                    font-size: 14px;
                                         > span.item_outer {
                                             .item_text {
                                             }
@@ -274,7 +327,7 @@
                                 }
                             span.edgtf-search-icon-text {
                                 color: $black !important;
-                                font-size: 17px;
+                                font-size: 14px;
                                 font-weight: 500;
                             }
                         }
@@ -320,7 +373,7 @@
                                     float: unset;
                                     display: flex;
                                         > a {
-                                        font-size: 17px;
+                                        font-size: 14px;
                                         letter-spacing: 0;
                                         font-weight: 600;
                                         display: flex;
@@ -337,6 +390,17 @@
                                                 top: 0;
                                                 .item_text {
                                                     display: flex;
+                                                }
+                                            }
+                                        }
+                                        .second {
+                                            .inner {
+                                                > ul {
+                                                    > li {
+                                                        > a {
+                                                            font-size: 14px;
+                                                        }
+                                                    }
                                                 }
                                             }
                                         }
@@ -434,7 +498,7 @@
                                 float: unset;
                                 display: flex;
                                     > a {
-                                    font-size: 15px;
+                                    font-size: 13px;
                                     letter-spacing: 0;
                                     font-weight: 600;
                                     display: flex;
@@ -451,6 +515,17 @@
                                             top: 0;
                                             .item_text {
                                                 display: flex;
+                                            }
+                                        }
+                                    }
+                                    .second {
+                                        .inner {
+                                            > ul {
+                                                > li {
+                                                    > a {
+                                                        font-size: 13px;
+                                                    }
+                                                }
                                             }
                                         }
                                     }
@@ -498,7 +573,7 @@
                                     }
                                     span.edgtf-search-icon-text {
                                         color: $black !important;
-                                        font-size: 15px;
+                                        font-size: 14px;
                                         font-weight: 500;
                                     }
                             }
@@ -545,7 +620,7 @@
                                 float: unset;
                                 display: flex;
                                     > a {
-                                    font-size: 15px;
+                                    font-size: 13px;
                                     letter-spacing: 0;
                                     font-weight: 600;
                                     display: flex;
@@ -562,6 +637,17 @@
                                             top: 0;
                                             .item_text {
                                                 display: flex;
+                                            }
+                                        }
+                                    }
+                                    .second {
+                                        .inner {
+                                            > ul {
+                                                > li {
+                                                    > a {
+                                                        font-size: 13px;
+                                                    }
+                                                }
                                             }
                                         }
                                     }
@@ -609,7 +695,266 @@
                                     }
                                     span.edgtf-search-icon-text {
                                         color: $black !important;
-                                        font-size: 15px;
+                                        font-size: 14px;
+                                        font-weight: 500;
+                                    }
+                            }
+                        }
+                    }
+                }
+            }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .edgtf-page-header {
+        max-height: 135px;
+        .edgtf-menu-area {
+            height: 135px;
+            padding: 0 30px;
+            div.edgtf-vertical-align-containers {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: nowrap;
+                div.edgtf-position-left {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    width: 16%;
+                    flex-basis: 16%;
+                    float: unset;
+                    .edgtf-position-left-inner {
+                    display: flex;
+                        .edgtf-logo-wrapper {
+                            a {
+                                max-height: 80px;
+                                img.elevar-logo {
+                                    aspect-ratio: unset;
+                                    min-width: 149px;
+                                }
+                            }
+                        }
+                    }
+                }
+                div.edgtf-position-center {
+                    display: flex;
+                    width: 76%;
+                    flex-basis: 76%;
+                    position: relative;
+                    justify-content: center;
+                    align-items: center;
+                    .edgtf-position-center-inner {
+                    display: flex;
+                    width: 100%;
+                        nav.edgtf-main-menu {
+                        display: flex;
+                            > ul {
+                                display: flex;
+                                justify-content: space-between;
+                                > li {
+                                float: unset;
+                                display: flex;
+                                    > a {
+                                    font-size: 13px;
+                                    letter-spacing: 0;
+                                    font-weight: 600;
+                                    display: flex;
+                                    justify-content: center;
+                                    color: $black;
+                                        > span.item_outer {
+                                            padding: 0;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            -webkit-transform: translateY(0);
+                                            -moz-transform: translateY(0);
+                                            transform: translateY(0);
+                                            top: 0;
+                                            .item_text {
+                                                display: flex;
+                                            }
+                                        }
+                                    }
+                                    .second {
+                                        .inner {
+                                            > ul {
+                                                > li {
+                                                    > a {
+                                                        font-size: 13px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                li.edgtf-active-item {
+                                    a.current {
+                                    color: $elevar_blue;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                div.edgtf-position-right {
+                    display: flex;
+                    width: 8%;
+                    flex-basis: 8%;
+                    justify-content: flex-end;
+                    align-items: center;
+                    div.edgtf-position-right-inner {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding-right: 0%;
+                        a.edgtf-search-opener{
+                            span.edgtf-search-opener-wrapper {
+                                display: flex;
+                                line-height: 18px;
+                                    span.search-icon-box {
+                                        background-color: $black;
+                                        border-radius: 5px;
+                                        display: flex;
+                                        width: 18px;
+                                        height: 18px;
+                                        justify-content: center;
+                                        align-items: center;
+                                        margin-right: 5px;
+                                        i.edgtf-icon-font-awesome.fa.fa-search {
+                                            color: #fff !important;
+                                            font-size: 11px;
+                                        }
+                                        :before {
+
+                                        }
+                                    }
+                                    span.edgtf-search-icon-text {
+                                        color: $black !important;
+                                        font-size: 14px;
+                                        font-weight: 500;
+                                    }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .edgtf-sticky-header {
+            .edgtf-sticky-holder {
+            background-color: #fff !important;
+            div.edgtf-vertical-align-containers {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: nowrap;
+                padding: 0 30px;
+                div.edgtf-position-left {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    width: 16%;
+                    flex-basis: 16%;
+                    float: unset;
+                    .edgtf-position-left-inner {
+                        display: flex;
+                    }
+                }
+                div.edgtf-position-center {
+                    display: flex;
+                    width: 76%;
+                    flex-basis: 76%;
+                    position: relative;
+                    justify-content: center;
+                    align-items: center;
+                    .edgtf-position-center-inner {
+                        display: flex;
+                        width: 100%;
+                        nav.edgtf-main-menu {
+                            display: flex;
+                            > ul {
+                                display: flex;
+                                justify-content: space-between;
+                                > li {
+                                float: unset;
+                                display: flex;
+                                    > a {
+                                    font-size: 13px;
+                                    letter-spacing: 0;
+                                    font-weight: 600;
+                                    display: flex;
+                                    justify-content: center;
+                                    color: $black;
+                                        > span.item_outer {
+                                            padding: 0;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            -webkit-transform: translateY(0);
+                                            -moz-transform: translateY(0);
+                                            transform: translateY(0);
+                                            top: 0;
+                                            .item_text {
+                                                display: flex;
+                                            }
+                                        }
+                                    }
+                                    .second {
+                                        .inner {
+                                            > ul {
+                                                > li {
+                                                    > a {
+                                                        font-size: 13px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                li.edgtf-active-item {
+                                    a.current {
+                                    color: $elevar_blue;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                div.edgtf-position-right {
+                    display: flex;
+                    width: 8%;
+                    flex-basis: 8%;
+                    justify-content: flex-end;
+                    align-items: center;
+                    .edgtf-position-right-inner{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding-right: 0%;
+                        a.edgtf-search-opener{
+                            span.edgtf-search-opener-wrapper {
+                                display: flex;
+                                line-height: 18px;
+                                    span.search-icon-box {
+                                        background-color: $black;
+                                        border-radius: 5px;
+                                        display: flex;
+                                        width: 18px;
+                                        height: 18px;
+                                        justify-content: center;
+                                        align-items: center;
+                                        margin-right: 5px;
+                                        i.edgtf-icon-font-awesome.fa.fa-search {
+                                            color: #fff !important;
+                                            font-size: 11px;
+                                        }
+                                        :before {
+
+                                        }
+                                    }
+                                    span.edgtf-search-icon-text {
+                                        color: $black !important;
+                                        font-size: 14px;
                                         font-weight: 500;
                                     }
                             }

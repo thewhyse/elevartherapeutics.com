@@ -6,7 +6,7 @@
 			<div class="edgtf-form-holder-outer">
 				<div class="edgtf-form-holder">
 					<div class="edgtf-form-holder-inner">
-						<input type="text" placeholder="<?php esc_attr_e('Search for...', 'conall'); ?>" name="s" class="edgt_search_field" autocomplete="off" />
+						<input type="text" placeholder="<?php esc_attr_e('Search...', 'conall'); ?>" name="s" class="edgt_search_field" autocomplete="off" />
 						<div class="edgtf-search-close">
 							<a href="#">
 								<?php echo conall_edge_get_module_part($search_icon_close); ?>

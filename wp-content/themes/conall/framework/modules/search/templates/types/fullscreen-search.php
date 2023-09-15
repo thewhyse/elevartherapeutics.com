@@ -13,7 +13,7 @@
 					<div class="edgtf-form-holder">
 						<div class="edgtf-form-holder-inner">
 							<div class="edgtf-field-holder">
-								<input type="text"  placeholder="<?php esc_attr_e('Search for...', 'conall'); ?>" name="s" class="edgtf-search-field" autocomplete="off" />
+								<input type="text"  placeholder="<?php esc_attr_e('Search...', 'conall'); ?>" name="s" class="edgtf-search-field" autocomplete="off" />
 							</div>
 							<input type="submit" class="edgtf-search-submit" value="&#x55;" />
 							<div class="edgtf-line"></div>
