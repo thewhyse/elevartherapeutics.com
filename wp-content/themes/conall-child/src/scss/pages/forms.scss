@@ -290,7 +290,7 @@ div#hubspot-container-row {
                             &:hover {
                                 border: 2px solid $elevar_purple;
                                 background: #fff;
-                                color: $elevar_purple;
+                                color: $elevar_purple !important;
                             }
                     }
                 }
