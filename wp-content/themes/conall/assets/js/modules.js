@@ -2327,11 +2327,14 @@
                         0:{
                             items:numberOfItemsMobile,
                         },
-                        768:{
-                            items:numberOfItemsTablet,
+                        768: {
+                            items: numberOfItemsMobile,
                         },
-                        1024:{
-                            items:numberOfItems,
+                        1024: {
+                            items: numberOfItemsTablet,
+                        },
+                        1920: {
+                            items: numberOfItems,
                         }
                     },
                     margin:itemMargin,
@@ -2995,7 +2998,10 @@
                     loop: true,
                     dots: true,
                     nav: false,
-                    responsive:{
+                    responsive: {
+                        1920: {
+                            items: items
+                        },
                         1024:{
                             items: items
                         },
@@ -3368,7 +3374,8 @@
                 mobile: 576,
                 tabletp: 768,
                 tabletl: 1024,
-                laptop: 1440
+                laptop: 1440,
+                desktop: 1920,
             };
             slider.find('.edgtf-slider-elements-container').each(function() {
                 var container = $(this);

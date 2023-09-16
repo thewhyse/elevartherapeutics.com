@@ -4545,14 +4545,14 @@ aside.edgtf-sidebar .edgtf-blog-list-widget .edgtf-blog-list-holder .edgtf-blog-
 }
 
 .edgtf-logo-wrapper a img.edgtf-dark-logo {
-  opacity: 0;
+  opacity: 1;
   -webkit-transform: translateY(-100%);
   -moz-transform: translateY(-100%);
   transform: translateY(-100%);
 }
 
 .edgtf-logo-wrapper a img.edgtf-light-logo {
-  opacity: 0;
+  opacity: 1;
   -webkit-transform: translateY(-200%);
   -moz-transform: translateY(-200%);
   transform: translateY(-200%);
@@ -5586,7 +5586,7 @@ body[class*='edgtf-sticky'] .edgtf-sticky-header .edgtf-search-opener .edgtf-sea
 
 .edgtf-light-header .edgtf-page-header > div:not(.fixed):not(.edgtf-sticky-header) .edgtf-logo-wrapper .edgtf-normal-logo,
 .edgtf-light-header .edgtf-page-header > div:not(.fixed):not(.edgtf-sticky-header) .edgtf-logo-wrapper .edgtf-dark-logo {
-  opacity: 0;
+  opacity: 1;
 }
 
 .edgtf-light-header .edgtf-page-header > div:not(.fixed):not(.edgtf-sticky-header) .edgtf-menu-area {
@@ -5641,7 +5641,7 @@ body[class*='edgtf-sticky'] .edgtf-sticky-header .edgtf-search-opener .edgtf-sea
 
 .edgtf-dark-header .edgtf-page-header > div:not(.fixed):not(.edgtf-sticky-header) .edgtf-logo-wrapper .edgtf-normal-logo,
 .edgtf-dark-header .edgtf-page-header > div:not(.fixed):not(.edgtf-sticky-header) .edgtf-logo-wrapper .edgtf-light-logo {
-  opacity: 0;
+  opacity: 1;
 }
 
 .edgtf-dark-header .edgtf-page-header > div:not(.fixed):not(.edgtf-sticky-header) .edgtf-menu-area {

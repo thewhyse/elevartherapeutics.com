@@ -55,20 +55,15 @@ div#esmo_23_hero_row {
                 /* padding-top: 56px !important; */
                 h1.elevar-h1 {
                     color: $white;
-                    text-transform: uppercase;
-                    font-size: 56px;
-                    line-height: 42px;
-                    letter-spacing: 3px;
-                    font-weight: 700;
                 }
             }
             div#esmo-hero-h2 {
-                    padding-top: 30px !important;
+                    padding-top: 0px !important;
                     div#esmo-icon-container {
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
-                        width: 463px;
+                        width: 475px;
                         margin: 0 auto !important;
                         a {
                             display: flex;
@@ -119,10 +114,10 @@ div#esmo_23_hero_row {
                         img#cal-icon {
                             height: 28px;
                             width: 30px;
-                            padding-left: 15px;
-                            padding-right: 15px;
+                            margin-left: 15px;
+                            margin-right: 15px;
                             position: relative;
-                            top: 3px;
+                            top: 6px;
                         }
                     }
                     a:hover {
@@ -151,6 +146,7 @@ div#esmo_23_hero_row {
             a.esmo-button {
                 max-width: 200px;
                 margin-top: 30px !important;
+                margin-bottom: 30px !important;
                 font-weight: 700;
                 border-radius: 10px;
                 margin: 0 auto;
@@ -213,13 +209,14 @@ div#spotlight-row {
             font-weight: 700;
             letter-spacing: 0;
             margin-bottom: 30px !important;
+            text-transform: initial;
         }
         p.elevar-p {
-            font-size: 24px;
+            /* font-size: 24px;
             line-height: 32px;
             font-weight: 400;
             color: $drk_gray;
-            letter-spacing: 0;
+            letter-spacing: 0; */
         }
         #spotlight-body {
             margin: 0;
@@ -274,7 +271,10 @@ div#spotlight-row {
             div#col-spotlight-right {
                 padding-left: 10%;
                 div#spotlight-image {
-                    margin-top: 50px !important;
+                    margin-top: 30px !important;
+                    img.vc_single_image-img {
+                        border: 1px solid $black;
+                    }
                 }
             }
             div.vc_column-inner {
@@ -292,32 +292,25 @@ div#review-data-section {
         /* padding-top: 70px; */
         div#review-heading {
             h2.elevar-h2 {
-                font-weight: 700;
-                font-size: 36px;
-                line-height: 32px;
-                letter-spacing: 0;
-                color: $elevar_blue;
                 margin: 0;
-                text-transform: uppercase;
             }
         }
         div#review-top {
             max-width: 1200px;
             margin-top: 40px;
             h3.elevar-h3 {
-                font-weight: 700;
                 font-size: 24px;
                 line-height: 44px;
                 letter-spacing: 0;
-                color: $elevar_blue;
                 margin: 0;
+                text-transform: initial;
             }
             p.elevar-p {
-                font-weight: 400;
+                /* font-weight: 400;
                 font-size: 24px;
                 line-height: 32px;
                 letter-spacing: 0;
-                color: $drk_gray;
+                color: $drk_gray; */
                 margin: 0;
             }
         }
@@ -326,19 +319,18 @@ div#review-data-section {
             margin-top: 50px;
             margin-bottom: 50px !important;
             h3.elevar-h3 {
-                font-weight: 700;
                 font-size: 24px;
                 line-height: 44px;
                 letter-spacing: 0;
-                color: $elevar_blue;
                 margin: 0;
+                text-transform: initial;
             }
             p.elevar-p {
-                font-weight: 400;
+                /* font-weight: 400;
                 font-size: 24px;
                 line-height: 32px;
                 letter-spacing: 0;
-                color: $drk_gray;
+                color: $drk_gray; */
                 margin-bottom: 15px;
             }
             p.elevar-p.bottom {
@@ -424,11 +416,12 @@ div#explore-the-past {
                 div#explore-bodycopy {
                     max-width: 530px;
                     p.elevar-p {
-                        font-size: 24px;
-                        line-height: 32px;
                         color: $white;
+                        /* font-size: 24px;
+                        line-height: 32px;
+                        color: $white; */
                         margin: 0;
-                        font-weight: 400;
+                        /* font-weight: 400; */
                     }
                 }
             }
@@ -648,8 +641,8 @@ div#temp-footer-row {
         div.clearfix.edgtf-full-section-inner {
             div#esmo-hero-h1 {
                 h1.elevar-h1 {
-                    font-size: 48px;
-                    line-height: 60px;
+                    /* font-size: 48px;
+                    line-height: 60px; */
                 }
             }
             div#esmo-hero-h2 {
@@ -683,8 +676,6 @@ div#temp-footer-row {
                     align-items: center;
                     a {
                         img#cal-icon {
-                            padding-left: 15px;
-                            padding-right: 15px;
                             height: 27px;
                             width: 25px;
                             top: 4px;
@@ -722,11 +713,11 @@ div#temp-footer-row {
                 margin-bottom: 30px !important;
             }
             p.elevar-p {
-                font-size: 20px;
+                /* font-size: 20px;
                 line-height: 28px;
                 font-weight: 400;
                 color: $drk_gray;
-                letter-spacing: 0;
+                letter-spacing: 0; */
             }
             #spotlight-body {
                 margin: 0;
@@ -775,7 +766,7 @@ div#temp-footer-row {
                 div#col-spotlight-right {
                     padding-left: 60px;
                     div#spotlight-image {
-                        margin-top: 50px !important;
+                        margin-top: 30px !important;
                     }
                 }
                 div.vc_column-inner {
@@ -791,8 +782,8 @@ div#temp-footer-row {
             /* padding-top: 70px; */
             div#review-heading {
                 h2.elevar-h2 {
-                    font-size: 32px;
-                    line-height: 28px;
+                    /* font-size: 32px;
+                    line-height: 28px; */
                 }
             }
             div#review-top {
@@ -804,8 +795,8 @@ div#temp-footer-row {
                     margin-bottom: 10px;
                 }
                 p.elevar-p {
-                    font-size: 20px;
-                    line-height: 28px;
+                    /* font-size: 20px;
+                    line-height: 28px; */
                 }
                 p.elevar-p.bottom {
                 margin-top: 0 !important;
@@ -821,8 +812,8 @@ div#temp-footer-row {
                     margin-bottom: 10px;
                 }
                 p.elevar-p {
-                    font-size: 20px;
-                    line-height: 28px;
+                    /* font-size: 20px;
+                    line-height: 28px; */
                     margin-bottom: 20px !important;
                 }
             }
@@ -889,11 +880,11 @@ div#temp-footer-row {
                     }
                     div#explore-bodycopy {
                         p.elevar-p {
-                            font-size: 20px;
+                            /* font-size: 20px;
                             line-height: 28px;
-                            color: $white;
+                            color: $white; */
                             margin: 0;
-                            font-weight: 400;
+                            /* font-weight: 400; */
                         }
                     }
                 }
@@ -1085,9 +1076,9 @@ div#temp-footer-row {
             div#esmo-hero-h1 {
                 /* padding-top: 44px !important; */
                 h1.elevar-h1 {
-                    font-size: 42px;
+                    /* font-size: 42px;
                     line-height: 50px;
-                    letter-spacing: 2px;
+                    letter-spacing: 2px; */
                     margin-top: 0;
                 }
             }
@@ -1122,8 +1113,8 @@ div#temp-footer-row {
                     align-items: center;
                     a {
                         img#cal-icon {
-                            padding-left: 10px;
-                            padding-right: 10px;
+                            margin-left: 10px;
+                            margin-right: 10px;
                             height: 20px;
                             top: 5px;
                         }
@@ -1158,11 +1149,11 @@ div#temp-footer-row {
                 margin-bottom: 10px !important;
             }
             p.elevar-p {
-                font-size: 20px;
+                /* font-size: 20px;
                 line-height: 28px;
                 font-weight: 400;
                 color: $drk_gray;
-                letter-spacing: 0;
+                letter-spacing: 0; */
             }
             #spotlight-body {
                 margin: 0;
@@ -1211,7 +1202,7 @@ div#temp-footer-row {
                 div#col-spotlight-right {
                     padding-left: 40px;
                     div#spotlight-image {
-                        margin-top: 40px !important;
+                        margin-top: 20px !important;
                         img {
                             width: 90%;
                         }
@@ -1230,8 +1221,8 @@ div#temp-footer-row {
             /* padding-top: 80px; */
             div#review-heading {
                 h2.elevar-h2 {
-                    font-size: 28px;
-                    line-height: 28px;
+                   /*  font-size: 28px;
+                    line-height: 28px; */
                 }
             }
             div#review-top {
@@ -1240,11 +1231,10 @@ div#temp-footer-row {
                 h3.elevar-h3 {
                     font-size: 22px;
                     line-height: 32px;
-                    margin-bottom: 10px;
                 }
                 p.elevar-p {
-                    font-size: 20px;
-                    line-height: 28px;
+                    /* font-size: 20px;
+                    line-height: 28px; */
                 }
             }
             div#review-bottom {
@@ -1257,8 +1247,8 @@ div#temp-footer-row {
                     margin-bottom: 10px;
                 }
                 p.elevar-p {
-                    font-size: 20px;
-                    line-height: 28px;
+                    /* font-size: 20px;
+                    line-height: 28px; */
                     margin-bottom: 20px !important;
                 }
             }
@@ -1342,11 +1332,11 @@ div#temp-footer-row {
                         }
                         div#explore-bodycopy {
                             p.elevar-p {
-                                font-size: 20px;
+                                /* font-size: 20px;
                                 line-height: 28px;
-                                color: $white;
+                                color: $white; */
                                 margin: 0;
-                                font-weight: 400;
+                                /* font-weight: 400; */
                                 max-width: 100%;
                             }
                         }
@@ -1460,9 +1450,9 @@ div#temp-footer-row {
                 /* padding-top: 54px !important; */
                 h1.elevar-h1 {
                     max-width: 385px;
-                    font-size: 38px;
+                    /* font-size: 38px;
                     line-height: 38px;
-                    letter-spacing: 0px;
+                    letter-spacing: 0px; */
                     margin-top: 0 !important;
                     margin: 0 auto;
                 }
@@ -1510,7 +1500,7 @@ div#temp-footer-row {
                             color: $white;
                             transition: all 0.25s;
                             img#cal-icon {
-                                padding-left: 8px;
+                                margin-left: 8px;
                                 height: 24px;
                                 width: 22px;
                                 position: relative;
@@ -1592,11 +1582,11 @@ div#temp-footer-row {
                 margin-top: 10% !important;
             }
             p.elevar-p {
-                font-size: 20px;
+                /* font-size: 20px;
                 line-height: 28px;
                 font-weight: 400;
                 color: $drk_gray;
-                letter-spacing: 0;
+                letter-spacing: 0; */
             }
             #spotlight-body {
                 margin: 0;
@@ -1648,7 +1638,7 @@ div#temp-footer-row {
                     padding-left: 0px;
                     width: 100%;
                     div#spotlight-image {
-                        margin-top: 40px !important;
+                        margin-top: 7% !important;
                         width: 100%;
                         figure.wpb_wrapper.vc_figure {
                             width: 100%;
@@ -1677,21 +1667,19 @@ div#temp-footer-row {
             /* padding: 50px 0 50px 0 !important; */
             div#review-heading {
                 h2.elevar-h2 {
-                    font-size: 28px;
-                    line-height: 28px;
+                    /* font-size: 28px;
+                    line-height: 28px; */
                 }
             }
             div#review-top {
                 max-width: 500px;
                 margin-top: 30px;
                 h3.elevar-h3 {
-                    font-size: 22px;
-                    line-height: 32px;
-                    margin-bottom: 10px;
+
                 }
                 p.elevar-p {
-                    font-size: 20px;
-                    line-height: 28px;
+                   /*  font-size: 20px;
+                    line-height: 28px; */
                 }
             }
             div#review-bottom {
@@ -1699,13 +1687,13 @@ div#temp-footer-row {
                 margin-top: 30px;
                 margin-bottom: 30px !important;
                 h3.elevar-h3 {
-                    font-size: 22px;
+                    /* font-size: 22px;
                     line-height: 32px;
-                    margin-bottom: 10px;
+                    margin-bottom: 10px; */
                 }
                 p.elevar-p {
-                    font-size: 20px;
-                    line-height: 28px;
+                    /* font-size: 20px;
+                    line-height: 28px; */
                     margin-bottom: 20px !important;
                 }
             }
@@ -1797,11 +1785,11 @@ div#temp-footer-row {
                         }
                         div#explore-bodycopy {
                             p.elevar-p {
-                                font-size: 20px;
+                                /* font-size: 20px;
                                 line-height: 28px;
-                                color: $white;
+                                color: $white; */
                                 margin: 0;
-                                font-weight: 400;
+                                /* font-weight: 400; */
                                 max-width: 100%;
                             }
                         }
@@ -1985,8 +1973,8 @@ div#temp-footer-row {
             div#esmo-hero-h1 {
                 h1.elevar-h1 {
                     max-width: 316px;
-                    font-size: 34px;
-                    line-height: 34px;
+                    /* font-size: 34px;
+                    line-height: 34px; */
                     margin-top: 0 !important;
                 }
             }
@@ -2037,7 +2025,7 @@ div#temp-footer-row {
                             color: $white;
                             transition: all 0.25s;
                             img#cal-icon {
-                                padding-left: 8px;
+                                margin-left: 8px;
                                 height: 24px;
                                 width: 22px;
                                 position: relative;
@@ -2102,11 +2090,11 @@ div#temp-footer-row {
                 margin-bottom: 10px !important;
             }
             p.elevar-p {
-                font-size: 20px;
+                /* font-size: 20px;
                 line-height: 28px;
                 font-weight: 400;
                 color: $drk_gray;
-                letter-spacing: 0;
+                letter-spacing: 0; */
             }
             #spotlight-body {
                 margin: 0;
@@ -2157,10 +2145,7 @@ div#temp-footer-row {
                     padding-left: 0px;
                     width: 100%;
                     div#spotlight-image {
-                        margin-top: 40px !important;
-                        img {
-                            width: 90%;
-                        }
+                        margin-top: 20px !important;
                     }
                 }
                 div.vc_column-inner {
@@ -2177,8 +2162,8 @@ div#temp-footer-row {
             /* padding-top: 80px 0 80px 0 !important; */
             div#review-heading {
                 h2.elevar-h2 {
-                    font-size: 28px;
-                    line-height: 28px;
+                    /* font-size: 28px;
+                    line-height: 28px; */
                 }
             }
             div#review-top {
@@ -2190,8 +2175,8 @@ div#temp-footer-row {
                     margin-bottom: 10px;
                 }
                 p.elevar-p {
-                    font-size: 20px;
-                    line-height: 28px;
+                    /* font-size: 20px;
+                    line-height: 28px; */
                 }
             }
             div#review-bottom {
@@ -2204,8 +2189,8 @@ div#temp-footer-row {
                     margin-bottom: 10px;
                 }
                 p.elevar-p {
-                    font-size: 20px;
-                    line-height: 28px;
+                    /* font-size: 20px;
+                    line-height: 28px; */
                     margin-bottom: 20px !important;
                 }
             }
@@ -2279,7 +2264,7 @@ div#temp-footer-row {
                             line-height: 28px;
                             color: $white;
                             margin: 0;
-                            font-weight: 400;
+                            /* font-weight: 400; */
                             max-width: 275px;
                         }
                     }

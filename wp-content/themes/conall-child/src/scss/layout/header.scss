@@ -10,12 +10,14 @@
 .edgtf-dark-header .edgtf-page-header > div:not(.edgtf-sticky-header):not(.fixed) .edgtf-main-menu > ul > li > a:hover {
   color: $elevar_blue !important;
 }
-.edgtf-drop-down .narrow .second .inner ul {
-    top: 2px;
+.edgtf-fullscreen-search-opened .edgtf-form-holder .edgtf-search-field {
+    letter-spacing: 0;
 }
-
 .edgtf-page-header {
-    max-height: 135px;
+    height: 135px;
+    border: none;
+    background-color: #ffffff !important;
+    top: 1px;
     .edgtf-menu-area {
         height: 135px;
         div.edgtf-vertical-align-containers {
@@ -85,8 +87,10 @@
                                     .inner {
                                         > ul {
                                             > li {
+                                                width: 250px;
                                                 > a {
                                                     font-size: 14px;
+                                                    color: $white;
                                                 }
                                                 :hover {
                                                     color: $elevar_yellow;
@@ -149,6 +153,7 @@
         }
     }
     .edgtf-sticky-header {
+        height: 85px;
         .edgtf-sticky-holder {
         background-color: #fff !important;
         div.edgtf-vertical-align-containers {
@@ -207,10 +212,16 @@
                                 }
                                 .second {
                                     .inner {
+                                        top: 1px;
                                         > ul {
                                             > li {
+                                                width: 250px;
                                                 > a {
                                                     font-size: 14px;
+                                                    color: $white;
+                                                }
+                                                :hover {
+                                                    color: $elevar_yellow;
                                                 }
                                             }
                                         }
@@ -271,7 +282,98 @@
         }
     }
 }
+.edgtf-mobile-header {
+    .edgtf-mobile-header-inner {
+        height: 95px;
+        background-color: #fff;
+        border-bottom: none;
+        div.edgtf-mobile-header-holder {
+            div.edgtf-grid {
+                width: 100%;
+                padding-left: 10%;
+                padding-right: 10%;
+                div.edgtf-vertical-align-containers {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: nowrap;
+                    div.edgtf-mobile-menu-opener {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        width: 15%;
+                        flex-basis: 15%;
+                        float: unset;
+                        a {
+                            span.edgtf-mobile-opener-icon-holder {
+                                span.edgtf-icon-font-elegant.icon_menu {
 
+                                }
+                                :before {
+
+                                }
+                            }
+                        }
+                    }
+                    div.edgtf-position-center {
+                        display: flex;
+                        width: 70%;
+                        flex-basis: 70%;
+                        position: relative;
+                        justify-content: center;
+                        align-items: center;
+                        div.edgtf-position-center-inner {
+                            div.edgtf-mobile-logo-wrapper {
+                                a {
+                                    img {
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    div.edgtf-position-right {
+                        display: flex;
+                        width: 15%;
+                        flex-basis: 15%;
+                        justify-content: flex-end;
+                        align-items: center;
+                        div.edgtf-position-right-inner {
+                            a.edgtf-search-opener {
+                                span.edgtf-search-opener-wrapper {
+                                    display: flex;
+                                    line-height: 22px;
+                                    span.search-icon-box {
+                                        background-color: $black;
+                                        border-radius: 5px;
+                                        display: flex;
+                                        width: 22px;
+                                        height: 22px;
+                                        justify-content: center;
+                                        align-items: center;
+                                        margin-right: 8px;
+                                        i.edgtf-icon-font-awesome.fa.fa-search {
+                                            color: #fff !important;
+                                            font-size: 14px;
+                                        }
+                                        :before {
+
+                                        }
+                                    }
+                                    span.edgtf-search-icon-text {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        nav.edgtf-mobile-nav {
+
+        }
+    }
+}
 @media only screen and (max-width: 1200px) {
     .edgtf-page-header {
         .edgtf-menu-area {
@@ -501,7 +603,7 @@
                                 float: unset;
                                 display: flex;
                                     > a {
-                                    font-size: 13px;
+                                    font-size: 14px;
                                     letter-spacing: 0;
                                     font-weight: 600;
                                     display: flex;
@@ -526,7 +628,7 @@
                                             > ul {
                                                 > li {
                                                     > a {
-                                                        font-size: 13px;
+                                                        font-size: 14px;
                                                     }
                                                 }
                                             }
@@ -623,7 +725,7 @@
                                 float: unset;
                                 display: flex;
                                     > a {
-                                    font-size: 13px;
+                                    font-size: 14px;
                                     letter-spacing: 0;
                                     font-weight: 600;
                                     display: flex;
@@ -648,7 +750,7 @@
                                             > ul {
                                                 > li {
                                                     > a {
-                                                        font-size: 13px;
+                                                        font-size: 14px;
                                                     }
                                                 }
                                             }
@@ -760,7 +862,7 @@
                                 float: unset;
                                 display: flex;
                                     > a {
-                                    font-size: 13px;
+                                    font-size: 14px;
                                     letter-spacing: 0;
                                     font-weight: 600;
                                     display: flex;
@@ -785,7 +887,7 @@
                                             > ul {
                                                 > li {
                                                     > a {
-                                                        font-size: 13px;
+                                                        font-size: 14px;
                                                     }
                                                 }
                                             }
@@ -882,7 +984,7 @@
                                 float: unset;
                                 display: flex;
                                     > a {
-                                    font-size: 13px;
+                                    font-size: 14px;
                                     letter-spacing: 0;
                                     font-weight: 600;
                                     display: flex;
@@ -907,7 +1009,7 @@
                                             > ul {
                                                 > li {
                                                     > a {
-                                                        font-size: 13px;
+                                                        font-size: 14px;
                                                     }
                                                 }
                                             }

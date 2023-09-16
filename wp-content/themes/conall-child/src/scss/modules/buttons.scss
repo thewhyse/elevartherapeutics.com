@@ -1,0 +1,46 @@
+@import "../base/colors";
+@import "../base/font";
+
+/* ******* BUTTON STYLING START ******* */
+a.edgtf-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $elevar_purple;
+    color: $white  !important;
+    border-color: $elevar_purple;
+    font-size: 24px;
+    line-height: 36px;
+    height: 54px;
+    border-radius: 10px;
+    padding: 0;
+    :hover {
+    background-color: $white;
+    color: $elevar_purple  !important;
+    border-color: $elevar_purple;
+    }
+}
+
+.edgtf-search-page-holder .edgtf-search-page-form .edgtf-form-holder input.edgtf-search-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $elevar_purple;
+    color: $white !important;
+    border-color: $elevar_purple;
+    font-size: 24px;
+    line-height: 36px;
+    height: 54px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 0;
+    width: 100%;
+    :hover {
+    background-color: $white;
+    color: $elevar_purple !important;
+    border-color: $elevar_purple;
+    }
+}
+
+
+/* ******* BUTTON STYLING END ******* */

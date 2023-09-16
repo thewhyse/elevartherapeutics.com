@@ -2245,11 +2245,11 @@
   }
 }
 
-@media only screen and (max-width: 1200px) {
+/* @media only screen and (max-width: 1200px) {
   .edgtf-testimonials-holder .edgtf-tes-nav {
     display: none;
   }
-}
+} */
 
 @media only screen and (max-width: 1024px) {
   .edgtf-testimonials-holder .edgtf-tes-image-nav > ul > li {
@@ -2263,9 +2263,9 @@
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
-  .edgtf-testimonials-holder .edgtf-tes-nav {
+/*   .edgtf-testimonials-holder .edgtf-tes-nav {
     display: none;
-  }
+  } */
 }
 
 @media only screen and (max-width: 576px) {
