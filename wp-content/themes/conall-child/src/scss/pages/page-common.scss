@@ -2,42 +2,58 @@
 @import "../base/font";
 
 /* ******* 2023 PAGE COMMON STYLING ******* */
-h1.elevar-h1 {
-    color: $elevar_blue;
-    font-size: 56px;
-    line-height: 70px;
-    letter-spacing: 4.5px;
-    text-transform: uppercase;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
     font-weight: 700;
-}
-h2.elevar-h2 {
     color: $elevar_blue;
-    font-size: 28px;
-    line-height: 32px;
-    letter-spacing: 0;
-    text-transform: initial;
-    font-weight: 600;
+    text-transform: uppercase;
 }
-h3.elevar-h3 {
-    color: $elevar_blue;
+h1, h1.elevar-h1 {
+    font-size: 40px;
+    line-height: 70px;
+    letter-spacing: 3.5px;
+}
+h2, h2.elevar-h2 {
+    font-size: 36px;
+    line-height: 38px;
+    letter-spacing: 2.5px;
+}
+h3, h3.elevar-h3 {
     font-size: 28px;
     line-height: 32px;
     letter-spacing: 2px;
-    font-weight: 700;
 }
-h4.elevar-h4 {
+h4, h4.elevar-h4 {
+    font-size: 24px;
+    line-height: 27px;
+    letter-spacing: 2px;
 }
-h5.elevar-h5 {
+h5, h5.elevar-h5 {
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: 1px;
 }
-h6.elevar-h6 {
+h6, h6.elevar-h6 {
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 1px;
 }
-p.elevar-p {
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+    color: $lt_blue;
+}
+p, p.elevar-p {
     color: $drk_gray3;
-    font-size: 21px;
-    line-height: 32px;
+    font-size: 17px;
+    line-height: 28px;
     font-weight: 400;
     letter-spacing: 0;
 }
+input, textarea, select {
+    color: $drk_gray3 !important;
+    border-color: $reviewgrey !important;
+}
+
 div.hero-row {
     height: 100%;
     background-position: center top !important;
@@ -72,4 +88,347 @@ div.hero-row {
     }
 }
 
+@media all and (max-width: 1024px) {
+    h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    font-weight: 700;
+    color: $elevar_blue;
+    text-transform: uppercase;
+    }
+    h1, h1.elevar-h1 {
+        font-size: 40px;
+        line-height: 70px;
+        letter-spacing: 3.5px;
+    }
+    h2, h2.elevar-h2 {
+        font-size: 32px;
+        line-height: 36px;
+        letter-spacing: 2.5;
+    }
+    h3, h3.elevar-h3 {
+        font-size: 28px;
+        line-height: 32px;
+        letter-spacing: 2px;
+    }
+    h4, h4.elevar-h4 {
+        font-size: 24px;
+        line-height: 27px;
+        letter-spacing: 2px;
+    }
+    h5, h5.elevar-h5 {
+        font-size: 22px;
+        line-height: 25px;
+        letter-spacing: 1px;
+    }
+    h6, h6.elevar-h6 {
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 1px;
+    }
+    h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+        color: $lt_blue;
+    }
+    p, p.elevar-p {
+        color: $drk_gray3;
+        font-size: 17px;
+        line-height: 28px;
+        font-weight: 400;
+        letter-spacing: 0;
+    }
+    input, textarea, select {
+        font-family: 'Raleway', sans-serif !important;
+        color: $drk_gray3 !important;
+        border-color: $reviewgrey !important;
+    }
+    div.hero-row {
+        height: 100%;
+        background-position: center top !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        bottom: -1px;
+        padding-top: 30.5%;
+            div.clearfix.edgtf-full-section-inner {
+            div.wpb_column {
+                padding-left: 5%;
+                padding-right: 5%;
+                div.elevar-h1header {
+                h1 {
+                    color: $white;
+                    text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+                    margin: 0 auto 20px auto;
+                    }
+                }
+                div.elevar-h2header {
+                    h2 {
+                        color: $white;
+                        text-shadow: 3px 3px 5px rgba(0,0,0,0.75);
+                    }
+                }
+            }
+
+        }
+    }
+}
+@media all and (max-width: 768px) {
+    h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    font-weight: 700;
+    color: $elevar_blue;
+    text-transform: uppercase;
+    }
+    h1, h1.elevar-h1 {
+        font-size: 40px;
+        line-height: 70px;
+        letter-spacing: 3.5px;
+    }
+    h2, h2.elevar-h2 {
+        font-size: 30px;
+        line-height: 34px;
+        letter-spacing: 2;
+    }
+    h3, h3.elevar-h3 {
+        font-size: 28px;
+        line-height: 32px;
+        letter-spacing: 2px;
+    }
+    h4, h4.elevar-h4 {
+        font-size: 24px;
+        line-height: 27px;
+        letter-spacing: 2px;
+    }
+    h5, h5.elevar-h5 {
+        font-size: 22px;
+        line-height: 25px;
+        letter-spacing: 1px;
+    }
+    h6, h6.elevar-h6 {
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 1px;
+    }
+    h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+        color: $lt_blue;
+    }
+    p, p.elevar-p {
+        color: $drk_gray3;
+        font-size: 17px;
+        line-height: 28px;
+        font-weight: 400;
+        letter-spacing: 0;
+    }
+    input, textarea, select {
+        font-family: 'Raleway', sans-serif !important;
+        color: $drk_gray3 !important;
+        border-color: $reviewgrey !important;
+    }
+    div.hero-row {
+        height: 100%;
+        background-position: center top !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        bottom: -1px;
+        padding-top: 23.80%;
+            div.clearfix.edgtf-full-section-inner {
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            div.wpb_column {
+                padding-left: 10%;
+                padding-right: 10%;
+                div.elevar-h1header {
+                h1 {
+                    color: $white;
+                    text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+                    margin: 0 auto 20px auto;
+                    }
+                }
+                div.elevar-h2header {
+                    h2 {
+                        color: $white;
+                        text-shadow: 3px 3px 5px rgba(0,0,0,0.75);
+                    }
+                }
+            }
+
+        }
+    }
+}
+@media all and (max-width: 576px) {
+    h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    font-weight: 700;
+    color: $elevar_blue;
+    text-transform: uppercase;
+    }
+    h1, h1.elevar-h1 {
+        font-size: 40px;
+        line-height: 70px;
+        letter-spacing: 3.5px;
+    }
+    h2, h2.elevar-h2 {
+        font-size: 28px;
+        line-height: 32px;
+        letter-spacing: 1.75;
+    }
+    h3, h3.elevar-h3 {
+        font-size: 28px;
+        line-height: 32px;
+        letter-spacing: 2px;
+    }
+    h4, h4.elevar-h4 {
+        font-size: 24px;
+        line-height: 27px;
+        letter-spacing: 2px;
+    }
+    h5, h5.elevar-h5 {
+        font-size: 22px;
+        line-height: 25px;
+        letter-spacing: 1px;
+    }
+    h6, h6.elevar-h6 {
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 1px;
+    }
+    h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+        color: $lt_blue;
+    }
+    p, p.elevar-p {
+        color: $drk_gray3;
+        font-size: 17px;
+        line-height: 28px;
+        font-weight: 400;
+        letter-spacing: 0;
+    }
+    input, textarea, select {
+        font-family: 'Raleway', sans-serif !important;
+        color: $drk_gray3 !important;
+        border-color: $reviewgrey !important;
+    }
+    div.hero-row {
+        height: 100%;
+        background-position: center top !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        bottom: -1px;
+        padding-top: 23.80%;
+            div.clearfix.edgtf-full-section-inner {
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            div.wpb_column {
+                padding-left: 10%;
+                padding-right: 10%;
+                div.elevar-h1header {
+                h1 {
+                    color: $white;
+                    text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+                    margin: 0 auto 20px auto;
+                    }
+                }
+                div.elevar-h2header {
+                    h2 {
+                        color: $white;
+                        text-shadow: 3px 3px 5px rgba(0,0,0,0.75);
+                    }
+                }
+            }
+
+        }
+    }
+}
+@media all and (max-width: 480px) {
+    h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    font-weight: 700;
+    color: $elevar_blue;
+    text-transform: uppercase;
+    }
+    h1, h1.elevar-h1 {
+        font-size: 40px;
+        line-height: 70px;
+        letter-spacing: 3.5px;
+    }
+    h2, h2.elevar-h2 {
+        font-size: 28px;
+        line-height: 32px;
+        letter-spacing: 1.75;
+    }
+    h3, h3.elevar-h3 {
+        font-size: 28px;
+        line-height: 32px;
+        letter-spacing: 2px;
+    }
+    h4, h4.elevar-h4 {
+        font-size: 24px;
+        line-height: 27px;
+        letter-spacing: 2px;
+    }
+    h5, h5.elevar-h5 {
+        font-size: 22px;
+        line-height: 25px;
+        letter-spacing: 1px;
+    }
+    h6, h6.elevar-h6 {
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 1px;
+    }
+    h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+        color: $lt_blue;
+    }
+    p, p.elevar-p {
+        color: $drk_gray3;
+        font-size: 17px;
+        line-height: 28px;
+        font-weight: 400;
+        letter-spacing: 0;
+    }
+    input, textarea, select {
+        font-family: 'Raleway', sans-serif !important;
+        color: $drk_gray3 !important;
+        border-color: $reviewgrey !important;
+    }
+    div.hero-row {
+        height: 100%;
+        background-position: center top !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        bottom: -1px;
+        padding-top: 23.80%;
+            div.clearfix.edgtf-full-section-inner {
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            div.wpb_column {
+                padding-left: 10%;
+                padding-right: 10%;
+                div.elevar-h1header {
+                h1 {
+                    color: $white;
+                    text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+                    margin: 0 auto 20px auto;
+                    }
+                }
+                div.elevar-h2header {
+                    h2 {
+                        color: $white;
+                        text-shadow: 3px 3px 5px rgba(0,0,0,0.75);
+                    }
+                }
+            }
+
+        }
+    }
+}
 /* ******* END 2023 PAGE COMMON STYLING ******* */

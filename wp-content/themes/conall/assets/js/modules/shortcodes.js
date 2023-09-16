@@ -526,10 +526,13 @@
                             items:numberOfItemsMobile,
                         },
                         768:{
-                            items:numberOfItemsTablet,
+                            items:numberOfItemsMobile,
                         },
                         1024:{
-                            items:numberOfItems,
+                            items: numberOfItemsTablet,
+                        },
+                        1920: {
+                            items: numberOfItems,
                         }
                     },
                     margin:itemMargin,

@@ -1,0 +1,74 @@
+@import "../base/colors";
+@import "../base/font";
+
+/* ************ SEARCH START ************ */
+.edgtf-fullscreen-search-holder .edgtf-search-submit {
+    font-family: 'ElegantIcons' !important;
+}
+.edgtf-search-page-holder {
+    .edgtf-search-page-form {
+            .edgtf-form-holder {
+            position: relative;
+            display: flex;
+            width: 100%;
+            vertical-align: middle;
+            clear: both;
+            div.edgtf-column-left {
+                display: flex;
+                flex: 4;
+            }
+            div.edgtf-column-right {
+                display: flex;
+                width: unset;
+                text-align: center;
+                flex: 1;
+            }
+        }
+    }
+}
+.edgtf-pagination {
+    background-color: $white;
+    ul {
+        li {
+        margin: 0 12px;
+            a {
+
+            }
+        }
+    }
+}
+.edgtf-pagination ul li a,
+.edgtf-pagination ul li.active span {
+    background-color: #efefef;
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    border: 0;
+    border-radius: 100%;
+    -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+    -moz-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+.edgtf-pagination ul li a:hover,
+.edgtf-pagination ul li.active span {
+    color: $white;
+    background-color: $elevar_purple;
+}
+.edgtf-search-page-holder article .edgtf-post-title-area .edgtf-post-info > div.edgtf-post-info-author .edgtf-post-info-author-link {
+    color: $lt_blue;
+}
+.edgtf-search-page-holder .edgtf-search-page-form .edgtf-form-holder .edgtf-search-field {
+    height: 54px;
+}
+/* ************ SEARCH END ************ */
