@@ -3,8 +3,391 @@
 
 /* ******* LEADERSHIP 2023 PAGE ******* */
 div#leadership_hero_row {
-        background-image:
-        url(/wp-content/themes/conall-child/images/hero_white_wave-1920x140.svg),
-        url(/wp-content/themes/conall-child/images/leadership-hero-1920x457.png);
+        background-image:url("/wp-content/themes/conall-child/images/leadership-hero-1920x457.png");
+        div.clearfix.edgtf-full-section-inner {
+        div#leadership-hero-h1 {
+            text-align: center;
+                h1.elevar-h1 {
+
+                }
+        }
+    }
 }
+div#leadership-content {
+    padding: 75px 0 65px 0 !important;
+    div.leadership-row {
+        padding-bottom: 40px !important;
+        div.col-leadership {
+            div.vc_column-inner {
+                > div.wpb_wrapper {
+                    display: grid;
+                    grid-template-columns: 350px auto;
+                    grid-template-rows: auto 260px auto;
+                    grid-column-gap: 0px;
+                    grid-row-gap: 0px;
+                    div.leadership-title {
+                        grid-area: 1 / 1 / 2 / 3;
+                        margin-bottom: 40px !important;
+                        h2.elevar-h2 {
+                            text-transform: initial;
+                            font-size: 28px;
+                            line-height: 38px;
+                            font-weight: 500;
+                            letter-spacing: 0;
+                            strong {
+                                font-weight: 700;
+                                text-transform: uppercase;
+                            }
+                        }
+                    }
+                    div.leadership-image {
+                        grid-area: 2 / 1 / 3 / 2;
+                    }
+                    div.leadership-section {
+                        grid-area: 2 / 2 / 3 / 3;
+                        max-width: 1080px;
+                        margin-left: 45px !important;
+                        p.elevar-p.top-2 {
+                                margin-top: 20px !important;
+                            }
+                        }
+                    div.leadership-section.bottom {
+                    grid-area: 3 / 1 / 4 / 3;
+                    margin-top: 20px !important;
+                    max-width: 100%;
+                    margin-left: 0 !important;
+                    div.read-more {
+                        display: none;
+                        font-size: 17px;
+                        cursor:pointer;
+                        color: $elevar_blue;
+                        transition: all 1s;
+                        text-transform: uppercase;
+                        text-decoration: underline;
+                        font-weight: 700;
+                        margin: 5px 0 5px 0;
+                        transition: all 0.75s;
+                    }
+                    div.read-more:hover {
+                        color: $elevar_purple;
+                        transition: all 0.75s;
+                    }
+                    div.hide {
+                        transition: all 0.75s;
+                        p.elevar-p.bottom-2 {
+                        margin-top: 20px !important;
+                        }
+                        p.elevar-p.single {
+                        margin-top: 20px !important;
+                        }
+                    }
+                    }
+                }
+            }
+        }
+    }
+    div.leadership-row:not(:last-child):after {
+        content: "";
+        display: block;
+        padding-top: 50px !important;
+        border-bottom: 1px solid $elevar_blue;
+    }
+}
+@media all and (max-width: 1024px) {
+        div#leadership_hero_row {
+            background-image:url("/wp-content/themes/conall-child/images/leadership-hero-1024x306.png");
+            div.clearfix.edgtf-full-section-inner {
+            div#leadership-hero-h1 {
+                text-align: center;
+                h1.elevar-h1 {
+                }
+            }
+        }
+    }
+    div#leadership-content {
+    padding: 100px 0 65px 0 !important;
+        div.leadership-row {
+            padding-bottom: 45px !important;
+            div.col-leadership {
+                div.vc_column-inner {
+                    > div.wpb_wrapper {
+                        display: grid;
+                        grid-template-columns: 306px auto;
+                        grid-template-rows: 227px auto;
+                        grid-column-gap: 0px;
+                        grid-row-gap: 0px;
+                        div.leadership-title {
+                            grid-area: 1 / 2 / 2 / 3;
+                            margin-bottom: 0px !important;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            margin-left: 30px !important;
+                            h2.elevar-h2 {
+                                text-transform: initial;
+                                font-size: 28px;
+                                line-height: 38px;
+                                font-weight: 500;
+                                strong {
+                                    font-weight: 700;
+                                    text-transform: uppercase;
+                                }
+                                .vert-pipe {
+                                    display: none;
+                                }
+                                .job-title {
+                                    display: block;
+                                }
+                            }
+                        }
+                        div.leadership-image {
+                            grid-area: 1 / 1 / 2 / 2;
+                                figure.wpb_wrapper.vc_figure {
+                                    div.vc_single_image-wrapper.vc_box_border_grey {
+                                        img.vc_single_image-img {
+                                            max-width: 306px;
+                                        }
+                                    }
+                                }
+                        }
+                        div.leadership-section {
+                            grid-area: 2 / 1 / 3 / 3;
+                            max-width: 100%;
+                            margin-left: 0 !important;
+                            margin-top: 0px !important;
+                            p.elevar-p {
+                                    margin-top: 20px !important;
+                                }
+                        }
+                        div.leadership-section.bottom {
+                            margin-top: 0px !important;
+                            max-width: 100%;
+                            margin-left: 0 !important;
+                            margin-top: 0px !important;
+                            div.hide {
+                                transition: all 0.75s;
+                                p.elevar-p {
+                                    margin-top: 20px !important;
+                                }
+                                p.elevar-p.single {
+                                    margin-top: 20px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        div.leadership-row:not(:last-child):after {
+        padding-top: 40px !important;
+        }
+    }
+}
+@media all and (max-width: 768px) {
+
+}
+@media all and (max-width: 576px) {
+    div#leadership_hero_row {
+            background-image:url("/wp-content/themes/conall-child/images/leadership-hero-414x405.png");
+                div.clearfix.edgtf-full-section-inner {
+                div#leadership-hero-h1 {
+                    text-align: center;
+                    h1.elevar-h1 {
+                    }
+                }
+            }
+        }
+        div#leadership-content {
+        padding: 100px 0 30px 0 !important;
+            div.leadership-row {
+                padding-bottom: 70px !important;
+                div.col-leadership {
+                    div.vc_column-inner {
+                        > div.wpb_wrapper {
+                            display: grid;
+                            grid-template-columns: 100%;
+                            grid-template-rows: auto repeat(3, auto);
+                            grid-column-gap: 0px;
+                            grid-row-gap: 0px;
+                            div.leadership-title {
+                                grid-area: 2 / 1 / 3 / 2;
+                                margin-bottom: 0px !important;
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+                                margin-left: 0px !important;
+                                margin-top: 40px;
+                                h2.elevar-h2 {
+                                    text-transform: initial;
+                                    font-size: 28px;
+                                    line-height: 38px;
+                                    font-weight: 500;
+                                    strong {
+                                        font-weight: 700;
+                                        text-transform: uppercase;
+                                    }
+                                    .job-title {
+                                        display: block;
+                                    }
+                                }
+                            }
+                            div.leadership-image {
+                                grid-area: 1 / 1 / 2 / 2;
+                                display: flex;
+                                justify-content: center;
+                                    figure.wpb_wrapper.vc_figure {
+                                        width: 100%;
+                                        div.vc_single_image-wrapper.vc_box_border_grey {
+                                            width: 100%;
+                                            img.vc_single_image-img {
+                                                max-width: 100%;
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                            }
+                            div.leadership-section {
+                                grid-area: 3 / 1 / 4 / 2;
+                                max-width: 100%;
+                                margin-left: 0 !important;
+                                margin-top: 0px !important;
+                                p.elevar-p {
+                                    margin-top: 30px !important;
+                                    }
+                                p.elevar-p.top-2 {
+                                    margin-top: 30px !important;
+                                }
+                            }
+                            div.leadership-section.bottom {
+                                grid-area: 4 / 1 / 5 / 2;
+                                max-width: 100%;
+                                margin-left: 0 !important;
+                                margin-top: 0px !important;
+                                div.read-more {
+                                    transition: all 1s;
+                                    display: block;
+                                    margin: 30px 0 0 0;
+                                }
+                                div.hide {
+                                    display: none;
+                                    transition: all 1s;
+                                    p.elevar-p {
+                                        margin-top: 30px !important;
+                                    }
+                                    p.elevar-p.single {
+                                        margin-top: 30px !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            div.leadership-row:not(:last-child):after {
+            padding-top: 65px !important;
+            }
+        }
+}
+@media all and (max-width: 480px) {
+        div#leadership_hero_row {
+            div.clearfix.edgtf-full-section-inner {
+            div#leadership-hero-h1 {
+                text-align: center;
+                h1.elevar-h1 {
+                }
+            }
+        }
+        div#leadership-content {
+        padding: 100px 0 0px 0 !important;
+            div.leadership-row {
+                padding-bottom: 70px !important;
+                div.col-leadership {
+                    div.vc_column-inner {
+                        > div.wpb_wrapper {
+                            display: grid;
+                            grid-template-columns: 100%;
+                            grid-template-rows: auto repeat(3, auto);
+                            grid-column-gap: 0px;
+                            grid-row-gap: 0px;
+                            div.leadership-title {
+                                grid-area: 2 / 1 / 3 / 2;
+                                margin-bottom: 0px !important;
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+                                margin-left: 0px !important;
+                                margin-top: 40px;
+                                h2.elevar-h2 {
+                                    text-transform: initial;
+                                    font-size: 28px;
+                                    line-height: 38px;
+                                    font-weight: 500;
+                                    strong {
+                                        font-weight: 700;
+                                        text-transform: uppercase;
+                                    }
+                                    .job-title {
+                                        display: block;
+                                    }
+                                }
+                            }
+                            div.leadership-image {
+                                grid-area: 1 / 1 / 2 / 2;
+                                display: flex;
+                                justify-content: center;
+                                    figure.wpb_wrapper.vc_figure {
+                                        width: 100%;
+                                        div.vc_single_image-wrapper.vc_box_border_grey {
+                                            width: 100%;
+                                            img.vc_single_image-img {
+                                                max-width: 100%;
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                            }
+                            div.leadership-section {
+                                grid-area: 3 / 1 / 4 / 2;
+                                max-width: 100%;
+                                margin-left: 0 !important;
+                                margin-top: 0px !important;
+                                p.elevar-p {
+                                    margin-top: 30px !important;
+                                    }
+                                p.elevar-p.top-2 {
+                                    margin-top: 30px !important;
+                                }
+                            }
+                            div.leadership-section.bottom {
+                                grid-area: 4 / 1 / 5 / 2;
+                                max-width: 100%;
+                                margin-left: 0 !important;
+                                margin-top: 0px !important;
+                                div.read-more {
+                                    transition: all 1s;
+                                    display: block;
+                                    margin: 30px 0 0 0;
+                                }
+                                div.hide {
+                                    display: none;
+                                    transition: all 1s;
+                                    p.elevar-p {
+                                        margin-top: 30px !important;
+                                    }
+                                    p.elevar-p.single {
+                                        margin-top: 30px !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            div.leadership-row:not(:last-child):after {
+            padding-top: 65px !important;
+            }
+        }
+    }
+}
+
 /* ******* END LEADERSHIP 2023 PAGE ******* */

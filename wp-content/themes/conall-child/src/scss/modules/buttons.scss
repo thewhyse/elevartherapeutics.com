@@ -6,21 +6,25 @@ a.edgtf-btn {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $elevar_purple;
-    color: $white  !important;
-    border-color: $elevar_purple;
+    background-color: #524487 !important;
+    color: #ffffff !important;
+    border-color: #524487 !important;
     font-size: 24px;
     line-height: 36px;
     height: 54px;
     border-radius: 10px;
     padding: 0;
+    max-width: 400px;
+    text-transform: initial;
+    letter-spacing: 0;
+    margin-top: 3% !important;
+    margin-bottom: 3% !important;
     :hover {
     background-color: $white;
     color: $elevar_purple  !important;
     border-color: $elevar_purple;
     }
 }
-
 .edgtf-search-page-holder .edgtf-search-page-form .edgtf-form-holder input.edgtf-search-submit {
     display: flex;
     justify-content: center;
@@ -41,6 +45,44 @@ a.edgtf-btn {
     border-color: $elevar_purple;
     }
 }
+@media only screen and (max-width: 1024px) {
+    a.edgtf-btn {
+        font-size: 22px;
+        line-height: 28px;
+        height: 54px;
+    }
+    .edgtf-search-page-holder .edgtf-search-page-form .edgtf-form-holder input.edgtf-search-submit {
+        font-size: 22px;
+        line-height: 28px;
 
-
+    }
+}
+@media only screen and (max-width: 768px) {
+    a.edgtf-btn {
+        font-size: 22px;
+        line-height: 22px;
+        margin-top: 4% !important;
+        margin-bottom: 4% !important;
+    }
+    .edgtf-search-page-holder .edgtf-search-page-form .edgtf-form-holder input.edgtf-search-submit {
+        font-size: 22px;
+        line-height: 22px;
+    }
+}
+@media only screen and (max-width: 576px) {
+        a.edgtf-btn {
+        font-size: 22px;
+        line-height: 22px;
+        margin-top: 5% !important;
+        margin-bottom: 5% !important;
+    }
+}
+@media only screen and (max-width: 480px) {
+        a.edgtf-btn {
+        font-size: 22px;
+        line-height: 22px;
+        margin-top: 7% !important;
+        margin-bottom: 7% !important;
+    }
+}
 /* ******* BUTTON STYLING END ******* */

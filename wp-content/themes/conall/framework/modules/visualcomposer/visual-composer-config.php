@@ -25,7 +25,7 @@ if ( ! function_exists('conall_edge_configure_visual_composer') ) {
 		/**
 		 * Removing shortcodes
 		 */
-		/* vc_remove_element("vc_wp_search");
+		vc_remove_element("vc_wp_search");
 		vc_remove_element("vc_wp_meta");
 		vc_remove_element("vc_wp_recentcomments");
 		vc_remove_element("vc_wp_calendar");
@@ -60,24 +60,24 @@ if ( ! function_exists('conall_edge_configure_visual_composer') ) {
 		vc_remove_element("vc_tta_tour");
 		vc_remove_element("vc_tta_tabs");
 		vc_remove_element("vc_separator");
-		vc_remove_element("vc_section"); */
+		vc_remove_element("vc_section");
 
 		/**
 		 * Remove Grid Elements if grid elements disabled
 		 */
-		/* vc_remove_element('vc_basic_grid');
+		vc_remove_element('vc_basic_grid');
 		vc_remove_element('vc_media_grid');
 		vc_remove_element('vc_masonry_grid');
 		vc_remove_element('vc_masonry_media_grid');
 		vc_remove_element('vc_icon');
 		vc_remove_element('vc_button2');
-		vc_remove_element("vc_custom_heading"); */
+		vc_remove_element("vc_custom_heading");
 
 		/**
 		 * Remove unused parameters
 		 */
 		if (function_exists('vc_remove_param')) {
-			/* vc_remove_param('vc_row', 'full_width');
+			vc_remove_param('vc_row', 'full_width');
 			vc_remove_param('vc_row', 'full_height');
 			vc_remove_param('vc_row', 'content_placement');
 			vc_remove_param('vc_row', 'video_bg');
@@ -95,7 +95,7 @@ if ( ! function_exists('conall_edge_configure_visual_composer') ) {
 			vc_remove_param('vc_row_inner', 'equal_height');
 			vc_remove_param('vc_row_inner', 'gap');
 			vc_remove_param('vc_row_inner', 'disable_element');
-			vc_remove_param('vc_row', 'disable_element'); */
+			vc_remove_param('vc_row', 'disable_element');
 
 		}
 	}

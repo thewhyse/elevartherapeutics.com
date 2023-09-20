@@ -2,321 +2,1139 @@
 @import "../base/font";
 
 /* ******* CAREERS PAGE ******* */
-
-.page-id-17194 div.edgtf-title {
-  z-index: 100 !important;
-}
-.page-id-17194 .edgtf-grid-section .edgtf-section-inner {
-  width: 1397px;
-}
-#careers_hero_row {
-    background-image:
-        url(/wp-content/themes/conall-child/images/hero_white_wave-1920x140.svg),
-        url(/wp-content/themes/conall-child/images/careers-hero-1920x457.png);
-  h1 {
-    color: $white;
-    border-bottom: 3px solid $white;
-    width: 260px;
-    padding-bottom: 15px;
-    letter-spacing: 4.5px;
-    margin: 0 auto;
-    line-height: 1.2em;
-    font-size: 45px !important;
-    text-transform: uppercase;
-    filter: drop-shadow(0px 0px 5px #000);
-    top: 0;
-  }
-  #careers-subtitle {
-    h3 {
-        margin-top: 20px;
-        color: $white;
-        font-size: 30px;
-        font-weight: 600;
-        filter: drop-shadow(0px 0px 4px #000);
+div#careers_cta_row {
+    div#find-jobs-cta {
+    z-index: 102;
+        a {
+            width: 329px;
+        }
     }
-  }
 }
-#icon-row3 {
-  .edgtf-section .edgtf-full-section-inner {
-    max-width: 1100px;
-  }
-}
-#open-positions-cta {
-  width: 329px;
-  position: absolute;
-  top: 0;
-  right: 10vw;
-  z-index: 102;
-  h1 {
-    text-align: center;
-  }
-  h3 {
-    text-align: center;
-  }
-  p {
-    margin: 0;
-  }
-  a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    width: 305px;
-    font-size: 20px;
-    line-height: 32px;
-    height: 54px;
-    padding: 0 12px;
-    border-radius: 0 0 6px 6px;
-    background: $lt_blue;
-    color: $white !important;
-    &:hover {
-      background: $white;
-      color: $lt_blue !important;
-      border: 1px solid $lt_blue;
+div#careers_hero_row {
+    background-image: url("/wp-content/themes/conall-child/images/careers-hero-1920x457.png");
+    background-color: $white;
+    div.clearfix.edgtf-full-section-inner {
+        div#careers-hero-h1 {
+            text-align: center;
+            h1.elevar-h1 {
+                max-width: 260px;
+                padding: 0 0 15px 0;
+                border-bottom: 3px solid #fff;
+            }
+        }
+        div#careers-hero-h2 {
+            max-width: 400px;
+            margin: 0 auto !important;
+            h2 {
+            color: $white;
+            text-transform: inherit;
+            font-size: 28px;
+            line-height: 32px;
+            font-weight: 600;
+            letter-spacing: 0;
+            }
+        }
     }
-  }
 }
-#mission-statement,
-#core-values,
-#our-purpose,
-#what-we-offer,
-#careers-paylocity-row {
-  h2.careers-blue-headings  {
-    font-family: "Raleway", sans-serif;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 1.2em;
-    color: $elevar_blue;
-    text-transform: uppercase;
-  }
-  p.careers-paragraph {
-    font-family: "Raleway", sans-serif;
-    font-size: 18px;
-    line-height: 28px;
-    color: #2f2f2f;
-    font-weight: 500;
-    margin-top: 20px;
-  }
-  p.careers-paragraph.bold {
-    font-size: 22px;
-    font-weight: bold;
-    line-height: 2rem;
-    color: #2f2f2f;
-    margin-top: 20px;
-  }
+div#mission-statement, div#core-values, div#our-purpose, div#what-we-offer, div#careers-paylocity-row {
+    div.elevar-section {
+        h2  {
+            margin-bottom: 20px;
+        }
+        p {
+            margin-top: 20px;
+        }
+        p.bold {
+            font-weight: bold;
+        }
+    }
+}
+div#mission-statement {
+    div.elevar-section {
+        h2 {
+            margin-bottom: 20px;
+        }
+    }
+}
+div#core-values {
+    padding: 40px 0 60px 0 !important;
+    div.elevar-section {
+        h2 {
+            margin-bottom: 20px;
+        }
+    }
+    div.top-iconrow {
+        div.edgtf-full-section-inner {
+            .icon-topbox {
+                div.vc_column-inner {
+                    max-width: 600px;
+                    max-height: 225px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    background-size: 100% !important;
+                    background-repeat: no-repeat;
+                    padding: 0;
+                    background-image: url("/wp-content/themes/conall-child/images/elevar-box-gradient-600x225.png") !important;
+                    background-position: center !important;
+                    aspect-ratio: 8/3;
+                }
+                .edgtf-iwt.edgtf-iwt-icon-left {
+                    display: flex;
+                    height: 100%;
+                }
+                .edgtf-iwt-icon-holder {
+                    display: inline-flex;
+                    width: 40%;
+                    aspect-ratio: 1/1;
+                    justify-content: center;
+                    align-items: center;
+                    float: unset !important;
+                }
+                .edgtf-iwt-content-holder {
+                    display: inline-flex;
+                    width: 60%;
+                    padding: 0 !important;
+                    flex-direction: column;
+                    justify-content: center;
+                    aspect-ratio: 8/5;
+                }
+                .wpb_wrapper {
+                    height: 100%;
+                    width: 100%;
+                }
+                h5 {
+                    color: $white;
+                    font-weight: 700;
+                    font-size: 28px;
+                    line-height: 1.5em;
+                    letter-spacing: 2.5px;
+                }
+                p {
+                    color: $white;
+                    font-weight: 400;
+                    font-size: 17px;
+                    line-height: 28px;
+                    width: 95%;
+                }
+            }
+            .icon-topbox.vc_column_container {
+                display: flex;
+                padding: 1%;
+                align-items: center;
+            }
+            .icon-topbox.vc_column_container:nth-child(odd) {
+                justify-content: end;
+            }
+            .icon-topbox.vc_column_container:nth-child(even) {
+                justify-content: flex-start;
+            }
+        }
+    }
+}
+div#our-purpose {
+    padding: 80px 0 80px 0 !important;
+    background-color: #eff0f1;
+    div.elevar-section {
+        h2 {
+            margin-bottom: 20px;
+        }
+    }
+    div#career-video {
+        margin: 40px 0 40px 0;
+    }
+}
+div#what-we-offer {
+    padding: 80px 0 80px 0 !important;
+    div.elevar-section {
+        margin-bottom: 55px !important;
+        h2 {
+            margin-bottom: 20px;
+        }
+    }
+    div#icon-row3 {
+        .edgtf-full-section-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+    }
+    div.bottom-iconrow {
+        div.edgtf-full-section-inner {
+            .icon-bottombox {
+                display: flex;
+                div.vc_column-inner {
+                    max-width: 350px;
+                    min-height: 381px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    background-size: 100% 100% !important;
+                    background-repeat: no-repeat;
+                    padding: 0;
+                    margin-right: 0px;
+                    background-image: url("/wp-content/themes/conall-child/images/bottom-grad-bkgnd-350x381.png");
+                }
+                .wpb_wrapper {
+                    height: 100%;
+                    width: 100%;
+                }
+                .edgtf-iwt.edgtf-iwt-icon-top {
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .edgtf-iwt-icon-holder {
+                    display: inline-flex;
+                    width: 40%;
+                    justify-content: center;
+                    align-items: center;
+                    float: unset !important;
+                    margin: 0 auto !important;
+                    height: 60%;
+                }
+                .edgtf-iwt-content-holder {
+                    display: inline-flex;
+                    width: 60%;
+                    padding: 0 !important;
+                    justify-content: center;
+                    height: 40%;
+                }
+                h5 {
+                    text-transform: inherit;
+                    color: $white;
+                    font-weight: 600;
+                    font-size: 28px;
+                    line-height: 1.2em;
+                    text-align: center;
+                    letter-spacing: 0;
+                }
+            }
+            #bottombox1 {
+                justify-content: flex-start;
+            }
+            #bottombox2 {
+                justify-content: center;
+            }
+            #bottombox3 {
+                justify-content: flex-end;
+                .edgtf-iwt-content-holder {
+                    width: 80%;
+                    margin: 0 auto;
+                }
+            }
+            #colored-healthcare-button {
+                border-radius: 20px !important;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin-top: 25px;
+                margin-left: -15px;
+                margin-right: -15px;
+                min-height: 75px;
+                background-color: #524487;
+                div.wpb_wrapper {
+                    margin: 0;
+                    padding: 0;
+                    height: 48px;
+                    text-align: center;
+                    a {
+                        font-size: 22px;
+                        color: $white;
+                        display: inline-flex !important;
+                        justify-content: center !important;
+                        align-items: center !important;
+                        text-decoration: underline;
+                        font-weight: bold;
+                        line-height: 22px;
+                            img {
+                                display: inline-flex;
+                                margin: 0; margin-right: 20px;
+                            }
+                        }
+                }
+            }
+        }
+    }
+}
+div#careers-paylocity-row {
+    padding: 80px 0 20px 0 !important;
+    background-color: #f5f5f5 !important;
+    div.elevar-section {
+        margin: 0 0 70px 0 !important;
+        h2 {
+            margin-bottom: 20px;
+        }
+    }
+    div#paylocity {
+        margin: 0 0 70px 0 !important;
+        div.container-iframe {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 0; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+            background-color: $white;
+            margin: 0 auto;
+            height: 1000px;
+            iframe.paylocity-iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                margin: 0 auto;
+                background-color: $white;
+            }
+        }
+    }
+    div.section {
+        h4.eoe-headline {
+        margin-bottom: 20px;
+        }
+        p.eoe-copy {
+            font-style: italic;
+            margin-top: 15px !important;
+        }
+        a.recruiting-email {
+            color: $elevar_blue;
+        }
+    }
 }
 .edgtf-iwt:not(.edgtf-iwt-left-from-title):not(.edgtf-iwt-icon-top-with-separator) .edgtf-iwt-title-holder {
   margin-bottom: 0 !important;
 }
-.icon-topbox.vc_column_container {
-  display: flex;
-  padding: 1%;
-
-}
-.icon-topbox.vc_column_container:nth-child(odd) {
-  justify-content: end;
-}
-.icon-topbox.vc_column_container:nth-child(even) {
-  justify-content: flex-start;
-}
-.icon-topbox {
-
-  div.vc_column-inner {
-    max-width: 600px;
-    max-height: 225px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-size: 100% 100% !important;
-    background-repeat: no-repeat;
-    padding: 0;
-  }
-  .edgtf-iwt.edgtf-iwt-icon-left {
-    display: flex;
-    height: 100%;
-  }
-  .edgtf-iwt-icon-holder {
-    display: inline-flex;
-    width: 40%;
-    aspect-ratio: 1/1;
-    justify-content: center;
-    align-items: center;
-    float: unset !important;
-  }
-  .edgtf-iwt-content-holder {
-    display: inline-flex;
-    width: 45%;
-    padding: 0 !important;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .wpb_wrapper {
-    height: 100%;
-    width: 100%;
-  }
-  h5 {
-    color: $white;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 1.5em;
-    letter-spacing: 0;
-  }
-  p {
-    color: $white;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 2rem;
-  }
-  .career-icon2 {
-    p {
-      width: 65%;
+@media all and (max-width: 1500px) {
+    div#core-values div.top-iconrow {
+        div.edgtf-full-section-inner {
+            .icon-topbox {
+                .edgtf-iwt-icon-holder {
+                    width: 37%;
+                    img.attachment-full.size-full {
+                        width: 73%;
+                        max-height: 100%;
+                        aspect-ratio: 1/1;
+                    }
+                }
+                .edgtf-iwt-content-holder {
+                    width: 63%;
+                }
+            }
+        }
     }
-  }
 }
-#bottombox1 {
-  justify-content: flex-start;
+@media all and (max-width: 1262px) {
+
 }
-#bottombox2 {
-  justify-content: center;
-}
-#bottombox3 {
-  justify-content: flex-end;
-}
-#bottombox3 {
-  .edgtf-iwt-content-holder {
-    width: 80%;
-    margin: 0 auto;
-  }
-}
-.icon-bottombox {
-  display: flex;
-  div.vc_column-inner {
-    max-width: 350px;
-    min-height: 381px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-size: 100% 100% !important;
-    background-repeat: no-repeat;
-    padding: 0;
-    margin-right: 20px;
-  }
-  .wpb_wrapper {
-    height: 100%;
-    width: 100%;
-  }
-  .edgtf-iwt.edgtf-iwt-icon-top {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-  .edgtf-iwt-icon-holder {
-    display: inline-flex;
-    width: 60%;
-    justify-content: center;
-    align-items: center;
-    float: unset !important;
-    margin: 0 auto !important;
-    height: 60%;
-  }
-  .edgtf-iwt-content-holder {
-    display: inline-flex;
-    width: 85%;
-    padding: 0 !important;
-    justify-content: center;
-    height: 40%;
-  }
-  h5 {
-    color: $white;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 1.2em;
-    text-align: center;
-    letter-spacing: 0;
-  }
-}
-#colored-healthcare-button {
-  border-radius: 20px !important;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-top: 25px;
-  margin-left: -15px;
-  margin-right: -15px;
-  min-height: 75px;
-  background-color: #524487;
-  p {
-    margin: 0;
-    padding: 0;
-    height: 48px;
-    text-align: center;
-  a {
-    font-size: 22px;
-    color: $white;
-    display: inline-flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    text-decoration: underline;
-    font-weight: bold;
-    line-height: 22px;
-      img {
-        display: inline-flex;
-        margin: 0; margin-right: 20px;
-      }
-    }
-  }
-}
-#careers-paylocity-row {
-  h4.eoe-headline {
-    font-family: "Raleway", sans-serif;
-    font-size: 26px;
-    line-height: 1.5em;
-    color: $lt_blue;
-    letter-spacing: -0.25px;
-    margin: 0;
-  }
-  p.eoe-copy {
-    font-family: "Raleway", sans-serif;
-    font-size: 18px;
-    line-height: 2rem;
-    color: #8D8D8D;
-    font-style: italic;
-    letter-spacing: -0.5px;
-    margin-top: 15px;
-  }
-  a.recruiting-email {
-    color: $elevar_blue;
-  }
-}
-div.container-iframe {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding-top: 62.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-  background-color: $white;
-  margin: 0 auto;
-}
-iframe.paylocity-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  background-color: $white;
+@media all and (max-width: 1025px) {
+
 }
 
+@media all and (max-width: 1024px) {
+    div#core-values {
+        padding: 40px 0 60px 0 !important;
+        div.elevar-section {
+            h2 {
+                margin-bottom: 20px;
+            }
+        }
+        div.top-iconrow {
+            div.edgtf-full-section-inner {
+                .icon-topbox {
+                    div.vc_column-inner {
+                        max-width: 600px;
+                        max-height: 225px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        background-size: 100% !important;
+                        background-repeat: no-repeat;
+                        padding: 0;
+                        background-image: url("/wp-content/themes/conall-child/images/elevar-box-gradient-600x225.png") !important;
+                        background-position: center !important;
+                    }
+                    .edgtf-iwt.edgtf-iwt-icon-left {
+                        display: flex;
+                        height: 100%;
+                    }
+                    .edgtf-iwt-icon-holder {
+                        display: inline-flex;
+                        width: 37%;
+                        aspect-ratio: 1/1;
+                        justify-content: center;
+                        align-items: center;
+                        float: unset !important;
+                        img.attachment-full.size-full {
+                        width: 73%;
+                        max-height: 100%;
+                        aspect-ratio: 1/1;
+                        }
+                    }
+                    .edgtf-iwt-content-holder {
+                        display: inline-flex;
+                        width: 63%;
+                        padding: 0 !important;
+                        flex-direction: column;
+                        justify-content: center;
+                    }
+                    .wpb_wrapper {
+                        height: 100%;
+                        width: 100%;
+                    }
+                    h5 {
+                        font-size: 25px;
+                        line-height: 28px;
+                        letter-spacing: 0;
+                    }
+                    p {
+                        font-size: 17px;
+                        line-height: 28px;
+                    }
+                    .career-icon2 {
+                        p {
+                        width: 100%;
+                        }
+                    }
+                }
+                .icon-topbox.vc_column_container {
+                    display: flex;
+                    padding: 1%;
+                }
+                .icon-topbox.vc_column_container:nth-child(odd) {
+                    justify-content: end;
+                }
+                .icon-topbox.vc_column_container:nth-child(even) {
+                    justify-content: flex-start;
+                }
+            }
+        }
+    }
+    div#what-we-offer {
+        padding: 80px 0 80px 0 !important;
+        div.elevar-section {
+            margin-bottom: 55px !important;
+            h2 {
+                margin-bottom: 20px;
+            }
+        }
+        div#icon-row3 {
+            .edgtf-full-section-inner {
+                max-width: 1100px;
+                margin: 0 auto;
+            }
+        }
+        div.bottom-iconrow {
+            div.edgtf-full-section-inner {
+                .icon-bottombox {
+                    display: flex;
+                    div.vc_column-inner {
+                        margin: 3%;
+                        min-height: 240px;
+                        padding: 8px;
+                        padding-top: 0;
+                    }
+                    .wpb_wrapper {
+                        height: 100%;
+                        width: 100%;
+                    }
+                    .edgtf-iwt.edgtf-iwt-icon-top {
+                        display: flex;
+                        flex-direction: column;
+                        height: 100%;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .edgtf-iwt-icon-holder {
+                        display: inline-flex;
+                        width: 88%;
+                        justify-content: center;
+                        align-items: center;
+                        float: unset !important;
+                        margin: 0 auto !important;
+                        height: 55%;
+                        img {
+                            max-width: 50%;
+                        }
+                    }
+                    .edgtf-iwt-content-holder {
+                        display: inline-flex;
+                        width: 98%;
+                        justify-content: center;
+                        height: 45%;
+                    }
+                    h5 {
+                        font-size: 25px;
+                        line-height: 28px;
+                    }
+                }
+                #bottombox1 {
+                    justify-content: flex-start;
+                }
+                #bottombox2 {
+                    justify-content: center;
+                }
+                #bottombox3 {
+                    justify-content: flex-end;
+                    .edgtf-iwt-content-holder {
+                        width: 80%;
+                        margin: 0 auto;
+                    }
+                }
+                #colored-healthcare-button {
+                    div.wpb_wrapper {
+                        a {
+                            font-size: 18px;
+                                img {
+                                    display: inline-flex;
+                                    margin: 0; margin-right: 20px;
+                                }
+                            }
+                    }
+                }
+            }
+        }
+    }
+    div#paylocity {
+        margin: 0 0 70px 0 !important;
+        div.container-iframe {
+            height: 600px;
+        }
+    }
+    div#mission-statement {
+        div.elevar-section {
+            h2 {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+@media all and (max-width: 768px) {
+    div#careers_cta_row div#find-jobs-cta {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        a {
+            margin: 0 auto;
+            width: 280px;
+        }
+    }
+    div#mission-statement {
+    div.elevar-section {
+        h2 {
+            margin-bottom: 20px;
+        }
+    }
+    div#careers-paylocity-row {
+        padding: 40px 0 0px 0 !important;
+    }
+    }
+    div#core-values {
+        padding: 40px 0 60px 0 !important;
+        div.elevar-section {
+            h2 {
+                margin-bottom: 20px;
+            }
+        }
+        div.top-iconrow {
+            div.edgtf-full-section-inner {
+                display: flex;
+                flex-direction: column;
+                .icon-topbox {
+                    width: 100%;
+                    display: flex;
+                    padding: 0;
+                    div.vc_column-inner {
+                        max-width: 600px;
+                        max-height: 225px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        background-size: 100% 100% !important;
+                        background-repeat: no-repeat;
+                        padding: 0;
+                        background-image: url("/wp-content/themes/conall-child/images/elevar-box-gradient-600x225.png") !important;
+                        background-position: center !important;
+                    }
+                    .edgtf-iwt.edgtf-iwt-icon-left {
+                        display: flex;
+                        height: 100%;
+                    }
+                    .edgtf-iwt-icon-holder {
+                        display: inline-flex;
+                        width: 37%;
+                        aspect-ratio: 1/1;
+                        justify-content: center;
+                        align-items: center;
+                        float: unset !important;
+                        img {
+                            max-width: 75%;
+                        }
+                    }
+                    .edgtf-iwt-content-holder {
+                        display: inline-flex;
+                        width: 60%;
+                        padding: 0 !important;
+                        flex-direction: column;
+                        justify-content: center;
+                    }
+                    .wpb_wrapper {
+                        height: 100%;
+                        width: 100%;
+                    }
+                    h5 {
+                        font-size: 30px;
+                        line-height: 32px;
+                        letter-spacing: initial;
+                    }
+                    p {
+                        font-size: 17px;
+                        line-height: 28px;
+                    }
+                    .career-icon2 {
+                        p {
+                        width: 100%;
+                        }
+                    }
+                }
+                .icon-topbox.vc_column_container:nth-child(odd),
+                .icon-topbox.vc_column_container:nth-child(even) {
+                    justify-content: center;
+                    padding: 0;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+    div#what-we-offer {
+        padding: 80px 0 80px 0 !important;
+        div.elevar-section {
+            margin-bottom: 55px !important;
+            h2 {
+                margin-bottom: 20px;
+            }
+        }
+        div#icon-row3 {
+            .edgtf-full-section-inner {
+                max-width: 100%;
+                margin: 0 auto;
+            }
+        }
+        div.bottom-iconrow {
+            div.edgtf-full-section-inner {
+                display: flex;
+                flex-direction: column;
+                .icon-bottombox {
+                    display: flex;
+                    width: 100%;
+                    div.vc_column-inner {
+                        min-height: 100%;
+                        padding: 10%;
+                        width: 100%;
+                        max-width: 100%;
+                        aspect-ratio: 1/1;
+                        margin: 60px;
+                    }
+                    .wpb_wrapper {
+                        height: 100%;
+                        width: 100%;
+                    }
+                    .edgtf-iwt.edgtf-iwt-icon-top {
+                        display: flex;
+                        flex-direction: column;
+                        height: 100%;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .edgtf-iwt-icon-holder {
+                        display: inline-flex;
+                        width: 100%;
+                        justify-content: center;
+                        align-items: center;
+                        float: unset !important;
+                        margin: 0 auto !important;
+                        height: 50%;
+                        img {
+                            max-width: 50%;
+                        }
+                    }
+                    .edgtf-iwt-content-holder {
+                        display: inline-flex;
+                        width: 100%;
+                        justify-content: center;
+                        height: 50%;
+                        align-items: center;
+                    }
+                    h5 {
+                        font-size: 30px;
+                        line-height: 36px;
+                    }
+                }
+                #bottombox1,
+                #bottombox2,
+                #bottombox3 {
+                    justify-content: center;
+                    .edgtf-iwt-content-holder {
+                        width: 100%;
+                        margin: 0 auto;
+                    }
+                }
+                #colored-healthcare-button {
+                    padding: 0 30px 0 30px;
+                    margin-top: 40px;
+                    margin-left: 0;
+                    margin-right: 0;
+                    min-height: 85px;
+                    div.wpb_wrapper {
+                        a {
+                            font-size: 18px;
+                            text-align: left;
+                                img {
+                                    display: inline-flex;
+                                    margin: 0; margin-right: 20px;
+                                }
+                            }
+                    }
+                }
+            }
+        }
+    }
+    div#paylocity {
+        margin: 0 0 70px 0 !important;
+        div.container-iframe {
+            height: 850px;
+        }
+    }
+}
+@media all and (max-width: 576px) {
+    div#careers_hero_row {
+    background-image: url("/wp-content/themes/conall-child/images/careers-hero-414x405.png");
+    background-color: $white;
+    }
+    div#core-values {
+        padding: 40px 0 60px 0 !important;
+        div.elevar-section {
+            h2 {
+                margin-bottom: 20px;
+            }
+        }
+        div.top-iconrow {
+            div.edgtf-full-section-inner {
+                display: flex;
+                flex-direction: column;
+                .icon-topbox {
+                    width: 100%;
+                    display: flex;
+                    padding: 0;
+                    div.vc_column-inner {
+                        max-width: 100%;
+                        max-height: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        background-size: 100% 100% !important;
+                        background-repeat: no-repeat;
+                        padding: 0;
+                        aspect-ratio: 1/1;
+                        background-image: url("/wp-content/themes/conall-child/images/elevar_gradient_mob-350x365.png") !important;
+                        background-position: center !important;
+                    }
+                    .edgtf-iwt.edgtf-iwt-icon-left {
+                        display: flex;
+                        height: 100%;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .edgtf-iwt-icon-holder {
+                        display: inline-flex;
+                        width: 100%;
+                        aspect-ratio: unset;
+                        justify-content: center;
+                        align-items: center;
+                        float: unset !important;
+                        height: 60%;
+                        padding-bottom: 0;
+                        img.attachment-full.size-full {
+                            max-width: 100%;
+                            width: 200px;
+                            height: auto;
+                        }
+                    }
+                    .edgtf-iwt-content-holder {
+                        display: inline-flex;
+                        width: 100%;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        height: 40%;
+                        padding: 0 18% 0 18% !important;
+                        align-items: center;
+                        div.edgtf-iwt-title-holder {
+                            text-align: center;
+                            h5 {
+                            font-size: 30px;
+                            line-height: 32px;
+                            letter-spacing: initial;
+                            text-align: center;
+                            }
+                        }
+                        div.edgtf-iwt-text-holder {
+                            p {
+                                font-size: 17px;
+                                line-height: 28px;
+                                text-align: center;
+                            }
+                        }
+                        .wpb_wrapper {
+                            height: 100%;
+                            width: 100%;
+                        }
+                        .career-icon2 {
+                            p {
+                            width: 100%;
+                            }
+                        }
+                    }
+                    p {
+                        width: 100%;
+                    }
+                }
+                .icon-topbox.vc_column_container:nth-child(odd),
+                .icon-topbox.vc_column_container:nth-child(even) {
+                    justify-content: center;
+                    padding: 0;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+    div#what-we-offer {
+        padding: 80px 0 80px 0 !important;
+        div.elevar-section {
+            margin-bottom: 55px !important;
+            h2 {
+                margin-bottom: 20px;
+            }
+        }
+        div#icon-row3 {
+            .edgtf-full-section-inner {
+                max-width: 100%;
+                margin: 0 auto;
+            }
+        }
+        div.bottom-iconrow {
+            div.edgtf-full-section-inner {
+                display: flex;
+                flex-direction: column;
+                .icon-bottombox {
+                    display: flex;
+                    width: 100%;
+                    div.vc_column-inner {
+                        min-height: 100%;
+                        padding: 10%;
+                        width: 100%;
+                        max-width: 100%;
+                        aspect-ratio: 1/1;
+                        margin: 0;
+                        margin-bottom: 40px;
+                    }
+                    .wpb_wrapper {
+                        height: 100%;
+                        width: 100%;
+                    }
+                    .edgtf-iwt.edgtf-iwt-icon-top {
+                        display: flex;
+                        flex-direction: column;
+                        height: 100%;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .edgtf-iwt-icon-holder {
+                        display: inline-flex;
+                        width: 100%;
+                        justify-content: center;
+                        align-items: center;
+                        float: unset !important;
+                        margin: 0 auto !important;
+                        height: 50%;
+                        img {
+                            max-width: 50%;
+                        }
+                    }
+                    .edgtf-iwt-content-holder {
+                        display: inline-flex;
+                        width: 100%;
+                        justify-content: center;
+                        height: 50%;
+                        align-items: center;
+                    }
+                    h5 {
+                        font-size: 30px;
+                        line-height: 36px;
+                    }
+                }
+                #bottombox1,
+                #bottombox2,
+                #bottombox3 {
+                    justify-content: center;
+                    .edgtf-iwt-content-holder {
+                        width: 100%;
+                        margin: 0 auto;
+                    }
+                }
+                #colored-healthcare-button {
+                    padding: 0 30px 0 30px;
+                    margin-top: 40px;
+                    margin-left: 0;
+                    margin-right: 0;
+                    min-height: 85px;
+                    div.wpb_wrapper {
+                        a {
+                            font-size: 18px;
+                            text-align: left;
+                                img {
+                                    display: inline-flex;
+                                    margin: 0; margin-right: 20px;
+                                }
+                            }
+                    }
+                }
+            }
+        }
+    }
+    div#mission-statement {
+    div.elevar-section {
+        h2 {
+            margin-bottom: 20px;
+        }
+    }
+    div#careers-paylocity-row {
+        padding: 40px 0 0px 0 !important;
+    }
+    }
+    div#paylocity {
+    margin: 0 0 50px 0 !important;
+        div.container-iframe {
+            height: 975px;
+        }
+    }
+}
+@media all and (max-width: 480px) {
+    div#careers_hero_row {
+    background-image: url("/wp-content/themes/conall-child/images/careers-hero-414x405.png");
+    background-color: $white;
+    }
+    div#core-values {
+        padding: 40px 0 60px 0 !important;
+        div.elevar-section {
+            h2 {
+                margin-bottom: 20px;
+            }
+        }
+        div.top-iconrow {
+            div.edgtf-full-section-inner {
+                display: flex;
+                flex-direction: column;
+                .icon-topbox {
+                    width: 100%;
+                    display: flex;
+                    padding: 0;
+                    div.vc_column-inner {
+                        max-width: 100%;
+                        max-height: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        background-size: 100% 100% !important;
+                        background-repeat: no-repeat;
+                        padding: 0;
+                        aspect-ratio: 1/1;
+                        background-image: url("/wp-content/themes/conall-child/images/elevar_gradient_mob-350x365.png") !important;
+                        background-position: center !important;
+                    }
+                    .edgtf-iwt.edgtf-iwt-icon-left {
+                        display: flex;
+                        height: 100%;
+                        flex-direction: column;
+                    }
+                    .edgtf-iwt-icon-holder {
+                        display: inline-flex;
+                        width: 100%;
+                        aspect-ratio: unset;
+                        justify-content: center;
+                        align-items: flex-end;
+                        float: unset !important;
+                        height: 50%;
+                        padding-bottom: 0;
+                        img.attachment-full.size-full {
+                            max-width: 135px;
+                        }
+                    }
+                    .edgtf-iwt-content-holder {
+                        display: inline-flex;
+                        width: 100%;
+                        flex-direction: column;
+                        justify-content: center;
+                        height: 50%;
+                        padding: 0 15% 0 15% !important;
+                        align-items: center;
+                    }
+                    .wpb_wrapper {
+                        height: 100%;
+                        width: 100%;
+                    }
+                    h5 {
+                        font-size: 30px;
+                        line-height: 32px;
+                        letter-spacing: initial;
+                        text-align: center;
+                    }
+                    p {
+                        font-size: 17px;
+                        line-height: 28px;
+                        text-align: center;
+                        margin: 0 !important;
+                    }
+                    .career-icon2 {
+                        p {
+                        width: 100%;
+                        }
+                    }
+                    p {
+                        width: 100%;
+                        margin: 0;
+                    }
+                }
+                .icon-topbox.vc_column_container:nth-child(odd),
+                .icon-topbox.vc_column_container:nth-child(even) {
+                    justify-content: center;
+                    padding: 0;
+                    margin-bottom: 80px;
+                }
+            }
+        }
+    }
+    div#what-we-offer {
+        padding: 80px 0 80px 0 !important;
+        div.elevar-section {
+            margin-bottom: 55px !important;
+            h2 {
+                margin-bottom: 20px;
+            }
+        }
+        div#icon-row3 {
+            .edgtf-full-section-inner {
+                max-width: 100%;
+                margin: 0 auto;
+            }
+        }
+        div.bottom-iconrow {
+            div.edgtf-full-section-inner {
+                display: flex;
+                flex-direction: column;
+                .icon-bottombox {
+                    display: flex;
+                    width: 100%;
+                    div.vc_column-inner {
+                        min-height: 100%;
+                        padding: 10%;
+                        width: 100%;
+                        max-width: 100%;
+                        aspect-ratio: 1/1;
+                        margin: 0;
+                        margin-bottom: 80px;
+                    }
+                    .wpb_wrapper {
+                        height: 100%;
+                        width: 100%;
+                    }
+                    .edgtf-iwt.edgtf-iwt-icon-top {
+                        display: flex;
+                        flex-direction: column;
+                        height: 100%;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .edgtf-iwt-icon-holder {
+                        display: inline-flex;
+                        width: 100%;
+                        justify-content: center;
+                        align-items: center;
+                        float: unset !important;
+                        margin: 0 auto !important;
+                        height: 50%;
+                        img.attachment-full.size-full {
+                            max-width: 135px;
+                        }
+                    }
+                    .edgtf-iwt-content-holder {
+                        display: inline-flex;
+                        width: 100%;
+                        justify-content: center;
+                        height: 50%;
+                        align-items: flex-start;
+                        padding-top: 20px !important;
+                    }
+                    h5 {
+                        font-size: 30px;
+                        line-height: 36px;
+                    }
+                }
+                #bottombox1,
+                #bottombox2,
+                #bottombox3 {
+                    justify-content: center;
+                    .edgtf-iwt-content-holder {
+                        width: 100%;
+                        margin: 0 auto;
+                    }
+                }
+                #colored-healthcare-button {
+                    padding: 0 15px 0 15px;
+                    margin-top: 0px;
+                    margin-left: 0;
+                    margin-right: 0;
+                    min-height: 100px;
+                    div.wpb_wrapper {
+                        height: 100%;
+                        a {
+                            font-size: 18px;
+                            text-align: left;
+                                img {
+                                    display: inline-flex;
+                                    margin: 0;
+                                    margin-right: 12px;
+                                }
+                            }
+                    }
+                }
+            }
+        }
+    }
+    div#mission-statement {
+    div.elevar-section {
+        h2 {
+            margin-bottom: 20px;
+        }
+    }
+    div#careers-paylocity-row {
+        padding: 40px 0 0px 0 !important;
+    }
+    }
+    div#paylocity {
+    margin: 0 0 50px 0 !important;
+        div.container-iframe {
+            height: 975px;
+        }
+    }
+}
 /* ******* END CAREERS PAGE ******* */

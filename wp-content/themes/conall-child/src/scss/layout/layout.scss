@@ -2,23 +2,15 @@
 @import "../base/font";
 
 /* ************ CSS RESET ************ */
-/*
-  1. Use a more-intuitive box-sizing model.
-*/
+/* Use a more-intuitive box-sizing model. */
 *, *::before, *::after {
   box-sizing: border-box;
 }
-/*
-  2. Remove default margin
-*/
+/* Remove default margin */
 * {
   margin: 0;
 }
-/*
-  Typographic tweaks!
-  3. Add accessible line-height
-  4. Improve text rendering
-*/
+/* Typographic tweaks! Add accessible line-height & improve text rendering */
 body {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
@@ -28,32 +20,26 @@ body {
     position: relative;
     color: $drk_gray3;
 }
-/*
-  5. Improve media defaults
-*/
+/* Improve media defaults */
 img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
 }
-/*
-  6. Remove built-in form typography styles
-*/
+/* Remove built-in form typography styles */
 input, button, textarea, select {
   font: inherit;
 }
-/*
-  7. Avoid text overflows
-*/
+/* Avoid text overflows */
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
-/*
-  8. Create a root stacking context
-*/
+/* Create a root stacking context */
 #root, #__next {
   isolation: isolate;
 }
-
+.wpb_alert p:last-child, #content .wpb_alert p:last-child, .wpb_text_column p:last-child, .wpb_text_column *:last-child, #content .wpb_text_column p:last-child, #content .wpb_text_column *:last-child {
+    margin-bottom: revert;
+}
 a, p a {
     font-family: 'Raleway', sans-serif;
     color: $elevar_blue;
@@ -61,7 +47,9 @@ a, p a {
 
 p {
     font-family: 'Raleway', sans-serif;
-    margin: 0 !important;
+}
+span.no-linebreak {
+    white-space: nowrap;
 }
 /* *********** BACK TO TOP *********** */
 #edgtf-back-to-top > span {
@@ -86,4 +74,18 @@ display: none!important;
 /* *********** POST CONTENT  *********** */
 .edgtf-post-content li {
 font-family: 'Raleway', sans-serif !important;
+}
+
+@media only screen and (max-width: 768px) {
+    #edgtf-back-to-top {
+    right: 40px;
+    bottom: 22px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #edgtf-back-to-top {
+    right: 25px;
+    bottom: 95px;
+    }
 }

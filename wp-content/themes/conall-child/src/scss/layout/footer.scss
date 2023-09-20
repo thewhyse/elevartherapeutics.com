@@ -15,6 +15,7 @@ footer {
     .edgtf-footer-bottom-holder {
         background-color: $elevar_blue !important;
         min-height: 200px;
+        display: flex;
     }
     .widget {
         color: #fff !important;
@@ -77,6 +78,7 @@ footer {
     div#bottom-links {
     min-width: 775px;
     margin-top: 30px;
+    margin-bottom: 15px;
         .policies {
             font-size: 18px;
             a.policy-links {
@@ -168,7 +170,7 @@ footer {
                 }
             }
             div#bottom-links {
-            min-width: 775px;
+            min-width: 100%;
             margin-top: 20px;
                 .policies {
                     font-size: 18px;
@@ -206,6 +208,8 @@ footer {
         div.edgtf-content-inner {
             div.edgtf-content-bottom {
                 background-image: url("/wp-content/themes/conall-child/images/footer-blue-wave-414.svg");
+                background-size: 100%;
+                background-position-y: bottom;
             }
         }
     }
@@ -261,7 +265,6 @@ footer {
                 }
             }
             div#bottom-links {
-            min-width: 474px;
             margin-top: 20px;
                 .policies {
                     font-size: 12px;
@@ -293,4 +296,9 @@ footer {
 }
 
 @media all and (max-width: 480px) {
+    footer div#temp-footer-container div#bottom-links {
+    min-width: 320px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
 }

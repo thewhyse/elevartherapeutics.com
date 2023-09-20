@@ -3,8 +3,75 @@
 
 /* ******* MISSION VALUES 2023 PAGE ******* */
 div#about_hero_row {
-        background-image:
-        url(/wp-content/themes/conall-child/images/hero_white_wave-1920x140.svg),
-        url(/wp-content/themes/conall-child/images/about-hero-1920x457.png);
+        background-image:url("/wp-content/themes/conall-child/images/about-hero-1920x457.png");
+        div.clearfix.edgtf-full-section-inner {
+        div#about-hero-h1 {
+            text-align: center;
+            h1.elevar-h1 {
+                max-width: 295px;
+                padding: 0;
+            }
+        }
+    }
+}
+div#core-values.elevar-section.about {
+    padding: 0 5% 100px 5% !important;
+}
+
+@media all and (max-width: 1024px) {
+    div#about_hero_row {
+            background-image:url("/wp-content/themes/conall-child/images/about-hero-1024x306.png");
+                div.clearfix.edgtf-full-section-inner {
+            div#about-hero-h1 {
+                text-align: center;
+                h1.elevar-h1 {
+                    max-width: 260px;
+                    padding: 0 0 15px 0;
+                    border-bottom: 3px solid #fff;
+                }
+            }
+        }
+    }
+    div#core-values.elevar-section.about {
+        padding-bottom: 100px !important;
+    }
+}
+@media all and (max-width: 768px) {
+
+}
+@media all and (max-width: 596px) {
+    div#about_hero_row {
+            background-image:url("/wp-content/themes/conall-child/images/about-hero-414x405.png");
+                div.clearfix.edgtf-full-section-inner {
+            div#about-hero-h1 {
+                text-align: center;
+                h1.elevar-h1 {
+                    max-width: 260px;
+                    padding: 0 0 15px 0;
+                    border-bottom: 3px solid #fff;
+                }
+            }
+        }
+    }
+    div#core-values.elevar-section.about {
+        padding-bottom: 50px !important;
+    }
+}
+@media all and (max-width: 480px) {
+    div#about_hero_row {
+                div.clearfix.edgtf-full-section-inner {
+            div#about-hero-h1 {
+                text-align: center;
+                h1.elevar-h1 {
+                    max-width: 300px;
+                    padding: 0;
+                    border: none;
+                }
+            }
+        }
+    }
+    div#core-values.elevar-section.about {
+        padding-bottom: 0px !important;
+    }
 }
 /* ******* END MISSION VALUES 2023 PAGE ******* */

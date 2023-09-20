@@ -28,15 +28,13 @@
         }
     }
     div#hp-therapeutics-section {
-        padding: 140px 0 20px 0;
+        padding: 75px 0 20px 0;
         background-color: $elevar_blue;
         bottom: -1px;
         div.elevar-heading {
-            h1.elevar-h1 {
+            h1.elevar-heading {
                 color: $white;
-                font-size: 36px;
-                line-height: 50px;
-                margin: 25px 0;
+                line-height: 38px;
             }
             p.elevar-p {
                 color: $white;
@@ -118,9 +116,6 @@
             background-color: $elevar_blue;
             div.elevar-heading {
                 h1.elevar-h1 {
-                    font-size: 40px;
-                    line-height: 1.65em;
-                    font-weight: 700;
                     margin: 25px 0;
                 }
                 p.elevar-p {
@@ -211,9 +206,6 @@
             background-color: $elevar_blue;
             div.elevar-heading {
                 h1.elevar-h1 {
-                    font-size: 40px;
-                    line-height: 1.65em;
-                    font-weight: 700;
                     margin: 25px 0;
                 }
                 p.elevar-p {
@@ -286,7 +278,98 @@
     }
 }
 @media all and (max-width: 576px) {
+    .home {
+        div#home_hero_row {
+            background-image: url(/wp-content/themes/conall-child/images/home-hero-414x405.png);
+            padding-top: 97.83%;
+            div#home-hero-h1 {
+                h1 {
+                    padding: 0 0 15px 0;
+                    border-bottom: 3px solid #fff;
+                }
+            }
+            div#home-hero-h2 {
+                h2 {
+                color: $white;
+                }
+            }
+        }
 
+        div#hp-therapeutics-section {
+            padding: 40px 0 20px 0;
+            background-color: $elevar_blue;
+            div.elevar-heading {
+                h1.elevar-h1 {
+                    margin: 25px 0;
+                }
+                p.elevar-p {
+                    color: $white;
+                    font-size: 20px;
+                }
+            }
+        }
+        div#hp-triple-section {
+            background-color: $elevar_blue;
+            padding: 40px 0 50px 0;
+            div#therapeutics-triple-section {
+                .triple-img {
+                    min-width: 100%;
+                    margin: 60px 0 60px 0 !important;
+                    img.vc_single_image-img {
+                        width: 100%;
+                    }
+                }
+                div.edgtf-full-section-inner {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    div.wpb_column {
+                        display: flex;
+                        flex: 1;
+                        width: 100%;
+                        flex-basis: 100%;
+                        div.vc_column-inner {
+                            > div.wpb_wrapper {
+                                display: flex;
+                                flex-direction: column;
+                            }
+                        }
+                    }
+
+                    div#col-triple-left {
+                        div#triple-img-left {
+                        }
+                        div#triple-textbox-left {
+                        }
+                    }
+                    div#col-triple-center {
+                        div#triple-img-center {
+                        }
+                        div#triple-textbox-center {
+                        }
+                    }
+                    div#col-triple-right {
+                        div#triple-img-right {
+                        }
+                        div#triple-textbox-right {
+                        }
+                    }
+                }
+                h3.elevar-h3 {
+                        max-width: 100%;
+                    }
+                p.elevar-p {
+                }
+                div.elevar-textbox {
+                    margin-top: 0 !important;
+                }
+            }
+        }
+        div#hp-testimonial-section {
+
+        }
+    }
 }
 
 @media all and (max-width: 480px) {
