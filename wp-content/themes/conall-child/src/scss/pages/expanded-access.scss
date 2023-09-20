@@ -3,8 +3,55 @@
 
 /* ******* EXPANDED ACCESS 2023 PAGE ******* */
 div#expanded_access_hero_row {
-        background-image:
-        url(/wp-content/themes/conall-child/images/hero_white_wave-1920x140.svg),
-        url(/wp-content/themes/conall-child/images/expanded-access-hero-1920x457.png);
+        background-image:url("/wp-content/themes/conall-child/images/expanded-access-hero-1920x457.png");
+        div.clearfix.edgtf-full-section-inner {
+            div#expanded-access-hero-h1 {
+                text-align: center;
+                    h1.elevar-h1 {
+
+                    }
+            }
+        }
+}
+div#expanded-access-content {
+
+}
+div#expanded-access-works {
+
+}
+div#request-expanded-access {
+
+}
+@media all and (max-width: 1024px) {
+div#expanded_access_hero_row {
+        background-image:url("/wp-content/themes/conall-child/images/expanded-access-hero-1024x306.png");
+        div.clearfix.edgtf-full-section-inner {
+            div#expanded-access-hero-h1 {
+                text-align: center;
+                    h1.elevar-h1 {
+
+                    }
+            }
+    }
+}
+}
+@media all and (max-width: 768px) {
+
+}
+@media all and (max-width: 576px) {
+div#expanded_access_hero_row {
+        background-image:url("/wp-content/themes/conall-child/images/expanded-access-hero-414x405.png");
+        div.clearfix.edgtf-full-section-inner {
+            div#expanded-access-hero-h1 {
+                text-align: center;
+                    h1.elevar-h1 {
+
+                    }
+            }
+    }
+}
+}
+@media all and (max-width: 480px) {
+
 }
 /* ******* END EXPANDED ACCESS 2023 PAGE ******* */
