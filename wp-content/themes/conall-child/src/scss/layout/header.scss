@@ -1072,6 +1072,11 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .edgtf-mobile-header .edgtf-mobile-header-inner div.edgtf-mobile-header-holder div.edgtf-grid {
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
     .edgtf-mobile-header .edgtf-mobile-menu-opener .edgtf-mobile-opener-icon-holder span {
     font-size: 28px;
     }
