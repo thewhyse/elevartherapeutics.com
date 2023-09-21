@@ -42,11 +42,20 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 a, p a {
     font-family: 'Raleway', sans-serif;
-    color: $elevar_blue;
+    color: $elevar_purple;
+    text-decoration: underline;
+}
+a:hover {
+    color: $links;
+}
+div#future-events-row div#future-events-row-info-blocks a,
+a.yellow:hover {
+    color: $elevar_yellow !important;
 }
 
 p {
     font-family: 'Raleway', sans-serif;
+    text-align: left;
 }
 span.no-linebreak {
     white-space: nowrap;
