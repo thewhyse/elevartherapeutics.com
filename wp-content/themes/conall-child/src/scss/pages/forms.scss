@@ -16,7 +16,7 @@ input.hs-button {
     text-align: center;
     justify-content: center;
     align-items: center;
-    text-indent: 0;
+    text-indent: 0 !important;
     margin: 0 auto !important;
         &:hover {
             border: 2px solid $elevar_purple;
