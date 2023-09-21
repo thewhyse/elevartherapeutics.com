@@ -20,12 +20,13 @@ a.edgtf-btn {
     margin-top: 3% !important;
     margin-bottom: 3% !important;
     text-decoration: none !important;
-    :hover {
+}
+a.edgtf-btn:hover {
     background-color: $white;
     color: $elevar_purple  !important;
     border-color: $elevar_purple;
-    }
 }
+
 .edgtf-search-page-holder .edgtf-search-page-form .edgtf-form-holder input.edgtf-search-submit {
     display: flex;
     justify-content: center;
