@@ -13,6 +13,8 @@ div#esmo_23_hero_row {
         background-image: url(/wp-content/themes/conall-child/images/esmo-hero-1920x457.png);
         background-color: $white;
         div.clearfix.edgtf-full-section-inner {
+            height: 100%;
+            padding-top: 80px;
             .wpb_column {
                 div#esmo-hero-h1 {
                     margin-bottom: 1% !important;
@@ -152,13 +154,13 @@ div#esmo_23_hero_row {
   -webkit-animation: fade-in .3s linear 1;
   -moz-animation: fade-in .3s linear 1;
   -ms-animation: fade-in .3s linear 1;
-  #close-map-icon-2023 {
+  #close-map-icon {
     transition: all 0.5s;
     cursor: pointer;
     width: 50px;
     height: 50px;
     background: url(/wp-content/themes/conall-child/dist/images/Close-Icon.png);
-    background-size: 50px !important;
+    background-size: cover;
     position: absolute;
     top: 10vh;
     right: 4vw;
@@ -353,6 +355,7 @@ div#explore-the-past {
                         margin: 0;
                         font-weight: 700;
                         margin-bottom: 15px;
+                        text-transform: initial;
                     }
                 }
                 div#explore-bodycopy {
@@ -582,6 +585,7 @@ div#temp-footer-row {
         background-image: url(/wp-content/themes/conall-child/images/esmo-hero-1024x306.png);
         bottom: 1px;
         div.clearfix.edgtf-full-section-inner {
+            padding-top: 54px;
             .wpb_column {
                 div#esmo-hero-h1 {
                     margin-bottom: 0 !important;
@@ -812,6 +816,7 @@ div#temp-footer-row {
                             margin: 0;
                             font-weight: 700;
                             margin-bottom: 10px;
+
                         }
                     }
                     div#explore-bodycopy {
@@ -1009,6 +1014,7 @@ div#temp-footer-row {
     div#esmo_23_hero_row {
         height: 385px;
         div.clearfix.edgtf-full-section-inner {
+            padding-top: 80px;
             .wpb_column {
                 div#esmo-hero-h1 {
                     h1.elevar-h1 {
@@ -1193,8 +1199,9 @@ div#temp-footer-row {
     div#explore-the-past {
         padding: 100px 0 70px 0;
         div#explore-heading {
-            max-width: 440px;
+            max-width: 340px;
             margin: 0 auto !important;
+            text-align: center;
             h2.elevar-h2 {
                 font-size: 24px;
                 line-height: 28px;
@@ -1358,11 +1365,12 @@ div#temp-footer-row {
         background-image: url(/wp-content/themes/conall-child/images/esmo-hero-414x405.png);
         aspect-ratio: 414/400;
         div.clearfix.edgtf-full-section-inner {
+            padding-top: 120px;
             .wpb_column {
                 padding: 0;
                 div#esmo-hero-h1 {
                 h1.elevar-h1 {
-                    max-width: 485px;
+                    max-width: 535px;
                     margin-top: 0 !important;
                     margin: 0 auto;
                 }
@@ -1476,7 +1484,7 @@ div#temp-footer-row {
     }
     #map_popup_section_2023 {
         background-image: url("/wp-content/themes/conall-child/images/esmo-map-popover-414x583.png");
-        #close-map-icon-2023 {
+        #close-map-icon {
             width: 40px;
             height: 40px;
             top: 5vh;
@@ -1620,7 +1628,7 @@ div#temp-footer-row {
     div#explore-the-past {
         padding: 75px 0 75px 0;
         div#explore-heading {
-            max-width: 100%;
+            max-width: 400px;
             h2.elevar-h2 {
                 font-size: 28px;
                 line-height: 34px;
@@ -1865,6 +1873,7 @@ div#temp-footer-row {
         background-position: center top !important;
         padding: 0;
         div.clearfix.edgtf-full-section-inner {
+            padding-top: 100px;
             .wpb_column {
                 div#esmo-hero-h1 {
                     h1.elevar-h1 {
