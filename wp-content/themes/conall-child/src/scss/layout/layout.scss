@@ -48,7 +48,7 @@ a, p a {
 a:hover {
     color: $links;
 }
-div#future-events-row div#future-events-row-info-blocks a,
+div#future-events-row div#future-events-row-info-blocks a:hover,
 a.yellow:hover {
     color: $elevar_yellow !important;
 }
