@@ -2,7 +2,7 @@
 @import "colors";
 
 a:hover {
-    color: #25156F;
+    color: $links;
     cursor: pointer;
     -webkit-transition: color .2s ease-in-out,background-color .2s ease-in-out,border-color .2s ease-in-out,padding .2s ease-in-out;
     -moz-transition: color .2s ease-in-out,background-color .2s ease-in-out,border-color .2s ease-in-out,padding .2s ease-in-out;
