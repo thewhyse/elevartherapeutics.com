@@ -327,6 +327,9 @@ div#explore-the-past {
             padding-bottom: 60px;
         }
     }
+    div#explore-heading-mobile {
+        display: none;
+    }
     div#explore-inner-row {
         div.edgtf-full-section-inner {
             display: flex;
@@ -1199,6 +1202,10 @@ div#temp-footer-row {
     div#explore-the-past {
         padding: 100px 0 70px 0;
         div#explore-heading {
+            display: none;
+        }
+        div#explore-heading-mobile {
+            display: block;
             max-width: 340px;
             margin: 0 auto !important;
             text-align: center;
@@ -1627,7 +1634,7 @@ div#temp-footer-row {
     }
     div#explore-the-past {
         padding: 75px 0 75px 0;
-        div#explore-heading {
+        div#explore-heading-mobile {
             max-width: 400px;
             h2.elevar-h2 {
                 font-size: 28px;
@@ -2103,7 +2110,7 @@ div#temp-footer-row {
         }
     }
     div#explore-the-past {
-        div#explore-heading {
+        div#explore-heading-mobile {
             h2.elevar-h2 {
                 font-size: 28px;
                 line-height: 34px;
