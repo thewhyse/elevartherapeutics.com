@@ -11,36 +11,55 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1, h1.elevar-h1 {
     font-size: 40px;
-    line-height: 70px;
+    line-height: 54px;
     letter-spacing: 3.5px;
+    margin-top: 3% !important;
+    margin-bottom: 3% !important;
+}
+h1, h1.elevar-heading {
+    font-size: 40px;
+    line-height: 54px;
+    letter-spacing: 3.5px;
+    margin-top: 3% !important;
+    margin-bottom: 3% !important;
 }
 h2, h2.elevar-h2 {
     font-size: 36px;
-    line-height: 38px;
+    line-height: 48px;
     letter-spacing: 2.5px;
+    margin-top: 2% !important;
+    margin-bottom: 2% !important;
 }
 h3, h3.elevar-h3 {
-    font-size: 28px;
-    line-height: 32px;
-    letter-spacing: 2px;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+    margin-top: 2% !important;
+    margin-bottom: 2% !important;
 }
 h4, h4.elevar-h4 {
-    font-size: 24px;
-    line-height: 27px;
+    font-size: 26px;
+    line-height: 36px;
     letter-spacing: 2px;
+    margin-top: 1.25% !important;
+    margin-bottom: 1.25% !important;
 }
 h5, h5.elevar-h5 {
-    font-size: 22px;
-    line-height: 25px;
-    letter-spacing: 1px;
+    font-size: 28px;
+    line-height: 42px;
+    letter-spacing: 1.75px;
+    margin-top: 1.75% !important;
+    margin-bottom: 1.75% !important;
 }
 h6, h6.elevar-h6 {
-    font-size: 20px;
-    line-height: 23px;
-    letter-spacing: 1px;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 1.5px;
+    margin-top: 1.5% !important;
+    margin-bottom: 1.5% !important;
 }
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
-    color: $lt_blue;
+    color: $elevar_purple;
 }
 p, p.elevar-p {
     color: $drk_gray3;
@@ -48,12 +67,56 @@ p, p.elevar-p {
     line-height: 28px;
     font-weight: 400;
     letter-spacing: 0;
+    margin-bottom: 25px;
+    br:not(.line-break) {
+        display: none;
+    }
 }
 input, textarea, select {
     color: $drk_gray3 !important;
     border-color: $reviewgrey !important;
 }
-
+br.line-break {
+    display: block;
+}
+div.cta-row {
+    position: relative;
+    top: 2px;
+    div.cta-text-block {
+        position: absolute;
+        top: 0;
+        right: 5vw;
+        a.cta-hero-button {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            height: 54px;
+            padding: 0;
+            border-radius: 0 0 6px 6px;
+            background: $elevar_purple;
+            color: $white !important;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 32px;
+            border: 1px solid $elevar_purple;
+            border-bottom-left-radius: 11px;
+            border-bottom-right-radius: 11px;
+            transition: all 0.5s;
+            &:hover {
+                background: $white;
+                color: $elevar_purple !important;
+                border: 1px solid $elevar_purple;
+                transition: all 0.5s;
+            }
+        }
+    }
+}
 div.hero-row {
     height: 100%;
     background-position: center top !important;
@@ -73,21 +136,34 @@ div.hero-row {
             div.elevar-h1header {
             h1 {
                 color: $white;
-                text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
                 margin: 0 auto 20px auto;
+                text-align: center;
+                line-height: 48px;
+                margin-top: 0 !important;
+                margin-bottom: 0 !important;
+                }
+                .drop-shadow {
+                    filter: drop-shadow(2px 2px 5px #000000);
                 }
             }
             div.elevar-h2header {
                 h2 {
                     color: $white;
-                    text-shadow: 3px 3px 5px rgba(0,0,0,0.75);
+                    text-align: center;
+                    margin-bottom: 0 !important;
+                    margin-top: 20px !important;
+                }
+                .drop-shadow {
+                    filter: drop-shadow(1px 1px 4px #000000);
                 }
             }
         }
 
+        }
+    + .elevar-section {
+        padding: 75px 0 0px 0 !important;
     }
 }
-
 @media all and (max-width: 1024px) {
     h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway', sans-serif;
@@ -100,31 +176,43 @@ div.hero-row {
         font-size: 40px;
         line-height: 70px;
         letter-spacing: 3.5px;
+        margin-top: 3% !important;
+        margin-bottom: 3% !important;
     }
     h2, h2.elevar-h2 {
         font-size: 32px;
         line-height: 36px;
-        letter-spacing: 2.5;
+        letter-spacing: 2.5px;
+        margin-top: 2% !important;
+        margin-bottom: 2% !important;
     }
     h3, h3.elevar-h3 {
         font-size: 28px;
         line-height: 32px;
         letter-spacing: 2px;
+        margin-top: 2% !important;
+        margin-bottom: 2% !important;
     }
     h4, h4.elevar-h4 {
         font-size: 24px;
         line-height: 27px;
         letter-spacing: 2px;
+        margin-top: 1% !important;
+        margin-bottom: 1% !important;
     }
     h5, h5.elevar-h5 {
         font-size: 22px;
         line-height: 25px;
         letter-spacing: 1px;
+        margin-top: 1% !important;
+        margin-bottom: 1% !important;
     }
     h6, h6.elevar-h6 {
         font-size: 20px;
         line-height: 23px;
         letter-spacing: 1px;
+        margin-top: 1% !important;
+        margin-bottom: 1% !important;
     }
     h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
         color: $lt_blue;
@@ -135,6 +223,7 @@ div.hero-row {
         line-height: 28px;
         font-weight: 400;
         letter-spacing: 0;
+        margin-bottom: 20px;
     }
     input, textarea, select {
         font-family: 'Raleway', sans-serif !important;
@@ -147,22 +236,26 @@ div.hero-row {
         background-size: cover !important;
         background-repeat: no-repeat !important;
         bottom: -1px;
-        padding-top: 30.5%;
+        padding-top: 29.95%;
             div.clearfix.edgtf-full-section-inner {
+                position: absolute;
+                width: 100%;
+                top: 25%;
+                left: 50%;
+                transform: translate(-50%, -25%);
             div.wpb_column {
                 padding-left: 5%;
                 padding-right: 5%;
                 div.elevar-h1header {
                 h1 {
                     color: $white;
-                    text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
-                    margin: 0 auto 20px auto;
+                    }
+                    .drop-shadow {
                     }
                 }
                 div.elevar-h2header {
                     h2 {
                         color: $white;
-                        text-shadow: 3px 3px 5px rgba(0,0,0,0.75);
                     }
                 }
             }
@@ -186,7 +279,8 @@ div.hero-row {
     h2, h2.elevar-h2 {
         font-size: 30px;
         line-height: 34px;
-        letter-spacing: 2;
+        letter-spacing: 2px;
+        margin-bottom: 3% !important;
     }
     h3, h3.elevar-h3 {
         font-size: 28px;
@@ -217,6 +311,7 @@ div.hero-row {
         line-height: 28px;
         font-weight: 400;
         letter-spacing: 0;
+        margin-bottom: 15px;
     }
     input, textarea, select {
         font-family: 'Raleway', sans-serif !important;
@@ -229,7 +324,7 @@ div.hero-row {
         background-size: cover !important;
         background-repeat: no-repeat !important;
         bottom: -1px;
-        padding-top: 23.80%;
+        padding-top: 29.95%;
             div.clearfix.edgtf-full-section-inner {
             position: absolute;
             width: 100%;
@@ -242,14 +337,13 @@ div.hero-row {
                 div.elevar-h1header {
                 h1 {
                     color: $white;
-                    text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
-                    margin: 0 auto 20px auto;
+                    }
+                    .drop-shadow {
                     }
                 }
                 div.elevar-h2header {
                     h2 {
                         color: $white;
-                        text-shadow: 3px 3px 5px rgba(0,0,0,0.75);
                     }
                 }
             }
@@ -273,7 +367,8 @@ div.hero-row {
     h2, h2.elevar-h2 {
         font-size: 28px;
         line-height: 32px;
-        letter-spacing: 1.75;
+        letter-spacing: 1.75px;
+        margin-bottom: 4% !important;
     }
     h3, h3.elevar-h3 {
         font-size: 28px;
@@ -304,6 +399,7 @@ div.hero-row {
         line-height: 28px;
         font-weight: 400;
         letter-spacing: 0;
+        margin-bottom: 10px;
     }
     input, textarea, select {
         font-family: 'Raleway', sans-serif !important;
@@ -316,27 +412,27 @@ div.hero-row {
         background-size: cover !important;
         background-repeat: no-repeat !important;
         bottom: -1px;
-        padding-top: 23.80%;
+        padding-top: 97.83%;
             div.clearfix.edgtf-full-section-inner {
             position: absolute;
             width: 100%;
-            top: 50%;
+            top: 70%;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -70%);
             div.wpb_column {
                 padding-left: 10%;
                 padding-right: 10%;
                 div.elevar-h1header {
                 h1 {
                     color: $white;
-                    text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
-                    margin: 0 auto 20px auto;
+                    margin: 0 auto;
+                    }
+                    .drop-shadow {
                     }
                 }
                 div.elevar-h2header {
                     h2 {
                         color: $white;
-                        text-shadow: 3px 3px 5px rgba(0,0,0,0.75);
                     }
                 }
             }
@@ -354,13 +450,14 @@ div.hero-row {
     }
     h1, h1.elevar-h1 {
         font-size: 40px;
-        line-height: 70px;
+        line-height: 40px;
         letter-spacing: 3.5px;
     }
     h2, h2.elevar-h2 {
         font-size: 28px;
         line-height: 32px;
-        letter-spacing: 1.75;
+        letter-spacing: 1.75px;
+        margin-bottom: 5% !important;
     }
     h3, h3.elevar-h3 {
         font-size: 28px;
@@ -391,6 +488,7 @@ div.hero-row {
         line-height: 28px;
         font-weight: 400;
         letter-spacing: 0;
+        margin-bottom: 10px;
     }
     input, textarea, select {
         font-family: 'Raleway', sans-serif !important;
@@ -403,27 +501,26 @@ div.hero-row {
         background-size: cover !important;
         background-repeat: no-repeat !important;
         bottom: -1px;
-        padding-top: 23.80%;
+        padding-top: 97.83%;
             div.clearfix.edgtf-full-section-inner {
             position: absolute;
             width: 100%;
-            top: 50%;
+            top: 75%;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -75%);
             div.wpb_column {
                 padding-left: 10%;
                 padding-right: 10%;
                 div.elevar-h1header {
                 h1 {
                     color: $white;
-                    text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
-                    margin: 0 auto 20px auto;
+                    }
+                    .drop-shadow {
                     }
                 }
                 div.elevar-h2header {
                     h2 {
                         color: $white;
-                        text-shadow: 3px 3px 5px rgba(0,0,0,0.75);
                     }
                 }
             }

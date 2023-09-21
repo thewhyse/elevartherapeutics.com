@@ -99,57 +99,6 @@
   .edgtf-iwt:not(.edgtf-iwt-left-from-title):not(.edgtf-iwt-icon-top-with-separator) .edgtf-iwt-title-holder {
     margin-bottom: 2px !important;
   }
-  .icon-topbox {
-    .edgtf-iwt-icon-holder {
-      img {
-        max-width: 75%;
-      }
-    }
-    h5 {
-      font-size: 25px;
-      line-height: 28px;
-      letter-spacing: 0;
-    }
-    p {
-      font-size: 16px;
-      line-height: 22px;
-      padding: 0;
-      margin: 0;
-      width: 88%;
-    }
-    .edgtf-iwt-content-holder {
-      width: 75%;
-    }
-  }
-  .icon-bottombox {
-    div.vc_column-inner {
-      margin: 3%;
-      min-height: 240px;
-      padding: 8px;
-      padding-top: 0;
-    }
-    h5 {
-      font-size: 25px;
-      line-height: 28px;
-      letter-spacing: 0;
-    }
-    .edgtf-iwt-icon-holder,
-    .edgtf-iwt-content-holder {
-      height: 50%;
-      padding: 7%;
-    }
-    .edgtf-iwt-content-holder {
-      width: 98%;
-    }
-    .edgtf-iwt-icon-holder {
-      width: 88%;
-      img {
-        max-width: 50%;
-      }
-    }
-  }
-  #colored-healthcare-button a {
-    font-size: 18px;
 }
   /* #future-events-row {
 
@@ -203,13 +152,9 @@
     margin: 0 auto;
     top: 0;
     right: inherit;
+  }
 
-  }
-  #careers_hero_row {
-    top: -54px;
-  }
 }
-/*** Responsive Styles Tablet And Below ***/
 @media all and (max-width: 980px) {
   #elevar-ppl-row {
     height: auto;
@@ -260,11 +205,6 @@
     padding-right: 10px;
   }
 }
-/*** Responsive Styles Tablet Only ***/
-@media all and (min-width: 768px) and (max-width: 980px) {
-
-}
-/*** Responsive Styles Smartphone Only ***/
 @media all and (max-width: 768px) {
   .page-id-17194 .edgtf-grid-section .edgtf-section-inner {
     width: 600px;
@@ -291,7 +231,6 @@
     }
   }
 }
-/**** Billie Careers page ****/
 @media all and (max-width: 767px) {
   /* #spotlight-row {
     padding: 0 0 20px 15px !important;
@@ -554,17 +493,15 @@
     }
     min-height: 100px;
   }
-
   div.container-iframe {
     margin-top: 25px;
   }
 }
-/*** Responsive Styles Smartphone Portrait ***/
 @media all and (max-width: 480px) {
   .page-id-17194 .edgtf-grid-section .edgtf-section-inner {
     width: 350px;
   }
-   #mission-statement {
+#mission-statement {
     padding-top: 30px !important;
     padding-bottom: 0px !important;
   }
