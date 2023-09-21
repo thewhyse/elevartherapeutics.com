@@ -33,7 +33,7 @@ if ( ! function_exists( 'conall_edge_register_required_plugins' ) ) {
 				'force_activation'   => false,
 				'force_deactivation' => false
 			),
-			array(
+/* 			array(
 				'name'               => esc_html__( 'Edge Instagram Feed', 'conall' ),
 				'slug'               => 'edgtf-instagram-feed',
 				'source'             => get_template_directory() . '/includes/plugins/edgtf-instagram-feed.zip',
@@ -41,8 +41,8 @@ if ( ! function_exists( 'conall_edge_register_required_plugins' ) ) {
 				'version'            => '2.0.1',
 				'force_activation'   => false,
 				'force_deactivation' => false
-			),
-			array(
+			), */
+/* 			array(
 				'name'               => esc_html__( 'Edge Twitter Feed', 'conall' ),
 				'slug'               => 'edgtf-twitter-feed',
 				'source'             => get_template_directory() . '/includes/plugins/edgtf-twitter-feed.zip',
@@ -50,8 +50,8 @@ if ( ! function_exists( 'conall_edge_register_required_plugins' ) ) {
 				'version'            => '1.0.3',
 				'force_activation'   => false,
 				'force_deactivation' => false
-			),
-			array(
+			), */
+/* 			array(
 				'name'         => esc_html__( 'WooCommerce', 'conall' ),
 				'slug'         => 'woocommerce',
 				'external_url' => 'https://wordpress.org/plugins/woocommerce/',
@@ -62,15 +62,15 @@ if ( ! function_exists( 'conall_edge_register_required_plugins' ) ) {
 				'slug'         => 'contact-form-7',
 				'external_url' => 'https://wordpress.org/plugins/contact-form-7/',
 				'required'     => false
-			),
-			array(
+			), */
+/* 			array(
 				'name'     => esc_html__( 'Envato Market', 'conall' ),
 				'slug'     => 'envato-market',
 				'source'   => 'https://envato.github.io/wp-envato-market/dist/envato-market.zip',
 				'required' => false
-			)
+			) */
 		);
-		
+
 		$config = array(
 			'domain'       => 'conall',
 			'default_path' => '',
@@ -101,10 +101,10 @@ if ( ! function_exists( 'conall_edge_register_required_plugins' ) ) {
 				'nag_type'                        => 'updated'
 			)
 		);
-		
+
 		tgmpa( $plugins, $config );
 	}
-	
+
 	add_action( 'tgmpa_register', 'conall_edge_register_required_plugins' );
 }
 
