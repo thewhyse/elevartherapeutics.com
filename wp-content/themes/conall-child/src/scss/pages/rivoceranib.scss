@@ -494,7 +494,7 @@ div#your-interest-section {
             div#study-numbers {
                 max-width: 100%;
                 margin: 0 auto;
-                padding: 30px 40px;
+                padding: 20px 15px;
                 display: -webkit-box;
                 display: -ms-flexbox;
                 display: flex;
@@ -529,7 +529,7 @@ div#your-interest-section {
                     align-items: center;
                         margin: 0;
                         color: #fff;
-                        font-size: 2.2vw;
+                        font-size: 16px;
                 }
             }
         }
@@ -619,15 +619,16 @@ div#your-interest-section {
             -webkit-box-pack: justify;
             -ms-flex-pack: justify;
             justify-content: space-between;
-            width: 550px;
+            width: 100%;
             margin: 40px auto 0;
             border: 1px solid #2b71b7;
             border-radius: 20px;
             padding: 20px;
             background: #fff;
+            align-items: center;
             .icon-block {
-                width: 95px;
-                height: 95px;
+                width: 50%;
+                height: 100%;
             }
             .txt-block {
                 display: -webkit-box;
