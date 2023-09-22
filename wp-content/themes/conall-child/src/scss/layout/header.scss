@@ -3,6 +3,16 @@
 
 
 /* ******* EVEAR 2023 HEADER START ******* */
+.edgtf-drop-down .narrow .second .inner ul, .edgtf-drop-down .wide .second .inner > ul {
+    background-color: #fff;
+    box-shadow: 3px 3px 10px -6px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 3px 3px 10px -6px rgba(0,0,0,0.5);
+    -moz-box-shadow: 3px 3px 10px -6px rgba(0,0,0,0.5);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
 
 .edgtf-dark-header .edgtf-page-header > div:not(.edgtf-sticky-header):not(.fixed) .edgtf-main-menu > ul > li.edgtf-active-item > a,
 .edgtf-dark-header .edgtf-page-header > div:not(.edgtf-sticky-header):not(.fixed) .edgtf-main-menu > ul > li > a:hover {
@@ -88,7 +98,8 @@
                                                 width: 250px;
                                                 > a {
                                                     font-size: 14px;
-                                                    color: $white;
+                                                    color: $drk_gray3;
+                                                    font-weight: 500;
                                                 }
                                                 :hover {
                                                     color: $elevar_yellow;
