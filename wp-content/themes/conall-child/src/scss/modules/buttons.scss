@@ -22,9 +22,9 @@ a.edgtf-btn {
     text-decoration: none !important;
 }
 a.edgtf-btn:hover {
-    background-color: $white;
+    background-color: $white !important;
     color: $elevar_purple  !important;
-    border-color: $elevar_purple;
+    border-color: $elevar_purple !important;
 }
 
 .edgtf-search-page-holder .edgtf-search-page-form .edgtf-form-holder input.edgtf-search-submit {
