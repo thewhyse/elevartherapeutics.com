@@ -80,6 +80,9 @@ p, p.elevar-p {
         display: none;
     }
 }
+p.elevar-p.center {
+    text-align: center !important
+}
 input, textarea, select {
     color: $drk_gray3 !important;
     border-color: $reviewgrey !important;
