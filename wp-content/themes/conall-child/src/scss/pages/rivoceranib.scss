@@ -34,6 +34,11 @@ div#about-rivoceranib {
     div.col-rivo {
         div#about-rivoceranib-heading {
         }
+        div#elevar-section {
+            p.elevar-p {
+                text-align: center;
+            }
+        }
         div#study-numbers {
             max-width: 100%;
             margin: 0 auto;
@@ -52,27 +57,31 @@ div#about-rivoceranib {
             margin-top: 40px;
             margin-bottom: 30px !important;
             .wpb_wrapper {
-            width: 100%;
-            height: 100%;
-            color: #fff;
-            background: url(/wp-content/uploads/2023/06/ppl-icon.png),
-            url(/wp-content/uploads/2023/06/ppl-icon.png);
-            background-position: center left 0,
-            center right 0;
-            background-repeat: no-repeat;
-            background-size: 9%;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
+                width: 100%;
+                height: 100%;
+                color: #fff;
+                background: url(/wp-content/uploads/2023/06/ppl-icon.png),
+                url(/wp-content/uploads/2023/06/ppl-icon.png);
+                background-position: center left 0,
+                center right 0;
+                background-repeat: no-repeat;
+                background-size: 9%;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
                     margin: 0;
                     color: #fff;
                     font-size: 2.2vw;
+                    strong {
+                        margin-left: 1%;
+                        margin-right: 1%;
+                    }
             }
         }
     }
@@ -85,6 +94,7 @@ div#clinical-studies-section.new-center-row {
     div.wpb_text_column.wpb_content_element {
         ul {
         padding-left: 35px;
+        text-align: left;
             li {
                 font-size: 17px;
                 line-height: 28px;
@@ -100,6 +110,9 @@ div#clinical-studies-section.new-center-row {
 }
 div#pipeline-section {
     padding: 60px 0 60px 0;
+    p.elevar-p {
+        text-align: center;
+    }
     p.elevar-p.odd {
         text-align: left;
         font-size: 12px;
@@ -129,14 +142,23 @@ div#moa-section {
         width: 50vw;
         margin: 0 auto;
     }
-    div#moa-pdf-img-link-dskt {
-        margin: 60px 0 60px 0 !important;
-    }
-    #moa-pdf-img-link-dskt:hover {
-        opacity: 0.7;
+    div#moa-button {
+        text-align: center;
+        a.edgtf-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px auto !important;
+            img.dl-icon {
+                width: 31.25px;
+                height: 31.25px;
+                margin-right: 10px;
+            }
+        }
     }
     div#contact-us-link {
         p {
+            text-align: center;
             a {
                 color: $elevar_blue;
                 text-decoration: underline;
@@ -298,24 +320,24 @@ div#your-interest-section {
                 margin-top: 40px;
                 margin-bottom: 30px !important;
                 .wpb_wrapper {
-                width: 100%;
-                height: 100%;
-                color: #fff;
-                background: url(/wp-content/uploads/2023/06/ppl-icon.png),
-                url(/wp-content/uploads/2023/06/ppl-icon.png);
-                background-position: center left 0,
-                center right 0;
-                background-repeat: no-repeat;
-                background-size: 9%;
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                justify-content: center;
-                -webkit-box-align: center;
-                -ms-flex-align: center;
-                align-items: center;
+                    width: 100%;
+                    height: 100%;
+                    color: #fff;
+                    background: url(/wp-content/uploads/2023/06/ppl-icon.png),
+                    url(/wp-content/uploads/2023/06/ppl-icon.png);
+                    background-position: center left 0,
+                    center right 0;
+                    background-repeat: no-repeat;
+                    background-size: 9%;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
                         margin: 0;
                         color: #fff;
                         font-size: 2.2vw;
@@ -381,11 +403,8 @@ div#your-interest-section {
             width: 50vw;
             margin: 0 auto;
         }
-        div#moa-pdf-img-link-dskt {
-            margin: 60px 0 60px 0 !important;
-        }
-        #moa-pdf-img-link-dskt:hover {
-            opacity: 0.7;
+        a.moa-button {
+        text-align: center;
         }
         div#contact-us-link {
             p {
@@ -504,7 +523,254 @@ div#your-interest-section {
     }
 }
 @media all and (max-width: 768px) {
+    div#rivo_hero_row {
+        background-image:url("/wp-content/themes/conall-child/images/rivo-hero-1920x457.png");
+        div.clearfix.edgtf-full-section-inner {
+        div#rivo-hero-h1 {
+            text-align: center;
+            h1.elevar-h1 {
+                max-width: 350px;
+                padding: 0 0 15px 0;
+                border-bottom: 3px solid #fff;
+            }
+        }
+        div#rivo-hero-h2 {
+            max-width: 400px;
+            margin: 0 auto !important;
+            h2 {
+            color: $white;
+            text-transform: inherit;
+            font-size: 28px;
+            line-height: 32px;
+            font-weight: 600;
+            letter-spacing: 0;
+            }
+        }
+    }
+    }
+    div#about-rivoceranib {
+        div.col-rivo {
+            div#about-rivoceranib-heading {
+            }
+            div#study-numbers {
+                max-width: 100%;
+                margin: 0 auto;
+                padding: 30px 40px;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                background: rgb(79, 79, 144);
+                background: -o-linear-gradient(left, rgba(79, 79, 144, 1) 0%, rgba(48, 166, 190, 1) 100%);
+                background: -webkit-gradient(linear, left top, right top, from(rgba(79, 79, 144, 1)), to(rgba(48, 166, 190, 1)));
+                background: linear-gradient(90deg, rgba(79, 79, 144, 1) 0%, rgba(48, 166, 190, 1) 100%);
+                border-radius: 10px;
+                margin-top: 40px;
+                margin-bottom: 30px !important;
+                .wpb_wrapper {
+                    width: 100%;
+                    height: 100%;
+                    color: #fff;
+                    background: url(/wp-content/uploads/2023/06/ppl-icon.png),
+                    url(/wp-content/uploads/2023/06/ppl-icon.png);
+                    background-position: center left 0,
+                    center right 0;
+                    background-repeat: no-repeat;
+                    background-size: 9%;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                        margin: 0;
+                        color: #fff;
+                        font-size: 2.2vw;
+                }
+            }
+        }
+    }
+    div#clinical-studies-section.new-center-row {
+        padding: 30px 20px 30px 0;
+        div.col-clinical-study-left {
+            width: 100% !important;
+        }
+        div.col-clinical-study-right {
+            width: 100% !important;
+        }
+        div#clinical-studies-heading {
 
+        }
+        div.wpb_text_column.wpb_content_element {
+            ul {
+            padding-left: 20px;
+                li {
+                    font-size: 17px;
+                    line-height: 28px;
+                }
+            }
+        }
+        div#clinical-studies-img {
+            margin: 25px 0 0;
+            div.wpb_single_image.wpb_content_element.vc_align_center {
+                text-align: center;
+            }
+        }
+    }
+    div#pipeline-section {
+        padding: 60px 0 60px 0;
+        p.elevar-p.odd {
+            text-align: left;
+            font-size: 12px;
+        }
+    }
+    div#moa-section {
+    background: $gray_section_bg;
+    padding: 60px 0 60px 0;
+        span.font-w300 {
+            font-weight: 300;
+        }
+        div.new-txt-block {
+            margin: 0 auto 80px auto !important;
+            max-width: 950px;
+        }
+        div.moa-info-block-video {
+            width: 50vw;
+            margin: 0 auto;
+            padding: 0 0 60px 0;
+        }
+        div#at-a-glance-heading {
+            h3 {
+
+            }
+        }
+        div.moa-info-block-pdf {
+            width: 50vw;
+            margin: 0 auto;
+        }
+        a.moa-button {
+        text-align: center;
+        }
+        div#contact-us-link {
+            p {
+                a {
+                    color: $elevar_blue;
+                    text-decoration: underline;
+                }
+                a:hover {
+                    color: $elevar_purple;
+                }
+            }
+        }
+    }
+    div#for-patients-section {
+    background-image: url(/wp-content/uploads/2023/06/inquire-section-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 80px 0 80px 0;
+        div.new-txt-block {
+            max-width: 850px;
+            margin: 0 auto;
+            p {
+
+            }
+        }
+        #inquire-cta-deskt {
+            #inquire-cta-container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            width: 550px;
+            margin: 40px auto 0;
+            border: 1px solid #2b71b7;
+            border-radius: 20px;
+            padding: 20px;
+            background: #fff;
+            .icon-block {
+                width: 95px;
+                height: 95px;
+            }
+            .txt-block {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                div {
+                text-align: left;
+                font-size: 20px;
+                color: $drk_gray;
+                & a {
+                    text-align: left;
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: $elevar_blue;
+                    text-decoration: underline;
+                }
+                }
+            }
+            }
+        }
+    }
+    div#your-interest-section {
+        padding: 40px 0 40px 0;
+        div.col-rivo {
+            div.vc_column-inner {
+                div.wpb_wrapper {
+                    div.purple-cta {
+                        margin: 20px auto 60px auto !important;
+                        text-align: center;
+                        div#new-cta-btn {
+                            text-align: center;
+                            width: 185px;
+                            height: 55px;
+                            margin: 0 auto;
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                            justify-content: center;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                            background: $elevar_purple;
+                            border-radius: 10px;
+                            &:hover {
+                            opacity: 0.7;
+                            }
+                            a {
+                            font-size: 22px;
+                            font-weight: 500;
+                            color: #fff;
+                            }
+                        }
+                    }
+                    div#references-block {
+                    text-align: left;
+                        p {
+                            font-size: 12px !important;
+                            line-height: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media all and (max-width: 576px) {
 
