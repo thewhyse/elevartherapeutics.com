@@ -1,0 +1,65 @@
+/* ******* PR SUB 2023 PAGE ******* */
+div#pr_sub_hero_row {
+        background-image: url("/wp-content/themes/conall-child/images/press-release-hero-1920x457.png");
+            div.clearfix.edgtf-full-section-inner {
+            div#careers-hero-h1 {
+                text-align: center;
+                h1.elevar-h1 {
+                    max-width: 260px;
+                }
+            }
+    }
+}
+@media all and (max-width: 1024px) {
+    div#pr_sub_hero_row {
+        background-image: url("/wp-content/themes/conall-child/images/press-release-hero-1024x306.png");
+            div.clearfix.edgtf-full-section-inner {
+            div#careers-hero-h1 {
+                text-align: center;
+                h1.elevar-h1 {
+                    max-width: 260px;
+                }
+            }
+    }
+    }
+}
+@media all and (max-width: 768px) {
+    div#pr_sub_hero_row {
+        background-image: url("/wp-content/themes/conall-child/images/publications-hero-1024x306.png");
+            div.clearfix.edgtf-full-section-inner {
+            div#careers-hero-h1 {
+                text-align: center;
+                h1.elevar-h1 {
+                    max-width: 260px;
+                }
+            }
+    }
+    }
+}
+@media all and (max-width: 576px) {
+    div#pr_sub_hero_row {
+        background-image: url("/wp-content/themes/conall-child/images/press-release-hero-414x405.png");
+            div.clearfix.edgtf-full-section-inner {
+            div#careers-hero-h1 {
+                text-align: center;
+                h1.elevar-h1 {
+                    max-width: 260px;
+                }
+            }
+    }
+    }
+}
+@media all and (max-width: 480px) {
+    div#pr_sub_hero_row {
+        background-image: url("/wp-content/themes/conall-child/images/publications-hero-414x405.png");
+            div.clearfix.edgtf-full-section-inner {
+            div#careers-hero-h1 {
+                text-align: center;
+                h1.elevar-h1 {
+                    max-width: 260px;
+                }
+            }
+    }
+    }
+}
+/* ******* END PR SUB 2023 PAGE ******* */
