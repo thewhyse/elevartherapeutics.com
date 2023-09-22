@@ -22,9 +22,11 @@ div#bod-content {
                     h2 {
                         letter-spacing: 0;
                         margin-bottom: 2%;
+                        span.title-case {
+                            text-transform: initial;
+                        }
                     }
                     p {
-
                     }
                 }
             }
