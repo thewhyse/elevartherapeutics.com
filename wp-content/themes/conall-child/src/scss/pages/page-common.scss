@@ -83,6 +83,9 @@ p, p.elevar-p {
 p.elevar-p.center {
     text-align: center !important
 }
+.elevar-p.eoe-copy {
+    font-style: italic;
+}
 input, textarea, select {
     color: $drk_gray3 !important;
     border-color: $reviewgrey !important;
