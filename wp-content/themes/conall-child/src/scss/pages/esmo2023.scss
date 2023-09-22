@@ -2112,8 +2112,8 @@ div#temp-footer-row {
     div#explore-the-past {
         div#explore-heading-mobile {
             h2.elevar-h2 {
-                font-size: 21px;
-                line-height: 28px;
+                font-size: 20px;
+                line-height: 27px;
                 color: $white;
                 letter-spacing: 0;
                 margin: 0;
@@ -2215,17 +2215,17 @@ div#temp-footer-row {
     }
     div#future-events-row-info-blocks {
         .edgtf-full-section-inner {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        flex-direction: column !important;
-        margin-left: 8%;
-        div#footer-block1,
-        div#footer-block2,
-        div#footer-block3 {
-            margin-top: 20px !important;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            flex-direction: column !important;
+            margin-left: 8%;
+            div#footer-block1,
+            div#footer-block2,
+            div#footer-block3 {
+                margin-top: 20px !important;
+            }
         }
-    }
     }
     div#temp-footer-row {
     background: $elevar_blue;
