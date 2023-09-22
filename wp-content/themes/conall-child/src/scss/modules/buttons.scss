@@ -28,7 +28,9 @@ a.edgtf-btn:hover {
     border-color: $elevar_purple !important;
 }
 .edgtf-btn.edgtf-btn-solid:not(.edgtf-btn-custom-hover-color):hover {
+    background-color: $white !important;
     color: $elevar_purple  !important;
+    border-color: $elevar_purple !important;
 }
 .edgtf-search-page-holder .edgtf-search-page-form .edgtf-form-holder input.edgtf-search-submit {
     display: flex;
