@@ -1,4 +1,4 @@
-// Project Huddle redirect to TEST enviormnment
+/* // Project Huddle redirect to TEST enviormnment
 
 function openTest() {
     window.open("https://test-elevartherapeutics.pantheonsite.io/", "_self");
@@ -12,24 +12,24 @@ if (domain_name == "dev-elevartherapeutics.pantheonsite.io") {
         openTest();
     }
 }
+ */
 
 // Select all of the read more buttons and hidden content
 const readMoreButtons = document.querySelectorAll(".read-more");
 const hiddenContents = document.querySelectorAll(".hide");
+/* const textContent = 'READ MORE'; */
 // Now loop over the read more buttons
 readMoreButtons.forEach((readMoreButton, index) => {
     // Add onclick event listeners to all of them
     readMoreButton.addEventListener("click", () => {
-        // Change content of read more button to read less based on the textContent
-        if (readMoreButton.textContent === "Read More")
-        {
-            readMoreButton.textContent = "Read Less";
-            }
-        else
-        {
-            readMoreButton.textContent = "Read More";
-        }
         // Toggle class based on index
-        hiddenContents[index].classList.toggle("hide");
+        hiddenContents[index].classList.toggle('hide');
+        // Change content of read more button to read less based on the textContent
+        if (readMoreButton.innerHTML === 'READ MORE') {
+            readMoreButton.innerHTML = 'READ LESS';
+            }
+        else {
+            readMoreButton.innerHTML = 'READ MORE';
+        }
     })
 })
