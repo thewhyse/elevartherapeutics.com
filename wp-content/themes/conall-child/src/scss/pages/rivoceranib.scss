@@ -157,16 +157,6 @@ div#moa-section {
         }
     }
     div#contact-us-link {
-        p {
-            text-align: center;
-            a {
-                color: $elevar_blue;
-                text-decoration: underline;
-            }
-            a:hover {
-                color: $elevar_purple;
-            }
-        }
     }
 }
 div#for-patients-section {
@@ -459,31 +449,6 @@ div#your-interest-section {
                     div.purple-cta {
                         margin: 20px auto 60px auto !important;
                         text-align: center;
-                        div#new-cta-btn {
-                            text-align: center;
-                            width: 185px;
-                            height: 55px;
-                            margin: 0 auto;
-                            display: -webkit-box;
-                            display: -ms-flexbox;
-                            display: flex;
-                            -webkit-box-pack: center;
-                            -ms-flex-pack: center;
-                            justify-content: center;
-                            -webkit-box-align: center;
-                            -ms-flex-align: center;
-                            align-items: center;
-                            background: $elevar_purple;
-                            border-radius: 10px;
-                            &:hover {
-                            opacity: 0.7;
-                            }
-                            a {
-                            font-size: 22px;
-                            font-weight: 500;
-                            color: #fff;
-                            }
-                        }
                     }
                     div#references-block {
                     text-align: left;
@@ -632,15 +597,6 @@ div#your-interest-section {
         text-align: center;
         }
         div#contact-us-link {
-            p {
-                a {
-                    color: $elevar_blue;
-                    text-decoration: underline;
-                }
-                a:hover {
-                    color: $elevar_purple;
-                }
-            }
         }
     }
     div#for-patients-section {
