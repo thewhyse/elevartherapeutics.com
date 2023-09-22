@@ -17,7 +17,11 @@ div#expanded-access-content {
 
 }
 div#expanded-access-works {
-
+    ul, ol {
+        list-style-position: inside;
+        margin: 5px 0;
+        margin-left: 5%;
+    }
 }
 div#request-expanded-access {
 

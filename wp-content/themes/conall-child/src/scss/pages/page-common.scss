@@ -80,6 +80,17 @@ p, p.elevar-p {
         display: none;
     }
 }
+li, li.elevar-p {
+    color: $drk_gray3;
+    font-size: 17px;
+    line-height: 28px;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin-bottom: 5px;
+    br:not(.line-break) {
+        display: none;
+    }
+}
 p.elevar-p.center {
     text-align: center !important
 }
