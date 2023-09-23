@@ -150,6 +150,7 @@ div#moa-section {
             justify-content: center;
             align-items: center;
             margin: 50px auto !important;
+            min-width: 450px;
             img.dl-icon {
                 width: 31.25px;
                 height: 31.25px;
@@ -578,7 +579,7 @@ div#your-interest-section {
             max-width: 950px;
         }
         div.moa-info-block-video {
-            width: 50vw;
+            width: 100%;
             margin: 0 auto;
             padding: 0 0 60px 0;
         }
@@ -588,7 +589,7 @@ div#your-interest-section {
             }
         }
         div.moa-info-block-pdf {
-            width: 50vw;
+            width: 100%;
             margin: 0 auto;
         }
         a.moa-button {
