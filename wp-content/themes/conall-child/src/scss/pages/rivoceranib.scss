@@ -527,9 +527,12 @@ div#your-interest-section {
                     -webkit-box-align: center;
                     -ms-flex-align: center;
                     align-items: center;
-                        margin: 0;
-                        color: #fff;
-                        font-size: 3.5vw;
+                    margin: 0;
+                    color: #fff;
+                    font-size: 3.5vw;
+                    sup {
+                        font-size: 8px !important;
+                    }
                 }
             }
         }
@@ -708,6 +711,25 @@ div#your-interest-section {
         }
     }
     }
+    div#about-rivoceranib div.col-rivo div#study-numbers .wpb_wrapper {
+        font-size: 4vw;
+        sup {
+            font-size: 8px !important;
+            top: -8px !important;
+        }
+    }
+    div#for-patients-section #inquire-cta-deskt #inquire-cta-container {
+        flex-direction: column;
+        width: 100%;
+        div.txt-block {
+            padding: 25px 0;
+            div {
+                text-align: center;
+                a {
+                }
+            }
+        }
+    }
 }
 @media all and (max-width: 480px) {
     div#moa-section div#moa-button a.edgtf-btn {
@@ -715,13 +737,48 @@ div#your-interest-section {
         min-width: unset;
         text-align: left;
     }
+    div#about-rivoceranib div.col-rivo div#study-numbers .wpb_wrapper {
+        font-size: 4vw;
+        sup {
+            font-size: 7px !important;
+            top: -4px !important;
+        }
+    }
+    div#for-patients-section #inquire-cta-deskt #inquire-cta-container {
+        flex-direction: column;
+        width: 100%;
+        div.txt-block {
+            padding: 25px 0 0 0;
+            div {
+                font-size: 17px;
+                text-align: center;
+                a {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
 }
 
 @media all and (max-width: 320px) {
     div#moa-section div#moa-button a.edgtf-btn {
-        img {
+        img.dl-icon {
             margin-right: 15px;
             margin-left: 15px;
+        }
+    }
+    div#for-patients-section #inquire-cta-deskt #inquire-cta-container {
+        flex-direction: column;
+        width: 100%;
+        div.txt-block {
+            padding: 25px 0 0 0;
+            div {
+                font-size: 16px;
+                text-align: center;
+                a {
+                    font-size: 16px;
+                }
+            }
         }
     }
 }
