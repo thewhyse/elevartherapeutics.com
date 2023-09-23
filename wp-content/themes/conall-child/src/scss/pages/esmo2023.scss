@@ -3,6 +3,7 @@
 
 /* ******* ESMO 2023 PAGE ******* */
 div#esmo_cta_row {
+    z-index: 999;
     div#book-meeting-cta {
         a {
             width: 285px;
@@ -167,76 +168,81 @@ div#esmo_23_hero_row {
   }
 }
 div#spotlight-row {
-    display: block !important;
-    background: $white;
-    padding: 100px 0 80px;
+        display: block !important;
+        background: $white;
+        padding: 100px 0 80px;
     div#col-spotlight {
-        h4.elevar-h4 {
-            font-size: 28px;
-            line-height: 32px;
-            color: $elevar_blue;
-            font-weight: 700;
-            letter-spacing: 0;
-            margin-bottom: 30px !important;
-            text-transform: initial;
-        }
-        p.elevar-p {
-        }
-        #spotlight-body {
-            margin: 0;
-            div#col-spotlight-left {
-                border-right: 2px solid $reviewgrey;
-                padding-right: 3%;
-                    div#spotlight-movie {
-                    margin-top: 30px;
-                    max-width: 362px;
-                    }
-                    div#spotlight-bodycopy-strong {
-                        margin-top: 20px;
-                    }
-                    div#play-btn {
-                        width: 158px;
-                        height: 54px;
-                        font-weight: 700;
-                        margin: 20px 0 0;
-                        text-align: center;
-                        border: 2px solid $elevar_purple;
-                        border-radius: 10px;
-                        background: $elevar_purple;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        transition: all 0.5s;
-                        a {
-                        display: block;
-                        text-decoration: none;
-                        color: $white !important;
-                        font-weight: 700;
-                        font-size: 20px;
-                        height: 100%;
-                        padding: 0px;
-                        text-align: center;
-                        transition: all 0.5s;
-                        &:hover {
+        div.vc_column-inner {
+            h4.elevar-h4 {
+                font-size: 28px;
+                line-height: 32px;
+                color: $elevar_blue;
+                font-weight: 700;
+                letter-spacing: 0;
+                margin-bottom: 30px !important;
+                text-transform: initial;
+            }
+            p.elevar-p {
+            }
+            #spotlight-body {
+                margin: 0;
+                div#col-spotlight-left {
+                        border-right: 2px solid $reviewgrey;
+                        padding-right: 3%;
+                        div#spotlight-movie {
+                        margin-top: 30px;
+                        max-width: 362px;
+                        }
+                        div#spotlight-bodycopy-strong {
+                            margin-top: 20px;
+                        }
+                        div#play-btn {
+                            width: 158px;
+                            height: 54px;
+                            font-weight: 700;
+                            margin: 20px 0 0;
+                            text-align: center;
+                            border: 2px solid $elevar_purple;
+                            border-radius: 10px;
+                            background: $elevar_purple;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            transition: all 0.5s;
+                                a {
+                                display: block;
+                                text-decoration: none;
+                                color: $white !important;
+                                font-weight: 700;
+                                font-size: 20px;
+                                height: 100%;
+                                padding: 0px;
+                                text-align: center;
+                                transition: all 0.5s;
+                                }
+                        }
+                        div#play-btn:hover {
                             color: $elevar_purple !important;
                             transition: all 0.5s;
                             background-color: $white;
+                            a {
+                                color: $elevar_purple !important;
+                            }
                         }
                     }
                 }
-            }
-            div#col-spotlight-right {
-                padding-left: 10%;
-                div#spotlight-image {
-                    margin-top: 30px !important;
-                    img.vc_single_image-img {
-                        border: 1px solid $black;
+                div#col-spotlight-right {
+                    padding-left: 10%;
+                    div#spotlight-image {
+                        margin-top: 30px !important;
+                        img.vc_single_image-img {
+                            border: 1px solid $black;
+                        }
                     }
                 }
-            }
-            div.vc_column-inner {
-                max-width: 550px;
-            }
+                div.vc_column-inner {
+                    max-width: 550px;
+                }
         }
     }
 }
@@ -543,6 +549,7 @@ div#future-events-row {
         background: $white;
         padding: 60px 0 50px;
         div#col-spotlight {
+            div.vc_column-inner {
             h4.elevar-h4 {
                 font-size: 24px;
                 line-height: 24px;
@@ -583,9 +590,6 @@ div#future-events-row {
                                 height: 100%;
                                 padding: 0px;
                                 text-align: center;
-                                &:hover {
-                                    color: $lt_blue;
-                                }
                             }
                         }
                 }
@@ -599,6 +603,7 @@ div#future-events-row {
                     max-width: 550px;
                 }
             }
+        }
         }
     }
     div#review-data-section {
@@ -869,6 +874,7 @@ div#future-events-row {
         background: $white;
         padding: 60px 0 40px;
         div#col-spotlight {
+            div.vc_column-inner {
             h4.elevar-h4 {
                 font-size: 22px;
                 line-height: 22px;
@@ -911,9 +917,6 @@ div#future-events-row {
                                 height: 100%;
                                 padding: 0px;
                                 text-align: center;
-                                &:hover {
-                                    color: $lt_blue;
-                                }
                             }
                         }
                 }
@@ -930,6 +933,7 @@ div#future-events-row {
                     max-width: 550px;
                 }
             }
+        }
         }
     }
     div#review-data-section {
@@ -1335,9 +1339,6 @@ div#future-events-row {
                                 height: 100%;
                                 padding: 0px;
                                 text-align: center;
-                                &:hover {
-                                    color: $lt_blue;
-                                }
                             }
                         }
                 }
@@ -1736,9 +1737,6 @@ div#future-events-row {
                                 height: 100%;
                                 padding: 0px;
                                 text-align: center;
-                                &:hover {
-                                    color: $lt_blue;
-                                }
                             }
                         }
                 }
