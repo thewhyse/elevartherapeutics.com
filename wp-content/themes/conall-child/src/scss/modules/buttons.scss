@@ -6,11 +6,11 @@ a.edgtf-btn {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #524487 !important;
-    color: #ffffff !important;
-    border-color: #524487 !important;
+    background-color: $elevar_purple !important;
+    color: $white !important;
+    border-color: $elevar_purple !important;
     font-size: 24px;
-    line-height: 36px;
+    line-height: 30px;
     height: 54px;
     border-radius: 10px;
     padding: 0;
@@ -40,7 +40,7 @@ a.edgtf-btn:hover {
     color: $white !important;
     border-color: $elevar_purple;
     font-size: 24px;
-    line-height: 36px;
+    line-height: 30px;
     height: 54px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -54,43 +54,41 @@ a.edgtf-btn:hover {
     }
 }
 @media only screen and (max-width: 1024px) {
-    a.edgtf-btn {
-        font-size: 22px;
-        line-height: 28px;
-        height: 54px;
-    }
-    .edgtf-search-page-holder .edgtf-search-page-form .edgtf-form-holder input.edgtf-search-submit {
-        font-size: 22px;
-        line-height: 28px;
-
-    }
 }
 @media only screen and (max-width: 768px) {
     a.edgtf-btn {
         font-size: 22px;
-        line-height: 22px;
+        line-height: 38px;
         margin-top: 4% !important;
         margin-bottom: 4% !important;
     }
     .edgtf-search-page-holder .edgtf-search-page-form .edgtf-form-holder input.edgtf-search-submit {
         font-size: 22px;
-        line-height: 22px;
+        line-height: 38px;
     }
 }
 @media only screen and (max-width: 576px) {
         a.edgtf-btn {
-        font-size: 22px;
-        line-height: 22px;
+        font-size: 20px;
+        line-height: 26px;
         margin-top: 5% !important;
         margin-bottom: 5% !important;
-    }
+        }
+        .edgtf-search-page-holder .edgtf-search-page-form .edgtf-form-holder input.edgtf-search-submit {
+        font-size: 20px;
+        line-height: 26px;
+        }
 }
 @media only screen and (max-width: 480px) {
         a.edgtf-btn {
-        font-size: 22px;
-        line-height: 22px;
+        font-size: 18px;
+        line-height: 24px;
         margin-top: 7% !important;
         margin-bottom: 7% !important;
-    }
+        }
+        .edgtf-search-page-holder .edgtf-search-page-form .edgtf-form-holder input.edgtf-search-submit {
+        font-size: 18px;
+        line-height: 24px;
+        }
 }
 /* ******* BUTTON STYLING END ******* */

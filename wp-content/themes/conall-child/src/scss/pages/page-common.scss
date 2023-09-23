@@ -169,7 +169,7 @@ div.hero-row {
                 margin-bottom: 0 !important;
                 }
                 .drop-shadow {
-                    filter: drop-shadow(3px 3px 12px #061336);
+                    @include hero-drop-shadow ();
                 }
             }
             div.elevar-h2header {
@@ -180,7 +180,7 @@ div.hero-row {
                     margin-top: 20px !important;
                 }
                 .drop-shadow {
-                    filter: drop-shadow(3px 3px 12px #061336);
+                    @include hero-drop-shadow ();
                 }
             }
         }

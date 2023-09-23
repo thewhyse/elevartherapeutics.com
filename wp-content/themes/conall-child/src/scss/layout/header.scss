@@ -3,16 +3,13 @@
 
 
 /* ******* EVEAR 2023 HEADER START ******* */
-.edgtf-drop-down .narrow .second .inner ul, .edgtf-drop-down .wide .second .inner > ul {
-    background-color: #fff;
-    box-shadow: 3px 3px 10px -6px rgba(0,0,0,0.5);
-    -webkit-box-shadow: 3px 3px 10px -6px rgba(0,0,0,0.5);
-    -moz-box-shadow: 3px 3px 10px -6px rgba(0,0,0,0.5);
+.edgtf-drop-down .narrow .second .inner ul,
+.edgtf-drop-down .wide .second .inner > ul {
+    background-color: $white;
+    @include drop-down-menu-shadow ();
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-
-
 
 .edgtf-dark-header .edgtf-page-header > div:not(.edgtf-sticky-header):not(.fixed) .edgtf-main-menu > ul > li.edgtf-active-item > a,
 .edgtf-dark-header .edgtf-page-header > div:not(.edgtf-sticky-header):not(.fixed) .edgtf-main-menu > ul > li > a:hover {
@@ -24,7 +21,7 @@
 .edgtf-page-header {
     height: 135px;
     border: none;
-    background-color: #ffffff !important;
+    background-color: $white !important;
     top: 1px;
     .edgtf-menu-area {
         height: 135px;
@@ -143,7 +140,7 @@
                                     align-items: center;
                                     margin-right: 8px;
                                     i.edgtf-icon-font-awesome.fa.fa-search {
-                                        color: #fff !important;
+                                        color: $white !important;
                                         font-size: 14px;
                                     }
                                     :before {
@@ -164,7 +161,7 @@
     .edgtf-sticky-header {
         height: 85px;
         .edgtf-sticky-holder {
-        background-color: #fff !important;
+        background-color: $white !important;
         div.edgtf-vertical-align-containers {
             display: flex;
             justify-content: space-between;
@@ -272,7 +269,7 @@
                                     align-items: center;
                                     margin-right: 8px;
                                     i.edgtf-icon-font-awesome.fa.fa-search {
-                                        color: #fff !important;
+                                        color: $white !important;
                                         font-size: 14px;
                                     }
                                     :before {
@@ -295,7 +292,7 @@
 .edgtf-mobile-header {
     .edgtf-mobile-header-inner {
         height: 95px;
-        background-color: #fff;
+        background-color: $white;
         border-bottom: none;
         div.edgtf-mobile-header-holder {
             div.edgtf-grid {
@@ -362,7 +359,7 @@
                                         align-items: center;
                                         margin-right: 8px;
                                         i.edgtf-icon-font-awesome.fa.fa-search {
-                                            color: #fff !important;
+                                            color: $white !important;
                                             font-size: 14px;
                                         }
                                         :before {
@@ -384,7 +381,6 @@
         }
     }
 }
-
 @media only screen and (max-width: 1200px) {
     .edgtf-page-header {
         .edgtf-menu-area {
@@ -434,7 +430,7 @@
                                     align-items: center;
                                     margin-right: 8px;
                                     i.edgtf-icon-font-awesome.fa.fa-search {
-                                        color: #fff !important;
+                                        color: $white !important;
                                         font-size: 14px;
                                     }
                                     :before {
@@ -454,7 +450,7 @@
         }
         .edgtf-sticky-header {
             .edgtf-sticky-holder {
-                background-color: #fff !important;
+                background-color: $white !important;
                 div.edgtf-vertical-align-containers {
                     display: flex;
                     justify-content: space-between;
@@ -564,7 +560,6 @@
         padding: 0 8px;
     }
 }
-
 @media only screen and (max-width: 1024px) {
     .edgtf-page-header {
         max-height: 135px;
@@ -680,7 +675,7 @@
                                         align-items: center;
                                         margin-right: 5px;
                                         i.edgtf-icon-font-awesome.fa.fa-search {
-                                            color: #fff !important;
+                                            color: $white !important;
                                             font-size: 11px;
                                         }
                                         :before {
@@ -700,7 +695,7 @@
         }
         .edgtf-sticky-header {
             .edgtf-sticky-holder {
-            background-color: #fff !important;
+            background-color: $white !important;
             div.edgtf-vertical-align-containers {
                 display: flex;
                 justify-content: space-between;
@@ -802,7 +797,7 @@
                                         align-items: center;
                                         margin-right: 5px;
                                         i.edgtf-icon-font-awesome.fa.fa-search {
-                                            color: #fff !important;
+                                            color: $white !important;
                                             font-size: 11px;
                                         }
                                         :before {
@@ -823,7 +818,6 @@
         }
     }
 }
-
 @media only screen and (max-width: 980px) {
     .edgtf-page-header {
         max-height: 135px;
@@ -939,7 +933,7 @@
                                         align-items: center;
                                         margin-right: 5px;
                                         i.edgtf-icon-font-awesome.fa.fa-search {
-                                            color: #fff !important;
+                                            color: $white !important;
                                             font-size: 11px;
                                         }
                                         :before {
@@ -959,7 +953,7 @@
         }
         .edgtf-sticky-header {
             .edgtf-sticky-holder {
-            background-color: #fff !important;
+            background-color: $white !important;
             div.edgtf-vertical-align-containers {
                 display: flex;
                 justify-content: space-between;
@@ -1061,7 +1055,7 @@
                                         align-items: center;
                                         margin-right: 5px;
                                         i.edgtf-icon-font-awesome.fa.fa-search {
-                                            color: #fff !important;
+                                            color: $white !important;
                                             font-size: 11px;
                                         }
                                         :before {
@@ -1082,7 +1076,6 @@
         }
     }
 }
-
 @media only screen and (max-width: 768px) {
     .edgtf-mobile-header .edgtf-mobile-header-inner div.edgtf-mobile-header-holder div.edgtf-grid {
         width: 100%;
@@ -1105,18 +1098,18 @@
         line-height: 57px;
         font-size: 15px;
         box-sizing: border-box;
-        color: #999;
+        color: $med_gray3;
     }
     .edgtf-mobile-header .edgtf-mobile-nav ul ul {
         margin-left: 20px;
     }
     .edgtf-mobile-header .edgtf-mobile-nav a {
         font-size: 13px;
-        border-bottom: 1px dotted #ddd;
+        border-bottom: 1px dotted $very_lt_gray1;
         letter-spacing: 0 !important;
         height: 57px;
         line-height: 38px;
-        color: #333;
+        color: $drk_gray3;
         font-weight: 500;
         letter-spacing: 1px !important;
     }
@@ -1125,14 +1118,12 @@
         padding: 10px 0;
         font-size: 14px;
         line-height: 57px;
-        color: #333 !important;
-        border-bottom: 1px dotted #ddd;
+        color: $drk_gray3 !important;
+        border-bottom: 1px dotted $very_lt_gray1;
         letter-spacing: 1px !important;
     }
 }
 @media only screen and (max-width: 576px) {
-
 }
 @media only screen and (max-width: 480px) {
-
 }
