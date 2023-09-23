@@ -712,6 +712,17 @@ div#your-interest-section {
 @media all and (max-width: 480px) {
     div#moa-section div#moa-button a.edgtf-btn {
         max-width: 100%;
+        min-width: unset;
+        text-align: left;
+    }
+}
+
+@media all and (max-width: 320px) {
+    div#moa-section div#moa-button a.edgtf-btn {
+        img {
+            margin-right: 15px;
+            margin-left: 15px;
+        }
     }
 }
 /* ******* END RIVOCERANIB 2023 PAGE ******* */
