@@ -863,12 +863,18 @@ div#careers-paylocity-row {
                     }
                 }
                 #colored-healthcare-button {
-                    padding: 0 30px 0 30px;
+                    padding: 0;
                     margin-top: 40px;
                     margin-left: 0;
                     margin-right: 0;
                     min-height: 85px;
                     div.wpb_wrapper {
+                        a {
+                            padding: 0;
+                            img {
+                                
+                            }
+                        }
                     }
                 }
             }
