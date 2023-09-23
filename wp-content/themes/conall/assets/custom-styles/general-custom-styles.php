@@ -136,11 +136,11 @@ if(!function_exists('conall_edge_design_styles')) {
             $woo_color_selector = array();
             if(conall_edge_is_woocommerce_installed()) {
                 $woo_color_selector = array(
-                    '.woocommerce-pagination .page-numbers li a:hover', 
+                    '.woocommerce-pagination .page-numbers li a:hover',
                     '.woocommerce-pagination .page-numbers li a.current',
                     '.woocommerce-pagination .page-numbers li span:hover',
                     '.woocommerce-pagination .page-numbers li span.current',
-                    '.woocommerce-pagination .page-numbers li.prev-arrow a:hover', 
+                    '.woocommerce-pagination .page-numbers li.prev-arrow a:hover',
                     '.woocommerce-pagination .page-numbers li.next-arrow a:hover',
                     '.edgtf-single-product-summary .product_meta > span a:hover',
                     '.edgtf-single-product-summary .edgtf-woo-social-share-holder .edgtf-social-share-holder ul li a:hover',
@@ -169,7 +169,7 @@ if(!function_exists('conall_edge_design_styles')) {
                 );
             }
 
-            $color_selector = array_merge($color_selector, $woo_color_selector); 
+            $color_selector = array_merge($color_selector, $woo_color_selector);
 
             $color_important_selector = array(
                 '.edgtf-light-header .edgtf-page-header > div:not(.fixed):not(.edgtf-sticky-header) .edgtf-menu-area .widget a:hover',
@@ -270,7 +270,7 @@ if(!function_exists('conall_edge_design_styles')) {
                 );
             }
 
-            $background_color_selector = array_merge($background_color_selector, $woo_background_color_selector); 
+            $background_color_selector = array_merge($background_color_selector, $woo_background_color_selector);
 
             $background_color_important_selector = array(
                 '.edgtf-light-header .edgtf-page-header > div:not(.edgtf-sticky-header):not(.fixed) .edgtf-side-menu-button-opener.opened .edgtf-side-menu-lines .edgtf-side-menu-line',
@@ -329,7 +329,7 @@ if(!function_exists('conall_edge_design_styles')) {
                 );
             }
 
-            $border_color_selector = array_merge($border_color_selector, $woo_border_color_selector); 
+            $border_color_selector = array_merge($border_color_selector, $woo_border_color_selector);
 
             echo conall_edge_dynamic_css($color_selector, array('color' => conall_edge_options()->getOptionValue('first_color')));
             echo conall_edge_dynamic_css($color_important_selector, array('color' => conall_edge_options()->getOptionValue('first_color').'!important'));
@@ -833,7 +833,7 @@ if (!function_exists('conall_edge_link_hover_styles')) {
 if (!function_exists('conall_edge_smooth_page_transition_styles')) {
 
     function conall_edge_smooth_page_transition_styles() {
-        
+
         $loader_style = array();
 
         if(conall_edge_options()->getOptionValue('smooth_pt_bgnd_color') !== '') {

@@ -189,7 +189,7 @@
 
                 .edgtf-testimonial-content-inner {
                     cursor: pointer;
-                    
+
                     i {
                         background-color: $default-heading-color;
                         color: #fff;
@@ -272,7 +272,7 @@
 
             img {
                 max-width: 104px;
-                @include edgtfBorderRadius(50%);                
+                @include edgtfBorderRadius(50%);
 
                 /* fix for image blue overlay */
                 -webkit-user-select: none;

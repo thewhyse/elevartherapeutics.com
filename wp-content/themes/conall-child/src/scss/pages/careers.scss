@@ -17,9 +17,9 @@ div#careers_hero_row {
         div#careers-hero-h1 {
             text-align: center;
             h1.elevar-h1 {
-                max-width: 260px;
+                max-width: 215px;
                 padding: 0 0 15px 0;
-                border-bottom: 3px solid #fff;
+                border-bottom: 3px solid $white;
             }
         }
         div#careers-hero-h2 {
@@ -135,7 +135,7 @@ div#core-values {
 }
 div#our-purpose {
     padding: 80px 0 80px 0 !important;
-    background-color: #eff0f1;
+    background-color: $lt_gray2;
     div.elevar-section {
         h2 {
             margin-bottom: 20px;
@@ -146,7 +146,7 @@ div#our-purpose {
     }
 }
 div#what-we-offer {
-    padding: 80px 0 80px 0 !important;
+    padding: 40px 0 40px 0 !important;
     div.elevar-section {
         margin-bottom: 55px !important;
         h2 {
@@ -251,7 +251,7 @@ div#what-we-offer {
 }
 div#careers-paylocity-row {
     padding: 80px 0 20px 0 !important;
-    background-color: #ffffff !important;
+    background-color: $white !important;
     div.elevar-section {
         margin: 0 0 70px 0 !important;
         h2 {
@@ -319,11 +319,22 @@ div#careers-paylocity-row {
 @media all and (max-width: 1262px) {
 
 }
-@media all and (max-width: 1025px) {
-
-}
 
 @media all and (max-width: 1024px) {
+    div#careers_hero_row {
+        background-image: url("/wp-content/themes/conall-child/images/careers-hero-1024x306.png");
+        background-color: $white;
+        div.clearfix.edgtf-full-section-inner {
+            div#careers-hero-h1 {
+                text-align: center;
+                h1.elevar-h1 {
+                    max-width: 200px;
+                    padding: 0 0 15px 0;
+                    border-bottom: 3px solid $white;
+                }
+            }
+        }
+    }
     div#core-values {
         padding: 40px 0 60px 0 !important;
         div.elevar-section {
@@ -381,8 +392,8 @@ div#careers-paylocity-row {
                         letter-spacing: 0;
                     }
                     p {
-                        font-size: 17px;
-                        line-height: 28px;
+                        font-size: 16px;
+                        line-height: 22px;
                     }
                     .career-icon2 {
                         p {
@@ -404,7 +415,7 @@ div#careers-paylocity-row {
         }
     }
     div#what-we-offer {
-        padding: 80px 0 80px 0 !important;
+        padding: 40px 0 40px 0 !important;
         div.elevar-section {
             margin-bottom: 55px !important;
             h2 {
@@ -476,6 +487,9 @@ div#careers-paylocity-row {
                 }
                 #colored-healthcare-button {
                     div.wpb_wrapper {
+                        a {
+                            font-size: 20px;
+                        }
                     }
                 }
             }
@@ -511,9 +525,9 @@ div#careers-paylocity-row {
             margin-bottom: 20px;
         }
     }
+    }
     div#careers-paylocity-row {
         padding: 40px 0 0px 0 !important;
-    }
     }
     div#core-values {
         padding: 40px 0 60px 0 !important;
@@ -575,8 +589,8 @@ div#careers-paylocity-row {
                         letter-spacing: initial;
                     }
                     p {
-                        font-size: 17px;
-                        line-height: 28px;
+                        font-size: 16px;
+                        line-height: 22px;
                     }
                     .career-icon2 {
                         p {
@@ -594,7 +608,7 @@ div#careers-paylocity-row {
         }
     }
     div#what-we-offer {
-        padding: 80px 0 80px 0 !important;
+        padding: 40px 0 40px 0 !important;
         div.elevar-section {
             margin-bottom: 55px !important;
             h2 {
@@ -667,12 +681,11 @@ div#careers-paylocity-row {
                     }
                 }
                 #colored-healthcare-button {
-                    padding: 0 30px 0 30px;
-                    margin-top: 40px;
-                    margin-left: 0;
-                    margin-right: 0;
-                    min-height: 85px;
                     div.wpb_wrapper {
+                        a {
+                            height: 60px;
+                            line-height: 22px;
+                        }
                     }
                 }
             }
@@ -789,7 +802,7 @@ div#careers-paylocity-row {
         }
     }
     div#what-we-offer {
-        padding: 80px 0 80px 0 !important;
+        padding: 40px 0 40px 0 !important;
         div.elevar-section {
             margin-bottom: 55px !important;
             h2 {
@@ -863,16 +876,20 @@ div#careers-paylocity-row {
                     }
                 }
                 #colored-healthcare-button {
-                    padding: 0;
-                    margin-top: 40px;
-                    margin-left: 0;
-                    margin-right: 0;
-                    min-height: 85px;
                     div.wpb_wrapper {
                         a {
-                            padding: 0;
+                            display: inline-flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: unset;
+                            text-align: left;
+                            padding: 12px 24px;
                             img {
-                                
+                                display: inline-flex;
+                                margin: 0;
+                                margin-right: 20px;
+                                height: 48px;
+                                width: 48px;
                             }
                         }
                     }
@@ -886,9 +903,9 @@ div#careers-paylocity-row {
             margin-bottom: 20px;
         }
     }
+    }
     div#careers-paylocity-row {
         padding: 40px 0 0px 0 !important;
-    }
     }
     div#paylocity {
     margin: 0 0 50px 0 !important;
@@ -969,8 +986,8 @@ div#careers-paylocity-row {
                         text-align: center;
                     }
                     p {
-                        font-size: 17px;
-                        line-height: 28px;
+                        font-size: 16px;
+                        line-height: 22px;
                         text-align: center;
                         margin: 0 !important;
                     }
@@ -994,7 +1011,7 @@ div#careers-paylocity-row {
         }
     }
     div#what-we-offer {
-        padding: 80px 0 80px 0 !important;
+        padding: 50px 0 50px 0 !important;
         div.elevar-section {
             margin-bottom: 55px !important;
             h2 {
@@ -1068,14 +1085,21 @@ div#careers-paylocity-row {
                         margin: 0 auto;
                     }
                 }
-                #colored-healthcare-button {
-                    padding: 0 15px 0 15px;
-                    margin-top: 0px;
-                    margin-left: 0;
-                    margin-right: 0;
-                    min-height: 100px;
-                    div.wpb_wrapper {
-                        height: 100%;
+                div.wpb_column.vc_column_container.vc_col-sm-12 {
+                    div.vc_column-inner {
+                        padding: 0;
+                        div.wpb_wrapper {
+                            #colored-healthcare-button {
+                                padding: 0px;
+                                margin-top: 0px;
+                                margin-left: 0;
+                                margin-right: 0;
+                                min-height: 100px;
+                                div.wpb_wrapper {
+                                    height: 100%;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -1087,9 +1111,9 @@ div#careers-paylocity-row {
             margin-bottom: 20px;
         }
     }
+    }
     div#careers-paylocity-row {
         padding: 40px 0 0px 0 !important;
-    }
     }
     div#paylocity {
     margin: 0 0 50px 0 !important;

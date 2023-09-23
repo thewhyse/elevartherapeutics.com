@@ -209,7 +209,8 @@
                 var slider = $(this);
 
                 slider.owlCarousel({
-                    autoplay: true,
+                    // autoplay: true,
+                    autoplay: false,
                     autoplayTimeout: 5000,
                     smartSpeed: 600,
                     items: 1,
@@ -2270,7 +2271,8 @@
                     }
                     numberOfItemsTablet = 2;
                     numberOfItemsMobile = 1;
-                    itemMargin = 60;
+                    // itemMargin = 60;
+                    itemMargin = 0;
                     dragGrab = true;
                 }
 
@@ -2364,7 +2366,8 @@
                     var imageDots = $('.edgtf-tes-image-nav');
 
                     var owlImageDots = imageDots.owlCarousel({
-                        autoplay: true,
+                        // autoplay: true,
+                        autoplay: false,
                         autoplayTimeout: 5000,
                         smartSpeed: animationSpeed,
                         center: true,
@@ -2431,13 +2434,15 @@
                 }
 
                 carousel.owlCarousel({
-                    autoplay:true,
+                    // autoplay: true,
+                    autoplay: false,
                     autoplayTimeout:3000,
                     itemsCustom: items,
                     loop:true,
                     dots: pagination,
                     nav: false,
-                    margin:60,
+                    // margin: 60,
+                    margin: 0,
                     smartSpeed: 800,
                     responsive:{
                         1201:{
@@ -2938,7 +2943,8 @@
                     pagination = (gallery.data('pagination') == 'yes');
 
                 gallery.owlCarousel({
-                    autoplay: true,
+                    // autoplay: true,
+                    autoplay: false,
                     autoplayTimeout: autoplay * 1000,
                     items: 1,
                     loop: true,
@@ -2989,12 +2995,14 @@
                 }
 
                 var owl = teamCarousel.owlCarousel({
-                    autoplay: true,
+                    // autoplay: true,
+                    autoplay: false,
                     autoplayTimeout: speed,
                     autoplayHoverPause: autoplayPause,
                     smartSpeed: 600,
                     items: items,
-                    margin: 25,
+                    // margin: 25,
+                    margin: 0,
                     loop: true,
                     dots: true,
                     nav: false,
@@ -3104,7 +3112,8 @@
             animationIn = (navigation == 'paging') ? 'fadeInLeft' : false; //animate.css
 
             var owl = ctaSlider.owlCarousel({
-                autoplay: true,
+                // autoplay: true,
+                autoplay: false,
                 autoplayTimeout: speed,
                 smartSpeed: 600,
                 items: 1,
@@ -4840,7 +4849,8 @@
                 }
 
                 blogSlider.owlCarousel({
-                    autoplay:true,
+                    // autoplay: true,
+                    autoplay: false,
                     autoplayTimeout:5000,
                     itemsCustom: items,
                     dots: pagination,
