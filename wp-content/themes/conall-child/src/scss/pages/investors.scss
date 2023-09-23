@@ -37,13 +37,6 @@ div#investors-kol-video {
             border-bottom: 1px solid #ddd;
         }
         h2 {
-            font-size: 28px;
-            line-height: 32px;
-            font-style: normal;
-            font-weight: 700;
-            color: $elevar_purple;
-            text-transform: uppercase;
-            letter-spacing: 0;
             margin-top: 60px !important;
         }
     }
@@ -83,13 +76,6 @@ div#investors-kol-download {
             border-bottom: 1px solid #ddd;
         }
         h2 {
-            font-size: 28px;
-            line-height: 32px;
-            font-style: normal;
-            font-weight: 700;
-            color: $elevar_purple;
-            text-transform: uppercase;
-            letter-spacing: 0;
             margin-top: 60px !important;
             margin-bottom: 30px !important;
         }
@@ -171,70 +157,8 @@ div#investors-social-links {
                 color:$med_gray;
             }
     }
-    div#investors-kol-video {
-        padding: 0px 0 40px 0;
-        div#kol-1 {
-            div.kol-line {
-                margin-top: 0;
-                border-bottom: 1px solid #ddd;
-            }
-            h2 {
-                font-size: 28px;
-                line-height: 32px;
-                font-style: normal;
-                font-weight: 700;
-                color: $elevar_purple;
-                text-transform: uppercase;
-                letter-spacing: 0;
-                margin-top: 60px !important;
-            }
-        }
-        div#kol-2 {
-            h3 {
-                font-size: 17px;
-                line-height: 28px;
-                font-style: normal;
-                font-weight: 700;
-                color: $drk_gray3;
-                text-transform: inherit;
-                margin: 0 !important;
-                margin-top: 10px !important;
-                letter-spacing: 0;
-                margin-bottom: 30px !important;
-
-            }
-        }
-        div#kol-video {
-            img {
-                width: 340px;
-                height: 186px;
-                border: 1px solid $black;
-            }
-        }
-        a.edgtf-btn.video {
-            width: 200px;
-            margin: 25px 0 0 0 !important;
-        }
-    }
     div#investors-kol-download {
         padding: 40px 0 80px 0;
-        div#kol-3 {
-            div.kol-line {
-                margin-top: 0;
-                border-bottom: 1px solid #ddd;
-            }
-            h2 {
-                font-size: 28px;
-                line-height: 32px;
-                font-style: normal;
-                font-weight: 700;
-                color: $elevar_purple;
-                text-transform: uppercase;
-                letter-spacing: 0;
-                margin-top: 60px !important;
-                margin-bottom: 30px !important;
-            }
-        }
         div#kol-image {
             img {
                 width: 340px;
@@ -247,37 +171,13 @@ div#investors-social-links {
             margin: 25px 0 0 0 !important;
         }
     }
-    div#investors-hubspot-form {
-        background-color: #f6faff;
-        padding: 80px 0 40px 0;
-        h4 {
-            font-size: 28px;
-            font-weight: 700;
-            line-height: 32px;
-            color: #2b71b7;
-            letter-spacing: 0;
-            margin-bottom: 20px;
-        }
-        form.hs-form-private {
-        }
-    }
     div#investors-button-row {
-        margin-top: 50px !important;
         div.clearfix.edgtf-section-inner {
-            padding: 65px 0 65px 0;
-            border-top: 1px solid #ddd;
-            border-bottom: 1px solid #ddd;
             div.col-btn {
-            text-align: center;
                 a.edgtf-btn {
                     max-width: unset;
                 }
             }
-        }
-    }
-    div#investors-social-links {
-        div#social-links {
-            padding: 30px 0 80px 0;
         }
     }
 }
@@ -313,44 +213,11 @@ div#investors-social-links {
             }
     }
     div#investors-kol-video {
-        padding: 0px 0 40px 0;
-        div#kol-1 {
-            div.kol-line {
-                margin-top: 0;
-                border-bottom: 1px solid #ddd;
-            }
-            h2 {
-                font-size: 28px;
-                line-height: 32px;
-                font-style: normal;
-                font-weight: 700;
-                color: $elevar_purple;
-                text-transform: uppercase;
-                letter-spacing: 0;
-                margin-top: 60px !important;
-            }
-        }
-        div#kol-2 {
-            h3 {
-                font-size: 17px;
-                line-height: 28px;
-                font-style: normal;
-                font-weight: 700;
-                color: $drk_gray3;
-                text-transform: inherit;
-                margin: 0 !important;
-                margin-top: 10px !important;
-                letter-spacing: 0;
-                margin-bottom: 30px !important;
-
-            }
-        }
         div#kol-video {
             text-align: center;
             img {
                 width: 100%;
                 height: auto;
-                border: 1px solid $black;
             }
         }
         a.edgtf-btn.video {
@@ -360,24 +227,6 @@ div#investors-social-links {
         }
     }
     div#investors-kol-download {
-        padding: 40px 0 80px 0;
-        div#kol-3 {
-            div.kol-line {
-                margin-top: 0;
-                border-bottom: 1px solid #ddd;
-            }
-            h2 {
-                font-size: 28px;
-                line-height: 32px;
-                font-style: normal;
-                font-weight: 700;
-                color: $elevar_purple;
-                text-transform: uppercase;
-                letter-spacing: 0;
-                margin-top: 60px !important;
-                margin-bottom: 30px !important;
-            }
-        }
         div#kol-image {
             text-align: center;
             figure.wpb_wrapper.vc_figure {
@@ -404,31 +253,13 @@ div#investors-social-links {
             margin: 25px 0 0 0 !important;
         }
     }
-    div#investors-hubspot-form {
-        background-color: #f6faff;
-        padding: 80px 0 40px 0;
-        h4 {
-            font-size: 28px;
-            font-weight: 700;
-            line-height: 32px;
-            color: #2b71b7;
-            letter-spacing: 0;
-            margin-bottom: 20px;
-        }
-        form.hs-form-private {
-        }
-    }
     div#investors-button-row {
-        margin-top: 50px !important;
         div.clearfix.edgtf-section-inner {
             padding: 40px 0 40px 0;
-            border-top: 1px solid #ddd;
-            border-bottom: 1px solid #ddd;
             div.edgtf-section-inner-margin.clearfix {
                 display: flex;
                 flex-direction: column;
                 div.col-btn {
-                text-align: center;
                 width: 100% !important;
                     a.edgtf-btn {
                         margin-top: 15px;
@@ -473,44 +304,9 @@ div#investors-social-links {
             }
     }
     div#investors-kol-video {
-        padding: 0px 0 40px 0;
         div#kol-1 {
-            div.kol-line {
-                margin-top: 0;
-                border-bottom: 1px solid #ddd;
-            }
             h2 {
-                font-size: 28px;
-                line-height: 32px;
-                font-style: normal;
-                font-weight: 700;
-                color: $elevar_purple;
-                text-transform: uppercase;
-                letter-spacing: 0;
                 margin-top: 45px !important;
-            }
-        }
-        div#kol-2 {
-            h3 {
-                font-size: 17px;
-                line-height: 28px;
-                font-style: normal;
-                font-weight: 700;
-                color: $drk_gray3;
-                text-transform: inherit;
-                margin: 0 !important;
-                margin-top: 10px !important;
-                letter-spacing: 0;
-                margin-bottom: 30px !important;
-
-            }
-        }
-        div#kol-video {
-            text-align: center;
-            img {
-                width: 100%;
-                height: auto;
-                border: 1px solid $black;
             }
         }
         a.edgtf-btn.video {
@@ -522,18 +318,7 @@ div#investors-social-links {
     div#investors-kol-download {
         padding: 20px 0 80px 0;
         div#kol-3 {
-            div.kol-line {
-                margin-top: 0;
-                border-bottom: 1px solid #ddd;
-            }
             h2 {
-                font-size: 28px;
-                line-height: 32px;
-                font-style: normal;
-                font-weight: 700;
-                color: $elevar_purple;
-                text-transform: uppercase;
-                letter-spacing: 0;
                 margin-top: 40px !important;
                 margin-bottom: 30px !important;
             }
@@ -565,36 +350,13 @@ div#investors-social-links {
         }
     }
     div#investors-hubspot-form {
-        background-color: #f6faff;
         padding: 60px 0 40px 0;
-        h4 {
-            font-size: 28px;
-            font-weight: 700;
-            line-height: 32px;
-            color: #2b71b7;
-            letter-spacing: 0;
-            margin-bottom: 20px;
-        }
-        form.hs-form-private {
-        }
     }
     div#investors-button-row {
-        margin-top: 50px !important;
         div.clearfix.edgtf-section-inner {
-            padding: 40px 0 40px 0;
-            border-top: 1px solid #ddd;
-            border-bottom: 1px solid #ddd;
             div.edgtf-section-inner-margin.clearfix {
                 display: flex;
                 flex-direction: column;
-                div.col-btn {
-                text-align: center;
-                width: 100% !important;
-                    a.edgtf-btn {
-                        margin-top: 15px;
-                        margin-bottom: 15px;
-                    }
-                }
             }
         }
     }
