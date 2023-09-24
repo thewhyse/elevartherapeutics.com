@@ -128,7 +128,10 @@ div#leadership-content {
     }
 }
 @media all and (max-width: 1024px) {
-        div#leadership_hero_row {
+    div#leadership-content div.leadership-row div.col-leadership div.vc_column-inner>div.wpb_wrapper div.leadership-section.bottom {
+        margin-top: 0px !important;
+    }
+    div#leadership_hero_row {
             background-image:url("/wp-content/themes/conall-child/images/leadership-hero-1024x306.png");
             div.clearfix.edgtf-full-section-inner {
             div#leadership-hero-h1 {
