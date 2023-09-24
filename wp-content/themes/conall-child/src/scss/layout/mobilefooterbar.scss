@@ -1,49 +1,93 @@
 @import "../base/colors";
 @import "../base/font";
 
-
 /* ******* MOBILE FOOTER BAR START ******* */
-
+.wp-bottom-menu{
+    display: none;
+}
 @media only screen and (max-width: 768px) {
-    div.bnav_bottom_nav_wrapper {
-    z-index: 1000 !important;
-    display: none !important;
-        div.bnav_placeholder_outter_wrap {
-            div.bnav_sub_menu_wrapper {
-
-            }
-        }
-        div.bnav_main_menu_container {
-            ul#menu-mobile-bottom-nav-bar {
-                justify-content: space-around !important;
-                padding: 0;
-                height: 65px;
-                padding: 0 2%;
-                li.menu-item {
-                    padding: 0;
-                    margin: 0;
-                    border: 1px solid #aaa;
-                    border-radius: 3px;
-                    height: 50px;
-                    width: 50px;
-                    a {
-                        div.bnav_menu_items  {
-                            div {
-                                div.text_wrapper {
-                                    text-transform: uppercase;
-                                    font-weight: 700;
-                                    font-size: 10px;
-                                    line-height: 10px;
-                                    text-align: center;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
+    .wp-bottom-menu{
+        display: none;
+        background: $white;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        justify-content: space-around;
+        padding: 0;
+        box-shadow: 0 -5px 10px rgba(0,0,0, 0.1);
+        z-index: 1000;
+        transition: all 500ms;
+        height: 65px;
     }
 
+    .wp-bottom-menu-item{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        flex: 1;
+        font-size: 12px;
+        text-decoration: none;
+        color: #fff;
+        cursor: pointer;
+        user-select: none;
+        text-decoration: none!important;
+        transition: color 500ms;
+    }
+    .wp-bottom-menu-item:nth-child(1) {
+        background-color: $elevar_blue;
+    }
+    .wp-bottom-menu-item:nth-child(2) {
+        background-color: $elevar_blue2;
+    }
+    .wp-bottom-menu-item:nth-child(3) {
+        background-color: $elevar_blue3;
+    }
+    .wp-bottom-menu-item:nth-child(4) {
+        background-color: $elevar_blue4;
+    }
+    .wp-bottom-menu-item:nth-child(5) {
+        background-color: $elevar_blue5;
+    }
+    .wp-bottom-menu-item:hover,
+    .wp-bottom-menu-item.active,
+    .wp-bottom-menu.sf-active .wp-bottom-menu-item.wp-bottom-menu-search-form-trigger{
+        color: $elevar_blue;
+        background-color: $white;
+        transition: color 500ms;
+    }
+    .wp-bottom-menu-item span{
+        margin-top: 5px;
+        color: inherit;
+        font-weight: 400;
+        text-align: center;
+        line-height: 13px;
+        font-size: 11px;
+    }
+
+    .wp-bottom-menu-item i{
+        font-size: 25px;
+        color: $white;
+        font-family: FontAwesome;
+        transition: color 500ms;
+    }
+
+    .wp-bottom-menu-item:hover i,
+    .wp-bottom-menu-item.active i {
+        color: $elevar_blue;
+    }
+
+    .wp-bottom-menu-icon-wrapper{
+        position: relative;
+        line-height: 0;
+    }
+
+    div.elevar-mobile-bar {
+    z-index: 1000 !important;
+    }
 }
 
 /* ******* MOBILE FOOTER BAR END ******* */
