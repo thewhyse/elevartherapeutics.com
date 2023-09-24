@@ -25,9 +25,9 @@ if( !function_exists('conall_edge_get_blog_type') ) {
 	 * @return blog list template
 	 */
 	function conall_edge_get_blog_type($type) {
-		
+
 		$blog_query = conall_edge_get_blog_query();
-		
+
 		$paged = conall_edge_paged();
 		$blog_classes = '';
 
@@ -37,11 +37,11 @@ if( !function_exists('conall_edge_get_blog_type') ) {
 			$blog_page_range = $blog_query->max_num_pages;
 		}
 		$show_load_more = conall_edge_enable_load_more();
-		
+
 		if($show_load_more){
 			$blog_classes .= ' edgtf-blog-load-more';
 		}
-		
+
 		$params = array(
 			'blog_query' => $blog_query,
 			'paged' => $paged,
@@ -62,15 +62,15 @@ if(!function_exists('conall_edge_get_blog_query')){
 	*/
 	function conall_edge_get_blog_query(){
 		global $wp_query;
-		
+
 		$id = conall_edge_get_page_id();
 		$category = esc_attr(get_post_meta($id, "edgtf_blog_category_meta", true));
 		if(esc_attr(get_post_meta($id, "edgtf_show_posts_per_page_meta", true)) != ""){
 			$post_number = esc_attr(get_post_meta($id, "edgtf_show_posts_per_page_meta", true));
-		}else{			
+		}else{
 			$post_number = esc_attr(get_option('posts_per_page'));
-		} 
-		
+		}
+
 		$paged = conall_edge_paged();
 		$query_array = array(
 			'post_type' => 'post',
@@ -203,15 +203,15 @@ if (!function_exists('conall_edge_pagination')) {
 				$pages = 1;
 			}
 		}
-		
+
 		$show_load_more = conall_edge_enable_load_more();
 		$masonry_template = conall_edge_is_masonry_template();
-		
+
 		$search_template = 'no';
 		if(is_search()){
 			$search_template = 'yes';
 		}
-		
+
 		if($pages != 1){
 			if($show_load_more == 'yes'  && $search_template !== 'yes' && !$masonry_template){
 				$params = array(
@@ -400,7 +400,7 @@ if( !function_exists('conall_edge_get_single_html') ) {
 			$post_format = $post_format;
 		} else {
 			$post_format = 'standard';
-		}		
+		}
 
 		//Related posts
 		$related_posts_params = array();
@@ -468,7 +468,7 @@ if( !function_exists('conall_edge_get_single_html') ) {
 			$author_params['display_author_social'] = false;
 		}
 		conall_edge_get_module_template_part('templates/single/parts/author-info', 'blog', '', $author_params);
-		
+
 		if ($show_related) {
 			conall_edge_get_module_template_part('templates/single/parts/related-posts', 'blog', '', $related_posts_params);
 		}
@@ -956,7 +956,7 @@ if(!function_exists('conall_edge_read_more_button')) {
 				'type'         => 'simple',
 				'size'         => 'medium',
 				'link'         => get_the_permalink(),
-				'text'         => esc_html__('READ MORE', 'conall'),
+				'text'         => esc_html__('Read more', 'conall'),
 				'icon_pack'    => 'linea_icons',
 				'linea_icon'   => 'icon-arrows-slim-right',
 				'custom_class' => $class
@@ -970,32 +970,32 @@ if(!function_exists('conall_edge_set_blog_holder_data_params')){
 	 * Function which set data params on blog holder div
 	 */
 	function conall_edge_set_blog_holder_data_params(){
-		
+
 		$show_load_more = conall_edge_enable_load_more();
 		if($show_load_more){
 			$current_query = conall_edge_get_blog_query();
-			
+
 			$data_params = array();
 			$data_return_string = '';
-			
+
 			$paged = conall_edge_paged();
-			
+
 			$posts_number =  '';
 			if(get_post_meta(get_the_ID(), "edgtf_show_posts_per_page_meta", true) != ""){
 				$posts_number = get_post_meta(get_the_ID(), "edgtf_show_posts_per_page_meta", true);
-			}else{			
+			}else{
 				$posts_number = get_option('posts_per_page');
-			} 
+			}
 			$category = get_post_meta(conall_edge_get_page_id(), 'edgtf_blog_category_meta', true);
-			
+
 			//set data params
 			$data_params['data-next-page'] = $paged+1;
 			$data_params['data-max-pages'] =  $current_query->max_num_pages;
-			
+
 			if($posts_number !=''){
 				$data_params['data-post-number'] = $posts_number;
 			}
-			
+
 			if($category !=''){
 				$data_params['data-category'] = $category;
 			}
@@ -1016,23 +1016,23 @@ if(!function_exists('conall_edge_set_blog_holder_data_params')){
 					$day  = get_query_var('day');
 					$month = get_query_var('monthnum');
 					$year = get_query_var('year');
-					
+
 					$data_params['data-archive-day'] = $day;
 					$data_params['data-archive-month'] = $month;
 					$data_params['data-archive-year'] = $year;
-				}				
+				}
 			}
 			if(is_search()){
 				$search_query = get_search_query();
 				$data_params['data-archive-search-string'] = $search_query; // to do, not finished
 			}
-			
+
 			foreach($data_params as $key => $value) {
 				if ($key !== '') {
 					$data_return_string .= $key.'= '.esc_attr($value).' ';
 				}
 			}
-			
+
 			return $data_return_string;
 		}
 	}
@@ -1041,12 +1041,12 @@ if(!function_exists('conall_edge_set_blog_holder_data_params')){
 if(!function_exists('conall_edge_enable_load_more')){
 	/**
 	 * Function that check if load more is enabled
-	 * 
+	 *
 	 * return boolean
 	 */
 	function conall_edge_enable_load_more(){
 		$enable_load_more = false;
-		
+
 		if(conall_edge_options()->getOptionValue('enable_load_more_pag') == 'yes') {
 			$enable_load_more = true;
 		}
@@ -1058,7 +1058,7 @@ if(!function_exists('conall_edge_is_masonry_template')){
 	/**
      * Check if is masonry template enabled
      * return boolean
-     */ 
+     */
 	function conall_edge_is_masonry_template(){
 		$page_id = conall_edge_get_page_id();
 		$page_template = get_page_template_slug($page_id);
@@ -1083,14 +1083,14 @@ if(!function_exists('conall_edge_is_masonry_template')){
  *
  */
 if(!function_exists('conall_edge_blog_load_more')){
-	
+
 	function conall_edge_blog_load_more(){
 		$return_obj = array();
 		$paged = $post_number = $category = $blog_type = '';
 		$archive_category = $archive_author = $archive_tag = $archive_day = $archive_month = $archive_year = '';
-		
+
 		check_ajax_referer( 'edgtf_blog_load_more_nonce_' . sanitize_text_field( $_POST['blog_load_more_id'] ), 'blog_load_more_nonce' );
-		
+
 		if (!empty($_POST['nextPage'])) {
 	        $paged = $_POST['nextPage'];
 	    }
@@ -1121,7 +1121,7 @@ if(!function_exists('conall_edge_blog_load_more')){
 		if (!empty($_POST['archiveYear'])) {
 	        $archive_year = $_POST['archiveYear'];
 	    }
-		
+
 		$html = '';
 		$query_array = array(
 			'post_type' => 'post',
@@ -1146,19 +1146,19 @@ if(!function_exists('conall_edge_blog_load_more')){
 			$query_array['year'] = $archive_year;
 		}
 		$query_results = new \WP_Query($query_array);
-		
-		if($query_results->have_posts()):			
+
+		if($query_results->have_posts()):
 			while ( $query_results->have_posts() ) : $query_results->the_post();
 				$html .=  conall_edge_get_post_format_html($blog_type, 'yes');
 			endwhile;
 			else:
 				$html .= '<p>'. esc_html__('Sorry, no posts matched your criteria.', 'conall') .'</p>';
 			endif;
-			
+
 		$return_obj = array(
 			'html' => $html,
 		);
-		
+
 		echo json_encode($return_obj); exit;
 	}
 }
@@ -1177,7 +1177,7 @@ if(!function_exists('conall_edge_get_max_number_of_pages')) {
         global $wp_query;
 
         $max_number_of_pages = 10; //default value
-        
+
         if($wp_query) {
             $max_number_of_pages = $wp_query->max_num_pages;
         }
