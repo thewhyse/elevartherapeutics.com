@@ -9,7 +9,7 @@ input.hs-button {
     height: 54px !important;
     background: $elevar_purple;
     color: #fff !important;
-    border: 2px solid $elevar_purple;
+    border: 2px solid $elevar_purple !important;
     border-radius: 10px;
     font-size: 20px;
     font-weight: 700;
@@ -19,7 +19,7 @@ input.hs-button {
     text-indent: 0 !important;
     margin: 0 auto !important;
         &:hover {
-            border: 2px solid $elevar_purple;
+            border: 2px solid $elevar_purple !important;
             background: #fff;
             color: $elevar_purple !important;
         }
