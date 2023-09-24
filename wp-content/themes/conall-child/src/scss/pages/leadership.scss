@@ -128,7 +128,13 @@ div#leadership-content {
     }
 }
 @media all and (max-width: 1024px) {
-    div#leadership-content div.leadership-row div.col-leadership div.vc_column-inner>div.wpb_wrapper div.leadership-section.bottom {
+    div#leadership-content div.leadership-row:nth-child(1) div.col-leadership div.vc_column-inner > div.wpb_wrapper div.leadership-section.bottom,
+    div#leadership-content div.leadership-row:nth-child(2) div.col-leadership div.vc_column-inner > div.wpb_wrapper div.leadership-section.bottom,
+    div#leadership-content div.leadership-row:nth-child(3) div.col-leadership div.vc_column-inner > div.wpb_wrapper div.leadership-section.bottom,
+    div#leadership-content div.leadership-row:nth-child(4) div.col-leadership div.vc_column-inner > div.wpb_wrapper div.leadership-section.bottom,
+    div#leadership-content div.leadership-row:nth-child(5) div.col-leadership div.vc_column-inner > div.wpb_wrapper div.leadership-section.bottom,
+    div#leadership-content div.leadership-row:nth-child(6) div.col-leadership div.vc_column-inner > div.wpb_wrapper div.leadership-section.bottom,
+    div#leadership-content div.leadership-row:nth-child(7) div.col-leadership div.vc_column-inner > div.wpb_wrapper div.leadership-section.bottom {
         margin-top: 0px !important;
     }
     div#leadership_hero_row {
