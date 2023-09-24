@@ -207,6 +207,14 @@ div.hero-row {
     padding: 25px !important;
     background-color: $white !important;
 }
+@media all and (max-width: 1200px) {
+    div.cli-bar-message {
+        width: 65%;
+    }
+    div.cli-bar-btn_container {
+        width: 35%;
+    }
+}
 @media all and (max-width: 1024px) {
     h1, h1.elevar-h1 {
         font-size: 32px;
