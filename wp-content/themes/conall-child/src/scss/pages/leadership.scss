@@ -101,15 +101,30 @@ div#leadership-content {
 }
 @media all and (max-width: 1400px) {
     div#leadership-content div.leadership-row div.col-leadership div.vc_column-inner > div.wpb_wrapper div.leadership-section.bottom {
-        margin-top: 60px !important;
+        margin-top: 20px !important;
     }
 }
-@media all and (max-width: 1400px) {
-    div#leadership-content div.leadership-row div.col-leadership div.vc_column-inner > div.wpb_wrapper div.leadership-section.bottom {
+@media all and (max-width: 1200px) {
+    div#leadership-content div.leadership-row:nth-child(1) div.col-leadership div.vc_column-inner > div.wpb_wrapper div.leadership-section.bottom {
+        margin-top: 60px !important;
+    }
+    div#leadership-content div.leadership-row:nth-child(2) div.col-leadership div.vc_column-inner > div.wpb_wrapper div.leadership-section.bottom {
         margin-top: 115px !important;
     }
-    #leadership-content > div > div > div > div > div > div:nth-child(5) > div > div > div > div > div.wpb_text_column.wpb_content_element.leadership-section.bottom {
-        margin-top: 175px !important;
+    div#leadership-content div.leadership-row:nth-child(3) div.col-leadership div.vc_column-inner > div.wpb_wrapper div.leadership-section.bottom {
+        margin-top: 60px !important;
+    }
+    div#leadership-content div.leadership-row:nth-child(4) div.col-leadership div.vc_column-inner > div.wpb_wrapper div.leadership-section.bottom {
+        margin-top: 20px !important;
+    }
+    div#leadership-content div.leadership-row:nth-child(5) div.col-leadership div.vc_column-inner > div.wpb_wrapper div.leadership-section.bottom {
+        margin-top: 20px !important;
+    }
+    div#leadership-content div.leadership-row:nth-child(6) div.col-leadership div.vc_column-inner > div.wpb_wrapper div.leadership-section.bottom {
+        margin-top: 100px !important;
+    }
+    div#leadership-content div.leadership-row:nth-child(7) div.col-leadership div.vc_column-inner > div.wpb_wrapper div.leadership-section.bottom {
+        margin-top: 20px !important;
     }
 }
 @media all and (max-width: 1024px) {
