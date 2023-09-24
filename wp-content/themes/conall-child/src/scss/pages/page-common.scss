@@ -286,6 +286,9 @@ div.hero-row {
     div.cli-bar-btn_container {
         width: 40%;
     }
+    #cookie-law-info-bar, .wt-cli-cookie-bar {
+        padding: 15px 25px !important;
+    }
 }
 @media all and (max-width: 768px) {
     p, p.elevar-p {
@@ -311,20 +314,43 @@ div.hero-row {
 
         }
     }
+    div.cli-bar-message {
+        width: 70%;
+        text-align: justify;
+        padding-right: 4%;
+    }
+    div.cli-bar-btn_container {
+        width: 30%;
+        flex-direction: column;
+    }
+    a.cli-plugin-button {
+        margin: 8px 0 !important;
+    }
 }
 @media all and (max-width: 576px) {
     div.cli-bar-container.cli-style-v2 {
         flex-direction: column;
+    }
+    a.cli-plugin-button {
+        width: 175px;
+        height: 35px;
+        line-height: 35px !important;
+        margin: 6px 0 !important;
     }
     div.cli-bar-message {
         font-size: 13px;
         line-height: 20px;
         width: 100%;
     }
+    #cookie-law-info-bar, .wt-cli-cookie-bar {
+    padding: 15px !important;
+    }
     div.cli-bar-btn_container {
         width: 100%;
         justify-content: center;
-        padding: 15px 0 0 0;
+        padding: 8px 0 0 0;
+        justify-content: center;
+        align-items: center;
     }
     h2, h2.elevar-h2 {
         font-size: 28px;

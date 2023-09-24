@@ -21,44 +21,20 @@ a.edgtf-btn {
     margin-bottom: 3% !important;
     text-decoration: none !important;
     border: 1px solid;
+    transition: background-color 500ms;
 }
 a.edgtf-btn:hover {
     background-color: $white !important;
     color: $elevar_purple  !important;
     border-color: $elevar_purple !important;
+    transition: background-color 500ms;
 }
-a.edgtf-btn.privacy {
-    font-size: 15px;
-    height: 40px;
-    width: 125px;
-    border-radius: 10px !important;
-    text-transform: initial !important;
-    padding: 0 !important;
-    margin: 0 10px !important;
-    color: $white !important;
-}
-a.edgtf-btn.privacy:hover {
-    background-color: $white !important;
-    color: $elevar_purple  !important;
-    border-color: $elevar_purple !important;
-}
-a.edgtf-btn.privacy.blue {
-    color: $white !important;
-    background-color: $elevar_blue !important;
-    border-color: $elevar_blue !important;
-}
-a.edgtf-btn.privacy.blue:hover {
-    background-color: $white !important;
-    color: $elevar_blue  !important;
-    border-color: $elevar_blue !important;
-}
-a.edgtf-btn.privacy.blue:active {
-    color: $white !important;
-}
+
 .edgtf-btn.edgtf-btn-solid:not(.edgtf-btn-custom-hover-color):hover {
     background-color: $white !important;
     color: $elevar_purple  !important;
     border-color: $elevar_purple !important;
+    transition: background-color 500ms;
 }
 .edgtf-search-page-holder .edgtf-search-page-form .edgtf-form-holder input.edgtf-search-submit {
     display: flex;
@@ -76,10 +52,12 @@ a.edgtf-btn.privacy.blue:active {
     width: 100%;
     text-decoration: none !important;
     letter-spacing: 0;
+    transition: background-color 500ms;
     :hover {
     background-color: $white;
     color: $elevar_purple !important;
     border-color: $elevar_purple;
+    transition: background-color 500ms;
     }
 }
 .edgtf-btn-text .edgtf-shuffle {
@@ -87,6 +65,49 @@ a.edgtf-btn.privacy.blue:active {
         display: none;
     }
 }
+a.cli-plugin-button:focus {
+    outline: 0;
+    opacity: 1 !important;
+    transition: background-color 500ms;
+}
+a.cli-plugin-button {
+    color: #fff !important;
+    height: 40px;
+    padding: 0 !important;
+    border-radius: 10px !important;
+    border: 1px solid #2b71b7 !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    min-width: 125px;
+    text-align: center;
+    line-height: 40px !important;
+    box-sizing: border-box;
+    margin: 0 15px 0 15px !important;
+    transition: background-color 500ms;
+}
+a#wt-cli-settings-btn {
+    background-color: $elevar_blue !important;
+    border-color: $elevar_blue !important;
+    transition: background-color 500ms;
+}
+a#wt-cli-settings-btn:hover {
+    background-color: $white !important;
+    color: $elevar_blue !important;
+    border-color: $elevar_blue !important;
+    transition: background-color 500ms;
+}
+a#wt-cli-accept-btn {
+    background-color: $elevar_purple !important;
+    border-color: $elevar_purple !important;
+    transition: background-color 500ms;
+}
+a#wt-cli-accept-btn:hover {
+    background-color: $white !important;
+    color: $elevar_purple !important;
+    border-color: $elevar_purple !important;
+    transition: background-color 500ms;
+}
+
 @media only screen and (max-width: 1024px) {
 }
 @media only screen and (max-width: 768px) {
