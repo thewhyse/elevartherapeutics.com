@@ -69,13 +69,13 @@ div#leadership-content {
                         color: $elevar_blue;
                         transition: all 1s;
                         text-transform: uppercase;
-                        text-decoration: underline;
+                        text-decoration: none;
                         font-weight: 700;
                         margin: 5px 0 5px 0;
                         transition: all 0.75s;
                     }
                     div.read-more:hover {
-                        color: $elevar_purple;
+                        color: $links;
                         transition: all 0.75s;
                     }
                     div.hide {

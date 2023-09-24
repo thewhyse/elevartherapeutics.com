@@ -12,3 +12,12 @@ input.hs-button.primary.large:hover {
     cursor: pointer;
     transition: all 0.5s;
 }
+span.edgtf-btn-text.edgtf-shuffle:hover {
+    color: $links !important;
+}
+span.edgtf-btn-text:hover {
+color: $links !important;
+}
+h2.entry-title.edgtf-post-title a:hover {
+color: $links !important;
+}
