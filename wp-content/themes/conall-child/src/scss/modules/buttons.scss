@@ -27,6 +27,34 @@ a.edgtf-btn:hover {
     color: $elevar_purple  !important;
     border-color: $elevar_purple !important;
 }
+a.edgtf-btn.privacy {
+    font-size: 15px;
+    height: 40px;
+    width: 125px;
+    border-radius: 10px !important;
+    text-transform: initial !important;
+    padding: 0 !important;
+    margin: 0 10px !important;
+    color: $white !important;
+}
+a.edgtf-btn.privacy:hover {
+    background-color: $white !important;
+    color: $elevar_purple  !important;
+    border-color: $elevar_purple !important;
+}
+a.edgtf-btn.privacy.blue {
+    color: $white !important;
+    background-color: $elevar_blue !important;
+    border-color: $elevar_blue !important;
+}
+a.edgtf-btn.privacy.blue:hover {
+    background-color: $white !important;
+    color: $elevar_blue  !important;
+    border-color: $elevar_blue !important;
+}
+a.edgtf-btn.privacy.blue:active {
+    color: $white !important;
+}
 .edgtf-btn.edgtf-btn-solid:not(.edgtf-btn-custom-hover-color):hover {
     background-color: $white !important;
     color: $elevar_purple  !important;
@@ -77,6 +105,15 @@ a.edgtf-btn:hover {
         .edgtf-search-page-holder .edgtf-search-page-form .edgtf-form-holder input.edgtf-search-submit {
         font-size: 20px;
         line-height: 26px;
+        }
+        a.edgtf-btn.privacy {
+            font-size: 12px;
+            height: 35px;
+            width: 115px;
+            border-radius: 10px !important;
+            padding: 0 !important;
+            margin: 0 10px !important;
+            color: $white !important;
         }
 }
 @media only screen and (max-width: 480px) {
