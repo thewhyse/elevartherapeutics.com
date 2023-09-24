@@ -104,7 +104,14 @@ div#leadership-content {
         margin-top: 60px !important;
     }
 }
-
+@media all and (max-width: 1400px) {
+    div#leadership-content div.leadership-row div.col-leadership div.vc_column-inner > div.wpb_wrapper div.leadership-section.bottom {
+        margin-top: 115px !important;
+    }
+    #leadership-content > div > div > div > div > div > div:nth-child(5) > div > div > div > div > div.wpb_text_column.wpb_content_element.leadership-section.bottom {
+        margin-top: 175px !important;
+    }
+}
 @media all and (max-width: 1024px) {
         div#leadership_hero_row {
             background-image:url("/wp-content/themes/conall-child/images/leadership-hero-1024x306.png");
