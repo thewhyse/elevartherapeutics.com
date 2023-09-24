@@ -1,6 +1,6 @@
 <?php $sidebar = conall_edge_sidebar_layout(); ?>
 <?php get_header(); ?>
-<?php 
+<?php
 
 $blog_page_range = conall_edge_get_blog_page_range();
 $max_number_of_pages = conall_edge_get_max_number_of_pages();
@@ -25,7 +25,7 @@ if(conall_edge_options()->getOptionValue('enable_search_page_sidebar') === "no")
 					<div class="edgtf-two-columns-75-25 edgtf-content-has-sidebar clearfix">
 						<div class="edgtf-column1 edgtf-content-left-from-sidebar">
 							<div class="edgtf-column-inner">
-					<?php } ?>		
+					<?php } ?>
 								<div class="edgtf-search-page-holder">
 									<form action="<?php echo esc_url(home_url('/')); ?>" class="edgtf-search-page-form" method="get">
 										<h2 class="edgtf-search-title"><?php esc_html_e('NEW SEARCH', 'conall'); ?></h2>
@@ -35,10 +35,10 @@ if(conall_edge_options()->getOptionValue('enable_search_page_sidebar') === "no")
 												<input type="text"  name="s" class="edgtf-search-field" autocomplete="off" />
 											</div>
 											<div class="edgtf-column-right">
-												<input type="submit" class="edgtf-search-submit" value="<?php esc_attr_e('SEARCH', 'conall'); ?>" />
+												<input type="submit" class="edgtf-search-submit" value="<?php esc_attr_e('Search', 'conall'); ?>" />
 											</div>
 										</div>
-									</form>	
+									</form>
 									<?php if(have_posts()) : while ( have_posts() ) : the_post(); ?>
 										<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 											<div class="edgtf-post-content">
@@ -73,7 +73,7 @@ if(conall_edge_options()->getOptionValue('enable_search_page_sidebar') === "no")
 												</div>
 											</div>
 										</article>
-									<?php endwhile; ?>									
+									<?php endwhile; ?>
 									<?php else: ?>
 									<div class="entry">
 										<p><?php esc_html_e('No posts were found.', 'conall'); ?></p>
@@ -81,7 +81,7 @@ if(conall_edge_options()->getOptionValue('enable_search_page_sidebar') === "no")
 									<?php endif; ?>
 								</div>
 								<?php do_action('conall_edge_page_after_content'); ?>
-					<?php if($enable_search_page_sidebar) { ?>			
+					<?php if($enable_search_page_sidebar) { ?>
 							</div>
 						</div>
 						<div class="edgtf-column2">
