@@ -1,6 +1,7 @@
 @import "../base/colors";
 @import "../base/font";
 
+/* ******* ELEVAR 2023 FOOTER END ******* */
 div.edgtf-content {
     div.edgtf-content-inner {
         div.edgtf-content-bottom {
@@ -10,7 +11,6 @@ div.edgtf-content {
         }
     }
 }
-
 footer {
     .edgtf-footer-bottom-holder {
         background-color: $elevar_blue !important;
@@ -111,7 +111,6 @@ footer {
         }
     }
 }
-
 @media all and (max-width: 1024px) {
     div.edgtf-content {
         div.edgtf-content-inner {
@@ -182,10 +181,6 @@ footer {
         }
     }
 }
-
-@media all and (max-width: 768px) {
-}
-
 @media all and (max-width: 576px) {
     div.edgtf-content {
         div.edgtf-content-inner {
@@ -251,7 +246,6 @@ footer {
         }
     }
 }
-
 @media all and (max-width: 480px) {
     footer div#temp-footer-container div#bottom-links {
     min-width: 320px;
@@ -259,3 +253,4 @@ footer {
     margin-bottom: 20px;
     }
 }
+/* ******* ELEVAR 2023 FOOTER END ******* */

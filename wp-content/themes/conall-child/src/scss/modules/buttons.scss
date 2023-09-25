@@ -29,7 +29,6 @@ a.edgtf-btn:hover {
     border-color: $elevar_purple !important;
     transition: background-color 500ms;
 }
-
 .edgtf-btn.edgtf-btn-solid:not(.edgtf-btn-custom-hover-color):hover {
     background-color: $white !important;
     color: $elevar_purple  !important;
@@ -70,48 +69,52 @@ a.cli-plugin-button:focus {
     opacity: 1 !important;
     transition: background-color 500ms;
 }
-
+.cli-tab-footer .wt-cli-privacy-accept-btn {
+    background-color: $elevar_blue !important;
+    border-color: $elevar_blue  !important;
+    color: #ffffff;
+     border-radius: 10px !important;
+     font-weight: 700;
+     font-size: 15px;
+}
 a#wt-cli-settings-btn,
 a#wt-cli-accept-btn,
 a.cli-plugin-button {
     color: #fff !important;
     height: 40px;
-    padding: 0 !important;
-    border-radius: 10px !important;
-    border: 1px solid #2b71b7 !important;
-    font-size: 15px !important;
-    font-weight: 700 !important;
-    min-width: 125px;
+    padding: 0;
+    border-radius: 10px;
+    border: 1px solid #2b71b7;
+    font-size: 15px;
+    font-weight: 700;
+    min-width: 150px;
     text-align: center;
     line-height: 40px !important;
     box-sizing: border-box;
-    margin: 0 15px 0 15px !important;
+    margin: 0 15px 0 15px;
     transition: background-color 500ms;
 }
 a#wt-cli-settings-btn {
     background-color: $elevar_blue !important;
-    border-color: $elevar_blue !important;
+    border-color: $elevar_blue  !important;
     transition: background-color 500ms;
 }
 a#wt-cli-settings-btn:hover {
-    background-color: $white !important;
-    color: $elevar_blue !important;
-    border-color: $elevar_blue !important;
+    background-color: $white  !important;
+    color: $elevar_blue  !important;
+    border-color: $elevar_blue  !important;
     transition: background-color 500ms;
 }
 a#wt-cli-accept-btn {
-    background-color: $elevar_purple !important;
-    border-color: $elevar_purple !important;
+    background-color: $elevar_purple  !important;
+    border-color: $elevar_purple  !important;
     transition: background-color 500ms;
 }
 a#wt-cli-accept-btn:hover {
-    background-color: $white !important;
-    color: $elevar_purple !important;
-    border-color: $elevar_purple !important;
+    background-color: $white  !important;
+    color: $elevar_purple  !important;
+    border-color: $elevar_purple  !important;
     transition: background-color 500ms;
-}
-
-@media only screen and (max-width: 1024px) {
 }
 @media only screen and (max-width: 768px) {
     a.edgtf-btn {
@@ -126,6 +129,10 @@ a#wt-cli-accept-btn:hover {
     }
 }
 @media only screen and (max-width: 576px) {
+        a#wt-cli-settings-btn,
+        a#wt-cli-accept-btn {
+            width: 175px;
+        }
         a.edgtf-btn {
         font-size: 20px;
         line-height: 26px;

@@ -32,8 +32,6 @@ div#rivo_hero_row {
 }
 div#about-rivoceranib {
     div.col-rivo {
-        div#about-rivoceranib-heading {
-        }
         div#elevar-section {
             p.elevar-p {
                 text-align: center;
@@ -91,14 +89,13 @@ div#about-rivoceranib {
 }
 div#clinical-studies-section.new-center-row {
     padding: 30px 0 60px 0;
-    div#clinical-studies-heading {
-
-    }
     div.wpb_text_column.wpb_content_element {
         ul {
+        margin-left: 20px;
         padding-left: 35px;
         text-align: left;
             li {
+                list-style-position: outside;
                 font-size: 17px;
                 line-height: 28px;
             }
@@ -140,11 +137,6 @@ div#moa-section {
             border: 1px solid $black;
         }
     }
-    div#at-a-glance-heading {
-        h3 {
-
-        }
-    }
     div.moa-info-block-pdf {
         width: 50vw;
         margin: 0 auto;
@@ -167,9 +159,6 @@ div#moa-section {
             }
         }
     }
-    div#contact-us-link {
-
-    }
 }
 div#for-patients-section {
   background-image: url(/wp-content/themes/conall-child/images/inquire-section-bg.png);
@@ -180,9 +169,6 @@ div#for-patients-section {
     div.new-txt-block {
         max-width: 850px;
         margin: 0 auto;
-        p {
-
-        }
     }
     #inquire-cta-deskt {
         #inquire-cta-container {
@@ -273,7 +259,6 @@ div#your-interest-section {
         height: 33px;
     }
 }
-
 @media all and (max-width: 1024px) {
     div#rivo_hero_row {
         background-image:url("/wp-content/themes/conall-child/images/rivo-hero-1024x306.png");
@@ -302,8 +287,6 @@ div#your-interest-section {
     }
     div#about-rivoceranib {
         div.col-rivo {
-            div#about-rivoceranib-heading {
-            }
             div#study-numbers {
                 max-width: 80%;
                 height: 100%;
@@ -334,9 +317,6 @@ div#your-interest-section {
         }
         div.col-clinical-study-right {
             width: 50% !important;
-        }
-        div#clinical-studies-heading {
-
         }
         div.wpb_text_column.wpb_content_element {
             ul {
@@ -388,17 +368,12 @@ div#your-interest-section {
         a.moa-button {
         text-align: center;
         }
-        div#contact-us-link {
-        }
     }
     div#for-patients-section {
     background-position: -270px center;
         div.new-txt-block {
             max-width: 850px;
             margin: 0 auto;
-            p {
-
-            }
         }
         #inquire-cta-deskt {
             #inquire-cta-container {
@@ -414,8 +389,6 @@ div#your-interest-section {
             border-radius: 20px;
             padding: 20px;
             background: #fff;
-            .icon-block {
-            }
             .txt-block {
                 div {
                 text-align: left;
@@ -480,7 +453,6 @@ div#your-interest-section {
         background: linear-gradient(0deg,#f8f8f8 0,#f6f6f8 100%);
     }
 }
-
 @media all and (max-width: 390px) {
     div#about-rivoceranib div.col-rivo div#study-numbers {
         max-width: 280px;
@@ -491,7 +463,6 @@ div#your-interest-section {
         height:auto;
     }
 }
-
 @media all and (max-width: 768px) {
     div#rivo_hero_row {
         div.clearfix.edgtf-full-section-inner {
@@ -517,12 +488,6 @@ div#your-interest-section {
         }
     }
     }
-    div#about-rivoceranib {
-        div.col-rivo {
-            div#about-rivoceranib-heading {
-            }
-        }
-    }
     div#clinical-studies-section.new-center-row {
         padding: 30px 0 30px 0;
         div.col-clinical-study-left {
@@ -530,9 +495,6 @@ div#your-interest-section {
         }
         div.col-clinical-study-right {
             width: 100% !important;
-        }
-        div#clinical-studies-heading {
-
         }
         div.wpb_text_column.wpb_content_element {
             ul {
@@ -584,8 +546,6 @@ div#your-interest-section {
         a.moa-button {
         text-align: center;
         }
-        div#contact-us-link {
-        }
     }
     div#for-patients-section {
         background-position: center center;
@@ -593,9 +553,6 @@ div#your-interest-section {
         div.new-txt-block {
             max-width: 850px;
             margin: 0 auto;
-            p {
-
-            }
         }
         #inquire-cta-deskt {
             #inquire-cta-container {
@@ -717,8 +674,6 @@ div#your-interest-section {
             top: -4px !important;
         }
     }
-    div#for-patients-section {
-    }
     div#for-patients-section #inquire-cta-deskt #inquire-cta-container {
         flex-direction: column;
         width: 100%;
@@ -734,7 +689,6 @@ div#your-interest-section {
         }
     }
 }
-
 @media all and (max-width: 320px) {
     div#moa-section div#moa-button a.edgtf-btn {
         img.dl-icon {

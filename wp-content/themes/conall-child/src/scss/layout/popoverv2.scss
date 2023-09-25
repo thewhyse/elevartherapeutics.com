@@ -1,7 +1,6 @@
 @import "../base/colors";
 
-/* ********** Pop-Over v2 - Desktop ********** */
-
+/* ******* POP-OVER V2 DESKTOP START ******* */
 #dh_popup_17331,
 #dh_popup_17357,
 #dh_popup_17363 {
@@ -12,14 +11,12 @@
             min-height: 100%;
         }
 }
-
 i.fancybox-close__line-top,
 i.fancybox-close__line-bottom {
     width: 60%;
     left: calc(50% - 18px);
     top: calc(50% - 2px);
 }
-
 div.fancybox-wrap.dh-popup__wrap--17331 a.fancybox-item.fancybox-close,
 div.fancybox-wrap.dh-popup__wrap--17357 a.fancybox-item.fancybox-close,
 div.fancybox-wrap.dh-popup__wrap--17363 a.fancybox-item.fancybox-close {
@@ -138,9 +135,7 @@ div.fancybox-wrap.dh-popup__wrap--17363 div.fancybox-skin:before {
         }
     }
 }
-
 /* ********** Pop-Over - Mobile  ********** */
-
 @media (max-width: 767px) {
 
     div.fancybox-wrap.dh-popup__wrap--17331 div.fancybox-skin:before,
@@ -295,7 +290,6 @@ div.fancybox-wrap.dh-popup__wrap--17363 div.fancybox-skin:before {
         }
     }
 }
-
 @media all and (max-width: 576px) {
     i.fancybox-close__line-top,
         i.fancybox-close__line-bottom {
@@ -465,3 +459,4 @@ div.fancybox-wrap.dh-popup__wrap--17363 div.fancybox-skin:before {
         }
     }
 }
+/* ******* POP-OVER V2 DESKTOP END ******* */

@@ -75,7 +75,7 @@ $cli_theme_widget1=array
 		"button_1"=>array(
 			"status"=>1,
 			"text"=>"Accept",
-			"style"=>"margin: 5px 5px 5px 30px; border-radius: 0px; padding: 8px 25px; color: rgb(255, 255, 255); background-color: rgb(97, 162, 41);"
+			"style"=>""
 		),
 		"button_2"=>array(
 			"status"=>1,
@@ -100,7 +100,7 @@ $cli_theme_widget1=array
 		"button_7"=>array(
 			"status"=>0,
 			"text"=>"Accept All",
-			"style"=>"margin: 5px 5px 5px 30px; border-radius: 0px; padding: 8px 25px; color: rgb(255, 255, 255); background-color: rgb(97, 162, 41);"
+			"style"=>""
 		),
 	)
 );
@@ -121,7 +121,7 @@ $cli_theme_widget2=array
 		"button_1"=>array(
 			"status"=>1,
 			"text"=>"Accept",
-			"style"=>"margin: 5px 5px 5px 30px; border-radius: 0px; padding: 8px 25px; color:#ffffff; background-color:#61a229;"
+			"style"=>""
 		),
 		"button_2"=>array(
 			"status"=>1,
@@ -146,7 +146,7 @@ $cli_theme_widget2=array
 		"button_7"=>array(
 			"status"=>0,
 			"text"=>"Accept All",
-			"style"=>"margin: 5px 5px 5px 30px; border-radius: 0px; padding: 8px 25px; color:#ffffff; background-color:#61a229;"
+			"style"=>""
 		),
 	)
 );
@@ -157,7 +157,7 @@ $cli_theme_widget3=array
 		"bar"=>array(
 			"type"=>'widget',
 			"text"=>'This website uses cookies to ensure you get the best experience on our website.
-			[cookie_link][cookie_settings] 
+			[cookie_link][cookie_settings]
 			[cookie_reject][cookie_button]',
 			"style"=>"width:445px; box-sizing:border-box; padding:46px; background:#421fa9; color:#fff; font-size: 16px; line-height: 24px; border:solid 0px #fff; text-align:left; letter-spacing:normal;"
 		),
@@ -541,7 +541,7 @@ $cli_theme_widget10=array
 //follow the bellow naming format. it is using in preview section.
 $cli_themes_widget=array(
 	'theme_widget_1'=>$cli_theme_widget1,
-	'theme_widget_2'=>$cli_theme_widget2,	
+	'theme_widget_2'=>$cli_theme_widget2,
 	'theme_widget_3'=>$cli_theme_widget3,
 	'theme_widget_5'=>$cli_theme_widget5,
 	'theme_widget_6'=>$cli_theme_widget6,
@@ -549,7 +549,7 @@ $cli_themes_widget=array(
 	'theme_widget_8'=>$cli_theme_widget8,
 	'theme_widget_9'=>$cli_theme_widget9,
 	'theme_widget_10'=>$cli_theme_widget10,
-	'theme_widget_4'=>$cli_theme_widget4,	
+	'theme_widget_4'=>$cli_theme_widget4,
 );
 
 

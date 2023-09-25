@@ -36,9 +36,6 @@
                     div#press-release-row {
                         padding: 0px 0 20px 0;
                         background-color: $white;
-                        h1 {
-
-                        }
                     }
                     div.edgtf-blog-holder {
                         display: flex;
@@ -209,9 +206,6 @@ div.edgtf-blog-holder.edgtf-blog-single {
                     display: flex;
                     flex-direction: column;
                     flex: 1;
-                    div.edgtf-related-post-image {
-
-                    }
                     h5 {
                     margin: 10px 0 10px;
                     line-height: 23px;
@@ -242,9 +236,7 @@ div.edgtf-blog-holder.edgtf-blog-single {
             }
         }
     }
-
 }
-
 @media only screen and (max-width: 1500px) {
     .page-template-blog-standard-php {
     div.edgtf-content {
@@ -838,7 +830,7 @@ div.edgtf-blog-holder.edgtf-blog-single {
                     section.wpb-content-wrapper {
                         div#press_release_hero_row {
                             }
-                        }
+                    }
                     > div.edgtf-container-inner {
                         max-width: 650px;
                         width: 100%;
@@ -1123,7 +1115,7 @@ div.edgtf-blog-holder.edgtf-blog-single {
                 }
             }
     }
-    }
+}
 @media only screen and (max-width: 480px) {
     .page-template-blog-standard-php {
             div.edgtf-content {

@@ -1,6 +1,7 @@
 @import 'font';
 @import "colors";
 
+/* ******* ELEVAR 2023 HOVERS START ******* */
 a:hover {
     color: $links;
     cursor: pointer;
@@ -15,3 +16,4 @@ input.hs-button.primary.large:hover {
 h2.entry-title.edgtf-post-title a:hover {
 color: $links !important;
 }
+/* ******* ELEVAR 2023 HOVERS END ******* */

@@ -26,7 +26,7 @@ $cli_theme_banner_default=array
 		"button_1"=>array(
 			"status"=>1,
 			"text"=>"Accept",
-			"style"=>"display:inline-block; padding:8px 16px 8px; border-radius:4px; text-align:center; font-size: 12px; border:solid 0px #fff; line-height:18px;"
+			"style"=>""
 		),
 		"button_2"=>array(
 			"status"=>1,
@@ -41,7 +41,7 @@ $cli_theme_banner_default=array
 		"button_4"=>array(
 			"status"=>1,
 			"text"=>"Settings",
-			"style"=>"display:inline-block; padding:8px 16px 8px; border-radius:4px; text-align:center; font-size: 12px; border:solid 0px #fff; line-height:18px;"
+			"style"=>""
 		),
 		"button_5"=>array(
 			"status"=>1,
@@ -74,7 +74,7 @@ $cli_theme_banner1=array
 		"button_1"=>array(
 			"status"=>1,
 			"text"=>"Accept",
-			"style"=>"margin: 5px 5px 5px 30px; border-radius: 0px; padding: 8px 25px; color:#ffffff; background-color:#61a229;"
+			"style"=>""
 		),
 		"button_2"=>array(
 			"status"=>1,
@@ -89,7 +89,7 @@ $cli_theme_banner1=array
 		"button_4"=>array(
 			"status"=>1,
 			"text"=>"Cookie settings",
-			"style"=>"border-bottom: 1px solid; color: rgb(137, 136, 136);text-decoration: none;"
+			"style"=>""
 		),
 		"button_5"=>array(
 			"status"=>1,
@@ -99,7 +99,7 @@ $cli_theme_banner1=array
 		"button_7"=>array(
 			"status"=>0,
 			"text"=>"Accept All",
-			"style"=>"margin: 5px 5px 5px 30px; border-radius: 0px; padding: 8px 25px; color:#ffffff; background-color:#61a229;"
+			"style"=>""
 		),
 	)
 );
@@ -120,7 +120,7 @@ $cli_theme_banner2=array
 		"button_1"=>array(
 			"status"=>1,
 			"text"=>"Accept",
-			"style"=>"margin: 5px 5px 5px 30px; border-radius: 0px; padding: 8px 25px; color:#ffffff; background-color:#61a229;"
+			"style"=>""
 		),
 		"button_2"=>array(
 			"status"=>1,
@@ -135,7 +135,7 @@ $cli_theme_banner2=array
 		"button_4"=>array(
 			"status"=>1,
 			"text"=>"Cookie settings",
-			"style"=>"border-bottom: 1px solid; color: rgb(137, 136, 136);text-decoration: none;"
+			"style"=>""
 		),
 		"button_5"=>array(
 			"status"=>1,

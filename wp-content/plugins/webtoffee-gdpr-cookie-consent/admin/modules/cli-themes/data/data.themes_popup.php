@@ -26,32 +26,32 @@ $cli_theme_popup_default=array
 		"button_1"=>array(
 			"status"=>1,
 			"text"=>"Accept",
-			"style"=>"margin: 5px 5px 5px 30px; border-radius: 0px; padding: 8px 25px; color:#ffffff; background-color:#61a229;"
+			"style"=>""
 		),
 		"button_2"=>array(
 			"status"=>1,
 			"text"=>"Read More",
-			"style"=>"display:inline-block; text-align:center; font-size:12px; padding:8px 16px 8px; border:solid 0px #fff;"
+			"style"=>""
 		),
 		"button_3"=>array(
 			"status"=>1,
 			"text"=>"Reject",
-			"style"=>"margin: 5px 5px 5px 10px; border-radius: 0px; padding: 8px 25px; color:#ffffff; background-color:#61a229;"
+			"style"=>""
 		),
 		"button_4"=>array(
 			"status"=>1,
 			"text"=>"Settings",
-			"style"=>"display:inline-block; padding:8px 16px 8px; border-radius:4px; text-align:center; font-size: 12px; border:solid 0px #fff;"
+			"style"=>""
 		),
 		"button_5"=>array(
 			"status"=>1,
 			"text"=>"X",
-			"style"=>"display: inline-block; background:none; border-radius:20px; border:solid 1px #ccc; color: #ccc; text-align: center; font-size: 12px; width:22px; height: 22px; line-height: 22px; margin-left:10px; margin-top:3px; float:right; cursor:pointer;"
+			"style"=>""
 		),
 		"button_7"=>array(
 			"status"=>1,
 			"text"=>"Accept All",
-			"style"=>"margin: 5px 5px 5px 30px; border-radius: 0px; padding: 8px 25px; color:#ffffff; background-color:#61a229;"
+			"style"=>""
 		),
 	)
 );
@@ -73,32 +73,32 @@ $cli_theme_popup1=array
 		"button_1"=>array(
 			"status"=>1,
 			"text"=>"Accept",
-			"style"=>"margin: 5px 5px 5px 30px; border-radius: 0px; padding: 8px 25px; color:#ffffff; background-color:#61a229;"
+			"style"=>""
 		),
 		"button_2"=>array(
 			"status"=>1,
 			"text"=>"Read more",
-			"style"=>"display: inline-block; background:none; border-radius:0px; color: #fff; text-align:left; font-size:14px; padding:5px 8px; padding-left:5px; margin-left:0px; line-height:16px; border:solid 0px #fff; text-decoration:underline; font-weight:600;"
+			"style"=>""
 		),
 		"button_3"=>array(
 			"status"=>1,
 			"text"=>"Reject",
-			"style"=>"margin: 5px 5px 5px 10px; border-radius: 0px; padding: 8px 25px; color:#ffffff; background-color:#61a229;"
+			"style"=>""
 		),
 		"button_4"=>array(
 			"status"=>1,
 			"text"=>"Cookie settings",
-			"style"=>"border-bottom: 1px solid; color: rgb(137, 136, 136);"
+			"style"=>""
 		),
 		"button_5"=>array(
 			"status"=>1,
 			"text"=>"X",
-			"style"=>"display: inline-block; background:none; border-radius:20px; border:solid 1px #fff; color: #fff; text-align: center; font-size: 12px; width:22px; height: 22px; line-height: 22px; margin-right:-15px; margin-top:-15px; float:right; cursor:pointer;"
+			"style"=>""
 		),
 		"button_7"=>array(
 			"status"=>0,
 			"text"=>"Accept All",
-			"style"=>"margin: 5px 5px 5px 30px; border-radius: 0px; padding: 8px 25px; color:#ffffff; background-color:#61a229;"
+			"style"=>""
 		),
 	)
 );
@@ -120,7 +120,7 @@ $cli_theme_popup2=array
 		"button_1"=>array(
 			"status"=>1,
 			"text"=>"Accept",
-			"style"=>"margin: 5px 5px 5px 30px; border-radius: 0px; padding: 8px 25px; color: rgb(255, 255, 255); background-color: rgb(97, 162, 41);"
+			"style"=>""
 		),
 		"button_2"=>array(
 			"status"=>1,
@@ -135,7 +135,7 @@ $cli_theme_popup2=array
 		"button_4"=>array(
 			"status"=>1,
 			"text"=>"Cookie settings",
-			"style"=>"border-bottom: 1px solid; color: rgb(137, 136, 136);"
+			"style"=>""
 		),
 		"button_5"=>array(
 			"status"=>1,
@@ -145,7 +145,7 @@ $cli_theme_popup2=array
 		"button_7"=>array(
 			"status"=>0,
 			"text"=>"Accept All",
-			"style"=>"margin: 5px 5px 5px 30px; border-radius: 0px; padding: 8px 25px; color: rgb(255, 255, 255); background-color: rgb(97, 162, 41);"
+			"style"=>""
 		),
 	)
 );
@@ -156,7 +156,7 @@ $cli_theme_popup3=array
 	'config'=>array(
 		"bar"=>array(
 			"type"=>'popup',
-			"text"=>'[cookie_close] This website uses cookies to improve your experience. We\'ll assume you\'re ok with this, but you can opt-out if you wish 
+			"text"=>'[cookie_close] This website uses cookies to improve your experience. We\'ll assume you\'re ok with this, but you can opt-out if you wish
 			[cookie_link] [cookie_button] [cookie_settings] ',
 			"style"=>"background: #fff; border:solid 1px #dbdbdb; color: #000; padding:35px; box-sizing:border-box; width:500px; text-align:center; display:inline-block; font-size:14px; letter-spacing:normal;"
 		),
@@ -168,7 +168,7 @@ $cli_theme_popup3=array
 		"button_1"=>array(
 			"status"=>1,
 			"text"=>"Accept",
-			"style"=>"display: inline-block; background:#04b47c; border-radius:0px; color: #fff; text-align: center; font-size:12px; padding:5px 8px; margin-left:10px; margin-top:15px; border:solid 0px #fff; line-height:20px;"
+			"style"=>""
 		),
 		"button_2"=>array(
 			"status"=>1,
@@ -183,7 +183,7 @@ $cli_theme_popup3=array
 		"button_4"=>array(
 			"status"=>1,
 			"text"=>"Settings",
-			"style"=>"display: inline-block; background:#000; border-radius:2px; color: #fff; text-align: center; font-size:12px; padding:5px 8px; margin-left:10px; border:solid 0px #fff; margin-top:15px; line-height:20px;"
+			"style"=>""
 		),
 		"button_5"=>array(
 			"status"=>1,
@@ -204,7 +204,7 @@ $cli_theme_popup4=array
 	'config'=>array(
 		"bar"=>array(
 			"type"=>'popup',
-			"text"=>'[cookie_close] This website uses cookies to improve your experience. We\'ll assume you\'re ok with this, but you can opt-out if you wish 
+			"text"=>'[cookie_close] This website uses cookies to improve your experience. We\'ll assume you\'re ok with this, but you can opt-out if you wish
 			[cookie_link] [cookie_button] [cookie_settings] ',
 			"style"=>"background:#000000; border:solid 0px #dbdbdb; color:#fff; padding:45px; box-sizing: border-box; width:500px; text-align:center; display:inline-block; font-size:14px; line-height:26px; letter-spacing:normal;"
 		),
@@ -253,8 +253,8 @@ $cli_theme_popup5=array
 	'config'=>array(
 		"bar"=>array(
 			"type"=>'popup',
-			"text"=>'This website uses cookies to improve your experience. We\'ll assume you\'re ok with this, but you can opt-out if you wish. 
-			[cookie_link] 
+			"text"=>'This website uses cookies to improve your experience. We\'ll assume you\'re ok with this, but you can opt-out if you wish.
+			[cookie_link]
 			[cookie_button] [cookie_reject] ',
 			"style"=>"background:#fff; border:solid 0px #dbdbdb; color:#08402c; padding:45px; box-sizing: border-box; width:500px; text-align:center; display:inline-block; font-size:14px; line-height:26px; letter-spacing:normal;"
 		),
@@ -298,7 +298,7 @@ $cli_theme_popup5=array
 
 $cli_themes_popup=array(
 	'theme_popup_1'=>$cli_theme_popup1,
-	'theme_popup_2'=>$cli_theme_popup2,	
+	'theme_popup_2'=>$cli_theme_popup2,
 	'theme_popup_3'=>$cli_theme_popup3,
 	'theme_popup_4'=>$cli_theme_popup4,
 	'theme_popup_5'=>$cli_theme_popup5,

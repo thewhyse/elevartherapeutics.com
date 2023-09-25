@@ -2,7 +2,6 @@
 @import "../base/font";
 
 /* ******* HOME PAGE ******* */
-
 .home {
     div#home_hero_row {
         background-image: url(/wp-content/themes/conall-child/images/home-hero-1920x457.png);
@@ -51,26 +50,6 @@
             .triple-img {
                 text-align: left;
             }
-            div.edgtf-full-section-inner {
-                div#col-triple-left {
-                    div#triple-img-left {
-                    }
-                    div#triple-textbox-left {
-                    }
-                }
-                div#col-triple-center {
-                    div#triple-img-center {
-                    }
-                    div#triple-textbox-center {
-                    }
-                }
-                div#col-triple-right {
-                    div#triple-img-right {
-                    }
-                    div#triple-textbox-right {
-                    }
-                }
-            }
             h3.elevar-h3 {
                 color: $white;
                 font-size: 28px;
@@ -94,7 +73,6 @@
         padding-bottom: 100px !important;
     }
 }
-
 @media only screen and (max-width: 1024px) {
     .home {
         div#home_hero_row {
@@ -151,31 +129,10 @@
                             }
                         }
                     }
-
-                    div#col-triple-left {
-                        div#triple-img-left {
-                        }
-                        div#triple-textbox-left {
-                        }
-                    }
-                    div#col-triple-center {
-                        div#triple-img-center {
-                        }
-                        div#triple-textbox-center {
-                        }
-                    }
-                    div#col-triple-right {
-                        div#triple-img-right {
-                        }
-                        div#triple-textbox-right {
-                        }
-                    }
                 }
                 h3.elevar-h3 {
                         max-width: 100%;
                     }
-                p.elevar-p {
-                }
                 div.elevar-textbox {
                     margin-top: 0 !important;
                 }
@@ -247,31 +204,10 @@
                             }
                         }
                     }
-
-                    div#col-triple-left {
-                        div#triple-img-left {
-                        }
-                        div#triple-textbox-left {
-                        }
-                    }
-                    div#col-triple-center {
-                        div#triple-img-center {
-                        }
-                        div#triple-textbox-center {
-                        }
-                    }
-                    div#col-triple-right {
-                        div#triple-img-right {
-                        }
-                        div#triple-textbox-right {
-                        }
-                    }
                 }
                 h3.elevar-h3 {
                         max-width: 100%;
                     }
-                p.elevar-p {
-                }
                 div.elevar-textbox {
                     margin-top: 0 !important;
                 }
@@ -342,31 +278,10 @@
                             }
                         }
                     }
-
-                    div#col-triple-left {
-                        div#triple-img-left {
-                        }
-                        div#triple-textbox-left {
-                        }
-                    }
-                    div#col-triple-center {
-                        div#triple-img-center {
-                        }
-                        div#triple-textbox-center {
-                        }
-                    }
-                    div#col-triple-right {
-                        div#triple-img-right {
-                        }
-                        div#triple-textbox-right {
-                        }
-                    }
                 }
                 h3.elevar-h3 {
                         max-width: 100%;
                     }
-                p.elevar-p {
-                }
                 div.elevar-textbox {
                     margin-top: 0 !important;
                 }
@@ -378,7 +293,6 @@
         }
     }
 }
-
 @media all and (max-width: 480px) {
     .home {
         div#home_hero_row {
@@ -444,31 +358,10 @@
                             }
                         }
                     }
-
-                    div#col-triple-left {
-                        div#triple-img-left {
-                        }
-                        div#triple-textbox-left {
-                        }
-                    }
-                    div#col-triple-center {
-                        div#triple-img-center {
-                        }
-                        div#triple-textbox-center {
-                        }
-                    }
-                    div#col-triple-right {
-                        div#triple-img-right {
-                        }
-                        div#triple-textbox-right {
-                        }
-                    }
                 }
                 h3.elevar-h3 {
                         max-width: 100%;
                     }
-                p.elevar-p {
-                }
                 div.elevar-textbox {
                     margin-top: 0 !important;
                 }
@@ -480,5 +373,4 @@
         }
     }
 }
-
 /* ******* END HOME PAGE ******* */
