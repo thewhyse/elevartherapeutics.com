@@ -31,10 +31,10 @@ div#col-home-testimonial {
                                                 flex-wrap: nowrap;
                                                 align-items: flex-end;
                                                 height: 100%;
-                                                padding: 20px 30px;
+                                                padding: 20px 30px 15px 30px;
                                                 p.edgtf-testimonial-text {
                                                     display: flex;
-                                                    margin: 10px 0 5px !important;
+                                                    margin: 0 !important;
                                                     font-size: 17px;
                                                     letter-spacing: -0.15px;
                                                     line-height: 28px;
@@ -47,7 +47,8 @@ div#col-home-testimonial {
                                                         p.edgtf-testimonial-author-text {
                                                             line-height: 28px;
                                                             color: $elevar_blue;
-                                                            margin: 10px 0;
+                                                            min-height: 84px;
+                                                            margin: 0;
                                                             text-transform: uppercase;
                                                             font-weight: 700;
                                                             margin-top: 10px !important;
@@ -144,124 +145,20 @@ div#col-home-testimonial {
 @media all and (max-width: 1500px) {
     div#col-home-testimonial {
         div.edgtf-testimonials-holder {
-            div.edgtf-testimonials-inner {
-                div.edgtf-grid {
-                    .edgtf-testimonials.edgtf-testimonials-carousel {
-                        div.owl-stage-outer {
-                            div.owl-stage {
-                                div.owl-item {
-                                    margin-left: 0px !important;
-                                    margin-right: 0px !important;
-                                    padding-top: 0px !important;
-                                    .edgtf-testimonial-content {
-                                        width: 420px !important;
-                                        padding: 0!important;
-                                        height: 555px !important;
-                                        border: 1px solid $drk_gray3;
-                                        border-radius: 25px;
-                                        text-align: left !important;
-                                        div.edgtf-testimonial-content-inner {
-                                            display: flex;
-                                            height: 100%;
-                                            div.edgtf-testimonial-text-holder {
-                                                div.edgtf-testimonial-text-inner {
-                                                    display: flex;
-                                                    flex-direction: column;
-                                                    justify-content: flex-end;
-                                                    flex-wrap: nowrap;
-                                                    align-items: flex-end;
-                                                    height: 100%;
-                                                    padding: 20px 30px;
-                                                    p.edgtf-testimonial-text {
-                                                        display: flex;
-                                                        margin: 10px 0 5px !important;
-                                                        font-size: 17px;
-                                                        letter-spacing: -0.15px;
-                                                        line-height: 28px;
-                                                        height: 195px;
-                                                        color: $drk_gray3;
-                                                    }
-                                                    div.edgtf-testimonial-bottom {
-                                                        display: flex;
-                                                        div.edgtf-testimonial-author {
-                                                            p.edgtf-testimonial-author-text {
-                                                                line-height: 28px;
-                                                                color: $elevar_blue;
-                                                                margin: 10px 0;
-                                                                text-transform: uppercase;
-                                                                font-weight: 700;
-                                                                margin-top: 10px !important;
-                                                                font-size: 17px;
-                                                                    span.edgtf-testimonials-job {
-                                                                        color: $elevar_blue !important;
-                                                                        font-weight: 400;
-                                                                    }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        div.edgtf-testimonial-image-holder {
-                                            position: absolute;
-                                            top: 0 !important;
-                                            left: 0 !important;
-                                            display: block;
-                                            width: 100% !important;
-                                            height: auto !important;
-                                            -webkit-transform: unset;
-                                            -moz-transform: unset;
-                                            transform: unset !important;
-                                                img {
-                                                max-width: 100% !important;
-                                                -webkit-border-radius: 0;
-                                                -moz-border-radius: 0;
-                                                border-radius: 0 !important;
-                                                border-top-left-radius: 25px !important;
-                                                border-top-right-radius: 25px !important;
-                                                width: 100% !important;
-                                                }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-            }
-                }
-            }
             div.edgtf-tes-nav.edgtf-tes-controls {
                 span.edgtf-tes-nav-prev {
-                    height: 82px !important;
-                    width: 82px !important;
-                    line-height: 82px  !important;
-                    border-radius: 100%;
-                    background-color: $elevar_blue;
                     left: 0px !important;
-                    text-align: center;
                     .edgtf-icon-mark {
                         position: relative;
                         left: -3px;
                         top: 3px;
                     }
-                    .edgtf-icon-mark:before {
-                        content: url('/wp-content/themes/conall-child/images/chevron-left.svg');
-                    }
                 }
                 span.edgtf-tes-nav-next {
-                    height: 82px !important;
-                    width: 82px !important;
-                    line-height: 82px  !important;
-                    border-radius: 100%;
-                    background-color: $elevar_blue;
                     right: 0px !important;
-                    text-align: center;
                     .edgtf-icon-mark {
-                        position: relative;
                         left: 3px;
                         top: 3px;
-                    }
-                    .edgtf-icon-mark:before {
-                        content: url('/wp-content/themes/conall-child/images/chevron-right.svg');
                     }
                 }
             }
@@ -271,124 +168,19 @@ div#col-home-testimonial {
 @media all and (max-width: 1300px) {
     div#col-home-testimonial {
         div.edgtf-testimonials-holder {
-            div.edgtf-testimonials-inner {
-                div.edgtf-grid {
-                    .edgtf-testimonials.edgtf-testimonials-carousel {
-                        div.owl-stage-outer {
-                            div.owl-stage {
-                                div.owl-item {
-                                    margin-left: 0px !important;
-                                    margin-right: 0px !important;
-                                    padding-top: 0px !important;
-                                    .edgtf-testimonial-content {
-                                        width: 420px !important;
-                                        padding: 0!important;
-                                        height: 555px !important;
-                                        border: 1px solid $drk_gray3;
-                                        border-radius: 25px;
-                                        text-align: left !important;
-                                        div.edgtf-testimonial-content-inner {
-                                            display: flex;
-                                            height: 100%;
-                                            div.edgtf-testimonial-text-holder {
-                                                div.edgtf-testimonial-text-inner {
-                                                    display: flex;
-                                                    flex-direction: column;
-                                                    justify-content: flex-end;
-                                                    flex-wrap: nowrap;
-                                                    align-items: flex-end;
-                                                    height: 100%;
-                                                    padding: 20px 30px;
-                                                    p.edgtf-testimonial-text {
-                                                        display: flex;
-                                                        margin: 10px 0 5px !important;
-                                                        font-size: 17px;
-                                                        letter-spacing: -0.15px;
-                                                        line-height: 28px;
-                                                        height: 195px;
-                                                        color: $drk_gray3;
-                                                    }
-                                                    div.edgtf-testimonial-bottom {
-                                                        display: flex;
-                                                        div.edgtf-testimonial-author {
-                                                            p.edgtf-testimonial-author-text {
-                                                                line-height: 28px;
-                                                                color: $elevar_blue;
-                                                                margin: 10px 0;
-                                                                text-transform: uppercase;
-                                                                font-weight: 700;
-                                                                margin-top: 10px !important;
-                                                                font-size: 17px;
-                                                                    span.edgtf-testimonials-job {
-                                                                        color: $elevar_blue !important;
-                                                                        font-weight: 400;
-                                                                    }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        div.edgtf-testimonial-image-holder {
-                                            position: absolute;
-                                            top: 0 !important;
-                                            left: 0 !important;
-                                            display: block;
-                                            width: 100% !important;
-                                            height: auto !important;
-                                            -webkit-transform: unset;
-                                            -moz-transform: unset;
-                                            transform: unset !important;
-                                                img {
-                                                max-width: 100% !important;
-                                                -webkit-border-radius: 0;
-                                                -moz-border-radius: 0;
-                                                border-radius: 0 !important;
-                                                border-top-left-radius: 25px !important;
-                                                border-top-right-radius: 25px !important;
-                                                width: 100% !important;
-                                                }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-            }
-                }
-            }
             div.edgtf-tes-nav.edgtf-tes-controls {
                 span.edgtf-tes-nav-prev {
-                    height: 82px !important;
-                    width: 82px !important;
-                    line-height: 82px  !important;
-                    border-radius: 100%;
-                    background-color: $elevar_blue;
                     left: -25px !important;
-                    text-align: center;
                     .edgtf-icon-mark {
-                        position: relative;
                         left: -3px;
                         top: 3px;
                     }
-                    .edgtf-icon-mark:before {
-                        content: url('/wp-content/themes/conall-child/images/chevron-left.svg');
-                    }
                 }
                 span.edgtf-tes-nav-next {
-                    height: 82px !important;
-                    width: 82px !important;
-                    line-height: 82px  !important;
-                    border-radius: 100%;
-                    background-color: $elevar_blue;
                     right: -25px !important;
-                    text-align: center;
                     .edgtf-icon-mark {
-                        position: relative;
                         left: 3px;
                         top: 3px;
-                    }
-                    .edgtf-icon-mark:before {
-                        content: url('/wp-content/themes/conall-child/images/chevron-right.svg');
                     }
                 }
             }
@@ -398,107 +190,18 @@ div#col-home-testimonial {
 @media all and (max-width: 1150px) {
     div#col-home-testimonial {
         div.edgtf-testimonials-holder {
-            div.edgtf-testimonials-inner {
-                div.edgtf-grid {
-                    .edgtf-testimonials.edgtf-testimonials-carousel {
-                        div.owl-stage-outer {
-                            div.owl-stage {
-                                div.owl-item {
-                                    margin-left: 0px !important;
-                                    margin-right: 0px !important;
-                                    padding-top: 0px !important;
-                                    .edgtf-testimonial-content {
-                                        width: 420px !important;
-                                        padding: 0!important;
-                                        height: 555px !important;
-                                        border: 1px solid $drk_gray3;
-                                        border-radius: 25px;
-                                        text-align: left !important;
-                                        div.edgtf-testimonial-content-inner {
-                                            display: flex;
-                                            height: 100%;
-                                            div.edgtf-testimonial-text-holder {
-                                                div.edgtf-testimonial-text-inner {
-                                                    display: flex;
-                                                    flex-direction: column;
-                                                    justify-content: flex-end;
-                                                    flex-wrap: nowrap;
-                                                    align-items: flex-end;
-                                                    height: 100%;
-                                                    padding: 20px 30px;
-                                                    p.edgtf-testimonial-text {
-                                                        display: flex;
-                                                        margin: 10px 0 5px !important;
-                                                        font-size: 17px;
-                                                        letter-spacing: -0.15px;
-                                                        line-height: 28px;
-                                                        height: 195px;
-                                                        color: $drk_gray3;
-                                                    }
-                                                    div.edgtf-testimonial-bottom {
-                                                        display: flex;
-                                                        div.edgtf-testimonial-author {
-                                                            p.edgtf-testimonial-author-text {
-                                                                line-height: 28px;
-                                                                color: $elevar_blue;
-                                                                margin: 10px 0;
-                                                                text-transform: uppercase;
-                                                                font-weight: 700;
-                                                                margin-top: 10px !important;
-                                                                font-size: 17px;
-                                                                    span.edgtf-testimonials-job {
-                                                                        color: $elevar_blue !important;
-                                                                        font-weight: 400;
-                                                                    }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        div.edgtf-testimonial-image-holder {
-                                            position: absolute;
-                                            top: 0 !important;
-                                            left: 0 !important;
-                                            display: block;
-                                            width: 100% !important;
-                                            height: auto !important;
-                                            -webkit-transform: unset;
-                                            -moz-transform: unset;
-                                            transform: unset !important;
-                                                img {
-                                                max-width: 100% !important;
-                                                -webkit-border-radius: 0;
-                                                -moz-border-radius: 0;
-                                                border-radius: 0 !important;
-                                                border-top-left-radius: 25px !important;
-                                                border-top-right-radius: 25px !important;
-                                                width: 100% !important;
-                                                }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-            }
-                }
-            }
             div.edgtf-tes-nav.edgtf-tes-controls {
                 span.edgtf-tes-nav-prev {
                     height: 70px !important;
                     width: 70px !important;
                     line-height: 70px  !important;
-                    border-radius: 100%;
-                    background-color: $elevar_blue;
                     left: -40px !important;
-                    text-align: center;
                     .edgtf-icon-mark {
                         position: relative;
                         left: -3px;
                         top: 3px;
                     }
                     .edgtf-icon-mark:before {
-                        content: url('/wp-content/themes/conall-child/images/chevron-left.svg');
                         height: 70px;
                         width: 70px;
                     }
@@ -507,17 +210,12 @@ div#col-home-testimonial {
                     height: 70px !important;
                     width: 70px !important;
                     line-height: 70px  !important;
-                    border-radius: 100%;
-                    background-color: $elevar_blue;
                     right: -40px !important;
-                    text-align: center;
                     .edgtf-icon-mark {
-                        position: relative;
                         left: 3px;
                         top: 3px;
                     }
                     .edgtf-icon-mark:before {
-                        content: url('/wp-content/themes/conall-child/images/chevron-right.svg');
                         height: 70px;
                         width: 70px;
                     }
@@ -529,102 +227,13 @@ div#col-home-testimonial {
 @media all and (max-width: 1024px) {
     div#col-home-testimonial {
         div.edgtf-testimonials-holder {
-            div.edgtf-testimonials-inner {
-                div.edgtf-grid {
-                    .edgtf-testimonials.edgtf-testimonials-carousel {
-                        div.owl-stage-outer {
-                            div.owl-stage {
-                                div.owl-item {
-                                    margin-left: 0px !important;
-                                    margin-right: 0px !important;
-                                    padding-top: 0px !important;
-                                    .edgtf-testimonial-content {
-                                        width: 420px !important;
-                                        padding: 0!important;
-                                        height: 555px !important;
-                                        border: 1px solid $drk_gray3;
-                                        border-radius: 25px;
-                                        text-align: left !important;
-                                        div.edgtf-testimonial-content-inner {
-                                            display: flex;
-                                            height: 100%;
-                                            div.edgtf-testimonial-text-holder {
-                                                div.edgtf-testimonial-text-inner {
-                                                    display: flex;
-                                                    flex-direction: column;
-                                                    justify-content: flex-end;
-                                                    flex-wrap: nowrap;
-                                                    align-items: flex-end;
-                                                    height: 100%;
-                                                    padding: 20px 30px;
-                                                    p.edgtf-testimonial-text {
-                                                        display: flex;
-                                                        margin: 10px 0 5px !important;
-                                                        font-size: 17px;
-                                                        letter-spacing: -0.15px;
-                                                        line-height: 28px;
-                                                        height: 195px;
-                                                        color: $drk_gray3;
-                                                    }
-                                                    div.edgtf-testimonial-bottom {
-                                                        display: flex;
-                                                        div.edgtf-testimonial-author {
-                                                            p.edgtf-testimonial-author-text {
-                                                                line-height: 28px;
-                                                                color: $elevar_blue;
-                                                                margin: 10px 0;
-                                                                text-transform: uppercase;
-                                                                font-weight: 700;
-                                                                margin-top: 10px !important;
-                                                                font-size: 17px;
-                                                                    span.edgtf-testimonials-job {
-                                                                        color: $elevar_blue !important;
-                                                                        font-weight: 400;
-                                                                    }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        div.edgtf-testimonial-image-holder {
-                                            position: absolute;
-                                            top: 0 !important;
-                                            left: 0 !important;
-                                            display: block;
-                                            width: 100% !important;
-                                            height: auto !important;
-                                            -webkit-transform: unset;
-                                            -moz-transform: unset;
-                                            transform: unset !important;
-                                                img {
-                                                max-width: 100% !important;
-                                                -webkit-border-radius: 0;
-                                                -moz-border-radius: 0;
-                                                border-radius: 0 !important;
-                                                border-top-left-radius: 25px !important;
-                                                border-top-right-radius: 25px !important;
-                                                width: 100% !important;
-                                                }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-            }
-                }
-            }
             div.edgtf-tes-nav.edgtf-tes-controls {
                 span.edgtf-tes-nav-prev {
                     height: 70px !important;
                     width: 70px !important;
                     line-height: 70px  !important;
-                    border-radius: 100%;
-                    background-color: $elevar_blue;
                     left: -75px !important;
-                    text-align: center;
                     .edgtf-icon-mark {
-                        position: relative;
                         left: -3px;
                         top: 3px;
                     }
@@ -636,12 +245,8 @@ div#col-home-testimonial {
                     height: 70px !important;
                     width: 70px !important;
                     line-height: 70px  !important;
-                    border-radius: 100%;
-                    background-color: $elevar_blue;
                     right: -75px !important;
-                    text-align: center;
                     .edgtf-icon-mark {
-                        position: relative;
                         left: 3px;
                         top: 3px;
                     }
@@ -656,109 +261,12 @@ div#col-home-testimonial {
 @media all and (max-width: 768px) {
     div#col-home-testimonial {
         div.edgtf-testimonials-holder {
-            div.edgtf-testimonials-inner {
-                div.edgtf-grid {
-                    .edgtf-testimonials.edgtf-testimonials-carousel {
-                        div.owl-stage-outer {
-                            div.owl-stage {
-                                div.owl-item {
-                                    margin-left: 0px !important;
-                                    margin-right: 0px !important;
-                                    padding-top: 0px !important;
-                                    .edgtf-testimonial-content {
-                                        width: 420px !important;
-                                        padding: 0!important;
-                                        height: 555px !important;
-                                        border: 1px solid $drk_gray3;
-                                        border-radius: 25px;
-                                        text-align: left !important;
-                                        div.edgtf-testimonial-content-inner {
-                                            display: flex;
-                                            height: 100%;
-                                            div.edgtf-testimonial-text-holder {
-                                                div.edgtf-testimonial-text-inner {
-                                                    display: flex;
-                                                    flex-direction: column;
-                                                    justify-content: flex-end;
-                                                    flex-wrap: nowrap;
-                                                    align-items: flex-end;
-                                                    height: 100%;
-                                                    padding: 20px 30px;
-                                                    p.edgtf-testimonial-text {
-                                                        display: flex;
-                                                        margin: 10px 0 5px !important;
-                                                        font-size: 17px;
-                                                        letter-spacing: -0.15px;
-                                                        line-height: 28px;
-                                                        height: 195px;
-                                                        color: $drk_gray3;
-                                                    }
-                                                    div.edgtf-testimonial-bottom {
-                                                        display: flex;
-                                                        div.edgtf-testimonial-author {
-                                                            p.edgtf-testimonial-author-text {
-                                                                line-height: 28px;
-                                                                color: $elevar_blue;
-                                                                margin: 10px 0;
-                                                                text-transform: uppercase;
-                                                                font-weight: 700;
-                                                                margin-top: 10px !important;
-                                                                font-size: 17px;
-                                                                    span.edgtf-testimonials-job {
-                                                                        color: $elevar_blue !important;
-                                                                        font-weight: 400;
-                                                                    }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        div.edgtf-testimonial-image-holder {
-                                            position: absolute;
-                                            top: 0 !important;
-                                            left: 0 !important;
-                                            display: block;
-                                            width: 100% !important;
-                                            height: auto !important;
-                                            -webkit-transform: unset;
-                                            -moz-transform: unset;
-                                            transform: unset !important;
-                                                img {
-                                                max-width: 100% !important;
-                                                -webkit-border-radius: 0;
-                                                -moz-border-radius: 0;
-                                                border-radius: 0 !important;
-                                                border-top-left-radius: 25px !important;
-                                                border-top-right-radius: 25px !important;
-                                                width: 100% !important;
-                                                }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-            }
-                }
-            }
             div.edgtf-tes-nav.edgtf-tes-controls {
                 span.edgtf-tes-nav-prev {
-                    height: 70px !important;
-                    width: 70px !important;
-                    line-height: 70px  !important;
-                    border-radius: 100%;
-                    background-color: $elevar_blue;
                     left: -10px !important;
-                    text-align: center;
                 }
                 span.edgtf-tes-nav-next {
-                    height: 70px !important;
-                    width: 70px !important;
-                    line-height: 70px  !important;
-                    border-radius: 100%;
-                    background-color: $elevar_blue;
                     right: -10px !important;
-                    text-align: center;
                 }
             }
         }
@@ -767,107 +275,17 @@ div#col-home-testimonial {
 @media all and (max-width: 576px) {
     div#col-home-testimonial {
         div.edgtf-testimonials-holder {
-            div.edgtf-testimonials-inner {
-                div.edgtf-grid {
-                    .edgtf-testimonials.edgtf-testimonials-carousel {
-                        div.owl-stage-outer {
-                            div.owl-stage {
-                                div.owl-item {
-                                    margin-left: 0px !important;
-                                    margin-right: 0px !important;
-                                    padding-top: 0px !important;
-                                    .edgtf-testimonial-content {
-                                        width: 420px !important;
-                                        padding: 0!important;
-                                        height: 555px !important;
-                                        border: 1px solid $drk_gray3;
-                                        border-radius: 25px;
-                                        text-align: left !important;
-                                        div.edgtf-testimonial-content-inner {
-                                            display: flex;
-                                            height: 100%;
-                                            div.edgtf-testimonial-text-holder {
-                                                div.edgtf-testimonial-text-inner {
-                                                    display: flex;
-                                                    flex-direction: column;
-                                                    justify-content: flex-end;
-                                                    flex-wrap: nowrap;
-                                                    align-items: flex-end;
-                                                    height: 100%;
-                                                    padding: 20px 30px;
-                                                    p.edgtf-testimonial-text {
-                                                        display: flex;
-                                                        margin: 10px 0 5px !important;
-                                                        font-size: 17px;
-                                                        letter-spacing: -0.15px;
-                                                        line-height: 28px;
-                                                        height: 195px;
-                                                        color: $drk_gray3;
-                                                    }
-                                                    div.edgtf-testimonial-bottom {
-                                                        display: flex;
-                                                        div.edgtf-testimonial-author {
-                                                            p.edgtf-testimonial-author-text {
-                                                                line-height: 28px;
-                                                                color: $elevar_blue;
-                                                                margin: 10px 0;
-                                                                text-transform: uppercase;
-                                                                font-weight: 700;
-                                                                margin-top: 10px !important;
-                                                                font-size: 17px;
-                                                                    span.edgtf-testimonials-job {
-                                                                        color: $elevar_blue !important;
-                                                                        font-weight: 400;
-                                                                    }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        div.edgtf-testimonial-image-holder {
-                                            position: absolute;
-                                            top: 0 !important;
-                                            left: 0 !important;
-                                            display: block;
-                                            width: 100% !important;
-                                            height: auto !important;
-                                            -webkit-transform: unset;
-                                            -moz-transform: unset;
-                                            transform: unset !important;
-                                                img {
-                                                max-width: 100% !important;
-                                                -webkit-border-radius: 0;
-                                                -moz-border-radius: 0;
-                                                border-radius: 0 !important;
-                                                border-top-left-radius: 25px !important;
-                                                border-top-right-radius: 25px !important;
-                                                width: 100% !important;
-                                                }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-            }
-                }
-            }
             div.edgtf-tes-nav.edgtf-tes-controls {
                 span.edgtf-tes-nav-prev {
                     height: 65px !important;
                     width: 65px !important;
                     line-height: 65px  !important;
-                    border-radius: 100%;
-                    background-color: $elevar_blue;
                     left: -35px !important;
-                    text-align: center;
                     .edgtf-icon-mark {
-                        position: relative;
                         left: -3px;
                         top: 3px;
                     }
                     .edgtf-icon-mark:before {
-                        content: url('/wp-content/themes/conall-child/images/chevron-left.svg');
                         height: 65px;
                         width: 65px;
                     }
@@ -876,17 +294,12 @@ div#col-home-testimonial {
                     height: 65px !important;
                     width: 65px !important;
                     line-height: 65px  !important;
-                    border-radius: 100%;
-                    background-color: $elevar_blue;
                     right: -35px !important;
-                    text-align: center;
                     .edgtf-icon-mark {
-                        position: relative;
                         left: 3px;
                         top: 3px;
                     }
                     .edgtf-icon-mark:before {
-                        content: url('/wp-content/themes/conall-child/images/chevron-right.svg');
                         height: 65px;
                         width: 65px;
                     }
@@ -904,103 +317,29 @@ div#col-home-testimonial {
                         div.owl-stage-outer {
                             div.owl-stage {
                                 div.owl-item {
-                                    margin-left: 0px !important;
-                                    margin-right: 0px !important;
-                                    padding-top: 0px !important;
                                     .edgtf-testimonial-content {
                                         width: 300px !important;
-                                        padding: 0!important;
                                         height: 535px !important;
-                                        border: 1px solid $drk_gray3;
-                                        border-radius: 25px;
-                                        text-align: left !important;
                                         div.edgtf-testimonial-content-inner {
-                                            display: flex;
-                                            height: 100%;
                                             div.edgtf-testimonial-text-holder {
                                                 div.edgtf-testimonial-text-inner {
-                                                    display: flex;
-                                                    flex-direction: column;
-                                                    justify-content: flex-end;
-                                                    flex-wrap: nowrap;
-                                                    align-items: flex-end;
-                                                    height: 100%;
-                                                    padding: 15px 25px;
-                                                    p.edgtf-testimonial-text {
-                                                        display: flex;
-                                                        margin: 10px 0 5px !important;
-                                                        font-size: 17px;
-                                                        letter-spacing: -0.15px;
-                                                        line-height: 25px;
-                                                        height: 220px;
-                                                        color: $drk_gray3;
-                                                    }
-                                                    div.edgtf-testimonial-bottom {
-                                                        display: flex;
-                                                        div.edgtf-testimonial-author {
-                                                            p.edgtf-testimonial-author-text {
-                                                                line-height: 28px;
-                                                                color: $elevar_blue;
-                                                                margin: 10px 0;
-                                                                text-transform: uppercase;
-                                                                font-weight: 700;
-                                                                margin-top: 10px !important;
-                                                                font-size: 17px;
-                                                                    span.edgtf-testimonials-job {
-                                                                        color: $elevar_blue !important;
-                                                                        font-weight: 400;
-                                                                    }
-                                                            }
-                                                        }
-                                                    }
+                                                    padding: 15px 25px 10px 25px;
                                                 }
                                             }
-                                        }
-                                        div.edgtf-testimonial-image-holder {
-                                            position: absolute;
-                                            top: 0 !important;
-                                            left: 0 !important;
-                                            display: block;
-                                            width: 100% !important;
-                                            height: auto !important;
-                                            -webkit-transform: unset;
-                                            -moz-transform: unset;
-                                            transform: unset !important;
-                                                img {
-                                                max-width: 100% !important;
-                                                -webkit-border-radius: 0;
-                                                -moz-border-radius: 0;
-                                                border-radius: 0 !important;
-                                                border-top-left-radius: 25px !important;
-                                                border-top-right-radius: 25px !important;
-                                                width: 100% !important;
-                                                }
                                         }
                                     }
                                 }
                             }
                         }
-            }
+                    }
                 }
             }
             div.edgtf-tes-nav.edgtf-tes-controls {
                 span.edgtf-tes-nav-prev {
-                    height: 65px !important;
-                    width: 65px !important;
-                    line-height: 65px  !important;
-                    border-radius: 100%;
-                    background-color: $elevar_blue;
                     left: -60px !important;
-                    text-align: center;
                 }
                 span.edgtf-tes-nav-next {
-                    height: 65px !important;
-                    width: 65px !important;
-                    line-height: 65px  !important;
-                    border-radius: 100%;
-                    background-color: $elevar_blue;
                     right: -60px !important;
-                    text-align: center;
                 }
             }
         }
@@ -1015,98 +354,32 @@ div#col-home-testimonial {
                         div.owl-stage-outer {
                             div.owl-stage {
                                 div.owl-item {
-                                    margin-left: 0px !important;
-                                    margin-right: 0px !important;
-                                    padding-top: 0px !important;
                                     .edgtf-testimonial-content {
-                                        width: 300px !important;
-                                        padding: 0!important;
-                                        height: 535px !important;
-                                        border: 1px solid $drk_gray3;
-                                        border-radius: 25px;
-                                        text-align: left !important;
                                         div.edgtf-testimonial-content-inner {
-                                            display: flex;
-                                            height: 100%;
                                             div.edgtf-testimonial-text-holder {
                                                 div.edgtf-testimonial-text-inner {
-                                                    display: flex;
-                                                    flex-direction: column;
-                                                    justify-content: flex-end;
-                                                    flex-wrap: nowrap;
-                                                    align-items: flex-end;
-                                                    height: 100%;
-                                                    padding: 15px 25px;
                                                     p.edgtf-testimonial-text {
-                                                        display: flex;
-                                                        margin: 10px 0 5px !important;
-                                                        font-size: 17px;
-                                                        letter-spacing: -0.15px;
-                                                        line-height: 25px;
+                                                        margin: 10px 0 5px 0 !important;
                                                         height: 220px;
-                                                        color: $drk_gray3;
-                                                    }
-                                                    div.edgtf-testimonial-bottom {
-                                                        display: flex;
-                                                        div.edgtf-testimonial-author {
-                                                            p.edgtf-testimonial-author-text {
-                                                                line-height: 28px;
-                                                                color: $elevar_blue;
-                                                                margin: 10px 0;
-                                                                text-transform: uppercase;
-                                                                font-weight: 700;
-                                                                margin-top: 10px !important;
-                                                                font-size: 17px;
-                                                                    span.edgtf-testimonials-job {
-                                                                        color: $elevar_blue !important;
-                                                                        font-weight: 400;
-                                                                    }
-                                                            }
-                                                        }
                                                     }
                                                 }
                                             }
-                                        }
-                                        div.edgtf-testimonial-image-holder {
-                                            position: absolute;
-                                            top: 0 !important;
-                                            left: 0 !important;
-                                            display: block;
-                                            width: 100% !important;
-                                            height: auto !important;
-                                            -webkit-transform: unset;
-                                            -moz-transform: unset;
-                                            transform: unset !important;
-                                                img {
-                                                max-width: 100% !important;
-                                                -webkit-border-radius: 0;
-                                                -moz-border-radius: 0;
-                                                border-radius: 0 !important;
-                                                border-top-left-radius: 25px !important;
-                                                border-top-right-radius: 25px !important;
-                                                width: 100% !important;
-                                                }
                                         }
                                     }
                                 }
                             }
                         }
-            }
+                    }
                 }
             }
             div.edgtf-tes-nav.edgtf-tes-controls {
                 span.edgtf-tes-nav-prev {
-                    z-index: 999;
                     height: 40px !important;
                     width: 40px !important;
-                    line-height: 10px  !important;
-                    border-radius: 100%;
-                    background-color: $elevar_blue;
+                    line-height: 40px  !important;
                     left: 0px !important;
-                    text-align: center;
                     top: 37%;
                     .edgtf-icon-mark {
-                        position: relative;
                         left: -2px;
                         top: 4px;
                     }
@@ -1117,14 +390,10 @@ div#col-home-testimonial {
                     }
                 }
                 span.edgtf-tes-nav-next {
-                    z-index: 999;
                     height: 40px !important;
                     width: 40px !important;
                     line-height: 40px  !important;
-                    border-radius: 100%;
-                    background-color: $elevar_blue;
                     right: 0px !important;
-                    text-align: center;
                     top: 37%;
                     .edgtf-icon-mark {
                         position: relative;
