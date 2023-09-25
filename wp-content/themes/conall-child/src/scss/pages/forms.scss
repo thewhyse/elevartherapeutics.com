@@ -1,6 +1,7 @@
 @import "../base/colors";
 @import "../base/font";
 
+/* ******* ESMO FORM 2023 ******* */
 input.hs-button {
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -24,7 +25,6 @@ input.hs-button {
             color: $elevar_purple !important;
         }
 }
-/* ******* ESMO FORM 2023 ******* */
 ul.hs-error-msgs {
     display: flex;
     list-style: none;
@@ -40,7 +40,6 @@ ul.hs-error-msgs {
         }
     }
 }
-
 div.hs_profession,
 div.hs_profession_specify {
     display: flex;
@@ -777,7 +776,6 @@ form.hs-form-private {
         }
     }
 }
-
 @media all and (max-width: 768px) {
     div#hubspot-container-row div#stay-connected h4 {
     font-size: 22px;
@@ -1016,7 +1014,6 @@ form.hs-form-private {
         }
     }
 }
-
 @media all and (max-width: 576px) {
     div#hubspot-container-row {
         div#stay-connected {

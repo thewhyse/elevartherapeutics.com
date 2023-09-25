@@ -1,22 +1,23 @@
 @import 'font';
 @import "colors";
 
+/* ******* ELEVAR BASE START ******* */
 html {
 	scroll-behavior: smooth;
 }
-
-/*    GLOBAL NAV LOGO     */
+/* ******* ELEVAR GLOBAL LOGO START ******* */
 @media all and (max-width: 1024px) {
   .edgtf-mobile-header .edgtf-mobile-logo-wrapper a {
     height: 4rem !important;
   }
 }
-
+/* ******* ELEVAR GLOBAL LOGO END ******* */
 /**
  * Disable smooth scrolling when users have prefers-reduced-motion enabled
- */
+*/
 @media screen and (prefers-reduced-motion: reduce) {
 	html {
 		scroll-behavior: auto;
 	}
 }
+/* ******* ELEVAR BASE END ******* */

@@ -59,9 +59,9 @@ if(conall_edge_options()->getOptionValue('enable_search_page_sidebar') === "no")
 													<h4 itemprop="name" class="entry-title"><a itemprop="url" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>
 													<div class="edgtf-post-info">
 														<?php conall_edge_post_info(array(
-															'author' => 'yes',
+															'author' => 'no',
 															'date' => 'yes',
-															'comments' => 'yes'
+															'comments' => 'no'
 														)) ?>
 													</div>
 													<?php

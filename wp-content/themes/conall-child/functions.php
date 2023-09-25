@@ -55,13 +55,6 @@ function elevar_javascript_footer() {
 add_action('wp_footer', 'elevar_javascript_footer');
 
 // Prevent WP from adding <p> tags on all post types
-/* function disable_wp_auto_p($content) {
-    remove_filter('the_content', 'wpautop');
-    remove_filter('the_excerpt', 'wpautop');
-    return $content;
-}
-add_filter('the_content', 'disable_wp_auto_p', 0); */
-
 remove_filter('the_content', 'wpautop');
 remove_filter('the_excerpt', 'wpautop');
 

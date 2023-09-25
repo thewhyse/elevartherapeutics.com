@@ -381,7 +381,7 @@ class Cookie_Law_Info {
 			'background_url'               => '',
 			'border'                       => '#b1a6a6c2',
 			'border_on'                    => true,
-			'bar_style'                    => array( array( 'text-align', 'left' ), array( 'padding', '15px 30px' ) ),
+			'bar_style'                    => array(),
 			'bar_hd_style'                 => array(),
 			'button_1_text'                => 'ACCEPT',
 			'button_1_url'                 => '#',
@@ -391,7 +391,7 @@ class Cookie_Law_Info {
 			'button_1_as_button'           => true,
 			'button_1_button_colour'       => '#61a229',
 			'button_1_button_size'         => 'medium',
-			'button_1_style'               => array( array( 'margin', '5px 5px 5px 30px' ), array( 'border-radius', '0' ), array( 'padding', '8px 25px 8px 25px' ) ),
+			'button_1_style'               => array(),
 
 			'button_2_text'                => 'Read More',
 			'button_2_url'                 => get_site_url(),
@@ -415,7 +415,7 @@ class Cookie_Law_Info {
 			'button_3_as_button'           => true,
 			'button_3_button_colour'       => '#61a229',
 			'button_3_button_size'         => 'medium',
-			'button_3_style'               => array( array( 'margin', '5px 5px 5px 5px' ), array( 'border-radius', '0' ), array( 'padding', '8px 25px 8px 25px' ) ),
+			'button_3_style'               => array(),
 
 			'button_4_text'                => 'Cookie settings',
 			'button_4_url'                 => '#',
@@ -425,9 +425,9 @@ class Cookie_Law_Info {
 			'button_4_as_button'           => false,
 			'button_4_button_colour'       => '#ffffff',
 			'button_4_button_size'         => 'medium',
-			'button_4_style'               => array( array( 'border-bottom', '1px solid' ), array( 'text-decoration', 'none' ), array( 'text-decoration', 'none' ) ),
+			'button_4_style'               => array(),
 
-			'button_5_style'               => array( array( 'float', 'right' ), array( 'text-decoration', 'none' ), array( 'color', '#333' ) ),
+			'button_5_style'               => array(),
 			'button_7_text'                => 'ACCEPT ALL',
 			'button_7_url'                 => '#',
 			'button_7_action'              => '#cookie_action_close_header',
@@ -436,7 +436,7 @@ class Cookie_Law_Info {
 			'button_7_as_button'           => true,
 			'button_7_button_colour'       => '#61a229',
 			'button_7_button_size'         => 'medium',
-			'button_7_style'               => array( array( 'margin', '5px 5px 5px 30px' ), array( 'border-radius', '0' ), array( 'padding', '8px 25px 8px 25px' ) ),
+			'button_7_style'               => array(),
 
 			'font_family'                  => 'inherit', // Pick the family, not the easy name (see helper function below)
 			'header_fix'                   => false,
