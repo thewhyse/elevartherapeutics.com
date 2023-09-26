@@ -100,6 +100,7 @@ div#col-home-testimonial {
                 left: -90px !important;
                 text-align: center;
                 transition: background-color 500ms;
+                z-index: 999;
                 .edgtf-icon-mark {
                     position: relative;
                     left: -3px;
@@ -124,6 +125,7 @@ div#col-home-testimonial {
                 right: -90px !important;
                 text-align: center;
                 transition: background-color 500ms;
+                z-index: 999;
                 .edgtf-icon-mark {
                     position: relative;
                     left: 3px;
@@ -235,7 +237,7 @@ div#col-home-testimonial {
                     left: -75px !important;
                     .edgtf-icon-mark {
                         left: -3px;
-                        top: 3px;
+                        top: -1px;
                     }
                     .edgtf-icon-mark:before {
                         content: url('/wp-content/themes/conall-child/images/chevron-left-mob.svg');
@@ -248,7 +250,7 @@ div#col-home-testimonial {
                     right: -75px !important;
                     .edgtf-icon-mark {
                         left: 3px;
-                        top: 3px;
+                        top: -1px;
                     }
                     .edgtf-icon-mark:before {
                         content: url('/wp-content/themes/conall-child/images/chevron-right-mob.svg');
@@ -281,10 +283,6 @@ div#col-home-testimonial {
                     width: 65px !important;
                     line-height: 65px  !important;
                     left: -35px !important;
-                    .edgtf-icon-mark {
-                        left: -3px;
-                        top: 3px;
-                    }
                     .edgtf-icon-mark:before {
                         height: 65px;
                         width: 65px;
@@ -295,10 +293,6 @@ div#col-home-testimonial {
                     width: 65px !important;
                     line-height: 65px  !important;
                     right: -35px !important;
-                    .edgtf-icon-mark {
-                        left: 3px;
-                        top: 3px;
-                    }
                     .edgtf-icon-mark:before {
                         height: 65px;
                         width: 65px;
@@ -361,6 +355,9 @@ div#col-home-testimonial {
                                                     p.edgtf-testimonial-text {
                                                         margin: 10px 0 5px 0 !important;
                                                         height: 220px;
+                                                        margin: 10px 0 5px 0 !important;
+                                                        font-size: 16px;
+                                                        line-height: 26px;
                                                     }
                                                 }
                                             }
@@ -373,39 +370,7 @@ div#col-home-testimonial {
                 }
             }
             div.edgtf-tes-nav.edgtf-tes-controls {
-                span.edgtf-tes-nav-prev {
-                    height: 40px !important;
-                    width: 40px !important;
-                    line-height: 40px  !important;
-                    left: 0px !important;
-                    top: 37%;
-                    .edgtf-icon-mark {
-                        left: -2px;
-                        top: 4px;
-                    }
-                    .edgtf-icon-mark:before {
-                        content: url('/wp-content/themes/conall-child/images/chevron-left-320.svg');
-                        height: 40px;
-                        width: 40px;
-                    }
-                }
-                span.edgtf-tes-nav-next {
-                    height: 40px !important;
-                    width: 40px !important;
-                    line-height: 40px  !important;
-                    right: 0px !important;
-                    top: 37%;
-                    .edgtf-icon-mark {
-                        position: relative;
-                        left: 0px;
-                        top: -12px;
-                    }
-                    .edgtf-icon-mark:before {
-                        content: url('/wp-content/themes/conall-child/images/chevron-right-320.svg');
-                        height: 40px;
-                        width: 40px;
-                    }
-                }
+                display: none;
             }
         }
     }
