@@ -317,7 +317,12 @@ div#col-home-testimonial {
                                         div.edgtf-testimonial-content-inner {
                                             div.edgtf-testimonial-text-holder {
                                                 div.edgtf-testimonial-text-inner {
-                                                    padding: 15px 25px 10px 25px;
+                                                    padding: 0px 25px 10px 25px;
+                                                        p.edgtf-testimonial-text {
+                                                        height: 220px;
+                                                        font-size: 16px;
+                                                        line-height: 25px;
+                                                    }
                                                 }
                                             }
                                         }
