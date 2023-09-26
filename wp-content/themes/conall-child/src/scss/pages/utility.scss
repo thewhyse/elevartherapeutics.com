@@ -26,10 +26,10 @@ ul ul, ol ol, ol ul, ul ol {
 }
 @media all and (max-width: 576px) {
     figure.wp-block-table {
-        width: 420px;
+        width: 100%;
     }
     .wp-block-table table {
-        width: 420px;
+        width: 100%;
         font-size: 10px;
     }
 }
