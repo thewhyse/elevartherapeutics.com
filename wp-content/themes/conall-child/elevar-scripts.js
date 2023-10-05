@@ -1,15 +1,20 @@
 // Project Huddle redirect to TEST enviormnment
 
-const veevaText = document.getElementById("veevaID");
+const veevaString = document.getElementById("veevaID");
+const dateString = document.getElementById("dateID");
 var elevarurl = document.URL;
 slugContainsEvents = "elevar-events"
 var veeva1 = "US-ELVR-23-0075";
 var veeva2 = "US-ELVR-23-0047";
+var date1 = "10/2023";
+var date2 = "09/2023";
 if (window.location.href.indexOf(slugContainsEvents) > -1) {
-    veevaText.innerHTML = veeva2;
+    veevaString.innerHTML = veeva2;
+    dateString.innerHTML = date2;
     }
 else {
-    veevaText.innerHTML = veeva1;
+    veevaString.innerHTML = veeva1;
+    dateString.innerHTML = date1;
 }
 
 // Select all of the read more buttons and hidden content
