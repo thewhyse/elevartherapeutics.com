@@ -37,6 +37,8 @@ p, h1, h2, h3, h4, h5, h6 {
 #root, #__next {
   isolation: isolate;
 }
+/* ************ CSS RESET END ************ */
+
 .wpb_alert p:last-child,
 #content .wpb_alert p:last-child,
 .wpb_text_column p:last-child,
@@ -98,4 +100,3 @@ font-family: 'Raleway', sans-serif !important;
     bottom: 95px;
     }
 }
-/* ************ CSS RESET END ************ */
