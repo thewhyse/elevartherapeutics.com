@@ -1,18 +1,16 @@
-/* // Project Huddle redirect to TEST enviormnment
+// Project Huddle redirect to TEST enviormnment
 
-function openTest() {
-    window.open("https://test-elevartherapeutics.pantheonsite.io/", "_self");
-}
-
-var domain_name = document.location.hostname;
-var message = "If you here to review/approve ELE-23-PRS0359 Elevar Q3 Corporate Website Updates, please use the following link, as the DEV server enviornment is only for reviewing ELE-23-PRS0330 Elevar Q3 ESMO 2023 Landing page;  https://test-elevartherapeutics.pantheonsite.io"
-if (domain_name == "dev-elevartherapeutics.pantheonsite.io") {
-    alert(message);
-    if (confirm("Do you want to automatically be transferred?") == true) {
-        openTest();
+const veevaText = document.getElementById("veevaID");
+var elevarurl = document.URL;
+slugContainsEvents = "elevar-events"
+var veeva1 = "US-ELVR-23-0075";
+var veeva2 = "US-ELVR-23-0047";
+if (window.location.href.indexOf(slugContainsEvents) > -1) {
+    veevaText.innerHTML = veeva2;
     }
+else {
+    veevaText.innerHTML = veeva1;
 }
- */
 
 // Select all of the read more buttons and hidden content
 const readMoreButtons = document.querySelectorAll(".read-more");
