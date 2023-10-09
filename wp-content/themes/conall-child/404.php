@@ -11,5 +11,4 @@
     </div>
     <?php do_action('conall_edge_before_container_close'); ?>
 </div>
-
 <?php get_footer(); ?>
