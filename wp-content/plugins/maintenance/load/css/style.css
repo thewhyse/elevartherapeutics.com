@@ -85,8 +85,8 @@ body > .main-container:after{
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: #111;
-	opacity: 0.4;
+	background-color: transparent;
+	opacity: 1;
 	z-index: -1;
 	position: absolute;
 }
@@ -320,18 +320,54 @@ footer .center {
 }
 
 .logo-box {
-	padding: 50px 0 30px
+	padding: 120px 0 30px
 }
 .logo-box img {
 	max-width: 100%;
 }
+.site-content h2.heading {
+    font-size: 44px;
+    font-weight: 700 !important;
+    margin: 0 auto !important;
+        text-align: center;
+}
+.site-content .description h3 {
+    font-size: 30px;
+    font-weight: 400 !important;
+    text-align: center;
+    margin-top: 30px;
+    letter-spacing: 3px;
+    margin: 0 auto !important;
+    text-align: center;
+    padding-top: 3%;
+}
+@media only screen and (max-width: 1024px) {
+    div.logo-box > img {
+        width: 314px;
+        margin: 0 auto !important;
+    }
+    .site-content .description h3 {
+        padding-top: 4%;
+    }
+}
 
-@media only screen and (min-width: 200px) and (max-width: 670px) {
-  div.logo-box > img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
+@media only screen and  (max-width: 576px) {
+    div.logo-box > img {
+        width: 225px;
+    }
+    .site-content h2.heading {
+        font-size: 30px;
+        line-height: 36px;
+        max-width: 270px;
+        margin: 0 auto !important;
+        text-align: center;
+    }
+    .site-content .description h3 {
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0;
+        padding-top: 5%;
+    }
 }
 
 .logo.istext {

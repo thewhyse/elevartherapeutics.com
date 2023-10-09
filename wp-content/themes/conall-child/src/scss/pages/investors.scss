@@ -150,6 +150,11 @@ div#investors-social-links {
                 color:$med_gray;
             }
     }
+    div#investors-kol-video {
+        a.edgtf-btn.video {
+            width: 340px;
+        }
+    }
     div#investors-kol-download {
         padding: 40px 0 80px 0;
         div#kol-image {
@@ -160,8 +165,13 @@ div#investors-social-links {
             }
         }
         a.edgtf-btn.video {
-            width: 200px;
+            width: 340px;
             margin: 25px 0 0 0 !important;
+        }
+    }
+    div#investors-hubspot-form {
+        form.hs-form-private > div div input {
+            min-width: 250px;
         }
     }
     div#investors-button-row {
@@ -169,13 +179,37 @@ div#investors-social-links {
             div.col-btn {
                 a.edgtf-btn {
                     max-width: unset;
+                    font-size: 21px;
                 }
             }
         }
     }
 }
 @media all and (max-width: 768px) {
-
+    div#investors-hubspot-form form.hs-form-private > div div input {
+        min-width: unset;
+        width: 187px !important;
+    }
+    div#investors-button-row {
+        div.clearfix.edgtf-section-inner {
+            div.col-btn {
+                a.edgtf-btn {
+                    font-size: 20px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+    div#investors-kol-video {
+        a.edgtf-btn.video {
+            width: 340px;
+        }
+    }
+    div#investors-kol-download {
+        a.edgtf-btn.video {
+            width: 340px;
+        }
+    }
 }
 @media all and (max-width: 576px) {
     div#investors_hero_row {

@@ -8,6 +8,7 @@ $elevar_blue2: #2f7ac5;
 $elevar_blue3: #3283d3;
 $elevar_blue4: #368be0;
 $elevar_blue5: #3b95ef;
+$elevar_lt_blue: #54C1EA;
 $elevar_purple: #524487;
 $elevar_yellow: #f4c55c;
 $formblue: #afe2f5;
@@ -31,9 +32,16 @@ $black_opacity: rgba(0,0,0,0.5);
 @mixin hero-drop-shadow {
     filter: drop-shadow(3px 3px 12px $drop_shadow);
 };
-
 @mixin drop-down-menu-shadow {
     box-shadow: 3px 3px 10px -6px $black_opacity;
     -webkit-box-shadow: 3px 3px 10px -6px $black_opacity;
     -moz-box-shadow: 3px 3px 10px -6px$black_opacity;
-}
+};
+@mixin error-gradient {
+    background: rgb(81,69,135);
+    background: linear-gradient(45deg, rgba(81,69,135,1) 0%, rgba(68,85,152,1) 12.5%, rgba(53,103,170,1) 25%, rgba(38,119,180,1) 37.5%, rgba(23,134,175,1) 50%, rgba(8,149,170,1) 62.5%, rgba(26,164,187,1) 75%, rgba(55,178,211,1) 87.5%, rgba(83,191,233,1) 100%);
+};
+@mixin error-image-gradient {
+    background: rgb(81,69,135);
+    background-image: url('/wp-content/themes/conall-child/images/elevar-full-page-swoosh-404-1920x1385.svg'), linear-gradient(45deg, rgba(81,69,135,1) 0%, rgba(68,85,152,1) 12.5%, rgba(53,103,170,1) 25%, rgba(38,119,180,1) 37.5%, rgba(23,134,175,1) 50%, rgba(8,149,170,1) 62.5%, rgba(26,164,187,1) 75%, rgba(55,178,211,1) 87.5%, rgba(83,191,233,1) 100%);
+};
