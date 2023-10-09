@@ -3,16 +3,17 @@
 /*https://stackoverflow.com/questions/3947979/fatal-error-call-to-undefined-function-add-action*/
 /*require(dirname(__FILE__) . '/wp-load.php');*/
 
-/*** Child Theme Function  ***/
+/*** Elevar/Conall Child-Theme Functions  ***/
 
+// DH Pop-up to page head
 function conall_edge_child_theme_enqueue_scripts() {
     $parent_style = 'conall-edge-default-style';
 
     wp_enqueue_style('conall-edge-child-style', get_stylesheet_directory_uri() . '/style.css', array($parent_style));
 }
-
 add_action('wp_enqueue_scripts', 'conall_edge_child_theme_enqueue_scripts');
 
+// Register & Enqueue all CSS & JS
 function elevar_assets() {
     wp_register_style('elevar-stylesheet', get_theme_file_uri() . '/dist/css/bundle.css', array(), '1.0.0', 'all');
     wp_enqueue_style('elevar-stylesheet');
@@ -21,6 +22,7 @@ function elevar_assets() {
 }
 add_action('wp_enqueue_scripts', 'elevar_assets', 99);
 
+// DH Pop-up to page head
 function elevar_javascript_footer() {
     ?>
         <script>
@@ -58,6 +60,7 @@ add_action('wp_footer', 'elevar_javascript_footer');
 remove_filter('the_content', 'wpautop');
 remove_filter('the_excerpt', 'wpautop');
 
+// Add HotJar script to page head
 function hotjar_javascript() {
     ?>
         <!-- Hotjar Tracking Code for https://elevartherapeutics.com/ -->
@@ -81,6 +84,7 @@ function hotjar_javascript() {
 }
 add_action('wp_head', 'hotjar_javascript');
 
+// Add HubSpot script to page head
 function hubspot_javascript() {
     ?>
         <!-- Start of HubSpot Embed Code -->

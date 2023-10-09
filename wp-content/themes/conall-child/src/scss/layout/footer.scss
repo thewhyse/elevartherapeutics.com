@@ -12,6 +12,7 @@ div.edgtf-content {
     }
 }
 footer {
+    height: 200px;
     .edgtf-footer-bottom-holder {
         background-color: $elevar_blue !important;
         min-height: 200px;
@@ -54,7 +55,7 @@ footer {
             a.edgtf-social-icon-widget-holder {
                 color: $white;
                 font-size: 24px;
-                margin: 0px 20px 0px 0px;
+                margin: 0px 10px 0px 10px;
             }
             img.footer-social-icon-widget {
                 display: inline-block;
@@ -103,7 +104,7 @@ footer {
         div.copy-right-line {
             color: $white;
             font-size: 12px;
-            line-height: 30px;
+            line-height: 20px;
             font-weight: 600;
             span.copy-right-line2 {
                 display: inline-block;
@@ -147,15 +148,7 @@ footer {
                 }
             }
             div.footer-social {
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                margin: 0;
-                margin-top: 30px;
                 a.edgtf-social-icon-widget-holder {
-                    color: $white;
-                    font-size: 24px;
-                    margin: 0px 20px 0px 0px;
                 }
                 img.footer-social-icon-widget {
                     display: inline-block;
@@ -179,6 +172,11 @@ footer {
                 }
             }
         }
+    }
+}
+@media all and (max-width: 768px) {
+    footer .edgtf-footer-inner > .edgtf-footer-bottom-holder {
+        padding: 0 25px;
     }
 }
 @media all and (max-width: 576px) {
@@ -213,20 +211,12 @@ footer {
             text-align: center;
             div.policies-links {
             min-width: unset;
-            max-width: 342px;
+            width: 100%;
                 div.address {
                     }
                 }
             div.footer-social {
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                margin: 0;
-                margin-top: 30px;
                     a.edgtf-social-icon-widget-holder {
-                        color: $white;
-                        font-size: 24px;
-                        margin: 0px 20px 0px 0px;
                     }
                     img.footer-social-icon-widget {
                         display: inline-block;
@@ -248,9 +238,36 @@ footer {
 }
 @media all and (max-width: 480px) {
     footer div#temp-footer-container div#bottom-links {
-    min-width: 320px;
+    min-width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
+    }
+}
+@media all and (max-width: 320px) {
+    footer {
+        .edgtf-footer-bottom-holder {
+            .edgtf-footer-bottom-holder-inner {
+                width: 95%;
+                margin: 0 auto;
+                .edgtf-column-inner {
+                    margin: 5px 0;
+                    padding: 0 7.5px;
+                }
+            }
+        }
+    }
+    footer {
+        .edgtf-footer-inner > .edgtf-footer-bottom-holder {
+            padding: 0;
+        }
+    }
+    footer div#temp-footer-container div.footer-social {
+        margin-top: 15px;
+
+    }
+    footer div#temp-footer-container div#bottom-links {
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
 /* ******* ELEVAR 2023 FOOTER END ******* */

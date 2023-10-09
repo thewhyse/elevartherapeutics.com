@@ -1,4 +1,4 @@
-// Project Huddle redirect to TEST enviormnment
+// Update FOOTER Veeva # & Date dynamically on just the elevar-event page
 
 const veevaString = document.getElementById("veevaID");
 const dateString = document.getElementById("dateID");

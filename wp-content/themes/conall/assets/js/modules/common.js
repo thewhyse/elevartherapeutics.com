@@ -21,7 +21,7 @@
     common.edgtfInitBackToTop = edgtfInitBackToTop;
     common.edgtfBackButtonShowHide = edgtfBackButtonShowHide;
     common.edgtfSmoothTransition = edgtfSmoothTransition;
-    common.edgtfInit404PageSize = edgtfInit404PageSize;
+/*     common.edgtfInit404PageSize = edgtfInit404PageSize; */
     common.edgtfInitComingSoonPageSize = edgtfInitComingSoonPageSize;
     common.edgtfCharShuffle = edgtfCharShuffle;
     common.edgtfFooterAppear = edgtfFooterAppear;
@@ -35,8 +35,8 @@
     $(window).on('load', edgtfOnWindowLoad);
     $(window).resize(edgtfOnWindowResize);
     $(window).scroll(edgtfOnWindowScroll);
-    
-    /* 
+
+    /*
         All functions to be called on $(document).ready() should be in this function
     */
     function edgtfOnDocumentReady() {
@@ -55,13 +55,13 @@
         edgtfSelfHostedVideoSize();
         edgtfInitBackToTop();
         edgtfBackButtonShowHide();
-        edgtfInit404PageSize();
+/*         edgtfInit404PageSize(); */
         edgtfInitComingSoonPageSize();
         edgtfCharShuffle();
         edgtfBrowserDetection();
     }
 
-    /* 
+    /*
         All functions to be called on $(window).on('load', ) should be in this function
     */
     function edgtfOnWindowLoad() {
@@ -70,7 +70,7 @@
         edgtfFooterAppear();
     }
 
-    /* 
+    /*
         All functions to be called on $(window).resize() should be in this function
     */
     function edgtfOnWindowResize() {
@@ -78,11 +78,11 @@
         edgtfSelfHostedVideoSize();
     }
 
-    /* 
+    /*
         All functions to be called on $(window).scroll() should be in this function
     */
     function edgtfOnWindowScroll() {
-        
+
     }
 
     /*
@@ -607,8 +607,8 @@
         }
     }
 
-    function edgtfInit404PageSize() {
-        
+/*     function edgtfInit404PageSize() {
+
         var holder = $('.edgtf-404-page');
 
         if(holder.length && edgtf.windowWidth > 700){
@@ -616,10 +616,10 @@
         } else if (holder.length && edgtf.windowWidth <= 700) {
             holder.find('.edgtf-content').css('min-height',edgtf.windowHeight-edgtfGlobalVars.vars.edgtfAddForAdminBar);
         }
-    }
+    } */
 
     function edgtfInitComingSoonPageSize() {
-        
+
         var holder = $('.edgtf-coming-soon-page');
 
         if(holder.length && edgtf.windowWidth > 700){
