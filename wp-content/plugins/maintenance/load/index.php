@@ -81,6 +81,7 @@ $bunny_fonts = mtnc_add_bunny_fonts();
 		echo '<link rel="stylesheet" href="' . esc_url( 'https://fonts.bunny.net/css?family=' . esc_attr( $bunny_fonts[0] ) ) . '">';
   }
 	?>
+    
 </head>
 
 <body class="maintenance <?php echo esc_html($ebody_class); ?>">
