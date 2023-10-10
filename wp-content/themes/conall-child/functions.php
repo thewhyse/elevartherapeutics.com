@@ -98,7 +98,6 @@ function hubspot_javascript()
     <?php
 }
 add_action('wp_head', 'hubspot_javascript');
-
 function marker_io_errorpage()
 {
     if (is_page('404.php') || is_404()) {
