@@ -52,7 +52,7 @@ if ( ! function_exists('conall_edge_configure_visual_composer') ) {
 		vc_remove_element("vc_posts_grid");
 		vc_remove_element("vc_carousel");
 		vc_remove_element("vc_gmaps");
-		vc_remove_element("vc_btn");
+
 		vc_remove_element("vc_cta");
 		vc_remove_element("vc_round_chart");
 		vc_remove_element("vc_line_chart");
@@ -112,9 +112,9 @@ if ( ! function_exists('conall_edge_configure_visual_composer_frontend_editor') 
 		/**
 		 * Remove frontend editor
 		 */
-		/* if(function_exists('vc_disable_frontend')){
+		if(function_exists('vc_disable_frontend')){
 			vc_disable_frontend();
-		}*/
+		}
 	}
 
 	add_action('vc_after_init', 'conall_edge_configure_visual_composer_frontend_editor');
