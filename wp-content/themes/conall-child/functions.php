@@ -101,37 +101,38 @@ add_action('wp_head', 'hubspot_javascript');
 function marker_io_errorpage()
 {
     if (is_page('404.php') || is_404()) {
-        ?>
-            <!-- Start of Marker Project Code -->
-            <script>
-                window.markerConfig = {
-                    project: '652457868a5f04745a5d1262',
-                    source: 'snippet'
-                };
-            </script>
-            <script>
-                ! function(e, r, a) {
-                    if (!e.__Marker) {
-                        e.__Marker = {};
-                        var t = [],
-                            n = {
-                                __cs: t
-                            };
-                        ["show", "hide", "isVisible", "capture", "cancelCapture", "unload", "reload", "isExtensionInstalled", "setReporter", "setCustomData", "on", "off"].forEach(function(e) {
-                            n[e] = function() {
-                                var r = Array.prototype.slice.call(arguments);
-                                r.unshift(e), t.push(r)
-                            }
-                        }), e.Marker = n;
-                        var s = r.createElement("script");
-                        s.async = 1, s.src = "https://edge.marker.io/latest/shim.js";
-                        var i = r.getElementsByTagName("script")[0];
-                        i.parentNode.insertBefore(s, i)
-                    }
-                }(window, document);
-            </script>
-            <!-- End of Marker Project Code -->
-        <?php
+    ?>
+        <!-- Start of Marker Project Code -->
+        <script>
+            window.markerConfig = {
+                project: '6526e92278a65509f0b84724',
+                source: 'snippet'
+            };
+        </script>
+        <script>
+            ! function(e, r, a) {
+                if (!e.__Marker) {
+                    e.__Marker = {};
+                    var t = [],
+                        n = {
+                            __cs: t
+                        };
+                    ["show", "hide", "isVisible", "capture", "cancelCapture", "unload", "reload", "isExtensionInstalled", "setReporter", "setCustomData", "on", "off"].forEach(function(e) {
+                        n[e] = function() {
+                            var r = Array.prototype.slice.call(arguments);
+                            r.unshift(e), t.push(r)
+                        }
+                    }), e.Marker = n;
+                    var s = r.createElement("script");
+                    s.async = 1, s.src = "https://edge.marker.io/latest/shim.js";
+                    var i = r.getElementsByTagName("script")[0];
+                    i.parentNode.insertBefore(s, i)
+                }
+            }(window, document);
+        </script>
+
+        <!-- End of Marker Project Code -->
+<?php
     }
 }
 add_action('wp_head', 'marker_io_errorpage');
