@@ -5,8 +5,8 @@
     <div class="edgtf-container-inner clearfix">
         <div class="edgtf-page-not-found">
             <h1 class=""><span>SORRY, THAT PAGE DOES NOT EXIST</span></h1>
-            <h4 class=""><span>Lets get you back on track</span></h4>
-            <a class="edgtf-btn" href="<?php echo get_home_url(); ?>">Back to home</a>
+            <h4 class=""><span>Let's get you back on track</span></h4>
+            <a class="edgtf-btn" href="<?php echo get_home_url(); ?>">Back to Home</a>
         </div>
     </div>
     <?php do_action('conall_edge_before_container_close'); ?>
