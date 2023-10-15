@@ -18,8 +18,8 @@
     }
     .edgtf-position-center {
         div.textwidget.custom-html-widget {
-                padding-left: 5%;
-                padding-right: 5%;
+                padding-left: 8%;
+                padding-right: 8%;
         }
         h2.widgettitle {
             display: none !important;
@@ -41,6 +41,33 @@
         }
     }
 
+}
+@media all and (max-width: 1400px) {
+    .edgtf-top-bar {
+        .edgtf-position-center {
+            div.textwidget.custom-html-widget {
+                    padding-left: 6%;
+                    padding-right: 6%;
+            }
+        }
+    }
+}
+@media all and (max-width: 1200px) {
+    .edgtf-top-bar {
+        .edgtf-position-center {
+            div.textwidget.custom-html-widget {
+                    padding-left: 0;
+                    padding-right: 0;
+            }
+            div.penbanner-text {
+                color: $white !important;
+                font-family: 'Raleway', sans-serif;
+                font-size: 15px;
+                font-weight: bold;
+                line-height: 17px;
+            }
+        }
+    }
 }
 @media all and (max-width: 1024px) {
     .edgtf-top-bar {
@@ -68,8 +95,8 @@
     .edgtf-top-bar {
         .edgtf-position-center {
             div.textwidget.custom-html-widget {
-                padding-left: 3%;
-                padding-right: 3%;
+                padding-left: 0;
+                padding-right: 0;
                 div.penbanner-text {
                     color: $white !important;
                     font-family: 'Raleway', sans-serif;
@@ -84,17 +111,33 @@
 @media all and (max-width: 480px) {
     .edgtf-top-bar {
         .edgtf-grid {
-            width: 90%;
+            width: 95%;
             .edgtf-position-center {
                 div.textwidget.custom-html-widget {
-                    padding-left: 3%;
-                    padding-right: 3%;
+                    padding-left: 0;
+                    padding-right: 0;
                     div.penbanner-text {
                         color: $white !important;
                         font-family: 'Raleway', sans-serif;
                         font-size: 13px;
                         font-weight: bold;
                         line-height: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 400px) {
+    .edgtf-top-bar {
+        .edgtf-grid {
+            width: 93%;
+            .edgtf-position-center {
+                div.textwidget.custom-html-widget {
+                    div.penbanner-text {
+                        font-size: 12px;
+                        font-weight: 600;
+                        line-height: 15px;
                     }
                 }
             }
@@ -108,14 +151,11 @@
             width: 95%;
                 .edgtf-position-center {
                         div.textwidget.custom-html-widget {
-                            padding-left: 3%;
-                            padding-right: 3%;
+                            padding-left: 0;
+                            padding-right: 0;
                             div.penbanner-text {
-                                color: $white !important;
-                                font-family: 'Raleway', sans-serif;
-                                font-size: 12px;
-                                font-weight: bold;
-                                line-height: 15px;
+                                font-size: 11px;
+                                line-height: 14px;
                             }
                         }
                 }

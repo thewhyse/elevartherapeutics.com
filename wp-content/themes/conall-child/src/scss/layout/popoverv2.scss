@@ -1,6 +1,9 @@
 @import "../base/colors";
 
 /* ******* POP-OVER V2 DESKTOP START ******* */
+.dh-popup {
+    padding: 5%;
+}
 .fancybox-skin {
     border-radius: 15px;
     -webkit-border-radius: 15px;
@@ -63,7 +66,7 @@ div.fancybox-wrap.dh-popup__wrap--17363 div.fancybox-skin:before {
             text-align: center;
             letter-spacing: 2px;
             margin: 0 auto !important;
-            margin-top: 15% !important;
+            margin-top: 10% !important;
             span.lowercase {
                 text-transform: lowercase;
                 font-weight: 500;
@@ -80,9 +83,9 @@ div.fancybox-wrap.dh-popup__wrap--17363 div.fancybox-skin:before {
             letter-spacing: 2.5px;
             margin: 0 auto !important;
             margin-top: 15px !important;
-            span.tt-inherit {
-                text-transform: initial;
-            }
+        }
+        h3.pop2-heading.h3:nth-of-type(2) {
+            margin-top: 0 !important;
         }
         h3.pop2-heading:nth-of-type(2):after {
             content: "";
@@ -125,7 +128,7 @@ div.fancybox-wrap.dh-popup__wrap--17363 div.fancybox-skin:before {
             align-items: center;
             margin: 0 auto !important;
             margin-top: 3% !important;
-            margin-bottom: 4% !important;
+            margin-bottom: 0 !important;
             font-family: 'Raleway', sans-serif;
             font-size: 32px;
             line-height: 1;
@@ -137,13 +140,66 @@ div.fancybox-wrap.dh-popup__wrap--17363 div.fancybox-skin:before {
         }
     }
 }
-/* ********** Pop-Over - Mobile  ********** */
+/* ********** Pop-Over - Responsive Scale Size  ********** */
+@media all and (max-width: 1920px) {
+    .dh-popup__wrap {
+        transform: translate(-50%, -50%) scale(0.70) !important;
+    }
+}
+@media all and (max-width: 1800px) {
+    .dh-popup__wrap {
+        transform: translate(-50%, -50%) scale(0.70) !important;
+    }
+}
+@media all and (max-width: 1700px) {
+    .dh-popup__wrap {
+        transform: translate(-50%, -50%) scale(0.68) !important;
+    }
+}
+@media all and (max-width: 1650px) {
+    .dh-popup__wrap {
+        transform: translate(-50%, -50%) scale(0.65) !important;
+    }
+}
+@media all and (max-width: 1500px) {
+    .dh-popup__wrap {
+        transform: translate(-50%, -50%) scale(0.62) !important;
+    }
+}
+@media all and (max-width: 1450px) {
+    .dh-popup__wrap {
+        transform: translate(-50%, -50%) scale(0.60) !important;
+    }
+}
+@media all and (max-width: 1300px) {
+    .dh-popup__wrap {
+        transform: translate(-50%, -50%) scale(0.58) !important;
+    }
+}
+@media all and (max-width: 1250px) {
+    .dh-popup__wrap {
+        transform: translate(-50%, -50%) scale(0.55) !important;
+    }
+}
+@media all and (max-width: 1100px) {
+    .dh-popup__wrap {
+        transform: translate(-50%, -50%) scale(0.52) !important;
+    }
+}
+@media all and (max-width: 1050px) {
+    .dh-popup__wrap {
+        transform: translate(-50%, -50%) scale(0.5) !important;
+    }
+}
 @media all and (max-width: 767px) {
+    .dh-popup {
+        padding: 0;
+    }
     div.fancybox-wrap.dh-popup__wrap--17331 div.fancybox-skin:before,
     div.fancybox-wrap.dh-popup__wrap--17357 div.fancybox-skin:before,
     div.fancybox-wrap.dh-popup__wrap--17363 div.fancybox-skin:before {
         content: url('/wp-content/themes/conall-child/images/icon-cam-popover-150x150.png');
-        transform: translate(-50%, -35%);
+        transform: translate(-50%, -50%);
         max-width: 150px;
         max-height: 150px;
     }
@@ -169,32 +225,32 @@ div.fancybox-wrap.dh-popup__wrap--17363 div.fancybox-skin:before {
         padding-right: 10%;
         #pop2-col {
             h2.pop2-heading.h2 {
-                font-size: 30px;
-                line-height: 34px;
+                font-size: 25px;
+                line-height: 30px;
                 margin-top: 25% !important;
             }
             h3.pop2-heading.h3 {
-                font-size: 32px;
-                line-height: 36px;
+                font-size: 28px;
+                line-height: 34px;
             }
             p.pop2-copy {
-                font-size: 26px;
-                line-height: 36px;
+                font-size: 23px;
+                line-height: 33px;
             }
             p.pop2-testamonial {
-                font-size: 26px;
-                line-height: 36px;
+                font-size: 23px;
+                line-height: 33px;
             }
             a.pop2-button {
                 max-width: 350px;
                 height: 75px;
                 margin-top: 5% !important;
                 margin-bottom: 10% !important;
-                font-size: 28px;
+                font-size: 25px;
                 }
             }
         }
-    }
+}
 @media all and (max-width: 576px) {
     i.fancybox-close__line-top,
     i.fancybox-close__line-bottom {
@@ -214,7 +270,7 @@ div.fancybox-wrap.dh-popup__wrap--17363 div.fancybox-skin:before {
     div.fancybox-wrap.dh-popup__wrap--17357 div.fancybox-skin:before,
     div.fancybox-wrap.dh-popup__wrap--17363 div.fancybox-skin:before {
         content: url('/wp-content/themes/conall-child/images/icon-cam-popover-120x120.png');
-        transform: translate(-45%, -50%);
+        transform: translate(-50%, -50%);
         max-width: 120px;
         max-height: 120px;
     }
@@ -225,40 +281,82 @@ div.fancybox-wrap.dh-popup__wrap--17363 div.fancybox-skin:before {
         padding-right: 6%;
         #pop2-col {
             h2.pop2-heading.h2 {
-                font-size: 25px;
-                line-height: 30px;
+                font-size: 20px;
+                line-height: 25px;
                 letter-spacing: 0.5px;
                 margin-top: 25% !important;
             }
             h3.pop2-heading.h3 {
-                font-size: 25px;
-                line-height: 30px;
+                font-size: 20px;
+                line-height: 25px;
                 letter-spacing: 0.5px;
             }
             h3.pop2-heading.h3:after {
                 margin-top: 6% !important;
             }
             p.pop2-copy {
-                font-size: 20px;
-                line-height: 28px;
+                font-size: 17px;
+                line-height: 24px;
                 margin-top: 6% !important;
             }
             p.pop2-testamonial {
-                font-size: 20px;
-                line-height: 28px;
+                font-size: 17px;
+                line-height: 24px;
             }
             a.pop2-button {
                 max-width: 280px;
-                height: 70px;
+                height: 55px;
                 margin-top: 5% !important;
                 margin-bottom: 10% !important;
-                font-size: 20px;
+                font-size: 17px;
+                }
+            }
+        }
+}
+@media all and (max-width: 480px) {
+    #dh_popup_17331 div#popover2-container div.clearfix.edgtf-section-inner,
+    #dh_popup_17357 div#popover2-container div.clearfix.edgtf-section-inner,
+    #dh_popup_17363 div#popover2-container div.clearfix.edgtf-section-inner {
+        padding-left: 5%;
+        padding-right: 5%;
+            #pop2-col {
+                div.vc_column-inner {
+                padding-left: 0;
+                padding-right: 0;
+                h2.pop2-heading.h2 {
+                    font-size: 19px;
+                    line-height: 24px;
+                }
+                h3.pop2-heading.h3 {
+                    font-size: 19px;
+                    line-height: 24px;
+                }
+                p.pop2-copy {
+                    font-size: 16px;
+                    line-height: 23px;
+                }
+                p.pop2-testamonial {
+                font-size: 16px;
+                line-height: 23px;
+                }
+                a.pop2-button {
+                max-width: 280px;
+                height: 55px;
+                margin-top: 5% !important;
+                margin-bottom: 10% !important;
+                font-size: 17px;
                 }
             }
         }
     }
-@media all and (max-width: 480px) {
-
+    div.fancybox-wrap.dh-popup__wrap--17331 div.fancybox-skin:before,
+    div.fancybox-wrap.dh-popup__wrap--17357 div.fancybox-skin:before,
+    div.fancybox-wrap.dh-popup__wrap--17363 div.fancybox-skin:before {
+        content: url('/wp-content/themes/conall-child/images/icon-cam-popover-100x100.png');
+        transform: translate(-50%, -50%);
+        max-width: 100px;
+        max-height: 100px;
+    }
 }
 @media all and (max-width: 320px) {
     i.fancybox-close__line-top,
@@ -284,51 +382,47 @@ div.fancybox-wrap.dh-popup__wrap--17363 div.fancybox-skin:before {
     div.fancybox-wrap.dh-popup__wrap--17331 div.fancybox-skin:before,
     div.fancybox-wrap.dh-popup__wrap--17357 div.fancybox-skin:before,
     div.fancybox-wrap.dh-popup__wrap--17363 div.fancybox-skin:before {
-        content: url('/wp-content/themes/conall-child/images/icon-cam-popover-120x120.png');
-        transform: translate(-65%, -50%);
+        content: url('/wp-content/themes/conall-child/images/icon-cam-popover-80x80.png');
+        transform: translate(-50%, -50%);
         max-width: 80px;
         max-height: 80px;
     }
     #dh_popup_17331 div#popover2-container div.clearfix.edgtf-section-inner,
     #dh_popup_17357 div#popover2-container div.clearfix.edgtf-section-inner,
     #dh_popup_17363 div#popover2-container div.clearfix.edgtf-section-inner {
-        padding-left: 2%;
-        padding-right: 2%;
+        padding-left: 3.5%;
+        padding-right: 3.5%;
         #pop2-col {
             div.vc_column-inner {
-                padding: 0;
+                padding-left: 0;
+                padding-right: 0;
                 h2.pop2-heading.h2 {
-                    font-size: 20px;
-                    line-height: 24px;
-                    letter-spacing: 0.5px;
-                    margin-top: 35% !important;
+                    font-size: 17px;
+                    line-height: 20px;
+                    margin-top: 25% !important;
                 }
                 h3.pop2-heading.h3 {
-                    font-size: 20px;
-                    line-height: 24px;
-                    letter-spacing: 0.5px;
-                }
-                h3.pop2-heading.h3:after {
-                    margin-top: 4% !important;
+                    font-size: 17px;
+                    line-height: 20px;
                 }
                 p.pop2-copy {
-                    font-size: 18px;
-                    line-height: 24px;
-                    margin-top: 3% !important;
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin-top: 5% !important;
                 }
                 p.pop2-testamonial {
-                    font-size: 18px;
-                    line-height: 24px;
+                    font-size: 14px;
+                    line-height: 20px;
                 }
                 a.pop2-button {
-                    max-width: 240px;
-                    height: 60px;
-                    margin-top: 5% !important;
-                    margin-bottom: 8% !important;
-                    font-size: 18px;
-                    }
+                max-width: 280px;
+                height: 55px;
+                margin-top: 5% !important;
+                margin-bottom: 10% !important;
+                font-size: 17px;
                 }
             }
         }
     }
+}
 /* ******* POP-OVER V2 DESKTOP END ******* */
