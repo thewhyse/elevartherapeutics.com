@@ -116,6 +116,7 @@ div.fancybox-wrap.dh-popup__wrap--17363 div.fancybox-skin:before {
         a.pop2-button {
             background-color: #524487;
             border-color: #524487;
+            color: $white;
             max-width: 417px;
             height: 87px;
             display: flex;
@@ -125,16 +126,14 @@ div.fancybox-wrap.dh-popup__wrap--17363 div.fancybox-skin:before {
             margin: 0 auto !important;
             margin-top: 3% !important;
             margin-bottom: 4% !important;
-            .edgtf-btn-text {
-                font-family: 'Raleway', sans-serif;
-                font-size: 32px;
-                line-height: 1;
-                text-transform: uppercase;
-                color: #ffffff;
-                font-weight: bold;
-                letter-spacing: 0px;
-                text-align: center;
-            }
+            font-family: 'Raleway', sans-serif;
+            font-size: 32px;
+            line-height: 1;
+            text-transform: uppercase;
+            color: #ffffff;
+            font-weight: bold;
+            letter-spacing: 0px;
+            text-align: center;
         }
     }
 }
@@ -191,13 +190,11 @@ div.fancybox-wrap.dh-popup__wrap--17363 div.fancybox-skin:before {
                 height: 75px;
                 margin-top: 5% !important;
                 margin-bottom: 10% !important;
-                .edgtf-btn-text {
-                    font-size: 28px;
+                font-size: 28px;
                 }
             }
         }
     }
-}
 @media all and (max-width: 576px) {
     i.fancybox-close__line-top,
     i.fancybox-close__line-bottom {
@@ -255,13 +252,11 @@ div.fancybox-wrap.dh-popup__wrap--17363 div.fancybox-skin:before {
                 height: 70px;
                 margin-top: 5% !important;
                 margin-bottom: 10% !important;
-                .edgtf-btn-text {
-                    font-size: 20px;
+                font-size: 20px;
                 }
             }
         }
     }
-}
 @media all and (max-width: 480px) {
 
 }
@@ -330,12 +325,10 @@ div.fancybox-wrap.dh-popup__wrap--17363 div.fancybox-skin:before {
                     height: 60px;
                     margin-top: 5% !important;
                     margin-bottom: 8% !important;
-                    .edgtf-btn-text {
-                        font-size: 18px;
+                    font-size: 18px;
                     }
                 }
             }
         }
     }
-}
 /* ******* POP-OVER V2 DESKTOP END ******* */
