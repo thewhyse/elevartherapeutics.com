@@ -64,4 +64,62 @@
         }
     }
 }
+@media all and (max-width: 576px) {
+    .edgtf-top-bar {
+        .edgtf-position-center {
+            div.textwidget.custom-html-widget {
+                padding-left: 3%;
+                padding-right: 3%;
+                div.penbanner-text {
+                    color: $white !important;
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 14px;
+                    font-weight: bold;
+                    line-height: 16px;
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 480px) {
+    .edgtf-top-bar {
+        .edgtf-grid {
+            width: 400px;
+            .edgtf-position-center {
+                div.textwidget.custom-html-widget {
+                    padding-left: 3%;
+                    padding-right: 3%;
+                    div.penbanner-text {
+                        color: $white !important;
+                        font-family: 'Raleway', sans-serif;
+                        font-size: 13px;
+                        font-weight: bold;
+                        line-height: 16px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+@media all and (max-width: 320px) {
+    .edgtf-top-bar {
+        .edgtf-grid {
+            width: 95%;
+                .edgtf-position-center {
+                        div.textwidget.custom-html-widget {
+                            padding-left: 3%;
+                            padding-right: 3%;
+                            div.penbanner-text {
+                                color: $white !important;
+                                font-family: 'Raleway', sans-serif;
+                                font-size: 12px;
+                                font-weight: bold;
+                                line-height: 15px;
+                            }
+                        }
+                }
+        }
+    }
+}
 /* ******* PENBANNER DESKTOP END ******* */
