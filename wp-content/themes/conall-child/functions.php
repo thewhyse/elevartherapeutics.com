@@ -60,9 +60,9 @@ function elevar_javascript_footer()
 add_action('wp_footer', 'elevar_javascript_footer');
 
 // Prevent WP from adding <p> tags on all post types
-remove_filter('the_content', 'wpautop');
+/* remove_filter('the_content', 'wpautop');
 remove_filter('the_excerpt', 'wpautop');
-
+ */
 // Add HotJar script to page head
 function hotjar_javascript()
 {
