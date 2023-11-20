@@ -3,7 +3,7 @@
 * Plugin Name: DHPopup
 * Plugin URI: http://sitesao.com/
 * Description: Easily builder Modal Popup with WPBakery Page Builder
-* Version: 1.1.16
+* Version: 1.1.17
 * Author: Sitesao team
 * Author URI: http://sitesao.com/
 * License: License GNU General Public License version 2 or later;
@@ -12,7 +12,7 @@
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 if(!defined('DH_POPUP_VERSION'))
-	define('DH_POPUP_VERSION','1.1.16');
+	define('DH_POPUP_VERSION','1.1.17');
 
 if(!defined('DH_POPUP_URL'))
 	define('DH_POPUP_URL',untrailingslashit( plugins_url( '/', __FILE__ ) ));

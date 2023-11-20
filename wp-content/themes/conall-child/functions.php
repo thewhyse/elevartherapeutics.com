@@ -98,3 +98,110 @@ function hubspot_javascript()
     <?php
 }
 add_action('wp_head', 'hubspot_javascript');
+
+function marker_io()
+{
+    if (is_front_page()) {
+    ?>
+        <script>
+            window.markerConfig = {
+                project: '655b840f234206b6bd5f78c6',
+                source: 'snippet'
+            };
+
+            ! function(e, r, a) {
+                if (!e.__Marker) {
+                    e.__Marker = {};
+                    var t = [],
+                        n = {
+                            __cs: t
+                        };
+                    ["show", "hide", "isVisible", "capture", "cancelCapture", "unload", "reload", "isExtensionInstalled", "setReporter", "setCustomData", "on", "off"].forEach(function(e) {
+                        n[e] = function() {
+                            var r = Array.prototype.slice.call(arguments);
+                            r.unshift(e), t.push(r)
+                        }
+                    }), e.Marker = n;
+                    var s = r.createElement("script");
+                    s.async = 1, s.src = "https://edge.marker.io/latest/shim.js";
+                    var i = r.getElementsByTagName("script")[0];
+                    i.parentNode.insertBefore(s, i)
+                }
+            }(window, document);
+        </script>
+    <?php
+    }
+}
+add_action('wp_head', 'marker_io');
+
+function marker_io_esmo()
+{
+    if (is_page('elevar-events')) {
+    ?>
+        <script>
+            window.markerConfig = {
+                project: '655b8c18734deb46c6f9516f',
+                source: 'snippet'
+            };
+
+            ! function(e, r, a) {
+                if (!e.__Marker) {
+                    e.__Marker = {};
+                    var t = [],
+                        n = {
+                            __cs: t
+                        };
+                    ["show", "hide", "isVisible", "capture", "cancelCapture", "unload", "reload", "isExtensionInstalled", "setReporter", "setCustomData", "on", "off"].forEach(function(e) {
+                        n[e] = function() {
+                            var r = Array.prototype.slice.call(arguments);
+                            r.unshift(e), t.push(r)
+                        }
+                    }), e.Marker = n;
+                    var s = r.createElement("script");
+                    s.async = 1, s.src = "https://edge.marker.io/latest/shim.js";
+                    var i = r.getElementsByTagName("script")[0];
+                    i.parentNode.insertBefore(s, i)
+                }
+            }(window, document);
+        </script>
+
+    <?php
+    }
+}
+add_action('wp_head', 'marker_io_esmo');
+
+function marker_io_pubs()
+{
+    if (is_page('elevar-publications')) {
+    ?>
+        <script>
+            window.markerConfig = {
+                project: '655b8a2b4d53d73dedf85484',
+                source: 'snippet'
+            };
+
+            ! function(e, r, a) {
+                if (!e.__Marker) {
+                    e.__Marker = {};
+                    var t = [],
+                        n = {
+                            __cs: t
+                        };
+                    ["show", "hide", "isVisible", "capture", "cancelCapture", "unload", "reload", "isExtensionInstalled", "setReporter", "setCustomData", "on", "off"].forEach(function(e) {
+                        n[e] = function() {
+                            var r = Array.prototype.slice.call(arguments);
+                            r.unshift(e), t.push(r)
+                        }
+                    }), e.Marker = n;
+                    var s = r.createElement("script");
+                    s.async = 1, s.src = "https://edge.marker.io/latest/shim.js";
+                    var i = r.getElementsByTagName("script")[0];
+                    i.parentNode.insertBefore(s, i)
+                }
+            }(window, document);
+        </script>
+
+<?php
+    }
+}
+add_action('wp_head', 'marker_io_pubs');

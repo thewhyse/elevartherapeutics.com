@@ -16,10 +16,10 @@ class DH_Popup_Admin {
 		// Admin Columns
 		add_filter( 'manage_edit-dh_popup_columns', array( $this, 'edit_columns' ) );
 		add_action( 'manage_dh_popup_posts_custom_column', array( $this, 'custom_columns' ), 2 );
-
+		
 		//
 		add_action( 'save_post', array( &$this, 'editor_frontend_save' ) );
-
+		
 		// Views and filtering
 		add_filter( 'views_edit-dh_popup', array( &$this, 'custom_order_views' ) );
 		add_filter( 'post_row_actions', array( $this, 'remove_row_actions' ), 10, 1 );
@@ -27,11 +27,11 @@ class DH_Popup_Admin {
 		add_filter('display_post_states', '__return_false');
 		//
 		add_action( 'add_meta_boxes', array( &$this, 'remove_meta_boxes' ), 1000 );
-
+		
 		//Ajax Status
 		add_action( 'wp_ajax_dh_popup_change_status', array( __CLASS__, 'ajax_change_status' ) );
 	}
-
+	
 	public function editor_frontend_save($post_id){
 		if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
 			return;
@@ -42,17 +42,17 @@ class DH_Popup_Admin {
 		if($popup_height = vc_post_param( 'popup_height' )){
 			update_post_meta($post_id, '_dh_popup_height', $popup_height);
 		}
-
+		
 	}
-
+	
 	public function init(){
 		add_action( 'admin_menu', array( $this, 'create_admin_menu' ));
 	}
-
+	
 	public function create_admin_menu(){
 		add_menu_page(__('Popup Builder','dh_popup'), __('Popup Builder','dh_popup'), 'edit_posts', 'dh_popup',null,DH_POPUP_URL.'/assets/images/visual_composer.png','50.5');
 	}
-
+	
 	public static function ajax_change_status(){
 		if (check_admin_referer( 'dh_popup_change_status' ) ) {
 			$popup_id = absint( $_GET['popup_id'] );
@@ -68,11 +68,11 @@ class DH_Popup_Admin {
 				}
 			}
 		}
-
+		
 		wp_safe_redirect( wp_get_referer() ? remove_query_arg( array( 'trashed', 'untrashed', 'deleted', 'ids' ), wp_get_referer() ) : admin_url( 'edit.php?post_type=dh_popup' ) );
 		die();
 	}
-
+	
 	public function render_popup_preview(){
 		global $wp_embed;
 		WPBMap::addAllMappedShortcodes();
@@ -87,7 +87,7 @@ class DH_Popup_Admin {
 		$post_id = (int) vc_request_param( 'post_id' );
 		/*TODO*/
 		$wp_embed->post_ID = $post_id;
-
+		
 		$template_unique_id = vc_request_param('template_unique_id');
 		$preview_data = new stdClass();
 		$preview_data->ID = -1;
@@ -113,7 +113,7 @@ class DH_Popup_Admin {
 		));
 		die();
 	}
-
+	
 	public function remove_meta_boxes() {
 		remove_meta_box('mymetabox_revslider_0', 'dh_popup', 'normal');
 		remove_meta_box( 'vc_teaser', 'dh_popup' , 'side' );
@@ -121,39 +121,39 @@ class DH_Popup_Admin {
 		remove_meta_box( 'commentstatusdiv', 'dh_popup' , 'normal' );
 		remove_meta_box( 'slugdiv', 'dh_popup' , 'normal' );
 	}
-
+	
 	public function custom_order_views($views){
 		unset( $views['publish'] );
-
+	
 		if ( isset( $views['trash'] ) ) {
 			$trash = $views['trash'];
 			unset( $views['draft'] );
 			unset( $views['trash'] );
 			$views['trash'] = $trash;
 		}
-
+	
 		return $views;
 	}
-
+	
 	public function add_row_actions($actions){
 		global $post;
 		$actions['delete'] = "<a class='submitdelete' id='dhvc_form_submitdelete' title='" . esc_attr( __( 'Delete this item permanently' ) ) . "' href='" . get_delete_post_link( $post->ID, '', true ) . "'>" . __( 'Delete Permanently' ) . "</a>";
 		return $actions;
 	}
-
+	
 	public function remove_row_actions( $actions ) {
 		if ( 'dh_popup' === get_post_type() ) {
 			unset( $actions['view'] );
 			unset( $actions['trash'] );
 			unset( $actions['inline hide-if-no-js'] );
 		}
-
+	
 		return $actions;
 	}
-
+	
 	public function edit_columns( $existing_columns ) {
 		$columns = array();
-
+	
 		$columns['cb']             			= isset($existing_columns['cb']) ? $existing_columns['cb'] : '';
 		$columns['popup_id']       			= __( 'ID', 'dh_popup' );
 		$columns['title']     				= __( 'Title', 'dh_popup' );
@@ -161,14 +161,14 @@ class DH_Popup_Admin {
 		$columns['conversions']     		= __( 'Conversions', 'dh_popup' );
 		$columns['rate']     				= __( 'Rate', 'dh_popup' );
 		$columns['status']     				= __( 'Status', 'dh_popup' );
-
+		
 		unset($existing_columns['title']);
 		unset($existing_columns['cb']);
 		unset($existing_columns['date']);
-
+	
 		return array_merge($columns,$existing_columns);
 	}
-
+	
 	public function custom_columns( $column ) {
 		global $post;
 		switch ( $column ) {
@@ -202,7 +202,7 @@ class DH_Popup_Admin {
 			break;
 		}
 	}
-
+	
 }
 
 new DH_Popup_Admin();
