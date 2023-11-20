@@ -2,8 +2,14 @@
 @import "../base/font";
 
 /* ******* ESMO 2023 PAGE ******* */
-
-
+div#esmo_cta_row {
+    z-index: 999;
+    div#book-meeting-cta {
+        a {
+            width: 285px;
+        }
+    }
+}
 div#esmo_23_hero_row {
         background-image: url(/wp-content/themes/conall-child/images/esmo-hero-1920x457.png);
         background-color: $white;
@@ -12,13 +18,44 @@ div#esmo_23_hero_row {
             padding-top: 80px;
             .wpb_column {
                 div#esmo-hero-h1 {
-                    margin-bottom: -1% !important;
+                    margin-bottom: 1% !important;
                     h1.elevar-h1 {
                         color: $white;
-                        font-size: 56px;
-                        line-height: 60px;
-                        letter-spacing: 4px;
-                        width: 802px;
+                    }
+                }
+                div#esmo-hero-h2 {
+                        padding-top: 0px !important;
+                        div#esmo-icon-container {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            width: 475px;
+                            margin: 0 auto !important;
+                            a {
+                                display: flex;
+                            }
+                            h2.elevar-h2 {
+                                color: $white;
+                                text-transform: initial;
+                                font-size: 39px;
+                                line-height: 26px;
+                                letter-spacing: 0px;
+                                font-weight: 700;
+                                margin: 0 !important;
+                            }
+                            img#esmo-icon {
+                                display: block;
+                                height: 50px;
+                                width: 50px;
+                                transition: all 0.75s;
+                            }
+                            img#esmo-icon:hover {
+                                content: url('/wp-content/themes/conall-child/images/location_icon_50x50-hover.svg');
+                                height: 50px;
+                                width: 50px;
+                                transform: scaleX(-1);
+                                transition: all 0.75s;
+                            }
                     }
                 }
                 div#esmo-date {
@@ -101,10 +138,39 @@ div#esmo_23_hero_row {
             }
         }
 }
+#map_popup_section_2023 {
+  display: none;
+  background-image: url("/wp-content/themes/conall-child/images/esmo-map-popover-1920x1072.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100%;
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  margin: 0 !important;
+  animation: fade-in .3s linear 1;
+  -webkit-animation: fade-in .3s linear 1;
+  -moz-animation: fade-in .3s linear 1;
+  -ms-animation: fade-in .3s linear 1;
+  #close-map-icon {
+    transition: all 0.5s;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background: url(/wp-content/themes/conall-child/dist/images/Close-Icon.png);
+    background-size: cover;
+    position: absolute;
+    top: 10vh;
+    right: 4vw;
+  }
+}
 div#spotlight-row {
         display: block !important;
         background: $white;
-        padding: 100px 0 80px !important;
+        padding: 100px 0 80px;
     div#col-spotlight {
         div.vc_column-inner {
             h4.elevar-h4 {
@@ -119,8 +185,12 @@ div#spotlight-row {
             #spotlight-body {
                 margin: 0;
                 div#col-spotlight-left {
-                    width: 60%;
-                    padding-right: 3%;
+                        border-right: 2px solid $reviewgrey;
+                        padding-right: 3%;
+                        div#spotlight-movie {
+                        margin-top: 30px;
+                        max-width: 362px;
+                        }
                         div#spotlight-bodycopy-strong {
                             margin-top: 20px;
                         }
@@ -159,15 +229,17 @@ div#spotlight-row {
                         }
                     }
                 }
-                div#col-spotlight-video {
-                    width: 40%;
-                    div#spotlight-movie {
-                        margin-top: 30px;
-                        max-width: 100%;
+                div#col-spotlight-right {
+                    padding-left: 10%;
+                    div#spotlight-image {
+                        margin-top: 30px !important;
+                        img.vc_single_image-img {
+                            border: 1px solid $black;
+                        }
                     }
                 }
                 div.vc_column-inner {
-                    max-width: 100%;
+                    max-width: 550px;
                 }
         }
     }
@@ -185,7 +257,6 @@ div#review-data-section {
         div#review-top {
             max-width: 1200px;
             margin-top: 40px;
-            margin-bottom: 40px !important;
             h3.elevar-h3 {
                 font-size: 24px;
                 line-height: 44px;
@@ -245,6 +316,82 @@ div#review-data-section {
         }
     }
 }
+div#explore-the-past {
+    background-color: $elevar_blue;
+    max-height: 100%;
+    padding: 140px 0 140px 0;
+    div#explore-heading {
+        h2.elevar-h2 {
+            font-size: 36px;
+            line-height: 40px;
+            color: $white;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            margin: 0;
+            padding-bottom: 60px;
+        }
+    }
+    div#explore-heading-mobile {
+        display: none;
+    }
+    div#explore-inner-row {
+        div.edgtf-full-section-inner {
+            display: flex;
+            div#col-left {
+                width: 40%;
+                div#explore-image {
+                    text-align: right;
+                    img {
+                        display: block;
+                    }
+                }
+            }
+            div#col-right {
+                width: 60%;
+                padding-left: 45px;
+                padding-top: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                div#explore-subheading {
+                    h3.elevar-h3 {
+                        font-size: 28px;
+                        line-height: 32px;
+                        color: $white;
+                        letter-spacing: 0;
+                        margin: 0;
+                        font-weight: 700;
+                        margin-bottom: 15px;
+                        text-transform: initial;
+                    }
+                }
+                div#explore-bodycopy {
+                    max-width: 530px;
+                    p.elevar-p {
+                        color: $white;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+div#explore-the-past:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.25;
+    background-image: url(/wp-content/themes/conall-child/images/explore-the-past-row-background.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: auto;
+}
 div#future-events-row {
     height: 450px;
     padding: 60px 0 0;
@@ -303,44 +450,7 @@ div#future-events-row {
   }
 
 }
-div#hubspot-container-row.elevar-section {
-    div#stay-connected {
-        max-width: 1088px;
-    }
-}
 @media all and (max-width: 1024px) {
-    div#spotlight-row {
-        div.vc_col-sm-3 {
-            width: 10%;
-        }
-        div.vc_col-sm-6 {
-            width: 80%;
-        }
-    }
-    div#review-data-section {
-        div.vc_col-sm-3 {
-            width: 10%;
-        }
-        div.vc_col-sm-6 {
-            width: 80%;
-        }
-    }
-    div#future-events-row {
-        div.vc_col-sm-3 {
-            width: 10%;
-        }
-        div.vc_col-sm-6 {
-            width: 80%;
-        }
-    }
-    div#hubspot-container-row.elevar-section {
-        div.vc_col-sm-3 {
-            width: 10%;
-        }
-        div.vc_col-sm-6 {
-            width: 80%;
-        }
-    }
     #future-events-row #future-events-row-title .edgtf-full-section-inner .wpb_column:first-child,
     #future-events-row #future-events-row-info-blocks .edgtf-full-section-inner .wpb_column:nth-child(1),
     #future-events-row #future-events-row-info-blocks .edgtf-full-section-inner .wpb_column:nth-child(4) {
@@ -350,21 +460,44 @@ div#hubspot-container-row.elevar-section {
     #future-events-row #future-events-row-info-blocks .edgtf-full-section-inner .wpb_column:nth-child(3) {
         text-align: left !important;
     }
+    .vc_col-sm-2 {
+        width: 6% !important;
+    }
+    .vc_col-sm-8 {
+        width: 88% !important;
+    }
+    div#esmo_cta_row {
+        top: 0;
+    }
+    .vc_col-sm-2-footer {
+        width: 15% !important;
+    }
     div#esmo_23_hero_row {
         min-height: 306px;
         background-image: url(/wp-content/themes/conall-child/images/esmo-hero-1024x306.png);
         bottom: 1px;
         div.clearfix.edgtf-full-section-inner {
-            padding-top: 30px;
+            padding-top: 54px;
             .wpb_column {
                 div#esmo-hero-h1 {
                     margin-bottom: 0 !important;
-                    h1.elevar-h1 {
-                        color: $white;
-                        font-size: 40px;
-                        line-height: 50px;
-                        letter-spacing: 4px;
-                        width: 600px;
+                }
+                div#esmo-hero-h2 {
+                    padding-top: 0 !important;
+                div#esmo-icon-container {
+                    width: 378px;
+                        h2.elevar-h2 {
+                            font-size: 32px;
+                            line-height: 21px;
+                        }
+                        img#esmo-icon  {
+                            width: 40px;
+                            height: 40px;
+                        }
+                        img#esmo-icon:hover {
+                            height: 40px;
+                            width: 40px;
+                        }
                     }
                 }
                 div#esmo-date {
@@ -401,10 +534,13 @@ div#hubspot-container-row.elevar-section {
             }
         }
     }
+    #map_popup_section_2023 {
+        background-image: url("/wp-content/themes/conall-child/images/esmo-map-popover-1024x647.png");
+    }
     div#spotlight-row {
         display: block !important;
         background: $white;
-        padding: 60px 0 50px !important;
+        padding: 60px 0 50px;
         div#col-spotlight {
             div.vc_column-inner {
             h4.elevar-h4 {
@@ -418,8 +554,12 @@ div#hubspot-container-row.elevar-section {
             #spotlight-body {
                 margin: 0;
                 div#col-spotlight-left {
-                    padding-right: 0;
-                    width: 50% !important;
+                    border-right: 2px solid $reviewgrey;
+                    padding-right: 5%;
+                        div#spotlight-movie {
+                        margin-top: 30px;
+                        max-width: 362px;
+                        }
                         div#spotlight-bodycopy-strong {
                             margin-top: 20px;
                         }
@@ -446,12 +586,14 @@ div#hubspot-container-row.elevar-section {
                             }
                         }
                 }
-                div#col-spotlight-video {
-                    width: 50% !important;
-                    div#spotlight-movie {
-                        margin-top: 30px;
-                        max-width: 362px;
+                div#col-spotlight-right {
+                    padding-left: 60px;
+                    div#spotlight-image {
+                        margin-top: 30px !important;
                     }
+                }
+                div.vc_column-inner {
+                    max-width: 550px;
                 }
             }
         }
@@ -463,7 +605,6 @@ div#hubspot-container-row.elevar-section {
             div#review-top {
                 max-width: 925px;
                 margin-top: 40px;
-                margin-bottom: 40px !important;
                 h3.elevar-h3 {
                     font-size: 24px;
                     line-height: 36px;
@@ -508,8 +649,72 @@ div#hubspot-container-row.elevar-section {
             }
         }
     }
+    div#explore-the-past {
+        div#explore-heading {
+            h2.elevar-h2 {
+                font-size: 32px;
+                line-height: 28px;
+                color: $white;
+                letter-spacing: 0;
+                margin: 0;
+            }
+        }
+        div#explore-inner-row {
+            div.edgtf-full-section-inner {
+                div#col-left {
+                    width: 50% !important;
+                    padding-right: 0px;
+                    div#explore-image {
+                        text-align: right;
+                        img {
+                            display: block;
+                        }
+                    }
+                }
+                div#col-right {
+                    width: 50% !important;
+                    max-width: unset;
+                    padding-left: 45px;
+                    padding-top: 0;
+                    div#explore-subheading {
+                        h3.elevar-h3 {
+                            font-size: 24px;
+                            line-height: 24px;
+                            color: $white;
+                            letter-spacing: 0;
+                            margin: 0;
+                            font-weight: 700;
+                            margin-bottom: 10px;
+
+                        }
+                    }
+                    div#explore-bodycopy {
+                        p.elevar-p {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    div#explore-the-past:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        opacity: 0.25;
+        background-image: url(/wp-content/themes/conall-child/images/explore-the-past-row-background.svg);
+        background-repeat: no-repeat;
+        background-position: 100% 50%;
+        background-size: auto;
+    }
     div#future-events-row {
-        height: 350px;
+        height: 450px;
         padding: 60px 0 0;
         background-position:
             bottom -1px left 0,
@@ -523,8 +728,8 @@ div#hubspot-container-row.elevar-section {
             url(/wp-content/themes/conall-child/images/esmo-footer-background-1024x504.png);
             div#col-future-events-title {
                 text-align: left !important;
-                width: 80% !important;
-                /* margin-bottom: 40px; */
+                width: 70% !important;
+                margin-bottom: 40px;
                     h4.elevar-h4 {
                     color: $white;
                     font-size: 24px;
@@ -538,6 +743,12 @@ div#hubspot-container-row.elevar-section {
             margin-bottom: 0px !important;
             }
             div#future-events-row-info-blocks {
+                div#col-infoblock-left {
+                    width: 45% !important
+                }
+                div#col-infoblock-right {
+                    width: 25% !important
+                }
                 p.footer-block {
                 color: $white;
                 font-size: 20px;
@@ -563,14 +774,55 @@ div#hubspot-container-row.elevar-section {
     }
 }
 @media all and (max-width: 768px) {
+    #future-events-row #future-events-row-info-blocks .edgtf-full-section-inner .wpb_column:nth-child(1), #future-events-row #future-events-row-info-blocks .edgtf-full-section-inner .wpb_column:nth-child(4) {
+        display: none !important;
+    }
+    .vc_col-sm-2 {
+        width: 6% !important;
+    }
+    .vc_col-sm-8 {
+        width: 88% !important;
+    }
+    .vc_col-sm-2-footer {
+        display: none !important;
+    }
+    div#esmo_cta_row {
+        div#book-meeting-cta {
+            right: 0;
+            left: 0;
+            margin: 0 auto;
+            a {
+                font-size: 20px;
+                margin: 0 auto;
+            }
+        }
+    }
     div#esmo_23_hero_row {
         height: 385px;
         div.clearfix.edgtf-full-section-inner {
-            padding-top: 60px;
+            padding-top: 80px;
             .wpb_column {
                 div#esmo-hero-h1 {
                     h1.elevar-h1 {
                         margin-top: 0;
+                    }
+                }
+                div#esmo-hero-h2 {
+                    padding-top: 10px !important;
+                div#esmo-icon-container {
+                    width: 330px;
+                        h2.elevar-h2 {
+                            font-size: 28px;
+                            line-height: 21px;
+                        }
+                        img#esmo-icon  {
+                            width: 35px;
+                            height: 35px;
+                        }
+                        img#esmo-icon:hover {
+                            height: 35px;
+                            width: 35px;
+                        }
                     }
                 }
                 div#esmo-date {
@@ -612,7 +864,7 @@ div#hubspot-container-row.elevar-section {
     div#spotlight-row {
         display: block !important;
         background: $white;
-        padding: 60px 0 40px !important;
+        padding: 60px 0 40px;
         div#col-spotlight {
             div.vc_column-inner {
             h4.elevar-h4 {
@@ -626,8 +878,12 @@ div#hubspot-container-row.elevar-section {
             #spotlight-body {
                 margin: 0;
                 div#col-spotlight-left {
-                    padding-right: 0;
-                    width: 60% !important;
+                    border-right: 2px solid $reviewgrey;
+                    padding-right: 32px;
+                        div#spotlight-movie {
+                        margin-top: 20px;
+                        width: 100%;
+                        }
                         div#spotlight-bodycopy-strong {
                             margin-top: 20px;
                         }
@@ -654,12 +910,17 @@ div#hubspot-container-row.elevar-section {
                             }
                         }
                 }
-                div#col-spotlight-video {
-                    width: 40% !important;
-                    div#spotlight-movie {
-                        margin-top: 20px;
-                        width: 100%;
+                div#col-spotlight-right {
+                    padding-left: 40px;
+                    div#spotlight-image {
+                        margin-top: 20px !important;
+                        img {
+                            width: 90%;
+                        }
                     }
+                }
+                div.vc_column-inner {
+                    max-width: 550px;
                 }
             }
         }
@@ -672,7 +933,6 @@ div#hubspot-container-row.elevar-section {
             div#review-top {
                 max-width: 700px;
                 margin-top: 40px;
-                margin-bottom: 40px !important;
                 h3.elevar-h3 {
                     font-size: 22px;
                     line-height: 32px;
@@ -713,8 +973,84 @@ div#hubspot-container-row.elevar-section {
             }
         }
     }
+    div#explore-the-past {
+        padding: 100px 0 70px 0;
+        div#explore-heading {
+            display: none;
+        }
+        div#explore-heading-mobile {
+            display: block;
+            max-width: 340px;
+            margin: 0 auto !important;
+            text-align: center;
+            h2.elevar-h2 {
+                font-size: 24px;
+                line-height: 28px;
+                color: $white;
+                letter-spacing: 0;
+                margin: 0;
+                padding-bottom: 50px !important;
+            }
+        }
+        div#explore-inner-row {
+            div.edgtf-full-section-inner {
+            flex-direction: column;
+                div#col-left {
+                    width: 100% !important;
+                    padding-right: 8%;
+                    padding-left: 8%;
+                    div.vc_column-inner {
+                        padding-left: 0;
+                        padding-right: 0;
+                        div#explore-image {
+                            text-align: center;
+                            img {
+                                width: 100%;
+                                display: block;
+                                padding-left: 0px;
+                            }
+                        }
+                    }
+                }
+                div#col-right {
+                    width: 100% !important;
+                    max-width: unset;
+                    padding-right: 8%;
+                    padding-left: 8%;
+                    padding-top: 0px;
+                    margin-top: 40px;
+                    div.vc_column-inner {
+                        max-width: 440px;
+                        padding-left: 0;
+                        padding-right: 0;
+                        div#explore-subheading {
+                            h3.elevar-h3 {
+                                font-size: 22px;
+                                line-height: 22px;
+                                color: $white;
+                                letter-spacing: 0;
+                                margin: 0;
+                                font-weight: 700;
+                                margin-bottom: 10px;
+                            }
+                        }
+                        div#explore-bodycopy {
+                            p.elevar-p {
+                                margin: 0;
+                                max-width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    div#explore-the-past:before {
+        content: "";
+        background-image: none;
+    }
     div#future-events-row {
-        height: 350px;
+        height: 360px;
         padding: 60px 0 0;
         background-position:
             bottom -1px left 0,
@@ -724,7 +1060,7 @@ div#hubspot-container-row.elevar-section {
             cover !important;
             div#col-future-events-title {
             text-align: left !important;
-            width: 80% !important;
+            width: 84% !important;
             margin-bottom: 0px;
                 h4.elevar-h4 {
                 color: $white;
@@ -739,6 +1075,12 @@ div#hubspot-container-row.elevar-section {
             margin-bottom: 0px !important;
             }
             div#future-events-row-info-blocks {
+                div#col-infoblock-left {
+                    width: 84% !important
+                }
+                div#col-infoblock-right {
+                    width: 84% !important
+                }
                 p.footer-block {
                 color: $white;
                 font-size: 18px;
@@ -756,7 +1098,8 @@ div#hubspot-container-row.elevar-section {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        /* margin-left: 6%; */
+        flex-direction: column !important;
+        margin-left: 6%;
             div#footer-block1,
             div#footer-block2,
             div#footer-block3 {
@@ -776,21 +1119,61 @@ div#hubspot-container-row.elevar-section {
     }
 }
 @media all and (max-width: 576px) {
+    #future-events-row #future-events-row-info-blocks .edgtf-full-section-inner .wpb_column:nth-child(1), #future-events-row #future-events-row-info-blocks .edgtf-full-section-inner .wpb_column:nth-child(4) {
+        display: none !important;
+    }
+    .vc_col-sm-2 {
+        width: 8% !important;
+        float: left;
+    }
+    .vc_col-sm-8 {
+        width: 84% !important;
+        float: left;
+    }
+    .vc_col-sm-2-footer {
+        display: none !important;
+    }
+    div#esmo_cta_row {
+        div#book-meeting-cta {
+            right: 0;
+            left: 0;
+        }
+    }
+
     div#esmo_23_hero_row {
         height: 100%;
         background-image: url(/wp-content/themes/conall-child/images/esmo-hero-414x405.png);
         aspect-ratio: 414/400;
         div.clearfix.edgtf-full-section-inner {
-            padding-top: 155px;
+            padding-top: 120px;
             .wpb_column {
                 padding: 0;
                 div#esmo-hero-h1 {
-                    h1.elevar-h1 {
-                        max-width: 500px;
-                        margin-top: 0 !important;
-                        margin: 0 auto;
-                        font-size: 34px;
-                        line-height: 36px;
+                h1.elevar-h1 {
+                    max-width: 535px;
+                    margin-top: 0 !important;
+                    margin: 0 auto;
+                }
+                }
+                div#esmo-hero-h2 {
+                    padding-top: 25px !important;
+                div#esmo-icon-container {
+                    width: 300px;
+                        h2.elevar-h2 {
+                            font-size: 25px;
+                            line-height: 36px;
+                            padding: 0 !important;
+                            margin: 0 !important;
+                        }
+                        img#esmo-icon  {
+                            width: 32px;
+                            height: 32px;
+                        }
+                        img#esmo-icon:hover {
+                            width: 32px;
+                            height: 32px;
+                            margin-top: 22px;
+                        }
                     }
                 }
                 div#esmo-date {
@@ -879,6 +1262,14 @@ div#hubspot-container-row.elevar-section {
 
         }
     }
+    #map_popup_section_2023 {
+        background-image: url("/wp-content/themes/conall-child/images/esmo-map-popover-414x583.png");
+        #close-map-icon {
+            width: 40px;
+            height: 40px;
+            top: 5vh;
+        }
+    }
     div#spotlight-row {
         display: block !important;
         background: $white;
@@ -900,7 +1291,12 @@ div#hubspot-container-row.elevar-section {
                 div#col-spotlight-left {
                     border-right: none;
                     padding-right: 0;
-                    width: 100% !important;
+                    width: 100%;
+                        div#spotlight-movie {
+                            margin-top: 7%;
+                            width: 100%;
+                            max-width: 100%;
+                        }
                         div#spotlight-bodycopy-strong {
                             margin-top: 20px;
                         }
@@ -927,12 +1323,23 @@ div#hubspot-container-row.elevar-section {
                             }
                         }
                 }
-                div#col-spotlight-video {
-                    width: 100% !important;
-                    div#spotlight-movie {
-                        margin-top: 7%;
+                div#col-spotlight-right {
+                    padding-left: 0px;
+                    width: 100%;
+                    div#spotlight-image {
+                        margin-top: 7% !important;
                         width: 100%;
-                        max-width: 100%;
+                        figure.wpb_wrapper.vc_figure {
+                            width: 100%;
+                            div.vc_single_image-wrapper.vc_box_border_grey {
+                                width: 100%;
+                                img {
+                                    width: 100%;
+                                    max-width: 100%;
+                                }
+                            }
+                        }
+
                     }
                 }
                 div.vc_column-inner {
@@ -955,7 +1362,6 @@ div#hubspot-container-row.elevar-section {
             div#review-top {
                 max-width: 500px;
                 margin-top: 30px;
-                margin-bottom: 30px !important;
             }
             div#review-bottom {
                 max-width: 500px;
@@ -987,8 +1393,87 @@ div#hubspot-container-row.elevar-section {
             }
         }
     }
+    div#explore-the-past {
+        padding: 75px 0 75px 0;
+        div#explore-heading-mobile {
+            max-width: 400px;
+            h2.elevar-h2 {
+                font-size: 28px;
+                line-height: 34px;
+                color: $white;
+                text-transform: uppercase;
+                margin: 0 auto;
+                text-align: center;
+                max-width: 100%;
+                padding-bottom: 25px !important;
+            }
+        }
+        div#explore-inner-row {
+            div.edgtf-full-section-inner {
+                div#col-left {
+                    width: 100% !important;
+                    padding-right: 0;
+                    padding-left: 0;
+                    div.vc_column-inner {
+                        padding: 0;
+                        div.wpb_wrapper {
+                            width: 100%;
+                            div#explore-image {
+                                text-align: center;
+                                margin: 35px 0 35px 0 !important;
+                                figure.wpb_wrapper.vc_figure {
+                                    width: 100%;
+                                    div.vc_single_image-wrapper.vc_box_border_grey {
+                                        width: 100%;
+                                        img {
+                                            width: 100%;
+                                            display: block;
+                                            padding-left: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                div#col-right {
+                    width: 100% !important;
+                    max-width: unset;
+                    padding-left: 0;
+                    padding-right: 0;
+                    padding-top: 0;
+                    margin-top: 0;
+                    div.vc_column-inner {
+                        padding: 0 !important;
+                        max-width: 100%;
+                        div#explore-subheading {
+                            h3.elevar-h3 {
+                                font-size: 24px;
+                                line-height: 28px;
+                                color: #ffffff;
+                                letter-spacing: 0;
+                                margin: 0;
+                                font-weight: 700;
+                                margin-bottom: 15px;
+                            }
+                        }
+                        div#explore-bodycopy {
+                            p.elevar-p {
+                                margin: 0;
+                                max-width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    div#explore-the-past:before {
+        content: "";
+        background-image: none;
+    }
     div#future-events-row {
-    height: 350px;
+    height: 480px;
     padding: 60px 0 0;
     background-position:
         bottom -1px left 0,
@@ -1002,7 +1487,7 @@ div#hubspot-container-row.elevar-section {
         url(/wp-content/themes/conall-child/images/esmo-footer-background-414x487.png);
         div#col-future-events-title {
         text-align: left !important;
-        width: 80% !important;
+        width: 84% !important;
         margin-bottom: 0px;
             h4.elevar-h4 {
             color: $white;
@@ -1018,6 +1503,12 @@ div#hubspot-container-row.elevar-section {
         margin-bottom: 0px !important;
         }
         div#future-events-row-info-blocks {
+            div#col-infoblock-left {
+                width: 84% !important
+            }
+            div#col-infoblock-right {
+                width: 84% !important
+            }
             p.footer-block {
             color: $white;
             font-size: 20px;
@@ -1035,8 +1526,8 @@ div#hubspot-container-row.elevar-section {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        flex-direction: row !important;
-        margin-left: 0;
+        flex-direction: column !important;
+        margin-left: 8%;
         div#footer-block1,
         div#footer-block2,
         div#footer-block3 {
@@ -1046,6 +1537,19 @@ div#hubspot-container-row.elevar-section {
     }
 }
 @media all and (max-width: 480px) {
+    #future-events-row #future-events-row-info-blocks .edgtf-full-section-inner .wpb_column:nth-child(1),
+    #future-events-row #future-events-row-info-blocks .edgtf-full-section-inner .wpb_column:nth-child(4) {
+        display: none !important;
+    }
+    .vc_col-sm-2 {
+        width: 8% !important;
+    }
+    .vc_col-sm-8 {
+        width: 84% !important;
+    }
+    .vc_col-sm-2-footer {
+        display: none !important;
+    }
     div#esmo_23_hero_row {
         aspect-ratio: 414/405;
         background-position: center top !important;
@@ -1057,6 +1561,30 @@ div#hubspot-container-row.elevar-section {
                     h1.elevar-h1 {
                         max-width: 345px;
                         margin-top: 0 !important;
+                    }
+                }
+                div#esmo-hero-h2 {
+                    padding-top: 20px !important;
+                div#esmo-icon-container {
+                        h2.elevar-h2 {
+                            text-transform: initial;
+                            font-size: 25px;
+                            line-height: 36px;
+                            letter-spacing: 0px;
+                            font-weight: 700;
+                            margin: 0;
+                        }
+                        img#esmo-icon  {
+                            display: block;
+                            width: 32px;
+                            height: 32px;
+                        }
+                        img#esmo-icon:hover {
+                            content: url('/wp-content/themes/conall-child/images/location_icon_50x50-hover.svg');
+                            width: 32px;
+                            height: 32px;
+                            margin-top: 22px;
+                        }
                     }
                 }
                 div#esmo-date {
@@ -1136,7 +1664,6 @@ div#hubspot-container-row.elevar-section {
     div#spotlight-row {
         display: block !important;
         background: $white;
-        padding: 0px 0 30px !important;
         div#col-spotlight {
             div.vc_column-inner {
                 padding: 0;
@@ -1154,6 +1681,10 @@ div#hubspot-container-row.elevar-section {
                     border-right: none;
                     padding-right: 0;
                     width: 100%;
+                        div#spotlight-movie {
+                        margin-top: 20px;
+                        width: 100%;
+                        }
                         div#spotlight-bodycopy-strong {
                             margin-top: 20px;
                         }
@@ -1180,10 +1711,11 @@ div#hubspot-container-row.elevar-section {
                             }
                         }
                 }
-                div#col-spotlight-video {
-                    div#spotlight-movie {
-                        margin-top: 20px;
-                        width: 100%;
+                div#col-spotlight-right {
+                    padding-left: 0px;
+                    width: 100%;
+                    div#spotlight-image {
+                        margin-top: 20px !important;
                     }
                 }
                 div.vc_column-inner {
@@ -1200,7 +1732,6 @@ div#hubspot-container-row.elevar-section {
             div#review-top {
                 max-width: 630px;
                 margin-top: 30px;
-                margin-bottom: 30px !important;
                 h3.elevar-h3 {
                     font-size: 24px;
                     line-height: 28px;
@@ -1242,6 +1773,65 @@ div#hubspot-container-row.elevar-section {
             }
         }
     }
+    div#explore-the-past {
+        div#explore-heading-mobile {
+            h2.elevar-h2 {
+                font-size: 20px;
+                line-height: 27px;
+                color: $white;
+                letter-spacing: 0;
+                margin: 0;
+            }
+        }
+        div#explore-inner-row {
+            div.edgtf-full-section-inner {
+                div#col-left {
+                    width: 100% !important;
+                    padding-right: 0;
+                    padding-left: 0;
+                    div#explore-image {
+                        text-align: right;
+                        img {
+                            width: 100%;
+                            display: block;
+                            padding-left: 0;
+                        }
+                    }
+                }
+                div#col-right {
+                    width: 100% !important;
+                    max-width: unset;
+                    padding-left: 0;
+                    padding-right: 0;
+                    padding-top: 0px;
+                    div#explore-subheading {
+                        h3.elevar-h3 {
+                            font-size: 24px;
+                            line-height: 28px;
+                            color: $white;
+                            letter-spacing: 0;
+                            margin: 0;
+                            font-weight: 700;
+                            margin-bottom: 10px;
+                        }
+                    }
+                    div#explore-bodycopy {
+                        p.elevar-p {
+                            font-size: 20px;
+                            line-height: 28px;
+                            color: $white;
+                            margin: 0;
+                            max-width: 275px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    div#explore-the-past:before {
+        content: "";
+        background-image: none;
+    }
     div#future-events-row {
     height: 100%;
     padding: 30px 0 70px 0;
@@ -1253,7 +1843,7 @@ div#hubspot-container-row.elevar-section {
         cover !important;
         div#col-future-events-title {
         text-align: left !important;
-        width: 80% !important;
+        width: 84% !important;
         margin-bottom: 0px;
             h4.elevar-h4 {
             color: $white;
@@ -1269,6 +1859,12 @@ div#hubspot-container-row.elevar-section {
         margin-bottom: 0px !important;
         }
         div#future-events-row-info-blocks {
+            div#col-infoblock-left {
+                width: 84% !important
+            }
+            div#col-infoblock-right {
+                width: 84% !important
+            }
             p.footer-block {
             color: $white;
             font-size: 18px;
@@ -1286,8 +1882,8 @@ div#hubspot-container-row.elevar-section {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
-            flex-direction: row !important;
-            margin-left: 0;
+            flex-direction: column !important;
+            margin-left: 8%;
             div#footer-block1,
             div#footer-block2,
             div#footer-block3 {
@@ -1303,12 +1899,32 @@ div#hubspot-container-row.elevar-section {
                 padding-top: 0;
                 .wpb_column {
                     div#esmo-hero-h1 {
-                        margin-top: 36px !important;
+                        margin-top: 60px !important;
                         margin-bottom: 0 !important;
                         h1.elevar-h1 {
                             font-size: 28px;
                             line-height: 34px;
-                            max-width: 290px;
+                        }
+                    }
+                    div#esmo-hero-h2 {
+                            padding-top: 8px !important;
+                            div#esmo-icon-container {
+                                width: 270px;
+                                a {
+                                    display: flex;
+                                }
+                                h2.elevar-h2 {
+                                    font-size: 23px;
+                                    line-height: 34px;
+                                }
+                                img#esmo-icon {
+                                    height: 28px;
+                                    width: 28px;
+                                }
+                                img#esmo-icon:hover {
+                                    height: 28px;
+                                    width: 28px;
+                                }
                         }
                     }
                     div#esmo-date-mobile {
@@ -1374,11 +1990,6 @@ div#hubspot-container-row.elevar-section {
                     }
                 }
             }
-    }
-    div#spotlight-row {
-        display: block !important;
-        background: $white;
-        padding: 0px 0 20px !important;
     }
 }
 /* ******* END ESMO 2023 PAGE ******* */
