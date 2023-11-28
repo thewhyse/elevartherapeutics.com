@@ -13,7 +13,7 @@ div#cam_hero_row {
             h1.elevar-h1 {
                 max-width: 370px;
                 padding: 0 0 15px 0;
-                border-bottom: 3px solid #fff;
+                border-bottom: 3px solid $white;
             }
         }
         div#cam-hero-h2 {
@@ -39,6 +39,7 @@ div#about-camrelizumab {
             }
         }
         div#study-numbers {
+            @include rivo-button-background();
             max-width: 100%;
             margin: 0 auto;
             padding: 30px 50px;
@@ -48,17 +49,13 @@ div#about-camrelizumab {
             -webkit-box-pack: center;
             -ms-flex-pack: center;
             justify-content: center;
-            background: rgb(79, 79, 144);
-            background: -o-linear-gradient(left, rgba(79, 79, 144, 1) 0%, rgba(48, 166, 190, 1) 100%);
-            background: -webkit-gradient(linear, left top, right top, from(rgba(79, 79, 144, 1)), to(rgba(48, 166, 190, 1)));
-            background: linear-gradient(90deg, rgba(79, 79, 144, 1) 0%, rgba(48, 166, 190, 1) 100%);
             border-radius: 10px;
             margin-top: 40px !important;
             margin-bottom: 30px !important;
             .wpb_wrapper {
                 width: 100%;
                 height: 65px;
-                color: #fff;
+                color: $white;
                 background: url(/wp-content/themes/conall-child/images/ppl-icon.png),
                 url(/wp-content/themes/conall-child/images/ppl-icon.png);
                 background-position: center left 0,
@@ -122,7 +119,7 @@ div#moa-section-cam {
         }
     }
 }
-div#for-patients-section {
+div#for-patients-section-cam {
   background-image: url(/wp-content/themes/conall-child/images/inquire-section-cam-bg-1922x545.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -132,25 +129,33 @@ div#for-patients-section {
         max-width: 850px;
         margin: 0 auto;
     }
-    #inquire-cta-deskt {
-        #inquire-cta-container {
+    div#inquire-cta-wrapper {
+        div#inquire-cta-container {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between;
-        width: 550px;
+        width: 620px;
         margin: 40px auto 0;
-        border: 1px solid #2b71b7;
+        border: 1px solid $elevar_blue;
         border-radius: 20px;
-        padding: 20px;
-        background: #fff;
-        .icon-block {
-            width: 95px;
+        padding: 25px 45px 25px 25px;
+        background: $white;
+        div.icon-block {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            width: 25%;
             height: 95px;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            align-content: center;
         }
-        .txt-block {
+        div.txt-block {
+            width: 75%;
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -180,7 +185,7 @@ div#for-patients-section {
         }
     }
 }
-div#your-interest-section {
+div#your-interest-section-cam {
     padding: 40px 0 40px 0;
     div.col-cam {
         div.vc_column-inner {
@@ -231,7 +236,7 @@ div#your-interest-section {
                 h1.elevar-h1 {
                     max-width: 300px;
                     padding: 0 0 15px 0;
-                    border-bottom: 3px solid #fff;
+                    border-bottom: 3px solid $white;
                 }
             }
             div#cam-hero-h2 {
@@ -256,7 +261,7 @@ div#your-interest-section {
                 padding: 20px 24px;
                 .wpb_wrapper {
                     height: 30px;
-                    color: #fff;
+                    color: $white;
                     background-size: 50px;
                     align-items: center;
                     p {
@@ -275,7 +280,7 @@ div#your-interest-section {
     }
     div#moa-section-cam {
         background: $gray_section_bg;
-        padding: 60px 0 60px 0;
+        padding: 50px 0 30px 0;
         span.font-w300 {
             font-weight: 300;
         }
@@ -286,47 +291,67 @@ div#your-interest-section {
         div.moa-info-block-video {
             width: 50vw;
             margin: 0 auto;
-            padding: 0 0 60px 0;
+            padding: 0 0 5px 0;
         }
         a.moa-button {
         text-align: center;
         }
     }
-    div#for-patients-section {
+    div#for-patients-section-cam {
             background-image: url(/wp-content/themes/conall-child/images/inquire-section-cam-bg-1024x440.png);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center center;
-            padding: 80px 0 80px 0;
+            padding: 107px 0 107px 0;
+        div.vc_col-sm-2:nth-child(1) {
+            width: 35%;
+        }
+        div.vc_col-sm-2:last-of-type {
+            display: none;
+        }
+        div.col-cam {
+            width: 65%;
+        }
         div.new-txt-block {
             max-width: 850px;
             margin: 0 auto;
         }
-        #inquire-cta-deskt {
-            #inquire-cta-container {
+        div#inquire-cta-wrapper {
+            div#inquire-cta-container {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
             -webkit-box-pack: justify;
             -ms-flex-pack: justify;
             justify-content: space-between;
-            width: 550px;
+            width: 470px;
             margin: 40px auto 0;
-            border: 1px solid #2b71b7;
+            border: 1px solid $elevar_blue;
             border-radius: 20px;
             padding: 20px;
-            background: #fff;
-            .txt-block {
+            background: $white;
+            align-items: center;
+            div.icon-block {
+                width: 25%;
+                height: 80px;
+                    img {
+                        width: 80px;
+                        height: 80px;
+                    }
+            }
+            div.txt-block {
+                width: 75%;
                 div {
                 text-align: left;
                 font-size: 20px;
                 color: $drk_gray;
+                display: inline-block;
                 }
             }
             }
         }
     }
-    div#your-interest-section {
+    div#your-interest-section-cam {
         padding: 40px 0 40px 0;
         div.col-cam {
             div.vc_column-inner {
@@ -347,12 +372,292 @@ div#your-interest-section {
         }
     }
 }
+@media all and (max-width: 878px) {
+    div#about-camrelizumab div.col-cam div#study-numbers {
+        width:100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 0;
+        background: inherit;
+        border-radius: inherit;
+        max-width: 506px;
+    }
+    div#about-camrelizumab div.col-cam div#study-numbers .wpb_wrapper {
+        width: 100%;
+        height: 320px;
+        color: $white;
+        background: url("/wp-content/themes/conall-child/images/study-numbers-5000-mobi.png") no-repeat center center;
+        background-position: inherit;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+
+    div#about-camrelizumab div.col-cam div#study-numbers p {
+        display: none
+    }
+    div#for-patients-section-cam {
+        height: auto;
+        padding: 40px 0 60px 0;
+        background: #f8f8f8;
+        background: linear-gradient(0deg,#f8f8f8 0,#f6f6f8 100%);
+    }
+}
+@media all and (max-width: 390px) {
+    div#about-camrelizumab div.col-cam div#study-numbers {
+        max-width: 280px;
+        aspect-ratio: 1/1;
+    }
+    div#about-camrelizumab div.col-cam div#study-numbers .wpb_wrapper {
+        width:100%;
+        height:auto;
+    }
+}
 @media all and (max-width: 768px) {
+    div#cam_hero_row {
+        div.clearfix.edgtf-full-section-inner {
+        div#cam-hero-h1 {
+            text-align: center;
+            h1.elevar-h1 {
+                max-width: 300px;
+                padding: 0 0 15px 0;
+                border-bottom: 3px solid $white;
+            }
+        }
+        div#cam-hero-h2 {
+            max-width: 400px;
+            margin: 0 auto !important;
+            h2 {
+            color: $white;
+            text-transform: inherit;
+            font-size: 28px;
+            line-height: 32px;
+            font-weight: 600;
+            letter-spacing: 0;
+            }
+        }
+    }
+    }
+    div#moa-section-cam {
+        background: $gray_section_bg;
+        padding: 60px 0 60px 0;
+        span.font-w300 {
+            font-weight: 300;
+        }
+        div.new-txt-block {
+            margin: 0 auto 80px auto !important;
+            max-width: 950px;
+        }
+        div.moa-info-block-video {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 0 60px 0;
+        }
+        a.moa-button {
+        text-align: center;
+        }
+    }
+    div#for-patients-section-cam {
+        background-position: center center;
+        padding: 60px 0 60px 0;
+        div.vc_col-sm-2:nth-child(1) {
+            width: 16.66666667%;
+        }
+        div.vc_col-sm-2:last-of-type {
+            display: block;
+        }
+        div.col-cam {
+            width: 66.66666667%;
+        }
+        div.new-txt-block {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+        div#inquire-cta-wrapper {
+            div#inquire-cta-container {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
+                width: 100%;
+                margin: 40px auto 0;
+                border: 1px solid $elevar_blue;
+                border-radius: 20px;
+                padding: 35px 40px;
+                background: $white;
+                align-items: center;
+                div.icon-block {
+                    width: 25%;
+                    height: 95px;
+                    img {
+                        text-align: center;
+                        margin: 0 auto;
+                        width: 95px;
+                        height: 95px;
+                    }
+                }
+                div.txt-block {
+                    width: 75%;
+                    margin-left: 20px;
+                    div {
+                        text-align: left;
+                        font-size: 20px;
+                        color: $drk_gray;
+                    }
+                }
+            }
+        }
+    }
+    div#your-interest-section-cam {
+        padding: 40px 0 40px 0;
+        div.col-cam {
+            div.vc_column-inner {
+                div.wpb_wrapper {
+                    div.purple-cta {
+                        margin: 20px auto 60px auto !important;
+                        text-align: center;
+                    }
+                    div#references-block {
+                    text-align: left;
+                        p {
+                            font-size: 12px !important;
+                            line-height: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media all and (max-width: 576px) {
+    div#your-interest-section-cam {
+        padding: 40px 0 0px 0;
+    }
+    div#cam_hero_row {
+            background-image:url("/wp-content/themes/conall-child/images/cam-hero-414x402.png");
+        div.clearfix.edgtf-full-section-inner {
+        div#cam-hero-h1 {
+            text-align: center;
+            h1.elevar-h1 {
+                max-width: 300px;
+                padding: 0 0 15px 0;
+                border-bottom: 3px solid $white;
+            }
+        }
+        div#cam-hero-h2 {
+            max-width: 400px;
+            margin: 0 auto !important;
+            h2 {
+            color: $white;
+            text-transform: inherit;
+            font-size: 28px;
+            line-height: 32px;
+            font-weight: 600;
+            letter-spacing: 0;
+            }
+        }
+    }
+    }
+    div#about-camrelizumab div.col-cam div#study-numbers .wpb_wrapper {
+        font-size: 4vw;
+        sup {
+            font-size: 8px !important;
+            top: -8px !important;
+        }
+    }
+    div#for-patients-section-cam {
+    padding: 50px 0;
+        div#inquire-cta-wrapper {
+            div#inquire-cta-container {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
+                width: 100%;
+                margin: 40px auto 0;
+                border: 1px solid $elevar_blue;
+                border-radius: 20px;
+                padding: 35px 40px;
+                background: $white;
+                align-items: center;
+                div.icon-block {
+                    width: 95px;
+                    height: 95px;
+                    img {
+                        text-align: center;
+                        margin: 0 auto;
+                        width: 95px;
+                        height: 95px;
+                    }
+                }
+            }
+        }
+    }
+    div#for-patients-section-cam div#inquire-cta-wrapper div#inquire-cta-container {
+        flex-direction: column;
+        width: 100%;
+        div.txt-block {
+            padding: 25px 0 25px 0;
+            div {
+                text-align: center;
+            }
+        }
+    }
 }
 @media all and (max-width: 480px) {
+    div#moa-section-cam div#moa-button a.edgtf-btn {
+        max-width: 100%;
+        min-width: unset;
+        text-align: left;
+    }
+    div#about-camrelizumab div.col-cam div#study-numbers .wpb_wrapper {
+        font-size: 4vw;
+        sup {
+            font-size: 7px !important;
+            top: -4px !important;
+        }
+    }
+    div#for-patients-section-cam div#inquire-cta-wrapper div#inquire-cta-container {
+        flex-direction: column;
+        width: 100%;
+        div.txt-block {
+            padding: 25px 0 0 0;
+            div {
+                font-size: 17px;
+                text-align: center;
+                a {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
 }
-@media all and (max-width: 420px) {
+@media all and (max-width: 320px) {
+    div#moa-section-cam div#moa-button a.edgtf-btn {
+        img.dl-icon {
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+    }
+    div#for-patients-section-cam div#inquire-cta-wrapper div#inquire-cta-container {
+        flex-direction: column;
+        width: 100%;
+        div.txt-block {
+            div {
+                font-size: 16px;
+                text-align: center;
+                a {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
 }
+
 /* ******* CAMRELIZUMAB PAGE END ******* */

@@ -120,6 +120,9 @@ input, textarea, select {
 br.line-break {
     display: block;
 }
+span.no-wrap {
+    white-space: nowrap;
+}
 div.cta-row {
     position: relative;
     top: 2px;
