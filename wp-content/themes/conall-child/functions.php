@@ -93,8 +93,86 @@ add_action('wp_head', 'hubspot_javascript');
 add_filter('body_class', 'custom_class');
 function custom_class($classes)
 {
+    if (is_front_page()) {
+        $classes[] = 'home-page';
+    }
     if (is_page('partnering')) {
-        $classes[] = 'partnering-page';
+        $classes[] = 'partner-page';
+    }
+    if (is_page('mission-values')) {
+        $classes[] = 'missionvalues-page';
+    }
+    if (is_page('elevar-leadership')) {
+        $classes[] = 'leadership-page';
+    }
+    if (is_page('elevar-board-of-directors')) {
+        $classes[] = 'bod-page';
+    }
+    if (is_page('camrelizumab')) {
+        $classes[] = 'cam-page';
+    }
+    if (is_page('rivoceranib-apatinib-elevar')) {
+        $classes[] = 'rivo-page';
+    }
+    if (is_page('elevar-expanded-access-program')) {
+        $classes[] = 'exaccessprogram-page';
+    }
+    if (is_page('news')) {
+        $classes[] = 'news-page';
+    }
+    if (is_page('elevar-publications')) {
+        $classes[] = 'publications-page';
+    }
+    if (is_page('elevar-events')) {
+        $classes[] = 'events-page';
+    }
+    if (is_page('investors')) {
+        $classes[] = 'investors-page';
+    }
+    if (is_page('elevar-careers')) {
+        $classes[] = 'careers-page';
+    }
+    if (is_page('contact-elevar')) {
+        $classes[] = 'contact-page';
+    }
+    if (is_page('privacy-policy')) {
+        $classes[] = 'privacypolicy-page';
+    }
+    if (is_page('european-privacy-notice')) {
+        $classes[] = 'europeanprivacy-page';
+    }
+    if (is_page('cookie-policy')) {
+        $classes[] = 'cookiepolicy-page';
+    }
+    if (is_page('aacr-2018')) {
+        $classes[] = 'aacr2018-page';
+    }
+    if (is_page('aacr2023')) {
+        $classes[] = 'aacr2023-page';
+    }
+    if (is_page('accp-2017')) {
+        $classes[] = 'accp2017-page';
+    }
+    if (is_page('asco-2017')) {
+        $classes[] = 'asco2017-page';
+    }
+    if (is_page('asco-2020')) {
+        $classes[] = 'asco2020-page';
+    }
+    if (is_page('asco-2022')) {
+        $classes[] = 'asco2022-page';
+    }
+    if (is_page('asco-sitc-2019')) {
+        $classes[] = 'ascositc2019-page';
+    }
+    if (is_page('esmo-2016')) {
+        $classes[] = 'esmo2016-page';
+    }
+    if (is_page('gynecological-oncology-2020')) {
+        $classes[] = 'gyno-oncology-page';
+    }
+    if (is_page('maintenance-page')) {
+        $classes[] = 'maintenance-page';
     }
     return $classes;
 }
