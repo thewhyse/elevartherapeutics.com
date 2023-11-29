@@ -544,6 +544,11 @@ form.hs-form-private {
             }
         }
 }
+label.hs-main-font-element {
+    color: red;
+    font-size: 14px;
+    line-height: 18px;
+}
 @media all and (max-width: 1024px) {
     div#hubspot-container-row {
         div#stay-connected {
