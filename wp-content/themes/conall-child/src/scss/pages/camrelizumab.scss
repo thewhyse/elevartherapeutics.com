@@ -279,7 +279,6 @@ div#your-interest-section-cam {
         }
     }
     div#moa-section-cam {
-        background: $gray_section_bg;
         padding: 50px 0 30px 0;
         span.font-w300 {
             font-weight: 300;
@@ -373,6 +372,9 @@ div#your-interest-section-cam {
     }
 }
 @media all and (max-width: 878px) {
+    div#about-camrelizumab {
+        padding: 50px 0 50px 0 !important;
+    }
     div#about-camrelizumab div.col-cam div#study-numbers {
         width:100%;
         height: auto;
@@ -389,12 +391,11 @@ div#your-interest-section-cam {
         background: url("/wp-content/themes/conall-child/images/study-numbers-5000-mobi.png") no-repeat center center;
         background-position: inherit;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         display: flex;
         justify-content: center;
         align-items: center
     }
-
     div#about-camrelizumab div.col-cam div#study-numbers p {
         display: none
     }
@@ -403,16 +404,15 @@ div#your-interest-section-cam {
         padding: 40px 0 60px 0;
         background: #f8f8f8;
         background: linear-gradient(0deg,#f8f8f8 0,#f6f6f8 100%);
-    }
-}
-@media all and (max-width: 390px) {
-    div#about-camrelizumab div.col-cam div#study-numbers {
-        max-width: 280px;
-        aspect-ratio: 1/1;
-    }
-    div#about-camrelizumab div.col-cam div#study-numbers .wpb_wrapper {
-        width:100%;
-        height:auto;
+        div.vc_col-sm-2:nth-child(1) {
+            width: 16.66666667%;
+        }
+        div.vc_col-sm-2:last-of-type {
+            display: block;
+        }
+        div.col-cam {
+            width: 66.66666667%;
+        }
     }
 }
 @media all and (max-width: 768px) {
@@ -441,8 +441,6 @@ div#your-interest-section-cam {
     }
     }
     div#moa-section-cam {
-        background: $gray_section_bg;
-        padding: 60px 0 60px 0;
         span.font-w300 {
             font-weight: 300;
         }
@@ -453,7 +451,7 @@ div#your-interest-section-cam {
         div.moa-info-block-video {
             width: 100%;
             margin: 0 auto;
-            padding: 0 0 60px 0;
+            padding: 0 0 5px 0;
         }
         a.moa-button {
         text-align: center;
@@ -462,15 +460,6 @@ div#your-interest-section-cam {
     div#for-patients-section-cam {
         background-position: center center;
         padding: 60px 0 60px 0;
-        div.vc_col-sm-2:nth-child(1) {
-            width: 16.66666667%;
-        }
-        div.vc_col-sm-2:last-of-type {
-            display: block;
-        }
-        div.col-cam {
-            width: 66.66666667%;
-        }
         div.new-txt-block {
             max-width: 850px;
             margin: 0 auto;
@@ -562,6 +551,9 @@ div#your-interest-section-cam {
         }
     }
     }
+    div#about-camrelizumab {
+        padding: 50px 0 0px 0 !important;
+    }
     div#about-camrelizumab div.col-cam div#study-numbers .wpb_wrapper {
         font-size: 4vw;
         sup {
@@ -617,7 +609,7 @@ div#your-interest-section-cam {
         text-align: left;
     }
     div#about-camrelizumab div.col-cam div#study-numbers .wpb_wrapper {
-        font-size: 4vw;
+        height: 250px;
         sup {
             font-size: 7px !important;
             top: -4px !important;
@@ -636,6 +628,16 @@ div#your-interest-section-cam {
                 }
             }
         }
+    }
+}
+@media all and (max-width: 390px) {
+    div#about-camrelizumab div.col-cam div#study-numbers {
+        max-width: 280px;
+        aspect-ratio: 4/3;
+    }
+    div#about-camrelizumab div.col-cam div#study-numbers .wpb_wrapper {
+        width:100%;
+        height:auto;
     }
 }
 @media all and (max-width: 320px) {

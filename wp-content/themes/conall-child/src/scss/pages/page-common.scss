@@ -23,6 +23,9 @@ h1, h1.elevar-h1 {
     letter-spacing: 3.5px;
     margin-top: 3% !important;
     margin-bottom: 3% !important;
+    &.center {
+        text-align: center;
+    }
 }
 h1, h1.elevar-heading {
     font-size: 40px;
@@ -30,6 +33,9 @@ h1, h1.elevar-heading {
     letter-spacing: 3.5px;
     margin-top: 3% !important;
     margin-bottom: 3% !important;
+    &.center {
+        text-align: center;
+    }
 }
 h2, h2.elevar-h2 {
     font-size: 36px;
@@ -37,6 +43,9 @@ h2, h2.elevar-h2 {
     letter-spacing: 2.5px;
     margin-top: 2% !important;
     margin-bottom: 2% !important;
+    &.center {
+        text-align: center;
+    }
 }
 h3, h3.elevar-h3 {
     font-size: 28px;
@@ -44,6 +53,9 @@ h3, h3.elevar-h3 {
     letter-spacing: 1.5px;
     margin-top: 2% !important;
     margin-bottom: 2% !important;
+    &.center {
+        text-align: center;
+    }
 }
 h4, h4.elevar-h4 {
     font-size: 26px;
@@ -78,6 +90,12 @@ p, p.elevar-p {
     margin-bottom: 25px;
     br:not(.line-break) {
         display: none;
+    }
+    &.center {
+        text-align: center;
+    }
+    &.strong {
+        font-weight: bold;
     }
 }
 div.cli-bar-message {

@@ -90,6 +90,15 @@ function hubspot_javascript() {
 }
 add_action('wp_head', 'hubspot_javascript');
 
+add_filter('body_class', 'custom_class');
+function custom_class($classes)
+{
+    if (is_page('partnering')) {
+        $classes[] = 'partnering-page';
+    }
+    return $classes;
+}
+
 // Add marker.io script to page head
 function marker_io_biz_partner() {
     if (is_page('partnering')) {
