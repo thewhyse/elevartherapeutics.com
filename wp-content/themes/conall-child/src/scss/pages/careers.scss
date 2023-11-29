@@ -112,8 +112,9 @@ div#core-values {
                     color: $white;
                     font-weight: 700;
                     font-size: 28px;
-                    line-height: 1.5em;
-                    letter-spacing: 2.5px;
+                    line-height: 42px;
+                    letter-spacing: 0.5px;
+                    text-transform: capitalize;
                 }
                 p {
                     color: $white;
@@ -746,7 +747,7 @@ div#careers-paylocity-row {
                         justify-content: center;
                         align-items: center;
                         float: unset !important;
-                        height: 60%;
+                        height: 55%;
                         padding-bottom: 0;
                         img.attachment-full.size-full {
                             max-width: 100%;
@@ -759,22 +760,22 @@ div#careers-paylocity-row {
                         width: 100%;
                         flex-direction: column;
                         justify-content: flex-start;
-                        height: 40%;
+                        height: 45%;
                         padding: 0 18% 0 18% !important;
                         align-items: center;
                         div.edgtf-iwt-title-holder {
                             text-align: center;
                             h5 {
                             font-size: 30px;
-                            line-height: 32px;
+                            line-height: 45px;
                             letter-spacing: initial;
                             text-align: center;
                             }
                         }
                         div.edgtf-iwt-text-holder {
                             p {
-                                font-size: 17px;
-                                line-height: 28px;
+                                font-size: 18px;
+                                line-height: 27px;
                                 text-align: center;
                             }
                         }
@@ -970,7 +971,7 @@ div#careers-paylocity-row {
                         display: inline-flex;
                         width: 100%;
                         flex-direction: column;
-                        justify-content: center;
+                        justify-content: flex-start;
                         height: 50%;
                         padding: 0 15% 0 15% !important;
                         align-items: center;
@@ -980,8 +981,8 @@ div#careers-paylocity-row {
                         width: 100%;
                     }
                     h5 {
-                        font-size: 30px;
-                        line-height: 32px;
+                        font-size: 38px;
+                        line-height: 45px;
                         letter-spacing: initial;
                         text-align: center;
                     }
