@@ -2,68 +2,15 @@
 @import "../base/font";
 
 /* ******* MISSION VALUES 2023 PAGE ******* */
-div#about_hero_row {
-        background-image:url("/wp-content/themes/conall-child/images/about-hero-1920x457.png");
-        div.clearfix.edgtf-full-section-inner {
-        div#about-hero-h1 {
-            text-align: center;
-            h1.elevar-h1 {
-                max-width: 295px;
-                padding: 0;
-                 border: none;
-            }
-        }
-    }
-}
-div#core-values.elevar-section.about {
-    padding: 0 5% 100px 5% !important;
-}
-@media all and (max-width: 1024px) {
-    div#about_hero_row {
-            background-image:url("/wp-content/themes/conall-child/images/about-hero-1024x306.png");
-                div.clearfix.edgtf-full-section-inner {
-            div#about-hero-h1 {
-                text-align: center;
-                h1.elevar-h1 {
-                    max-width: 260px;
-                    padding: 0 0 15px 0;
-                     border: none;
-                }
-            }
-        }
-    }
-    div#core-values.elevar-section.about {
-        padding-bottom: 100px !important;
-    }
-}
-@media all and (max-width: 768px) {
 
-}
-@media all and (max-width: 596px) {
+body.missionvalues-page {
     div#about_hero_row {
-            background-image:url("/wp-content/themes/conall-child/images/about-hero-414x405.png");
-                div.clearfix.edgtf-full-section-inner {
+            background-image:url("/wp-content/themes/conall-child/images/about-hero-1920x457.png");
+            div.clearfix.edgtf-full-section-inner {
             div#about-hero-h1 {
                 text-align: center;
                 h1.elevar-h1 {
-                    max-width: 260px;
-                    padding: 0 0 15px 0;
-                     border: none;
-                }
-            }
-        }
-    }
-    div#core-values.elevar-section.about {
-        padding-bottom: 50px !important;
-    }
-}
-@media all and (max-width: 480px) {
-    div#about_hero_row {
-                div.clearfix.edgtf-full-section-inner {
-            div#about-hero-h1 {
-                text-align: center;
-                h1.elevar-h1 {
-                    max-width: 300px;
+                    max-width: 295px;
                     padding: 0;
                     border: none;
                 }
@@ -71,7 +18,80 @@ div#core-values.elevar-section.about {
         }
     }
     div#core-values.elevar-section.about {
-        padding-bottom: 0px !important;
+        padding: 0 5% 100px 5% !important;
+    }
+    div#elevated-culture {
+        margin-top: 75px;
+    }
+}
+@media all and (max-width: 1024px) {
+    body.missionvalues-page {
+        div#about_hero_row {
+                background-image:url("/wp-content/themes/conall-child/images/about-hero-1024x306.png");
+                    div.clearfix.edgtf-full-section-inner {
+                div#about-hero-h1 {
+                    text-align: center;
+                    h1.elevar-h1 {
+                        max-width: 220px;
+                        padding: 0 0 15px 0;
+                        border: none;
+                    }
+                }
+            }
+        }
+        div#core-values.elevar-section.about {
+            padding-bottom: 50px !important;
+        }
+        div#elevated-culture {
+            margin-top: 50px;
+        }
+    }
+}
+@media all and (max-width: 768px) {
+}
+@media all and (max-width: 596px) {
+    body.missionvalues-page {
+        div#about_hero_row {
+                background-image:url("/wp-content/themes/conall-child/images/about-hero-414x405.png");
+                    div.clearfix.edgtf-full-section-inner {
+                div#about-hero-h1 {
+                    text-align: center;
+                    h1.elevar-h1 {
+                        max-width: 220px;
+                        padding: 0 0 15px 0;
+                        border: none;
+                    }
+                }
+            }
+        }
+        div#core-values.elevar-section.about {
+            padding-bottom: 50px !important;
+        }
+        div#elevated-culture {
+            margin-top: 50px;
+        }
+    }
+}
+@media all and (max-width: 480px) {
+    body.missionvalues-page {
+        div#about_hero_row {
+                    div.clearfix.edgtf-full-section-inner {
+                div#about-hero-h1 {
+                    text-align: center;
+                    h1.elevar-h1 {
+                        max-width: 220px;
+                        padding: 0;
+                        border: none;
+                    }
+                }
+            }
+        }
+        div#core-values.elevar-section.about {
+            padding-bottom: 0px !important;
+        }
+        div#elevated-culture {
+            margin-top: 50px;
+        }
     }
 }
 /* ******* END MISSION VALUES 2023 PAGE ******* */
