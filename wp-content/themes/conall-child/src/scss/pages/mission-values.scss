@@ -20,6 +20,87 @@ body.missionvalues-page {
     div#core-values.elevar-section.about {
         padding: 0 5% 100px 5% !important;
     }
+    div#core-values {
+        padding: 40px 0 60px 0 !important;
+        div.elevar-section {
+            h2 {
+                margin-bottom: 20px;
+            }
+        }
+        div.top-iconrow {
+            div.edgtf-full-section-inner {
+                .icon-topbox {
+                    div.vc_column-inner {
+                        max-width: 600px;
+                        max-height: 225px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        background-size: 100% !important;
+                        background-repeat: no-repeat;
+                        padding: 0;
+                        background-image: url("/wp-content/themes/conall-child/images/elevar-box-gradient-600x225.png") !important;
+                        background-position: center !important;
+                        aspect-ratio: 8/3;
+                    }
+                    .edgtf-iwt.edgtf-iwt-icon-left {
+                        display: flex;
+                        height: 100%;
+                    }
+                    .edgtf-iwt-icon-holder {
+                        display: inline-flex;
+                        width: 40%;
+                        aspect-ratio: 1/1;
+                        justify-content: center;
+                        align-items: center;
+                        float: unset !important;
+                    }
+                    .edgtf-iwt-content-holder {
+                        display: inline-flex;
+                        width: 60%;
+                        padding: 0 !important;
+                        flex-direction: column;
+                        justify-content: center;
+                        aspect-ratio: 8/5;
+                        .edgtf-iwt-title-holder {
+                            margin-bottom: 0;
+                        }
+                    }
+                    .wpb_wrapper {
+                        height: 100%;
+                        width: 100%;
+                    }
+                    h5 {
+                        color: $white;
+                        font-weight: 700;
+                        font-size: 28px;
+                        line-height: 42px;
+                        letter-spacing: 0.5px;
+                        text-transform: capitalize;
+                    }
+                    p {
+                        color: $white;
+                        font-weight: 400;
+                        font-size: 17px;
+                        line-height: 28px;
+                        width: 95%;
+                    }
+                }
+                .icon-topbox.vc_column_container {
+                    display: flex;
+                    padding: 1%;
+                    align-items: center;
+                }
+                .icon-topbox.vc_column_container:nth-child(odd) {
+                    justify-content: end;
+                }
+                .icon-topbox.vc_column_container:nth-child(even) {
+                    justify-content: flex-start;
+                }
+            }
+        }
+    }
     div#elevated-culture {
         margin-top: 75px;
     }
@@ -42,12 +123,171 @@ body.missionvalues-page {
         div#core-values.elevar-section.about {
             padding-bottom: 50px !important;
         }
+        div#core-values {
+            padding: 40px 0 60px 0 !important;
+            div.elevar-section {
+                h2 {
+                    margin-bottom: 20px;
+                }
+            }
+            div.top-iconrow {
+                div.edgtf-full-section-inner {
+                    .icon-topbox {
+                        div.vc_column-inner {
+                            max-width: 600px;
+                            max-height: 225px;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            background-size: 100% !important;
+                            background-repeat: no-repeat;
+                            padding: 0;
+                            background-image: url("/wp-content/themes/conall-child/images/elevar-box-gradient-600x225.png") !important;
+                            background-position: center !important;
+                        }
+                        .edgtf-iwt.edgtf-iwt-icon-left {
+                            display: flex;
+                            height: 100%;
+                        }
+                        .edgtf-iwt-icon-holder {
+                            display: inline-flex;
+                            width: 37%;
+                            aspect-ratio: 1/1;
+                            justify-content: center;
+                            align-items: center;
+                            float: unset !important;
+                            img.attachment-full.size-full {
+                            width: 73%;
+                            max-height: 100%;
+                            aspect-ratio: 1/1;
+                            }
+                        }
+                        .edgtf-iwt-content-holder {
+                            display: inline-flex;
+                            width: 63%;
+                            padding: 0 !important;
+                            flex-direction: column;
+                            justify-content: center;
+                        }
+                        .wpb_wrapper {
+                            height: 100%;
+                            width: 100%;
+                        }
+                        h5 {
+                            font-size: 25px;
+                            line-height: 28px;
+                            letter-spacing: 0;
+                        }
+                        p {
+                            font-size: 16px;
+                            line-height: 22px;
+                        }
+                        .career-icon2 {
+                            p {
+                            width: 100%;
+                            }
+                        }
+                    }
+                    .icon-topbox.vc_column_container {
+                        display: flex;
+                        padding: 1%;
+                    }
+                    .icon-topbox.vc_column_container:nth-child(odd) {
+                        justify-content: end;
+                    }
+                    .icon-topbox.vc_column_container:nth-child(even) {
+                        justify-content: flex-start;
+                    }
+                }
+            }
+        }
         div#elevated-culture {
             margin-top: 50px;
         }
     }
 }
 @media all and (max-width: 768px) {
+    body.missionvalues-page {
+        div#core-values {
+            padding: 40px 0 60px 0 !important;
+            div.elevar-section {
+                h2 {
+                    margin-bottom: 20px;
+                }
+            }
+            div.top-iconrow {
+                div.edgtf-full-section-inner {
+                    display: flex;
+                    flex-direction: column;
+                    .icon-topbox {
+                        width: 100%;
+                        display: flex;
+                        padding: 0;
+                        div.vc_column-inner {
+                            max-width: 600px;
+                            max-height: 225px;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            background-size: 100% 100% !important;
+                            background-repeat: no-repeat;
+                            padding: 0;
+                            background-image: url("/wp-content/themes/conall-child/images/elevar-box-gradient-600x225.png") !important;
+                            background-position: center !important;
+                        }
+                        .edgtf-iwt.edgtf-iwt-icon-left {
+                            display: flex;
+                            height: 100%;
+                        }
+                        .edgtf-iwt-icon-holder {
+                            display: inline-flex;
+                            width: 37%;
+                            aspect-ratio: 1/1;
+                            justify-content: center;
+                            align-items: center;
+                            float: unset !important;
+                            img {
+                                max-width: 75%;
+                            }
+                        }
+                        .edgtf-iwt-content-holder {
+                            display: inline-flex;
+                            width: 60%;
+                            padding: 0 !important;
+                            flex-direction: column;
+                            justify-content: center;
+                        }
+                        .wpb_wrapper {
+                            height: 100%;
+                            width: 100%;
+                        }
+                        h5 {
+                            font-size: 30px;
+                            line-height: 32px;
+                            letter-spacing: initial;
+                        }
+                        p {
+                            font-size: 16px;
+                            line-height: 22px;
+                        }
+                        .career-icon2 {
+                            p {
+                            width: 100%;
+                            }
+                        }
+                    }
+                    .icon-topbox.vc_column_container:nth-child(odd),
+                    .icon-topbox.vc_column_container:nth-child(even) {
+                        justify-content: center;
+                        padding: 0;
+                        margin-bottom: 40px;
+                    }
+                }
+            }
+        }
+    }
 }
 @media all and (max-width: 596px) {
     body.missionvalues-page {
@@ -66,6 +306,104 @@ body.missionvalues-page {
         }
         div#core-values.elevar-section.about {
             padding-bottom: 50px !important;
+        }
+        div#core-values {
+            padding: 40px 0 60px 0 !important;
+            div.elevar-section {
+                h2 {
+                    margin-bottom: 20px;
+                }
+            }
+            div.top-iconrow {
+                div.edgtf-full-section-inner {
+                    display: flex;
+                    flex-direction: column;
+                    .icon-topbox {
+                        width: 100%;
+                        display: flex;
+                        padding: 0;
+                        div.vc_column-inner {
+                            max-width: 100%;
+                            max-height: 100%;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            background-size: 100% 100% !important;
+                            background-repeat: no-repeat;
+                            padding: 0;
+                            aspect-ratio: 1/1;
+                            background-image: url("/wp-content/themes/conall-child/images/elevar_gradient_mob-350x365.png") !important;
+                            background-position: center !important;
+                        }
+                        .edgtf-iwt.edgtf-iwt-icon-left {
+                            display: flex;
+                            height: 100%;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        .edgtf-iwt-icon-holder {
+                            display: inline-flex;
+                            width: 100%;
+                            aspect-ratio: unset;
+                            justify-content: center;
+                            align-items: center;
+                            float: unset !important;
+                            height: 55%;
+                            padding-bottom: 0;
+                            img.attachment-full.size-full {
+                                max-width: 100%;
+                                width: 200px;
+                                height: auto;
+                            }
+                        }
+                        .edgtf-iwt-content-holder {
+                            display: inline-flex;
+                            width: 100%;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            height: 45%;
+                            padding: 0 18% 0 18% !important;
+                            align-items: center;
+                            div.edgtf-iwt-title-holder {
+                                text-align: center;
+                                h5 {
+                                font-size: 30px;
+                                line-height: 45px;
+                                letter-spacing: initial;
+                                text-align: center;
+                                }
+                            }
+                            div.edgtf-iwt-text-holder {
+                                p {
+                                    font-size: 18px;
+                                    line-height: 27px;
+                                    text-align: center;
+                                }
+                            }
+                            .wpb_wrapper {
+                                height: 100%;
+                                width: 100%;
+                            }
+                            .career-icon2 {
+                                p {
+                                width: 100%;
+                                }
+                            }
+                        }
+                        p {
+                            width: 100%;
+                        }
+                    }
+                    .icon-topbox.vc_column_container:nth-child(odd),
+                    .icon-topbox.vc_column_container:nth-child(even) {
+                        justify-content: center;
+                        padding: 0;
+                        margin-bottom: 40px;
+                    }
+                }
+            }
         }
         div#elevated-culture {
             margin-top: 50px;
@@ -88,6 +426,97 @@ body.missionvalues-page {
         }
         div#core-values.elevar-section.about {
             padding-bottom: 0px !important;
+        }
+        div#core-values {
+            padding: 40px 0 60px 0 !important;
+            div.elevar-section {
+                h2 {
+                    margin-bottom: 20px;
+                }
+            }
+            div.top-iconrow {
+                div.edgtf-full-section-inner {
+                    display: flex;
+                    flex-direction: column;
+                    .icon-topbox {
+                        width: 100%;
+                        display: flex;
+                        padding: 0;
+                        div.vc_column-inner {
+                            max-width: 100%;
+                            max-height: 100%;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            background-size: 100% 100% !important;
+                            background-repeat: no-repeat;
+                            padding: 0;
+                            aspect-ratio: 1/1;
+                            background-image: url("/wp-content/themes/conall-child/images/elevar_gradient_mob-350x365.png") !important;
+                            background-position: center !important;
+                        }
+                        .edgtf-iwt.edgtf-iwt-icon-left {
+                            display: flex;
+                            height: 100%;
+                            flex-direction: column;
+                        }
+                        .edgtf-iwt-icon-holder {
+                            display: inline-flex;
+                            width: 100%;
+                            aspect-ratio: unset;
+                            justify-content: center;
+                            align-items: flex-end;
+                            float: unset !important;
+                            height: 50%;
+                            padding-bottom: 0;
+                            img.attachment-full.size-full {
+                                max-width: 135px;
+                            }
+                        }
+                        .edgtf-iwt-content-holder {
+                            display: inline-flex;
+                            width: 100%;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            height: 50%;
+                            padding: 0 15% 0 15% !important;
+                            align-items: center;
+                        }
+                        .wpb_wrapper {
+                            height: 100%;
+                            width: 100%;
+                        }
+                        h5 {
+                            font-size: 38px;
+                            line-height: 45px;
+                            letter-spacing: initial;
+                            text-align: center;
+                        }
+                        p {
+                            font-size: 16px;
+                            line-height: 22px;
+                            text-align: center;
+                            margin: 0 !important;
+                        }
+                        .career-icon2 {
+                            p {
+                            width: 100%;
+                            }
+                        }
+                        p {
+                            width: 100%;
+                            margin: 0;
+                        }
+                    }
+                    .icon-topbox.vc_column_container:nth-child(odd),
+                    .icon-topbox.vc_column_container:nth-child(even) {
+                        justify-content: center;
+                        padding: 0;
+                        margin-bottom: 80px;
+                    }
+                }
+            }
         }
         div#elevated-culture {
             margin-top: 50px;
