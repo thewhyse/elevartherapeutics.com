@@ -6,8 +6,8 @@ var elevarurl = document.URL;
 slugContainsEvents = "elevar-events"
 var veeva1 = "US-ELVR-23-0075";
 var veeva2 = "US-ELVR-23-0047";
-var date1 = "10/2023";
-var date2 = "09/2023";
+var date1 = "12/2023";
+var date2 = "12/2023";
 if (window.location.href.indexOf(slugContainsEvents) > -1) {
     veevaString.innerHTML = veeva2;
     dateString.innerHTML = date2;
