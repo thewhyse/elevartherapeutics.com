@@ -29,7 +29,7 @@ body.missionvalues-page {
         }
         div.top-iconrow {
             div.edgtf-full-section-inner {
-                .icon-topbox {
+                div.icon-topbox {
                     div.vc_column-inner {
                         max-width: 600px;
                         max-height: 225px;
@@ -44,11 +44,11 @@ body.missionvalues-page {
                         background-position: center !important;
                         aspect-ratio: 8/3;
                     }
-                    .edgtf-iwt.edgtf-iwt-icon-left {
+                    div.edgtf-iwt.edgtf-iwt-icon-left {
                         display: flex;
                         height: 100%;
                     }
-                    .edgtf-iwt-icon-holder {
+                    div.edgtf-iwt-icon-holder {
                         display: inline-flex;
                         width: 40%;
                         aspect-ratio: 1/1;
@@ -56,18 +56,15 @@ body.missionvalues-page {
                         align-items: center;
                         float: unset !important;
                     }
-                    .edgtf-iwt-content-holder {
+                    div.edgtf-iwt-content-holder {
                         display: inline-flex;
                         width: 60%;
                         padding: 0 !important;
                         flex-direction: column;
                         justify-content: center;
                         aspect-ratio: 8/5;
-                        .edgtf-iwt-title-holder {
-                            margin-bottom: 0;
-                        }
                     }
-                    .wpb_wrapper {
+                    div.wpb_wrapper {
                         height: 100%;
                         width: 100%;
                     }
@@ -78,31 +75,70 @@ body.missionvalues-page {
                         line-height: 42px;
                         letter-spacing: 0.5px;
                         text-transform: capitalize;
+                        margin-top: 0 !important;
                     }
                     p {
                         color: $white;
                         font-weight: 400;
                         font-size: 17px;
                         line-height: 28px;
-                        width: 95%;
+                        width: 70%;
+                        margin: 0;
                     }
                 }
-                .icon-topbox.vc_column_container {
+                div.icon-topbox.vc_column_container {
                     display: flex;
                     padding: 1%;
                     align-items: center;
                 }
-                .icon-topbox.vc_column_container:nth-child(odd) {
+                div.icon-topbox.vc_column_container:nth-child(odd) {
                     justify-content: end;
                 }
-                .icon-topbox.vc_column_container:nth-child(even) {
+                div.icon-topbox.vc_column_container:nth-child(even) {
                     justify-content: flex-start;
+                }
+            }
+        }
+        div#icon-row1 {
+            div#topbox2 {
+                p {
+                    width: 50%;
                 }
             }
         }
     }
     div#elevated-culture {
         margin-top: 75px;
+    }
+}
+@media all and (max-width: 1500px) {
+    body.missionvalues-page {
+        div#core-values {
+            div#icon-row1 {
+                div#topbox2 {
+                    p {
+                        width: 70%;
+                    }
+                }
+            }
+        }
+        div#core-values div.top-iconrow {
+            div.edgtf-full-section-inner {
+                div.icon-topbox {
+                    div.edgtf-iwt-icon-holder {
+                        width: 37%;
+                        img.attachment-full.size-full {
+                            width: 73%;
+                            max-height: 100%;
+                            aspect-ratio: 1/1;
+                        }
+                    }
+                    div.edgtf-iwt-content-holder {
+                        width: 63%;
+                    }
+                }
+            }
+        }
     }
 }
 @media all and (max-width: 1024px) {
@@ -132,10 +168,14 @@ body.missionvalues-page {
             }
             div.top-iconrow {
                 div.edgtf-full-section-inner {
-                    .icon-topbox {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    div.icon-topbox {
+                        width: 100%;
                         div.vc_column-inner {
-                            max-width: 600px;
-                            max-height: 225px;
+                            max-width: 650px;
+                            max-height: 100%;
                             display: flex;
                             flex-direction: row;
                             justify-content: center;
@@ -146,11 +186,11 @@ body.missionvalues-page {
                             background-image: url("/wp-content/themes/conall-child/images/elevar-box-gradient-600x225.png") !important;
                             background-position: center !important;
                         }
-                        .edgtf-iwt.edgtf-iwt-icon-left {
+                        div.edgtf-iwt.edgtf-iwt-icon-left {
                             display: flex;
                             height: 100%;
                         }
-                        .edgtf-iwt-icon-holder {
+                        div.edgtf-iwt-icon-holder {
                             display: inline-flex;
                             width: 37%;
                             aspect-ratio: 1/1;
@@ -163,41 +203,42 @@ body.missionvalues-page {
                             aspect-ratio: 1/1;
                             }
                         }
-                        .edgtf-iwt-content-holder {
+                        div.edgtf-iwt-content-holder {
                             display: inline-flex;
                             width: 63%;
                             padding: 0 !important;
                             flex-direction: column;
                             justify-content: center;
                         }
-                        .wpb_wrapper {
+                        div.wpb_wrapper {
                             height: 100%;
                             width: 100%;
                         }
                         h5 {
-                            font-size: 25px;
-                            line-height: 28px;
+                            font-size: 28px;
+                            line-height: 45px;
                             letter-spacing: 0;
+                            margin-bottom: 0 !important;
                         }
                         p {
-                            font-size: 16px;
-                            line-height: 22px;
+                            width: 75%;
                         }
-                        .career-icon2 {
+                        div.career-icon2 {
                             p {
                             width: 100%;
                             }
                         }
                     }
-                    .icon-topbox.vc_column_container {
+                    div.icon-topbox.vc_column_container {
                         display: flex;
-                        padding: 1%;
+                        padding: 0 0 30px 0;
                     }
-                    .icon-topbox.vc_column_container:nth-child(odd) {
-                        justify-content: end;
+                    div.icon-topbox.vc_column_container:nth-child(odd) {
+                        justify-content: center;
                     }
-                    .icon-topbox.vc_column_container:nth-child(even) {
-                        justify-content: flex-start;
+                    div.icon-topbox.vc_column_container:nth-child(even) {
+                        justify-content: center;
+
                     }
                 }
             }
@@ -220,12 +261,12 @@ body.missionvalues-page {
                 div.edgtf-full-section-inner {
                     display: flex;
                     flex-direction: column;
-                    .icon-topbox {
+                    div.icon-topbox {
                         width: 100%;
                         display: flex;
                         padding: 0;
                         div.vc_column-inner {
-                            max-width: 600px;
+                            max-width: 100%;
                             max-height: 225px;
                             display: flex;
                             flex-direction: row;
@@ -237,11 +278,11 @@ body.missionvalues-page {
                             background-image: url("/wp-content/themes/conall-child/images/elevar-box-gradient-600x225.png") !important;
                             background-position: center !important;
                         }
-                        .edgtf-iwt.edgtf-iwt-icon-left {
+                        div.edgtf-iwt.edgtf-iwt-icon-left {
                             display: flex;
                             height: 100%;
                         }
-                        .edgtf-iwt-icon-holder {
+                        div.edgtf-iwt-icon-holder {
                             display: inline-flex;
                             width: 37%;
                             aspect-ratio: 1/1;
@@ -252,14 +293,14 @@ body.missionvalues-page {
                                 max-width: 75%;
                             }
                         }
-                        .edgtf-iwt-content-holder {
+                        div.edgtf-iwt-content-holder {
                             display: inline-flex;
                             width: 60%;
                             padding: 0 !important;
                             flex-direction: column;
                             justify-content: center;
                         }
-                        .wpb_wrapper {
+                        div.wpb_wrapper {
                             height: 100%;
                             width: 100%;
                         }
@@ -272,14 +313,14 @@ body.missionvalues-page {
                             font-size: 16px;
                             line-height: 22px;
                         }
-                        .career-icon2 {
+                        div.career-icon2 {
                             p {
                             width: 100%;
                             }
                         }
                     }
-                    .icon-topbox.vc_column_container:nth-child(odd),
-                    .icon-topbox.vc_column_container:nth-child(even) {
+                    div.icon-topbox.vc_column_container:nth-child(odd),
+                    div.icon-topbox.vc_column_container:nth-child(even) {
                         justify-content: center;
                         padding: 0;
                         margin-bottom: 40px;
@@ -308,6 +349,15 @@ body.missionvalues-page {
             padding-bottom: 50px !important;
         }
         div#core-values {
+            div#icon-row1 {
+                div#topbox2 {
+                    p {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        div#core-values {
             padding: 40px 0 60px 0 !important;
             div.elevar-section {
                 h2 {
@@ -318,7 +368,7 @@ body.missionvalues-page {
                 div.edgtf-full-section-inner {
                     display: flex;
                     flex-direction: column;
-                    .icon-topbox {
+                    div.icon-topbox {
                         width: 100%;
                         display: flex;
                         padding: 0;
@@ -336,19 +386,19 @@ body.missionvalues-page {
                             background-image: url("/wp-content/themes/conall-child/images/elevar_gradient_mob-350x365.png") !important;
                             background-position: center !important;
                         }
-                        .edgtf-iwt.edgtf-iwt-icon-left {
+                        div.edgtf-iwt.edgtf-iwt-icon-left {
                             display: flex;
                             height: 100%;
                             flex-direction: column;
                             justify-content: center;
                             align-items: center;
                         }
-                        .edgtf-iwt-icon-holder {
+                        div.edgtf-iwt-icon-holder {
                             display: inline-flex;
                             width: 100%;
                             aspect-ratio: unset;
                             justify-content: center;
-                            align-items: center;
+                            align-items: flex-end;
                             float: unset !important;
                             height: 55%;
                             padding-bottom: 0;
@@ -358,11 +408,11 @@ body.missionvalues-page {
                                 height: auto;
                             }
                         }
-                        .edgtf-iwt-content-holder {
+                        div.edgtf-iwt-content-holder {
                             display: inline-flex;
                             width: 100%;
                             flex-direction: column;
-                            justify-content: flex-start;
+                            justify-content: center;
                             height: 45%;
                             padding: 0 18% 0 18% !important;
                             align-items: center;
@@ -382,11 +432,11 @@ body.missionvalues-page {
                                     text-align: center;
                                 }
                             }
-                            .wpb_wrapper {
+                            div.wpb_wrapper {
                                 height: 100%;
                                 width: 100%;
                             }
-                            .career-icon2 {
+                            div.career-icon2 {
                                 p {
                                 width: 100%;
                                 }
@@ -396,8 +446,8 @@ body.missionvalues-page {
                             width: 100%;
                         }
                     }
-                    .icon-topbox.vc_column_container:nth-child(odd),
-                    .icon-topbox.vc_column_container:nth-child(even) {
+                    div.icon-topbox.vc_column_container:nth-child(odd),
+                    div.icon-topbox.vc_column_container:nth-child(even) {
                         justify-content: center;
                         padding: 0;
                         margin-bottom: 40px;
@@ -438,7 +488,7 @@ body.missionvalues-page {
                 div.edgtf-full-section-inner {
                     display: flex;
                     flex-direction: column;
-                    .icon-topbox {
+                    div.icon-topbox {
                         width: 100%;
                         display: flex;
                         padding: 0;
@@ -456,12 +506,12 @@ body.missionvalues-page {
                             background-image: url("/wp-content/themes/conall-child/images/elevar_gradient_mob-350x365.png") !important;
                             background-position: center !important;
                         }
-                        .edgtf-iwt.edgtf-iwt-icon-left {
+                        div.edgtf-iwt.edgtf-iwt-icon-left {
                             display: flex;
                             height: 100%;
                             flex-direction: column;
                         }
-                        .edgtf-iwt-icon-holder {
+                        div.edgtf-iwt-icon-holder {
                             display: inline-flex;
                             width: 100%;
                             aspect-ratio: unset;
@@ -474,7 +524,7 @@ body.missionvalues-page {
                                 max-width: 135px;
                             }
                         }
-                        .edgtf-iwt-content-holder {
+                        div.edgtf-iwt-content-holder {
                             display: inline-flex;
                             width: 100%;
                             flex-direction: column;
@@ -483,7 +533,7 @@ body.missionvalues-page {
                             padding: 0 15% 0 15% !important;
                             align-items: center;
                         }
-                        .wpb_wrapper {
+                        div.wpb_wrapper {
                             height: 100%;
                             width: 100%;
                         }
@@ -499,7 +549,7 @@ body.missionvalues-page {
                             text-align: center;
                             margin: 0 !important;
                         }
-                        .career-icon2 {
+                        div.career-icon2 {
                             p {
                             width: 100%;
                             }
@@ -509,8 +559,8 @@ body.missionvalues-page {
                             margin: 0;
                         }
                     }
-                    .icon-topbox.vc_column_container:nth-child(odd),
-                    .icon-topbox.vc_column_container:nth-child(even) {
+                    div.icon-topbox.vc_column_container:nth-child(odd),
+                    div.icon-topbox.vc_column_container:nth-child(even) {
                         justify-content: center;
                         padding: 0;
                         margin-bottom: 80px;
