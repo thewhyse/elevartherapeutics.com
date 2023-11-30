@@ -2,253 +2,268 @@
 @import "../base/font";
 
 /* ******* CONTACT US 2023 PAGE ******* */
-div#contact_us_hero_row {
-    background-image: url(/wp-content/themes/conall-child/images/contact-us-hero-1920x457.png);
-    background-color: $white!important;
-        div#contact-us-hero-h1 {
-            h1 {
-                max-width: 516px;
-                padding: 0;
-                margin: 0 auto !important;
-            }
-        }
-}
-div#contact-us-form-section {
-    padding: 75px 0 80px 0;
-}
-div#contact-us-double-row {
-        padding: 80px 0 40px 0;
-    background-color: #ffffff;
-    margin-bottom: 0px !important;
-    bottom: -1px;
-    div.edgtf-section-inner-margin.clearfix {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr;
-        grid-column-gap: 20px;
-        grid-row-gap: 0px;
-        div.col-elevar {
-            height: 100%;
-            width: 100%;
-            text-align: center;
-            div.elevar-text-block {
-                span.contact-us {
-                    margin: 10px 0 10px 0;
-                    display: block;
-                    color: $drk_gray3;
-                    font-size: 17px;
-                    line-height: 28px;
-                    font-weight: 600;
-                    letter-spacing: 0;
-                }
-                p {
-                    text-align: center;
-                }
-            }
-        }
-    }
-    div.col-elevar:nth-child(-n + 1) {
-        border-right: 1px solid #cddee8;
-        height: auto;
-    }
-    div.clearfix:before {
-        display: none;
-    }
-}
-@media only screen and (max-width: 1024px) {
+
+body.contact-page {
     div#contact_us_hero_row {
-    background-image: url(/wp-content/themes/conall-child/images/contact-us-hero-1024x306.png);
-    background-color: $white!important;
-        div#contact-us-hero-h1 {
-            h1 {
-                max-width: 516px;
-                padding: 0;
-                margin: 0 auto !important;
+        background-image: url(/wp-content/themes/conall-child/images/contact-us-hero-1920x457.png);
+        background-color: $white!important;
+            div#contact-us-hero-h1 {
+                h1 {
+                    max-width: 516px;
+                    padding: 0;
+                    margin: 0 auto !important;
+                }
             }
-        }
     }
     div#contact-us-form-section {
-        padding: 100px 0 80px 0;
+        padding: 75px 0 80px 0;
     }
     div#contact-us-double-row {
-        padding: 80px 0 100px 0;
-        div.edgtf-section-inner-margin.clearfix {
-            div.col-elevar {
-                height: 100%;
-                width: 100%;
-                text-align: center;
-                div.elevar-text-block {
-                    span.contact-us {
-                        margin: 10px 0 10px 0;
-                        display: block;
-                        color: $drk_gray3;
-                        font-size: 17px;
-                        line-height: 28px;
-                        font-weight: 600;
-                        letter-spacing: 0;
+        padding: 80px 0 40px 0;
+        background-color: #ffffff;
+        margin-bottom: 0px !important;
+        bottom: -1px;
+        div.clearfix.edgtf-section-inner {
+            width: 1000px;
+            div.edgtf-section-inner-margin.clearfix {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 1fr;
+                grid-column-gap: 20px;
+                grid-row-gap: 0px;
+                div.col-elevar {
+                    height: 100%;
+                    width: 100%;
+                    text-align: center;
+                    div.elevar-text-block {
+                        span.contact-us {
+                            margin: 10px 0 10px 0;
+                            display: block;
+                            color: $drk_gray3;
+                            font-size: 17px;
+                            line-height: 28px;
+                            font-weight: 600;
+                            letter-spacing: 0;
+                        }
+                        p {
+                            text-align: center;
+                        }
                     }
                 }
             }
+            div.col-elevar:nth-child(-n + 1) {
+                border-right: 1px solid #cddee8;
+                height: auto;
+            }
+            div.clearfix:before {
+                display: none;
+            }
         }
-        div.col-elevar:nth-child(-n + 1) {
-            border-right: 1px solid #cddee8;
-            height: auto;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+body.contact-page {
+    div#contact_us_hero_row {
+        background-image: url(/wp-content/themes/conall-child/images/contact-us-hero-1024x306.png);
+        background-color: $white!important;
+            div#contact-us-hero-h1 {
+                h1 {
+                    max-width: 516px;
+                    padding: 0;
+                    margin: 0 auto !important;
+                }
+            }
         }
-        div.clearfix:before {
-            display: none;
+        div#contact-us-form-section {
+            padding: 100px 0 80px 0;
+        }
+        div#contact-us-double-row {
+            padding: 80px 0 100px 0;
+            div.edgtf-section-inner-margin.clearfix {
+                div.col-elevar {
+                    height: 100%;
+                    width: 100%;
+                    text-align: center;
+                    div.elevar-text-block {
+                        span.contact-us {
+                            margin: 10px 0 10px 0;
+                            display: block;
+                            color: $drk_gray3;
+                            font-size: 17px;
+                            line-height: 28px;
+                            font-weight: 600;
+                            letter-spacing: 0;
+                        }
+                    }
+                }
+            }
+            div.col-elevar:nth-child(-n + 1) {
+                border-right: 1px solid #cddee8;
+                height: auto;
+            }
+            div.clearfix:before {
+                display: none;
+            }
         }
     }
 }
 @media only screen and (max-width: 768px) {
-    div#contact_us_hero_row {
-        div#contact-us-hero-h1 {
-            h1 {
-                max-width: 516px;
-                padding: 0;
-                margin: 0 auto !important;
-            }
-        }
-    }
-    div#contact-us-form-section {
-        padding: 50px 0 50px 0;
-    }
-    div#contact-us-double-row {
-        padding: 40px 0 0 0;
-        div.edgtf-section-inner-margin.clearfix {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(2, 1fr);
-            grid-column-gap: 0px;
-            grid-row-gap: 0px;
-            div.col-elevar {
-                height: 100%;
-                width: 100%;
-                text-align: center;
-                padding-bottom: 40px;
-                padding-top: 40px;
-                div.elevar-text-block {
-                    span.contact-us {
-                        margin: 10px 0 10px 0;
-                        display: block;
-                        color: $drk_gray3;
-                        font-size: 17px;
-                        line-height: 28px;
-                        font-weight: 600;
-                        letter-spacing: 0;
-                    }
+    body.contact-page {
+        div#contact_us_hero_row {
+            div#contact-us-hero-h1 {
+                h1 {
+                    max-width: 516px;
+                    padding: 0;
+                    margin: 0 auto !important;
                 }
             }
         }
-        div.col-elevar:nth-child(-n + 1) {
-            border-bottom: 1px solid #cddee8;
-            border-right: none ;
-            height: auto;
+        div#contact-us-form-section {
+            padding: 50px 0 50px 0;
         }
-        div.clearfix:before {
-            display: none;
+        div#contact-us-double-row {
+            padding: 40px 0 0 0;
+            div.edgtf-section-inner-margin.clearfix {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(2, 1fr);
+                grid-column-gap: 0px;
+                grid-row-gap: 0px;
+                div.col-elevar {
+                    height: 100%;
+                    width: 100%;
+                    text-align: center;
+                    padding-bottom: 40px;
+                    padding-top: 40px;
+                    div.elevar-text-block {
+                        span.contact-us {
+                            margin: 10px 0 10px 0;
+                            display: block;
+                            color: $drk_gray3;
+                            font-size: 17px;
+                            line-height: 28px;
+                            font-weight: 600;
+                            letter-spacing: 0;
+                        }
+                    }
+                }
+            }
+            div.col-elevar:nth-child(-n + 1) {
+                border-bottom: 1px solid #cddee8;
+                border-right: none ;
+                height: auto;
+            }
+            div.clearfix:before {
+                display: none;
+            }
         }
     }
 }
 @media only screen and (max-width: 576px) {
-    div#contact_us_hero_row {
-    background-image: url(/wp-content/themes/conall-child/images/contact-us-hero-414x405.png);
-    padding-top: 97.83%;
-    background-color: $white!important;
-        div#contact-us-hero-h1 {
-            h1 {
-                max-width: 516px;
-                padding: 0;
-                margin: 0 auto !important;
-            }
-        }
-    }
-    div#contact-us-form-section {
-        padding: 50px 0 50px 0;
-    }
-    div#contact-us-double-row {
-        padding: 40px 0 0 0;
-        div.edgtf-section-inner-margin.clearfix {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(2, 1fr);
-            grid-column-gap: 0px;
-            grid-row-gap: 0px;
-            div.col-elevar {
-                height: 100%;
-                width: 100%;
-                text-align: center;
-                padding-bottom: 40px;
-                padding-top: 40px;
-                div.elevar-text-block {
-                    span.contact-us {
-                        margin: 10px 0 10px 0;
-                        display: block;
-                        color: $drk_gray3;
-                        font-size: 17px;
-                        line-height: 28px;
-                        font-weight: 600;
-                        letter-spacing: 0;
-                    }
+    body.contact-page {
+        div#contact_us_hero_row {
+        background-image: url(/wp-content/themes/conall-child/images/contact-us-hero-414x405.png);
+        padding-top: 97.83%;
+        background-color: $white!important;
+            div#contact-us-hero-h1 {
+                h1 {
+                    max-width: 516px;
+                    padding: 0;
+                    margin: 0 auto !important;
                 }
             }
         }
-        div.col-elevar:nth-child(-n + 1) {
-            border-bottom: 1px solid #cddee8;
-            border-right: none ;
-            height: auto;
+        div#contact-us-form-section {
+            padding: 50px 0 50px 0;
         }
-        div.clearfix:before {
-            display: none;
+        div#contact-us-double-row {
+            padding: 40px 0 0 0;
+            div.edgtf-section-inner-margin.clearfix {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(2, 1fr);
+                grid-column-gap: 0px;
+                grid-row-gap: 0px;
+                div.col-elevar {
+                    height: 100%;
+                    width: 100%;
+                    text-align: center;
+                    padding-bottom: 40px;
+                    padding-top: 40px;
+                    div.elevar-text-block {
+                        span.contact-us {
+                            margin: 10px 0 10px 0;
+                            display: block;
+                            color: $drk_gray3;
+                            font-size: 17px;
+                            line-height: 28px;
+                            font-weight: 600;
+                            letter-spacing: 0;
+                        }
+                    }
+                }
+            }
+            div.col-elevar:nth-child(-n + 1) {
+                border-bottom: 1px solid #cddee8;
+                border-right: none ;
+                height: auto;
+            }
+            div.clearfix:before {
+                display: none;
+            }
         }
     }
 }
 @media only screen and (max-width: 480px) {
-    div#contact_us_hero_row {
-        div#contact-us-hero-h1 {
-            h1 {
-                max-width: 516px;
-                padding: 0;
-                margin: 0 auto !important;
-            }
-        }
-    }
-    div#contact-us-form-section {
-        padding: 50px 0 50px 0;
-    }
-    div#contact-us-double-row {
-        padding: 40px 0 0 0;
-        div.edgtf-section-inner-margin.clearfix {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(2, 1fr);
-            grid-column-gap: 0px;
-            grid-row-gap: 0px;
-            div.col-elevar {
-                height: 100%;
-                width: 100%;
-                text-align: center;
-                padding-bottom: 40px;
-                padding-top: 40px;
-                div.elevar-text-block {
-                    span.contact-us {
-                        margin: 10px 0 10px 0;
-                        display: block;
-                        color: $drk_gray3;
-                        font-size: 17px;
-                        line-height: 28px;
-                        font-weight: 600;
-                        letter-spacing: 0;
-                    }
+    body.contact-page {
+        div#contact_us_hero_row {
+            div#contact-us-hero-h1 {
+                h1 {
+                    max-width: 516px;
+                    padding: 0;
+                    margin: 0 auto !important;
                 }
             }
         }
-        div.col-elevar:nth-child(-n + 1) {
-            border-bottom: 1px solid #cddee8;
-            border-right: none ;
-            height: auto;
+        div#contact-us-form-section {
+            padding: 50px 0 50px 0;
         }
-        div.clearfix:before {
-            display: none;
+        div#contact-us-double-row {
+            padding: 40px 0 0 0;
+            div.edgtf-section-inner-margin.clearfix {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(2, 1fr);
+                grid-column-gap: 0px;
+                grid-row-gap: 0px;
+                div.col-elevar {
+                    height: 100%;
+                    width: 100%;
+                    text-align: center;
+                    padding-bottom: 40px;
+                    padding-top: 40px;
+                    div.elevar-text-block {
+                        span.contact-us {
+                            margin: 10px 0 10px 0;
+                            display: block;
+                            color: $drk_gray3;
+                            font-size: 17px;
+                            line-height: 28px;
+                            font-weight: 600;
+                            letter-spacing: 0;
+                        }
+                    }
+                }
+            }
+            div.col-elevar:nth-child(-n + 1) {
+                border-bottom: 1px solid #cddee8;
+                border-right: none ;
+                height: auto;
+            }
+            div.clearfix:before {
+                display: none;
+            }
         }
     }
 }
