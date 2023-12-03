@@ -18,15 +18,23 @@ body.missionvalues-page {
         }
     }
     div#mission-statement {
+        padding: 50px 0 50px 0 !important;
         p {
             font-weight: bold;
         }
     }
-    div#core-values.elevar-section.about {
-        padding: 0 5% 100px 5% !important;
+    div#passionate-video-section {
+        background-color: $lt_gray2;
+        padding: 55px 0 100px 0;
+        p {
+            font-weight: bold;
+        }
+        div#passionate-video {
+            margin: 40px 0 40px 0;
+        }
     }
     div#core-values {
-        padding: 40px 0 60px 0 !important;
+        padding: 50px 0 60px 0 !important;
         div.elevar-section {
             h2 {
                 margin-bottom: 20px;
@@ -161,11 +169,11 @@ body.missionvalues-page {
                 }
             }
         }
-        div#core-values.elevar-section.about {
-            padding-bottom: 50px !important;
+        div#mission-statement {
+            
         }
         div#core-values {
-            padding: 40px 0 60px 0 !important;
+            padding: 40px 0 50px 0 !important;
             div.elevar-section {
                 h2 {
                     margin-bottom: 20px;
@@ -350,9 +358,6 @@ body.missionvalues-page {
                 }
             }
         }
-        div#core-values.elevar-section.about {
-            padding-bottom: 50px !important;
-        }
         div#core-values {
             div#icon-row1 {
                 div#topbox2 {
@@ -363,7 +368,7 @@ body.missionvalues-page {
             }
         }
         div#core-values {
-            padding: 40px 0 60px 0 !important;
+            padding: 40px 0 40px 0 !important;
             div.elevar-section {
                 h2 {
                     margin-bottom: 20px;
@@ -479,11 +484,8 @@ body.missionvalues-page {
                 }
             }
         }
-        div#core-values.elevar-section.about {
-            padding-bottom: 0px !important;
-        }
         div#core-values {
-            padding: 40px 0 60px 0 !important;
+            padding: 60px 0 40px 0 !important;
             div.elevar-section {
                 h2 {
                     margin-bottom: 20px;
@@ -574,7 +576,7 @@ body.missionvalues-page {
             }
         }
         div#elevated-culture {
-            margin-top: 50px;
+            margin-top: 0px;
         }
     }
 }
