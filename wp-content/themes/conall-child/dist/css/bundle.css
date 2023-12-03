@@ -281,7 +281,7 @@ footer div#temp-footer-container div#bottom-links .policies a.policy-links {
   font-size: 12px;
   line-height: 18px;
   text-decoration: underline;
-  font-weight: 600;
+  font-weight: 400;
   transition: all 0.5s;
 }
 footer div#temp-footer-container div#bottom-links .policies span.vert-divi {
@@ -9064,9 +9064,6 @@ body.missionvalues-page div#about_hero_row div.clearfix.edgtf-full-section-inner
   max-width: 295px;
   padding: 0;
   border: none;
-}
-body.missionvalues-page div#mission-statement p {
-  font-weight: bold;
 }
 body.missionvalues-page div#core-values.elevar-section.about {
   padding: 0 5% 100px 5% !important;
