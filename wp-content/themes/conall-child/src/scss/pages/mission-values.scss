@@ -30,7 +30,14 @@ body.missionvalues-page {
             font-weight: bold;
         }
         div#passionate-video {
+            display: none;
             margin: 40px 0 40px 0;
+        }
+        div#video-placeholder {
+            margin: 40px 0 40px 0;
+            img {
+
+            }
         }
     }
     div#core-values {
@@ -170,7 +177,7 @@ body.missionvalues-page {
             }
         }
         div#mission-statement {
-            
+
         }
         div#core-values {
             padding: 40px 0 50px 0 !important;
