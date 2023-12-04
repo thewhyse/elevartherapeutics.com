@@ -47,12 +47,12 @@ body.partner-page {
     }
     div.licensing-row {
         div.col-partnership {
-            max-width: 1070px;
             margin: 0 auto;
             float: unset;
         }
     }
     div#join-partnership {
+        padding-bottom: 35px !important;
         div#join-partnership-heading {
             h2.elevar-h2.center {
 
@@ -174,9 +174,9 @@ body.partner-page {
         }
     }
     div#partner-team {
-        padding: 50px 0 150px 0;
+        padding: 50px 0 75px 0;
         div.clearfix.edgtf-section-inner {
-            width: 1520px;
+
             div#partner-team-heading-row {
                 h2.elevar-h2 {
                     padding-bottom: 25px;
@@ -243,7 +243,7 @@ body.partner-page {
     div#investors-kol-download {
         padding: 0px 0 80px 0;
         div.clearfix.edgtf-section-inner {
-            width: 1520px;
+
             div#kol-3 {
                 div.kol-line {
                     margin-top: 0;
@@ -254,6 +254,7 @@ body.partner-page {
                     margin-bottom: 30px !important;
                 }
             }
+
             div#kol-image {
                 text-align: left;
                 img {
@@ -422,20 +423,6 @@ body.partner-page {
                 }
             }
             div#partner-development-block {
-                @include rivo-button-background();
-                max-width: 100%;
-                margin: 0 auto;
-                padding: 20px 70px;
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                justify-content: center;
-                border-radius: 10px;
-                margin-top: 40px !important;
-                margin-bottom: 40px !important;
-                align-items: center;
                 p.pdb-copy {
                     font-size: 24px;
                     line-height: 40px;
@@ -524,9 +511,9 @@ body.partner-page {
             }
         }
         div#partner-team {
-            padding: 80px 0 150px 0;
+            padding: 80px 0 75px 0;
             div.clearfix.edgtf-section-inner {
-                width: 1300px;
+
                 div#partner-team-heading-row {
                     h2.elevar-h2 {
                         padding-bottom: 25px;
@@ -592,7 +579,7 @@ body.partner-page {
         }
         div#investors-kol-download {
             div.clearfix.edgtf-section-inner {
-                width: 1300px;
+
             }
         }
         div#partner-hubspot-form {
@@ -745,20 +732,6 @@ body.partner-page {
                 }
             }
             div#partner-development-block {
-                @include rivo-button-background();
-                max-width: 100%;
-                margin: 0 auto;
-                padding: 20px 70px;
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                justify-content: center;
-                border-radius: 10px;
-                margin-top: 40px !important;
-                margin-bottom: 40px !important;
-                align-items: center;
                 p.pdb-copy {
                     font-size: 24px;
                     line-height: 40px;
@@ -847,9 +820,9 @@ body.partner-page {
             }
         }
         div#partner-team {
-            padding: 80px 0 150px 0;
+            padding: 80px 0 80px 0;
             div.clearfix.edgtf-section-inner {
-                width: 950px;
+
                 div#partner-team-heading-row {
                     h2.elevar-h2 {
                         padding-bottom: 25px;
@@ -915,7 +888,7 @@ body.partner-page {
         }
         div#investors-kol-download {
             div.clearfix.edgtf-section-inner {
-                width: 950px;
+
             }
         }
         div#partner-hubspot-form {
@@ -1068,20 +1041,8 @@ body.partner-page {
                 }
             }
             div#partner-development-block {
-                @include rivo-button-background();
                 max-width: 640px;
-                margin: 0 auto;
                 padding: 20px 20px;
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                justify-content: center;
-                border-radius: 10px;
-                margin-top: 40px !important;
-                margin-bottom: 40px !important;
-                align-items: center;
                 p.pdb-copy {
                     font-size: 21px;
                     line-height: 28px;
@@ -1172,7 +1133,7 @@ body.partner-page {
         div#partner-team {
             padding: 65px 0 65px 0;
             div.clearfix.edgtf-section-inner {
-                width: 768px;
+
                 div#partner-team-heading-row {
                     h2.elevar-h2 {
                         padding-bottom: 20px;
@@ -1244,7 +1205,7 @@ body.partner-page {
         div#investors-kol-download {
 
             div.clearfix.edgtf-section-inner {
-                width: 768px;
+
                 div#kol-image {
                     img {
                         width: 340px;
@@ -1414,20 +1375,6 @@ body.partner-page {
                 }
             }
             div#partner-development-block {
-                @include rivo-button-background();
-                max-width: 640px;
-                margin: 0 auto;
-                padding: 20px 20px;
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                justify-content: center;
-                border-radius: 10px;
-                margin-top: 40px !important;
-                margin-bottom: 40px !important;
-                align-items: center;
                 p.pdb-copy {
                     font-size: 21px;
                     line-height: 28px;
@@ -1518,7 +1465,7 @@ body.partner-page {
         div#partner-team {
             padding: 65px 0 65px 0;
             div.clearfix.edgtf-section-inner {
-                width: 576px;
+
                 div#partner-team-heading-row {
                     h2.elevar-h2 {
                         padding-bottom: 20px;
@@ -1589,7 +1536,7 @@ body.partner-page {
         }
         div#investors-kol-download {
             div.clearfix.edgtf-section-inner {
-                width: 576px;
+
                 a.edgtf-btn.video {
                     width: 340px;
                 }
@@ -1750,20 +1697,8 @@ body.partner-page {
                 }
             }
             div#partner-development-block {
-                @include rivo-button-background();
-                max-width: 350px;
-                margin: 0 auto;
+                max-width: 100%;
                 padding: 30px;
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                justify-content: center;
-                border-radius: 10px;
-                margin-top: 40px !important;
-                margin-bottom: 40px !important;
-                align-items: center;
                 p.pdb-copy {
                     font-size: 21px;
                     line-height: 28px;
@@ -1859,7 +1794,7 @@ body.partner-page {
         div#partner-team {
             padding: 65px 0 65px 0;
             div.clearfix.edgtf-section-inner {
-                width: 420px;
+
                 div#partner-team-heading-row {
                     h2.elevar-h2 {
                         padding-bottom: 20px;
@@ -1936,7 +1871,7 @@ body.partner-page {
         }
         div#investors-kol-download {
             div.clearfix.edgtf-section-inner {
-                width: 420px;
+
                 div#kol-image {
                     text-align: center;
                     figure.wpb_wrapper.vc_figure {
@@ -2120,20 +2055,6 @@ body.partner-page {
                 }
             }
             div#partner-development-block {
-                @include rivo-button-background();
-                max-width: 350px;
-                margin: 0 auto;
-                padding: 30px;
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                justify-content: center;
-                border-radius: 10px;
-                margin-top: 40px !important;
-                margin-bottom: 40px !important;
-                align-items: center;
                 p.pdb-copy {
                     font-size: 21px;
                     line-height: 28px;
@@ -2229,7 +2150,7 @@ body.partner-page {
         div#partner-team {
             padding: 65px 0 65px 0;
             div.clearfix.edgtf-section-inner {
-                width: 300px;
+
                 div#partner-team-heading-row {
                     h2.elevar-h2 {
                         padding-bottom: 20px;
@@ -2307,7 +2228,7 @@ body.partner-page {
         div#investors-kol-download {
             padding: 0px 0 80px 0;
             div.clearfix.edgtf-section-inner {
-                width: 300px;
+
                 div#kol-3 {
                     h2 {
                         margin-top: 40px !important;
