@@ -447,11 +447,13 @@ div#your-interest-section {
         padding: 0;
         background: inherit;
         border-radius: inherit;
-        max-width: 320px;
+        max-width: 100%;
+        aspect-ratio: 1/1;
     }
+
     div#about-rivoceranib div.col-rivo div#study-numbers .wpb_wrapper {
         width: 100%;
-        height: 320px;
+        height: 100%;
         color: $white;
         background: url("/wp-content/themes/conall-child/images/study-numbers-mobi.png") no-repeat center center;
         background-position: inherit;
