@@ -76,7 +76,7 @@ body.partner-page {
             @include rivo-button-background();
             max-width: 100%;
             margin: 0 auto;
-            padding: 20px 70px;
+            padding: 20px 250px;
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -374,20 +374,13 @@ body.partner-page {
 @media all and (max-width: 1550px) {
     body.partner-page {
         div#partner_cta_row {
-            z-index: 999;
                 div#connect-cta {
                     a {
-                        width: 306px;
                         img.pdf-icon {
-                            width: 30px;
-                            height: 38px;
-                            margin-right: 15px;
                         }
                     }
                     & div.wpb_wrapper {
-                        display: flex;
-                        width: 632px;
-                        justify-content: space-between;
+                        /* width: 632px; */
                     }
                 }
         }
@@ -680,20 +673,12 @@ body.partner-page {
 @media all and (max-width: 1200px) {
     body.partner-page {
         div#partner_cta_row {
-            z-index: 999;
                 div#connect-cta {
                     a {
-                        width: 306px;
                         img.pdf-icon {
-                            width: 30px;
-                            height: 38px;
-                            margin-right: 15px;
                         }
                     }
                     & div.wpb_wrapper {
-                        display: flex;
-                        width: 632px;
-                        justify-content: space-between;
                     }
                 }
         }
@@ -986,20 +971,13 @@ body.partner-page {
 @media all and (max-width: 1024px) {
     body.partner-page {
         div#partner_cta_row {
-            z-index: 999;
                 div#connect-cta {
                     a {
-                        width: 306px;
                         img.pdf-icon {
-                            width: 30px;
-                            height: 38px;
-                            margin-right: 15px;
                         }
                     }
                     & div.wpb_wrapper {
-                        display: flex;
-                        width: 632px;
-                        justify-content: space-between;
+                        /* width: 632px; */
                     }
                 }
         }
@@ -1037,7 +1015,7 @@ body.partner-page {
             }
             div#partner-development-block {
                 max-width: 640px;
-                padding: 20px 20px;
+                padding: 20px 50px;
                 p.pdb-copy {
                     font-size: 21px;
                     line-height: 28px;
@@ -1314,24 +1292,18 @@ body.partner-page {
 @media all and (max-width: 768px) {
     body.partner-page {
         div#partner_cta_row {
-            z-index: 999;
                 div#connect-cta {
                     top: 0;
                     right: 0;
                     left: 0;
                     margin: 0 auto;
                     a {
-                        width: 306px;
                         img.pdf-icon {
-                            width: 30px;
-                            height: 38px;
-                            margin-right: 15px;
                         }
                     }
                     & div.wpb_wrapper {
-                        display: flex;
-                        width: 100%;
-                        justify-content: space-evenly;
+                        width: 306px;
+                        margin: 0 auto;
                     }
                 }
         }
@@ -1634,7 +1606,6 @@ body.partner-page {
 @media all and (max-width: 576px) {
     body.partner-page {
         div#partner_cta_row {
-            z-index: 999;
                 div#connect-cta {
                     a {
                         width: 255px;
@@ -1648,9 +1619,7 @@ body.partner-page {
                         }
                     }
                     & div.wpb_wrapper {
-                        display: flex;
-                        width: 100%;
-                        justify-content: space-between;
+                        width: 255px;
                     }
                 }
         }
@@ -1687,7 +1656,7 @@ body.partner-page {
             }
             div#partner-development-block {
                 max-width: 100%;
-                padding: 30px;
+                padding: 30px 15px;
                 p.pdb-copy {
                     font-size: 21px;
                     line-height: 28px;
@@ -1988,13 +1957,12 @@ body.partner-page {
 @media all and (max-width: 480px) {
     body.partner-page {
         div#partner_cta_row {
-            z-index: 999;
                 div#connect-cta {
                     a {
-                        width: 48%;
+                        width: 200px;
                         font-size: 17px;
                         line-height: 17px;
-                        height: auto;
+                        height: 37px;
                         padding: 1.5% 5%;
                         img.pdf-icon {
                             width: 19px;
@@ -2003,9 +1971,7 @@ body.partner-page {
                         }
                     }
                     & div.wpb_wrapper {
-                        display: flex;
-                        width: 100%;
-                        justify-content: space-between;
+                        width: 200px;
                     }
                 }
         }
