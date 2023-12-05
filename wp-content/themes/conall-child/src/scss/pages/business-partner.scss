@@ -27,8 +27,12 @@ body.partner-page {
                 }
                 & div.wpb_wrapper {
                     display: flex;
-                    width: 632px;
+                    /* width: 632px; */
+                    width: 306px;
                     justify-content: space-between;
+                }
+                a:last-of-type {
+                    display: none;
                 }
             }
     }
