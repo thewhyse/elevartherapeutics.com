@@ -1920,14 +1920,27 @@ body.partner-page {
                         align-items: center;
                         ul.inputs-list {
                             padding: 0;
+                            li.hs-form-booleancheckbox {
+                                width: auto;
+                                margin: 0;
+                            }
                             p {
                                 line-height: 20px;
                             }
                         }
                         div {
                             input.hs-input {
-                                flex-basis: 75px;
-                                margin-right: 5px;
+                                flex-basis: unset;
+                                margin-right: 0;
+                                display: block;
+                                width: 5%;
+                                height: 22px;
+                                top: 3px;
+                                position: relative;
+                            }
+                            span {
+                                width: 95%;
+                                display: block;
                             }
                         }
                     }
@@ -1984,7 +1997,7 @@ body.partner-page {
         }
         div.licensing-row {
             div.col-partnership {
-    
+
                 margin: 0 auto;
                 float: unset;
             }
@@ -2283,8 +2296,17 @@ body.partner-page {
                         }
                         div {
                             input.hs-input {
-                                flex-basis: 75px;
-                                margin-right: 5px;
+                                flex-basis: unset;
+                                margin-right: 0;
+                                display: block;
+                                width: 8%;
+                                height: 22px;
+                                top: 3px;
+                                position: relative;
+                            }
+                            span {
+                                width: 92%;
+                                display: block;
                             }
                         }
                     }

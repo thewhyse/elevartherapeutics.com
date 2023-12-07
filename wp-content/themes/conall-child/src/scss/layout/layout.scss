@@ -92,6 +92,13 @@ display: none!important;
 .edgtf-post-content li {
 font-family: 'Raleway', sans-serif !important;
 }
+.edgtf-search-fade .edgtf-fullscreen-search-holder .edgtf-fullscreen-search-table {
+    background-color: $white !important;
+}
+.edgtf-fullscreen-search-opened .edgtf-fullscreen-search-holder .edgtf-search-submit {
+    top: 3px;
+    height: 20px;
+}
 @media only screen and (max-width: 768px) {
     #edgtf-back-to-top {
     right: 40px;
