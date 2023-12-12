@@ -89,13 +89,11 @@ class rsssl_onboarding {
 				if  (is_email($email )) {
 					rsssl_update_option('notifications_email_address', $email );
 					rsssl_update_option('send_notifications_email', 1 );
-					if ( $data['sendTestEmail'] ) {
-						$mailer = new rsssl_mailer();
-						$mailer->send_test_mail();
-					}
 					if ( $data['includeTips'] ) {
 						$this->signup_for_mailinglist( $email );
 					}
+                    $mailer = new rsssl_mailer();
+                    $mailer->send_verification_mail( $email );
 				}
 
 				$response = [
@@ -103,14 +101,23 @@ class rsssl_onboarding {
 				];
 				break;
 			case 'activate_setting':
-				$recommended_ids = $this->get_hardening_fields();
-				foreach ($recommended_ids as $h ){
-					rsssl_update_option($h, 1);
+				$id = isset($data['id']) ? sanitize_title($data['id']) : false;
+				if ($id==='hardening') {
+					$recommended_ids = $this->get_hardening_fields();
+					foreach ($recommended_ids as $h ){
+						rsssl_update_option($h, 1);
+					}
+				}
+				if ($id === 'vulnerability_detection') {
+					rsssl_update_option('enable_vulnerability_scanner', 1);
+
 				}
 				$response = [
 					'next_action' => 'completed',
 					'success' => true,
 				];
+				break;
+
 		}
 		$response['request_success'] = true;
 		return $response;
@@ -189,6 +196,7 @@ class rsssl_onboarding {
 		if ($refresh) {
 			delete_transient('rsssl_certinfo');
 		}
+
 		return [
 			"request_success" =>true,
 			"steps" => $steps,
@@ -270,6 +278,25 @@ class rsssl_onboarding {
 			"status" => "success",
 		];
 
+		$vulnerability_detection_enabled = rsssl_get_option('enable_vulnerability_scanner');
+		if( !$vulnerability_detection_enabled ) {
+			$items[] = [
+				"title" => __("Enable plugin & theme vulnerability detection", "really-simple-ssl"),
+				"id" => "vulnerability_detection",
+				"action" => "activate_setting",
+				"current_action" => "none",
+				"status" => "warning",
+				"button" => __("Enable", "really-simple-ssl"),
+			];
+		} else {
+			$items[] = [
+				"title" => __("Vulnerability detection enabled!", "really-simple-ssl"),
+				"action" => "none",
+				"current_action" => "none",
+				"status" => "success",
+				"id" => "vulnerability",
+			];
+		}
 		$all_enabled = RSSSL()->onboarding->all_recommended_hardening_features_enabled();
 		if( !$all_enabled ) {
 			$items[] = [

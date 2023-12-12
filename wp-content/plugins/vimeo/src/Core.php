@@ -13,7 +13,7 @@ use Tribe\Vimeo_WP\WooCommerce\Vimeo_WC_Gallery;
 
 final class Core {
 
-	const VERSION        = '1.1.2';
+	const VERSION        = '1.2.2';
 	const PLUGIN_NAME    = 'vimeo-for-wordpress';
 	const REDIRECT_QUERY = 'vimeo_response';
 
@@ -36,7 +36,7 @@ final class Core {
 		add_action( 'init', [ new Blocks(), 'register_blocks' ] );
 
 		add_action( 'init', [ new Assets(), 'enqueue_scripts' ] );
-		
+
 		if ( get_option( Settings::VIMEO_SHORTCODE, '1' ) === '1' ) {
 			add_action( 'media_buttons', [ new Media_Button(), 'add_vimeo_button' ] );
 			add_shortcode( 'vimeo_embed', [ new Vimeo_Embed(), 'vimeo_embed'] );
