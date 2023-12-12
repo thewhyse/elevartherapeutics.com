@@ -1,8 +1,8 @@
 === Vimeo ===
 Contributors: vimeodev, moderntribe, nickpelton, chrismkindred, antoniosejas, aykanburcak, joshliston, andrewadam, maxgarceau, bdavisdesigns
 Tags: video, vimeo, blocks, video library, upload, create, automatic video, product video,  woocommerce video
-Tested up to: 6.1
-Stable tag: 1.2.1
+Tested up to: 6.3
+Stable tag: 1.2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -70,6 +70,11 @@ To set up automatic updates for your plugin, see [this article](https://www.wpbe
 4. WooCommerce Video Gallery
 
 == Changelog ==
+
+= 1.2.2 - 2023-10-30 =
+* Fix an issue where embedding a video using the Vimeo Upload and Create block was displaying an error
+* Fix an issue where clicking the "Create product video" button when editing a WooCommerce product would take the user to video creation
+* Fix an issue where adding the Vimeo shortcode to a WooCommerce product via the Add Vimeo Embed button, the video would not display in the frontend
 
 = 1.2.1 - 2022-11-14 =
 * Tested up to WordPress 6.1

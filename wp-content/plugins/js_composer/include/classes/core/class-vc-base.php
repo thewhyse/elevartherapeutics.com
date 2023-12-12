@@ -738,7 +738,7 @@ class Vc_Base {
 			// vc_welcome for a frontend editor
 			// then wrap with '<div>'
 			if ( preg_match( '/vc_row/', $content ) || preg_match( '/vc_welcome/', $content ) ) {
-				$content = '<section class="wpb-content-wrapper">' . $content . '</section>';
+				$content = '<div class="wpb-content-wrapper">' . $content . '</div>';
 			}
 
 			return $content;
@@ -809,7 +809,8 @@ class Vc_Base {
 			'confirm_to_leave' => esc_html__( 'The changes you made will be lost if you navigate away from this page.', 'js_composer' ),
 			'inline_element_saved' => esc_html__( '%s saved!', 'js_composer' ),
 			'inline_element_deleted' => esc_html__( '%s deleted!', 'js_composer' ),
-			'inline_element_cloned' => sprintf( __( '%%s cloned. %sEdit now?%s', 'js_composer' ), '<a href="#" class="vc_edit-cloned" data-model-id="%s">', '</a>' ),
+            // phpcs:ignore
+			'inline_element_cloned' => sprintf( __( '%%1$s cloned. %2$sEdit now?%s', 'js_composer' ), '<a href="#" class="vc_edit-cloned" data-model-id="%s">', '</a>' ),
 			'gfonts_loading_google_font_failed' => esc_html__( 'Loading Google Font failed', 'js_composer' ),
 			'gfonts_loading_google_font' => esc_html__( 'Loading Font...', 'js_composer' ),
 			'gfonts_unable_to_load_google_fonts' => esc_html__( 'Unable to load Google Fonts', 'js_composer' ),
@@ -825,6 +826,10 @@ class Vc_Base {
 			'vc_successfully_updated' => esc_html__( 'Successfully updated!', 'js_composer' ),
 			'gutenbergDoesntWorkProperly' => esc_html__( 'Gutenberg plugin doesn\'t work properly. Please check Gutenberg plugin.', 'js_composer' ),
 			'unfiltered_html_access' => esc_html__( 'Custom HTML is disabled for your user role. Please contact your site Administrator to change your capabilities.', 'js_composer' ),
+			'not_editable_post' => sprintf( '%s %s %s', esc_html__( 'This', 'js_composer' ), get_post_type() ? get_post_type() : 'post', esc_html__( 'can not be edited with WPBakery since it is missing a WordPress default content area.', 'js_composer' ) ),
+			'ai_response_error' => esc_html__( 'An error occurred when requesting a response from WPBakery AI (Code: 623)', 'js_composer' ),
+			'generate' => esc_html__( 'Generate', 'js_composer' ),
+			'regenerate' => esc_html__( 'Regenerate', 'js_composer' ),
 		);
 	}
 
@@ -834,7 +839,7 @@ class Vc_Base {
 	 * @since 7.0
 	 */
 	public function outputGlobalHeaderCustomHtml() {
-		$global_header_html = get_option( Vc_Settings::$field_prefix . 'custom_js_header' );;
+		$global_header_html = get_option( Vc_Settings::$field_prefix . 'custom_js_header' );
 
 		echo '<script>';
 		echo wp_unslash( $global_header_html );

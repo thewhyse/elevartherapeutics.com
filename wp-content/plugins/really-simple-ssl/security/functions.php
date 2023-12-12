@@ -49,10 +49,12 @@ if ( !function_exists('rsssl_has_fix')) {
 if ( !function_exists('rsssl_admin_url')) {
 	/**
 	 * Get admin url, adjusted for multisite
+	 * @param string $path
 	 * @return string|null
 	 */
-	function rsssl_admin_url(){
-		return is_multisite() ? network_admin_url('settings.php') : admin_url("options-general.php");
+	function rsssl_admin_url(string $path = ''): string {
+		$url = is_multisite() ? network_admin_url('settings.php') : admin_url("options-general.php");
+		return $url.$path;
 	}
 }
 
@@ -473,7 +475,7 @@ function rsssl_generate_random_string($length) {
 	$characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 	$randomString = '';
 
-	for ($i = 0; $i < $length; $i++) {
+	for ( $i = 0; $i < $length; $i++ ) {
 		$index = rand(0, strlen($characters) - 1);
 		$randomString .= $characters[$index];
 	}
@@ -487,6 +489,7 @@ function rsssl_generate_random_string($length) {
  * Get users as string to display
  */
 function rsssl_list_users_where_display_name_is_login_name() {
+
 	if ( !rsssl_user_can_manage() ) {
 		return '';
 	}
@@ -498,4 +501,33 @@ function rsssl_list_users_where_display_name_is_login_name() {
 	}
 
 	return '';
+}
+
+/**
+ * @return bool|void
+ *
+ * Check if user e-mail is verified
+ */
+function rsssl_is_email_verified() {
+
+    if ( ! rsssl_user_can_manage() ) {
+        return false;
+    }
+
+    if ( get_option('rsssl_email_verification_status') == 'completed' ) {
+        // completed
+        return true;
+    }
+
+    if ( get_option('rsssl_email_verification_status') == 'started' ) {
+	    // started
+        return false;
+    }
+
+	if ( get_option('rsssl_email_verification_status') == 'email_changed' ) {
+	    // e-mail changed, has to re-verify
+        return false;
+    }
+
+    return false;
 }

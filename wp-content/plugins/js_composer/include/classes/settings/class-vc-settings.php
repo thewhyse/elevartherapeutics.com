@@ -524,9 +524,13 @@ class Vc_Settings {
 			$value = '';
 		}
 
-		echo '<textarea name="' . esc_attr( self::$field_prefix ) . 'custom_css' . '" class="wpb_code_editor custom_code" style="display:none">' . esc_textarea( $value ) . '</textarea>';
-		echo '<pre id="wpb_css_editor" class="wpb_content_element custom_code" >' . esc_textarea( $value ) . '</pre>';
-		echo '<p class="description indicator-hint">' . esc_html__( 'Add custom CSS code to the plugin without modifying files.', 'js_composer' ) . '</p>';
+		vc_include_template(
+			'editors/vc-settings/custom-css.tpl.php',
+			[
+				'value' => $value,
+				'field_prefix' => self::$field_prefix,
+			]
+		);
 	}
 
 	/**
@@ -538,10 +542,14 @@ class Vc_Settings {
 			$value = '';
 		}
 
-		echo '<p>' . esc_html( '<script>' ) . '</p>';
-		echo '<textarea name="' . esc_attr( self::$field_prefix ) . 'custom_js_header' . '" class="wpb_code_editor custom_code" data-code-type="html" style="display:none">' . esc_textarea( $value ) . '</textarea>';
-		echo '<pre id="wpb_js_header_editor" class="wpb_content_element custom_code">' . esc_textarea( $value ) . '</pre>';
-		echo '<p>' . esc_html( '</script>' ) . '</p>';
+		vc_include_template(
+			'editors/vc-settings/custom-js.tpl.php',
+			[
+				'value' => $value,
+				'field_prefix' => self::$field_prefix,
+				'area' => 'header',
+			]
+		);
 	}
 
 	/**
@@ -553,10 +561,14 @@ class Vc_Settings {
 			$value = '';
 		}
 
-		echo '<p>' . esc_html( '<script>' ) . '</p>';
-		echo '<textarea name="' . esc_attr( self::$field_prefix ) . 'custom_js_footer' . '" class="wpb_code_editor custom_code" data-code-type="html" style="display:none">' . esc_textarea( $value ) . '</textarea>';
-		echo '<pre id="wpb_js_footer_editor" class="wpb_content_element custom_code">' . esc_textarea( $value ) . '</pre>';
-		echo '<p>' . esc_html( '</script>' ) . '</p>';
+		vc_include_template(
+			'editors/vc-settings/custom-js.tpl.php',
+			[
+				'value' => $value,
+				'field_prefix' => self::$field_prefix,
+				'area' => 'footer',
+			]
+		);
 	}
 
 	/**
@@ -589,8 +601,8 @@ class Vc_Settings {
 				?>
 				<label>
 					<input type="checkbox"<?php echo esc_attr( $checked ); ?> value="<?php echo esc_attr( $pt ); ?>"
-						   id="wpb_js_gf_subsets_<?php echo esc_attr( $pt ); ?>"
-						   name="<?php echo esc_attr( self::$field_prefix . 'google_fonts_subsets' ); ?>[]">
+						id="wpb_js_gf_subsets_<?php echo esc_attr( $pt ); ?>"
+						name="<?php echo esc_attr( self::$field_prefix . 'google_fonts_subsets' ); ?>[]">
 					<?php echo esc_html( $pt ); ?>
 				</label><br>
 				<?php
@@ -694,7 +706,7 @@ class Vc_Settings {
 		?>
 		<label>
 			<input type="checkbox"<?php echo( $checked ? ' checked' : '' ); ?> value="1"
-				   id="wpb_js_<?php echo esc_attr( $field ); ?>" name="<?php echo esc_attr( self::$field_prefix . $field ); ?>">
+				id="wpb_js_<?php echo esc_attr( $field ); ?>" name="<?php echo esc_attr( self::$field_prefix . $field ); ?>">
 			<?php esc_html_e( 'Enable', 'js_composer' ); ?>
 		</label><br/>
 		<p class="description indicator-hint"><?php esc_html_e( 'Enable the use of custom design options (Note: when checked - custom css file will be used).', 'js_composer' ); ?></p>
@@ -1105,7 +1117,7 @@ class Vc_Settings {
 		$js_composer_upload_dir = self::uploadDir();
 		if ( ! $wp_filesystem->is_dir( $js_composer_upload_dir ) ) {
 			if ( ! $wp_filesystem->mkdir( $js_composer_upload_dir, 0777 ) ) {
-				add_settings_error( self::$field_prefix . $option, $wp_filesystem->errors->get_error_code(), sprintf( esc_html__( '%s could not be created. Not available to create js_composer directory in uploads directory (%s).', 'js_composer' ), $filename, $js_composer_upload_dir ), 'error' );
+				add_settings_error( self::$field_prefix . $option, $wp_filesystem->errors->get_error_code(), sprintf( esc_html__( '%1$s could not be created. Not available to create js_composer directory in uploads directory (%2$s).', 'js_composer' ), $filename, $js_composer_upload_dir ), 'error' );
 
 				return false;
 			}

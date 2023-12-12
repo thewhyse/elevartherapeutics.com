@@ -3,7 +3,7 @@
  * Plugin Name:       Vimeo
  * Plugin URI:        https://vimeo.com/create?vcid=40636
  * Description:       Bring the power of video to your WordPress site and WooCommerce product pages by easily creating, uploading, and embedding videos to boost engagement and drive conversion.
- * Version:           1.2.1
+ * Version:           1.2.2
  * Requires at least: 5.4
  * Requires PHP:      5.6
  * Author:            Vimeo
