@@ -647,7 +647,7 @@ if(!function_exists('conall_edge_main_menu_styles')) {
             <?php if($conall_edge_options['dropdown_letterspacing_thirdlvl'] !== '') { ?> letter-spacing: <?php echo esc_attr($conall_edge_options['dropdown_letterspacing_thirdlvl']); ?>px;  <?php } ?>
             }
         <?php } ?>
-        
+
         <?php if($conall_edge_options['dropdown_hovercolor_thirdlvl'] !== '') { ?>
             .edgtf-drop-down .second .inner ul li ul li a:hover,
             .edgtf-drop-down .second .inner ul li ul li.current-menu-ancestor > a,
