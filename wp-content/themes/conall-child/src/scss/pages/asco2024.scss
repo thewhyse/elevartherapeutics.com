@@ -63,12 +63,6 @@ body.events-page {
                             letter-spacing: 0;
                             }
                     }
-                    a.event-button:hover {
-                        background-color: $white !important;
-                        border-color: $elevar_purple !important;
-                        color: $elevar_purple !important;
-                        transition: all 0.5s;
-                    }
                 }
             }
     }
@@ -222,7 +216,6 @@ body.events-page {
             line-height: 32px;
                 > strong {
                     display: block;
-                    text-decoration: underline;
                 }
                 > br {
                     display: none;
@@ -230,7 +223,7 @@ body.events-page {
             }
             a {
             color: $white;
-            text-decoration: none;
+            text-decoration: underline;
             }
             .edgtf-full-section-inner {
             display: -webkit-box;
