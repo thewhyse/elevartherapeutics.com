@@ -1,0 +1,73 @@
+@import "../base/colors";
+@import "../base/font";
+
+/* ******* GENERAL EVENTS PAGE START ******* */
+
+body.events-page  {
+    div#gen_events_hero_row {
+        div.clearfix.edgtf-full-section-inner {
+            height: 100%;
+            padding-top: 90px;
+            .wpb_column {
+                div#gen-events-hero-h1 {
+                    margin-bottom: 0 !important;
+                    h1.elevar-h1 {
+
+                    }
+                }
+                a.event-button {
+                        span {
+                        }
+                }
+                a.event-button:hover {
+                }
+            }
+        }
+    }
+    div#events-current-section {
+        div#gen-events-page-heading {
+            h2.elevar-h2 {
+                font-size: 24px;
+                letter-spacing: 0;
+                max-width: 1100px;
+                line-height: 30px;
+            }
+        }
+        div.edgtf-accordion-holder {
+            h3 {
+                text-transform: inherit;
+                color: $elevar_purple;
+                letter-spacing: 0;
+                font-size: 24px;
+                line-height: 24px;
+                font-weight: bold;
+                padding-left: 0;
+                span.edgtf-accordion-mark {
+                    
+                }
+            }
+        }
+    }
+    div#hubspot-grid-container-row {
+
+    }
+
+}
+
+
+@media all and (max-width: 1024px) {
+
+}
+@media all and (max-width: 768px) {
+
+}
+@media all and (max-width: 576px) {
+
+}
+@media all and (max-width: 480px) {
+
+}
+@media all and (max-width: 380px) {
+
+}
+/* ******* GENERAL EVENTS PAGE END ******* */
