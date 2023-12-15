@@ -8,7 +8,7 @@ body.events-page  {
         background-image: url("/wp-content/themes/conall-child/images/elevar-events-hero-DESK-1920x457.png");
         div.clearfix.edgtf-full-section-inner {
             height: 100%;
-            padding-top: 90px;
+            padding-top: 6%;
             .wpb_column {
                 div#gen-events-hero-h1 {
                     margin-bottom: 0 !important;
@@ -245,6 +245,72 @@ body.events-page  {
     }
     div#hubspot-grid-container-row {
         padding: 50px 0 50px 0;;
+    }
+}
+@media all and (max-width: 1600px) {
+    body.events-page  {
+        div#gen_events_hero_row {
+            div.clearfix.edgtf-full-section-inner {
+                padding-top: 5%;
+                .wpb_column {
+                    div#gen-events-hero-h1 {
+                        h1.elevar-h1 {
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 1400px) {
+    body.events-page  {
+        div#gen_events_hero_row {
+            div.clearfix.edgtf-full-section-inner {
+                padding-top: 4%;
+                .wpb_column {
+                    div#gen-events-hero-h1 {
+                        h1.elevar-h1 {
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 1300px) {
+    body.events-page  {
+        div#gen_events_hero_row {
+            div.clearfix.edgtf-full-section-inner {
+                padding-top: 3%;
+                .wpb_column {
+                    div#gen-events-hero-h1 {
+                        h1.elevar-h1 {
+                            width: 60%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 1200px) {
+    body.events-page  {
+        div#gen_events_hero_row {
+            div.clearfix.edgtf-full-section-inner {
+                padding-top: 3.5%;
+                a.event-button {
+                    margin-top: 25px !important;
+                }
+            }
+        }
+        div#events-current-section div.edgtf-accordion-holder div.edgtf-accordion-content div.edgtf-accordion-content-inner div#vsel div.vsel-content div.vsel-meta div.event-info-wrapper div.vsel-meta-rows.date {
+            width: 40%;
+        }
+        div#events-current-section div.edgtf-accordion-holder div.edgtf-accordion-content div.edgtf-accordion-content-inner div#vsel div.vsel-content div.vsel-meta div.event-info-wrapper div.vsel-meta-rows.location {
+            width: 60%;
+        }
     }
 }
 
@@ -584,6 +650,7 @@ body.events-page  {
                         div.inner-event-wrapper {
                             &.left {
                                 width: auto;
+                                font-size: 18px;
                                 div.edgtf-tab-title {
                                     span.edgtf-tab-title-inner {
 
@@ -591,7 +658,7 @@ body.events-page  {
                                 }
                             }
                             &.center {
-                                width: auto;
+                                width: 35px;
                                 div.edgtf-accordion-mark {
                                         height: 35px;
                                         width: 35px;
@@ -611,7 +678,7 @@ body.events-page  {
                                 }
                             }
                             &.right {
-                                width: 50%;
+                                width: 40%;
                                 hr.events-vert-rule {
                                 }
                             }
@@ -625,6 +692,7 @@ body.events-page  {
                         div.inner-event-wrapper {
                             &.left {
                                 width: auto;
+                                font-size: 18px;
                             }
                             &.center {
                                 width: auto;
@@ -656,8 +724,8 @@ body.events-page  {
                                 padding: 20px 0 20px 0;
                                 div.vsel-meta {
                                     h3.vsel-meta-title {
-                                        font-size: 24px;
-                                        line-height: 28px;
+                                        font-size: 22px;
+                                        line-height: 25px;
                                     }
                                     div.event-info-wrapper {
                                         flex-direction: column;
@@ -708,7 +776,7 @@ body.events-page  {
                 .wpb_column {
                     div#gen-events-hero-h1 {
                         h1.elevar-h1 {
-                            width: 100%;
+                            width: 75%;
                             margin: 0 auto;
                             span.mob-break {
                                 display: block;
@@ -723,8 +791,41 @@ body.events-page  {
                 }
             }
         }
+        div#events-current-section {
+            div.edgtf-accordion-holder {
+                h3 {
+
+                }
+            }
+        }
     }
 }
 @media all and (max-width: 380px) {
+
+        body.events-page  {
+        div#gen_events_hero_row {
+            div.clearfix.edgtf-full-section-inner {
+                padding-top: 50px;
+                .wpb_column {
+                    div#gen-events-hero-h1 {
+                        h1.elevar-h1 {
+                            width: 100%;
+                            margin: 0 auto;
+                            font-size: 28px;
+                            line-height: 32px;
+                            span.mob-break {
+                                display: block;
+                            }
+                        }
+                    }
+                    a.event-button {
+                        margin-top: 25px !important;
+                            span {
+                            }
+                    }
+                }
+            }
+        }
+    }
 }
 /* ******* GENERAL EVENTS PAGE END ******* */
