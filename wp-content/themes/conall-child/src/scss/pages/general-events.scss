@@ -5,7 +5,7 @@
 
 body.events-page  {
     div#gen_events_hero_row {
-        background-image: url(/wp-content/themes/conall-child/images/elevar-events-hero-DESK-1920x457.png);
+        background-image: url("/wp-content/themes/conall-child/images/elevar-events-hero-DESK-1920x457.png");
         div.clearfix.edgtf-full-section-inner {
             height: 100%;
             padding-top: 90px;
@@ -49,7 +49,7 @@ body.events-page  {
                 font-weight: bold;
                 padding-left: 0;
                 border: none;
-                margin: 25px 0 25px 0!important;
+                margin: 25px 0 0 0!important;
                 padding: 0;
                 div.event-wrapper {
                     display: flex;
@@ -148,10 +148,28 @@ body.events-page  {
                         margin-top: 25px;
                         div.edgtf-elements-holder-item {
                             div.edgtf-elements-holder-item-inner {
-                                height: 400px;
+                                height: 500px;
                                 display: block;
                                 overflow-y: scroll;
                                 border: 1px solid $reviewgrey;
+                                --sb-track-color: #fafafa;
+                                --sb-thumb-color: #7d7d7d;
+                                --sb-size: 12px;
+                                scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+                                div.edgtf-elements-holder-item-content {
+                                    padding: 0 25px;
+                                }
+                            }
+                            div.edgtf-elements-holder-item-inner::-webkit-scrollbar {
+                                width: var(--sb-size)
+                            }
+                            div.edgtf-elements-holder-item-inner::-webkit-scrollbar-track {
+                                background: var(--sb-track-color);
+                                border-radius: 10px;
+                            }
+                            div.edgtf-elements-holder-item-inner::-webkit-scrollbar-thumb {
+                                background: var(--sb-thumb-color);
+                                border-radius: 10px;
                             }
                         }
                     }
@@ -161,22 +179,24 @@ body.events-page  {
                         height: 100%;
                         div.vsel-content {
                             margin: 0;
-                            padding: 20px 0 20px 0;
+                            padding: 35px 0 40px 0;
                             border-bottom: 1px solid $reviewgrey;
                             display: flex;
                             justify-content: center;
                             align-items: center;
                             div.vsel-meta {
+                                margin: 0;
                                 h3.vsel-meta-title {
                                     color: $elevar_blue;
                                     font-weight: bold;
                                     font-size: 24px;
                                     line-height: 36px;
-                                    padding-top: 10px;
-                                    padding-bottom: 10px;
+                                    padding: 0px;
+                                    margin: 0 !important;
+                                    margin-bottom: 12px !important;
                                 }
                                 div.event-info-wrapper {
-                                    margin-bottom: 20px;
+                                    margin: 0px;
                                     display: flex;
                                     align-items: center;
                                     height: 30px;
@@ -190,7 +210,7 @@ body.events-page  {
                                             font-weight: bold;
                                             font-size: 24px;
                                             line-height: 30px;
-                                            margin: 0 5px 0 5px;
+                                            margin: 0 4px 0 4px;
                                         }
                                         img.ge-event-icons {
                                             display: inline-block;
@@ -204,16 +224,22 @@ body.events-page  {
                                         }
                                     }
                                     div.vsel-meta-rows.date {
-                                        width: 40%;
+                                        width: 30%;
                                     }
                                     div.vsel-meta-rows.location {
-                                        width: 60%;
+                                        width: 70%;
                                     }
                                 }
                             }
                         }
+                        div.vsel-content:last-of-type {
+                            border: none;
+                        }
                     }
                 }
+            }
+            div.edgtf-accordion-content:nth-of-type(1) {
+                margin-bottom: 55px;
             }
         }
     }
@@ -225,7 +251,7 @@ body.events-page  {
 @media all and (max-width: 1024px) {
     body.events-page  {
         div#gen_events_hero_row {
-            background-image: url(/wp-content/themes/conall-child/images/elevar-events-hero-TAB-1024x306.png);
+            background-image: url("/wp-content/themes/conall-child/images/elevar-events-hero-TAB-1024x306.png");
             div.clearfix.edgtf-full-section-inner {
                 padding-top: 50px;
                 .wpb_column {
@@ -298,13 +324,13 @@ body.events-page  {
                     div.event-wrapper {
                         div.inner-event-wrapper {
                             &.left {
-                                width: 11%;
+                                width: 15%;
                             }
                             &.center {
-                                width: 6%;
+                                width: 5%;
                             }
                             &.right {
-                                width: 82%;
+                                width: 75%;
                                 hr.events-vert-rule {
                                 }
                             }
@@ -319,39 +345,24 @@ body.events-page  {
 
                             div.edgtf-elements-holder-item {
                                 div.edgtf-elements-holder-item-inner {
-
+                                    height: 465px;
                                 }
                             }
                         }
                         div#vsel {
                             div.vsel-content {
-                                margin: 0px 0 20px;
-                                padding: 0 0 10px;
+
                                 div.vsel-meta {
                                     h3.vsel-meta-title {
-                                        color: $elevar_blue;
-                                        font-weight: bold;
                                         font-size: 23px;
                                         line-height: 26px;
-                                        padding-top: 8px;
-                                        padding-bottom: 8px;
                                     }
                                     div.event-info-wrapper {
-                                        margin-bottom: 20px;
-                                        display: flex;
-                                        align-items: center;
-                                        height: 30px;
                                         div.vsel-meta-rows {
-                                            display: flex;
-                                            justify-content: flex-start;
-                                            align-items: center;
-                                            height: 30px;
                                             span {
-                                                color: $med_gray2;
-                                                font-weight: bold;
                                                 font-size: 19px;
                                                 line-height: 27px;
-                                                margin: 0 5px 0 5px;
+
                                             }
                                             img.ge-event-icons {
                                                 display: inline-block;
@@ -365,10 +376,10 @@ body.events-page  {
                                             }
                                         }
                                         div.vsel-meta-rows.date {
-                                            width: 55%;
+                                            width: 50%;
                                         }
                                         div.vsel-meta-rows.location {
-                                            width: 45%;
+                                            width: 50%;
                                         }
                                     }
                                 }
@@ -386,7 +397,6 @@ body.events-page  {
 @media all and (max-width: 768px) {
     body.events-page  {
         div#gen_events_hero_row {
-            background-image: url(/wp-content/themes/conall-child/images/elevar-events-hero-TAB-1024x306.png);
             div.clearfix.edgtf-full-section-inner {
                 padding-top: 25px;
                 .wpb_column {
@@ -415,10 +425,11 @@ body.events-page  {
             div.edgtf-accordion-holder {
                 h3 {
                     font-size: 20px;
+                    margin: 20px 0 0 0 !important;
                     div.event-wrapper {
                         div.inner-event-wrapper {
                             &.left {
-                                width: 30%;
+                                width: auto;
                                 div.edgtf-tab-title {
                                     span.edgtf-tab-title-inner {
 
@@ -426,7 +437,7 @@ body.events-page  {
                                 }
                             }
                             &.center {
-                                width: 20%;
+                                width: auto;
                                 div.edgtf-accordion-mark {
                                         height: 35px;
                                         width: 35px;
@@ -459,13 +470,13 @@ body.events-page  {
                     div.event-wrapper {
                         div.inner-event-wrapper {
                             &.left {
-                                width: 11%;
+                                width: auto;
                             }
                             &.center {
-                                width: 6%;
+                                width: auto;
                             }
                             &.right {
-                                width: 82%;
+                                width: 50%;
                                 hr.events-vert-rule {
                                 }
                             }
@@ -486,35 +497,18 @@ body.events-page  {
                         }
                         div#vsel {
                             div.vsel-content {
-                                margin: 0px 0 20px 0;
-                                padding: 0 0 20px 0;
+                                padding: 30px 0 30px 0;
                                 div.vsel-meta {
                                     h3.vsel-meta-title {
-                                        color: $elevar_blue;
-                                        font-weight: bold;
                                         font-size: 23px;
                                         line-height: 26px;
-                                        margin-top: 0 !important;
-                                        padding-top: 0;
-                                        padding-bottom: 8px;
                                     }
                                     div.event-info-wrapper {
-                                        margin-bottom: 0;
-                                        display: flex;
-                                        align-items: center;
-                                        height: 30px;
                                         flex-direction: column;
+                                        height: auto;
                                         div.vsel-meta-rows {
-                                            display: flex;
-                                            justify-content: flex-start;
-                                            align-items: center;
-                                            height: 30px;
                                             span {
-                                                color: $med_gray2;
-                                                font-weight: bold;
-                                                font-size: 19px;
-                                                line-height: 27px;
-                                                margin: 0 5px 0 5px;
+
                                             }
                                             img.ge-event-icons {
                                                 display: inline-block;
@@ -529,7 +523,7 @@ body.events-page  {
                                         }
                                         div.vsel-meta-rows.date {
                                             width: 100%;
-                                            margin-bottom: 2%;
+                                            margin-bottom: 1%;
                                         }
                                         div.vsel-meta-rows.location {
                                             width: 100%;
@@ -540,6 +534,9 @@ body.events-page  {
                         }
                     }
                 }
+                div.edgtf-accordion-content:nth-of-type(1) {
+                    margin-bottom: 30px;
+                }
             }
         }
         div#hubspot-grid-container-row {
@@ -548,12 +545,186 @@ body.events-page  {
     }
 }
 @media all and (max-width: 576px) {
+    body.events-page  {
+        div#gen_events_hero_row {
+            background-image: url("/wp-content/themes/conall-child/images/elevar-events-hero-MOB-576x405.png");
+            div.clearfix.edgtf-full-section-inner {
+                padding-top: 25%;
+                .wpb_column {
+                    div#gen-events-hero-h1 {
+                        h1.elevar-h1 {
+                            width: 75%;
+                            margin: 0 auto;
+                            span.mob-break {
+                                display: block;
+                            }
+                        }
+                    }
+                    a.event-button {
+                        margin-top: 25px !important;
+                            span {
+                            }
+                    }
+                    a.event-button:hover {
+                    }
+                }
+            }
+        }
+        div#events-current-section {
+            div#gen-events-page-heading {
+                h2.elevar-h2 {
 
+                }
+            }
+            div.edgtf-accordion-holder {
+                h3 {
+                    font-size: 20px;
+                    margin: 20px 0 0 0 !important;
+                    div.event-wrapper {
+                        div.inner-event-wrapper {
+                            &.left {
+                                width: auto;
+                                div.edgtf-tab-title {
+                                    span.edgtf-tab-title-inner {
+
+                                    }
+                                }
+                            }
+                            &.center {
+                                width: auto;
+                                div.edgtf-accordion-mark {
+                                        height: 35px;
+                                        width: 35px;
+                                        font-size: 35px;
+                                        line-height: 35px;
+                                    span.edgtf-accordion-mark-icon {
+                                        span.edgtf_icon_plus {
+                                            &.arrow_carrot-up {
+                                            }
+                                            &.arrow_carrot-down {
+                                            }
+                                        }
+                                        span:before {
+
+                                        }
+                                    }
+                                }
+                            }
+                            &.right {
+                                width: 50%;
+                                hr.events-vert-rule {
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+                h3:nth-of-type(2) {
+                    div.event-wrapper {
+                        div.inner-event-wrapper {
+                            &.left {
+                                width: auto;
+                            }
+                            &.center {
+                                width: auto;
+                            }
+                            &.right {
+                                width: 50%;
+                                hr.events-vert-rule {
+                                }
+                            }
+                        }
+                    }
+                }
+
+                div.edgtf-accordion-content {
+
+                    div.edgtf-accordion-content-inner {
+                        div.edgtf-elements-holder {
+
+                            div.edgtf-elements-holder-item {
+                                div.edgtf-elements-holder-item-inner {
+                                    div.edgtf-elements-holder-item-content {
+                                    padding: 0 0 0 20px;
+                                    }
+                                }
+                            }
+                        }
+                        div#vsel {
+                            div.vsel-content {
+                                padding: 20px 0 20px 0;
+                                div.vsel-meta {
+                                    h3.vsel-meta-title {
+                                        font-size: 24px;
+                                        line-height: 28px;
+                                    }
+                                    div.event-info-wrapper {
+                                        flex-direction: column;
+                                        height: auto;
+                                        div.vsel-meta-rows {
+                                            span {
+
+                                            }
+                                            img.ge-event-icons {
+                                                display: inline-block;
+                                                margin-right: 0;
+                                                &.cal {
+                                                    height: 22px;
+                                                }
+                                                &.location {
+                                                    height: 22px;
+                                                }
+                                            }
+                                        }
+                                        div.vsel-meta-rows.date {
+                                            width: 100%;
+                                            margin-bottom: 1%;
+                                        }
+                                        div.vsel-meta-rows.location {
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                div.edgtf-accordion-content:nth-of-type(1) {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        div#hubspot-grid-container-row {
+            padding: 50px 0 50px 0;;
+        }
+    }
 }
 @media all and (max-width: 480px) {
-
+    body.events-page  {
+        div#gen_events_hero_row {
+            div.clearfix.edgtf-full-section-inner {
+                padding-top: 20%;
+                .wpb_column {
+                    div#gen-events-hero-h1 {
+                        h1.elevar-h1 {
+                            width: 100%;
+                            margin: 0 auto;
+                            span.mob-break {
+                                display: block;
+                            }
+                        }
+                    }
+                    a.event-button {
+                        margin-top: 25px !important;
+                            span {
+                            }
+                    }
+                }
+            }
+        }
+    }
 }
 @media all and (max-width: 380px) {
-
 }
 /* ******* GENERAL EVENTS PAGE END ******* */

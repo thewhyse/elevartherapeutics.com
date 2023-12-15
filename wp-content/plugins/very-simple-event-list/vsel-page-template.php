@@ -58,9 +58,11 @@ $output .= '<div id="event-'.get_the_ID().'" class="vsel-content'.vsel_event_cat
                         if ($page_date_combine == 'yes') {
                             $output .= '<div class="vsel-meta-rows date">';
                             $output .= '<img class="ge-event-icons cal" src="/wp-content/themes/conall-child/images/events-cal-icon.svg" alt="Calendar icon" width="31" height="33" /> ';
-                            $output .= $page_start_default;
+                            $output .= $elevar_date_start;
+                            // $output .= $page_start_default;
                             $output .= ' '.esc_attr($date_separator).' ';
-                            $output .= $page_end_default;
+                            // $output .= $page_end_default;
+                            $output .= $elevar_date_end;
                             $output .= '</div>';
                         } else {
                             $output .= '<div class="vsel-meta-date vsel-meta-start-date">';
