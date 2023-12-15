@@ -300,6 +300,9 @@ $page_start_icon_2 = '<span class="vsel-month vsel-month-top">'.wp_date( 'M', es
 $page_end_icon_1 = '<span class="vsel-day vsel-day-top">'.wp_date( 'j', esc_attr($end_date_timestamp), $utc_timezone ).'</span><span class="vsel-month">'.wp_date( 'M', esc_attr($end_date_timestamp), $utc_timezone ).'</span><span class="vsel-year">'.wp_date( 'Y', esc_attr($end_date_timestamp), $utc_timezone ).'</span>';
 $page_end_icon_2 = '<span class="vsel-month vsel-month-top">'.wp_date( 'M', esc_attr($end_date_timestamp), $utc_timezone ).'</span><span class="vsel-day">'.wp_date( 'j', esc_attr($end_date_timestamp), $utc_timezone ).'</span><span class="vsel-year">'.wp_date( 'Y', esc_attr($end_date_timestamp), $utc_timezone ).'</span>';
 
+$elevar_date_start = '<span class="elevar-event-date start">' . wp_date('F', esc_attr($start_date_timestamp), $utc_timezone) . '&nbsp;' . wp_date( 'j', esc_attr($start_date_timestamp), $utc_timezone) .'</span>';
+$elevar_date_end = '<span class="elevar-event-date end">' . wp_date('j', esc_attr($end_date_timestamp), $utc_timezone) . '&nbsp;' . wp_date('Y', esc_attr($end_date_timestamp), $utc_timezone) . '</span>';
+
 // widget variables
 
 // set date format

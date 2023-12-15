@@ -2,11 +2,11 @@
 @import "../base/font";
 
 /* ******* PRESS RELEASES 2023 PAGE ******* */
-.page-template-blog-standard-php {
+body.news-page {
     div.edgtf-content {
         div.edgtf-content-inner {
             div.edgtf-container {
-                section.wpb-content-wrapper {
+                .wpb-content-wrapper {
                     div#press_release_hero_row {
                         background-image: url("/wp-content/themes/conall-child/images/press-release-hero-1920x457.png");
                         }
@@ -237,138 +237,140 @@ div.edgtf-blog-holder.edgtf-blog-single {
         }
     }
 }
-@media only screen and (max-width: 1500px) {
-    .page-template-blog-standard-php {
-    div.edgtf-content {
-        div.edgtf-content-inner {
-            div.edgtf-container {
-                > div.edgtf-container-inner {
-                    width: 100%;
-                    max-width: 1300px;
-                    display: flex;
-                    flex-direction: column;
-                    div.elevar-blog-toprow {
-                        display: flex;
-                        justify-content: flex-end;
-                        margin-top: -40px;
-                            div.widget.widget_archive {
-                                width: 250px;
-                                margin-bottom: 68px;
-                                margin-right: 25px;
-                                h5 {
-                                    text-transform: initial;
-                                    letter-spacing: 0;
-                                    font-size: 18px;
-                                }
-                            }
-                    }
-                    div.edgtf-blog-holder {
-                        display: flex;
+
+@media all and (max-width: 1500px) {
+    body.news-page {
+        div.edgtf-content {
+            div.edgtf-content-inner {
+                div.edgtf-container {
+                    > div.edgtf-container-inner {
                         width: 100%;
-                        flex: 1;
-                        flex-wrap: wrap;
-                        flex-direction: row;
-                        box-sizing: border-box;
-                        article.post {
-                            padding: 0;
-                            margin: 0 0 50px 25px;
-                            border: none;
-                            width: 47%;
-                            flex-basis: 47%;
-                            flex-wrap: wrap;
+                        max-width: 1300px;
+                        display: flex;
+                        flex-direction: column;
+                        div.elevar-blog-toprow {
                             display: flex;
-                            box-sizing: border-box;
-                            min-height: 500px;
-                            div.edgtf-post-content {
-                                padding: 50px;
-                                border: 1px solid #bbbbbb;
-                                border-radius: 18px;
-                                h2.entry-title.edgtf-post-title {
-                                    margin: 0 0 25px;
-                                    a {
-                                        font-size: 20px;
-                                        line-height: 30px;
-                                        color: $elevar_blue;
-                                        font-weight: 700;
-                                        padding: 0;
-                                        letter-spacing: 0px;
+                            justify-content: flex-end;
+                            margin-top: -40px;
+                                div.widget.widget_archive {
+                                    width: 250px;
+                                    margin-bottom: 68px;
+                                    margin-right: 25px;
+                                    h5 {
                                         text-transform: initial;
+                                        letter-spacing: 0;
+                                        font-size: 18px;
                                     }
                                 }
-                                div.edgtf-post-info {
-                                    margin: 0;
-                                    div.edgtf-post-info-author {
-                                        display: none !important;
-                                    }
-                                    div.edgtf-post-info-date.entry-date {
-                                    position: relative;
-                                    display: flex;
-                                    padding: 0 25px 0 0;
-                                    line-height: 32px;
-                                    font-size: 18px;
+                        }
+                        div.edgtf-blog-holder {
+                            display: flex;
+                            width: 100%;
+                            flex: 1;
+                            flex-wrap: wrap;
+                            flex-direction: row;
+                            box-sizing: border-box;
+                            article.post {
+                                padding: 0;
+                                margin: 0 0 50px 25px;
+                                border: none;
+                                width: 47%;
+                                flex-basis: 47%;
+                                flex-wrap: wrap;
+                                display: flex;
+                                box-sizing: border-box;
+                                min-height: 500px;
+                                div.edgtf-post-content {
+                                    padding: 50px;
+                                    border: 1px solid #bbbbbb;
+                                    border-radius: 18px;
+                                    h2.entry-title.edgtf-post-title {
+                                        margin: 0 0 25px;
                                         a {
-                                            font-size: 17px;
-                                            line-height: 32px;
-                                            color: $drk_gray3;
+                                            font-size: 20px;
+                                            line-height: 30px;
+                                            color: $elevar_blue;
                                             font-weight: 700;
                                             padding: 0;
+                                            letter-spacing: 0px;
+                                            text-transform: initial;
                                         }
                                     }
-                                    div.edgtf-blog-like {
+                                    div.edgtf-post-info {
+                                        margin: 0;
+                                        div.edgtf-post-info-author {
+                                            display: none !important;
+                                        }
+                                        div.edgtf-post-info-date.entry-date {
                                         position: relative;
                                         display: flex;
                                         padding: 0 25px 0 0;
-                                        font-size: inherit;
                                         line-height: 32px;
-                                        top: 0;
-                                        height: 32px;
                                         font-size: 18px;
                                             a {
-                                            font-size: 17px;
+                                                font-size: 17px;
+                                                line-height: 32px;
+                                                color: $drk_gray3;
+                                                font-weight: 700;
+                                                padding: 0;
+                                            }
+                                        }
+                                        div.edgtf-blog-like {
+                                            position: relative;
+                                            display: flex;
+                                            padding: 0 25px 0 0;
+                                            font-size: inherit;
                                             line-height: 32px;
+                                            top: 0;
+                                            height: 32px;
+                                            font-size: 18px;
+                                                a {
+                                                font-size: 17px;
+                                                line-height: 32px;
+                                                color: $drk_gray3;
+                                                font-weight: 700;
+                                                padding: 0;
+                                                i.icon_heart,
+                                                i.icon_heart_alt {
+                                                    color: red;
+                                                }
+                                                }
+                                        }
+                                        div.edgtf-post-info-date.entry-date:after {
                                             color: $drk_gray3;
-                                            font-weight: 700;
-                                            padding: 0;
-                                            i.icon_heart,
-                                            i.icon_heart_alt {
-                                                color: red;
-                                            }
-                                            }
+                                            right: 10px;
+                                        }
                                     }
-                                    div.edgtf-post-info-date.entry-date:after {
-                                        color: $drk_gray3;
-                                        right: 10px;
-                                    }
-                                }
-                                p.edgtf-post-excerpt {
-                                    padding: 0;
-                                    font-size: 17px;
-                                    line-height: 32px;
-                                    color: $drk_gray3;
-                                    font-weight: 400;
-                                }
-                                div.edgtf-post-read-more-holder {
-                                    a.edgtf-btn {
+                                    p.edgtf-post-excerpt {
+                                        padding: 0;
                                         font-size: 17px;
                                         line-height: 32px;
-                                        color: $elevar_blue !important;
-                                        justify-content: flex-start;
-                                        text-decoration: underline;
-                                        span.edgtf-btn-text {
-                                            letter-spacing: 0;
-                                            font-size: 21px;
+                                        color: $drk_gray3;
+                                        font-weight: 400;
+                                    }
+                                    div.edgtf-post-read-more-holder {
+                                        a.edgtf-btn {
+                                            font-size: 17px;
                                             line-height: 32px;
-                                            font-weight: 700;
-                                        }
-                                        }
-                                        i {
-                                            display: none;
-                                        }
+                                            color: $elevar_blue !important;
+                                            justify-content: flex-start;
+                                            text-decoration: underline;
+                                            span.edgtf-btn-text {
+                                                letter-spacing: 0;
+                                                font-size: 21px;
+                                                line-height: 32px;
+                                                font-weight: 700;
+                                            }
+                                            }
+                                            i {
+                                                display: none;
+                                            }
+                                    }
                                 }
                             }
-                        }
-                        article.post:nth-child(odd) {
-                            margin: 0 25px 50px 0;
+                            article.post:nth-child(odd) {
+                                margin: 0 25px 50px 0;
+                            }
                         }
                     }
                 }
@@ -376,9 +378,8 @@ div.edgtf-blog-holder.edgtf-blog-single {
         }
     }
 }
-}
-@media only screen and (max-width: 1300px) {
-    .page-template-blog-standard-php {
+@media all and (max-width: 1300px) {
+    body.news-page {
         div.edgtf-content {
             div.edgtf-content-inner {
                 div.edgtf-container {
@@ -517,12 +518,12 @@ div.edgtf-blog-holder.edgtf-blog-single {
         }
     }
 }
-@media only screen and (max-width: 1024px) {
-    .page-template-blog-standard-php {
+@media all and (max-width: 1024px) {
+    body.news-page {
         div.edgtf-content {
             div.edgtf-content-inner {
                 div.edgtf-container {
-                    section.wpb-content-wrapper {
+                    .wpb-content-wrapper {
                         div#press_release_hero_row {
                             background-image: url("/wp-content/themes/conall-child/images/press-release-hero-1024x306.png");
                             padding-top: 29.89%;
@@ -663,8 +664,8 @@ div.edgtf-blog-holder.edgtf-blog-single {
         }
     }
 }
-@media only screen and (max-width: 960px) {
-    .page-template-blog-standard-php {
+@media all and (max-width: 960px) {
+    body.news-page {
         div.edgtf-content {
             div.edgtf-content-inner {
                 div.edgtf-container {
@@ -807,8 +808,8 @@ div.edgtf-blog-holder.edgtf-blog-single {
         }
     }
 }
-@media only screen and (max-width: 768px) {
-    .page-template-blog-standard-php {
+@media all and (max-width: 768px) {
+    body.news-page {
         div.edgtf-content {
             div.edgtf-content-inner {
                 div.edgtf-container {
@@ -949,12 +950,12 @@ div.edgtf-blog-holder.edgtf-blog-single {
         }
     }
 }
-@media only screen and (max-width: 576px) {
-    .page-template-blog-standard-php {
+@media all and (max-width: 576px) {
+    body.news-page {
             div.edgtf-content {
                 div.edgtf-content-inner {
                     div.edgtf-container {
-                        section.wpb-content-wrapper {
+                        .wpb-content-wrapper {
                             div#press_release_hero_row {
                                 background-image: url("/wp-content/themes/conall-child/images/press-release-hero-414x405.png");
                                 padding-top: 97.83%;
@@ -1097,8 +1098,8 @@ div.edgtf-blog-holder.edgtf-blog-single {
             }
     }
 }
-@media only screen and (max-width: 480px) {
-    .page-template-blog-standard-php {
+@media all and (max-width: 480px) {
+    body.news-page {
             div.edgtf-content {
                 div.edgtf-content-inner {
                     div.edgtf-container {
