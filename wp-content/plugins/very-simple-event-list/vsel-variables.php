@@ -174,10 +174,10 @@ if (empty($page_date_label)) {
 	$page_date_label = __( 'Date: %s', 'very-simple-event-list' );
 }
 if (empty($page_start_label)) {
-	$page_start_label = __( 'Start date: %s', 'very-simple-event-list' );
+	$page_start_label = __( '%s', 'very-simple-event-list' );
 }
 if (empty($page_end_label)) {
-	$page_end_label = __( 'End date: %s', 'very-simple-event-list' );
+	$page_end_label = __( '%s', 'very-simple-event-list' );
 }
 if (empty($page_time_label)) {
 	$page_time_label = __( 'Time: %s', 'very-simple-event-list' );
@@ -186,7 +186,7 @@ if (empty($page_all_day_label)) {
 	$page_all_day_label = __( 'All-day event', 'very-simple-event-list' );
 }
 if (empty($page_location_label)) {
-	$page_location_label = __( 'Location: %s', 'very-simple-event-list' );
+	$page_location_label = __( '%s', 'very-simple-event-list' );
 }
 if (empty($page_read_more_label)) {
 	$page_read_more_label = __( 'Read more', 'very-simple-event-list' );

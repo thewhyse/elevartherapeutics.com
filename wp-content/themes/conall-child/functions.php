@@ -25,75 +25,79 @@ function elevar_assets()
 add_action('wp_enqueue_scripts', 'elevar_assets', 99);
 
 // DH Pop-up to page head
-function elevar_javascript_footer() {
-    ?>
-        <script>
-            function set_check() {
-                var popid = document.querySelector('div.dh-popup.vc_non_responsive').id;
-                console.log(popid);
-                if (popid == 'dh_popup_17354') {
-                    console.log('checked 17354');
-                    Cookies.set('dh_popup_1_17354', 'show');
-                } else if (popid == 'dh_popup_17327') {
-                    console.log('checked 17327');
-                    Cookies.set('dh_popup_1_17327', 'show');
-                } else if (popid == 'dh_popup_17359') {
-                    console.log('checked 17359');
-                    Cookies.set('dh_popup_1_17359', 'show');
-                } else if (popid == 'dh_popup_17331') {
-                    console.log('checked 17331');
-                    Cookies.set('dh_popup_2_17331', 'show');
-                } else if (popid == 'dh_popup_17357') {
-                    console.log('checked 17357');
-                    Cookies.set('dh_popup_2_17357', 'show');
-                } else if (popid == 'dh_popup_17363') {
-                    console.log('checked 17363');
-                    Cookies.set('dh_popup_2_17363', 'show');
-                } else {
-                    console.log('no popups found');
-                }
+function elevar_javascript_footer()
+{
+?>
+    <script>
+        function set_check() {
+            var popid = document.querySelector('div.dh-popup.vc_non_responsive').id;
+            console.log(popid);
+            if (popid == 'dh_popup_17354') {
+                console.log('checked 17354');
+                Cookies.set('dh_popup_1_17354', 'show');
+            } else if (popid == 'dh_popup_17327') {
+                console.log('checked 17327');
+                Cookies.set('dh_popup_1_17327', 'show');
+            } else if (popid == 'dh_popup_17359') {
+                console.log('checked 17359');
+                Cookies.set('dh_popup_1_17359', 'show');
+            } else if (popid == 'dh_popup_17331') {
+                console.log('checked 17331');
+                Cookies.set('dh_popup_2_17331', 'show');
+            } else if (popid == 'dh_popup_17357') {
+                console.log('checked 17357');
+                Cookies.set('dh_popup_2_17357', 'show');
+            } else if (popid == 'dh_popup_17363') {
+                console.log('checked 17363');
+                Cookies.set('dh_popup_2_17363', 'show');
+            } else {
+                console.log('no popups found');
             }
-        </script>
-    <?php
+        }
+    </script>
+<?php
 }
 add_action('wp_footer', 'elevar_javascript_footer');
 
 // Add HotJar script to page head
-function hotjar_javascript() {
-    ?>
-        <!-- Hotjar Tracking Code for https://elevartherapeutics.com/ -->
-        <script>
-            (function(h, o, t, j, a, r) {
-                h.hj = h.hj || function() {
-                    (h.hj.q = h.hj.q || []).push(arguments)
-                };
-                h._hjSettings = {
-                    hjid: 3469432,
-                    hjsv: 6
-                };
-                a = o.getElementsByTagName('head')[0];
-                r = o.createElement('script');
-                r.async = 1;
-                r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-                a.appendChild(r);
-            })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-        </script>
-    <?php
+function hotjar_javascript()
+{
+?>
+    <!-- Hotjar Tracking Code for https://elevartherapeutics.com/ -->
+    <script>
+        (function(h, o, t, j, a, r) {
+            h.hj = h.hj || function() {
+                (h.hj.q = h.hj.q || []).push(arguments)
+            };
+            h._hjSettings = {
+                hjid: 3469432,
+                hjsv: 6
+            };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+<?php
 }
 add_action('wp_head', 'hotjar_javascript');
 
 // Add HubSpot script to page head
-function hubspot_javascript() {
-    ?>
-        <!-- Start of HubSpot Embed Code -->
-        <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/24308407.js"></script>
-        <!-- End of HubSpot Embed Code -->
-        <?php
-    }
+function hubspot_javascript()
+{
+?>
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/24308407.js"></script>
+    <!-- End of HubSpot Embed Code -->
+    <?php
+}
 add_action('wp_head', 'hubspot_javascript');
 
 add_filter('body_class', 'custom_class');
-function custom_class($classes) {
+function custom_class($classes)
+{
     if (is_front_page()) {
         $classes[] = 'home-page';
     }
@@ -178,148 +182,188 @@ function custom_class($classes) {
     return $classes;
 }
 
-// Add marker.io script to page head
-function marker_io_asco2024() {
+// Add marker.io ASCO 2024 script to page head
+function marker_io_asco2024()
+{
     if (is_page('elevar-events')) {
-        ?>
-            <script>
-                window.markerConfig = {
-                    project: '6578ebe4661f67f7e53274cb',
-                    source: 'snippet'
-                };
+    ?>
+        <script>
+            window.markerConfig = {
+                project: '6578ebe4661f67f7e53274cb',
+                source: 'snippet'
+            };
 
-                ! function(e, r, a) {
-                    if (!e.__Marker) {
-                        e.__Marker = {};
-                        var t = [],
-                            n = {
-                                __cs: t
-                            };
-                        ["show", "hide", "isVisible", "capture", "cancelCapture", "unload", "reload", "isExtensionInstalled", "setReporter", "setCustomData", "on", "off"].forEach(function(e) {
-                            n[e] = function() {
-                                var r = Array.prototype.slice.call(arguments);
-                                r.unshift(e), t.push(r)
-                            }
-                        }), e.Marker = n;
-                        var s = r.createElement("script");
-                        s.async = 1, s.src = "https://edge.marker.io/latest/shim.js";
-                        var i = r.getElementsByTagName("script")[0];
-                        i.parentNode.insertBefore(s, i)
-                    }
-                }(window, document);
-            </script>
-        <?php
+            ! function(e, r, a) {
+                if (!e.__Marker) {
+                    e.__Marker = {};
+                    var t = [],
+                        n = {
+                            __cs: t
+                        };
+                    ["show", "hide", "isVisible", "capture", "cancelCapture", "unload", "reload", "isExtensionInstalled", "setReporter", "setCustomData", "on", "off"].forEach(function(e) {
+                        n[e] = function() {
+                            var r = Array.prototype.slice.call(arguments);
+                            r.unshift(e), t.push(r)
+                        }
+                    }), e.Marker = n;
+                    var s = r.createElement("script");
+                    s.async = 1, s.src = "https://edge.marker.io/latest/shim.js";
+                    var i = r.getElementsByTagName("script")[0];
+                    i.parentNode.insertBefore(s, i)
+                }
+            }(window, document);
+        </script>
+    <?php
     }
 }
 add_action('wp_head', 'marker_io_asco2024');
 
+// Add marker.io Generic Events script to page head
+function marker_io_gen_events()
+{
+    if (is_page('generic-events-page')) {
+    ?>
+        <script>
+            window.markerConfig = {
+                project: '657c7ea9deceb6f2b584e970',
+                source: 'snippet'
+            };
+
+            ! function(e, r, a) {
+                if (!e.__Marker) {
+                    e.__Marker = {};
+                    var t = [],
+                        n = {
+                            __cs: t
+                        };
+                    ["show", "hide", "isVisible", "capture", "cancelCapture", "unload", "reload", "isExtensionInstalled", "setReporter", "setCustomData", "on", "off"].forEach(function(e) {
+                        n[e] = function() {
+                            var r = Array.prototype.slice.call(arguments);
+                            r.unshift(e), t.push(r)
+                        }
+                    }), e.Marker = n;
+                    var s = r.createElement("script");
+                    s.async = 1, s.src = "https://edge.marker.io/latest/shim.js";
+                    var i = r.getElementsByTagName("script")[0];
+                    i.parentNode.insertBefore(s, i)
+                }
+            }(window, document);
+        </script>
+    <?php
+    }
+}
+add_action('wp_head', 'marker_io_gen_events');
+
 /*
  * Function for Post Duplication
  */
-function elevar_duplicate_post_as_draft() {
-  global $wpdb;
-  if (! ( isset( $_GET['post']) || isset( $_POST['post'])  || ( isset($_REQUEST['action']) && 'elevar_duplicate_post_as_draft' == $_REQUEST['action'] ) ) ) {
-    wp_die('No Post Selected to Duplicate!');
-  }
+function elevar_duplicate_post_as_draft()
+{
+    global $wpdb;
+    if (!(isset($_GET['post']) || isset($_POST['post'])  || (isset($_REQUEST['action']) && 'elevar_duplicate_post_as_draft' == $_REQUEST['action']))) {
+        wp_die('No Post Selected to Duplicate!');
+    }
 
-  /*
+    /*
    * Nonce verification
    */
-  if ( !isset( $_GET['duplicate_nonce'] ) || !wp_verify_nonce( $_GET['duplicate_nonce'], basename( __FILE__ ) ) )
-    return;
+    if (!isset($_GET['duplicate_nonce']) || !wp_verify_nonce($_GET['duplicate_nonce'], basename(__FILE__)))
+        return;
 
-  /*
+    /*
    * get the original post id
    */
-  $post_id = (isset($_GET['post']) ? absint( $_GET['post'] ) : absint( $_POST['post'] ) );
-  /*
+    $post_id = (isset($_GET['post']) ? absint($_GET['post']) : absint($_POST['post']));
+    /*
    * and all the original post data then
    */
-  $post = get_post( $post_id );
+    $post = get_post($post_id);
 
-  /*
+    /*
    * if you don't want current user to be the new post author,
    * then change next couple of lines to this: $new_post_author = $post->post_author;
    */
-  $current_user = wp_get_current_user();
-  $new_post_author = $current_user->ID;
+    $current_user = wp_get_current_user();
+    $new_post_author = $current_user->ID;
 
-  /*
+    /*
    * if post data exists, create the post duplicate
    */
-  if (isset( $post ) && $post != null) {
+    if (isset($post) && $post != null) {
 
-    /*
+        /*
      * new post data array
      */
-    $args = array(
-      'comment_status' => $post->comment_status,
-      'ping_status'    => $post->ping_status,
-      'post_author'    => $new_post_author,
-      'post_content'   => $post->post_content,
-      'post_excerpt'   => $post->post_excerpt,
-      'post_name'      => $post->post_name,
-      'post_parent'    => $post->post_parent,
-      'post_password'  => $post->post_password,
-      'post_status'    => 'draft',
-      'post_title'     => $post->post_title,
-      'post_type'      => $post->post_type,
-      'to_ping'        => $post->to_ping,
-      'menu_order'     => $post->menu_order
-    );
+        $args = array(
+            'comment_status' => $post->comment_status,
+            'ping_status'    => $post->ping_status,
+            'post_author'    => $new_post_author,
+            'post_content'   => $post->post_content,
+            'post_excerpt'   => $post->post_excerpt,
+            'post_name'      => $post->post_name,
+            'post_parent'    => $post->post_parent,
+            'post_password'  => $post->post_password,
+            'post_status'    => 'draft',
+            'post_title'     => $post->post_title,
+            'post_type'      => $post->post_type,
+            'to_ping'        => $post->to_ping,
+            'menu_order'     => $post->menu_order
+        );
 
-    /*
+        /*
      * insert the post by wp_insert_post() function
      */
-    $new_post_id = wp_insert_post( $args );
+        $new_post_id = wp_insert_post($args);
 
-    /*
+        /*
      * get all current post terms ad set them to the new post draft
      */
-    $taxonomies = get_object_taxonomies($post->post_type); // returns array of taxonomy names for post type, ex array("category", "post_tag");
-    foreach ($taxonomies as $taxonomy) {
-      $post_terms = wp_get_object_terms($post_id, $taxonomy, array('fields' => 'slugs'));
-      wp_set_object_terms($new_post_id, $post_terms, $taxonomy, false);
-    }
+        $taxonomies = get_object_taxonomies($post->post_type); // returns array of taxonomy names for post type, ex array("category", "post_tag");
+        foreach ($taxonomies as $taxonomy) {
+            $post_terms = wp_get_object_terms($post_id, $taxonomy, array('fields' => 'slugs'));
+            wp_set_object_terms($new_post_id, $post_terms, $taxonomy, false);
+        }
 
-    /*
+        /*
      * duplicate all post meta just in two SQL queries
      */
-    $post_meta_infos = $wpdb->get_results("SELECT meta_key, meta_value FROM $wpdb->postmeta WHERE post_id=$post_id");
-    if (count($post_meta_infos)!=0) {
-      $sql_query = "INSERT INTO $wpdb->postmeta (post_id, meta_key, meta_value) ";
-      foreach ($post_meta_infos as $meta_info) {
-        $meta_key = $meta_info->meta_key;
-        if( $meta_key == '_wp_old_slug' ) continue;
-        $meta_value = addslashes($meta_info->meta_value);
-        $sql_query_sel[]= "SELECT $new_post_id, '$meta_key', '$meta_value'";
-      }
-      $sql_query.= implode(" UNION ALL ", $sql_query_sel);
-      $wpdb->query($sql_query);
-    }
-    /*
+        $post_meta_infos = $wpdb->get_results("SELECT meta_key, meta_value FROM $wpdb->postmeta WHERE post_id=$post_id");
+        if (count($post_meta_infos) != 0) {
+            $sql_query = "INSERT INTO $wpdb->postmeta (post_id, meta_key, meta_value) ";
+            foreach ($post_meta_infos as $meta_info) {
+                $meta_key = $meta_info->meta_key;
+                if ($meta_key == '_wp_old_slug') continue;
+                $meta_value = addslashes($meta_info->meta_value);
+                $sql_query_sel[] = "SELECT $new_post_id, '$meta_key', '$meta_value'";
+            }
+            $sql_query .= implode(" UNION ALL ", $sql_query_sel);
+            $wpdb->query($sql_query);
+        }
+        /*
      * finally, redirect to the edit post screen for the new draft
      */
-    wp_redirect( admin_url( 'post.php?action=edit&post=' . $new_post_id ) );
-    exit;
-  } else {
-    wp_die('Post creation failed, could not find original post: ' . $post_id);
-  }
+        wp_redirect(admin_url('post.php?action=edit&post=' . $new_post_id));
+        exit;
+    } else {
+        wp_die('Post creation failed, could not find original post: ' . $post_id);
+    }
 }
-add_action( 'admin_action_elevar_duplicate_post_as_draft', 'elevar_duplicate_post_as_draft' );
-function elevar_duplicate_post_link( $actions, $post ) {
-  if (current_user_can('edit_posts')) {
-    $actions['duplicate'] = '<a href="' . wp_nonce_url('admin.php?action=elevar_duplicate_post_as_draft&post=' . $post->ID, basename(__FILE__), 'duplicate_nonce' ) . '" title="Duplicate this Post" rel="permalink">Duplicate Post</a>';
-  }
-  return $actions;
+add_action('admin_action_elevar_duplicate_post_as_draft', 'elevar_duplicate_post_as_draft');
+function elevar_duplicate_post_link($actions, $post)
+{
+    if (current_user_can('edit_posts')) {
+        $actions['duplicate'] = '<a href="' . wp_nonce_url('admin.php?action=elevar_duplicate_post_as_draft&post=' . $post->ID, basename(__FILE__), 'duplicate_nonce') . '" title="Duplicate this Post" rel="permalink">Duplicate Post</a>';
+    }
+    return $actions;
 }
-add_filter( 'post_row_actions', 'elevar_duplicate_post_link', 10, 2 );
+add_filter('post_row_actions', 'elevar_duplicate_post_link', 10, 2);
 
 
 /*
  * Function for Page Duplication
  */
-function elevar_duplicate_page_as_draft() {
+function elevar_duplicate_page_as_draft()
+{
     global $wpdb;
     if (!(isset($_GET['post']) || isset($_POST['post'])  || (isset($_REQUEST['action']) && 'elevar_duplicate_page_as_draft' == $_REQUEST['action']))) {
         wp_die('No Page Selected to Duplicate!');
@@ -410,7 +454,8 @@ function elevar_duplicate_page_as_draft() {
     }
 }
 add_action('admin_action_elevar_duplicate_page_as_draft', 'elevar_duplicate_page_as_draft');
-function elevar_duplicate_page_link($actions, $page) {
+function elevar_duplicate_page_link($actions, $page)
+{
     if (current_user_can('edit_posts')) {
         $actions['duplicate'] = '<a href="' . wp_nonce_url('admin.php?action=elevar_duplicate_page_as_draft&post=' . $page->ID, basename(__FILE__), 'duplicate_nonce') . '" title="Duplicate this Page" rel="permalink">Duplicate Page</a>';
     }

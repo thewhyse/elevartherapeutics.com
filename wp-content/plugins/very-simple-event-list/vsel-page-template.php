@@ -26,151 +26,156 @@ $output .= '<div id="event-'.get_the_ID().'" class="vsel-content'.vsel_event_cat
 		} else {
 			// display title
 			if  ($page_title_location != 'yes') {
-				$output .= $page_event_title;
+				// $output .= $page_event_title;
+                $output .= '<a href="' . esc_url($more_info_link) . '" title="' . esc_url($more_info_link) . '" target="_blank">' . $page_event_title . '</a>';
 			}
 		}
-		// date
-		if ( $page_date_hide != 'yes' ) {
-			if ( empty($start_date) || empty($end_date) || ($start_date > $end_date) ) {
-				$output .= '<div class="vsel-meta-date vsel-meta-error">';
-				$output .= esc_attr__( 'Error: please reset date.', 'very-simple-event-list' );
-				$output .= '</div>';
-			} elseif ($end_date > $start_date) {
-				if ( $page_date_type == 'icon' ) {
-					if ($page_date_format == 'j F Y' || $page_date_format == 'd/m/Y' || $page_date_format == 'd-m-Y') {
-						$output .= '<div class="vsel-meta-date-icon vsel-meta-combined-date-icon"><div class="vsel-start-icon">';
-						$output .= $page_start_icon_1;
-						$output .= '</div>';
-						$output .= '<div class="vsel-end-icon">';
-						$output .= $page_end_icon_1;
-						$output .= '</div></div>';
-					} else {
-						$output .= '<div class="vsel-meta-date-icon vsel-meta-combined-date-icon"><div class="vsel-start-icon">';
-						$output .= $page_start_icon_2;
-						$output .= '</div>';
-						$output .= '<div class="vsel-end-icon">';
-						$output .= $page_end_icon_2;
-						$output .= '</div></div>';
-					}
-				} else {
-					if ($page_date_combine == 'yes') {
-						$output .= '<div class="vsel-meta-date vsel-meta-combined-date">';
-						$output .= $page_start_default;
-						$output .= ' '.esc_attr($date_separator).' ';
-						$output .= $page_end_default;
-						$output .= '</div>';
-					} else {
-						$output .= '<div class="vsel-meta-date vsel-meta-start-date">';
-						$output .= $page_start_default;
-						$output .= '</div>';
-						$output .= '<div class="vsel-meta-date vsel-meta-end-date">';
-						$output .= $page_end_default;
-						$output .= '</div>';
-					}
-				}
-			} elseif ($end_date == $start_date) {
-				if ( $page_date_type == 'icon' ) {
-					if ($page_date_format == 'j F Y' || $page_date_format == 'd/m/Y' || $page_date_format == 'd-m-Y') {
-						$output .= '<div class="vsel-meta-date-icon vsel-meta-single-date-icon"><div class="vsel-start-icon">';
-						$output .= $page_start_icon_1;
-						$output .= '</div></div>';
-					} else {
-						$output .= '<div class="vsel-meta-date-icon vsel-meta-single-date-icon"><div class="vsel-start-icon">';
-						$output .= $page_start_icon_2;
-						$output .= '</div></div>';
-					}
-				} else {
-					$output .= '<div class="vsel-meta-date vsel-meta-single-date">';
-					$output .= $page_same_default;
-					$output .= '</div>';
-				}
-			}
-		}
-		// if date icon is displayed next to other event details
-		if ( ($page_date_hide != 'yes') && ($page_date_type == 'icon') && ($page_meta_combine == 'yes') ) {
-			if ($page_title_location != 'yes') {
-				// display title
-				$output .= $page_event_title;
-			}
-		}
-		// time
-		if ( $page_time_hide != 'yes' ) {
-			if ( $one_time_field != 'yes' ) {
-				if ( ($start_date == $end_date) && ($start_time > $end_time) ) {
-					$output .= '<div class="vsel-meta-time vsel-meta-error">';
-					$output .= esc_attr__( 'Error: please reset time.', 'very-simple-event-list' );
-					$output .= '</div>';
-				} else {
-					if ( $all_day_event == 'yes' ) {
-						$output .= '<div class="vsel-meta-time vsel-meta-all-day">';
-						$output .= esc_attr($page_all_day_label);
-						$output .= '</div>';
-					} else {
-						if ( ($hide_equal_time == 'yes') && ($start_time == $end_time) ) {
-							$output .= '';
-						} else {
-							if ( $hide_end_time == 'yes' ) {
-								$end = '';
-							} else {
-								$end = ' '.esc_attr($time_separator).' '.wp_date( esc_attr($template_time_format), esc_attr($end_date_timestamp), $utc_timezone );
-							}		
-							$output .= '<div class="vsel-meta-time">';
-							$output .= sprintf(esc_attr($page_time_label), '<span>'.wp_date( esc_attr($template_time_format), esc_attr($start_date_timestamp), $utc_timezone ).$end.'</span>' );
-							$output .= '</div>';
-						}
-					}
-				}
-			} else {
-				if (!empty($time)) {
-					$output .= '<div class="vsel-meta-time">';
-					$output .= sprintf(esc_attr($page_time_label), '<span>'.esc_attr($time).'</span>' );
-					$output .= '</div>';
-				}
-			}
-		}
-		// location
-		if ( $page_location_hide != 'yes' ) {
-			if (!empty($location)) {
-				$output .= '<div class="vsel-meta-location">';
-				$output .= sprintf(esc_attr($page_location_label), '<span>'.esc_attr($location).'</span>' );
-				$output .= '</div>';
-			}
-		}
-		// include acf fields
-		if ( class_exists('acf') && ($page_acf_hide != 'yes') ) {
-			include 'vsel-acf.php';
-		}
-		// more info link
-		if ( ($redirect_title_to_more_info != 'yes') && ($redirect_image_to_more_info != 'yes') ) {
-			if ( $page_link_hide != 'yes' ) {
-				if (!empty($more_info_link)) {
-					$output .= '<div class="vsel-meta-link">';
-					$output .= '<a href="'.esc_url($more_info_link).'" rel="noopener noreferrer" '.$more_info_link_target.' title="'.esc_url($more_info_link).'">'.esc_attr($more_info_link_label).'</a>';
-					$output .= '</div>';
-				}
-			}
-		}
-		// categories
-		if ( $page_cats_hide != 'yes' ) {
-			$cats_raw = wp_strip_all_tags( get_the_term_list( get_the_ID(), 'event_cat', '<span>', ' '.esc_attr($cat_separator).' ', '</span>' ) );
-			$cats = get_the_term_list( get_the_ID(), 'event_cat', '<span>', ' '.esc_attr($cat_separator).' ', '</span>' );
-			if ( has_term( '', 'event_cat', get_the_ID() ) ) {
-				if ($page_link_cat != 'yes') {
-					$output .= '<div class="vsel-meta-cats">';
-					$output .= $cats_raw;
-					$output .= '</div>';
-				} else {
-					$output .= '<div class="vsel-meta-cats">';
-					$output .= $cats;
-					$output .= '</div>';
-				}
-			}
-		}
-		// if date icon is displayed next to other event details
-		if ( ($page_date_hide != 'yes') && ($page_date_type == 'icon') && ($page_meta_combine == 'yes') ) {
-			$output .= '</div>';
-		}
-	// end event details
+        $output .= '<div class="event-info-wrapper"> ';
+            // date
+            if ( $page_date_hide != 'yes' ) {
+                if ( empty($start_date) || empty($end_date) || ($start_date > $end_date) ) {
+                    $output .= '<div class="vsel-meta-date vsel-meta-error">';
+                    $output .= esc_attr__( 'Error: please reset date.', 'very-simple-event-list' );
+                    $output .= '</div>';
+                } elseif ($end_date > $start_date) {
+                    if ( $page_date_type == 'icon' ) {
+                        if ($page_date_format == 'j F Y' || $page_date_format == 'd/m/Y' || $page_date_format == 'd-m-Y') {
+                            $output .= '<div class="vsel-meta-date-icon vsel-meta-combined-date-icon"><div class="vsel-start-icon">';
+                            $output .= $page_start_icon_1;
+                            $output .= '</div>';
+                            $output .= '<div class="vsel-end-icon">';
+                            $output .= $page_end_icon_1;
+                            $output .= '</div></div>';
+                        } else {
+                            $output .= '<div class="vsel-meta-date-icon vsel-meta-combined-date-icon"><div class="vsel-start-icon">';
+                            $output .= $page_start_icon_2;
+                            $output .= '</div>';
+                            $output .= '<div class="vsel-end-icon">';
+                            $output .= $page_end_icon_2;
+                            $output .= '</div></div>';
+                        }
+                    } else {
+                        if ($page_date_combine == 'yes') {
+                            $output .= '<div class="vsel-meta-rows date">';
+                            $output .= '<img class="ge-event-icons cal" src="/wp-content/themes/conall-child/images/events-cal-icon.svg" alt="Calendar icon" width="31" height="33" /> ';
+                            $output .= $page_start_default;
+                            $output .= ' '.esc_attr($date_separator).' ';
+                            $output .= $page_end_default;
+                            $output .= '</div>';
+                        } else {
+                            $output .= '<div class="vsel-meta-date vsel-meta-start-date">';
+                            $output .= $page_start_default;
+                            $output .= '</div>';
+                            $output .= '<div class="vsel-meta-date vsel-meta-end-date">';
+                            $output .= $page_end_default;
+                            $output .= '</div>';
+                        }
+                    }
+                } elseif ($end_date == $start_date) {
+                    if ( $page_date_type == 'icon' ) {
+                        if ($page_date_format == 'j F Y' || $page_date_format == 'd/m/Y' || $page_date_format == 'd-m-Y') {
+                            $output .= '<div class="vsel-meta-date-icon vsel-meta-single-date-icon"><div class="vsel-start-icon">';
+                            $output .= $page_start_icon_1;
+                            $output .= '</div></div>';
+                        } else {
+                            $output .= '<div class="vsel-meta-date-icon vsel-meta-single-date-icon"><div class="vsel-start-icon">';
+                            $output .= $page_start_icon_2;
+                            $output .= '</div></div>';
+                        }
+                    } else {
+                        $output .= '<div class="vsel-meta-date vsel-meta-single-date">';
+                        $output .= $page_same_default;
+                        $output .= '</div>';
+                    }
+                }
+            }
+            // if date icon is displayed next to other event details
+            if ( ($page_date_hide != 'yes') && ($page_date_type == 'icon') && ($page_meta_combine == 'yes') ) {
+                if ($page_title_location != 'yes') {
+                    // display title
+                    $output .= $page_event_title;
+                }
+            }
+            // time
+            if ( $page_time_hide != 'yes' ) {
+                if ( $one_time_field != 'yes' ) {
+                    if ( ($start_date == $end_date) && ($start_time > $end_time) ) {
+                        $output .= '<div class="vsel-meta-time vsel-meta-error">';
+                        $output .= esc_attr__( 'Error: please reset time.', 'very-simple-event-list' );
+                        $output .= '</div>';
+                    } else {
+                        if ( $all_day_event == 'yes' ) {
+                            $output .= '<div class="vsel-meta-time vsel-meta-all-day">';
+                            $output .= esc_attr($page_all_day_label);
+                            $output .= '</div>';
+                        } else {
+                            if ( ($hide_equal_time == 'yes') && ($start_time == $end_time) ) {
+                                $output .= '';
+                            } else {
+                                if ( $hide_end_time == 'yes' ) {
+                                    $end = '';
+                                } else {
+                                    $end = ' '.esc_attr($time_separator).' '.wp_date( esc_attr($template_time_format), esc_attr($end_date_timestamp), $utc_timezone );
+                                }
+                                $output .= '<div class="vsel-meta-time">';
+                                $output .= sprintf(esc_attr($page_time_label), '<span>'.wp_date( esc_attr($template_time_format), esc_attr($start_date_timestamp), $utc_timezone ).$end.'</span>' );
+                                $output .= '</div>';
+                            }
+                        }
+                    }
+                } else {
+                    if (!empty($time)) {
+                        $output .= '<div class="vsel-meta-time">';
+                        $output .= sprintf(esc_attr($page_time_label), '<span>'.esc_attr($time).'</span>' );
+                        $output .= '</div>';
+                    }
+                }
+            }
+            // location
+            if ( $page_location_hide != 'yes' ) {
+                if (!empty($location)) {
+                    $output .= '<div class="vsel-meta-rows location">';
+                    $output .= '<img class="ge-event-icons location" src="/wp-content/themes/conall-child/images/event-location-icon.svg" alt="Location icon" width="32" height="26" /> ';
+                    $output .= sprintf(esc_attr($page_location_label), '<span>'.esc_attr($location).'</span>' );
+                    $output .= '</div>';
+                }
+            }
+            // include acf fields
+            if ( class_exists('acf') && ($page_acf_hide != 'yes') ) {
+                include 'vsel-acf.php';
+            }
+            // more info link
+            if ( ($redirect_title_to_more_info != 'yes') && ($redirect_image_to_more_info != 'yes') ) {
+                if ( $page_link_hide != 'yes' ) {
+                    if (!empty($more_info_link)) {
+                        $output .= '<div class="vsel-meta-link">';
+                        $output .= '<a href="'.esc_url($more_info_link).'" rel="noopener noreferrer" '.$more_info_link_target.' title="'.esc_url($more_info_link).'">'.esc_attr($more_info_link_label).'</a>';
+                        $output .= '</div>';
+                    }
+                }
+            }
+            // categories
+            if ( $page_cats_hide != 'yes' ) {
+                $cats_raw = wp_strip_all_tags( get_the_term_list( get_the_ID(), 'event_cat', '<span>', ' '.esc_attr($cat_separator).' ', '</span>' ) );
+                $cats = get_the_term_list( get_the_ID(), 'event_cat', '<span>', ' '.esc_attr($cat_separator).' ', '</span>' );
+                if ( has_term( '', 'event_cat', get_the_ID() ) ) {
+                    if ($page_link_cat != 'yes') {
+                        $output .= '<div class="vsel-meta-cats">';
+                        $output .= $cats_raw;
+                        $output .= '</div>';
+                    } else {
+                        $output .= '<div class="vsel-meta-cats">';
+                        $output .= $cats;
+                        $output .= '</div>';
+                    }
+                }
+            }
+            // if date icon is displayed next to other event details
+            if ( ($page_date_hide != 'yes') && ($page_date_type == 'icon') && ($page_meta_combine == 'yes') ) {
+                $output .= '</img>';
+            }
+            // end event details
+        $output .= '</div> ';
 	$output .= $page_meta_end;
 	// start event info block
 	if ( ($page_image_hide == 'yes') && ($page_info_hide == 'yes') ) {
