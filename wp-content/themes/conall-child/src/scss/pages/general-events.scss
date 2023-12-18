@@ -152,8 +152,8 @@ body.events-page  {
                                 display: block;
                                 overflow-y: scroll;
                                 border: 1px solid $reviewgrey;
-                                --sb-track-color: #fafafa;
-                                --sb-thumb-color: #7d7d7d;
+                                --sb-track-color: $track1;
+                                --sb-thumb-color: $thumb1;
                                 --sb-size: 12px;
                                 scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
                                 div.edgtf-elements-holder-item-content {
@@ -193,7 +193,7 @@ body.events-page  {
                                     line-height: 36px;
                                     padding: 0px;
                                     margin: 0 !important;
-                                    margin-bottom: 12px !important;
+                                    margin-bottom: 15px !important;
                                 }
                                 div.event-info-wrapper {
                                     margin: 0px;
@@ -210,7 +210,7 @@ body.events-page  {
                                             font-weight: bold;
                                             font-size: 24px;
                                             line-height: 30px;
-                                            margin: 0 4px 0 4px;
+                                            margin: 0 3px 0 3px;
                                         }
                                         img.ge-event-icons {
                                             display: inline-block;
@@ -615,12 +615,13 @@ body.events-page  {
         div#gen_events_hero_row {
             background-image: url("/wp-content/themes/conall-child/images/elevar-events-hero-MOB-576x405.png");
             div.clearfix.edgtf-full-section-inner {
-                padding-top: 25%;
+                padding-top: 30%;
                 .wpb_column {
                     div#gen-events-hero-h1 {
                         h1.elevar-h1 {
                             width: 75%;
                             margin: 0 auto;
+                            line-height: 32px;
                             span.mob-break {
                                 display: block;
                             }
@@ -772,17 +773,19 @@ body.events-page  {
     body.events-page  {
         div#gen_events_hero_row {
             div.clearfix.edgtf-full-section-inner {
-                padding-top: 20%;
+                padding-top: 27.5%;
                 .wpb_column {
                     div#gen-events-hero-h1 {
                         h1.elevar-h1 {
                             width: 75%;
                             margin: 0 auto;
+                            line-height: 32px;
                             span.mob-break {
                                 display: block;
                             }
                         }
                     }
+
                     a.event-button {
                         margin-top: 25px !important;
                             span {
