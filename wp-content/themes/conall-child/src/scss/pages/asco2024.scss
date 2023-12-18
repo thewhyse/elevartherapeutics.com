@@ -9,7 +9,7 @@ body.events-page {
             background-color: $white;
             div.clearfix.edgtf-full-section-inner {
                 height: 100%;
-                padding-top: 90px;
+                padding-top: 6%;
                 .wpb_column {
                     div#events-hero-h1 {
                         margin-bottom: 0 !important;
@@ -32,6 +32,7 @@ body.events-page {
                             display: flex;
                             justify-content: center;
                             align-items: center;
+                            filter: drop-shadow(3px 3px 12px #061336);
                         }
                     }
                     div#event-date-mobile {
@@ -45,7 +46,7 @@ body.events-page {
                     }
                     a.event-button {
                         max-width: 200px;
-                        margin-top: 40px !important;
+                        margin-top: 2.5% !important;
                         margin-bottom: 30px !important;
                         font-weight: 700;
                         border-radius: 10px;
@@ -293,7 +294,7 @@ body.events-page {
             background-image: url(/wp-content/themes/conall-child/images/events-hero-TAB-1024x306.png);
             bottom: 1px;
             div.clearfix.edgtf-full-section-inner {
-                padding-top: 50px;
+                padding-top: 5%;
                 .wpb_column {
                     div#events-hero-h1 {
                         margin-bottom: 0 !important;
@@ -305,7 +306,7 @@ body.events-page {
                         padding-top: 10px !important;
                     }
                     a.event-button {
-                        margin-top: 30px !important;
+                        margin-top: 2% !important;
                         width: 200px;
                         padding: 10px;
                     }
@@ -472,7 +473,7 @@ body.events-page {
         div#events_hero_row {
             height: 385px;
             div.clearfix.edgtf-full-section-inner {
-                padding-top: 80px;
+                padding-top: 10%;
                 .wpb_column {
                     div#events-hero-h1 {
                         h1.elevar-h1 {
@@ -480,7 +481,7 @@ body.events-page {
                         }
                     }
                     a.event-button {
-                        margin-top: 35px !important;
+                        margin-top: 3% !important;
                         width: 200px;
                         padding: 7px;
                         height: 48px;
@@ -667,6 +668,7 @@ body.events-page {
                         width: 250px;
                         flex-direction: column;
                         margin: 0 auto !important;
+                        filter: drop-shadow(3px 3px 12px #061336);
                         div.container-date-top {
                             p.date-top {
                                 color: $white;
@@ -676,35 +678,6 @@ body.events-page {
                                 display: inline-block;
                                 font-weight: 700;
                             }
-                            /* p.date-icon {
-                                display: inline-block;
-                                padding: 0;
-                                margin: 0;
-                                a {
-                                    color: $white;
-                                    transition: all 0.25s;
-                                    img#cal-icon {
-                                        margin-left: 8px;
-                                        height: 24px;
-                                        width: 22px;
-                                        position: relative;
-                                        top: 6px;
-                                        display: inline-block;
-                                    }
-                                }
-                                a:hover {
-                                    color: $elevar_yellow;
-                                    transition: all 0.45s;
-                                    img#cal-icon:hover {
-                                        content: url('/wp-content/themes/conall-child/images/cal_icon_28x30-hover.svg');
-                                        height: 24px;
-                                        width: 22px;
-                                        position: relative;
-                                        transform: scale(1.25);
-                                        transition: all 0.45s;
-                                    }
-                                }
-                            } */
                         }
                         div.container-date-bottom {
                             p.date-bottom {
@@ -735,7 +708,7 @@ body.events-page {
                         }
                     }
                     a.event-button {
-                        margin-top: 30px !important;
+                        margin-top: 5% !important;
                         width: 200px;
                         padding: 7px;
                         height: 48px;
@@ -887,13 +860,16 @@ body.events-page {
             background-position: center top !important;
             padding: 0;
             div.clearfix.edgtf-full-section-inner {
-                padding-top: 100px;
+                padding-top: 5%;
                 .wpb_column {
                     div#events-hero-h1 {
                         h1.elevar-h1 {
                             max-width: 345px;
                             margin-top: 0 !important;
                         }
+                    }
+                    a.event-button {
+                        margin-top: 8% !important;
                     }
                 }
             }
@@ -1037,18 +1013,18 @@ body.events-page {
         div#events_hero_row {
             div.clearfix.edgtf-full-section-inner {
                 height: 100%;
-                padding-top: 0;
+                padding-top: 5%;
                 .wpb_column {
                     div#events-hero-h1 {
                         margin-top: 0px !important;
                         margin-bottom: 0 !important;
                         h1.elevar-h1 {
-                            max-width: 100%;
+                            max-width: 70%;
                         }
                     }
                     a.event-button {
                         max-width: 180px;
-                        margin-top: 20px !important;
+                        margin-top: 8% !important;
                         margin-bottom: 0px !important;
                     }
                 }
