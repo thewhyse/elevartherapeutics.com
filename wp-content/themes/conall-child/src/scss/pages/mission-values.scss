@@ -25,18 +25,18 @@ body.missionvalues-page {
     }
     div#passionate-video-section {
         background-color: $lt_gray2;
-        padding: 55px 0 100px 0;
+        padding: 60px 0 100px 0;
         p {
             font-weight: bold;
         }
         div#passionate-video {
-            display: none;
-            margin: 40px 0 40px 0;
-        }
-        div#video-placeholder {
-            margin: 40px 0 40px 0;
-            img {
+            margin: 50px 0 0 0;
+            p.vp-img-paragraph {
+                a.vp-s.vp-mp4-type {
+                    img.vp-img {
 
+                    }
+                }
             }
         }
     }
@@ -182,6 +182,19 @@ body.missionvalues-page {
         div#mission-statement {
 
         }
+        div#passionate-video-section {
+            padding: 60px 0 80px 0;
+            div#passionate-video {
+                margin: 60px 0 0 0;
+                p.vp-img-paragraph {
+                    a.vp-s.vp-mp4-type {
+                        img.vp-img {
+
+                        }
+                    }
+                }
+            }
+        }
         div#core-values {
             padding: 0px 0 50px 0 !important;
             div.elevar-section {
@@ -273,6 +286,19 @@ body.missionvalues-page {
 }
 @media all and (max-width: 768px) {
     body.missionvalues-page {
+        div#passionate-video-section {
+            padding: 45px 0 55px 0;
+            div#passionate-video {
+                margin: 45px 0 0 0;
+                p.vp-img-paragraph {
+                    a.vp-s.vp-mp4-type {
+                        img.vp-img {
+
+                        }
+                    }
+                }
+            }
+        }
         div#core-values {
             padding: 0px 0 60px 0 !important;
             div.elevar-section {
@@ -364,6 +390,19 @@ body.missionvalues-page {
                         max-width: 220px;
                         padding: 0;
                         border: none;
+                    }
+                }
+            }
+        }
+        div#passionate-video-section {
+            padding: 35px 0 45px 0;
+            div#passionate-video {
+                margin: 35px 0 0 0;
+                p.vp-img-paragraph {
+                    a.vp-s.vp-mp4-type {
+                        img.vp-img {
+
+                        }
                     }
                 }
             }
